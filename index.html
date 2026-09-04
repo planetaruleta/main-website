@@ -1,26 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="es-AR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Planeta Ruleta — casinos en Argentina, sin vueltas</title>
+  <meta name="description" content="Comunidad e inteligencia de casinos en Argentina. Sumate al canal. +18. No somos un casino." />
   <meta name="robots" content="noindex,nofollow" />
+  <link rel="canonical" href="https://www.planetaruleta.com/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400&family=Schibsted+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
   <style>
-
     :root {
       --bg: #0D1B1C;
-      --bg2: #0D1B1C2;
+      --bg2: #132627;
       --card: #1A3232;
       --cream: #DDD9CE;
-      --cream-dim: #DDD9CE2;
+      --cream-dim: #929C9A;
       --copper: #B66F4A;
       --copper-2: #C47D56;
       --ink: #0D1B1C;
+      --shift: clamp(72px, 28vw, 132px);
+      --shot-w: clamp(168px, 58vw, 240px);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
     body {
       min-height: 100dvh;
       background: var(--bg);
@@ -29,8 +34,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 28px 16px 24px;
+      padding: max(20px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
     body::before {
       content: "";
@@ -40,12 +46,17 @@
       opacity: .055;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
     }
-    .wrap { width: min(440px, 100%); text-align: center; position: relative; }
+    .wrap {
+      width: min(560px, 100%);
+      text-align: center;
+      position: relative;
+    }
     .lockup { display: flex; flex-direction: column; align-items: center; }
     .mark {
-      width: 72px; height: 72px;
+      width: clamp(64px, 18vw, 88px);
+      height: clamp(64px, 18vw, 88px);
       color: var(--copper);
-      margin-bottom: .15rem;
+      margin-bottom: .2rem;
       transform: rotate(-8deg);
     }
     h1 {
@@ -55,36 +66,44 @@
     h1 .p {
       font-family: "Ibarra Real Nova", Georgia, serif;
       font-weight: 700;
-      font-size: 2.05rem;
+      font-size: clamp(1.85rem, 7.2vw, 2.75rem);
       letter-spacing: .02em;
       color: var(--cream);
     }
     h1 .r {
       font-family: "Schibsted Grotesk", system-ui, sans-serif;
       font-weight: 700;
-      font-size: 1.28rem;
+      font-size: clamp(1.05rem, 4.2vw, 1.55rem);
       letter-spacing: .28em;
       color: var(--copper);
-      margin-top: .18rem;
+      margin-top: .2rem;
     }
     .motto {
       font-family: "Ibarra Real Nova", Georgia, serif;
       font-style: italic;
       font-weight: 400;
-      font-size: .98rem;
+      font-size: clamp(.95rem, 3.4vw, 1.15rem);
       color: var(--cream-dim);
-      margin: .7rem 0 1.45rem;
+      margin: .75rem 0 1.5rem;
+      padding: 0 .5rem;
     }
-    .stage { perspective: 980px; height: 248px; margin: 0 auto 1.7rem; }
+    .stage {
+      perspective: 1100px;
+      height: clamp(220px, 58vw, 290px);
+      margin: 0 auto 1.85rem;
+      width: 100%;
+      overflow: visible;
+    }
     .rack { position: relative; height: 100%; transform-style: preserve-3d; }
     .shot {
       position: absolute;
       left: 50%;
       top: 6px;
-      width: 210px;
-      margin-left: -105px;
+      width: var(--shot-w);
+      margin-left: calc(var(--shot-w) / -2);
       cursor: pointer;
       transition: transform .5s cubic-bezier(.22,.61,.36,1), opacity .4s;
+      -webkit-tap-highlight-color: transparent;
     }
     .phone {
       background: var(--bg2);
@@ -106,6 +125,7 @@
       font-size: .62rem; font-weight: 700;
       display: flex; align-items: center; justify-content: center;
       letter-spacing: -.04em;
+      flex-shrink: 0;
     }
     .who strong { display: block; font-size: .72rem; font-weight: 700; }
     .who em { font-style: normal; font-size: .58rem; color: var(--cream-dim); }
@@ -113,12 +133,11 @@
     .ttl {
       font-family: "Ibarra Real Nova", Georgia, serif;
       font-weight: 700;
-      font-size: 1.12rem;
+      font-size: clamp(1.05rem, 3.8vw, 1.28rem);
       letter-spacing: -.02em;
       margin-bottom: .28rem;
     }
-    .bubble p { font-size: .74rem; line-height: 1.38; color: var(--cream); font-weight: 500; }
-    .bubble p + p { color: var(--cream-dim); }
+    .bubble p { font-size: clamp(.72rem, 2.8vw, .82rem); line-height: 1.4; color: var(--cream); font-weight: 500; }
     .meta {
       display: block;
       margin-top: .55rem;
@@ -129,54 +148,64 @@
       font-weight: 700;
     }
     .meta i { font-style: normal; float: right; color: var(--cream-dim); letter-spacing: 0; text-transform: none; font-weight: 500; }
-    .shot[data-pos="-1"] { transform: translateX(-118px) rotateY(18deg) rotate(-2deg) scale(.86); opacity: .8; z-index: 1; }
+    .shot[data-pos="-1"] { transform: translateX(calc(var(--shift) * -1)) rotateY(16deg) rotate(-2deg) scale(.88); opacity: .82; z-index: 1; }
     .shot[data-pos="0"]  { transform: translateX(0) rotateY(0) rotate(.3deg) scale(1); opacity: 1; z-index: 3; }
-    .shot[data-pos="1"]  { transform: translateX(118px) rotateY(-18deg) rotate(2deg) scale(.86); opacity: .8; z-index: 1; }
+    .shot[data-pos="1"]  { transform: translateX(var(--shift)) rotateY(-16deg) rotate(2deg) scale(.88); opacity: .82; z-index: 1; }
     .shot[data-pos="-2"], .shot[data-pos="2"] { opacity: 0; pointer-events: none; }
     .cta {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       background: var(--cream);
       color: var(--ink);
       text-decoration: none;
       font-weight: 700;
-      font-size: .98rem;
-      padding: .82rem 1.55rem;
+      font-size: clamp(.95rem, 3.5vw, 1.05rem);
+      padding: .9rem 1.6rem;
       border-radius: 14px;
-      min-width: 210px;
+      min-width: min(260px, 86vw);
       box-shadow: 3px 4px 0 color-mix(in srgb, var(--copper) 45%, black);
     }
     .cta:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
     .foot {
-      margin-top: 1.4rem;
-      font-size: .62rem;
+      margin-top: 1.45rem;
+      font-size: .65rem;
       letter-spacing: .04em;
       color: var(--cream-dim);
-      opacity: .75;
+      opacity: .85;
     }
-
+    @media (max-width: 380px) {
+      :root { --shift: 58px; }
+      .shot[data-pos="-1"], .shot[data-pos="1"] { opacity: .55; }
+    }
+    @media (min-width: 720px) {
+      :root { --shift: 150px; --shot-w: 250px; }
+      .stage { height: 300px; }
+      body { padding: 40px 24px; }
+    }
   </style>
 </head>
 <body>
   <main class="wrap">
     <div class="lockup">
       <svg class="mark" viewBox="0 0 80 80" aria-hidden="true">
-  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-    <ellipse cx="40" cy="41" rx="30" ry="7.5" stroke-width="2.6" transform="rotate(-26 40 41)" opacity=".35"/>
-  </g>
-  <circle cx="40" cy="41" r="16.5" fill="var(--bg2)" stroke="currentColor" stroke-width="1.6"/>
-  <circle cx="40" cy="41" r="11.5" fill="none" stroke="currentColor" stroke-width=".7" opacity=".75"/>
-  <g stroke="currentColor" stroke-width="1" stroke-linecap="round">
-    <path d="M40 25.2v3.2M40 53.6v3.2M24.2 41h3.2M52.6 41h3.2"/>
-    <path d="M29.1 30.1l2.2 2.2M48.7 49.7l2.2 2.2M48.7 30.1l-2.2 2.2M29.1 49.7l2.2-2.2" opacity=".85"/>
-  </g>
-  <circle cx="40" cy="41" r="2.1" fill="currentColor"/>
-  <ellipse cx="40" cy="41" rx="30" ry="7.5" fill="none" stroke="currentColor" stroke-width="2.8" transform="rotate(-26 40 41)" clip-path="url(#front-teal)"/>
-  <defs>
-    <clipPath id="front-teal"><rect x="0" y="41" width="80" height="40"/></clipPath>
-  </defs>
-  <path d="M58 18 L60.2 23.2 L65.6 25.4 L60.2 27.6 L58 32.8 L55.8 27.6 L50.4 25.4 L55.8 23.2 Z" fill="currentColor" opacity=".9" transform="scale(.42) translate(86 -6)"/>
-  <path d="M22 52 L23.6 55.8 L27.6 57.4 L23.6 59 L22 62.8 L20.4 59 L16.4 57.4 L20.4 55.8 Z" fill="currentColor" opacity=".75" transform="scale(.38) translate(-8 28)"/>
-</svg>
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <ellipse cx="40" cy="41" rx="30" ry="7.5" stroke-width="2.6" transform="rotate(-26 40 41)" opacity=".35"/>
+        </g>
+        <circle cx="40" cy="41" r="16.5" fill="var(--bg2)" stroke="currentColor" stroke-width="1.6"/>
+        <circle cx="40" cy="41" r="11.5" fill="none" stroke="currentColor" stroke-width=".7" opacity=".75"/>
+        <g stroke="currentColor" stroke-width="1" stroke-linecap="round">
+          <path d="M40 25.2v3.2M40 53.6v3.2M24.2 41h3.2M52.6 41h3.2"/>
+          <path d="M29.1 30.1l2.2 2.2M48.7 49.7l2.2 2.2M48.7 30.1l-2.2 2.2M29.1 49.7l2.2-2.2" opacity=".85"/>
+        </g>
+        <circle cx="40" cy="41" r="2.1" fill="currentColor"/>
+        <ellipse cx="40" cy="41" rx="30" ry="7.5" fill="none" stroke="currentColor" stroke-width="2.8" transform="rotate(-26 40 41)" clip-path="url(#front-teal)"/>
+        <defs>
+          <clipPath id="front-teal"><rect x="0" y="41" width="80" height="40"/></clipPath>
+        </defs>
+        <path d="M58 18 L60.2 23.2 L65.6 25.4 L60.2 27.6 L58 32.8 L55.8 27.6 L50.4 25.4 L55.8 23.2 Z" fill="currentColor" opacity=".9" transform="scale(.42) translate(86 -6)"/>
+        <path d="M22 52 L23.6 55.8 L27.6 57.4 L23.6 59 L22 62.8 L20.4 59 L16.4 57.4 L20.4 55.8 Z" fill="currentColor" opacity=".75" transform="scale(.38) translate(-8 28)"/>
+      </svg>
       <h1><span class="p">PLANETA</span><span class="r">RULETA</span></h1>
     </div>
     <p class="motto">El mundo de los casinos, sin vueltas.</p>
@@ -187,7 +216,7 @@
               <span class="av">PR</span>
               <div class="who">
                 <strong>Planeta Ruleta</strong>
-                <em>grupo</em>
+                <em>canal</em>
               </div>
             </div>
             <div class="bubble">
@@ -203,7 +232,7 @@
               <span class="av">PR</span>
               <div class="who">
                 <strong>Planeta Ruleta</strong>
-                <em>grupo</em>
+                <em>canal</em>
               </div>
             </div>
             <div class="bubble">
@@ -219,7 +248,7 @@
               <span class="av">PR</span>
               <div class="who">
                 <strong>Planeta Ruleta</strong>
-                <em>grupo</em>
+                <em>canal</em>
               </div>
             </div>
             <div class="bubble">
@@ -230,7 +259,7 @@
           </div>
         </article>
     </div></div>
-    <a class="cta" href="https://t.me/planetaruleta" target="_blank" rel="noopener">Sumate</a>
+    <a class="cta" href="https://t.me/planetaruleta" target="_blank" rel="noopener">Sumate al canal</a>
     <p class="foot">planetaruleta.com · Argentina · +18</p>
   </main>
   <script>
