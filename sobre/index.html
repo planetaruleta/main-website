@@ -283,7 +283,14 @@
   </main>
 
   <footer class="site-footer">
-    +18 · no somos un casino · <a href="mailto:planetaruleta@protonmail.com">planetaruleta@protonmail.com</a> · <a href="https://www.planetaruleta.com/">planetaruleta.com</a>
+    +18 · no somos un casino · <a href="mailto:planetaruleta@protonmail.com">planetaruleta@protonmail.com</a> · <a href="https://www.planetaruleta.com/">planetaruleta.com</a><br />
+    Planeta Ruleta © <span data-year></span>
   </footer>
+  <script>
+    (() => {
+      const year = new Date().getFullYear();
+      document.querySelectorAll("[data-year]").forEach((el) => { el.textContent = String(year); });
+    })();
+  </script>
 </body>
 </html>
