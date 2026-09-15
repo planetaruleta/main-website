@@ -7,6 +7,11 @@
   <meta name="description" content="Comunidad e inteligencia de casinos en Argentina. Sumate al canal. +18. No somos un casino." />
   <meta name="robots" content="noindex,nofollow" />
   <link rel="canonical" href="https://www.planetaruleta.com/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta property="og:image" content="https://www.planetaruleta.com/logo-saturn.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400&family=Schibsted+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
@@ -50,13 +55,18 @@
       text-align: center;
       position: relative;
     }
-    .lockup { display: flex; flex-direction: column; align-items: center; }
+    .lockup {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(.55rem, 2.2vw, 1rem);
+    }
     .mark {
-      width: clamp(64px, 18vw, 88px);
-      height: clamp(64px, 18vw, 88px);
-      color: var(--copper);
-      margin-bottom: .2rem;
-      transform: rotate(-8deg);
+      width: clamp(72px, 20vw, 104px);
+      height: auto;
+      display: block;
+      flex-shrink: 0;
     }
     h1 {
       display: flex; flex-direction: column; align-items: center;
@@ -184,7 +194,7 @@
       h1 .p { font-size: 3.1rem; }
       h1 .r { font-size: 1.7rem; }
       .motto { font-size: 1.25rem; margin-bottom: 1.8rem; }
-      .mark { width: 96px; height: 96px; }
+      .mark { width: 112px; }
       .cta { font-size: 1.12rem; min-width: 300px; padding: 1rem 1.85rem; }
       body { padding: 48px 32px; }
     }
@@ -198,24 +208,7 @@
 <body>
   <main class="wrap">
     <div class="lockup">
-      <svg class="mark" viewBox="0 0 80 80" aria-hidden="true">
-        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-          <ellipse cx="40" cy="41" rx="30" ry="7.5" stroke-width="2.6" transform="rotate(-26 40 41)" opacity=".35"/>
-        </g>
-        <circle cx="40" cy="41" r="16.5" fill="var(--bg2)" stroke="currentColor" stroke-width="1.6"/>
-        <circle cx="40" cy="41" r="11.5" fill="none" stroke="currentColor" stroke-width=".7" opacity=".75"/>
-        <g stroke="currentColor" stroke-width="1" stroke-linecap="round">
-          <path d="M40 25.2v3.2M40 53.6v3.2M24.2 41h3.2M52.6 41h3.2"/>
-          <path d="M29.1 30.1l2.2 2.2M48.7 49.7l2.2 2.2M48.7 30.1l-2.2 2.2M29.1 49.7l2.2-2.2" opacity=".85"/>
-        </g>
-        <circle cx="40" cy="41" r="2.1" fill="currentColor"/>
-        <ellipse cx="40" cy="41" rx="30" ry="7.5" fill="none" stroke="currentColor" stroke-width="2.8" transform="rotate(-26 40 41)" clip-path="url(#front-teal)"/>
-        <defs>
-          <clipPath id="front-teal"><rect x="0" y="41" width="80" height="40"/></clipPath>
-        </defs>
-        <path d="M58 18 L60.2 23.2 L65.6 25.4 L60.2 27.6 L58 32.8 L55.8 27.6 L50.4 25.4 L55.8 23.2 Z" fill="currentColor" opacity=".9" transform="scale(.42) translate(86 -6)"/>
-        <path d="M22 52 L23.6 55.8 L27.6 57.4 L23.6 59 L22 62.8 L20.4 59 L16.4 57.4 L20.4 55.8 Z" fill="currentColor" opacity=".75" transform="scale(.38) translate(-8 28)"/>
-      </svg>
+      <img class="mark" src="/logo-saturn.png" width="1024" height="1024" alt="" aria-hidden="true" />
       <h1><span class="p">PLANETA</span><span class="r">RULETA</span></h1>
     </div>
     <p class="motto">El mundo de los casinos, sin vueltas.</p>
