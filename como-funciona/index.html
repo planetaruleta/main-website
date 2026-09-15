@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Cómo funciona — Planeta Ruleta</title>
+  <meta name="description" content="Qué publicamos, cómo evaluamos (oficial, comunidad, editorial) y cómo contactarnos. +18. No somos un casino." />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="canonical" href="https://www.planetaruleta.com/como-funciona/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta property="og:image" content="https://www.planetaruleta.com/logo-saturn.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400;1,700&family=Schibsted+Grotesk:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0D1B1C;
+      --bg2: #132627;
+      --card: #1A3232;
+      --cream: #DDD9CE;
+      --cream-dim: #929C9A;
+      --copper: #B66F4A;
+      --copper-2: #C47D56;
+      --ink: #0D1B1C;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      min-height: 100dvh;
+      background: var(--bg);
+      color: var(--cream);
+      font-family: "Schibsted Grotesk", system-ui, sans-serif;
+      font-weight: 500;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "";
+      pointer-events: none;
+      position: fixed;
+      inset: 0;
+      opacity: .055;
+      z-index: 0;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    }
+    a { color: var(--copper); text-decoration: none; }
+    a:hover, a:focus-visible { color: var(--copper-2); }
+    a:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
+
+    .site-header {
+      position: relative;
+      z-index: 1;
+    }
+    .nav {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: max(16px, env(safe-area-inset-top)) 16px 8px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px 16px;
+    }
+    .home-link {
+      color: var(--cream-dim);
+      font-size: .85rem;
+      font-weight: 700;
+    }
+    .home-link:hover { color: var(--cream); }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px 16px;
+      list-style: none;
+      font-size: .85rem;
+      font-weight: 700;
+    }
+    .nav-links a { color: var(--cream-dim); }
+    .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--copper); }
+    .age {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--copper);
+      color: var(--copper);
+      border-radius: 999px;
+      font-size: .68rem;
+      font-weight: 700;
+      padding: .18rem .55rem;
+    }
+
+    .article {
+      position: relative;
+      z-index: 1;
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 18px 16px 48px;
+    }
+    h1 {
+      font-family: "Ibarra Real Nova", Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(1.9rem, 6.5vw, 2.55rem);
+      letter-spacing: -.02em;
+      line-height: 1.12;
+      margin-bottom: .7rem;
+    }
+    .lead {
+      font-family: "Ibarra Real Nova", Georgia, serif;
+      font-size: clamp(1.05rem, 3.8vw, 1.2rem);
+      line-height: 1.4;
+      color: var(--cream-dim);
+      margin-bottom: 1.25rem;
+    }
+    .panel {
+      background: var(--card);
+      border: 1px solid color-mix(in srgb, var(--cream) 10%, transparent);
+      border-radius: 16px;
+      padding: 1.05rem 1.15rem 1.1rem;
+      margin-bottom: 1.7rem;
+    }
+    .kicker {
+      display: block;
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: .4rem;
+    }
+    .panel h2, .types-head, .eval h2, .contact-block h2 {
+      font-family: "Ibarra Real Nova", Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(1.05rem, 3.6vw, 1.2rem);
+      margin-bottom: .45rem;
+    }
+    .panel p, .type p, .eval li, .contact-block p {
+      font-size: clamp(.9rem, 3.1vw, .98rem);
+      color: var(--cream-dim);
+    }
+    .panel h2 { font-size: clamp(1.12rem, 3.8vw, 1.28rem); color: var(--cream); }
+    .panel p { color: var(--cream-dim); }
+
+    .types-head {
+      font-size: clamp(1.3rem, 4.4vw, 1.55rem);
+      margin: 0 0 .85rem;
+      color: var(--cream);
+    }
+    .types {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-bottom: 1.8rem;
+    }
+    .type {
+      background: var(--card);
+      border: 1px solid color-mix(in srgb, var(--cream) 10%, transparent);
+      border-radius: 16px;
+      padding: 1rem 1.05rem 1.05rem;
+    }
+    .type h3 {
+      font-family: "Ibarra Real Nova", Georgia, serif;
+      font-weight: 700;
+      font-size: 1.08rem;
+      color: var(--cream);
+      margin-bottom: .35rem;
+      line-height: 1.25;
+    }
+
+    .eval h2, .contact-wrap h2 {
+      font-family: "Ibarra Real Nova", Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(1.3rem, 4.4vw, 1.55rem);
+      margin: 0 0 .85rem;
+    }
+    .eval-list {
+      list-style: none;
+      background: var(--card);
+      border: 1px solid color-mix(in srgb, var(--cream) 10%, transparent);
+      border-radius: 16px;
+      padding: 1.05rem 1.15rem 1.1rem;
+      margin-bottom: 1.8rem;
+    }
+    .eval-list li {
+      margin-bottom: .65rem;
+      padding-left: 1.05rem;
+      position: relative;
+      color: var(--cream);
+      font-size: clamp(.9rem, 3.1vw, .98rem);
+    }
+    .eval-list li:last-child { margin-bottom: 0; }
+    .eval-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--cream);
+    }
+    .eval-list strong { color: var(--cream); }
+
+    .contact-block {
+      background: var(--card);
+      border: 1px solid color-mix(in srgb, var(--cream) 10%, transparent);
+      border-radius: 16px;
+      padding: 1.05rem 1.15rem 1.15rem;
+      margin-bottom: 1.15rem;
+    }
+    .contact-block h3 {
+      font-family: "Ibarra Real Nova", Georgia, serif;
+      font-weight: 700;
+      font-size: 1.12rem;
+      margin-bottom: .35rem;
+    }
+    .contact-block .mail { display: block; margin-bottom: .35rem; }
+
+    .join {
+      background: var(--card);
+      border: 1px solid color-mix(in srgb, var(--cream) 10%, transparent);
+      border-radius: 16px;
+      padding: 1.35rem 1.15rem 1.4rem;
+      text-align: center;
+    }
+    .join p {
+      color: var(--cream-dim);
+      margin-bottom: .9rem;
+      font-size: .95rem;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--cream);
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: .8rem 1.45rem;
+      border-radius: 12px;
+      min-width: 188px;
+      box-shadow: 3px 4px 0 color-mix(in srgb, var(--copper) 45%, black);
+    }
+    .cta:hover, .cta:focus-visible { color: var(--ink); }
+    .cta:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
+
+    .site-footer {
+      position: relative;
+      z-index: 1;
+      border-top: 1px solid color-mix(in srgb, var(--cream) 10%, transparent);
+      padding: 1.25rem 16px max(1.5rem, env(safe-area-inset-bottom));
+      text-align: center;
+      font-size: .72rem;
+      letter-spacing: .03em;
+      color: var(--cream-dim);
+      line-height: 1.6;
+    }
+    .site-footer a { color: var(--cream-dim); }
+    .site-footer a:hover { color: var(--copper-2); }
+
+    @media (min-width: 720px) {
+      .nav { padding: 22px 24px 10px; }
+      .article { padding: 28px 24px 64px; }
+      .types { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Principal">
+      <a class="home-link" href="/">← Home</a>
+      <ul class="nav-links">
+        <li><a href="/sobre/">Sobre</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><span class="age">+18</span></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="article">
+    <h1>Cómo funciona</h1>
+    <p class="lead">Qué es Planeta Ruleta, qué tipo de información publicamos y cómo la evaluamos.</p>
+
+    <section class="panel">
+      <span class="kicker">Qué somos</span>
+      <h2>Medio + comunidad de intel de casinos en Argentina</h2>
+      <p>No somos un casino. Reunimos información útil para jugadores que ya conocen el rubro — y una comunidad en Telegram para el día a día.</p>
+    </section>
+
+    <section>
+      <h2 class="types-head">Tipos de información</h2>
+      <div class="types">
+        <article class="type">
+          <span class="kicker">Operadores &amp; skins</span>
+          <h3>Dominios, jurisdicciones, productos</h3>
+          <p>Diferencias CABA / PBA / otras provincias; qué es .bet.ar vs otras URLs.</p>
+        </article>
+        <article class="type">
+          <span class="kicker">Bonos &amp; condiciones</span>
+          <h3>Lectura de rollover y límites</h3>
+          <p>Montos, multiplicadores, juegos que aportan, ventanas — con fecha y fuente.</p>
+        </article>
+        <article class="type">
+          <span class="kicker">Pagos &amp; retiros</span>
+          <h3>Fricción real (MP, tiempos, KYC)</h3>
+          <p>Lo que dice el sitio vs reportes de comunidad, etiquetados por separado.</p>
+        </article>
+        <article class="type">
+          <span class="kicker">Juegos &amp; proveedores</span>
+          <h3>Lobby, volatilidad, redes de premios</h3>
+          <p>Qué está activo en skins AR cuando se puede verificar.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="eval">
+      <h2>Cómo evaluamos</h2>
+      <ul class="eval-list">
+        <li><strong>OFICIAL</strong> — texto del operador, T&amp;Cs, pie de página, registro provincial.</li>
+        <li><strong>COMUNIDAD</strong> — reportes de jugadores; no se trata como hecho cerrado.</li>
+        <li><strong>EDITORIAL</strong> — nuestra lectura / síntesis; opinable y fechada.</li>
+        <li>No inventamos retiros, jackpots ni testimonios. Sin fuente, no se publica como dato.</li>
+        <li>Audiencia adulta (+18). Juego responsable.</li>
+      </ul>
+    </section>
+
+    <section class="contact-wrap">
+      <h2>Contacto</h2>
+      <div class="contact-block">
+        <h3>Consultas</h3>
+        <a class="mail" href="mailto:planetaruleta@protonmail.com">planetaruleta@protonmail.com</a>
+        <p>Canal y grupo de Telegram desde la home.</p>
+      </div>
+    </section>
+
+    <div class="join">
+      <p>La conversación sigue en Telegram.</p>
+      <a class="cta" href="https://t.me/planetaruleta" target="_blank" rel="noopener">Sumate al canal</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="/como-funciona/">Cómo funciona</a> ·
+    <a href="/sobre/">Sobre</a> ·
+    <a href="/faq/">FAQ</a><br />
+    +18 · no somos un casino · <a href="mailto:planetaruleta@protonmail.com">planetaruleta@protonmail.com</a> · <a href="https://www.planetaruleta.com/">planetaruleta.com</a><br />
+    Planeta Ruleta © <span data-year></span>
+  </footer>
+  <script>
+    (() => {
+      const year = new Date().getFullYear();
+      document.querySelectorAll("[data-year]").forEach((el) => { el.textContent = String(year); });
+    })();
+  </script>
+</body>
+</html>
