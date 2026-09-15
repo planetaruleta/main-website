@@ -14,7 +14,7 @@
   <meta property="og:image" content="https://www.planetaruleta.com/logo-saturn.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400&family=Schibsted+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400;1,700&family=Schibsted+Grotesk:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet" />
   <style>
     :root {
       --bg: #0D1B1C;
@@ -25,8 +25,6 @@
       --copper: #B66F4A;
       --copper-2: #C47D56;
       --ink: #0D1B1C;
-      --shift: clamp(72px, 28vw, 132px);
-      --shot-w: clamp(168px, 58vw, 240px);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { -webkit-text-size-adjust: 100%; }
@@ -35,10 +33,7 @@
       background: var(--bg);
       color: var(--cream);
       font-family: "Schibsted Grotesk", system-ui, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: max(20px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+      font-weight: 500;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
     }
@@ -48,12 +43,18 @@
       position: fixed;
       inset: 0;
       opacity: .055;
+      z-index: 0;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
     }
-    .wrap {
-      width: min(560px, 100%);
-      text-align: center;
+    a { color: var(--copper); text-decoration: none; }
+    a:hover, a:focus-visible { color: var(--copper-2); }
+    a:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
+
+    .hero {
       position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: max(28px, env(safe-area-inset-top)) 16px 0;
     }
     .lockup {
       display: flex;
@@ -61,6 +62,7 @@
       align-items: center;
       justify-content: center;
       gap: clamp(.55rem, 2.2vw, 1rem);
+      margin-bottom: 1.35rem;
     }
     .mark {
       width: clamp(72px, 20vw, 104px);
@@ -68,18 +70,20 @@
       display: block;
       flex-shrink: 0;
     }
-    h1 {
-      display: flex; flex-direction: column; align-items: center;
+    .wordmark {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       line-height: .92;
     }
-    h1 .p {
+    .wordmark .p {
       font-family: "Ibarra Real Nova", Georgia, serif;
       font-weight: 700;
       font-size: clamp(1.85rem, 7.2vw, 2.75rem);
       letter-spacing: .02em;
       color: var(--cream);
     }
-    h1 .r {
+    .wordmark .r {
       font-family: "Schibsted Grotesk", system-ui, sans-serif;
       font-weight: 700;
       font-size: clamp(1.05rem, 4.2vw, 1.55rem);
@@ -87,80 +91,193 @@
       color: var(--copper);
       margin-top: .2rem;
     }
-    .motto {
+    .hero h1 {
       font-family: "Ibarra Real Nova", Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(1.55rem, 5.6vw, 2.35rem);
+      letter-spacing: -.02em;
+      line-height: 1.18;
+      max-width: 18ch;
+      margin: 0 auto .55rem;
+    }
+    .hero h1 em {
       font-style: italic;
-      font-weight: 400;
-      font-size: clamp(.95rem, 3.4vw, 1.15rem);
+      font-weight: 700;
+      color: var(--copper);
+    }
+    .lede {
       color: var(--cream-dim);
-      margin: .75rem 0 1.5rem;
-      padding: 0 .5rem;
+      font-size: clamp(.92rem, 3.2vw, 1.08rem);
+      margin: 0 auto .9rem;
+      max-width: 36ch;
     }
-    .stage {
-      perspective: 1100px;
-      height: clamp(220px, 58vw, 290px);
-      margin: 0 auto 1.85rem;
-      width: 100%;
-      overflow: visible;
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--copper);
+      color: var(--copper);
+      border-radius: 999px;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+      padding: .28rem .72rem;
+      margin-bottom: 1.35rem;
     }
-    .rack { position: relative; height: 100%; transform-style: preserve-3d; }
-    .shot {
+
+    .rail-wrap {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 .35rem;
+    }
+    .rail-wrap::before,
+    .rail-wrap::after {
+      content: "";
       position: absolute;
-      left: 50%;
-      top: 6px;
-      width: var(--shot-w);
-      margin-left: calc(var(--shot-w) / -2);
-      cursor: pointer;
-      transition: transform .5s cubic-bezier(.22,.61,.36,1), opacity .4s;
+      top: 0;
+      bottom: 12px;
+      width: clamp(16px, 5vw, 56px);
+      z-index: 2;
+      pointer-events: none;
+    }
+    .rail-wrap::before {
+      left: 0;
+      background: linear-gradient(90deg, var(--bg), transparent);
+    }
+    .rail-wrap::after {
+      right: 0;
+      background: linear-gradient(270deg, var(--bg), transparent);
+    }
+    .rail {
+      display: flex;
+      gap: 14px;
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x mandatory;
+      scroll-padding-inline: 16px;
+      padding: 4px 16px 18px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      cursor: grab;
+    }
+    .rail:active { cursor: grabbing; }
+    .rail::-webkit-scrollbar { display: none; }
+    .phone-card {
+      flex: 0 0 min(248px, 78vw);
+      scroll-snap-align: start;
+      scroll-snap-stop: normal;
       -webkit-tap-highlight-color: transparent;
+    }
+    .phone-card:focus-visible {
+      outline: 2px solid var(--copper);
+      outline-offset: 4px;
+      border-radius: 20px;
     }
     .phone {
       background: var(--bg2);
       border: 1px solid color-mix(in srgb, var(--cream) 12%, transparent);
-      border-radius: 16px;
+      border-radius: 18px;
       overflow: hidden;
       text-align: left;
-      box-shadow: 0 16px 34px rgba(0,0,0,.42);
+      height: 100%;
+      box-shadow: 0 12px 28px rgba(0,0,0,.32);
     }
     .tgbar {
-      display: flex; align-items: center; gap: 8px;
-      padding: 8px 10px 7px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 12px 8px;
       background: color-mix(in srgb, var(--bg) 70%, black);
       border-bottom: 1px solid color-mix(in srgb, var(--cream) 8%, transparent);
     }
     .av {
-      width: 26px; height: 26px; border-radius: 50%;
-      background: var(--copper); color: var(--ink);
-      font-size: .62rem; font-weight: 700;
-      display: flex; align-items: center; justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--copper);
+      color: var(--ink);
+      font-size: .62rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       letter-spacing: -.04em;
       flex-shrink: 0;
     }
-    .who strong { display: block; font-size: .72rem; font-weight: 700; }
+    .who strong { display: block; font-size: .74rem; font-weight: 700; }
     .who em { font-style: normal; font-size: .58rem; color: var(--cream-dim); }
-    .bubble { padding: 10px 11px 9px; background: var(--card); }
+    .bubble { padding: 12px 13px 12px; background: var(--card); min-height: 132px; }
     .ttl {
       font-family: "Ibarra Real Nova", Georgia, serif;
       font-weight: 700;
-      font-size: clamp(1.05rem, 3.8vw, 1.28rem);
+      font-size: 1.32rem;
       letter-spacing: -.02em;
-      margin-bottom: .28rem;
+      margin-bottom: .32rem;
     }
-    .bubble p { font-size: clamp(.72rem, 2.8vw, .82rem); line-height: 1.4; color: var(--cream); font-weight: 500; }
+    .bubble p { font-size: .78rem; line-height: 1.4; color: var(--cream); }
     .meta {
       display: block;
-      margin-top: .55rem;
+      margin-top: .65rem;
       font-size: .58rem;
       letter-spacing: .04em;
-      text-transform: uppercase;
-      color: var(--copper);
+      color: var(--cream-dim);
       font-weight: 700;
     }
-    .meta i { font-style: normal; float: right; color: var(--cream-dim); letter-spacing: 0; text-transform: none; font-weight: 500; }
-    .shot[data-pos="-1"] { transform: translateX(calc(var(--shift) * -1)) rotateY(16deg) rotate(-2deg) scale(.88); opacity: .82; z-index: 1; }
-    .shot[data-pos="0"]  { transform: translateX(0) rotateY(0) rotate(.3deg) scale(1); opacity: 1; z-index: 3; }
-    .shot[data-pos="1"]  { transform: translateX(var(--shift)) rotateY(-16deg) rotate(2deg) scale(.88); opacity: .82; z-index: 1; }
-    .shot[data-pos="-2"], .shot[data-pos="2"] { opacity: 0; pointer-events: none; }
+
+    .usp {
+      position: relative;
+      z-index: 1;
+      background: var(--bg2);
+      border-top: 1px solid var(--copper);
+      border-bottom: 1px solid var(--copper);
+      overflow: hidden;
+      mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+    }
+    .usp-track {
+      display: flex;
+      width: max-content;
+      animation: usp-scroll 42s linear infinite;
+    }
+    .usp:hover .usp-track,
+    .usp:focus-within .usp-track { animation-play-state: paused; }
+    .usp-list {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 0;
+      padding: .7rem 0;
+    }
+    .usp-list li {
+      display: flex;
+      align-items: center;
+      font-family: "Ibarra Real Nova", Georgia, serif;
+      font-style: italic;
+      font-weight: 700;
+      font-size: clamp(.78rem, 2.4vw, .92rem);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--copper);
+      white-space: nowrap;
+      padding: 0 1.15rem;
+    }
+    .usp-list li::after {
+      content: "·";
+      margin-left: 1.15rem;
+      font-style: normal;
+      letter-spacing: 0;
+      opacity: .7;
+    }
+    @keyframes usp-scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .cta-band {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 1.6rem 16px 1.1rem;
+    }
     .cta {
       display: inline-flex;
       align-items: center;
@@ -170,123 +287,327 @@
       text-decoration: none;
       font-weight: 700;
       font-size: clamp(.95rem, 3.5vw, 1.05rem);
-      padding: .9rem 1.6rem;
-      border-radius: 14px;
-      min-width: min(260px, 86vw);
-      box-shadow: 3px 4px 0 color-mix(in srgb, var(--copper) 45%, black);
+      padding: .85rem 1.55rem;
+      border-radius: 12px;
+      min-width: min(240px, 86vw);
+      box-shadow: 4px 5px 0 var(--copper);
     }
+    .cta:hover, .cta:focus-visible { color: var(--ink); }
     .cta:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
+
+    .below {
+      position: relative;
+      z-index: 1;
+      max-width: 920px;
+      margin: 0 auto;
+      padding: .4rem 16px 2.4rem;
+    }
+    .below h2 {
+      font-family: "Ibarra Real Nova", Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(1.25rem, 4.2vw, 1.55rem);
+      margin: 1.1rem 0 .85rem;
+    }
+    .topics {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    .topic {
+      background: var(--card);
+      border: 1px solid color-mix(in srgb, var(--cream) 10%, transparent);
+      border-radius: 16px;
+      padding: 1rem 1.05rem 1.05rem;
+      text-align: left;
+    }
+    .kicker {
+      display: block;
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: .35rem;
+    }
+    .topic h3 {
+      font-family: "Ibarra Real Nova", Georgia, serif;
+      font-weight: 700;
+      font-size: 1.08rem;
+      margin-bottom: .35rem;
+    }
+    .topic p {
+      font-size: .82rem;
+      line-height: 1.45;
+      color: var(--cream-dim);
+    }
+    .how-link {
+      display: block;
+      margin: 1rem 0 1.6rem;
+      background: var(--bg2);
+      border: 1px solid color-mix(in srgb, var(--cream) 10%, transparent);
+      border-radius: 16px;
+      padding: 1.05rem 1.15rem;
+      color: inherit;
+    }
+    .how-link:hover, .how-link:focus-visible { color: inherit; }
+    .how-link .kicker { color: var(--copper-2); }
+    .how-link strong {
+      display: block;
+      font-family: "Ibarra Real Nova", Georgia, serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+      margin-bottom: .3rem;
+    }
+    .how-link p { font-size: .82rem; line-height: 1.45; color: var(--cream-dim); }
+    .how-link span.more {
+      display: inline-block;
+      margin-top: .55rem;
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--copper);
+    }
+    .cta-bottom { text-align: center; padding: .4rem 0 1.2rem; }
+
     .foot {
-      margin-top: 1.45rem;
+      position: relative;
+      z-index: 1;
+      margin: 0 auto;
+      padding: 0 16px max(1.6rem, env(safe-area-inset-bottom));
+      text-align: center;
       font-size: .65rem;
       letter-spacing: .04em;
       color: var(--cream-dim);
-      opacity: .85;
+      opacity: .9;
+      line-height: 1.7;
     }
-    @media (max-width: 380px) {
-      :root { --shift: 58px; }
-      .shot[data-pos="-1"], .shot[data-pos="1"] { opacity: .55; }
-    }
+    .foot a { color: inherit; }
+    .foot a:hover { color: var(--copper-2); }
+
     @media (min-width: 720px) {
-      :root { --shift: 190px; --shot-w: 280px; }
-      .wrap { width: min(720px, 100%); }
-      .stage { height: 340px; }
-      h1 .p { font-size: 3.1rem; }
-      h1 .r { font-size: 1.7rem; }
-      .motto { font-size: 1.25rem; margin-bottom: 1.8rem; }
+      .hero { padding-top: 44px; }
       .mark { width: 112px; }
-      .cta { font-size: 1.12rem; min-width: 300px; padding: 1rem 1.85rem; }
-      body { padding: 48px 32px; }
+      .wordmark .p { font-size: 3.1rem; }
+      .wordmark .r { font-size: 1.7rem; }
+      .hero h1 { font-size: 2.55rem; max-width: none; }
+      .lede { font-size: 1.12rem; max-width: none; }
+      .rail { padding-inline: max(16px, calc((100vw - 1080px) / 2)); scroll-padding-inline: max(16px, calc((100vw - 1080px) / 2)); }
+      .phone-card { flex-basis: 272px; }
+      .topics { grid-template-columns: repeat(3, 1fr); }
+      .cta { font-size: 1.08rem; min-width: 280px; padding: .95rem 1.75rem; }
     }
     @media (min-width: 1100px) {
-      :root { --shift: 210px; --shot-w: 300px; }
-      .wrap { width: min(780px, 100%); }
-      .stage { height: 360px; }
+      .phone-card { flex-basis: 300px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .usp-track { animation: none; }
+      .rail { scroll-behavior: auto; }
     }
   </style>
 </head>
 <body>
-  <main class="wrap">
+  <main>
+  <header class="hero">
     <div class="lockup">
       <img class="mark" src="/logo-saturn.png" width="1024" height="1024" alt="" aria-hidden="true" />
-      <h1><span class="p">PLANETA</span><span class="r">RULETA</span></h1>
+      <p class="wordmark"><span class="p">PLANETA</span><span class="r">RULETA</span></p>
     </div>
-    <p class="motto">El mundo de los casinos, sin vueltas.</p>
-    <div class="stage"><div class="rack" id="rack">
-        <article class="shot">
-          <div class="phone">
-            <div class="tgbar">
-              <span class="av">PR</span>
-              <div class="who">
-                <strong>Planeta Ruleta</strong>
-                <em>canal</em>
-              </div>
-            </div>
-            <div class="bubble">
-              <p class="ttl">.bet.ar</p>
-              <p>Así terminan los sitios legales de apuestas en la Provincia de Buenos Aires.</p>
-              <span class="meta">IPLyC · 3 sep 2026 <i>14:02</i></span>
-            </div>
+    <h1>El mundo de los casinos, <em>sin vueltas</em>.</h1>
+    <p class="lede">Comunidad e inteligencia de casinos en Argentina.</p>
+    <p class="badge">+18 · No somos un casino</p>
+  </header>
+
+  <div class="rail-wrap">
+    <div class="rail" id="rail" tabindex="0" role="region" aria-label="Ejemplos del canal. Deslizá para ver más.">
+      <article class="phone-card">
+        <div class="phone">
+          <div class="tgbar">
+            <span class="av">PR</span>
+            <div class="who"><strong>Planeta Ruleta</strong><em>canal</em></div>
           </div>
-        </article>
-        <article class="shot">
-          <div class="phone">
-            <div class="tgbar">
-              <span class="av">PR</span>
-              <div class="who">
-                <strong>Planeta Ruleta</strong>
-                <em>canal</em>
-              </div>
-            </div>
-            <div class="bubble">
-              <p class="ttl">7 licencias</p>
-              <p>PBA autorizó siete licencias de juego online (ley 15.079).</p>
-              <span class="meta">IPLyC · 3 sep 2026 <i>14:05</i></span>
-            </div>
+          <div class="bubble">
+            <p class="ttl">.bet.ar</p>
+            <p>Así terminan los sitios legales de apuestas en la Provincia de Buenos Aires.</p>
+            <span class="meta">IPLyC · ejemplo</span>
           </div>
-        </article>
-        <article class="shot">
-          <div class="phone">
-            <div class="tgbar">
-              <span class="av">PR</span>
-              <div class="who">
-                <strong>Planeta Ruleta</strong>
-                <em>canal</em>
-              </div>
-            </div>
-            <div class="bubble">
-              <p class="ttl">Solo +18</p>
-              <p>Toda apuesta de azar está prohibida para menores en PBA.</p>
-              <span class="meta">IPLyC · 3 sep 2026 <i>14:08</i></span>
-            </div>
+        </div>
+      </article>
+      <article class="phone-card">
+        <div class="phone">
+          <div class="tgbar">
+            <span class="av">PR</span>
+            <div class="who"><strong>Planeta Ruleta</strong><em>canal</em></div>
           </div>
-        </article>
-    </div></div>
+          <div class="bubble">
+            <p class="ttl">7 licencias</p>
+            <p>PBA autorizó siete licencias de juego online (ley 15.079).</p>
+            <span class="meta">IPLyC · ejemplo</span>
+          </div>
+        </div>
+      </article>
+      <article class="phone-card">
+        <div class="phone">
+          <div class="tgbar">
+            <span class="av">PR</span>
+            <div class="who"><strong>Planeta Ruleta</strong><em>canal</em></div>
+          </div>
+          <div class="bubble">
+            <p class="ttl">+18</p>
+            <p>Toda apuesta de azar está prohibida para menores en PBA.</p>
+            <span class="meta">IPLyC · ejemplo</span>
+          </div>
+        </div>
+      </article>
+      <article class="phone-card">
+        <div class="phone">
+          <div class="tgbar">
+            <span class="av">PR</span>
+            <div class="who"><strong>Planeta Ruleta</strong><em>canal</em></div>
+          </div>
+          <div class="bubble">
+            <p class="ttl">CABA ≠ PBA</p>
+            <p>Misma marca, otra cuenta. Bonos no viajan entre skins.</p>
+            <span class="meta">Intel · ejemplo</span>
+          </div>
+        </div>
+      </article>
+      <article class="phone-card">
+        <div class="phone">
+          <div class="tgbar">
+            <span class="av">PR</span>
+            <div class="who"><strong>Planeta Ruleta</strong><em>canal</em></div>
+          </div>
+          <div class="bubble">
+            <p class="ttl">Rollover</p>
+            <p>El bono se lee en las T&amp;Cs: multiplicador, juegos que aportan, ventana.</p>
+            <span class="meta">Bonos · ejemplo</span>
+          </div>
+        </div>
+      </article>
+      <article class="phone-card">
+        <div class="phone">
+          <div class="tgbar">
+            <span class="av">PR</span>
+            <div class="who"><strong>Planeta Ruleta</strong><em>canal</em></div>
+          </div>
+          <div class="bubble">
+            <p class="ttl">Retiros</p>
+            <p>Tiempos, KYC y Mercado Pago: lo que dice el sitio vs lo que reporta la comunidad.</p>
+            <span class="meta">Comunidad · ejemplo</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="usp" aria-label="Temas del canal">
+    <div class="usp-track">
+      <ul class="usp-list">
+        <li>Jackpots del día</li>
+        <li>Reseñas honestas</li>
+        <li>Bonos explicados</li>
+        <li>Reportes de retiros</li>
+        <li>Análisis de juegos</li>
+        <li>Skins y jurisdicciones</li>
+        <li>Alertas de comunidad</li>
+        <li>Encontrá más en el canal</li>
+      </ul>
+      <ul class="usp-list" aria-hidden="true">
+        <li>Jackpots del día</li>
+        <li>Reseñas honestas</li>
+        <li>Bonos explicados</li>
+        <li>Reportes de retiros</li>
+        <li>Análisis de juegos</li>
+        <li>Skins y jurisdicciones</li>
+        <li>Alertas de comunidad</li>
+        <li>Encontrá más en el canal</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cta-band">
     <a class="cta" href="https://t.me/planetaruleta" target="_blank" rel="noopener">Sumate al canal</a>
-    <p class="foot">planetaruleta.com · Argentina · +18<br />
-      <a href="/sobre/" style="color:inherit;text-decoration:none;opacity:.9">Sobre</a>
-      ·
-      <a href="/faq/" style="color:inherit;text-decoration:none;opacity:.9">FAQ</a><br />
-      Planeta Ruleta © <span data-year></span>
-    </p>
+  </div>
+
+  <section class="below">
+    <h2>Qué vas a encontrar</h2>
+    <div class="topics">
+      <article class="topic">
+        <span class="kicker">Intel</span>
+        <h3>Operadores, skins, jurisdicciones</h3>
+        <p>Dominios .bet.ar, CABA vs PBA y qué cambia cuando la misma marca usa otra cuenta.</p>
+      </article>
+      <article class="topic">
+        <span class="kicker">Bonos</span>
+        <h3>Condiciones, no el slogan</h3>
+        <p>Rollover, límites y ventanas — con fecha y fuente. Sin inflar el banner.</p>
+      </article>
+      <article class="topic">
+        <span class="kicker">Comunidad</span>
+        <h3>Alertas y reportes</h3>
+        <p>Retiros, fricción y lo que se dice en el canal, etiquetado: no es un hecho cerrado.</p>
+      </article>
+    </div>
+    <a class="how-link" href="/como-funciona/">
+      <span class="kicker">Cómo funciona</span>
+      <strong>Qué publicamos y cómo lo evaluamos</strong>
+      <p>OFICIAL, COMUNIDAD y EDITORIAL van separados. Sin fuente, no se publica como dato.</p>
+      <span class="more">Leer cómo funciona →</span>
+    </a>
+    <div class="cta-bottom">
+      <a class="cta" href="https://t.me/planetaruleta" target="_blank" rel="noopener">Sumate al canal</a>
+    </div>
+  </section>
   </main>
+
+  <footer class="foot">
+    planetaruleta.com · Argentina · +18<br />
+    <a href="/como-funciona/">Cómo funciona</a>
+    ·
+    <a href="/sobre/">Sobre</a>
+    ·
+    <a href="/faq/">FAQ</a><br />
+    Planeta Ruleta © <span data-year></span>
+  </footer>
+
   <script>
     (() => {
       const year = new Date().getFullYear();
       document.querySelectorAll("[data-year]").forEach((el) => { el.textContent = String(year); });
+
+      const rail = document.getElementById("rail");
+      if (!rail) return;
+      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      let paused = false;
+      let timer = 0;
+      const gap = () => parseFloat(getComputedStyle(rail).columnGap || getComputedStyle(rail).gap) || 14;
+      const cardStep = () => {
+        const card = rail.querySelector(".phone-card");
+        return card ? card.getBoundingClientRect().width + gap() : 264;
+      };
+      const tick = () => {
+        if (paused || reduce) return;
+        const max = rail.scrollWidth - rail.clientWidth;
+        if (max <= 4) return;
+        if (rail.scrollLeft >= max - 8) {
+          rail.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          rail.scrollBy({ left: cardStep(), behavior: "smooth" });
+        }
+      };
+      const start = () => {
+        if (reduce) return;
+        window.clearInterval(timer);
+        timer = window.setInterval(tick, 4200);
+      };
+      window.setTimeout(start, 5200);
+      const pause = () => { paused = true; };
+      const resume = () => { paused = false; };
+      rail.addEventListener("pointerenter", pause);
+      rail.addEventListener("pointerleave", resume);
+      rail.addEventListener("focusin", pause);
+      rail.addEventListener("focusout", resume);
+      rail.addEventListener("pointerdown", pause);
     })();
-    const cards = [...document.querySelectorAll(".shot")];
-    let active = 0;
-    function layout() {
-      cards.forEach((el, i) => {
-        let d = i - active;
-        if (d > 1) d -= cards.length;
-        if (d < -1) d += cards.length;
-        el.dataset.pos = String(d);
-      });
-    }
-    cards.forEach((el, i) => el.addEventListener("click", () => { active = i; layout(); }));
-    layout();
   </script>
 </body>
 </html>
