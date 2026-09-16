@@ -6,16 +6,13 @@ Public pages: `/`, `/sobre/`, `/faq/`, `/como-funciona/`. Canonical host is **ww
 
 ## Analytics (GA4) — for Aviv
 
-1. In [Google Analytics](https://analytics.google.com/), create a GA4 property (or reuse one) and a **Web** data stream for `https://www.planetaruleta.com`.
-2. Copy the **Measurement ID** (`G-…`).
-3. Paste it in [`js/config.js`](js/config.js):
+Measurement ID is set in [`js/config.js`](js/config.js):
 
-   ```js
-   window.PR_GA_MEASUREMENT_ID = "G-XXXXXXXXXX"; // your real ID
-   ```
+```js
+window.PR_GA_MEASUREMENT_ID = "G-VMKXD8779P";
+```
 
-4. Merge this change so GitHub Pages deploys. Until the ID is a real `G-` value (not empty / `G-XXXXXXXXXX`), **gtag.js is not loaded** — no broken requests.
-5. Confirm in GA4 **Reports → Realtime** (open the site, then click **Sumate al canal**). You should see `page_view` and `cta_telegram_click`.
+Merge so GitHub Pages deploys. **gtag.js** loads with that ID (empty / `G-XXXXXXXXXX` would skip loading). Confirm in GA4 **Reports → Realtime** (open the site, then click **Sumate al canal**). You should see `page_view` and `cta_telegram_click`.
 
 Events we send (nothing else):
 
