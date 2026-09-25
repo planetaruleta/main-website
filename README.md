@@ -4,7 +4,7 @@
 
 Static GitHub Pages site for [www.planetaruleta.com](https://www.planetaruleta.com/). Media and community, not a casino. Primary conversion is Telegram ([t.me/planetaruleta](https://t.me/planetaruleta)); the site supports the channel and does not replace it.
 
-Public pages: `/`, `/sobre/`, `/faq/`, `/como-funciona/`. Canonical host is **www**. The homepage is the Copper Desk editorial fill from the 2026-09-24 intel pack (masthead, R-01 hero, señales, mesa, cita, banda de Telegram). Operator sheets are not in this pass: every mesa row has `sheet_ready=false`, so names are not links.
+Public pages: `/`, `/sobre/`, `/faq/`, `/como-funciona/`. Canonical host is **www**. The homepage is the Copper Desk pattern in Ocean slate: wordmark masthead, R-01 hero, señales, an empty offshore mesa, pull quote, Telegram band. Product frame is LatAm crypto/offshore, not a provincial license desk. The mesa has no operator rows until there is a source. Primary CTA label is **Entrar a Telegram**.
 
 ## Preview local
 
@@ -34,7 +34,7 @@ Measurement ID is set in [`js/config.js`](js/config.js):
 window.PR_GA_MEASUREMENT_ID = "G-VMKXD8779P";
 ```
 
-**gtag.js** loads with that ID (empty / `G-XXXXXXXXXX` would skip loading). Confirm in GA4 **Reports → Realtime** (open the site, then click **Sumate al canal**). You should see `page_view` and `cta_telegram_click`.
+**gtag.js** loads with that ID (empty / `G-XXXXXXXXXX` would skip loading). Confirm in GA4 **Reports → Realtime** (open the site, then click **Entrar a Telegram**). You should see `page_view` and `cta_telegram_click`.
 
 Events we send (nothing else):
 
