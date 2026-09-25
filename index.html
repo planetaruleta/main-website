@@ -478,32 +478,6 @@
       font-size: .82rem;
     }
     .legend span { display: inline-flex; align-items: center; gap: .4rem; }
-    .src-list {
-      list-style: none;
-      margin: 1.35rem 0 0;
-      padding: 1rem 0 0;
-      border-top: 1px solid var(--line);
-    }
-    .src-list li {
-      display: grid;
-      grid-template-columns: 6.2rem 1fr;
-      gap: .35rem 1rem;
-      padding: .45rem 0;
-      font-size: .84rem;
-      color: var(--dim);
-    }
-    .src-list strong {
-      font-family: var(--serif);
-      font-weight: 600;
-      color: var(--cream);
-      font-size: 1rem;
-    }
-    .src-list time {
-      font-family: var(--mono);
-      font-size: .68rem;
-      letter-spacing: .06em;
-      color: var(--copper-2);
-    }
 
     .pull-sec { padding: clamp(3rem, 8vw, 6.2rem) 0 clamp(2.5rem, 6vw, 4.5rem); }
     .pull { margin: 0; max-width: 16em; }
@@ -587,7 +561,6 @@
 
     @media (min-width: 720px) {
       .timeline li { grid-template-columns: 6.2rem minmax(0, 62ch); column-gap: 1.4rem; }
-      .src-list li { grid-template-columns: 7rem 1fr; align-items: baseline; }
       .lead-body { max-width: 62ch; }
       .pull { margin-left: clamp(0rem, 10vw, 7.5rem); }
     }
@@ -756,6 +729,7 @@
           Columns: Operador, KYC, Bono, Métodos. One month line above the table; no per-row dates.
           Do not render retiro or jurisdiccion / Ámbito. Licence diligence stays in the JSON.
           Métodos cells are the class only — no coin list.
+          Operator fuentes stay in the JSON for editors. Do not render a source list under the mesa.
         -->
         <div class="mesa-scroll">
           <table>
@@ -806,20 +780,6 @@
           <span>No es una puntuación.</span>
         </p>
         <p class="mesa-aside"><strong>Shuffle.</strong> Sin bases FTD publicadas. La celda no completa un rollover.</p>
-        <ul class="src-list">
-          <li>
-            <strong>Rainbet</strong>
-            <span><a href="https://rainbet.com/" target="_blank" rel="noopener">rainbet.com</a> · <a href="https://rainbet.com/" target="_blank" rel="noopener">FAQ</a> · <a href="https://rainbet.com/terms" target="_blank" rel="noopener">Terms</a> · <a href="https://rainbet.com/aml" target="_blank" rel="noopener">AML</a></span>
-          </li>
-          <li>
-            <strong>Shuffle</strong>
-            <span><a href="https://shuffle.com/" target="_blank" rel="noopener">shuffle.com</a> · <a href="https://shuffle.com/info/license" target="_blank" rel="noopener">Licencia</a> · <a href="https://shuffle.com/info/terms" target="_blank" rel="noopener">Terms</a></span>
-          </li>
-          <li>
-            <strong>Stake</strong>
-            <span><a href="https://stake.com/" target="_blank" rel="noopener">stake.com</a> · <a href="https://help.stake.com/en/articles/5091165-crypto-how-to-make-a-withdrawal" target="_blank" rel="noopener">Crypto</a> · <a href="https://help.stake.com/en/articles/8226254-is-there-a-wager-requirement-for-local-currencies" target="_blank" rel="noopener">Fiat</a> · <a href="https://help.stake.com/en/articles/5886574-proof-of-identity-acceptable-documentation" target="_blank" rel="noopener">KYC</a></span>
-          </li>
-        </ul>
       </div>
     </section>
 
