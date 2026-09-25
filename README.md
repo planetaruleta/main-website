@@ -4,7 +4,7 @@
 
 Static GitHub Pages site for [www.planetaruleta.com](https://www.planetaruleta.com/). Media and community, not a casino. Primary conversion is Telegram ([t.me/planetaruleta](https://t.me/planetaruleta)); the site supports the channel and does not replace it.
 
-Public pages: `/`, `/sobre/`, `/faq/`, `/como-funciona/`. Canonical host is **www**. The homepage is the Copper Desk pattern in Ocean slate: wordmark masthead, a large spinning R-01 hero, señales, an empty mesa, pull quote, Telegram band. The mesa has no operator rows until there is a source. Primary CTA label is **Sumate al canal**. Age language stays in the legal footer. The hero wheel stays upright: the chassis does not tumble, and `prefers-reduced-motion` leaves it still.
+Public pages: `/`, `/sobre/`, `/faq/`, `/como-funciona/`. Canonical host is **www**. The homepage is the Copper Desk pattern in Ocean slate: wordmark masthead, a still R-01 hero, señales, an empty mesa, pull quote, Telegram band. The mesa has no operator rows until there is a source. Primary CTA label is **Sumate al canal**. Age language stays in the legal footer. The hero wheel is a still image until Creative ships real layered assets.
 
 ## Preview local
 
