@@ -1,8 +1,30 @@
 # Planeta Ruleta — main website
 
-Static GitHub Pages site for [www.planetaruleta.com](https://www.planetaruleta.com/). Media/community (not a casino). Primary conversion is Telegram.
+**OFFLINE / noindex until Aviv explicit go-live.** Do not remove `noindex,nofollow`. Do not request indexing. Do not change DNS or GitHub Pages settings to promote the site.
 
-Public pages: `/`, `/sobre/`, `/faq/`, `/como-funciona/`. Canonical host is **www**.
+Static GitHub Pages site for [www.planetaruleta.com](https://www.planetaruleta.com/). Media and community, not a casino. Primary conversion is Telegram ([t.me/planetaruleta](https://t.me/planetaruleta)); the site supports the channel and does not replace it.
+
+Public pages: `/`, `/sobre/`, `/faq/`, `/como-funciona/`. Canonical host is **www**. The homepage is the Copper Desk editorial fill from the 2026-09-24 intel pack (masthead, R-01 hero, señales, mesa, cita, banda de Telegram). Operator sheets are not in this pass: every mesa row has `sheet_ready=false`, so names are not links.
+
+## Preview local
+
+From the repo root:
+
+```bash
+python3 -m http.server 8080
+```
+
+Open `http://127.0.0.1:8080/`. Inner pages: `/sobre/`, `/faq/`, `/como-funciona/`.
+
+Confirm the raw HTML of each public page still contains:
+
+```html
+<meta name="robots" content="noindex,nofollow" />
+```
+
+## Crawl (dark)
+
+`robots.txt` still allows fetch and still points at `sitemap.xml`. That is deliberate: a crawler has to be able to read the page to honor `noindex`. It is not a go-live. Leave the Search Console verification file in place. **Do not** submit the sitemap as a launch, and **do not** use URL inspection → Request indexing, until Aviv says the site can be indexed.
 
 ## Analytics (GA4) — for Aviv
 
@@ -12,14 +34,14 @@ Measurement ID is set in [`js/config.js`](js/config.js):
 window.PR_GA_MEASUREMENT_ID = "G-VMKXD8779P";
 ```
 
-Merge so GitHub Pages deploys. **gtag.js** loads with that ID (empty / `G-XXXXXXXXXX` would skip loading). Confirm in GA4 **Reports → Realtime** (open the site, then click **Sumate al canal**). You should see `page_view` and `cta_telegram_click`.
+**gtag.js** loads with that ID (empty / `G-XXXXXXXXXX` would skip loading). Confirm in GA4 **Reports → Realtime** (open the site, then click **Sumate al canal**). You should see `page_view` and `cta_telegram_click`.
 
 Events we send (nothing else):
 
 | Event | When | Params |
 | --- | --- | --- |
 | `page_view` | automatic from gtag | standard |
-| `cta_telegram_click` | click on Telegram / join CTAs | `cta_location` (`hero`, `bottom`, `nav`, `contact`, `faq`), `link_url` |
+| `cta_telegram_click` | click on Telegram / join CTAs | `cta_location` (`hero`, `band`, `nav`, `footer`, `bottom`, `contact`, `faq`), `link_url` |
 
 To use those params in standard reports: **Admin → Custom definitions → Create custom dimension** (event-scoped) for `cta_location` and, if you want it, `link_url`.
 
@@ -29,21 +51,4 @@ No ads pixels, no user IDs, no PII in events.
 
 ## Google Search Console
 
-1. Add the **www** property: `https://www.planetaruleta.com/` ([Search Console](https://search.google.com/search-console)).
-2. Verify with any one method:
-
-   | Method | What to do |
-   | --- | --- |
-   | **HTML file** (simplest on GitHub Pages) | Download Google’s `google*.html` file, commit it at the **repo root**, merge, then click Verify. |
-   | **HTML tag** | Paste the `content` token into `window.PR_GOOGLE_SITE_VERIFICATION` in [`js/config.js`](js/config.js). Empty = the meta tag is omitted. Google’s verifier often reads raw HTML and may **not** run JS — if the tag method fails, use the HTML file or DNS. You can also paste the meta tag into each page `<head>`. |
-   | **DNS TXT** | Add the TXT record Google shows at your domain DNS (covers www and apex if you use a Domain property). |
-
-3. After verification: **Sitemaps → Add** `https://www.planetaruleta.com/sitemap.xml`.
-4. Request indexing for the homepage if you want it in sooner (**URL inspection → Request indexing**).
-
-`robots.txt` allows crawl (`Allow: /`) and points at that sitemap. Public pages have **no** `noindex` meta.
-
-## Crawl files
-
-- [`robots.txt`](robots.txt) — allow all, sitemap URL
-- [`sitemap.xml`](sitemap.xml) — the four live public paths, absolute `https://www.planetaruleta.com/` URLs
+Verification can stay (HTML file at the repo root, and the token in [`js/config.js`](js/config.js)). Do not treat a verified property as permission to index. The pages send `noindex,nofollow` until Aviv explicit go-live.

@@ -1,3 +1,8 @@
+# OFFLINE until Aviv explicit go-live.
+# Every public HTML page sends: meta name="robots" content="noindex,nofollow"
+# Fetch stays allowed so a crawler can read that tag and drop URLs.
+# Do not request indexing. Do not remove noindex without Aviv.
+
 User-agent: *
 Allow: /
 
