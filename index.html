@@ -370,7 +370,7 @@
       border-top: 1px solid var(--cream);
       -webkit-overflow-scrolling: touch;
     }
-    table { width: 100%; border-collapse: collapse; min-width: 36rem; }
+    table { width: 100%; border-collapse: collapse; min-width: 44rem; }
     .empty-row {
       font-family: var(--serif);
       font-style: italic;
@@ -747,13 +747,14 @@
         <h2 id="mesa-title">Lo que la mesa puede defender.</h2>
         <p class="mesa-note">Tres filas con fuente. No es un ranking y no abre un perfil: las fichas todavía no están.</p>
         <p class="mesa-fresh"><time datetime="2026-09">Actualizado · SEP 2026</time></p>
-        <p class="scroll-hint">Deslizá para ver KYC y bono</p>
+        <p class="scroll-hint">Deslizá para ver KYC, bono y métodos</p>
         <!--
           Offshore Wave 1 · content/intel/homepage-offshore-wave1-2026-09-25.json
           sheet_ready=false: no /casinos/[slug] pages. Operator names link to official_url only.
           Order: Rainbet, Shuffle, Stake.
-          Columns: Operador, KYC, Bono. One month line above the table; no per-row dates.
+          Columns: Operador, KYC, Bono, Métodos. One month line above the table; no per-row dates.
           Do not render retiro or jurisdiccion / Ámbito. Licence diligence stays in the JSON.
+          Métodos cells are the class only — no coin list.
         -->
         <div class="mesa-scroll">
           <table>
@@ -763,6 +764,7 @@
                 <th scope="col">Operador</th>
                 <th scope="col"><abbr title="Verificación de identidad">KYC</abbr></th>
                 <th scope="col">Bono</th>
+                <th scope="col"><abbr title="Métodos de pago">Métodos</abbr></th>
               </tr>
             </thead>
             <tbody>
@@ -773,6 +775,7 @@
                 </td>
                 <td><span class="datum"><i class="dot dot-warn" aria-hidden="true"></i><span>ID+selfie+PoA (Sumsub)</span></span></td>
                 <td><span class="datum"><i class="dot dot-warn" aria-hidden="true"></i><span>x40 · D+B (alt: no WR)</span></span></td>
+                <td><span class="datum"><i class="dot dot-pos" aria-hidden="true"></i><span>Crypto · fiat/cards</span></span></td>
               </tr>
               <tr>
                 <td>
@@ -781,6 +784,7 @@
                 </td>
                 <td><span class="datum"><i class="dot dot-warn" aria-hidden="true"></i><span>Niveles · ID antes 1er retiro</span></span></td>
                 <td><span class="datum"><i class="dot dot-unknown" aria-hidden="true"></i><span>Sin bases FTD publicadas</span></span></td>
+                <td><span class="datum"><i class="dot dot-pos" aria-hidden="true"></i><span>Crypto</span></span></td>
               </tr>
               <tr>
                 <td>
@@ -789,6 +793,7 @@
                 </td>
                 <td><span class="datum"><i class="dot dot-warn" aria-hidden="true"></i><span>ID foto (passport/ID/DL)</span></span></td>
                 <td><span class="datum"><i class="dot dot-pos" aria-hidden="true"></i><span>Rakeback 3.5% HE (welcome)</span></span></td>
+                <td><span class="datum"><i class="dot dot-pos" aria-hidden="true"></i><span>Crypto · fiat</span></span></td>
               </tr>
             </tbody>
           </table>
@@ -803,7 +808,7 @@
         <ul class="src-list">
           <li>
             <strong>Rainbet</strong>
-            <span><a href="https://rainbet.com/" target="_blank" rel="noopener">rainbet.com</a> · <a href="https://rainbet.com/terms" target="_blank" rel="noopener">Terms</a> · <a href="https://rainbet.com/aml" target="_blank" rel="noopener">AML</a></span>
+            <span><a href="https://rainbet.com/" target="_blank" rel="noopener">rainbet.com</a> · <a href="https://rainbet.com/" target="_blank" rel="noopener">FAQ</a> · <a href="https://rainbet.com/terms" target="_blank" rel="noopener">Terms</a> · <a href="https://rainbet.com/aml" target="_blank" rel="noopener">AML</a></span>
           </li>
           <li>
             <strong>Shuffle</strong>
@@ -811,7 +816,7 @@
           </li>
           <li>
             <strong>Stake</strong>
-            <span><a href="https://stake.com/" target="_blank" rel="noopener">stake.com</a> · <a href="https://help.stake.com/en/articles/5091363-how-to-get-my-welcome-offer" target="_blank" rel="noopener">Welcome</a> · <a href="https://help.stake.com/en/articles/5886574-proof-of-identity-acceptable-documentation" target="_blank" rel="noopener">KYC</a></span>
+            <span><a href="https://stake.com/" target="_blank" rel="noopener">stake.com</a> · <a href="https://help.stake.com/en/articles/5091165-crypto-how-to-make-a-withdrawal" target="_blank" rel="noopener">Crypto</a> · <a href="https://help.stake.com/en/articles/8226254-is-there-a-wager-requirement-for-local-currencies" target="_blank" rel="noopener">Fiat</a> · <a href="https://help.stake.com/en/articles/5886574-proof-of-identity-acceptable-documentation" target="_blank" rel="noopener">KYC</a></span>
           </li>
         </ul>
       </div>
