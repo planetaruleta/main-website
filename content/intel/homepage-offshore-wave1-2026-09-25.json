@@ -6,7 +6,7 @@
   "spine": "offshore Wave1",
   "note": "AR pack separate (homepage-pack-2026-09-24.json). Apps still PARKED — content coverage only. +18 desk; no play CTA framing. Links = official site URLs only (no affiliate/ref/partner/tracking).",
   "schema": "docs/briefs/homepage-content-schema-2026-09-24.md",
-  "schema_comment": "retiro deferred until we have real SLA/mesa data. retiro_label and retiro_tone stay on each operator for a later ship; do not render them in the homepage mesa.",
+  "schema_comment": "Homepage mesa columns: operador, kyc, bono. Freshness is one month line for the whole table (Actualizado · SEP 2026), not per-row dates. retiro deferred until we have real SLA/mesa data — retiro_label and retiro_tone stay on each operator; do not render them. jurisdiccion stays in JSON for licence diligence; do not render an Ámbito column or a CGA note in the table.",
   "operators_mesa": [
     {
       "slug": "rainbet",

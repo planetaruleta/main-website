@@ -370,7 +370,7 @@
       border-top: 1px solid var(--cream);
       -webkit-overflow-scrolling: touch;
     }
-    table { width: 100%; border-collapse: collapse; min-width: 860px; }
+    table { width: 100%; border-collapse: collapse; min-width: 36rem; }
     .empty-row {
       font-family: var(--serif);
       font-style: italic;
@@ -425,15 +425,12 @@
       text-decoration-color: color-mix(in srgb, var(--copper) 65%, transparent);
     }
     a.op:hover { color: var(--copper-2); }
-    .juris-note {
-      display: block;
-      margin-top: .35rem;
-      max-width: 14.5rem;
+    .mesa-fresh {
+      margin: 1.15rem 0 0;
       font-family: var(--mono);
-      font-size: .68rem;
-      line-height: 1.35;
-      letter-spacing: .01em;
-      color: var(--dim);
+      font-size: .72rem;
+      letter-spacing: .08em;
+      color: var(--copper-2);
     }
     .layer {
       display: block;
@@ -589,7 +586,7 @@
 
     @media (min-width: 720px) {
       .timeline li { grid-template-columns: 6.2rem minmax(0, 62ch); column-gap: 1.4rem; }
-      .src-list li { grid-template-columns: 7rem 6.5rem 1fr; align-items: baseline; }
+      .src-list li { grid-template-columns: 7rem 1fr; align-items: baseline; }
       .lead-body { max-width: 62ch; }
       .pull { margin-left: clamp(0rem, 10vw, 7.5rem); }
     }
@@ -749,24 +746,23 @@
         <p class="folio"><span>02</span> Datos en mesa</p>
         <h2 id="mesa-title">Lo que la mesa puede defender.</h2>
         <p class="mesa-note">Tres filas con fuente. No es un ranking y no abre un perfil: las fichas todavía no están.</p>
+        <p class="mesa-fresh"><time datetime="2026-09">Actualizado · SEP 2026</time></p>
         <p class="scroll-hint">Deslizá para ver KYC y bono</p>
         <!--
           Offshore Wave 1 · content/intel/homepage-offshore-wave1-2026-09-25.json
           sheet_ready=false: no /casinos/[slug] pages. Operator names link to official_url only.
           Order: Rainbet, Shuffle, Stake.
-          retiro deferred until we have real SLA/mesa data — do not render retiro_label / retiro_tone.
-          Columns: Operador, Ámbito, KYC, Bono, Actualizado (craft date; not an Estado of blanks).
+          Columns: Operador, KYC, Bono. One month line above the table; no per-row dates.
+          Do not render retiro or jurisdiccion / Ámbito. Licence diligence stays in the JSON.
         -->
         <div class="mesa-scroll">
           <table>
-            <caption>Cobertura 25 SEP 2026. El color marca el tono del dato, no una nota.</caption>
+            <caption>El color marca el tono del dato, no una nota.</caption>
             <thead>
               <tr>
                 <th scope="col">Operador</th>
-                <th scope="col">Ámbito</th>
                 <th scope="col"><abbr title="Verificación de identidad">KYC</abbr></th>
                 <th scope="col">Bono</th>
-                <th scope="col">Actualizado</th>
               </tr>
             </thead>
             <tbody>
@@ -775,33 +771,24 @@
                   <a class="op" href="https://rainbet.com/" target="_blank" rel="noopener">Rainbet</a>
                   <span class="layer">Declarado</span>
                 </td>
-                <td>Anjouan</td>
                 <td><span class="datum"><i class="dot dot-warn" aria-hidden="true"></i><span>ID+selfie+PoA (Sumsub)</span></span></td>
                 <td><span class="datum"><i class="dot dot-warn" aria-hidden="true"></i><span>x40 · D+B (alt: no WR)</span></span></td>
-                <td><time class="when" datetime="2026-09-25">25 SEP</time></td>
               </tr>
               <tr>
                 <td>
                   <a class="op" href="https://shuffle.com/" target="_blank" rel="noopener">Shuffle</a>
                   <span class="layer">Declarado</span>
                 </td>
-                <td>Curaçao GCB</td>
                 <td><span class="datum"><i class="dot dot-warn" aria-hidden="true"></i><span>Niveles · ID antes 1er retiro</span></span></td>
                 <td><span class="datum"><i class="dot dot-unknown" aria-hidden="true"></i><span>Sin bases FTD publicadas</span></span></td>
-                <td><time class="when" datetime="2026-09-25">25 SEP</time></td>
               </tr>
               <tr>
                 <td>
                   <a class="op" href="https://stake.com/" target="_blank" rel="noopener">Stake</a>
                   <span class="layer">Declarado</span>
                 </td>
-                <td>
-                  Curaçao-class
-                  <span class="juris-note">Vía certificado CGA; T&amp;Cs del sitio no leídos este fetch.</span>
-                </td>
                 <td><span class="datum"><i class="dot dot-warn" aria-hidden="true"></i><span>ID foto (passport/ID/DL)</span></span></td>
                 <td><span class="datum"><i class="dot dot-pos" aria-hidden="true"></i><span>Rakeback 3.5% HE (welcome)</span></span></td>
-                <td><time class="when" datetime="2026-09-25">25 SEP</time></td>
               </tr>
             </tbody>
           </table>
@@ -812,22 +799,18 @@
           <span><i class="dot dot-unknown" aria-hidden="true"></i> Sin dato</span>
           <span>No es una puntuación.</span>
         </p>
-        <p class="mesa-aside"><strong>Stake.</strong> El chip Curaçao-class es vía <a href="https://cert.cga.cw/certificate?id=ZXlKcGRpSTZJbkJtT0dKb04zWTRhbmc1VERsd1RXTTRRMjVHZDNjOVBTSXNJblpoYkhWbElqb2lSVEJwU2t0emJYSm9LMUkzYm04NVVqSkZRMnRxZHowOUlpd2liV0ZqSWpvaVpEWm1NV0kwT1dNeE9XVmpaVFkyTnpFd01HVmpPV1V4WmpWaU5qRm1NVEprWXpjd05tTTJaamczWkdNM1pHSXdaVEl6T1RFeVlUSXlOell6TnpJNVpTSXNJblJoWnlJNklpSjk%3D" target="_blank" rel="noopener">certificado CGA</a>. Las T&amp;Cs del sitio no se leyeron en este fetch: no es texto de pie de operador.</p>
         <p class="mesa-aside"><strong>Shuffle.</strong> Sin bases FTD publicadas. La celda no completa un rollover.</p>
         <ul class="src-list">
           <li>
             <strong>Rainbet</strong>
-            <time datetime="2026-09-25">25 SEP 2026</time>
             <span><a href="https://rainbet.com/" target="_blank" rel="noopener">rainbet.com</a> · <a href="https://rainbet.com/terms" target="_blank" rel="noopener">Terms</a> · <a href="https://rainbet.com/aml" target="_blank" rel="noopener">AML</a></span>
           </li>
           <li>
             <strong>Shuffle</strong>
-            <time datetime="2026-09-25">25 SEP 2026</time>
             <span><a href="https://shuffle.com/" target="_blank" rel="noopener">shuffle.com</a> · <a href="https://shuffle.com/info/license" target="_blank" rel="noopener">Licencia</a> · <a href="https://shuffle.com/info/terms" target="_blank" rel="noopener">Terms</a></span>
           </li>
           <li>
             <strong>Stake</strong>
-            <time datetime="2026-09-25">25 SEP 2026</time>
             <span><a href="https://stake.com/" target="_blank" rel="noopener">stake.com</a> · <a href="https://help.stake.com/en/articles/5091363-how-to-get-my-welcome-offer" target="_blank" rel="noopener">Welcome</a> · <a href="https://help.stake.com/en/articles/5886574-proof-of-identity-acceptable-documentation" target="_blank" rel="noopener">KYC</a></span>
           </li>
         </ul>
