@@ -1,6 +1,6 @@
 # Planeta Ruleta — main website
 
-**OFFLINE / noindex until Aviv explicit go-live.** Do not remove `noindex,nofollow`. Do not request indexing. Do not change DNS or GitHub Pages settings to promote the site.
+**Publicly indexable** as of 25 Sep 2026. Aviv authorized go-index after the first offshore juice (Rainbet + Stake) shipped. Public pages omit a robots meta tag. Do not add `noindex`.
 
 Static GitHub Pages site for [www.planetaruleta.com](https://www.planetaruleta.com/). Media and community, not a casino. Primary conversion is Telegram ([t.me/planetaruleta](https://t.me/planetaruleta)); the site supports the channel and does not replace it.
 
@@ -16,15 +16,11 @@ python3 -m http.server 8080
 
 Open `http://127.0.0.1:8080/`. Inner pages: `/sobre/`, `/faq/`, `/como-funciona/`.
 
-Confirm the raw HTML of each public page still contains:
+Confirm the raw HTML of each public page has no `name="robots"` meta (no `noindex`).
 
-```html
-<meta name="robots" content="noindex,nofollow" />
-```
+## Crawl
 
-## Crawl (dark)
-
-`robots.txt` still allows fetch and still points at `sitemap.xml`. That is deliberate: a crawler has to be able to read the page to honor `noindex`. It is not a go-live. Leave the Search Console verification file in place. **Do not** submit the sitemap as a launch, and **do not** use URL inspection → Request indexing, until Aviv says the site can be indexed.
+`robots.txt` allows fetch (`User-agent: *` / `Allow: /`) and points at `sitemap.xml`. Leave the Search Console verification file in place.
 
 ## Analytics (GA4) — for Aviv
 
@@ -51,4 +47,4 @@ No ads pixels, no user IDs, no PII in events.
 
 ## Google Search Console
 
-Verification can stay (HTML file at the repo root, and the token in [`js/config.js`](js/config.js)). Do not treat a verified property as permission to index. The pages send `noindex,nofollow` until Aviv explicit go-live.
+Verification can stay (HTML file at the repo root, and the token in [`js/config.js`](js/config.js)). Pages no longer send `noindex,nofollow`.
