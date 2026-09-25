@@ -4,7 +4,7 @@
 
 Static GitHub Pages site for [www.planetaruleta.com](https://www.planetaruleta.com/). Media and community, not a casino. Primary conversion is Telegram ([t.me/planetaruleta](https://t.me/planetaruleta)); the site supports the channel and does not replace it.
 
-Public pages: `/`, `/sobre/`, `/faq/`, `/como-funciona/`. Canonical host is **www**. The homepage is the Copper Desk pattern in Ocean slate: wordmark masthead, a still R-01 hero, señales, an empty mesa, pull quote, Telegram band. The mesa has no operator rows until there is a source. Primary CTA label is **Sumate al canal**. Age language stays in the legal footer. The hero wheel is a still image until Creative ships real layered assets.
+Public pages: `/`, `/sobre/`, `/faq/`, `/como-funciona/`. Canonical host is **www**. The homepage is the Copper Desk pattern in Ocean slate: wordmark masthead, a still R-01 hero, señales, the offshore Wave 1 mesa (Rainbet, Shuffle, Stake), pull quote, Telegram band. Those rows come from [`content/intel/homepage-offshore-wave1-2026-09-25.json`](content/intel/homepage-offshore-wave1-2026-09-25.json). `sheet_ready` is false: no `/casinos/` pages; operator names link only to the official site. The mesa shows Operador, KYC, Bono, and Métodos, with one line above the table: Actualizado · SEP 2026. Métodos cells are the payment class only (no coin list). Ámbito and Retiro stay in the JSON and are not table columns. Retiro is deferred until there is a real SLA. Primary CTA label is **Sumate al canal**. Age language stays in the legal footer. The hero wheel is a still image until Creative ships real layered assets.
 
 ## Preview local
 
