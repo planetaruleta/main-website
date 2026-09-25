@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <!-- OFFLINE: noindex,nofollow until Aviv explicit go-live. Do not remove. -->
   <meta name="robots" content="noindex,nofollow" />
-  <title>Planeta Ruleta — intel de casinos offshore</title>
-  <meta name="description" content="Inteligencia de casinos crypto y offshore para LatAm, y la comunidad en Telegram. +18. No somos un casino." />
+  <title>Planeta Ruleta — intel de casinos</title>
+  <meta name="description" content="Comunidad e inteligencia de casinos, en español. El día a día está en Telegram. No somos un casino." />
   <link rel="canonical" href="https://www.planetaruleta.com/" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
@@ -98,10 +98,10 @@
       width: min(var(--wide), calc(100% - 2 * var(--pad)));
       margin-inline: auto;
       min-height: 3.15rem;
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
       align-items: center;
-      gap: .35rem 1.15rem;
+      gap: .45rem .9rem;
       padding: max(.45rem, env(safe-area-inset-top)) 0 .45rem;
     }
     .brand {
@@ -122,7 +122,8 @@
     .mast nav {
       display: flex;
       flex-wrap: wrap;
-      gap: .15rem .85rem;
+      justify-content: flex-end;
+      gap: .2rem .75rem;
     }
     .mast nav a {
       color: var(--dim);
@@ -133,17 +134,8 @@
     }
     .mast nav a:hover { color: var(--cream); }
     .mast-end {
-      margin-left: auto;
       display: flex;
       align-items: center;
-      gap: .75rem;
-      font-size: .78rem;
-    }
-    .age {
-      font-family: var(--mono);
-      font-size: .68rem;
-      letter-spacing: .08em;
-      color: var(--copper-2);
     }
     .mast-tg {
       display: inline-flex;
@@ -171,8 +163,8 @@
     }
     .hero-object {
       order: -1;
-      justify-self: end;
-      width: min(74vw, 340px);
+      justify-self: center;
+      width: min(100%, 420px);
       aspect-ratio: 1;
       margin: 0;
       position: relative;
@@ -182,12 +174,12 @@
     }
     .hero-object img {
       display: block;
-      width: 72%;
+      width: 90%;
       height: auto;
       position: relative;
       z-index: 1;
-      transform-origin: 50.7% 53.1%;
-      animation: wheel-spin 50s linear infinite;
+      transform-origin: 50% 50%;
+      animation: wheel-spin 24s linear infinite;
     }
     @keyframes wheel-spin {
       to { transform: rotate(360deg); }
@@ -196,10 +188,10 @@
       content: "";
       position: absolute;
       z-index: 0;
-      left: 22%;
-      right: 22%;
-      bottom: 16%;
-      height: 10%;
+      left: 18%;
+      right: 18%;
+      bottom: 12%;
+      height: 12%;
       background: radial-gradient(ellipse at center, rgba(0,0,0,.5), rgba(0,0,0,0) 72%);
       pointer-events: none;
     }
@@ -234,6 +226,7 @@
       line-height: 1.45;
     }
     .hero-cta { margin: 1.45rem 0 0; }
+    .hero-cta .cta { width: 100%; }
     .ultima {
       display: grid;
       gap: .15rem .8rem;
@@ -596,14 +589,49 @@
     @media (min-width: 1040px) {
       .scroll-hint { display: none; }
     }
-    @media (min-width: 900px) {
-      .hero-grid {
-        grid-template-columns: minmax(0, 1.12fr) minmax(280px, .82fr);
-        gap: clamp(2rem, 5vw, 4.5rem);
+    @media (min-width: 780px) {
+      .mast-inner { display: flex; flex-wrap: wrap; }
+      .mast nav { margin-left: auto; justify-content: flex-end; }
+      .hero-cta .cta { width: auto; }
+      .hero-object { width: min(70vw, 520px); }
+    }
+    @media (max-width: 779px) {
+      .mast-inner {
+        grid-template-columns: minmax(0, 1fr) auto;
         align-items: center;
-        min-height: 32rem;
+        row-gap: .55rem;
       }
-      .hero-object { order: 0; width: min(100%, 500px); }
+      .brand { grid-column: 1; grid-row: 1; min-width: 0; }
+      .brand-name { font-size: 1.12rem; }
+      .mast-end { grid-column: 2; grid-row: 1; justify-self: end; }
+      .mast nav {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        justify-content: flex-start;
+        gap: .35rem .7rem;
+        padding-bottom: .15rem;
+      }
+      .hero { padding-top: 1.15rem; }
+      .hero-grid { gap: 1.85rem; justify-items: stretch; }
+      .hero-object { width: min(100%, 360px); }
+      .hero h1 { max-width: none; }
+      .tg-side .cta { width: 100%; }
+    }
+    @media (min-width: 900px) {
+      .hero-grid.wrap {
+        width: min(1280px, calc(100% - 2 * var(--pad)));
+      }
+      .hero-grid {
+        grid-template-columns: minmax(17rem, 24.5rem) minmax(22rem, 1fr);
+        gap: clamp(1.25rem, 2.8vw, 2.5rem);
+        align-items: center;
+        min-height: min(82vh, 48rem);
+      }
+      .hero-object {
+        order: 0;
+        width: min(100%, 740px);
+        justify-self: end;
+      }
       .tg-inner {
         grid-template-columns: minmax(0, 1.4fr) auto;
         align-items: end;
@@ -636,7 +664,6 @@
         <a href="/faq/">FAQ</a>
       </nav>
       <p class="mast-end">
-        <span class="age">+18</span>
         <a class="mast-tg" href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="nav">Entrar a Telegram</a>
       </p>
     </div>
@@ -646,9 +673,8 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Inteligencia crypto · LatAm offshore</p>
           <h1 id="hero-title">El mundo de los casinos, <em>sin vueltas</em>.</h1>
-          <p class="deck">Comunidad e intel de casinos crypto y offshore, en español. Esta mesa no inventa un bono ni un retiro. El día a día está en Telegram.</p>
+          <p class="deck">Comunidad e intel de casinos, en español. Esta mesa no inventa un bono ni un retiro. El día a día está en Telegram.</p>
           <p class="hero-cta"><a class="cta" href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="hero">Entrar a Telegram</a></p>
         </div>
         <figure class="hero-object">
@@ -661,11 +687,11 @@
       <div class="wrap">
         <p class="folio"><span>01</span> Señales</p>
         <h2 id="senales-title">Sin número hasta tener fuente.</h2>
-        <p class="key">No hay señal lead. La línea offshore se está armando. El jugo del día sale en Telegram, no en una fila inventada.</p>
+        <p class="key">No hay señal lead. La línea se está armando. El jugo del día sale en Telegram, no en una fila inventada.</p>
 
         <article class="lead" id="senal-lead">
           <div class="lead-body">
-            <p class="kicker">LatAm offshore · en armado</p>
+            <p class="kicker">Mesa · en armado</p>
             <h3>La mesa no publica un objeto que no puede defender.</h3>
             <p class="resumen">Cuando haya bases o una observación fechada, aparece acá. Mientras tanto no hay porcentaje, no hay rollover y no hay ventana de retiro.</p>
           </div>
@@ -676,7 +702,7 @@
             <time>Mesa</time>
             <div>
               <p class="kicker">Fuentes · en armado</p>
-              <h3>Cobertura offshore en construcción</h3>
+              <h3>Cobertura en construcción</h3>
               <p class="resumen">Esta página no lista casas con datos prestados. Sin fuente, no hay fila.</p>
             </div>
           </li>
@@ -697,7 +723,7 @@
       <div class="wrap">
         <p class="folio"><span>02</span> Datos en mesa</p>
         <h2 id="mesa-title">Cobertura en construcción.</h2>
-        <p class="mesa-note">Mesa de casinos crypto y offshore para LatAm. Cero filas: no hay operador con fuente lista. Vacío es mejor que un número inventado.</p>
+        <p class="mesa-note">Cero filas: no hay operador con fuente lista. Vacío es mejor que un número inventado.</p>
         <div class="mesa-scroll">
           <table>
             <caption>Estructura de la mesa, sin datos. Ninguna casa entra hasta tener fuente.</caption>
@@ -726,7 +752,7 @@
           <blockquote>
             <p>Sin fuente, no se publica como dato.</p>
           </blockquote>
-          <figcaption>Mesa LatAm offshore. +18. No somos un casino. No inventamos retiros, jackpots ni testimonios.</figcaption>
+          <figcaption>No inventamos retiros, jackpots ni testimonios.</figcaption>
         </figure>
       </div>
     </section>
@@ -737,7 +763,7 @@
       <div>
         <p class="folio"><span>03</span> Canal</p>
         <h2 id="tg-title">El sitio no reemplaza al canal.</h2>
-        <p>Alertas y la charla del día están en Telegram. Esta página es la mesa pública: offshore, en español, sin filas inventadas.</p>
+        <p>Alertas y la charla del día están en Telegram. Esta página es la mesa pública: en español, sin filas inventadas.</p>
       </div>
       <div class="tg-side">
         <a class="cta" href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="band">Entrar a Telegram</a>
@@ -755,7 +781,7 @@
         <a href="mailto:planetaruleta@protonmail.com">planetaruleta@protonmail.com</a>
         <a href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="footer">Telegram</a>
       </p>
-      <p class="foot-meta">planetaruleta.com · LatAm · Planeta Ruleta © <span data-year></span></p>
+      <p class="foot-meta">planetaruleta.com · Planeta Ruleta © <span data-year></span></p>
     </div>
   </footer>
   <script>
