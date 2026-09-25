@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <!-- OFFLINE: noindex,nofollow until Aviv explicit go-live. Do not remove. -->
+  <meta name="robots" content="noindex,nofollow" />
   <title>Cómo funciona — Planeta Ruleta</title>
   <meta name="description" content="Qué publicamos, cómo evaluamos (oficial, comunidad, editorial) y cómo contactarnos. +18. No somos un casino." />
   <link rel="canonical" href="https://www.planetaruleta.com/como-funciona/" />
@@ -18,14 +20,14 @@
   <script src="/js/analytics.js"></script>
   <style>
     :root {
-      --bg: #0D1B1C;
-      --bg2: #132627;
-      --card: #1A3232;
+      --bg: #0B1520;
+      --bg2: #121E2C;
+      --card: #1A2A3C;
       --cream: #DDD9CE;
-      --cream-dim: #929C9A;
+      --cream-dim: #8E9AAB;
       --copper: #B66F4A;
       --copper-2: #C47D56;
-      --ink: #0D1B1C;
+      --ink: #0B1520;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { -webkit-text-size-adjust: 100%; }
@@ -83,16 +85,6 @@
     }
     .nav-links a { color: var(--cream-dim); }
     .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--copper); }
-    .age {
-      display: inline-flex;
-      align-items: center;
-      border: 1px solid var(--copper);
-      color: var(--copper);
-      border-radius: 999px;
-      font-size: .68rem;
-      font-weight: 700;
-      padding: .18rem .55rem;
-    }
 
     .article {
       position: relative;
@@ -237,12 +229,12 @@
       text-decoration: none;
       font-weight: 700;
       font-size: 1rem;
-      padding: .8rem 1.45rem;
-      border-radius: 12px;
-      min-width: 188px;
-      box-shadow: 4px 5px 0 var(--copper);
+      line-height: 1;
+      padding: .85rem 1.15rem;
+      border-radius: 4px;
+      border: 1px solid var(--ink);
     }
-    .cta:hover, .cta:focus-visible { color: var(--ink); }
+    .cta:hover, .cta:focus-visible { color: var(--ink); background: #fff; }
     .cta:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
 
     .site-footer {
@@ -269,11 +261,10 @@
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Principal">
-      <a class="home-link" href="/">← Home</a>
+      <a class="home-link" href="/">← Inicio</a>
       <ul class="nav-links">
         <li><a href="/sobre/">Sobre</a></li>
         <li><a href="/faq/">FAQ</a></li>
-        <li><span class="age">+18</span></li>
       </ul>
     </nav>
   </header>
@@ -284,8 +275,8 @@
 
     <section class="panel">
       <span class="kicker">Qué somos</span>
-      <h2>Medio + comunidad de intel de casinos en Argentina</h2>
-      <p>No somos un casino. Reunimos información útil para jugadores que ya conocen el rubro — y una comunidad en Telegram para el día a día.</p>
+      <h2>Medio + comunidad de intel de casinos</h2>
+      <p>No somos un casino. Reunimos información en español, y la comunidad está en Telegram. Sin fuente, no hay fila.</p>
     </section>
 
     <section>
@@ -294,7 +285,7 @@
         <article class="type">
           <span class="kicker">Operadores &amp; skins</span>
           <h3>Dominios, jurisdicciones, productos</h3>
-          <p>Diferencias CABA / PBA / otras provincias; qué es .bet.ar vs otras URLs.</p>
+          <p>Dominio, producto y qué está dicho contra qué está visto. Sin fila hasta tener fuente.</p>
         </article>
         <article class="type">
           <span class="kicker">Bonos &amp; condiciones</span>
@@ -309,7 +300,7 @@
         <article class="type">
           <span class="kicker">Juegos &amp; proveedores</span>
           <h3>Lobby, volatilidad, redes de premios</h3>
-          <p>Qué está activo en skins AR cuando se puede verificar.</p>
+          <p>Qué se puede verificar en el lobby, con fecha. Si no se puede, no se publica.</p>
         </article>
       </div>
     </section>
@@ -317,7 +308,7 @@
     <section class="eval">
       <h2>Cómo evaluamos</h2>
       <ul class="eval-list">
-        <li><strong>OFICIAL</strong> — texto del operador, T&amp;Cs, pie de página, registro provincial.</li>
+        <li><strong>OFICIAL</strong> — texto del operador, T&amp;Cs, pie de página. Si no está escrito, no se inventa.</li>
         <li><strong>COMUNIDAD</strong> — reportes de jugadores; no se trata como hecho cerrado.</li>
         <li><strong>EDITORIAL</strong> — nuestra lectura / síntesis; opinable y fechada.</li>
         <li>No inventamos retiros, jackpots ni testimonios. Sin fuente, no se publica como dato.</li>
