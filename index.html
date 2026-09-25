@@ -170,19 +170,16 @@
       position: relative;
       display: grid;
       place-items: center;
-      overflow: hidden;
     }
-    .hero-object img {
+    .hero-object img,
+    .hero-object canvas {
+      grid-area: 1 / 1;
       display: block;
-      width: 90%;
-      height: auto;
-      position: relative;
-      z-index: 1;
-      transform-origin: 50% 50%;
-      animation: wheel-spin 24s linear infinite;
+      width: 100%;
+      height: 100%;
     }
-    @keyframes wheel-spin {
-      to { transform: rotate(360deg); }
+    .hero-object canvas {
+      pointer-events: none;
     }
     .hero-object::after {
       content: "";
@@ -190,9 +187,9 @@
       z-index: 0;
       left: 18%;
       right: 18%;
-      bottom: 12%;
-      height: 12%;
-      background: radial-gradient(ellipse at center, rgba(0,0,0,.5), rgba(0,0,0,0) 72%);
+      bottom: 8%;
+      height: 10%;
+      background: radial-gradient(ellipse at center, rgba(0,0,0,.45), rgba(0,0,0,0) 72%);
       pointer-events: none;
     }
     .eyebrow {
@@ -596,25 +593,36 @@
       .hero-object { width: min(70vw, 520px); }
     }
     @media (max-width: 779px) {
+      :root { --pad: 1.2rem; }
       .mast-inner {
         grid-template-columns: minmax(0, 1fr) auto;
         align-items: center;
-        row-gap: .55rem;
+        column-gap: .65rem;
+        row-gap: .7rem;
+        padding-top: .7rem;
+        padding-bottom: .6rem;
       }
-      .brand { grid-column: 1; grid-row: 1; min-width: 0; }
-      .brand-name { font-size: 1.12rem; }
+      .brand { grid-column: 1; grid-row: 1; min-width: 0; margin-right: 0; }
+      .brand-name { font-size: 1.18rem; }
       .mast-end { grid-column: 2; grid-row: 1; justify-self: end; }
+      .mast-tg { font-size: .72rem; padding: .5rem .62rem; }
       .mast nav {
         grid-column: 1 / -1;
         grid-row: 2;
         justify-content: flex-start;
-        gap: .35rem .7rem;
-        padding-bottom: .15rem;
+        gap: .4rem .85rem;
+        padding-bottom: .1rem;
       }
-      .hero { padding-top: 1.15rem; }
-      .hero-grid { gap: 1.85rem; justify-items: stretch; }
-      .hero-object { width: min(100%, 360px); }
-      .hero h1 { max-width: none; }
+      .mast nav a { font-size: .8rem; }
+      .hero { padding: 1.35rem 0 1.75rem; }
+      .hero-grid { gap: 1.65rem; justify-items: stretch; }
+      .hero-object { width: min(86%, 320px); }
+      .hero h1 {
+        max-width: 11ch;
+        font-size: clamp(2.35rem, 10.5vw, 2.85rem);
+      }
+      .deck { margin-top: .95rem; font-size: 1rem; }
+      .hero-cta { margin-top: 1.2rem; }
       .tg-side .cta { width: 100%; }
     }
     @media (min-width: 900px) {
@@ -644,7 +652,7 @@
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
-      .hero-object img { animation: none; }
+      .hero-object canvas { display: none; }
     }
     @media (prefers-reduced-transparency: reduce) {
       .mast { backdrop-filter: none; background: var(--bg); }
@@ -664,7 +672,7 @@
         <a href="/faq/">FAQ</a>
       </nav>
       <p class="mast-end">
-        <a class="mast-tg" href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="nav">Entrar a Telegram</a>
+        <a class="mast-tg" href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="nav">Sumate al canal</a>
       </p>
     </div>
   </header>
@@ -675,10 +683,11 @@
         <div class="hero-copy">
           <h1 id="hero-title">El mundo de los casinos, <em>sin vueltas</em>.</h1>
           <p class="deck">Comunidad e intel de casinos, en español. Esta mesa no inventa un bono ni un retiro. El día a día está en Telegram.</p>
-          <p class="hero-cta"><a class="cta" href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="hero">Entrar a Telegram</a></p>
+          <p class="hero-cta"><a class="cta" href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="hero">Sumate al canal</a></p>
         </div>
         <figure class="hero-object">
-          <img src="/assets/r-01-cutout.png" width="1024" height="1024" alt="Ruleta de mesa, recorte sobre el fondo de la página" />
+          <img src="/assets/r-01-cutout.png" width="1024" height="1024" alt="Ruleta de mesa, de pie, sobre el fondo de la página" />
+          <canvas width="1024" height="1024" aria-hidden="true"></canvas>
         </figure>
       </div>
     </section>
@@ -712,7 +721,7 @@
               <p class="kicker">Telegram · en vivo</p>
               <h3>El jugo del día sale en el canal</h3>
               <p class="resumen">Alertas y la charla no esperan a la ficha. El sitio muestra la mesa; no la reemplaza.</p>
-              <p class="fuentes"><a href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="senales">Entrar a Telegram</a></p>
+              <p class="fuentes"><a href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="senales">Sumate al canal</a></p>
             </div>
           </li>
         </ol>
@@ -766,7 +775,7 @@
         <p>Alertas y la charla del día están en Telegram. Esta página es la mesa pública: en español, sin filas inventadas.</p>
       </div>
       <div class="tg-side">
-        <a class="cta" href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="band">Entrar a Telegram</a>
+        <a class="cta" href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="band">Sumate al canal</a>
       </div>
     </div>
   </section>
@@ -788,6 +797,154 @@
     (() => {
       const year = new Date().getFullYear();
       document.querySelectorAll("[data-year]").forEach((el) => { el.textContent = String(year); });
+    })();
+  </script>
+  <script>
+    (() => {
+      const still = document.querySelector(".hero-object img");
+      const canvas = document.querySelector(".hero-object canvas");
+      if (!still || !canvas) return;
+      const ctx = canvas.getContext("2d", { alpha: true });
+      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+      /* Inner cylinder in the source image. Chassis, rim, and the base stay on the still. */
+      const CX = 505, CY = 495, RX = 268, RY = 192, R = 420;
+      const TRACK = 1.15, POCKET = 0.68, CYCLE = 10;
+      let disk = null;
+      let raf = 0;
+
+      function buildDisk() {
+        const src = document.createElement("canvas");
+        src.width = 1024;
+        src.height = 1024;
+        src.getContext("2d").drawImage(still, 0, 0, 1024, 1024);
+        const data = src.getContext("2d").getImageData(0, 0, 1024, 1024).data;
+        const plate = document.createElement("canvas");
+        plate.width = plate.height = R * 2;
+        const out = plate.getContext("2d").createImageData(plate.width, plate.height);
+        const o = out.data;
+        for (let y = 0; y < plate.height; y++) {
+          const ny = (y - R) / R;
+          for (let x = 0; x < plate.width; x++) {
+            const nx = (x - R) / R;
+            const rad = Math.hypot(nx, ny);
+            if (rad > 1) continue;
+            const sx = CX + nx * RX;
+            const sy = CY + ny * RY;
+            const x0 = Math.max(0, Math.min(1022, Math.floor(sx)));
+            const y0 = Math.max(0, Math.min(1022, Math.floor(sy)));
+            const fx = sx - x0;
+            const fy = sy - y0;
+            const i00 = (y0 * 1024 + x0) * 4;
+            const i10 = i00 + 4;
+            const i01 = i00 + 1024 * 4;
+            const i11 = i01 + 4;
+            const oi = (y * plate.width + x) * 4;
+            const feather = rad > 0.93 ? Math.max(0, (1 - rad) / 0.07) : 1;
+            for (let k = 0; k < 3; k++) {
+              o[oi + k] = data[i00 + k] * (1 - fx) * (1 - fy)
+                + data[i10 + k] * fx * (1 - fy)
+                + data[i01 + k] * (1 - fx) * fy
+                + data[i11 + k] * fx * fy;
+            }
+            const a00 = data[i00 + 3], a10 = data[i10 + 3], a01 = data[i01 + 3], a11 = data[i11 + 3];
+            const aa = a00 * (1 - fx) * (1 - fy) + a10 * fx * (1 - fy) + a01 * (1 - fx) * fy + a11 * fx * fy;
+            o[oi + 3] = aa * feather;
+          }
+        }
+        plate.getContext("2d").putImageData(out, 0, 0);
+        disk = plate;
+      }
+
+      function pose(t) {
+        const u = ((t % CYCLE) + CYCLE) % CYCLE;
+        const spinT = Math.min(u / 7.2, 1);
+        const wheel = (1 - Math.pow(1 - spinT, 3)) * Math.PI * 1.55;
+        if (u < 5.1) {
+          const p = u / 5.1;
+          const be = 1 - Math.pow(1 - p, 2.15);
+          return { wheel, ballA: -be * Math.PI * 4.6, ballR: TRACK };
+        }
+        if (u < 6.5) {
+          const p = (u - 5.1) / 1.4;
+          const s = p * p * (3 - 2 * p);
+          const trackA = -Math.PI * 4.6;
+          const pocketA = wheel + 0.62;
+          return {
+            wheel,
+            ballA: trackA * (1 - s) + pocketA * s,
+            ballR: TRACK + (POCKET - TRACK) * s
+          };
+        }
+        return { wheel, ballA: wheel + 0.62, ballR: POCKET };
+      }
+
+      function draw(t) {
+        if (!disk) return;
+        const { wheel, ballA, ballR } = pose(t);
+        ctx.clearRect(0, 0, 1024, 1024);
+        ctx.save();
+        ctx.translate(CX, CY);
+        ctx.scale(RX / R, RY / R);
+        ctx.rotate(wheel);
+        ctx.drawImage(disk, -R, -R);
+        ctx.restore();
+
+        const bx = CX + Math.cos(ballA) * RX * ballR;
+        const by = CY + Math.sin(ballA) * RY * ballR;
+        const br = 26;
+        ctx.save();
+        ctx.translate(bx, by);
+        ctx.scale(1, RY / RX);
+        ctx.fillStyle = "rgba(8,6,5,.55)";
+        ctx.beginPath();
+        ctx.ellipse(0, br * 0.35, br * 0.7, br * 0.28, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(0, 0, br + 3, 0, Math.PI * 2);
+        ctx.fillStyle = "#1c140f";
+        ctx.fill();
+        const g = ctx.createRadialGradient(-7, -8, 2, 1, 1, br);
+        g.addColorStop(0, "#ffffff");
+        g.addColorStop(0.42, "#f7f1e7");
+        g.addColorStop(1, "#b7a898");
+        ctx.fillStyle = g;
+        ctx.beginPath();
+        ctx.arc(0, 0, br, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+
+      window.__drawRoulette = (t) => {
+        window.__rouletteTime = t;
+        if (reduce.matches) return;
+        if (!disk) buildDisk();
+        canvas.hidden = false;
+        draw(t);
+      };
+
+      function tick(now) {
+        const seek = window.__rouletteTime;
+        draw(seek == null ? (now - t0) / 1000 : seek);
+        if (seek == null && !reduce.matches) raf = requestAnimationFrame(tick);
+      }
+
+      let t0 = 0;
+      function start() {
+        cancelAnimationFrame(raf);
+        if (reduce.matches) {
+          canvas.hidden = true;
+          ctx.clearRect(0, 0, 1024, 1024);
+          return;
+        }
+        canvas.hidden = false;
+        if (!disk) buildDisk();
+        t0 = performance.now();
+        raf = requestAnimationFrame(tick);
+      }
+
+      reduce.addEventListener("change", start);
+      if (still.complete && still.naturalWidth) start();
+      else still.addEventListener("load", start, { once: true });
     })();
   </script>
 </body>
