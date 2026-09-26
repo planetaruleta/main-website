@@ -44,14 +44,14 @@
       "retiro_tone": "unknown",
       "kyc_label": "Niveles · ID antes 1er retiro",
       "kyc_tone": "warn",
-      "bono_label": "Sin bases FTD publicadas",
-      "bono_tone": "unknown",
+      "bono_label": "Rakeback 5% HE (Bronze)",
+      "bono_tone": "pos",
       "pagos_label": "Crypto · fiat/cards",
       "pagos_tone": "pos",
       "pagos_note": "Homepage body fetch https://shuffle.com/ (2026-09-25), not the page title alone: fiat deposits via credit card, Apple Pay, and Google Pay through payment partners, plus the crypto brand class. Terms discuss fiat withdrawals. Cell is the class only — no partner or coin list. Tone pos.",
       "actualizado": "2026-09-25",
       "official_url": "https://shuffle.com/",
-      "claim_notes": "Licencia stated /info/license + Terms + homepage: Natural Nine B.V. (160998), Korporaalweg 10 Willemstad, Curaçao Gaming Control Board / Authority OGL/2024/1337/0628. CGA cert Active (diligence mirror, not substitute for operator page). Retiro: Terms say fiat processing times ‘indicative only’; no crypto hours SLA → Sin dato. Help coin-mixing (28 Jul 2026): 1x deposit wager before withdraw. KYC: Terms require gov ID before first withdrawal; Help Account Verification tiers — email / basic info / gov ID (passport·ID·licence·residence) / PoA (bank/utility etc). FTD 100% help article 8407653 → HTTP 404 this wave; /info/deposit-bonus-terms SPA shell without WR math; help Promotions collection has no FTD bases → Sin bases FTD publicadas. Do not invent 35x.",
+      "claim_notes": "Licencia stated /info/license + Terms + homepage: Natural Nine B.V. (160998), Korporaalweg 10 Willemstad, Curaçao Gaming Control Board / Authority OGL/2024/1337/0628. CGA cert Active (diligence mirror, not substitute for operator page). Retiro: Terms say fiat processing times ‘indicative only’; no crypto hours SLA → Sin dato. Help coin-mixing (28 Jul 2026): 1x deposit wager before withdraw. KYC: Terms require gov ID before first withdrawal; Help Account Verification tiers — email / basic info / gov ID (passport·ID·licence·residence) / PoA (bank/utility etc). KYC stays on the mesa cell; it is not a homepage señal (juice replaces that timeline item). FTD 100% help article 8407653 → HTTP 404 this wave; /info/deposit-bonus-terms SPA shell without WR math; help Promotions collection has no FTD bases → FTD bases still unpublished. Do not invent 35x. Bono cell is NOT that FTD: help fetch 2026-09-25 states casino rakeback = 5% of house edge as cash on all casino games (slots, table, live dealer), not sports. Example stated: wager 1000 USDT at 2% HE → 1 USDT (1000×0.02×0.05=1). Unlock stated: wager total $1,000 → Bronze VIP → claim on the VIP page.",
       "claim_layer": "stated",
       "fuentes": [
         "https://shuffle.com/",
@@ -60,6 +60,9 @@
         "https://shuffle.com/info/aml",
         "https://help.shuffle.com/en/articles/6918878-account-verification",
         "https://help.shuffle.com/en/articles/6941286-coin-mixing",
+        "https://help.shuffle.com/en/articles/10020509-how-does-rakeback-work",
+        "https://help.shuffle.com/en/articles/10020510-how-do-i-earn-rakeback",
+        "https://help.shuffle.com/en/articles/10020506-what-is-rakeback",
         "https://cert.cga.cw/certificate?id=ZXlKcGRpSTZJazlqWkhKRk1ETnNlVWh1TUVGNlRVZGFjMUpLZDFFOVBTSXNJblpoYkhWbElqb2llbWQ1Y0ROUlRXeE5ZbFp1UzJWM1ZUTlJOelp2VVQwOUlpd2liV0ZqSWpvaVlqWm1NelJrWkRjeE9UWmtOakEwTURJMU9XRXlNVEJtWkdJMU1tTmtZalppWlRNeFpqSmxOMkZqTWpsbU5HSTJOVEprWXpVNVpXRXhPVE5oWWprMk55SXNJblJoWnlJNklpSjk%3D",
         "docs/drafts/offshore-intel-raw/wave1-2026-09-25/"
       ],
@@ -102,6 +105,29 @@
   "operators_paused": [],
   "senales_lead": [
     {
+      "id": "bono-shuffle-rakeback-5pct-he-2026-09-25",
+      "tipo": "bono",
+      "fecha": "2026-09-25",
+      "jurisdiccion": "offshore",
+      "operador_slug": "shuffle",
+      "operador_nombre": "Shuffle",
+      "titulo": "Shuffle rakeback ≠ match: 5% del house edge en casino",
+      "resumen": "Help OFICIAL (fetch 2026-09-25): rakeback de casino = 5% del house edge, en cash, en todos los juegos de casino (slots, mesa, live dealer). No aplica a sports. Ejemplo stated: wager 1000 USDT a 2% HE → 1 USDT de rakeback. Unlock: wager total $1,000 → Bronze VIP → claim en la página VIP.",
+      "numero_objeto": "5% · HE",
+      "claim_layer": "stated",
+      "fuentes": [
+        "https://help.shuffle.com/en/articles/10020509-how-does-rakeback-work",
+        "https://help.shuffle.com/en/articles/10020510-how-do-i-earn-rakeback",
+        "https://help.shuffle.com/en/articles/10020506-what-is-rakeback"
+      ],
+      "cta_label": "Leer señal",
+      "cta_href": null,
+      "homepage_role": "lead",
+      "status": "ready"
+    }
+  ],
+  "senales_timeline": [
+    {
       "id": "bono-rainbet-x40-dual-2026-09-25",
       "tipo": "bono",
       "fecha": "2026-09-25",
@@ -119,11 +145,9 @@
       ],
       "cta_label": "Leer señal",
       "cta_href": null,
-      "homepage_role": "lead",
+      "homepage_role": "timeline",
       "status": "ready"
-    }
-  ],
-  "senales_timeline": [
+    },
     {
       "id": "bono-stake-rakeback-welcome-2026-09-25",
       "tipo": "bono",
@@ -144,35 +168,14 @@
       "cta_href": null,
       "homepage_role": "timeline",
       "status": "ready"
-    },
-    {
-      "id": "kyc-shuffle-id-before-wd-2026-09-25",
-      "tipo": "kyc",
-      "fecha": "2026-09-25",
-      "jurisdiccion": "offshore",
-      "operador_slug": "shuffle",
-      "operador_nombre": "Shuffle",
-      "titulo": "Shuffle: documento de identidad antes del primer retiro (stated)",
-      "resumen": "Terms OFICIAL: pueden exigir chequeo contra pasaporte/DNI/licencia al cruzar umbral y ‘in any event before your first withdrawal’. Help Account Verification: niveles email → datos básicos → ID gobierno → PoA. Help coin-mixing (28 jul 2026): además, 1x del depósito antes de retirar. Sin horas de SLA de payout.",
-      "numero_objeto": null,
-      "claim_layer": "stated",
-      "fuentes": [
-        "https://shuffle.com/info/terms",
-        "https://help.shuffle.com/en/articles/6918878-account-verification",
-        "https://help.shuffle.com/en/articles/6941286-coin-mixing",
-        "docs/drafts/offshore-intel-raw/wave1-2026-09-25/"
-      ],
-      "cta_label": "Leer señal",
-      "cta_href": null,
-      "homepage_role": "timeline",
-      "status": "ready"
     }
   ],
   "senales_hold": [],
   "gaps": [
     "All three retiro timing = Sin dato (no official cashier/SLA hours; Rainbet homepage ‘5–15 min typically’ deliberately not promoted as SLA)",
     "Stake.com T&Cs/footer HTTP 403 — licence chip relies on CGA cert for stake.com + desk diligence; NEEDS_FETCH operator-stated footer when unblocked",
-    "Shuffle FTD WR math: help article 8407653 404; deposit-bonus-terms SPA empty — NEEDS_FETCH if promo returns",
+    "Shuffle FTD WR math: help article 8407653 404; deposit-bonus-terms SPA empty — NEEDS_FETCH if promo returns. Bono cell is stated casino rakeback (5% of house edge, Bronze at $1,000 wagered), not an FTD match",
+    "Shuffle KYC stays on the mesa cell (ID before first withdrawal). Homepage timeline item removed; the juice lead is rakeback, not KYC",
     "Rainbet entity string split: Terms/AML/footer Rain Group Ltd vs JSON-LD RBGAMING N.V. — Anjouan chip OK; do not invent single legal name for TG without counsel skim",
     "Anjouan validator URL timed out this wave — licence class still stated on rainbet.com Terms/AML",
     "sheet_ready=false all rows; apps PARKED; no AR operators in this pack"
