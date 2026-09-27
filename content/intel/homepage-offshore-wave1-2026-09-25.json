@@ -4,7 +4,7 @@
   "owner": "Casino Intel",
   "gate": "Peter QC",
   "spine": "offshore Wave1",
-  "note": "AR pack separate (homepage-pack-2026-09-24.json). Apps still PARKED — content coverage only. +18 desk; no play CTA framing. Links = official site URLs only (no affiliate/ref/partner/tracking).",
+  "note": "AR pack separate (homepage-pack-2026-09-24.json). Apps still PARKED — content coverage only. +18 desk; no play CTA framing. Links = official site URLs only (no affiliate/ref/partner/tracking). Lead señal 2026-09-26: Rainbet Daily Race (lobby, timed 24h, Peter QC PASS live-verified ~18:08 CST). Mesa bono Rainbet unchanged (welcome x40 · D+B alt no WR).",
   "schema": "docs/briefs/homepage-content-schema-2026-09-24.md",
   "schema_comment": "Homepage mesa columns: operador, kyc, bono, pagos (Métodos). Freshness is one month line for the whole table (Actualizado · SEP 2026), not per-row dates. retiro deferred until we have real SLA/mesa data — retiro_label and retiro_tone stay on each operator; do not render them. jurisdiccion stays in JSON for licence diligence; do not render an Ámbito column or a CGA note in the table. pagos cells are the method class only — do not render a coin list.",
   "operators_mesa": [
@@ -23,7 +23,7 @@
       "pagos_note": "Stated homepage FAQ on https://rainbet.com/ (“Which cryptocurrencies does Rainbet support?”): BTC, ETH, LTC, XRP, SOL, TRX, BNB, USDT, USDC, plus bank transfers, cards, and gift cards. Cell is the class, not the coin list. Tone pos (stated), not warn and not Sin dato.",
       "actualizado": "2026-09-25",
       "official_url": "https://rainbet.com/",
-      "claim_notes": "Licencia Anjouan stated: Terms + AML + footer (Rain Group Ltd / Rain Group LTD, co. 16077, Hamchako). JSON-LD homepage also names legalName RBGAMING N.V. — entity string inconsistent; chip = Anjouan class only. Retiro timing: homepage marketing says ‘typically processed and sent within 5 to 15 minutes’ — NOT adopted as SLA (no cashier/help hours receipt) → Sin dato. KYC stated Terms §20 + AML: gov ID, selfie(+note), PoA/utility; KYC team 24hrs once Temporarily Approved; verification may take up to 7 business days; restrict if ID not completed within 72h. Bono stated homepage welcome paths: (A) 40x on combined deposit+bonus, tiers 100%/50%/100% +20 FS, min $30 max $700/tier; (B) No Wager Lock sticky unlock formula. Promotions SPA thin logged-out. Min WD $15 + 1x deposit wager stated homepage — not a timing SLA.",
+      "claim_notes": "Licencia Anjouan stated: Terms + AML + footer (Rain Group Ltd / Rain Group LTD, co. 16077, Hamchako). JSON-LD homepage also names legalName RBGAMING N.V. — entity string inconsistent; chip = Anjouan class only. Retiro timing: homepage marketing says ‘typically processed and sent within 5 to 15 minutes’ — NOT adopted as SLA (no cashier/help hours receipt) → Sin dato. KYC stated Terms §20 + AML: gov ID, selfie(+note), PoA/utility; KYC team 24hrs once Temporarily Approved; verification may take up to 7 business days; restrict if ID not completed within 72h. Bono stated homepage welcome paths: (A) 40x on combined deposit+bonus, tiers 100%/50%/100% +20 FS, min $30 max $700/tier; (B) No Wager Lock sticky unlock formula. Promotions SPA thin logged-out. Min WD $15 + 1x deposit wager stated homepage — not a timing SLA. Daily Race 2026-09-26 (https://rainbet.com/daily-race) is a lobby señal, not this welcome bono: timed 24h volume race, page-1 ladder numbers stated with no currency sign on the reward field, 200 places, no full pool. Bono cell stays x40 · D+B (alt: no WR).",
       "claim_layer": "stated",
       "fuentes": [
         "https://rainbet.com/",
@@ -102,6 +102,43 @@
   "operators_paused": [],
   "senales_lead": [
     {
+      "id": "lobby-rainbet-daily-race-2026-09-26",
+      "tipo": "lobby",
+      "fecha": "2026-09-26",
+      "jurisdiccion": "offshore",
+      "operador_slug": "rainbet",
+      "operador_nombre": "Rainbet",
+      "titulo": "Rainbet Daily Race: ventana de 24 h en vivo — race por volumen, no jackpot por caer",
+      "resumen": "Página OFICIAL daily-race (verificado 2026-09-26): carrera de lobby cronometrada, 24 h. Race por volumen — no es un jackpot por caer. Ventana UTC stated: 2026-09-27T00:00:00.000Z → 2026-09-27T23:59:59.000Z. America/Guatemala: sáb 26 SEP 2026 18:00 → dom 27 SEP 2026 17:59. Entrada stated: jugar cualquier juego; leaderboard nuevo cada 24 horas. Escalera página 1 (números stated, sin signo de moneda en la página): #1=4000 · #2=2500 · #3=1500 · #4=1000 · #5=800. Meta: 200 lugares. No publicamos pozo total.",
+      "numero_objeto": "24h race",
+      "claim_layer": "stated",
+      "ventana_utc": {
+        "start": "2026-09-27T00:00:00.000Z",
+        "end": "2026-09-27T23:59:59.000Z"
+      },
+      "ventana_america_guatemala": "sáb 26 SEP 2026 18:00 → dom 27 SEP 2026 17:59",
+      "entrada": "play any game; new leaderboard every 24 hours",
+      "escalera_pagina_1": {
+        "1": 4000,
+        "2": 2500,
+        "3": 1500,
+        "4": 1000,
+        "5": 800
+      },
+      "lugares": 200,
+      "pozo_total": null,
+      "qc": "Peter QC PASS — live-verified 2026-09-26 ~18:08 CST",
+      "fuentes": [
+        "https://rainbet.com/daily-race"
+      ],
+      "cta_label": "Leer señal",
+      "cta_href": null,
+      "homepage_role": "lead",
+      "status": "ready"
+    }
+  ],
+  "senales_timeline": [
+    {
       "id": "bono-rainbet-x40-dual-2026-09-25",
       "tipo": "bono",
       "fecha": "2026-09-25",
@@ -119,11 +156,9 @@
       ],
       "cta_label": "Leer señal",
       "cta_href": null,
-      "homepage_role": "lead",
+      "homepage_role": "timeline",
       "status": "ready"
-    }
-  ],
-  "senales_timeline": [
+    },
     {
       "id": "bono-stake-rakeback-welcome-2026-09-25",
       "tipo": "bono",
