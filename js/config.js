@@ -2,7 +2,7 @@
  * Planeta Ruleta — public site config (safe to commit; no secrets).
  *
  * 1. GA4: Admin → Data streams → your Web stream → Measurement ID (G-…).
- *    Real ID is set below. analytics.js will not load gtag.js for empty /
+ *    Real ID is set below. analytics.min.js will not load gtag.js for empty /
  *    G-XXXXXXXXXX placeholders.
  *
  * 2. Google Search Console HTML-tag verification (optional):

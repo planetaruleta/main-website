@@ -2,6 +2,8 @@
  * Planeta Ruleta — GA4 (page_view) + Telegram CTA clicks.
  * Reads window.PR_GA_MEASUREMENT_ID / PR_GOOGLE_SITE_VERIFICATION from config.js.
  * No marketing pixels. No PII in events.
+ *
+ * Readable source. Public pages load /js/analytics.min.js — keep that file in sync.
  */
 (function () {
   "use strict";
