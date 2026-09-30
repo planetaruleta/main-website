@@ -23,6 +23,7 @@
   <meta name="twitter:description" content="Preguntas sobre Planeta Ruleta: comunidad e intel de casinos, en español. No somos un casino." />
   <meta name="twitter:image" content="https://www.planetaruleta.com/logo-saturn.png" />
   <script type="application/ld+json">
+
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -34,7 +35,9 @@
       "logo": "https://www.planetaruleta.com/logo-saturn.png",
       "email": "planetaruleta@protonmail.com",
       "description": "Comunidad e inteligencia de casinos, en español. El día a día está en Telegram. No somos un casino.",
-      "sameAs": ["https://t.me/planetaruleta"],
+      "sameAs": [
+        "https://t.me/planetaruleta"
+      ],
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "consultas",
@@ -56,8 +59,12 @@
         "name": "Planeta Ruleta",
         "url": "https://www.planetaruleta.com/"
       },
-      "about": {"@id": "https://www.planetaruleta.com/#organization"},
-      "publisher": {"@id": "https://www.planetaruleta.com/#organization"},
+      "about": {
+        "@id": "https://www.planetaruleta.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.planetaruleta.com/#organization"
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -65,6 +72,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "No. Somos media + comunidad. No tomamos apuestas, no manejamos tu plata, no somos un cajero."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué la mesa no tiene botón de «jugá acá»?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Porque este sitio no es la casa y no abre una puerta de depósito. La mesa nombra al operador y el dato escrito. No hay botón de juego, ni código para cargar, ni link de afiliado."
           }
         },
         {
@@ -77,34 +92,42 @@
         },
         {
           "@type": "Question",
-          "name": "¿Publican un mapa de licencias locales?",
+          "name": "¿Qué significa la etiqueta Declarado en la mesa?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Esta mesa no es ese registro. Publicamos intel con fuente, y la charla sigue en Telegram."
+            "text": "Declarado quiere decir que la celda sale del texto del operador: bases, help o la página del producto, con fecha. No es nuestra opinión, no es un rumor del grupo y no es una licencia. La mesa pública son esas filas crypto/offshore. Si el texto no está, la celda no se completa."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Qué es .bet.ar?",
+          "name": "¿Qué es el wagering / rollover (ej. x40)?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Es un esquema de dominios de oferta autorizada en un país, no la mesa de este sitio. Sirve para identificar operadores validados en ese esquema. Atajo de ese esquema: si no termina en .bet.ar, no está ahí. Ojo: ese dominio no es una fila de esta mesa. Acá, sin fuente fechada, no se publica el dato."
+            "text": "Es la cantidad de veces que hay que apostar un monto antes de poder mover lo que está atado a un bono. Un x40 multiplica esa base por 40. El número solo no alcanza: importa qué entra en la base, qué juegos cuentan, el tope de apuesta y la ventana. Si el operador no lo escribe, no lo inventamos."
           }
         },
         {
           "@type": "Question",
-          "name": "Si tiene .bet.ar, ¿entra en esta mesa?",
+          "name": "¿Qué significa D+B (depósito + bono) en un WR?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No automáticamente. En ese esquema la habilitación es por jurisdicción. Un sitio puede estar habilitado en un distrito y no en otro. Esta mesa no usa eso como fila de operadores."
+            "text": "D+B es depósito más bono. Si el rollover dice x40 sobre D+B, la base no es solo el bono: se suman el depósito y el bono, y eso se multiplica. Con el mismo x40 al frente, es más plata en juego que un rollover solo sobre el bono. Cuando el texto lo dice así, la celda lo marca. Si no lo dice, no lo suponemos."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Cómo verifican un dato?",
+          "name": "¿Rakeback es lo mismo que un bono de bienvenida / match?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Texto del operador: bases, pie, página del producto. Fecha y fuente. Si no está, la celda queda vacía. Lo que dice la comunidad va etiquetado aparte. No es un hecho cerrado. Sin fuente, no se publica como dato."
+            "text": "No. Un match suele ser un porcentaje extra sobre el depósito, casi siempre con rollover. El rakeback es un porcentaje del house edge de lo que ya apostaste, en cash: no es el mismo producto y no se lee como “te duplican el depósito”. Si el help dice rakeback, la mesa no lo reescribe como match."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿«Sin KYC» significa que nunca piden documento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. En las casas crypto, “sin KYC” suele hablar del alta o de los primeros depósitos, no de una promesa eterna. El pedido de documento aparece seguido antes del primer retiro, al cruzar un monto, o cuando el operador lo decide. La celda copia niveles, ID o prueba de domicilio si están escritos. Un banner no es un dato."
           }
         },
         {
@@ -120,15 +143,23 @@
           "name": "¿Y los casinos crypto u offshore (.com, etc.)?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Se pueden nombrar con fuente, sin botón de “jugá acá”. Si no hay fuente, no hay fila."
+            "text": "Se pueden nombrar con fuente, sin botón de «jugá acá». Es el eje de esta mesa. Si no hay fuente, no hay fila."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Las Historias de piso / Monólogos son reales?",
+          "name": "¿Publican un mapa de licencias locales?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Son relatos (formato TikTok). Van con la línea: relato de piso · no es intel verificado · +18. No las uses como prueba de que “ese casino paga”."
+            "text": "No. Esta mesa no es ese registro. La mesa pública son filas crypto/offshore con fuente. La charla sigue en Telegram."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo verifican un dato?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Texto del operador: bases, pie, página del producto. Fecha y fuente. Si no está, la celda queda vacía. Lo que dice la comunidad va etiquetado aparte. No es un hecho cerrado. Sin fuente, no se publica como dato."
           }
         },
         {
@@ -155,10 +186,32 @@
             "text": "Pará. Buscá ayuda seria de juego responsable o autoexclusión donde estés. Nosotros no somos un centro de tratamiento; no banalizamos eso."
           }
         }
+      ],
+      "breadcrumb": {
+        "@id": "https://www.planetaruleta.com/faq/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.planetaruleta.com/faq/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.planetaruleta.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "FAQ",
+          "item": "https://www.planetaruleta.com/faq/"
+        }
       ]
     }
   ]
 }
+
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -175,6 +228,13 @@
       --copper: #B66F4A;
       --copper-2: #C47D56;
       --ink: #0B1520;
+      --line: #2A3A4E;
+      --dim: #8E9AAB;
+      --word: #fff;
+      --serif: "Ibarra Real Nova", Georgia, "Times New Roman", serif;
+      --sans: "Schibsted Grotesk", system-ui, sans-serif;
+      --wide: 1120px;
+      --pad: clamp(1.1rem, 3.2vw, 2.6rem);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { -webkit-text-size-adjust: 100%; }
@@ -201,57 +261,76 @@
     a:hover, a:focus-visible { color: var(--copper-2); }
     a:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
 
-    .site-header {
-      position: relative;
-      z-index: 1;
-      border-bottom: 1px solid color-mix(in srgb, var(--cream) 10%, transparent);
-      background: color-mix(in srgb, var(--bg) 92%, black);
+    .mast {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
     }
-    .nav {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: max(14px, env(safe-area-inset-top)) 16px 14px;
-      display: flex;
-      flex-wrap: wrap;
+    .mast-inner {
+      width: min(var(--wide), calc(100% - 2 * var(--pad)));
+      margin-inline: auto;
+      min-height: 3.15rem;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
       align-items: center;
-      justify-content: space-between;
-      gap: 10px 16px;
+      gap: .45rem .9rem;
+      padding: max(.45rem, env(safe-area-inset-top)) 0 .45rem;
     }
     .brand {
-      font-family: "Ibarra Real Nova", Georgia, serif;
-      font-weight: 500;
-      font-size: 1.28rem;
-      letter-spacing: -.015em;
-      color: #fff;
+      display: flex;
+      align-items: center;
+      color: var(--word);
       text-decoration: none;
+      margin-right: .35rem;
     }
-    .nav-cta {
+    .brand-name {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+      letter-spacing: -.015em;
+      line-height: 1;
+      color: var(--word);
+    }
+    .mast nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: .2rem .75rem;
+    }
+    .mast nav a {
+      color: var(--dim);
+      text-decoration: none;
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .02em;
+    }
+    .mast nav a:hover,
+    .mast nav a[aria-current="page"] { color: var(--cream); }
+    .mast-end {
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+    .mast-tg {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       background: var(--cream);
       color: var(--ink);
       text-decoration: none;
+      font-family: var(--sans);
       font-weight: 700;
-      font-size: .75rem;
+      font-size: .78rem;
       line-height: 1;
-      padding: .42rem .65rem;
+      padding: .48rem .72rem;
       border-radius: 4px;
       border: 1px solid var(--ink);
       white-space: nowrap;
     }
-    .nav-cta:hover, .nav-cta:focus-visible { color: var(--ink); background: #fff; }
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px 14px;
-      list-style: none;
-      font-size: .8rem;
-      font-weight: 700;
-    }
-    .nav-links a { color: var(--cream-dim); }
-    .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--cream); }
-    .nav-links a.nav-cta, .nav-links a.nav-cta:hover { color: var(--ink); }
-    .nav-links a[aria-current="page"] { color: var(--copper); }
+    .mast-tg:hover, .mast-tg:focus-visible { color: var(--ink); background: #fff; }
 
     .article {
       position: relative;
@@ -313,6 +392,15 @@
       line-height: 1.25;
     }
     details[open] summary::before { content: "–"; }
+    summary h2 {
+      margin: 0;
+      flex: 1;
+      min-width: 0;
+      font: inherit;
+      color: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
+    }
     summary:hover { color: var(--copper-2); }
     summary:focus-visible { outline: 2px solid var(--copper); outline-offset: -2px; }
     .answer {
@@ -349,71 +437,142 @@
     .site-footer a:hover { color: var(--copper-2); }
 
     @media (min-width: 720px) {
-      .nav { padding: 18px 24px; }
       .article { padding: 40px 24px 64px; }
-      .brand { font-size: 1.15rem; }
-      .nav-links { font-size: .85rem; gap: 6px 18px; }
       .answer { padding-left: 3rem; }
+    }
+    @media (min-width: 780px) {
+      .mast-inner { display: flex; flex-wrap: wrap; }
+      .mast nav { margin-left: auto; justify-content: flex-end; }
+    }
+    @media (max-width: 779px) {
+      :root { --pad: 1.2rem; }
+      .mast-inner {
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        column-gap: .65rem;
+        row-gap: .7rem;
+        padding-top: .7rem;
+        padding-bottom: .6rem;
+      }
+      .brand { grid-column: 1; grid-row: 1; min-width: 0; margin-right: 0; }
+      .brand-name { font-size: 1.18rem; }
+      .mast-end { grid-column: 2; grid-row: 1; justify-self: end; }
+      .mast-tg { font-size: .72rem; padding: .5rem .62rem; }
+      .mast nav {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        justify-content: flex-start;
+        gap: .4rem .85rem;
+        padding-bottom: .1rem;
+      }
+      .mast nav a { font-size: .8rem; }
+    }
+    @media (prefers-reduced-transparency: reduce) {
+      .mast { backdrop-filter: none; background: var(--bg); }
     }
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav" aria-label="Principal">
-      <a class="brand" href="/">Planeta Ruleta</a>
-      <ul class="nav-links">
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/como-funciona/">Cómo funciona</a></li>
-        <li><a href="/sobre/">Sobre</a></li>
-        <li><a href="/faq/" aria-current="page">FAQ</a></li>
-        <li><a class="nav-cta" href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="nav">Sumate al canal</a></li>
-      </ul>
-    </nav>
+  <header class="mast">
+    <div class="mast-inner">
+      <a class="brand" href="/"><span class="brand-name">Planeta Ruleta</span></a>
+      <nav aria-label="Principal">
+        <a href="/#senales">Señales</a>
+        <a href="/#mesa">Mesa</a>
+        <a href="/como-funciona/">Cómo funciona</a>
+        <a href="/sobre/">Sobre</a>
+        <a href="/faq/" aria-current="page">FAQ</a>
+      </nav>
+      <p class="mast-end">
+        <a class="mast-tg" href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="nav">Sumate al canal</a>
+      </p>
+    </div>
   </header>
 
   <main class="article">
     <h1>Preguntas frecuentes</h1>
-    <p class="intro">Respuestas cortas. La mesa es intel de casinos y una comunidad en Telegram, no un registro de licencias. Esto <strong>no</strong> es un dictamen legal.</p>
+    <p class="intro">Respuestas cortas. La mesa pública es intel crypto/offshore y una comunidad en Telegram, no un registro de licencias. Esto <strong>no</strong> es un dictamen legal.</p>
 
     <div class="faq-list">
       <details>
-        <summary>¿Planeta Ruleta es un casino?</summary>
+        <summary><h2>¿Planeta Ruleta es un casino?</h2></summary>
         <div class="answer">
           <p>No. Somos media + comunidad. No tomamos apuestas, no manejamos tu plata, no somos un cajero.</p>
         </div>
       </details>
 
       <details>
-        <summary>¿Me van a tirar códigos de bono o links para depositar?</summary>
+        <summary><h2>¿Por qué la mesa no tiene botón de «jugá acá»?</h2></summary>
+        <div class="answer">
+          <p>Porque este sitio no es la casa y no abre una puerta de depósito. La mesa nombra al operador y el dato escrito. No hay botón de juego, ni código para cargar, ni link de afiliado.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><h2>¿Me van a tirar códigos de bono o links para depositar?</h2></summary>
         <div class="answer">
           <p>En el sitio, no. El CTA es la comunidad (Telegram). Si algún día hay puerta afiliada a un operador <strong>con licencia en la jurisdicción que corresponda</strong>, va a estar clara y etiquetada — nunca a un sitio sin esa licencia.</p>
         </div>
       </details>
 
       <details>
-        <summary>¿Publican un mapa de licencias locales?</summary>
+        <summary><h2>¿Qué significa la etiqueta Declarado en la mesa?</h2></summary>
         <div class="answer">
-          <p>No. Esta mesa no es ese registro. Publicamos intel con fuente, y la charla sigue en Telegram.</p>
+          <p>Declarado quiere decir que la celda sale del texto del operador: bases, help o la página del producto, con fecha. No es nuestra opinión, no es un rumor del grupo y no es una licencia. La mesa pública son esas filas crypto/offshore. Si el texto no está, la celda no se completa.</p>
         </div>
       </details>
 
       <details>
-        <summary>¿Qué es <span lang="en">.bet.ar</span>?</summary>
+        <summary><h2>¿Qué es el wagering / rollover (ej. x40)?</h2></summary>
         <div class="answer">
-          <p>Es un esquema de dominios de oferta autorizada en un país, no la mesa de este sitio. Sirve para identificar operadores validados en ese esquema. Atajo de ese esquema: si no termina en <span lang="en">.bet.ar</span>, no está ahí.</p>
-          <p>Ojo: ese dominio no es una fila de esta mesa. Acá, sin fuente fechada, no se publica el dato.</p>
+          <p>Es la cantidad de veces que hay que apostar un monto antes de poder mover lo que está atado a un bono. Un x40 multiplica esa base por 40. El número solo no alcanza: importa qué entra en la base, qué juegos cuentan, el tope de apuesta y la ventana. Si el operador no lo escribe, no lo inventamos.</p>
         </div>
       </details>
 
       <details>
-        <summary>Si tiene <span lang="en">.bet.ar</span>, ¿entra en esta mesa?</summary>
+        <summary><h2>¿Qué significa D+B (depósito + bono) en un WR?</h2></summary>
         <div class="answer">
-          <p>No automáticamente. En ese esquema la habilitación es por jurisdicción. Un sitio puede estar habilitado en un distrito y no en otro. Esta mesa no usa eso como fila de operadores.</p>
+          <p>D+B es depósito más bono. Si el rollover dice x40 sobre D+B, la base no es solo el bono: se suman el depósito y el bono, y eso se multiplica. Con el mismo x40 al frente, es más plata en juego que un rollover solo sobre el bono. Cuando el texto lo dice así, la celda lo marca. Si no lo dice, no lo suponemos.</p>
         </div>
       </details>
 
       <details>
-        <summary>¿Cómo verifican un dato?</summary>
+        <summary><h2>¿Rakeback es lo mismo que un bono de bienvenida / match?</h2></summary>
+        <div class="answer">
+          <p>No. Un match suele ser un porcentaje extra sobre el depósito, casi siempre con rollover. El rakeback es un porcentaje del house edge de lo que ya apostaste, en cash: no es el mismo producto y no se lee como “te duplican el depósito”. Si el help dice rakeback, la mesa no lo reescribe como match.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><h2>¿«Sin KYC» significa que nunca piden documento?</h2></summary>
+        <div class="answer">
+          <p>No. En las casas crypto, “sin KYC” suele hablar del alta o de los primeros depósitos, no de una promesa eterna. El pedido de documento aparece seguido antes del primer retiro, al cruzar un monto, o cuando el operador lo decide. La celda copia niveles, ID o prueba de domicilio si están escritos. Un banner no es un dato.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><h2>¿Qué es un “cajero”?</h2></summary>
+        <div class="answer">
+          <p>Un intermediario (casi siempre por redes) que recibe tu transferencia y “carga” crédito en una plataforma, y a veces “paga” el retiro. Los reguladores lo describen como circuito de juego ilegal: si desaparece, el reclamo útil casi no existe. Nosotros lo etiquetamos como riesgo — no como tip.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><h2>¿Y los casinos crypto u offshore (<span lang="en">.com</span>, etc.)?</h2></summary>
+        <div class="answer">
+          <p>Se pueden nombrar con fuente, sin botón de «jugá acá». Es el eje de esta mesa. Si no hay fuente, no hay fila.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><h2>¿Publican un mapa de licencias locales?</h2></summary>
+        <div class="answer">
+          <p>No. Esta mesa no es ese registro. La mesa pública son filas crypto/offshore con fuente. La charla sigue en Telegram.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><h2>¿Cómo verifican un dato?</h2></summary>
         <div class="answer">
           <ol>
             <li>Texto del operador: bases, pie, página del producto.</li>
@@ -425,42 +584,21 @@
       </details>
 
       <details>
-        <summary>¿Qué es un “cajero”?</summary>
-        <div class="answer">
-          <p>Un intermediario (casi siempre por redes) que recibe tu transferencia y “carga” crédito en una plataforma, y a veces “paga” el retiro. Los reguladores lo describen como circuito de juego ilegal: si desaparece, el reclamo útil casi no existe. Nosotros lo etiquetamos como riesgo — no como tip.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary>¿Y los casinos crypto u offshore (<span lang="en">.com</span>, etc.)?</summary>
-        <div class="answer">
-          <p>Se pueden nombrar con fuente, sin botón de “jugá acá”. Si no hay fuente, no hay fila.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary>¿Las Historias de piso / Monólogos son reales?</summary>
-        <div class="answer">
-          <p>Son <strong>relatos</strong> (formato TikTok). Van con la línea: <em>relato de piso · no es intel verificado · +18</em>. No las uses como prueba de que “ese casino paga”.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary>¿Publican reviews o capturas de retiros?</summary>
+        <summary><h2>¿Publican reviews o capturas de retiros?</h2></summary>
         <div class="answer">
           <p>Solo si están verificadas y etiquetadas. <strong>No inventamos</strong> testimonios ni “proof”. Si es rumor de comunidad, se lee como rumor.</p>
         </div>
       </details>
 
       <details>
-        <summary>¿Dónde está la comunidad?</summary>
+        <summary><h2>¿Dónde está la comunidad?</h2></summary>
         <div class="answer">
           <p>Canal Telegram: <a href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="faq">https://t.me/planetaruleta</a> (charlas en el grupo vinculado al canal).</p>
         </div>
       </details>
 
       <details>
-        <summary>Si el juego se me está yendo de las manos, ¿qué hago?</summary>
+        <summary><h2>Si el juego se me está yendo de las manos, ¿qué hago?</h2></summary>
         <div class="answer">
           <p>Pará. Buscá ayuda seria de juego responsable o autoexclusión donde estés. Nosotros no somos un centro de tratamiento; no banalizamos eso.</p>
         </div>

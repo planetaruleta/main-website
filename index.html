@@ -185,10 +185,12 @@
       font-weight: 600;
       letter-spacing: .02em;
     }
-    .mast nav a:hover { color: var(--cream); }
+    .mast nav a:hover,
+    .mast nav a[aria-current="page"] { color: var(--cream); }
     .mast-end {
       display: flex;
       align-items: center;
+      margin: 0;
     }
     .mast-tg {
       display: inline-flex;
@@ -699,7 +701,7 @@
       <nav aria-label="Principal">
         <a href="#senales">Señales</a>
         <a href="#mesa">Mesa</a>
-        <a href="/como-funciona/">Métodos</a>
+        <a href="/como-funciona/">Cómo funciona</a>
         <a href="/sobre/">Sobre</a>
         <a href="/faq/">FAQ</a>
       </nav>
