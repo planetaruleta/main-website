@@ -57,7 +57,26 @@
         "url": "https://www.planetaruleta.com/"
       },
       "about": {"@id": "https://www.planetaruleta.com/#organization"},
-      "publisher": {"@id": "https://www.planetaruleta.com/#organization"}
+      "publisher": {"@id": "https://www.planetaruleta.com/#organization"},
+      "breadcrumb": {"@id": "https://www.planetaruleta.com/como-funciona/#breadcrumb"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.planetaruleta.com/como-funciona/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.planetaruleta.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cómo funciona",
+          "item": "https://www.planetaruleta.com/como-funciona/"
+        }
+      ]
     }
   ]
 }
@@ -77,6 +96,13 @@
       --copper: #B66F4A;
       --copper-2: #C47D56;
       --ink: #0B1520;
+      --line: #2A3A4E;
+      --dim: #8E9AAB;
+      --word: #fff;
+      --serif: "Ibarra Real Nova", Georgia, "Times New Roman", serif;
+      --sans: "Schibsted Grotesk", system-ui, sans-serif;
+      --wide: 1120px;
+      --pad: clamp(1.1rem, 3.2vw, 2.6rem);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { -webkit-text-size-adjust: 100%; }
@@ -103,37 +129,76 @@
     a:hover, a:focus-visible { color: var(--copper-2); }
     a:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
 
-    .site-header {
-      position: relative;
-      z-index: 1;
+    .mast {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
     }
-    .nav {
-      max-width: 880px;
-      margin: 0 auto;
-      padding: max(16px, env(safe-area-inset-top)) 16px 8px;
+    .mast-inner {
+      width: min(var(--wide), calc(100% - 2 * var(--pad)));
+      margin-inline: auto;
+      min-height: 3.15rem;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: .45rem .9rem;
+      padding: max(.45rem, env(safe-area-inset-top)) 0 .45rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      color: var(--word);
+      text-decoration: none;
+      margin-right: .35rem;
+    }
+    .brand-name {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+      letter-spacing: -.015em;
+      line-height: 1;
+      color: var(--word);
+    }
+    .mast nav {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px 16px;
+      justify-content: flex-end;
+      gap: .2rem .75rem;
     }
-    .home-link {
-      color: var(--cream-dim);
-      font-size: .85rem;
-      font-weight: 700;
+    .mast nav a {
+      color: var(--dim);
+      text-decoration: none;
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .02em;
     }
-    .home-link:hover { color: var(--cream); }
-    .nav-links {
+    .mast nav a:hover,
+    .mast nav a[aria-current="page"] { color: var(--cream); }
+    .mast-end {
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
-      gap: 4px 16px;
-      list-style: none;
-      font-size: .85rem;
-      font-weight: 700;
+      margin: 0;
     }
-    .nav-links a { color: var(--cream-dim); }
-    .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--copper); }
+    .mast-tg {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--cream);
+      color: var(--ink);
+      text-decoration: none;
+      font-family: var(--sans);
+      font-weight: 700;
+      font-size: .78rem;
+      line-height: 1;
+      padding: .48rem .72rem;
+      border-radius: 4px;
+      border: 1px solid var(--ink);
+      white-space: nowrap;
+    }
+    .mast-tg:hover, .mast-tg:focus-visible { color: var(--ink); background: #fff; }
 
     .article {
       position: relative;
@@ -301,21 +366,56 @@
     .site-footer a:hover { color: var(--copper-2); }
 
     @media (min-width: 720px) {
-      .nav { padding: 22px 24px 10px; }
       .article { padding: 28px 24px 64px; }
       .types { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (min-width: 780px) {
+      .mast-inner { display: flex; flex-wrap: wrap; }
+      .mast nav { margin-left: auto; justify-content: flex-end; }
+    }
+    @media (max-width: 779px) {
+      :root { --pad: 1.2rem; }
+      .mast-inner {
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        column-gap: .65rem;
+        row-gap: .7rem;
+        padding-top: .7rem;
+        padding-bottom: .6rem;
+      }
+      .brand { grid-column: 1; grid-row: 1; min-width: 0; margin-right: 0; }
+      .brand-name { font-size: 1.18rem; }
+      .mast-end { grid-column: 2; grid-row: 1; justify-self: end; }
+      .mast-tg { font-size: .72rem; padding: .5rem .62rem; }
+      .mast nav {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        justify-content: flex-start;
+        gap: .4rem .85rem;
+        padding-bottom: .1rem;
+      }
+      .mast nav a { font-size: .8rem; }
+    }
+    @media (prefers-reduced-transparency: reduce) {
+      .mast { backdrop-filter: none; background: var(--bg); }
     }
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav" aria-label="Principal">
-      <a class="home-link" href="/">← Inicio</a>
-      <ul class="nav-links">
-        <li><a href="/sobre/">Sobre</a></li>
-        <li><a href="/faq/">FAQ</a></li>
-      </ul>
-    </nav>
+  <header class="mast">
+    <div class="mast-inner">
+      <a class="brand" href="/"><span class="brand-name">Planeta Ruleta</span></a>
+      <nav aria-label="Principal">
+        <a href="/#senales">Señales</a>
+        <a href="/#mesa">Mesa</a>
+        <a href="/como-funciona/" aria-current="page">Cómo funciona</a>
+        <a href="/sobre/">Sobre</a>
+        <a href="/faq/">FAQ</a>
+      </nav>
+      <p class="mast-end">
+        <a class="mast-tg" href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="nav">Sumate al canal</a>
+      </p>
+    </div>
   </header>
 
   <main class="article">
