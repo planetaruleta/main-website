@@ -4,7 +4,7 @@
   "owner": "Casino Intel",
   "gate": "Peter QC",
   "spine": "offshore Wave1",
-  "note": "AR regulated operators stay off this spine (homepage-pack-2026-09-24.json is a separate pack). Apps still PARKED — content coverage only. +18 desk; no play CTA framing. Links = official site URLs only (no affiliate/ref/partner/tracking). Lead señal 2026-09-28: Shuffle casino rakeback 5% HE cash (Bronze), id bono-shuffle-rakeback-5pct-he-2026-09-25 reused, Peter QC PASS live-verified ~18:02 America/Guatemala. Not an FTD match; FTD Nx bases still unpublished. Rainbet Daily Race demoted to timeline (window closed). Mesa bono Shuffle = Rakeback 5% HE (Bronze). Rainbet welcome cell unchanged (x40 · D+B alt no WR). Order: Rainbet, Shuffle, Stake, then Cloudbet, Roobet as show (official URL only; KYC/bono/métodos/retiro cells empty — no homepage marketing adopted as juice).",
+  "note": "AR regulated operators stay off this spine (homepage-pack-2026-09-24.json is a separate pack). Apps still PARKED — content coverage only. +18 desk; no play CTA framing. Links = official site URLs only (no affiliate/ref/partner/tracking). Lead señal 2026-09-28: Shuffle casino rakeback 5% HE cash (Bronze), id bono-shuffle-rakeback-5pct-he-2026-09-25 reused, Peter QC PASS live-verified ~18:02 America/Guatemala. Not an FTD match; FTD Nx bases still unpublished. Rainbet Daily Race demoted to timeline (window closed). Mesa bono Shuffle = Rakeback 5% HE (Bronze). Rainbet welcome cell unchanged (x40 · D+B alt no WR). Order: Rainbet, Shuffle, Stake, then Cloudbet, Roobet. Cloudbet and Roobet KYC/bono/métodos filled 2026-09-30 (Peter QC PASS, claim_layer stated, status ready, sheet_ready false). Official URLs only, no affiliate params. Métodos = class only, no coin tickers. Retiro stays —. Cloudbet withdrawal-speed marketing is not a retiro cell. No invented WR.",
   "schema": "docs/briefs/homepage-content-schema-2026-09-24.md",
   "schema_comment": "Homepage mesa columns: operador, kyc, bono, pagos (Métodos). Freshness is one month line for the whole table (Actualizado · SEP 2026), not per-row dates. retiro deferred until we have real SLA/mesa data — retiro_label and retiro_tone stay on each operator; do not render them. jurisdiccion stays in JSON for licence diligence; do not render an Ámbito column or a CGA note in the table. pagos cells are the method class only — do not render a coin list.",
   "operators_mesa": [
@@ -106,22 +106,23 @@
       "jurisdiccion": null,
       "retiro_label": "—",
       "retiro_tone": "unknown",
-      "kyc_label": "—",
-      "kyc_tone": "unknown",
-      "bono_label": "—",
-      "bono_tone": "unknown",
-      "pagos_label": "—",
-      "pagos_tone": "unknown",
-      "pagos_note": "SHOW. No verified métodos row. Do not fill from homepage marketing.",
-      "actualizado": null,
+      "kyc_label": "Niveles · L2 ID+PoA+face (Sumsub)",
+      "kyc_tone": "warn",
+      "bono_label": "≤$2.5k/30d · 10% RB",
+      "bono_tone": "pos",
+      "pagos_label": "Crypto · buy card (Swapped)",
+      "pagos_tone": "pos",
+      "pagos_note": "Peter QC PASS 2026-09-30. Cell is the class only: Crypto · buy card (Swapped). No coin tickers. Tone pos. Do not expand from homepage marketing.",
+      "actualizado": "2026-09-30",
       "official_url": "https://www.cloudbet.com/",
-      "claim_notes": "SHOW candidate after the growth spine (Rainbet → Shuffle → Stake). Official homepage only: https://www.cloudbet.com/ (apex cloudbet.com 301s here; checked 2026-09-30). No affiliate, ref, partner, or tracking query. +18 desk context; no play CTA. KYC, bono, métodos, and retiro stay empty (— / sin fila verificada). Homepage marketing (welcome package, withdrawal minutes) is not a verified mesa row — do not adopt it.",
-      "claim_layer": null,
+      "claim_notes": "Peter QC PASS 2026-09-30. Official URL only: https://www.cloudbet.com/ (apex cloudbet.com 301s here; checked 2026-09-30). No affiliate, ref, partner, or tracking query. +18 desk context; no play CTA. claim_layer stated. KYC: Niveles · L2 ID+PoA+face (Sumsub), tone warn. Bono: ≤$2.5k/30d · 10% RB, tone pos. Do not invent a WR; none is in the cell. Métodos: Crypto · buy card (Swapped), class only, no coin tickers, tone pos. Retiro stays — (not a new SLA). Homepage withdrawal-speed marketing is not a retiro cell. Jurisdiccion stays null. sheet_ready stays false. Labels and notes from docs/drafts/mesa-cloudbet-roobet-cells-2026-09-30.md.",
+      "claim_layer": "stated",
       "fuentes": [
-        "https://www.cloudbet.com/"
+        "https://www.cloudbet.com/",
+        "docs/drafts/mesa-cloudbet-roobet-cells-2026-09-30.md"
       ],
       "sheet_ready": false,
-      "status": "show"
+      "status": "ready"
     },
     {
       "slug": "roobet",
@@ -129,22 +130,23 @@
       "jurisdiccion": null,
       "retiro_label": "—",
       "retiro_tone": "unknown",
-      "kyc_label": "—",
-      "kyc_tone": "unknown",
-      "bono_label": "—",
-      "bono_tone": "unknown",
-      "pagos_label": "—",
-      "pagos_tone": "unknown",
-      "pagos_note": "SHOW. No verified métodos row. Do not fill from homepage marketing.",
-      "actualizado": null,
+      "kyc_label": "L2 ID (passport/DL/gov)",
+      "kyc_tone": "warn",
+      "bono_label": "Instant RB · +10% welcome 24h",
+      "bono_tone": "pos",
+      "pagos_label": "Crypto · fiat+Swapped",
+      "pagos_tone": "pos",
+      "pagos_note": "Peter QC PASS 2026-09-30. Cell is the class only: Crypto · fiat+Swapped. No coin tickers. Tone pos. Do not expand from homepage marketing.",
+      "actualizado": "2026-09-30",
       "official_url": "https://roobet.com/",
-      "claim_notes": "SHOW candidate after Cloudbet. Official homepage only: https://roobet.com/ (www.roobet.com 301s here; checked 2026-09-30). No affiliate, ref, partner, or tracking query. +18 desk context; no play CTA. KYC, bono, métodos, and retiro stay empty (— / sin fila verificada). No verified row in this pack.",
-      "claim_layer": null,
+      "claim_notes": "Peter QC PASS 2026-09-30. Official URL only: https://roobet.com/ (www.roobet.com 301s here; checked 2026-09-30). No affiliate, ref, partner, or tracking query. +18 desk context; no play CTA. claim_layer stated. KYC: L2 ID (passport/DL/gov), tone warn. Bono: Instant RB · +10% welcome 24h, tone pos. Do not invent a WR; none is in the cell. Métodos: Crypto · fiat+Swapped, class only, no coin tickers, tone pos. Retiro stays —. Jurisdiccion stays null. sheet_ready stays false. Labels and notes from docs/drafts/mesa-cloudbet-roobet-cells-2026-09-30.md.",
+      "claim_layer": "stated",
       "fuentes": [
-        "https://roobet.com/"
+        "https://roobet.com/",
+        "docs/drafts/mesa-cloudbet-roobet-cells-2026-09-30.md"
       ],
       "sheet_ready": false,
-      "status": "show"
+      "status": "ready"
     }
   ],
   "operators_paused": [],
@@ -280,6 +282,6 @@
     "Rainbet entity string split: Terms/AML/footer Rain Group Ltd vs JSON-LD RBGAMING N.V. — Anjouan chip OK; do not invent single legal name for TG without counsel skim",
     "Anjouan validator URL timed out this wave — licence class still stated on rainbet.com Terms/AML",
     "sheet_ready=false all rows; apps PARKED; AR regulated operators stay off this spine",
-    "Cloudbet and Roobet are SHOW after Stake (official URL only). No verified KYC/bono/métodos/retiro row — do not fill from homepage marketing"
+    "Cloudbet and Roobet KYC/bono/métodos are stated (Peter QC PASS 2026-09-30), status ready, sheet_ready false. Retiro stays — for both; do not adopt Cloudbet withdrawal-speed marketing. Jurisdiccion still null. No invented WR. Métodos stay class-only"
   ]
 }
