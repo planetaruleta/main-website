@@ -4,7 +4,7 @@
   "owner": "Casino Intel",
   "gate": "Peter QC",
   "spine": "offshore Wave1",
-  "note": "AR pack separate (homepage-pack-2026-09-24.json). Apps still PARKED — content coverage only. +18 desk; no play CTA framing. Links = official site URLs only (no affiliate/ref/partner/tracking). Lead señal 2026-09-28: Shuffle casino rakeback 5% HE cash (Bronze), id bono-shuffle-rakeback-5pct-he-2026-09-25 reused, Peter QC PASS live-verified ~18:02 America/Guatemala. Not an FTD match; FTD Nx bases still unpublished. Rainbet Daily Race demoted to timeline (window closed). Mesa bono Shuffle = Rakeback 5% HE (Bronze). Rainbet welcome cell unchanged (x40 · D+B alt no WR).",
+  "note": "AR regulated operators stay off this spine (homepage-pack-2026-09-24.json is a separate pack). Apps still PARKED — content coverage only. +18 desk; no play CTA framing. Links = official site URLs only (no affiliate/ref/partner/tracking). Lead señal 2026-09-28: Shuffle casino rakeback 5% HE cash (Bronze), id bono-shuffle-rakeback-5pct-he-2026-09-25 reused, Peter QC PASS live-verified ~18:02 America/Guatemala. Not an FTD match; FTD Nx bases still unpublished. Rainbet Daily Race demoted to timeline (window closed). Mesa bono Shuffle = Rakeback 5% HE (Bronze). Rainbet welcome cell unchanged (x40 · D+B alt no WR). Order: Rainbet, Shuffle, Stake, then Cloudbet, Roobet as show (official URL only; KYC/bono/métodos/retiro cells empty — no homepage marketing adopted as juice).",
   "schema": "docs/briefs/homepage-content-schema-2026-09-24.md",
   "schema_comment": "Homepage mesa columns: operador, kyc, bono, pagos (Métodos). Freshness is one month line for the whole table (Actualizado · SEP 2026), not per-row dates. retiro deferred until we have real SLA/mesa data — retiro_label and retiro_tone stay on each operator; do not render them. jurisdiccion stays in JSON for licence diligence; do not render an Ámbito column or a CGA note in the table. pagos cells are the method class only — do not render a coin list.",
   "operators_mesa": [
@@ -99,6 +99,52 @@
       ],
       "sheet_ready": false,
       "status": "ready"
+    },
+    {
+      "slug": "cloudbet",
+      "nombre": "Cloudbet",
+      "jurisdiccion": null,
+      "retiro_label": "—",
+      "retiro_tone": "unknown",
+      "kyc_label": "—",
+      "kyc_tone": "unknown",
+      "bono_label": "—",
+      "bono_tone": "unknown",
+      "pagos_label": "—",
+      "pagos_tone": "unknown",
+      "pagos_note": "SHOW. No verified métodos row. Do not fill from homepage marketing.",
+      "actualizado": null,
+      "official_url": "https://www.cloudbet.com/",
+      "claim_notes": "SHOW candidate after the growth spine (Rainbet → Shuffle → Stake). Official homepage only: https://www.cloudbet.com/ (apex cloudbet.com 301s here; checked 2026-09-30). No affiliate, ref, partner, or tracking query. +18 desk context; no play CTA. KYC, bono, métodos, and retiro stay empty (— / sin fila verificada). Homepage marketing (welcome package, withdrawal minutes) is not a verified mesa row — do not adopt it.",
+      "claim_layer": null,
+      "fuentes": [
+        "https://www.cloudbet.com/"
+      ],
+      "sheet_ready": false,
+      "status": "show"
+    },
+    {
+      "slug": "roobet",
+      "nombre": "Roobet",
+      "jurisdiccion": null,
+      "retiro_label": "—",
+      "retiro_tone": "unknown",
+      "kyc_label": "—",
+      "kyc_tone": "unknown",
+      "bono_label": "—",
+      "bono_tone": "unknown",
+      "pagos_label": "—",
+      "pagos_tone": "unknown",
+      "pagos_note": "SHOW. No verified métodos row. Do not fill from homepage marketing.",
+      "actualizado": null,
+      "official_url": "https://roobet.com/",
+      "claim_notes": "SHOW candidate after Cloudbet. Official homepage only: https://roobet.com/ (www.roobet.com 301s here; checked 2026-09-30). No affiliate, ref, partner, or tracking query. +18 desk context; no play CTA. KYC, bono, métodos, and retiro stay empty (— / sin fila verificada). No verified row in this pack.",
+      "claim_layer": null,
+      "fuentes": [
+        "https://roobet.com/"
+      ],
+      "sheet_ready": false,
+      "status": "show"
     }
   ],
   "operators_paused": [],
@@ -233,6 +279,7 @@
     "Shuffle FTD WR math: help article 8407653 404; deposit-bonus-terms SPA empty — NEEDS_FETCH if promo returns. Rakeback 5% HE (Bronze) is published and is the bono cell; do not treat it as an FTD Nx",
     "Rainbet entity string split: Terms/AML/footer Rain Group Ltd vs JSON-LD RBGAMING N.V. — Anjouan chip OK; do not invent single legal name for TG without counsel skim",
     "Anjouan validator URL timed out this wave — licence class still stated on rainbet.com Terms/AML",
-    "sheet_ready=false all rows; apps PARKED; no AR operators in this pack"
+    "sheet_ready=false all rows; apps PARKED; AR regulated operators stay off this spine",
+    "Cloudbet and Roobet are SHOW after Stake (official URL only). No verified KYC/bono/métodos/retiro row — do not fill from homepage marketing"
   ]
 }
