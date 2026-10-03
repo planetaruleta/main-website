@@ -4,7 +4,7 @@
   "owner": "Casino Intel",
   "gate": "Peter QC",
   "spine": "offshore Wave1",
-  "note": "AR regulated operators stay off this spine (homepage-pack-2026-09-24.json is a separate pack). Apps still PARKED — content coverage only. +18 desk; no play CTA framing. Links = official site URLs only (no affiliate/ref/partner/tracking). Lead señal 2026-09-28: Shuffle casino rakeback 5% HE cash (Bronze), id bono-shuffle-rakeback-5pct-he-2026-09-25 reused, Peter QC PASS live-verified ~18:02 America/Guatemala. Not an FTD match; FTD Nx bases still unpublished. Rainbet Daily Race demoted to timeline (window closed). Mesa bono Shuffle = Rakeback 5% HE (Bronze). Rainbet welcome cell unchanged (x40 · D+B alt no WR). Order: Rainbet, Shuffle, Stake, then Cloudbet, Roobet. Cloudbet and Roobet KYC/bono/métodos filled 2026-09-30 (Peter QC PASS, claim_layer stated, status ready, sheet_ready false). Official URLs only, no affiliate params. Métodos = class only, no coin tickers. Retiro stays —. Cloudbet withdrawal-speed marketing is not a retiro cell. No invented WR. 2026-09-30 Gates of Olympus 2500 Multiplier Mayhem $40K (id lobby-rainbet-gates-olympus-40k-2026-09-30, Peter QC PASS OFICIAL) is the first timeline item only. Mesa has no promo chip slot (KYC/bono/métodos); Rainbet bono cell stays the welcome.",
+  "note": "AR regulated operators stay off this spine (homepage-pack-2026-09-24.json is a separate pack). Apps still PARKED — content coverage only. +18 desk; no play CTA framing. Links = official site URLs only (no affiliate/ref/partner/tracking). Lead señal 2026-10-02: Shuffle Level Up (id bono-shuffle-level-up-approx-2026-10-02). Ranking up unlocks Rank Up + Level Up Reload + Recent Play. Stated approximate combined USD at milestone “1” tiers: Silver 1 ≈ $25 · Gold 1 ≈ $210 · Platinum 1 ≈ $720 · Jade 1 ≈ $1,500 · Sapphire 1 = personalised VIP (no public $). VIP Panel automatic Rank-Up table is separate from that package. Promo live 2024-11-01 → endsAt 2026-11-02. Peter QC PASS 2026-10-02. Distinct from rakeback. Rakeback 5% HE (Bronze), id bono-shuffle-rakeback-5pct-he-2026-09-25, stays the mesa chip and moves to timeline. Not an FTD match; FTD Nx bases still unpublished. Rainbet Daily Race stays timeline (window closed). Mesa bono Shuffle = Rakeback 5% HE (Bronze). Rainbet welcome cell unchanged (x40 · D+B alt no WR). Order: Rainbet, Shuffle, Stake, then Cloudbet, Roobet. Cloudbet and Roobet KYC/bono/métodos filled 2026-09-30 (Peter QC PASS, claim_layer stated, status ready, sheet_ready false). Official URLs only, no affiliate params. Métodos = class only, no coin tickers. Retiro stays —. Cloudbet withdrawal-speed marketing is not a retiro cell. No invented WR. 2026-09-30 Gates of Olympus 2500 Multiplier Mayhem $40K (id lobby-rainbet-gates-olympus-40k-2026-09-30, Peter QC PASS OFICIAL) is the first timeline item only. Mesa has no promo chip slot (KYC/bono/métodos); Rainbet bono cell stays the welcome.",
   "schema": "docs/briefs/homepage-content-schema-2026-09-24.md",
   "schema_comment": "Homepage mesa columns: operador, kyc, bono, pagos (Métodos). Freshness is one month line for the whole table (Actualizado · SEP 2026), not per-row dates. retiro deferred until we have real SLA/mesa data — retiro_label and retiro_tone stay on each operator; do not render them. jurisdiccion stays in JSON for licence diligence; do not render an Ámbito column or a CGA note in the table. pagos cells are the method class only — do not render a coin list.",
   "operators_mesa": [
@@ -152,20 +152,20 @@
   "operators_paused": [],
   "senales_lead": [
     {
-      "id": "bono-shuffle-rakeback-5pct-he-2026-09-25",
+      "id": "bono-shuffle-level-up-approx-2026-10-02",
       "tipo": "bono",
-      "fecha": "2026-09-28",
+      "fecha": "2026-10-02",
       "jurisdiccion": "offshore",
       "operador_slug": "shuffle",
       "operador_nombre": "Shuffle",
-      "titulo": "Shuffle rakeback ≠ match: 5% del house edge (Bronze)",
-      "resumen": "Help OFICIAL (21 oct 2024; re-verificado 28 SEP 2026): rakeback de casino = 5% HE en cash — no sports, y no es un depósito match con WR. Ejemplo stated: wager 1000 USDT en un juego con 2% HE → 1 USDT de rakeback, ganes o pierdas. Unlock: wager total $1.000 → Bronze VIP; se reclama en la página VIP en cualquier momento (help 13 abr 2026). FTD Nx sigue sin bases publicadas.",
-      "numero_objeto": "5% HE",
+      "titulo": "Shuffle Level Up ≠ solo rakeback — paquete aprox Silver~$25 · Gold~$210",
+      "resumen": "Help y promo OFICIAL: subir de rango desbloquea Rank Up + Level Up Reload + Recent Play. No es el rakeback 5% HE. Paquete combinado stated, aprox, en el escalón “1”: Silver 1 ≈ $25 · Gold 1 ≈ $210 · Platinum 1 ≈ $720 · Jade 1 ≈ $1,500 · Sapphire 1 = VIP personalizado (sin USD público). El VIP Panel tiene otra tabla, de Rank-Up automático, y no es ese paquete: Bronze 1 · wager $1,000 → ≈ $0.9 · Silver 1 · $10,000 → ≈ $9 · Gold 1 · $100,000 → ≈ $80 · Platinum 1 · $450,000 → ≈ $260 · Jade 1 · $1,200,000 → ≈ $260 · Sapphire 1 · $2,300,000 → ≈ $900. Promo live desde 2024-11-01; endsAt 2026-11-02. Números aprox / stated. Fuentes: https://help.shuffle.com/en/articles/8528228-shuffle-level-up-bonus · https://shuffle.com/promotions/level-up. Peter QC PASS 2026-10-02.",
+      "numero_objeto": "aprox",
       "claim_layer": "stated",
-      "qc": "Peter QC PASS — live-verified 2026-09-28 ~18:02 America/Guatemala. Id reused from 2026-09-25; visible date is the Mon re-verify.",
+      "qc": "Peter QC PASS 2026-10-02. Approx combined package at milestone “1” tiers, stated. VIP Panel Rank-Up samples are a separate table. Sapphire 1 has no public $. No WR, no FTD Nx, no code.",
       "fuentes": [
-        "https://help.shuffle.com/en/articles/10020509-how-does-rakeback-work",
-        "https://help.shuffle.com/en/articles/10020510-how-do-i-earn-rakeback"
+        "https://help.shuffle.com/en/articles/8528228-shuffle-level-up-bonus",
+        "https://shuffle.com/promotions/level-up"
       ],
       "cta_label": "Leer señal",
       "cta_href": null,
@@ -208,6 +208,27 @@
       "qc": "Peter QC PASS — OFICIAL, promo page verified 2026-09-30. API ISO and body UTC-4 labels both stated; not reconciled.",
       "fuentes": [
         "https://rainbet.com/promotions/gates-of-olympus-2500-multiplier-mayhem-40k-tournament"
+      ],
+      "cta_label": "Leer señal",
+      "cta_href": null,
+      "homepage_role": "timeline",
+      "status": "ready"
+    },
+    {
+      "id": "bono-shuffle-rakeback-5pct-he-2026-09-25",
+      "tipo": "bono",
+      "fecha": "2026-09-28",
+      "jurisdiccion": "offshore",
+      "operador_slug": "shuffle",
+      "operador_nombre": "Shuffle",
+      "titulo": "Shuffle rakeback ≠ match: 5% del house edge (Bronze)",
+      "resumen": "Help OFICIAL (21 oct 2024; re-verificado 28 SEP 2026): rakeback de casino = 5% HE en cash — no sports, y no es un depósito match con WR. Ejemplo stated: wager 1000 USDT en un juego con 2% HE → 1 USDT de rakeback, ganes o pierdas. Unlock: wager total $1.000 → Bronze VIP; se reclama en la página VIP en cualquier momento (help 13 abr 2026). FTD Nx sigue sin bases publicadas.",
+      "numero_objeto": "5% HE",
+      "claim_layer": "stated",
+      "qc": "Peter QC PASS — live-verified 2026-09-28 ~18:02 America/Guatemala. Id reused from 2026-09-25; visible date is the Mon re-verify. Demoted from lead 2026-10-02; mesa chip unchanged.",
+      "fuentes": [
+        "https://help.shuffle.com/en/articles/10020509-how-does-rakeback-work",
+        "https://help.shuffle.com/en/articles/10020510-how-do-i-earn-rakeback"
       ],
       "cta_label": "Leer señal",
       "cta_href": null,
