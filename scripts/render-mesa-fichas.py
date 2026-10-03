@@ -69,7 +69,7 @@ ROWS = [
     (
         "Licencia",
         [
-            "Anjouan, declarada en Terms, AML y footer (25 SEP 2026). Validador no chequeado en esta ola.",
+            "Anjouan, declarada en Terms, AML y footer (25 SEP 2026). Validador no chequeado.",
             "Curaçao Gaming Authority, OGL/2024/1337/0628, Natural Nine B.V. (160998). /info/license dice “Gaming Control Board”; Terms y el certificado CGA dicen “Gaming Authority”. Certificado Active.",
             "Curaçao-class por certificado CGA: OGL/2024/1451/0918, Active, otorgado 09/06/2025. Footer del operador no capturado (HTTP 403).",
             "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. No es licencia de Argentina.",
@@ -422,7 +422,7 @@ def render_index() -> str:
     ]
     body = f"""
       {crumbs_html([("Inicio", "/"), ("Mesa", None)])}
-      <p class="estado">Ola 1 · fichas</p>
+      <p class="estado">Fichas</p>
       <h1>Mesa</h1>
       <p class="lede">La mesa pública, en fichas. Rainbet, Shuffle, Stake, Cloudbet y Roobet tienen perfil editorial.</p>
       <p class="lede">No hay puntaje. El enlace de afiliado no está activo. +18.</p>
@@ -460,7 +460,7 @@ FICHAS = {
         ],
         "sheet": [
             ("Empresa", "Rain Group Ltd (co. 16077, Hamchako), en Terms, AML y footer. El JSON-LD de la homepage también nombra RBGAMING N.V. Las dos cadenas están publicadas y no coinciden: no elegimos una sola razón social."),
-            ("Licencia", "Anjouan, declarada en Terms, AML y footer (25 SEP 2026). El validador de Anjouan no se chequeó en esta ola. No es una licencia del registro argentino."),
+            ("Licencia", "Anjouan, declarada en Terms, AML y footer (25 SEP 2026). El validador de Anjouan no se chequeó. No es una licencia del registro argentino."),
             ("Monedas", "FAQ de rainbet.com, 25 SEP 2026: BTC, ETH, LTC, XRP, SOL, TRX, BNB, USDT y USDC. Redes: no verificado · 03 OCT 2026."),
             ("Idiomas", "JSON-LD knowsLanguage: en, ar, es, fr, ja, pt, ru, tr, zh (homepage, 03 OCT 2026)."),
             ("Última revisión", "Fila de la mesa: 25 SEP 2026. Señales de lobby: Daily Race 26 SEP 2026 y torneo Gates of Olympus 30 SEP 2026. Huecos marcados al armar la ficha: 03 OCT 2026."),
