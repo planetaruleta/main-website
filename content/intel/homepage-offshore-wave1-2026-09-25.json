@@ -1,5 +1,12 @@
 {
   "stamp": "2026-09-25",
+  "fichas_wave1": {
+    "published": "2026-10-03",
+    "index": "/mesa/",
+    "fichas": ["rainbet", "shuffle", "stake"],
+    "candidatos_sin_ficha": ["cloudbet", "roobet"],
+    "note": "Editorial profiles only. No numeric scores, no affiliate URL, no /casinos/ play pages. sheet_ready stays false. Regenerate HTML with scripts/render-mesa-fichas.py."
+  },
   "timezone": "Asia/Jerusalem",
   "owner": "Casino Intel",
   "gate": "Peter QC",
