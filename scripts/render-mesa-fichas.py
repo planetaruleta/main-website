@@ -49,7 +49,7 @@ ROWS = [
     (
         "KYC",
         [
-            "ID + selfie + prueba de domicilio (Sumsub). Terms/AML: pueden restringir si el ID no se completa en 72 h; la verificación puede tardar hasta 7 días hábiles.",
+            "ID + selfie + prueba de domicilio (Sumsub, nombrado en el AML). Terms §20: pueden restringir si el ID no se completa en 72 h; la verificación puede tardar hasta 7 días hábiles.",
             "ID de gobierno antes del primer retiro (Terms). Help: email → datos → ID → prueba de domicilio.",
             "Help 24 ago 2026: pasaporte, DNI ambos lados o licencia ambos lados. Cuándo lo exigen: no verificado · 25 SEP 2026.",
             "Niveles · L2 ID + prueba de domicilio + face (Sumsub). Más detalle del disparador: no verificado · 03 OCT 2026.",
@@ -105,16 +105,15 @@ def e(text: str) -> str:
 
 def compare_table() -> str:
     heads = []
-    for slug, name, has_ficha, sub in OPS:
-        label = f'<a href="/mesa/{slug}/">{e(name)}</a>' if has_ficha else e(name)
+    for slug, name, _has_ficha, sub in OPS:
+        label = f'<a href="/mesa/{slug}/">{e(name)}</a>'
         heads.append(f'                <th scope="col">{label}<span>{e(sub)}</span></th>\n')
     body = []
     for label, cells in ROWS:
         tds = []
-        for (slug, name, has_ficha, sub), cell in zip(OPS, cells):
-            op = name if has_ficha else f"{name} · candidato"
+        for (_slug, name, _has_ficha, _sub), cell in zip(OPS, cells):
             tds.append(
-                f'                <td data-op="{e(op)}"><span class="op-name">{e(op)}</span>{e(cell)}</td>\n'
+                f'                <td data-op="{e(name)}"><span class="op-name">{e(name)}</span>{e(cell)}</td>\n'
             )
         body.append(
             "              <tr>\n"
@@ -302,7 +301,7 @@ def footer() -> str:
   </script>"""
 
 
-def head(title: str, description: str, path: str, graph: list) -> str:
+def head(title: str, description: str, path: str, graph: list, og_type: str = "article") -> str:
     url = f"{HOST}{path}"
     payload = {"@context": "https://schema.org", "@graph": graph}
     ld = json.dumps(payload, ensure_ascii=False, indent=2)
@@ -320,7 +319,7 @@ def head(title: str, description: str, path: str, graph: list) -> str:
   <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <meta property="og:title" content="{e(title)}" />
-  <meta property="og:type" content="article" />
+  <meta property="og:type" content="{e(og_type)}" />
   <meta property="og:url" content="{e(url)}" />
   <meta property="og:description" content="{e(description)}" />
   <meta property="og:image" content="{HOST}/logo-saturn.png" />
@@ -343,8 +342,8 @@ def head(title: str, description: str, path: str, graph: list) -> str:
 </head>"""
 
 
-def page(title: str, description: str, path: str, graph: list, body: str) -> str:
-    return f"""{head(title, description, path, graph)}
+def page(title: str, description: str, path: str, graph: list, body: str, og_type: str = "article") -> str:
+    return f"""{head(title, description, path, graph, og_type)}
 <body>
   {mast()}
   <main id="contenido" class="page">
@@ -360,17 +359,12 @@ def page(title: str, description: str, path: str, graph: list, body: str) -> str
 
 def otros_html(current: str | None) -> str:
     bits = []
-    for slug, name, has_ficha, _sub in OPS:
+    for slug, name, _has_ficha, _sub in OPS:
         if slug == current:
             continue
-        if has_ficha:
-            bits.append(
-                f'<li><a href="/mesa/{slug}/">{e(name)}</a><span class="tag">En la mesa · ficha</span></li>'
-            )
-        else:
-            bits.append(
-                f"<li><span>{e(name)}</span><span class=\"tag\">Candidato · sin ficha</span></li>"
-            )
+        bits.append(
+            f'<li><a href="/mesa/{slug}/">{e(name)}</a><span class="tag">En la mesa · ficha</span></li>'
+        )
     return f'<ul class="otros">{"".join(bits)}</ul>'
 
 
@@ -394,13 +388,33 @@ INDEX_FAQS = [
 ]
 
 
+def fichas_item_list(url: str) -> dict:
+    return {
+        "@type": "ItemList",
+        "@id": f"{url}#fichas",
+        "name": "Fichas de la mesa",
+        "inLanguage": "es",
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": len(OPS),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i,
+                "name": name,
+                "url": f"{HOST}/mesa/{slug}/",
+            }
+            for i, (slug, name, _has_ficha, _sub) in enumerate(OPS, start=1)
+        ],
+    }
+
+
 def render_index() -> str:
     path = "/mesa/"
     url = f"{HOST}{path}"
-    title = "Mesa — fichas | Planeta Ruleta"
+    title = "Mesa: fichas Rainbet, Shuffle, Stake, Cloudbet y Roobet | Planeta Ruleta"
     description = (
-        "Fichas editoriales de la mesa: Rainbet, Shuffle, Stake, Cloudbet y Roobet. "
-        "Sin puntaje ni enlace de afiliado. +18."
+        "Fichas de Rainbet, Shuffle, Stake, Cloudbet y Roobet: licencia, KYC y bono "
+        "en una comparación declarada. Sin puntaje. Afiliado no activo. +18."
     )
     graph = [
         org(),
@@ -415,17 +429,19 @@ def render_index() -> str:
             "about": {"@id": ORG_ID},
             "publisher": {"@id": ORG_ID},
             "breadcrumb": {"@id": f"{url}#breadcrumb"},
+            "mainEntity": {"@id": f"{url}#fichas"},
             "dateModified": "2026-10-03",
         },
+        fichas_item_list(url),
         breadcrumb_ld(url, [("Inicio", f"{HOST}/"), ("Mesa", url)]),
         faq_ld(url, INDEX_FAQS),
     ]
     body = f"""
       {crumbs_html([("Inicio", "/"), ("Mesa", None)])}
       <p class="estado">Fichas</p>
-      <h1>Mesa</h1>
-      <p class="lede">La mesa pública, en fichas. Rainbet, Shuffle, Stake, Cloudbet y Roobet tienen perfil editorial.</p>
-      <p class="lede">No hay puntaje. El enlace de afiliado no está activo. +18.</p>
+      <h1>Fichas de la mesa</h1>
+      <p class="lede">Cinco fichas: Rainbet, Shuffle, Stake, Cloudbet y Roobet. La comparación repite lo declarado. Sin puntaje.</p>
+      <p class="lede">El enlace de afiliado no está activo. Offshore no es una licencia de Argentina. +18.</p>
       <ul class="cards">
         <li><a class="card" href="/mesa/rainbet/"><p class="estado">En la mesa</p><h2>Rainbet</h2><p>Welcome con dos caminos declarados. Licencia de Anjouan, según la casa. Retiro sin SLA.</p></a></li>
         <li><a class="card" href="/mesa/shuffle/"><p class="estado">En la mesa</p><h2>Shuffle</h2><p>Chip de rakeback 5% HE (Bronze). Level Up es otra señal, con números aproximados.</p></a></li>
@@ -436,7 +452,7 @@ def render_index() -> str:
       <p>La tira corta sigue en <a href="/#mesa">la home</a>. Los cinco nombres abren su ficha.</p>
       {affiliate_html()}
       <section class="cmp-sec" id="comparacion" aria-labelledby="comparacion-title">
-        <h2 id="comparacion-title">Comparación</h2>
+        <h2 id="comparacion-title">Comparación declarada</h2>
         <p class="cmp-note">Las cinco fichas. Hechos de la mesa y de las señales. Hueco = no verificado, con fecha.</p>
         {compare_table()}
       </section>
@@ -445,14 +461,15 @@ def render_index() -> str:
         {faq_html(INDEX_FAQS)}
       </section>
 """
-    return page(title, description, path, graph, body)
+    return page(title, description, path, graph, body, og_type="website")
 
 
 FICHAS = {
     "rainbet": {
         "name": "Rainbet",
-        "title": "Rainbet — ficha de la mesa | Planeta Ruleta",
-        "description": "Ficha editorial de Rainbet: licencia de Anjouan declarada, welcome x40 o sin rollover, KYC y señales. Sin puntaje. Offshore no es licencia de Argentina. +18.",
+        "h1": "Rainbet: ficha de la mesa",
+        "title": "Rainbet: licencia, KYC y welcome — ficha | Planeta Ruleta",
+        "description": "Rainbet declara licencia de Anjouan y un welcome x40 o sin ese rollover. KYC con ID, selfie y domicilio. Sin puntaje. Offshore no es licencia de Argentina. +18.",
         "modified": "2026-10-03",
         "lede": [
             "Rainbet está en la mesa como operador crypto/offshore: la casa declara licencia de Anjouan y un welcome con dos caminos.",
@@ -481,8 +498,7 @@ FICHAS = {
         "bono": [
             "El chip de la fila es el welcome, no el race. Camino A: 40x sobre depósito+bono (100% / 50% / 100% + 20 tiradas, mínimo 30 USD, máximo 700 USD por tramo, apuesta máxima 2% del depósito, slots con RTP mayor a 97,4% fuera). Camino B: sin ese rollover; se desbloquea al jugar. Hay que optar en promotions antes de depositar. Fuente: homepage, 25 SEP 2026.",
             "El Daily Race del 26 SEP y el torneo Gates of Olympus 2500 del 30 SEP son señales de lobby, con ventana publicada. No reemplazan el chip.",
-            "Para leer un rollover y un rakeback sin mezclarlos: guías de promo, de max bet y de rakeback.",
-        ],
+            ],
         "kyc": "KYC declarado: documento de identidad, selfie y prueba de domicilio. Sumsub está nombrado en el AML, no en Terms §20. Terms §20: pueden restringir la cuenta si el ID no se completa en 72 horas; la verificación puede tardar hasta 7 días hábiles; el equipo de KYC habla de 24 horas una vez Temporarily Approved. Fuente: Terms y AML, revisión de mesa 25 SEP 2026 / rechequeo 03 OCT 2026.",
         "offshore": "Rainbet publica una licencia de Anjouan. Eso no es una licencia de Argentina ni convierte a esta página en un casino. No hay puntaje, no hay puesto y no hay instrucciones para saltar un bloqueo. +18.",
         "senales": [
@@ -529,8 +545,9 @@ FICHAS = {
     },
     "shuffle": {
         "name": "Shuffle",
-        "title": "Shuffle — ficha de la mesa | Planeta Ruleta",
-        "description": "Ficha editorial de Shuffle: Natural Nine B.V., licencia de Curaçao declarada, rakeback 5% HE y señales de Level Up. Sin puntaje. +18.",
+        "h1": "Shuffle: ficha de la mesa",
+        "title": "Shuffle: licencia, KYC y rakeback — ficha | Planeta Ruleta",
+        "description": "Rakeback 5% del house edge (Bronze) y licencia Curaçao OGL/2024/1337/0628. KYC antes del primer retiro. Sin puntaje. Offshore no es licencia de Argentina. +18.",
         "modified": "2026-10-03",
         "lede": [
             "Shuffle está en la mesa como operador crypto/offshore, con licencia de Curaçao publicada a nombre de Natural Nine B.V.",
@@ -568,8 +585,7 @@ FICHAS = {
             "Chip de la fila: rakeback de casino = 5% del house edge, en cash, no en sports, y no es un match de depósito. Ejemplo declarado: apostar 1000 USDT en un juego con 2% de house edge devuelve 1 USDT, se gane o se pierda. Se desbloquea al apostar 1.000 USD en total (Bronze) y se reclama en la página VIP. Help del 21 oct 2024, re-verificado 28 SEP 2026.",
             "Las bases de un FTD con rollover no están publicadas. No inventamos un Nx.",
             "Level Up (02 OCT 2026) es otra señal: al subir de rango se abren Rank Up, Level Up Reload y Recent Play. Los montos del escalón “1” están publicados como aproximados (Silver ≈ 25 USD, Gold ≈ 210 USD, y el resto en la señal). No reemplaza el chip. La promo figura desde el 1 nov 2024 hasta el 2 nov 2026.",
-            "Para no leer un rakeback como si fuera un match: guía de cashback, rakeback y lossback, y la guía de cómo leer una promo.",
-        ],
+            ],
         "kyc": "KYC declarado: los Terms pueden exigir pasaporte, DNI o licencia al cruzar un umbral y, en cualquier caso, antes del primer retiro. El help de Account Verification describe niveles: email, datos básicos, ID de gobierno y prueba de domicilio. Fuente: Terms y help, señal del 25 SEP 2026.",
         "offshore": "Shuffle publica OGL/2024/1337/0628 a nombre de Natural Nine B.V. /info/license dice Curaçao Gaming Control Board; Terms y el certificado CGA dicen Curaçao Gaming Authority. Eso no es una licencia de Argentina. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
         "senales": [
@@ -616,8 +632,9 @@ FICHAS = {
     },
     "stake": {
         "name": "Stake",
-        "title": "Stake — ficha de la mesa | Planeta Ruleta",
-        "description": "Ficha editorial de Stake: rakeback 3.5% HE de welcome y licencia citada por certificado CGA. El footer del operador no se capturó (HTTP 403). Sin puntaje. +18.",
+        "h1": "Stake: ficha de la mesa",
+        "title": "Stake: licencia, KYC y rakeback — ficha | Planeta Ruleta",
+        "description": "Welcome como rakeback 3.5% del house edge. Licencia por certificado CGA; el footer dio HTTP 403. Sin puntaje. Offshore no es licencia de Argentina. +18.",
         "modified": "2026-10-03",
         "lede": [
             "Stake está en la mesa como operador crypto/offshore.",
@@ -653,7 +670,7 @@ FICHAS = {
         "bono": [
             "Chip de la fila: el welcome desbloquea rakeback Bronze, 3.5% del house edge, con un código. No es un match de depósito con rollover fijo. Ejemplo declarado: 1 BTC apostado a 2% de house edge → 0,0007 BTC de rakeback. Help actualizado el 24 ago 2026.",
             "El rollover de un deposit-bonus “varía”. El help da un ejemplo de 30x y no fija un producto de match. No lo copiamos como chip.",
-            "No hay señal de race ni de level-up de Stake en la mesa. Para leer rakeback aparte de un match: la guía de cashback, rakeback y lossback.",
+            "No hay señal de race ni de level-up de Stake en la mesa.",
         ],
         "kyc": "El help Proof of Identity (24 ago 2026) acepta pasaporte, documento nacional de ambos lados o licencia de ambos lados, fotografiado y con vigencia de al menos 3 meses. En qué momento lo exigen no quedó en ese fetch: no verificado · 25 SEP 2026. Fuente: help.stake.com.",
         "offshore": "La celda dice Curaçao-class porque el certificado CGA de stake.com está Active y el footer del operador no se pudo leer (HTTP 403). Eso no es una licencia de Argentina. Esta ficha no pone nota y no explica cómo evadir un bloqueo. +18.",
@@ -687,8 +704,9 @@ FICHAS = {
     },
     "cloudbet": {
         "name": "Cloudbet",
-        "title": "Cloudbet — ficha de la mesa | Planeta Ruleta",
-        "description": "Ficha editorial de Cloudbet: welcome de hasta 2.500 USD en 30 días, rakeback 10% del house edge en casino y licencia CGA OGL/2024/328/0599. Sin puntaje. +18.",
+        "h1": "Cloudbet: ficha de la mesa",
+        "title": "Cloudbet: licencia, KYC y welcome — ficha | Planeta Ruleta",
+        "description": "Cloudbet: welcome de hasta 2.500 USD en 30 días y rakeback 10% en casino. Licencia CGA OGL/2024/328/0599. Sin puntaje. Offshore no es licencia de Argentina. +18.",
         "modified": "2026-10-03",
         "lede": [
             "Cloudbet está en la mesa como operador crypto/offshore. El help declara licencia de la Curaçao Gaming Authority y un paquete de hasta 2.500 USD en 30 días, con rakeback del 10% en casino.",
@@ -720,7 +738,7 @@ FICHAS = {
         "bono": [
             "Chip de la fila: paquete de bienvenida de hasta 2.500 USD en un programa de 30 días, y 10% del house edge en cada apuesta de casino elegible. Las apuestas de sports no suman rakeback. Terms §8.4, chequeo 03 OCT 2026.",
             "El período de 30 días empieza al hacer la primera apuesta después de ese depósito (§8.4.2), no desde la hora del depósito. No hay un Nx de rollover publicado para este paquete. No inventamos uno.",
-            "No hay señal de Cloudbet en el archivo. El chip es el de la fila. Para leer un rakeback aparte de un match: la guía de cashback, rakeback y lossback.",
+            "No hay señal de Cloudbet en el archivo. El chip es el de la fila.",
         ],
         "kyc": "KYC declarado por niveles. Level 2: foto del documento, prueba de domicilio y verificación de rostro. Sumsub está en Terms §21.1.3; el artículo de niveles no lo nombra. El help dice que pueden pedir la verificación en cualquier momento. Los topes de Level 1 están publicados (2.200 USD de depósito de por vida y 2.200 USD de retiro diario) y no están en la celda de la tabla. Un disparador fijo, más allá de “en cualquier momento”: no verificado · 03 OCT 2026. Fuente: help y Terms, 03 OCT 2026.",
         "offshore": "Cloudbet publica Curaçao Gaming Authority, OGL/2024/328/0599, a nombre de Halcyon Super Holdings B.V. (148526). Eso no es una licencia de Argentina. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
@@ -746,8 +764,9 @@ FICHAS = {
     },
     "roobet": {
         "name": "Roobet",
-        "title": "Roobet — ficha de la mesa | Planeta Ruleta",
-        "description": "Ficha editorial de Roobet: instant rakeback y boost de +10% por 24 h al registrarse. Licencia y sportsbook público: no verificado. Sin puntaje. +18.",
+        "h1": "Roobet: ficha de la mesa",
+        "title": "Roobet: licencia, KYC y rakeback — ficha | Planeta Ruleta",
+        "description": "Instant rakeback y +10% por 24 h al registrarse. Licencia y sportsbook público: no verificado. Sin puntaje. Offshore no es licencia de Argentina. +18.",
         "modified": "2026-10-03",
         "lede": [
             "Roobet está en la mesa como operador crypto/offshore. El help declara instant rakeback y, al registrarse, un boost de +10% durante 24 horas.",
@@ -777,7 +796,7 @@ FICHAS = {
         ],
         "bono": [
             "Chip de la fila: Instant rakeback, un porcentaje de lo apostado, reclamable cada 30 minutos y sin vencimiento. Al registrarse hay un boost de +10% durante 24 horas sobre ese rakeback. No es un match de depósito. El artículo no publica un Nx. Help de rewards, rechequeo 03 OCT 2026.",
-            "No hay señal de Roobet en el archivo. El chip es el de la fila. Para no leer un rakeback como si fuera un match: la guía de cashback, rakeback y lossback.",
+            "No hay señal de Roobet en el archivo. El chip es el de la fila.",
         ],
         "kyc": "KYC declarado en Level 2 (help del 23 jul 2026): pasaporte, licencia de conducir o documento de gobierno, con captura de frente y dorso. Ese artículo no da un umbral. Cuándo lo exigen: no verificado · 03 OCT 2026. Fuente: help.roobet.com.",
         "offshore": "En las páginas chequeadas el 03 OCT 2026 no hay número de licencia ni autoridad. “Fully licensed and regulated” en el artículo Welcome no nombra un registro. Eso no es una licencia de Argentina. El HTML público de roobet.com y de /sports no muestra un sportsbook (cero veces la palabra sport); un sportsbook con sesión iniciada no se chequeó. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
@@ -804,7 +823,7 @@ FICHAS = {
 }
 
 
-GUIDE_LINKS = """<p>Guías para leer el texto, no para depositar: <a href="/guias/como-leer-una-promo-casino/">cómo leer una promo</a>, <a href="/guias/cashback-rakeback-lossback/">cashback, rakeback y lossback</a>, <a href="/guias/max-bet-contribucion-bono/">max bet y contribución</a>, <a href="/guias/usdt-vs-btc-bankroll/">USDT y BTC en un depósito crypto</a>.</p>"""
+GUIDE_LINKS = """<p>Guías para leer el texto, no para depositar: <a href="/guias/como-leer-una-promo-casino/">cómo leer una promo de casino</a>, <a href="/guias/cashback-rakeback-lossback/">cashback, rakeback y lossback</a>, <a href="/guias/max-bet-contribucion-bono/">max bet y contribución del bono</a>, <a href="/guias/usdt-vs-btc-bankroll/">USDT y BTC en un depósito crypto</a>.</p>"""
 
 
 def render_ficha(slug: str) -> str:
@@ -833,7 +852,7 @@ def render_ficha(slug: str) -> str:
         {
             "@type": "Article",
             "@id": f"{url}#article",
-            "headline": title,
+            "headline": data["h1"],
             "description": description,
             "inLanguage": "es",
             "datePublished": "2026-10-03",
@@ -856,10 +875,10 @@ def render_ficha(slug: str) -> str:
       {crumbs_html([("Inicio", "/"), ("Mesa", "/mesa/"), (data["name"], None)])}
       <article class="ficha">
         <p class="estado">En la mesa</p>
-        <h1>{e(data["name"])}</h1>
+        <h1>{e(data["h1"])}</h1>
         {lede}
         <section class="block" aria-labelledby="declarada">
-          <h2 id="declarada">Ficha declarada</h2>
+          <h2 id="declarada">Lo que declara la casa</h2>
           {sheet_html(data["sheet"])}
           {fuentes_html(data["fuentes"])}
         </section>
@@ -890,8 +909,8 @@ def render_ficha(slug: str) -> str:
         </section>
       </article>
       <section class="cmp-sec" id="comparacion" aria-labelledby="comparacion-title">
-        <h2 id="comparacion-title">Comparación</h2>
-        <p class="cmp-note">La misma tabla que en <a href="/mesa/#comparacion">/mesa/</a>. Sin insignia de ganador.</p>
+        <h2 id="comparacion-title">Comparación declarada</h2>
+        <p class="cmp-note">La misma tabla que en <a href="/mesa/#comparacion">la comparación de las fichas</a>. Sin insignia de ganador.</p>
         {compare_table()}
       </section>
       <section class="block" aria-labelledby="otros">
@@ -911,7 +930,16 @@ def main() -> None:
         path = ROOT / "mesa" / slug / "index.html"
         path.parent.mkdir(parents=True, exist_ok=True)
         files[path] = render_ficha(slug)
-    banned = ("mejor casino", "vpn", "AggregateRating", "noindex", '"@type": "Review"')
+    banned = (
+        "mejor casino",
+        "vpn",
+        "AggregateRating",
+        "noindex",
+        '"@type": "Review"',
+        '"@type": "Product"',
+        "candidato",
+        "ola 1",
+    )
     for path, text in files.items():
         low = text.lower()
         for word in banned:

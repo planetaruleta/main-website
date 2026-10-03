@@ -128,7 +128,7 @@ def assert_matches_intel(items: list[dict]) -> None:
 
 
 def kicker_html(kicker: str) -> str:
-    """Link the operator name when a Wave 1 ficha exists. The rest of the kicker stays text."""
+    """Link the operator name when a mesa ficha exists. The rest of the kicker stays text."""
     name, sep, rest = kicker.partition(" · ")
     slug = FICHA_SLUGS.get(name)
     if not slug or not sep:
