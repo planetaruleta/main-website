@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""Render Wave 1 mesa fichas. Facts come from the homepage intel JSON and the señales already on /.
+"""Render mesa fichas for the five offshore operators.
 
-HTML in /mesa/ is the published page. Re-run this script after editing copy here.
+Facts come from the homepage intel JSON, the señales archive, and the 03 OCT 2026
+fact-check of official help, terms, and licence pages. HTML in /mesa/ is the
+published page. Re-run this script after editing copy here.
 Unverified cells stay explicit. No scores, no affiliate URL, no /casinos/ play pages.
 """
 
@@ -19,8 +21,8 @@ OPS = [
     ("rainbet", "Rainbet", True, "En la mesa"),
     ("shuffle", "Shuffle", True, "En la mesa"),
     ("stake", "Stake", True, "En la mesa"),
-    ("cloudbet", "Cloudbet", False, "Candidato"),
-    ("roobet", "Roobet", False, "Candidato"),
+    ("cloudbet", "Cloudbet", True, "En la mesa"),
+    ("roobet", "Roobet", True, "En la mesa"),
 ]
 
 ROWS = [
@@ -40,8 +42,8 @@ ROWS = [
             "FAQ 25 SEP 2026: BTC, ETH, LTC, XRP, SOL, TRX, BNB, USDT, USDC. Redes: no verificado · 03 OCT 2026.",
             "Clase: crypto · fiat/cards. Lista y redes: no verificado · 03 OCT 2026. USDT solo en el ejemplo de rakeback.",
             "Clase: crypto · fiat. Lista y redes: no verificado · 03 OCT 2026. BTC solo en el ejemplo de rakeback.",
-            "Clase: crypto · buy card (Swapped). Lista y redes: no verificado · 30 SEP 2026.",
-            "Clase: crypto · fiat+Swapped. Lista y redes: no verificado · 30 SEP 2026.",
+            "Clase: crypto · buy card (Swapped). Lista y redes: no verificado · 03 OCT 2026.",
+            "Clase: crypto · fiat+Swapped. Lista y redes: no verificado · 03 OCT 2026.",
         ],
     ),
     (
@@ -50,17 +52,17 @@ ROWS = [
             "ID + selfie + prueba de domicilio (Sumsub). Terms/AML: pueden restringir si el ID no se completa en 72 h; la verificación puede tardar hasta 7 días hábiles.",
             "ID de gobierno antes del primer retiro (Terms). Help: email → datos → ID → prueba de domicilio.",
             "Help 24 ago 2026: pasaporte, DNI ambos lados o licencia ambos lados. Cuándo lo exigen: no verificado · 25 SEP 2026.",
-            "Niveles · L2 ID + prueba de domicilio + face (Sumsub). Más detalle del disparador: no verificado · 30 SEP 2026.",
-            "L2 ID (pasaporte, licencia o documento de gobierno). Más detalle del disparador: no verificado · 30 SEP 2026.",
+            "Niveles · L2 ID + prueba de domicilio + face (Sumsub). Más detalle del disparador: no verificado · 03 OCT 2026.",
+            "L2 ID (pasaporte, licencia o documento de gobierno). Más detalle del disparador: no verificado · 03 OCT 2026.",
         ],
     ),
     (
         "Sportsbook",
         [
-            "no verificado · 03 OCT 2026",
-            "no verificado · 03 OCT 2026. El help de rakeback dice que no corre en sports; eso no es un sí/no de sportsbook.",
-            "no verificado · 03 OCT 2026",
-            "no verificado · 03 OCT 2026",
+            "Sportsbook declarado en la homepage y en /sportsbook (título “Online Sportsbook”). 03 OCT 2026.",
+            "Sportsbook declarado: título de la homepage y /sports. El help de coin-mixing nombra “the sportsbook”. El rakeback no corre en sports. 03 OCT 2026.",
+            "Sportsbook declarado en el help (sección Sports; las apuestas sports cuentan al wager). stake.com/sports HTTP 403 el 03 OCT 2026.",
+            "Sportsbook declarado: /en/sports, título “Crypto Sports Betting”. 03 OCT 2026.",
             "no verificado · 03 OCT 2026",
         ],
     ),
@@ -68,9 +70,9 @@ ROWS = [
         "Licencia",
         [
             "Anjouan, declarada en Terms, AML y footer (25 SEP 2026). Validador no chequeado en esta ola.",
-            "Curaçao Gaming Control Board, OGL/2024/1337/0628, en /info/license, Terms y homepage.",
+            "Curaçao Gaming Authority, OGL/2024/1337/0628, Natural Nine B.V. (160998). /info/license dice “Gaming Control Board”; Terms y el certificado CGA dicen “Gaming Authority”. Certificado Active.",
             "Curaçao-class por certificado CGA: OGL/2024/1451/0918, Active, otorgado 09/06/2025. Footer del operador no capturado (HTTP 403).",
-            "no verificado · 30 SEP 2026",
+            "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. No es licencia de Argentina.",
             "no verificado · 30 SEP 2026",
         ],
     ),
@@ -80,8 +82,8 @@ ROWS = [
             "sí",
             "sí",
             "sí",
-            "candidato — fila en la home, sin ficha",
-            "candidato — fila en la home, sin ficha",
+            "sí",
+            "sí",
         ],
     ),
     (
@@ -90,8 +92,8 @@ ROWS = [
             "25 SEP 2026 (fila). Señales de lobby: 26 SEP y 30 SEP 2026.",
             "28 SEP 2026 (rakeback). Level Up: 02 OCT 2026.",
             "25 SEP 2026",
-            "30 SEP 2026",
-            "30 SEP 2026",
+            "30 SEP 2026 (bono, KYC, métodos). Licencia y sportsbook: 03 OCT 2026.",
+            "30 SEP 2026 (bono, KYC, métodos). Sportsbook y licencia rechequeados: 03 OCT 2026.",
         ],
     ),
 ]
@@ -231,6 +233,16 @@ def fuentes_html(links: list[tuple[str, str]]) -> str:
     return f'<p class="fuentes">Fuentes · {" · ".join(bits)}</p>'
 
 
+def senales_block(data: dict) -> str:
+    items = data["senales"]
+    if not items:
+        return "<p>No hay señales de este operador en el archivo. No es un hub por operador.</p>"
+    return (
+        "<p>Salen del archivo de señales. No es un hub por operador.</p>\n          "
+        + senales_html(items)
+    )
+
+
 def senales_html(items: list[dict]) -> str:
     lis = []
     for item in items:
@@ -368,8 +380,8 @@ INDEX_FAQS = [
         "No. No hay puntaje ni puesto. La comparación repite hechos declarados en la mesa o en las señales. Si el dato no está, la celda dice no verificado.",
     ),
     (
-        "¿Por qué Cloudbet y Roobet no tienen ficha?",
-        "Están en la tira de la home, con KYC, bono y métodos declarados el 30 SEP 2026. Esta ola publica ficha solo de Rainbet, Shuffle y Stake. En la tabla figuran como candidatos.",
+        "¿Cloudbet y Roobet tienen ficha?",
+        "Sí. Las cinco fichas están en la mesa: Rainbet, Shuffle, Stake, Cloudbet y Roobet. No hay puntaje ni enlace de afiliado.",
     ),
     (
         "¿El enlace de afiliado está activo?",
@@ -387,8 +399,8 @@ def render_index() -> str:
     url = f"{HOST}{path}"
     title = "Mesa — fichas | Planeta Ruleta"
     description = (
-        "Fichas editoriales de la mesa: Rainbet, Shuffle y Stake. "
-        "Cloudbet y Roobet, candidatos sin ficha. Sin puntaje ni enlace de afiliado. +18."
+        "Fichas editoriales de la mesa: Rainbet, Shuffle, Stake, Cloudbet y Roobet. "
+        "Sin puntaje ni enlace de afiliado. +18."
     )
     graph = [
         org(),
@@ -412,18 +424,20 @@ def render_index() -> str:
       {crumbs_html([("Inicio", "/"), ("Mesa", None)])}
       <p class="estado">Ola 1 · fichas</p>
       <h1>Mesa</h1>
-      <p class="lede">La mesa pública, en fichas. Rainbet, Shuffle y Stake tienen perfil editorial en esta ola.</p>
-      <p class="lede">Cloudbet y Roobet aparecen en la comparación como candidatos, sin ficha. No hay puntaje. El enlace de afiliado no está activo. +18.</p>
+      <p class="lede">La mesa pública, en fichas. Rainbet, Shuffle, Stake, Cloudbet y Roobet tienen perfil editorial.</p>
+      <p class="lede">No hay puntaje. El enlace de afiliado no está activo. +18.</p>
       <ul class="cards">
         <li><a class="card" href="/mesa/rainbet/"><p class="estado">En la mesa</p><h2>Rainbet</h2><p>Welcome con dos caminos declarados. Licencia de Anjouan, según la casa. Retiro sin SLA.</p></a></li>
         <li><a class="card" href="/mesa/shuffle/"><p class="estado">En la mesa</p><h2>Shuffle</h2><p>Chip de rakeback 5% HE (Bronze). Level Up es otra señal, con números aproximados.</p></a></li>
         <li><a class="card" href="/mesa/stake/"><p class="estado">En la mesa</p><h2>Stake</h2><p>Welcome publicado como rakeback 3.5% HE. La licencia citada es el certificado CGA: el footer del sitio no se pudo leer.</p></a></li>
+        <li><a class="card" href="/mesa/cloudbet/"><p class="estado">En la mesa</p><h2>Cloudbet</h2><p>Welcome de hasta 2.500 USD en 30 días y rakeback 10% del house edge en casino. Licencia CGA declarada en el help.</p></a></li>
+        <li><a class="card" href="/mesa/roobet/"><p class="estado">En la mesa</p><h2>Roobet</h2><p>Instant rakeback y un boost de +10% por 24 h al registrarse. Licencia y sportsbook público: no verificado.</p></a></li>
       </ul>
-      <p>La tira corta sigue en <a href="/#mesa">la home</a>. Cloudbet y Roobet no abren ficha en esta ola.</p>
+      <p>La tira corta sigue en <a href="/#mesa">la home</a>. Los cinco nombres abren su ficha.</p>
       {affiliate_html()}
       <section class="cmp-sec" id="comparacion" aria-labelledby="comparacion-title">
         <h2 id="comparacion-title">Comparación</h2>
-        <p class="cmp-note">Rainbet, Shuffle y Stake en ficha. Cloudbet y Roobet como candidatos. Hechos de la mesa y de las señales. Hueco = no verificado, con fecha.</p>
+        <p class="cmp-note">Las cinco fichas. Hechos de la mesa y de las señales. Hueco = no verificado, con fecha.</p>
         {compare_table()}
       </section>
       <section class="block" id="faq" aria-labelledby="faq-title">
@@ -448,7 +462,7 @@ FICHAS = {
             ("Empresa", "Rain Group Ltd (co. 16077, Hamchako), en Terms, AML y footer. El JSON-LD de la homepage también nombra RBGAMING N.V. Las dos cadenas están publicadas y no coinciden: no elegimos una sola razón social."),
             ("Licencia", "Anjouan, declarada en Terms, AML y footer (25 SEP 2026). El validador de Anjouan no se chequeó en esta ola. No es una licencia del registro argentino."),
             ("Monedas", "FAQ de rainbet.com, 25 SEP 2026: BTC, ETH, LTC, XRP, SOL, TRX, BNB, USDT y USDC. Redes: no verificado · 03 OCT 2026."),
-            ("Idiomas", "no verificado · 03 OCT 2026. Esta ficha está en español de Latinoamérica; eso no dice qué idiomas publica el operador."),
+            ("Idiomas", "JSON-LD knowsLanguage: en, ar, es, fr, ja, pt, ru, tr, zh (homepage, 03 OCT 2026)."),
             ("Última revisión", "Fila de la mesa: 25 SEP 2026. Señales de lobby: Daily Race 26 SEP 2026 y torneo Gates of Olympus 30 SEP 2026. Huecos marcados al armar la ficha: 03 OCT 2026."),
         ],
         "fuentes": [
@@ -460,7 +474,7 @@ FICHAS = {
         ],
         "plata_title": "Cómo entra y sale la plata",
         "plata": [
-            "El FAQ declara criptos, entre ellas USDT, y también bank transfers, cards y gift cards. La celda de la mesa se queda en la clase: crypto · fiat/cards.",
+            "El FAQ declara criptos, entre ellas USDT, y también bank transfers, cards y gift cards. La tira de la home sigue en la clase crypto · fiat/cards. La tabla de esta ficha lista las criptos del FAQ. Redes: no verificado.",
             "Ese “bank transfer” es una frase del operador. No es un depósito por CBU ni un cajero de casino regulado en Argentina.",
             "En la homepage también está escrito un mínimo de retiro de 15 USD y apostar 1x el depósito antes de retirar. No es un plazo. El marketing de 5 a 15 minutos no entra como SLA: el retiro de la mesa sigue en sin dato.",
         ],
@@ -469,7 +483,7 @@ FICHAS = {
             "El Daily Race del 26 SEP y el torneo Gates of Olympus 2500 del 30 SEP son señales de lobby, con ventana publicada. No reemplazan el chip.",
             "Para leer un rollover y un rakeback sin mezclarlos: guías de promo, de max bet y de rakeback.",
         ],
-        "kyc": "KYC declarado: documento de identidad, selfie y prueba de domicilio (Sumsub), en Terms §20 y AML. El equipo de KYC habla de 24 horas una vez Temporarily Approved; la verificación puede tardar hasta 7 días hábiles; pueden restringir la cuenta si el ID no se completa en 72 horas. Fuente: Terms y AML, revisión de mesa 25 SEP 2026.",
+        "kyc": "KYC declarado: documento de identidad, selfie y prueba de domicilio. Sumsub está nombrado en el AML, no en Terms §20. Terms §20: pueden restringir la cuenta si el ID no se completa en 72 horas; la verificación puede tardar hasta 7 días hábiles; el equipo de KYC habla de 24 horas una vez Temporarily Approved. Fuente: Terms y AML, revisión de mesa 25 SEP 2026 / rechequeo 03 OCT 2026.",
         "offshore": "Rainbet publica una licencia de Anjouan. Eso no es una licencia de Argentina ni convierte a esta página en un casino. No hay puntaje, no hay puesto y no hay instrucciones para saltar un bloqueo. +18.",
         "senales": [
             {
@@ -524,7 +538,7 @@ FICHAS = {
         ],
         "sheet": [
             ("Empresa", "Natural Nine B.V. (160998), Korporaalweg 10, Willemstad. Declarado en /info/license, Terms y homepage."),
-            ("Licencia", "Curaçao Gaming Control Board, OGL/2024/1337/0628. Declarada por el operador. El certificado CGA figura Active en el espejo de diligencia; no reemplaza la página del operador. No es licencia de Argentina."),
+            ("Licencia", "Curaçao Gaming Authority, OGL/2024/1337/0628, Natural Nine B.V. (160998). /info/license dice “Gaming Control Board”; Terms y el certificado CGA dicen “Gaming Authority”. Certificado Active. No es licencia de Argentina."),
             ("Monedas", "La celda de métodos es la clase: crypto · fiat/cards. No hay catálogo de monedas ni de redes en la mesa. USDT aparece en el ejemplo de rakeback (1000 USDT), no como lista. Catálogo: no verificado · 03 OCT 2026."),
             ("Idiomas", "no verificado · 03 OCT 2026. Esta ficha está en español de Latinoamérica; eso no dice qué idiomas publica el operador."),
             ("Última revisión", "Rakeback re-verificado 28 SEP 2026. Level Up: 02 OCT 2026. KYC: 25 SEP 2026. Huecos marcados al armar la ficha: 03 OCT 2026."),
@@ -557,7 +571,7 @@ FICHAS = {
             "Para no leer un rakeback como si fuera un match: guía de cashback, rakeback y lossback, y la guía de cómo leer una promo.",
         ],
         "kyc": "KYC declarado: los Terms pueden exigir pasaporte, DNI o licencia al cruzar un umbral y, en cualquier caso, antes del primer retiro. El help de Account Verification describe niveles: email, datos básicos, ID de gobierno y prueba de domicilio. Fuente: Terms y help, señal del 25 SEP 2026.",
-        "offshore": "Shuffle publica licencia del Curaçao Gaming Control Board a nombre de Natural Nine B.V. Eso no es una licencia de Argentina. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
+        "offshore": "Shuffle publica OGL/2024/1337/0628 a nombre de Natural Nine B.V. /info/license dice Curaçao Gaming Control Board; Terms y el certificado CGA dicen Curaçao Gaming Authority. Eso no es una licencia de Argentina. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
         "senales": [
             {
                 "id": "bono-shuffle-level-up-approx-2026-10-02",
@@ -596,7 +610,7 @@ FICHAS = {
             ),
             (
                 "¿La licencia de Curaçao es una licencia argentina?",
-                "No. Shuffle declara Curaçao Gaming Control Board, OGL/2024/1337/0628, a nombre de Natural Nine B.V. Offshore no es el registro de Argentina. El enlace de afiliado de esta ficha no está activo. +18.",
+                "No. El número es OGL/2024/1337/0628, Natural Nine B.V. /info/license dice Curaçao Gaming Control Board; Terms y el certificado CGA dicen Curaçao Gaming Authority. Offshore no es el registro de Argentina. El enlace de afiliado de esta ficha no está activo. +18.",
             ),
         ],
     },
@@ -668,6 +682,122 @@ FICHAS = {
             (
                 "¿Hay plazo de retiro o enlace de afiliado?",
                 "No hay horas de pago en la mesa: el retiro sigue en sin dato. Antes de retirar hay que apostar el 100% del depósito (help de crypto y de moneda local, 24 ago 2026). El enlace de afiliado de esta ficha no está activo.",
+            ),
+        ],
+    },
+    "cloudbet": {
+        "name": "Cloudbet",
+        "title": "Cloudbet — ficha de la mesa | Planeta Ruleta",
+        "description": "Ficha editorial de Cloudbet: welcome de hasta 2.500 USD en 30 días, rakeback 10% del house edge en casino y licencia CGA OGL/2024/328/0599. Sin puntaje. +18.",
+        "modified": "2026-10-03",
+        "lede": [
+            "Cloudbet está en la mesa como operador crypto/offshore. El help declara licencia de la Curaçao Gaming Authority y un paquete de hasta 2.500 USD en 30 días, con rakeback del 10% en casino.",
+            "Esta ficha no pone nota ni abre un depósito. El apex cloudbet.com, el 03 OCT 2026, devolvió el shell de JavaScript; los hechos salen de /en, de los Terms y del help.",
+        ],
+        "sheet": [
+            ("Empresa", "Halcyon Super Holdings B.V. (148526), nombrada en el help de licencias. Domicilio: no verificado · 03 OCT 2026."),
+            ("Licencia", "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. No es licencia de Argentina."),
+            ("Monedas", "La celda de la tabla es la clase crypto · buy card (Swapped). El artículo de compra nombra monedas de esa pasarela; no las copiamos como catálogo. Redes: no verificado · 03 OCT 2026."),
+            ("Idiomas", "no verificado · 03 OCT 2026. Esta ficha está en español de Latinoamérica; eso no dice qué idiomas publica el operador."),
+            ("Última revisión", "Bono, KYC y métodos de la fila: 30 SEP 2026. Licencia y sportsbook: 03 OCT 2026."),
+        ],
+        "fuentes": [
+            ("cloudbet.com/en", "https://www.cloudbet.com/en"),
+            ("Sports", "https://www.cloudbet.com/en/sports"),
+            ("Terms", "https://www.cloudbet.com/en/help/terms"),
+            ("Licencias", "https://www.cloudbet.com/en/support/articles/107963-what-gambling-licenses-does-cloudbet-have"),
+            ("Niveles de verificación", "https://www.cloudbet.com/en/support/articles/415596-what-are-cloudbet-s-verification-levels"),
+            ("Documentos", "https://www.cloudbet.com/en/support/articles/103148-what-documents-are-accepted-for-account-verification"),
+            ("Por qué piden verificar", "https://www.cloudbet.com/en/support/articles/455235-why-am-i-asked-to-verify-my-account"),
+            ("Comprar con Swapped", "https://www.cloudbet.com/en/support/articles/324281-how-to-buy-crypto-with-swapped-on-cloudbet"),
+        ],
+        "plata_title": "Cómo entra y sale la plata",
+        "plata": [
+            "La celda de métodos es crypto · buy card (Swapped). El help, artículo actualizado el 24 SEP 2026, dice que el depósito con tarjeta pasa por Swapped: se elige depositar con tarjeta y después Swapped.",
+            "Ese artículo nombra monedas de la compra. No es un catálogo de la mesa ni una lista de redes. Redes: no verificado · 03 OCT 2026.",
+            "El retiro de la fila sigue sin dato. El marketing de velocidad de retiro no entra como SLA. No es un cajero por CBU de un casino regulado en Argentina.",
+        ],
+        "bono": [
+            "Chip de la fila: paquete de bienvenida de hasta 2.500 USD en un programa de 30 días, y 10% del house edge en cada apuesta de casino elegible. Las apuestas de sports no suman rakeback. Terms §8.4, chequeo 03 OCT 2026.",
+            "El período de 30 días empieza al hacer la primera apuesta después de ese depósito (§8.4.2), no desde la hora del depósito. No hay un Nx de rollover publicado para este paquete. No inventamos uno.",
+            "No hay señal de Cloudbet en el archivo. El chip es el de la fila. Para leer un rakeback aparte de un match: la guía de cashback, rakeback y lossback.",
+        ],
+        "kyc": "KYC declarado por niveles. Level 2: foto del documento, prueba de domicilio y verificación de rostro. Sumsub está en Terms §21.1.3; el artículo de niveles no lo nombra. El help dice que pueden pedir la verificación en cualquier momento. Los topes de Level 1 están publicados (2.200 USD de depósito de por vida y 2.200 USD de retiro diario) y no están en la celda de la tabla. Un disparador fijo, más allá de “en cualquier momento”: no verificado · 03 OCT 2026. Fuente: help y Terms, 03 OCT 2026.",
+        "offshore": "Cloudbet publica Curaçao Gaming Authority, OGL/2024/328/0599, a nombre de Halcyon Super Holdings B.V. (148526). Eso no es una licencia de Argentina. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
+        "senales": [],
+        "faqs": [
+            (
+                "¿El bono de Cloudbet es un match con rollover?",
+                "No, en lo publicado en Terms §8.4 (03 OCT 2026). Es un paquete de hasta 2.500 USD en 30 días y un rakeback del 10% del house edge en apuestas de casino elegibles. Ese artículo no publica un Nx. Los 30 días empiezan con la primera apuesta después del depósito.",
+            ),
+            (
+                "¿Las apuestas de sports suman rakeback?",
+                "No. Terms §8.4 dicen que las apuestas de sports no suman rakeback. El sportsbook sí está declarado: /en/sports, título “Crypto Sports Betting”, 03 OCT 2026.",
+            ),
+            (
+                "¿La licencia de Curaçao es una licencia argentina?",
+                "No. El help de licencias nombra Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Offshore no es el registro de Argentina. El enlace de afiliado de esta ficha no está activo. +18.",
+            ),
+            (
+                "¿El depósito es por CBU?",
+                "No. La celda es crypto · buy card (Swapped). El help describe la compra con tarjeta a través de Swapped. El retiro de la mesa sigue sin dato: no hay un SLA de horas en esta ficha.",
+            ),
+        ],
+    },
+    "roobet": {
+        "name": "Roobet",
+        "title": "Roobet — ficha de la mesa | Planeta Ruleta",
+        "description": "Ficha editorial de Roobet: instant rakeback y boost de +10% por 24 h al registrarse. Licencia y sportsbook público: no verificado. Sin puntaje. +18.",
+        "modified": "2026-10-03",
+        "lede": [
+            "Roobet está en la mesa como operador crypto/offshore. El help declara instant rakeback y, al registrarse, un boost de +10% durante 24 horas.",
+            "Esta ficha no pone nota ni abre un depósito. La licencia y el sportsbook del HTML público siguen en no verificado.",
+        ],
+        "sheet": [
+            ("Empresa", "no verificado · 03 OCT 2026. El artículo Welcome no nombra sociedad ni número."),
+            ("Licencia", "no verificado · 30 SEP 2026. Rechequeo 03 OCT 2026: el artículo Welcome dice “fully licensed and regulated” y no nombra autoridad ni número. No es licencia de Argentina."),
+            ("Monedas", "La celda de la tabla es la clase crypto · fiat+Swapped. El help de depósito nombra criptos; no las copiamos como catálogo. Redes: no verificado · 03 OCT 2026."),
+            ("Idiomas", "no verificado · 03 OCT 2026. Esta ficha está en español de Latinoamérica; eso no dice qué idiomas publica el operador."),
+            ("Última revisión", "Bono, KYC y métodos de la fila: 30 SEP 2026. Sportsbook y licencia rechequeados el 03 OCT 2026: siguen sin número y sin sportsbook en el HTML público."),
+        ],
+        "fuentes": [
+            ("roobet.com", "https://roobet.com/"),
+            ("/sports", "https://roobet.com/sports"),
+            ("Rewards", "https://help.roobet.com/en/articles/9546773-rewards-explained"),
+            ("Level 2", "https://help.roobet.com/en/articles/14709132-level-2-verification"),
+            ("Depósito crypto", "https://help.roobet.com/en/articles/4665363-depositing-to-roobet-using-cryptocurrency"),
+            ("Depósito con Swapped", "https://help.roobet.com/en/articles/11979123-how-to-deposit-using-swapped"),
+            ("Welcome", "https://help.roobet.com/en/articles/4901197-welcome"),
+        ],
+        "plata_title": "Cómo entra y sale la plata",
+        "plata": [
+            "El help declara fiat y crypto, y compra de cripto vía Swapped (tarjeta, Apple Pay y Google Pay). La celda de la mesa se queda en la clase crypto · fiat+Swapped.",
+            "El artículo de depósito en cripto nombra un conjunto de monedas. No entra como catálogo de la tabla ni como lista de redes. Redes: no verificado · 03 OCT 2026.",
+            "El retiro de la fila sigue sin dato. No es un cajero por CBU de un casino regulado en Argentina.",
+        ],
+        "bono": [
+            "Chip de la fila: Instant rakeback, un porcentaje de lo apostado, reclamable cada 30 minutos y sin vencimiento. Al registrarse hay un boost de +10% durante 24 horas sobre ese rakeback. No es un match de depósito. El artículo no publica un Nx. Help de rewards, rechequeo 03 OCT 2026.",
+            "No hay señal de Roobet en el archivo. El chip es el de la fila. Para no leer un rakeback como si fuera un match: la guía de cashback, rakeback y lossback.",
+        ],
+        "kyc": "KYC declarado en Level 2 (help del 23 jul 2026): pasaporte, licencia de conducir o documento de gobierno, con captura de frente y dorso. Ese artículo no da un umbral. Cuándo lo exigen: no verificado · 03 OCT 2026. Fuente: help.roobet.com.",
+        "offshore": "En las páginas chequeadas el 03 OCT 2026 no hay número de licencia ni autoridad. “Fully licensed and regulated” en el artículo Welcome no nombra un registro. Eso no es una licencia de Argentina. El HTML público de roobet.com y de /sports no muestra un sportsbook (cero veces la palabra sport); un sportsbook con sesión iniciada no se chequeó. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
+        "senales": [],
+        "faqs": [
+            (
+                "¿El +10% de Roobet es un match de depósito?",
+                "No. El help de rewards lo publica como un boost de bienvenida de +10% durante 24 horas sobre el instant rakeback. El instant rakeback es un porcentaje de lo apostado, se reclama cada 30 minutos y no vence. Ese artículo no publica un Nx.",
+            ),
+            (
+                "¿Roobet tiene sportsbook?",
+                "En el HTML público de roobet.com y de /sports, el 03 OCT 2026, el título es de casino y no aparece la palabra sport. Un sportsbook con sesión iniciada no se chequeó. La celda queda en no verificado · 03 OCT 2026.",
+            ),
+            (
+                "¿Qué licencia publica?",
+                "No verificado. El artículo Welcome dice que es un casino licenciado y regulado, y no nombra autoridad ni número (rechequeo 03 OCT 2026). Eso no es una licencia de Argentina. +18.",
+            ),
+            (
+                "¿Hay enlace de afiliado o depósito por CBU?",
+                "No. El espacio de afiliado dice enlace de afiliado no activo. La celda de métodos es crypto · fiat+Swapped, no un cajero por CBU. El retiro de la mesa sigue sin dato.",
             ),
         ],
     },
@@ -751,8 +881,7 @@ def render_ficha(slug: str) -> str:
         </aside>
         <section class="block" aria-labelledby="senales">
           <h2 id="senales">Señales de este operador</h2>
-          <p>Salen del archivo de señales. No es un hub por operador.</p>
-          {senales_html(data["senales"])}
+          {senales_block(data)}
         </section>
         {affiliate_html()}
         <section class="block" id="faq" aria-labelledby="faq-title">
