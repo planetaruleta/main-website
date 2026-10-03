@@ -31,6 +31,13 @@ HOME_PATH = ROOT / "index.html"
 ARCHIVE_PATH = ROOT / "senales" / "index.html"
 
 HOME_LIMIT = 3
+FICHA_SLUGS = {
+    "Rainbet": "rainbet",
+    "Shuffle": "shuffle",
+    "Stake": "stake",
+    "Cloudbet": "cloudbet",
+    "Roobet": "roobet",
+}
 MONTHS = (
     None,
     "ENE",
@@ -120,13 +127,22 @@ def assert_matches_intel(items: list[dict]) -> None:
             )
 
 
+def kicker_html(kicker: str) -> str:
+    """Link the operator name when a mesa ficha exists. The rest of the kicker stays text."""
+    name, sep, rest = kicker.partition(" · ")
+    slug = FICHA_SLUGS.get(name)
+    if not slug or not sep:
+        return esc(kicker)
+    return f'<a href="/mesa/{esc_attr(slug)}/">{esc(name)}</a> · {esc(rest)}'
+
+
 def render_li(item: dict, heading: str) -> str:
     return "\n".join(
         [
             f'          <li id="{esc_attr(item["id"])}">',
             f'            <time datetime="{esc_attr(item["fecha"])}">{esc(fecha_corta(item["fecha"]))}</time>',
             "            <div>",
-            f'              <p class="kicker">{esc(item["kicker"])}</p>',
+            f'              <p class="kicker">{kicker_html(item["kicker"])}</p>',
             f'              <{heading}>{esc(item["titulo"])}</{heading}>',
             f'              <p class="resumen">{esc(item["resumen"])}</p>',
             f'              <p class="fuentes">{item["fuentes_html"]}</p>',
@@ -150,7 +166,7 @@ def render_home(items: list[dict]) -> str:
             f'          <div class="lead-body" id="{esc_attr(lead["id"])}">',
             (
                 f'            <p class="kicker"><time datetime="{esc_attr(lead["fecha"])}">'
-                f'{esc(fecha_corta(lead["fecha"]))}</time> · {esc(lead["kicker"])}</p>'
+                f'{esc(fecha_corta(lead["fecha"]))}</time> · {kicker_html(lead["kicker"])}</p>'
             ),
             f'            <h3>{esc(lead["titulo"])}</h3>',
             f'            <p class="resumen">{esc(lead["resumen"])}</p>',
