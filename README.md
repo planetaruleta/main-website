@@ -4,7 +4,9 @@
 
 Static GitHub Pages site for [www.planetaruleta.com](https://www.planetaruleta.com/). Media and community, not a casino. Primary conversion is Telegram ([t.me/planetaruleta](https://t.me/planetaruleta)); the site supports the channel and does not replace it.
 
-Public pages: `/`, `/sobre/`, `/faq/`, `/como-funciona/`, `/guias/` and five literacy guides (`rtp-volatilidad`, `max-bet-contribucion-bono`, `cashback-rakeback-lossback`, `como-leer-una-promo-casino`, `usdt-vs-btc-bankroll`). Canonical host is **www**. The homepage is the Copper Desk pattern in Ocean slate: wordmark masthead, a still R-01 hero, señales, the offshore Wave 1 mesa (Rainbet, Shuffle, Stake, then Cloudbet and Roobet — official URL only; KYC, bono, and métodos declared 30 Sep 2026; retiro still unpublished), pull quote, Telegram band. Those rows come from [`content/intel/homepage-offshore-wave1-2026-09-25.json`](content/intel/homepage-offshore-wave1-2026-09-25.json). `sheet_ready` is false: no `/casinos/` pages; operator names link only to the official site. The mesa shows Operador, KYC, Bono, and Métodos, with one line above the table: Actualizado · SEP 2026. Métodos cells are the payment class only (no coin list). Ámbito and Retiro stay in the JSON and are not table columns. Retiro is deferred until there is a real SLA. Primary CTA label is **Sumate al canal**. Age language stays in the legal footer. The hero wheel is a still image until Creative ships real layered assets.
+Public pages: `/`, `/senales/`, `/sobre/`, `/faq/`, `/como-funciona/`, `/guias/` and five literacy guides (`rtp-volatilidad`, `max-bet-contribucion-bono`, `cashback-rakeback-lossback`, `como-leer-una-promo-casino`, `usdt-vs-btc-bankroll`). Canonical host is **www**. The homepage is the Copper Desk pattern in Ocean slate: wordmark masthead, a still R-01 hero, señales, the offshore Wave 1 mesa (Rainbet, Shuffle, Stake, then Cloudbet and Roobet — official URL only; KYC, bono, and métodos declared 30 Sep 2026; retiro still unpublished), pull quote, Telegram band. Those rows come from [`content/intel/homepage-offshore-wave1-2026-09-25.json`](content/intel/homepage-offshore-wave1-2026-09-25.json). `sheet_ready` is false: no `/casinos/` pages; operator names link only to the official site. The mesa shows Operador, KYC, Bono, and Métodos, with one line above the table: Actualizado · SEP 2026. Métodos cells are the payment class only (no coin list). Ámbito and Retiro stay in the JSON and are not table columns. Retiro is deferred until there is a real SLA. Primary CTA label is **Sumate al canal**. Age language stays in the legal footer. The hero wheel is a still image until Creative ships real layered assets.
+
+The homepage señales block is capped at the latest 3. [`content/senales.json`](content/senales.json) is the public feed (the copy that ships). [`scripts/render_senales.py`](scripts/render_senales.py) sorts that list newest-first — same-day rows keep file order — and writes `senales[:3]` into the homepage and the full list into `/senales/`. It also checks that every ready id in the intel pack matches the feed. Re-run the script after editing the feed. The hero “Última señal” chip stays hand-set and has to match the newest fecha. `/senales/` is not in the nav or the footer; the homepage line “Ver todas las señales” is the way in.
 
 ## Preview local
 
@@ -14,7 +16,7 @@ From the repo root:
 python3 -m http.server 8080
 ```
 
-Open `http://127.0.0.1:8080/`. Inner pages: `/sobre/`, `/faq/`, `/como-funciona/`, `/guias/`.
+Open `http://127.0.0.1:8080/`. Inner pages: `/senales/`, `/sobre/`, `/faq/`, `/como-funciona/`, `/guias/`.
 
 Confirm the raw HTML of each public page has no `name="robots"` meta (no `noindex`).
 
