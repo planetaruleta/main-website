@@ -237,7 +237,7 @@ def senales_html(items: list[dict]) -> str:
         lis.append(
             f"""<li>
             <time datetime="{e(item["date"])}">{e(item["when"])}</time>
-            <a href="/#{e(item["id"])}">{e(item["title"])}</a>
+            <a href="/senales/#{e(item["id"])}">{e(item["title"])}</a>
             <p>{e(item["line"])}</p>
           </li>"""
         )
@@ -751,7 +751,7 @@ def render_ficha(slug: str) -> str:
         </aside>
         <section class="block" aria-labelledby="senales">
           <h2 id="senales">Señales de este operador</h2>
-          <p>Salen del feed ya publicado en la home. No es un hub nuevo.</p>
+          <p>Salen del archivo de señales. No es un hub por operador.</p>
           {senales_html(data["senales"])}
         </section>
         {affiliate_html()}
