@@ -256,48 +256,55 @@ def senales_html(items: list[dict]) -> str:
 
 
 def affiliate_html() -> str:
-    return """<aside class="affiliate-slot" aria-label="Enlace de afiliado">
-        <p class="affiliate-kicker">Afiliado</p>
-        <p class="affiliate-empty">Enlace de afiliado no activo.</p>
-      </aside>"""
+    return """<aside class="aff" aria-label="Enlace de afiliado"><span class="k">Afiliado</span>Enlace de afiliado no activo.</aside>"""
+
+
+SATURN = "/assets/saturn-exact.png"
+
+
+def brand() -> str:
+    return f'<a class="brand" href="/"><img src="{SATURN}" alt="" /><span>Planeta Ruleta</span></a>'
 
 
 def mast() -> str:
-    return """<a class="skip" href="#contenido">Saltar al contenido</a>
+    return f"""<a class="skip" href="#contenido">Saltar al contenido</a>
   <header class="mast">
-    <div class="mast-inner">
-      <a class="brand" href="/"><span class="brand-name">Planeta Ruleta</span></a>
-      <nav aria-label="Principal">
-        <a href="/#senales">Señales</a>
-        <a href="/mesa/" aria-current="page">Mesa</a>
-        <a href="/como-funciona/">Cómo funciona</a>
-        <a href="/sobre/">Sobre</a>
-        <a href="/guias/">Guías</a>
-        <a href="/faq/">FAQ</a>
-      </nav>
-      <p class="mast-end">
-        <a class="mast-tg" href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="nav">Sumate al canal</a>
-      </p>
+    <div class="wrap mast-inner">
+      {brand()}
+      <span class="tag">Inteligencia en casinos</span>
     </div>
+    <nav class="mast-nav wrap" aria-label="Principal">
+      <a href="/#senales">Señales</a>
+      <a href="/mesa/" aria-current="page">Mesa</a>
+      <a href="/como-funciona/">Cómo funciona</a>
+      <a href="/sobre/">Sobre</a>
+      <a href="/guias/">Guías</a>
+      <a href="/faq/">FAQ</a>
+      <a href="https://t.me/planetaruleta" target="_blank" rel="noopener" data-cta="telegram" data-cta-location="nav">Canal</a>
+    </nav>
   </header>"""
 
 
 def footer() -> str:
-    return """<footer class="site-footer">
-    <a href="/mesa/">Mesa</a> ·
-    <a href="/#senales">Señales</a> ·
-    <a href="/como-funciona/">Cómo funciona</a> ·
-    <a href="/sobre/">Sobre</a> ·
-    <a href="/guias/">Guías</a> ·
-    <a href="/faq/">FAQ</a><br />
-    +18 · no somos un casino · offshore no es licencia de Argentina · <a href="mailto:planetaruleta@protonmail.com">planetaruleta@protonmail.com</a> · <a href="https://www.planetaruleta.com/">planetaruleta.com</a><br />
-    Planeta Ruleta © <span data-year></span>
+    return f"""<footer class="site-foot">
+    {brand()}
+    <span>+18 · sin puntaje · offshore ≠ licencia AR</span>
+    <p class="foot-links">
+      <a href="/mesa/">Mesa</a> ·
+      <a href="/#senales">Señales</a> ·
+      <a href="/como-funciona/">Cómo funciona</a> ·
+      <a href="/sobre/">Sobre</a> ·
+      <a href="/guias/">Guías</a> ·
+      <a href="/faq/">FAQ</a><br />
+      +18 · no somos un casino · offshore no es licencia de Argentina · <a href="mailto:planetaruleta@protonmail.com">planetaruleta@protonmail.com</a> · <a href="https://www.planetaruleta.com/">planetaruleta.com</a><br />
+      Planeta Ruleta © <span data-year></span>
+    </p>
   </footer>
   <script>
-    (() => {
+    (() => {{
       const year = new Date().getFullYear();
-      document.querySelectorAll("[data-year]").forEach((el) => { el.textContent = String(year); });
-    })();
+      document.querySelectorAll("[data-year]").forEach((el) => {{ el.textContent = String(year); }});
+    }})();
   </script>"""
 
 
@@ -313,11 +320,10 @@ def head(title: str, description: str, path: str, graph: list, og_type: str = "a
   <title>{e(title)}</title>
   <meta name="description" content="{e(description)}" />
   <link rel="canonical" href="{e(url)}" />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="icon" href="/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="/assets/saturn-exact.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512.png" />
+  <link rel="apple-touch-icon" href="/assets/favicon-512.png" />
   <meta property="og:title" content="{e(title)}" />
   <meta property="og:type" content="{e(og_type)}" />
   <meta property="og:url" content="{e(url)}" />
@@ -332,7 +338,7 @@ def head(title: str, description: str, path: str, graph: list, og_type: str = "a
   <script type="application/ld+json">
 {ld}
   </script>
-  <meta name="theme-color" content="#0B1520" />
+  <meta name="theme-color" content="#0A1016" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Ibarra+Real+Nova:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Schibsted+Grotesk:ital,wght@0,500;0,600;0,700;1,500&amp;display=swap" rel="stylesheet" />
@@ -346,12 +352,12 @@ def page(title: str, description: str, path: str, graph: list, body: str, og_typ
     return f"""{head(title, description, path, graph, og_type)}
 <body>
   {mast()}
-  <main id="contenido" class="page">
+  <main id="contenido">
     <div class="wrap">
       {body}
+      {footer()}
     </div>
   </main>
-  {footer()}
 </body>
 </html>
 """
@@ -438,18 +444,27 @@ def render_index() -> str:
     ]
     body = f"""
       {crumbs_html([("Inicio", "/"), ("Mesa", None)])}
-      <p class="estado">Fichas</p>
-      <h1>Fichas de la mesa</h1>
-      <p class="lede">Cinco fichas: Rainbet, Shuffle, Stake, Cloudbet y Roobet. La comparación repite lo declarado. Sin puntaje.</p>
-      <p class="lede">El enlace de afiliado no está activo. Offshore no es una licencia de Argentina. +18.</p>
-      <ul class="cards">
-        <li><a class="card" href="/mesa/rainbet/"><p class="estado">En la mesa</p><h2>Rainbet</h2><p>Welcome con dos caminos declarados. Licencia de Anjouan, según la casa. Retiro sin SLA.</p></a></li>
-        <li><a class="card" href="/mesa/shuffle/"><p class="estado">En la mesa</p><h2>Shuffle</h2><p>Chip de rakeback 5% HE (Bronze). Level Up es otra señal, con números aproximados.</p></a></li>
-        <li><a class="card" href="/mesa/stake/"><p class="estado">En la mesa</p><h2>Stake</h2><p>Welcome publicado como rakeback 3.5% HE. La licencia citada es el certificado CGA: el footer del sitio no se pudo leer.</p></a></li>
-        <li><a class="card" href="/mesa/cloudbet/"><p class="estado">En la mesa</p><h2>Cloudbet</h2><p>Welcome de hasta 2.500 USD en 30 días y rakeback 10% del house edge en casino. Licencia CGA declarada en el help.</p></a></li>
-        <li><a class="card" href="/mesa/roobet/"><p class="estado">En la mesa</p><h2>Roobet</h2><p>Instant rakeback y un boost de +10% por 24 h al registrarse. Licencia y sportsbook público: no verificado.</p></a></li>
-      </ul>
-      <p>La tira corta sigue en <a href="/#mesa">la home</a>. Los cinco nombres abren su ficha.</p>
+      <header class="hero">
+        <div>
+          <p class="eyebrow">En la mesa</p>
+          <h1>Fichas</h1>
+          <p class="lede">Cinco fichas: Rainbet, Shuffle, Stake, Cloudbet y Roobet. La comparación repite lo declarado. Sin puntaje.</p>
+          <p class="lede lede-next">El enlace de afiliado no está activo. Offshore no es una licencia de Argentina. +18.</p>
+          <p class="meta"><b>Operadores</b> cinco · <b>Sin puntaje</b> · <b>Afiliado</b> no activo</p>
+          <div class="seals">
+            <div class="seal"><span class="ring" aria-hidden="true"></span><span><b>Sin puntaje</b>no hay puesto<br>no hay ganador</span></div>
+            <div class="seal"><span class="ring" aria-hidden="true"></span><span><b>Afiliado</b>enlace no activo<br>sin puerta de depósito</span></div>
+          </div>
+        </div>
+        {hero_art()}
+      </header>
+      <section class="know" aria-labelledby="operadores-title">
+        <h2 id="operadores-title">Lo que importa en la mesa</h2>
+        <div class="op-index">
+          {index_ops_html()}
+        </div>
+        <p class="sub">La tira corta sigue en <a href="/#mesa">la home</a>. Los cinco nombres abren su ficha.</p>
+      </section>
       {affiliate_html()}
       <section class="cmp-sec" id="comparacion" aria-labelledby="comparacion-title">
         <h2 id="comparacion-title">Comparación declarada</h2>
@@ -832,6 +847,613 @@ FICHAS = {
 
 GUIDE_LINKS = """<p>Guías para leer el texto, no para depositar: <a href="/guias/como-leer-una-promo-casino/">cómo leer una promo de casino</a>, <a href="/guias/cashback-rakeback-lossback/">cashback, rakeback y lossback</a>, <a href="/guias/max-bet-contribucion-bono/">max bet y contribución del bono</a>, <a href="/guias/usdt-vs-btc-bankroll/">USDT y BTC en un depósito crypto</a>.</p>"""
 
+HERO_SVG = """<svg viewBox="0 0 560 460" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="glow" cx="62%" cy="46%" r="52%">
+            <stop offset="0%" stop-color="#C47A4A" stop-opacity="0.14"/>
+            <stop offset="70%" stop-color="#C47A4A" stop-opacity="0.03"/>
+            <stop offset="100%" stop-color="#0A1016" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="560" height="460" fill="url(#glow)"/>
+        <g fill="none" stroke="#C47A4A" stroke-width="1" opacity=".42">
+          <ellipse cx="348" cy="228" rx="228" ry="86" transform="rotate(-16 348 228)"/>
+          <ellipse cx="348" cy="228" rx="176" ry="62" transform="rotate(-16 348 228)" stroke="#E6E1D6" opacity=".55"/>
+          <ellipse cx="348" cy="228" rx="128" ry="40" transform="rotate(-16 348 228)"/>
+        </g>
+        <circle cx="348" cy="228" r="108" fill="none" stroke="#E6E1D6" stroke-width="1" opacity=".22"/>
+        <circle cx="348" cy="228" r="74" fill="none" stroke="#C47A4A" stroke-width="1" opacity=".4"/>
+        <g transform="translate(268 168)">
+          <circle r="58" fill="#0A1016" stroke="#E6E1D6" stroke-width="1.2" opacity=".9"/>
+          <circle r="44" fill="none" stroke="#C47A4A" stroke-width="8" stroke-dasharray="3.2 6" opacity=".72"/>
+          <circle r="30" fill="none" stroke="#E6E1D6" stroke-width=".9" opacity=".4"/>
+        </g>
+        <g transform="translate(392 268)">
+          <circle r="46" fill="#0A1016" stroke="#E6E1D6" stroke-width="1.15" opacity=".92"/>
+          <circle r="34" fill="none" stroke="#C47A4A" stroke-width="6.5" stroke-dasharray="2.8 5.2" opacity=".78"/>
+          <circle r="22" fill="none" stroke="#E6E1D6" stroke-width=".8" opacity=".45"/>
+        </g>
+        <g transform="translate(214 292)">
+          <circle r="24" fill="#0A1016" stroke="#C47A4A" stroke-width="1.15"/>
+          <circle r="15" fill="none" stroke="#E6E1D6" stroke-width=".8" opacity=".45"/>
+        </g>
+        <g transform="translate(418 78) rotate(14)">
+          <rect width="108" height="148" rx="7" fill="#0A1016" stroke="#E6E1D6" stroke-width="1.15" opacity=".88"/>
+          <circle cx="18" cy="20" r="2.4" fill="#C47A4A"/>
+          <circle cx="90" cy="128" r="2.4" fill="#C47A4A"/>
+          <path d="M54 50 L72 76 L54 102 L36 76 Z" fill="none" stroke="#C47A4A" stroke-width="1.15"/>
+        </g>
+        <path d="M120 360 H500" stroke="#243040" stroke-width="1"/>
+      </svg>"""
+
+# Chips repeat bono labels already on the fichas. Blurbs are the previous index lines.
+INDEX_LINES = [
+    (
+        "rainbet",
+        "Rainbet",
+        "x40",
+        "ó camino sin WR",
+        "Welcome con dos caminos declarados. Licencia de Anjouan, según la casa. Retiro sin SLA.",
+    ),
+    (
+        "shuffle",
+        "Shuffle",
+        "5%",
+        "HE · Bronze · cash",
+        "Chip de rakeback 5% HE (Bronze). Level Up es otra señal, con números aproximados.",
+    ),
+    (
+        "stake",
+        "Stake",
+        "3.5%",
+        "HE · vía código",
+        "Welcome publicado como rakeback 3.5% HE. La licencia citada es el certificado CGA: el footer del sitio no se pudo leer.",
+    ),
+    (
+        "cloudbet",
+        "Cloudbet",
+        "$2.5k",
+        "30 días · 10% RB",
+        "Welcome de hasta 2.500 USD en 30 días y rakeback 10% del house edge en casino. Licencia CGA declarada en el help.",
+    ),
+    (
+        "roobet",
+        "Roobet",
+        "+10%",
+        "instant RB · 24 h",
+        "Instant rakeback y un boost de +10% por 24 h al registrarse. Licencia y sportsbook público: no verificado.",
+    ),
+]
+
+GAP = "Huecos marcados a propósito — juice solo con fuente"
+
+# Display layer only. Every figure is already in the ficha prose or the mesa cell.
+# Missing juice stays a hueco. Do not add a number here that the prose does not state.
+VISUAL = {
+    "rainbet": {
+        "meta": [
+            ("Operador", "crypto/offshore"),
+            ("Revisión fila", "25 SEP 2026"),
+            ("Señales", "26 SEP–03 OCT"),
+        ],
+        "seals": [
+            ("Licencia", ["Anjouan · declarada", "no es registro AR"]),
+            ("Revisión", ["Fila 25 SEP 2026", "señales 26 SEP–03 OCT"]),
+        ],
+        "facts": [
+            ("Welcome", "x40", "ó camino sin WR"),
+            ("Lobby visto", "$40K", "Gates promo · 30 SEP"),
+            ("Retiro mín.", "15", "USD citados en homepage"),
+            ("KYC ventana", "72h", "Terms §20 · ID"),
+        ],
+        "bonus_sub": "El chip de la fila es el welcome, no el race.",
+        "paths": [
+            {
+                "lab": "Camino A",
+                "big": "x40",
+                "title": "Depósito + bono",
+                "items": [
+                    "100% / 50% / 100% + 20 tiradas",
+                    "Mínimo 30 USD · máximo 700 USD por tramo",
+                    "Apuesta máxima 2% del depósito",
+                    "Slots con RTP mayor a 97,4% fuera",
+                ],
+            },
+            {
+                "lab": "Camino B",
+                "big": "0×",
+                "title": "Sin ese rollover",
+                "items": [
+                    "Se desbloquea al jugar",
+                    "Optar en promotions antes de depositar",
+                    "No es el Daily Race",
+                ],
+            },
+        ],
+        "hinge_n": "Qué desbloquea",
+        "hinge": "Hay que optar en promotions antes de depositar. El Daily Race y el torneo Gates no reemplazan el chip.",
+        "rows": [
+            (
+                "Tipos",
+                "Slots citados en el welcome (RTP mayor a 97,4% fuera). Sportsbook declarado.",
+                "Catálogo completo: hueco · 03 OCT 2026",
+            ),
+            (
+                "Vistos",
+                "Gates of Olympus 2500 (torneo lobby)",
+                "Señal 30 SEP · no ranking de «más jugados»",
+            ),
+            (
+                "Jackpot",
+                "Historial de jackpots progresivos: hueco · 03 OCT 2026",
+                "Pozo de promo observado: $40K Gates",
+            ),
+        ],
+        "side": [
+            ("$40K", "Pozo observado", "Gates · 100 lugares · no es welcome"),
+            ("200", "Daily Race", "Lugares · pozo total no publicado"),
+        ],
+        "stages": [
+            ("Depósito", "Crypto + fiat", "USDT en FAQ · bank transfer · cards · gift"),
+            ("KYC", "ID + selfie", "+ domicilio · Sumsub en el AML"),
+            ("Retiro", "1× depósito", "Mín. 15 USD citados"),
+            ("Proceso", "Sin SLA", "«5–15 min» no adoptado"),
+        ],
+        "caveat_strong": "Bank transfer ≠ CBU argentino.",
+        "caveat": "Offshore no es registro AR.",
+        "chain": ["ID + selfie", "domicilio", "Sumsub AML"],
+        "big": "72 h",
+        "big_label": "ventana citada para completar ID",
+        "kyc_note": "Verificación hasta 7 días hábiles.",
+    },
+    "shuffle": {
+        "meta": [
+            ("Operador", "crypto/offshore"),
+            ("Revisión", "rakeback 28 SEP 2026"),
+            ("Level Up", "02 OCT 2026"),
+        ],
+        "seals": [
+            ("Licencia", ["CGA · OGL/2024/1337/0628", "no es registro AR"]),
+            ("Revisión", ["Rakeback 28 SEP 2026", "Level Up 02 OCT 2026"]),
+        ],
+        "facts": [
+            ("Chip", "5%", "HE · Bronze · cash"),
+            ("Level Up", "aprox", "señal 02 OCT · no es el chip"),
+            ("Antes de retirar", "1×", "depósito · help coin-mixing"),
+            ("KYC", "ID", "antes del 1er retiro"),
+        ],
+        "bonus_sub": "El dato de bono que la fila defiende es rakeback de casino. El Level Up es otra señal.",
+        "paths": [
+            {
+                "lab": "Chip de la fila",
+                "big": "5%",
+                "title": "Rakeback casino",
+                "items": [
+                    "5% del house edge, en cash",
+                    "Casino, no sports",
+                    "No es un match de depósito",
+                    "Se desbloquea al apostar 1.000 USD (Bronze)",
+                    "Se reclama en la página VIP",
+                ],
+            },
+            {
+                "lab": "Señal aparte",
+                "big": "aprox",
+                "title": "Level Up",
+                "items": [
+                    "Rank Up, Level Up Reload y Recent Play",
+                    "Montos del escalón 1 publicados como aproximados",
+                    "Silver ≈ 25 USD · Gold ≈ 210 USD",
+                    "No reemplaza el chip",
+                    "Promo 1 nov 2024 → 2 nov 2026",
+                ],
+            },
+        ],
+        "hinge_n": "Qué no es",
+        "hinge": "Las bases de un FTD con rollover no están publicadas. No inventamos un Nx.",
+        "rows": [
+            (
+                "Tipos",
+                "Casino (el rakeback) · sportsbook declarado. El rakeback no corre en sports.",
+                "Catálogo completo: hueco · 03 OCT 2026",
+            ),
+            (
+                "Vistos",
+                "Sin juego nombrado en las señales",
+                "No hay ranking de «más jugados»",
+            ),
+            (
+                "Jackpot",
+                "Historial de jackpots progresivos: hueco · 03 OCT 2026",
+                "Level Up no es un pozo",
+            ),
+        ],
+        "side": [
+            ("5%", "House edge", "Bronze · cash · casino"),
+            ("1×", "Antes de retirar", "Depósito · help coin-mixing"),
+        ],
+        "stages": [
+            ("Depósito", "Crypto + fiat", "tarjeta · Apple Pay · Google Pay"),
+            ("KYC", "ID de gobierno", "antes del primer retiro"),
+            ("Retiro", "1× depósito", "help coin-mixing"),
+            ("Proceso", "Sin SLA", "retiro de la mesa: sin dato"),
+        ],
+        "caveat_strong": "No es un cajero por CBU.",
+        "caveat": "Offshore no es un casino regulado en Argentina.",
+        "chain": ["email", "datos", "ID", "domicilio"],
+        "big": "—",
+        "big_label": "sin ventana de horas citada",
+        "kyc_note": "ID de gobierno antes del primer retiro.",
+    },
+    "stake": {
+        "meta": [
+            ("Operador", "crypto/offshore"),
+            ("Revisión mesa", "25 SEP 2026"),
+            ("Help", "24 AGO 2026"),
+        ],
+        "seals": [
+            ("Licencia", ["Curaçao-class · certificado", "footer no leído (403)"]),
+            ("Revisión", ["Mesa 25 SEP 2026", "help 24 AGO 2026"]),
+        ],
+        "facts": [
+            ("Welcome", "3.5%", "HE · vía código"),
+            ("Ejemplo", "1 BTC", "a 2% HE → 0,0007 BTC"),
+            ("Antes de retirar", "100%", "del depósito"),
+            ("KYC", "ID", "foto · cuándo: no verificado"),
+        ],
+        "bonus_sub": "El welcome desbloquea rakeback. El ejemplo 30x de un deposit-bonus no es el chip.",
+        "paths": [
+            {
+                "lab": "Chip de la fila",
+                "big": "3.5%",
+                "title": "Rakeback Bronze",
+                "items": [
+                    "3.5% del house edge",
+                    "Con un código",
+                    "No es un match con rollover fijo",
+                    "Ejemplo: 1 BTC a 2% HE → 0,0007 BTC",
+                ],
+            },
+            {
+                "lab": "No es el chip",
+                "big": "30x",
+                "title": "Ejemplo de deposit-bonus",
+                "items": [
+                    "El rollover de un deposit-bonus varía",
+                    "El help da un ejemplo de 30x",
+                    "No fija un producto de match",
+                    "No lo copiamos como chip",
+                ],
+            },
+        ],
+        "hinge_n": "Qué no es",
+        "hinge": "No es un match de depósito con rollover fijo. No hay señal de race ni de level-up en la mesa.",
+        "rows": [
+            (
+                "Tipos",
+                "Sportsbook declarado en el help. stake.com/sports HTTP 403 el 03 OCT 2026.",
+                "Catálogo completo: hueco · 03 OCT 2026",
+            ),
+            (
+                "Vistos",
+                "Sin juego nombrado en las señales",
+                "No hay ranking de «más jugados»",
+            ),
+            (
+                "Jackpot",
+                "Historial de jackpots progresivos: hueco · 03 OCT 2026",
+                "El ejemplo 1 BTC no es un pozo",
+            ),
+        ],
+        "side": [
+            ("3.5%", "House edge", "Welcome · vía código"),
+            ("100%", "Del depósito", "Antes de retirar · crypto y fiat"),
+        ],
+        "stages": [
+            ("Depósito", "Crypto + fiat", "sin lista de monedas"),
+            ("KYC", "ID con foto", "cuándo: no verificado"),
+            ("Retiro", "100% depósito", "crypto y moneda local"),
+            ("Proceso", "Sin SLA", "red y proceso manual"),
+        ],
+        "caveat_strong": "No es un cajero por CBU.",
+        "caveat": "Offshore no es un casino regulado en Argentina.",
+        "chain": ["pasaporte", "DNI ambos lados", "licencia ambos lados"],
+        "big": "—",
+        "big_label": "cuándo lo exigen: no verificado",
+        "kyc_note": "Foto y vigencia de al menos 3 meses. Fuente: help 24 ago 2026.",
+    },
+    "cloudbet": {
+        "meta": [
+            ("Operador", "crypto/offshore"),
+            ("Revisión fila", "30 SEP 2026"),
+            ("Licencia", "03 OCT 2026"),
+        ],
+        "seals": [
+            ("Licencia", ["CGA · OGL/2024/328/0599", "no es registro AR"]),
+            ("Revisión", ["Fila 30 SEP 2026", "licencia 03 OCT"]),
+        ],
+        "facts": [
+            ("Welcome", "$2.5k", "tope · 30 días"),
+            ("Rakeback", "10%", "HE · casino"),
+            ("Retiro", "—", "sin SLA en la fila"),
+            ("KYC", "L2", "ID + domicilio + face"),
+        ],
+        "bonus_sub": "Un paquete y un rakeback, no dos caminos para elegir. No hay un Nx publicado.",
+        "paths": [
+            {
+                "lab": "Paquete",
+                "big": "$2.5k",
+                "title": "Hasta 30 días",
+                "items": [
+                    "Tope de 2.500 USD",
+                    "Empieza con la primera apuesta después del depósito",
+                    "No hay un Nx publicado",
+                    "Las apuestas de sports no suman rakeback",
+                ],
+            },
+            {
+                "lab": "Rakeback",
+                "big": "10%",
+                "title": "House edge · casino",
+                "items": [
+                    "10% del house edge en casino elegible",
+                    "Terms §8.4",
+                    "Sin señal en el archivo",
+                    "El chip es el de la fila",
+                ],
+            },
+        ],
+        "hinge_n": "Qué no es",
+        "hinge": "No hay un Nx de rollover publicado para este paquete. No inventamos uno. No hay señal de Cloudbet en el archivo.",
+        "rows": [
+            (
+                "Tipos",
+                "Sportsbook declarado: /en/sports, título “Crypto Sports Betting”.",
+                "Catálogo de juegos: hueco · 03 OCT 2026",
+            ),
+            (
+                "Vistos",
+                "Sin señal de lobby en el archivo",
+                "No hay ranking de «más jugados»",
+            ),
+            (
+                "Jackpot",
+                "Historial de jackpots progresivos: hueco · 03 OCT 2026",
+                "Sin pozo observado",
+            ),
+        ],
+        "side": [
+            ("$2.5k", "Tope 30 días", "Paquete declarado · no es un Nx"),
+            ("10%", "House edge", "Casino · sports no suman"),
+        ],
+        "stages": [
+            ("Depósito", "Crypto + tarjeta", "vía Swapped"),
+            ("KYC", "L2", "ID + domicilio + face"),
+            ("Retiro", "Sin dato", "la fila no trae SLA"),
+            ("Proceso", "Sin SLA", "el marketing de velocidad no entra"),
+        ],
+        "caveat_strong": "No es un cajero por CBU.",
+        "caveat": "Offshore no es un casino regulado en Argentina.",
+        "chain": ["ID", "domicilio", "face"],
+        "big": "L2",
+        "big_label": "ID + domicilio + face",
+        "kyc_note": "Pueden pedir la verificación en cualquier momento. Un disparador fijo: no verificado · 03 OCT 2026.",
+    },
+    "roobet": {
+        "meta": [
+            ("Operador", "crypto/offshore"),
+            ("Revisión fila", "30 SEP 2026"),
+            ("Licencia", "no verificado"),
+        ],
+        "seals": [
+            ("Licencia", ["no verificado", "no es registro AR"]),
+            ("Revisión", ["Fila 30 SEP 2026", "rechequeo 03 OCT"]),
+        ],
+        "facts": [
+            ("Welcome", "+10%", "instant RB · 24 h"),
+            ("Ritmo", "30 min", "reclamo · sin vencimiento"),
+            ("Retiro", "—", "sin dato en la fila"),
+            ("KYC", "L2", "pasaporte, licencia o gobierno"),
+        ],
+        "bonus_sub": "Instant rakeback y un boost de 24 h. No es un match. No hay un Nx publicado.",
+        "paths": [
+            {
+                "lab": "Chip de la fila",
+                "big": "RB",
+                "title": "Instant rakeback",
+                "items": [
+                    "Un porcentaje de lo apostado",
+                    "Reclamable cada 30 minutos",
+                    "Sin vencimiento",
+                    "No es un match de depósito",
+                ],
+            },
+            {
+                "lab": "Boost",
+                "big": "+10%",
+                "title": "24 h al registrarse",
+                "items": [
+                    "Sobre el instant rakeback",
+                    "No es un match",
+                    "Sin Nx publicado",
+                    "Sin señal en el archivo",
+                ],
+            },
+        ],
+        "hinge_n": "Qué no es",
+        "hinge": "No es un match de depósito. El artículo no publica un Nx. No hay señal de Roobet en el archivo.",
+        "rows": [
+            (
+                "Tipos",
+                "Sportsbook público: no verificado · 03 OCT 2026",
+                "Catálogo: hueco. HTML público sin la palabra sport",
+            ),
+            (
+                "Vistos",
+                "Sin señal de lobby en el archivo",
+                "No hay ranking de «más jugados»",
+            ),
+            (
+                "Jackpot",
+                "Historial de jackpots progresivos: hueco · 03 OCT 2026",
+                "Sin pozo observado",
+            ),
+        ],
+        "side": [
+            ("+10%", "Boost 24 h", "Sobre el instant rakeback"),
+            ("30 min", "Reclamo", "Sin vencimiento"),
+        ],
+        "stages": [
+            ("Depósito", "Crypto + fiat", "compra vía Swapped"),
+            ("KYC", "L2 ID", "pasaporte, licencia o gobierno"),
+            ("Retiro", "Sin dato", "la fila no trae SLA"),
+            ("Proceso", "Sin SLA", "sin horas en esta ficha"),
+        ],
+        "caveat_strong": "No es un cajero por CBU.",
+        "caveat": "Offshore no es un casino regulado en Argentina.",
+        "chain": ["pasaporte", "licencia", "documento de gobierno"],
+        "big": "L2",
+        "big_label": "pasaporte, licencia o gobierno",
+        "kyc_note": "Cuándo lo exigen: no verificado · 03 OCT 2026.",
+    },
+}
+
+
+def hero_art() -> str:
+    return f'<div class="hero-art" aria-hidden="true">\n      {HERO_SVG}\n    </div>'
+
+
+def index_ops_html() -> str:
+    bits = []
+    for slug, name, chip, chip_s, blurb in INDEX_LINES:
+        bits.append(
+            "<a class=\"op-line\" href=\"/mesa/"
+            + e(slug)
+            + "/\"><span class=\"who\"><span class=\"lab\">En la mesa</span><span class=\"name\">"
+            + e(name)
+            + "</span></span><span class=\"n\">"
+            + e(chip)
+            + "</span><span class=\"s\"><span class=\"chip-s\">"
+            + e(chip_s)
+            + "</span>"
+            + e(blurb)
+            + "</span></a>"
+        )
+    return "\n".join(bits)
+
+
+def meta_html(pairs: list[tuple[str, str]]) -> str:
+    bits = []
+    for i, (lab, val) in enumerate(pairs):
+        if i:
+            bits.append(" · ")
+        bits.append(f"<b>{e(lab)}</b> {e(val)}")
+    return f'<p class="meta">{"".join(bits)}</p>'
+
+
+def seals_html(seals: list[tuple[str, list[str]]]) -> str:
+    bits = []
+    for title, lines in seals:
+        body = "<br>".join(e(line) for line in lines)
+        bits.append(
+            f'<div class="seal"><span class="ring" aria-hidden="true"></span><span><b>{e(title)}</b>{body}</span></div>'
+        )
+    return f'<div class="seals">{"".join(bits)}</div>'
+
+
+def facts_html(facts: list[tuple[str, str, str]]) -> str:
+    cells = []
+    for k, n, s in facts:
+        cells.append(
+            f'<div class="fact"><div class="k">{e(k)}</div><div class="n">{e(n)}</div><div class="s">{e(s)}</div></div>'
+        )
+    return f'<div class="facts">{"".join(cells)}</div>'
+
+
+def paths_html(paths: list[dict]) -> str:
+    blocks = []
+    for path in paths:
+        items = "".join(f"<li>{e(item)}</li>" for item in path["items"])
+        blocks.append(
+            f'<div class="path"><p class="lab">{e(path["lab"])}</p><p class="big">{e(path["big"])}</p><p class="title">{e(path["title"])}</p><ul>{items}</ul></div>'
+        )
+    return f'<div class="paths">{"".join(blocks)}</div>'
+
+
+def juice_html(rows: list[tuple[str, str, str]], side: list[tuple[str, str, str]]) -> str:
+    row_html = []
+    for lab, val, em in rows:
+        em_html = f"<br><em>{e(em)}</em>" if em else ""
+        row_html.append(
+            f'<div class="row"><div class="lab">{e(lab)}</div><div class="val">{e(val)}{em_html}</div></div>'
+        )
+    stats = []
+    for n, lab, paragraph in side:
+        stats.append(
+            f'<div class="stat"><div class="n">{e(n)}</div><div class="l">{e(lab)}</div><p>{e(paragraph)}</p></div>'
+        )
+    return (
+        f'<div class="asym"><div><div class="rows">{"".join(row_html)}</div>'
+        f'<p class="gap">{e(GAP)}</p></div><aside class="side">{"".join(stats)}</aside></div>'
+    )
+
+
+def flow_html(stages: list[tuple[str, str, str]]) -> str:
+    bits = []
+    for label, big, fine in stages:
+        bits.append(
+            f'<div class="stage"><div class="dot"></div><div class="t">{e(label)}</div><div class="b">{e(big)}</div><div class="f">{e(fine)}</div></div>'
+        )
+    return f'<div class="flow">{"".join(bits)}</div>'
+
+
+def chain_html(parts: list[str]) -> str:
+    bits = []
+    for i, part in enumerate(parts):
+        if i:
+            bits.append(' <span>→</span> ')
+        bits.append(e(part))
+    return f'<p class="chain">{"".join(bits)}</p>'
+
+
+def timeline_html(items: list[dict]) -> str:
+    if not items:
+        return '<p class="sub">No hay señales de este operador en el archivo. No es un hub por operador.</p>'
+    lis = []
+    for item in items:
+        lis.append(
+            f'<li><time datetime="{e(item["date"])}">{e(item["when"])}</time>'
+            f'<div><div class="ev"><a href="/senales/#{e(item["id"])}">{e(item["title"])}</a></div>'
+            f'<div class="d">{e(item["line"])}</div></div></li>'
+        )
+    return (
+        '<p class="sub">Salen del archivo de señales. No es un hub por operador.</p>'
+        f'<ul class="tl">{"".join(lis)}</ul>'
+    )
+
+
+def annex_html(data: dict) -> str:
+    parts = [f"<p><b>{e(dt)}.</b> {e(dd)}</p>" for dt, dd in data["sheet"]]
+    return f"""<details>
+          <summary>Anexo · empresa / licencia (dossier, no el gancho)</summary>
+          <div class="body">
+            {"".join(parts)}
+            {fuentes_html(data["fuentes"])}
+          </div>
+        </details>"""
+
+
+def lede_html(paragraphs: list[str]) -> str:
+    bits = []
+    for i, paragraph in enumerate(paragraphs):
+        cls = "lede" if i == 0 else "lede lede-next"
+        bits.append(f'<p class="{cls}">{e(paragraph)}</p>')
+    return "".join(bits)
+
+
+def prose_html(paragraphs: list[str]) -> str:
+    return f'<div class="prose">{"".join(f"<p>{e(p)}</p>" for p in paragraphs)}</div>'
+
 
 def render_ficha(slug: str) -> str:
     data = FICHAS[slug]
@@ -875,41 +1497,67 @@ def render_ficha(slug: str) -> str:
         ),
         faq_ld(url, faqs),
     ]
-    lede = "".join(f'<p class="lede">{e(p)}</p>' for p in data["lede"])
-    plata = "".join(f"<p>{e(p)}</p>" for p in data["plata"])
-    bono = "".join(f"<p>{e(p)}</p>" for p in data["bono"])
+    visual = VISUAL[slug]
     body = f"""
       {crumbs_html([("Inicio", "/"), ("Mesa", "/mesa/"), (data["name"], None)])}
       <article class="ficha">
-        <p class="estado">En la mesa</p>
-        <h1>{e(data["h1"])}</h1>
-        {lede}
-        <section class="block" aria-labelledby="declarada">
-          <h2 id="declarada">Lo que declara la casa</h2>
-          {sheet_html(data["sheet"])}
-          {fuentes_html(data["fuentes"])}
+        <header class="hero">
+          <div>
+            <p class="eyebrow">En la mesa</p>
+            <h1>{e(data["name"])}</h1>
+            {lede_html(data["lede"])}
+            {meta_html(visual["meta"])}
+            {seals_html(visual["seals"])}
+          </div>
+          {hero_art()}
+        </header>
+        <section class="know" aria-labelledby="importa">
+          <h2 id="importa">Lo que importa en la mesa</h2>
+          {facts_html(visual["facts"])}
         </section>
-        <section class="block" aria-labelledby="plata">
+        <section class="bonus" aria-labelledby="bono">
+          <h2 id="bono">Bono real vs marketing</h2>
+          <p class="sub">{e(visual["bonus_sub"])}</p>
+          {paths_html(visual["paths"])}
+          <div class="hinge"><div class="n">{e(visual["hinge_n"])}</div><p>{e(visual["hinge"])}</p></div>
+          {prose_html(data["bono"])}
+          <div class="prose">{GUIDE_LINKS}</div>
+        </section>
+        <section class="juice" aria-labelledby="juegos">
+          <h2 id="juegos">Juegos y jackpots</h2>
+          {juice_html(visual["rows"], visual["side"])}
+        </section>
+        <section class="money" aria-labelledby="plata">
           <h2 id="plata">{e(data["plata_title"])}</h2>
-          {plata}
+          {flow_html(visual["stages"])}
+          <p class="caveat"><strong>{e(visual["caveat_strong"])}</strong> {e(visual["caveat"])}</p>
+          {prose_html(data["plata"])}
         </section>
-        <section class="block" aria-labelledby="bono">
-          <h2 id="bono">Bono real y marketing</h2>
-          {bono}
-          {GUIDE_LINKS}
+        <section class="kyc" aria-labelledby="riesgo">
+          <div class="kyc-grid">
+            <div>
+              <h2 id="riesgo">Condiciones y riesgo</h2>
+              {chain_html(visual["chain"])}
+              <p class="note">{e(visual["kyc_note"])}</p>
+            </div>
+            <div>
+              <p class="big72">{e(visual["big"])}</p>
+              <p>{e(visual["big_label"])}</p>
+            </div>
+          </div>
+          {prose_html([data["kyc"]])}
         </section>
-        <section class="block" aria-labelledby="kyc">
-          <h2 id="kyc">KYC</h2>
-          <p>{e(data["kyc"])}</p>
+        <section class="sig" aria-labelledby="senales">
+          <h2 id="senales">Señales observadas</h2>
+          <div class="sig-grid">
+            <div>{timeline_html(data["senales"])}</div>
+            <blockquote class="quote">{e(data["offshore"])}</blockquote>
+          </div>
         </section>
-        <aside class="offshore">
-          <p>{e(data["offshore"])}</p>
-        </aside>
-        <section class="block" aria-labelledby="senales">
-          <h2 id="senales">Señales de este operador</h2>
-          {senales_block(data)}
+        <section class="foot-doc">
+          {annex_html(data)}
+          {affiliate_html()}
         </section>
-        {affiliate_html()}
         <section class="block" id="faq" aria-labelledby="faq-title">
           <h2 id="faq-title">Preguntas</h2>
           {faq_html(faqs)}
