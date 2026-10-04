@@ -259,6 +259,20 @@ def affiliate_html() -> str:
     return """<aside class="aff" aria-label="Enlace de afiliado"><span class="k">Afiliado</span>Enlace de afiliado no activo.</aside>"""
 
 
+# Public channel until Peter swaps js/config.js SITE_CTA_TG_URL.
+# canal-cta.js rewrites a[data-site-cta-tg]; this href is the no-JS fallback.
+SITE_CTA_TG_URL = "https://t.me/planetaruleta"
+
+
+def canal_cta_html(location: str) -> str:
+    return f"""<aside class="canal-cta" aria-labelledby="canal-cta-title">
+        <p class="canal-kicker">Canal · +18</p>
+        <h2 id="canal-cta-title">El dato queda en la página. El aviso, en el canal.</h2>
+        <p>Cuando hay juice o una alerta con fuente, sale en Telegram. Esta invitación no es un enlace de afiliado y no abre un depósito.</p>
+        <p class="canal-cta-action"><a href="{SITE_CTA_TG_URL}" data-site-cta-tg target="_blank" rel="noopener" data-cta="telegram" data-cta-location="{e(location)}">Sumate al canal</a></p>
+      </aside>"""
+
+
 SATURN = "/assets/saturn-exact.png"
 
 
@@ -346,6 +360,7 @@ def head(title: str, description: str, path: str, graph: list, og_type: str = "a
   <link rel="stylesheet" href="/css/brand.css" />
   <link rel="stylesheet" href="/css/mesa.css" />
   <script src="/js/config.js"></script>
+  <script src="/js/canal-cta.js"></script>
   <script src="/js/analytics.min.js"></script>
 </head>"""
 
@@ -477,6 +492,7 @@ def render_index() -> str:
         <h2 id="faq-title">Preguntas</h2>
         {faq_html(INDEX_FAQS)}
       </section>
+      {canal_cta_html("mesa-canal")}
 """
     return page(title, description, path, graph, body, og_type="website")
 
@@ -1575,6 +1591,7 @@ def render_ficha(slug: str) -> str:
         {otros_html(slug)}
         <p class="after"><a href="/mesa/">Todas las fichas</a> · <a href="/#mesa">Tira corta en la home</a></p>
       </section>
+      {canal_cta_html("mesa-canal")}
 """
     return page(title, description, path, graph, body)
 
@@ -1604,6 +1621,10 @@ def main() -> None:
                 raise SystemExit(f"banned phrase {word!r} in {path}")
         if "Enlace de afiliado no activo." not in text:
             raise SystemExit(f"missing empty affiliate slot in {path}")
+        if 'data-site-cta-tg' not in text or 'data-cta-location="mesa-canal"' not in text:
+            raise SystemExit(f"missing soft canal CTA in {path}")
+        if "href=\"" + SITE_CTA_TG_URL + "\"" not in text:
+            raise SystemExit(f"canal CTA is not the public-channel fallback in {path}")
         path.write_text(text, encoding="utf-8")
         print(path.relative_to(ROOT))
 
