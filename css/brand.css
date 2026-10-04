@@ -1,0 +1,10 @@
+/* Shared mast mark. Every header uses assets/saturn-exact.png as-is. */
+.brand {
+  gap: .55rem;
+}
+.brand img {
+  width: 1.65rem;
+  height: auto;
+  display: block;
+  flex: none;
+}

@@ -1,6 +1,6 @@
-/* Mesa dossier v5 — KEEP mock. Copper Desk ink + copper. Shared by /mesa/ and /mesa/[slug]/. */
+/* Mesa dossier v5 — KEEP mock. Page background matches the site (--bg on the homepage). */
 :root {
-  --bg: #0A1016;
+  --bg: #0B1520;
   --ink: #E6E1D6;
   --mute: #8A93A1;
   --line: #243040;
@@ -25,6 +25,16 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  opacity: .045;
+  z-index: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+.mast, main, .site-foot { position: relative; z-index: 1; }
 ::selection { background: var(--copper); color: var(--bg); }
 a { color: var(--copper); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
 a:hover { color: var(--ink); }
@@ -62,7 +72,6 @@ a:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
   text-decoration: none;
   color: var(--ink);
 }
-.brand img { width: 1.65rem; height: auto; display: block; flex: none; }
 .brand span {
   font-family: var(--sans);
   font-weight: 700;

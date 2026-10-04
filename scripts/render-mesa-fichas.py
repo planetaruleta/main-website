@@ -338,10 +338,11 @@ def head(title: str, description: str, path: str, graph: list, og_type: str = "a
   <script type="application/ld+json">
 {ld}
   </script>
-  <meta name="theme-color" content="#0A1016" />
+  <meta name="theme-color" content="#0B1520" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Ibarra+Real+Nova:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Schibsted+Grotesk:ital,wght@0,500;0,600;0,700;1,500&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/brand.css" />
   <link rel="stylesheet" href="/css/mesa.css" />
   <script src="/js/config.js"></script>
   <script src="/js/analytics.min.js"></script>
@@ -852,7 +853,7 @@ HERO_SVG = """<svg viewBox="0 0 560 460" xmlns="http://www.w3.org/2000/svg">
           <radialGradient id="glow" cx="62%" cy="46%" r="52%">
             <stop offset="0%" stop-color="#C47A4A" stop-opacity="0.14"/>
             <stop offset="70%" stop-color="#C47A4A" stop-opacity="0.03"/>
-            <stop offset="100%" stop-color="#0A1016" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#0B1520" stop-opacity="0"/>
           </radialGradient>
         </defs>
         <rect width="560" height="460" fill="url(#glow)"/>
@@ -864,21 +865,21 @@ HERO_SVG = """<svg viewBox="0 0 560 460" xmlns="http://www.w3.org/2000/svg">
         <circle cx="348" cy="228" r="108" fill="none" stroke="#E6E1D6" stroke-width="1" opacity=".22"/>
         <circle cx="348" cy="228" r="74" fill="none" stroke="#C47A4A" stroke-width="1" opacity=".4"/>
         <g transform="translate(268 168)">
-          <circle r="58" fill="#0A1016" stroke="#E6E1D6" stroke-width="1.2" opacity=".9"/>
+          <circle r="58" fill="#0B1520" stroke="#E6E1D6" stroke-width="1.2" opacity=".9"/>
           <circle r="44" fill="none" stroke="#C47A4A" stroke-width="8" stroke-dasharray="3.2 6" opacity=".72"/>
           <circle r="30" fill="none" stroke="#E6E1D6" stroke-width=".9" opacity=".4"/>
         </g>
         <g transform="translate(392 268)">
-          <circle r="46" fill="#0A1016" stroke="#E6E1D6" stroke-width="1.15" opacity=".92"/>
+          <circle r="46" fill="#0B1520" stroke="#E6E1D6" stroke-width="1.15" opacity=".92"/>
           <circle r="34" fill="none" stroke="#C47A4A" stroke-width="6.5" stroke-dasharray="2.8 5.2" opacity=".78"/>
           <circle r="22" fill="none" stroke="#E6E1D6" stroke-width=".8" opacity=".45"/>
         </g>
         <g transform="translate(214 292)">
-          <circle r="24" fill="#0A1016" stroke="#C47A4A" stroke-width="1.15"/>
+          <circle r="24" fill="#0B1520" stroke="#C47A4A" stroke-width="1.15"/>
           <circle r="15" fill="none" stroke="#E6E1D6" stroke-width=".8" opacity=".45"/>
         </g>
         <g transform="translate(418 78) rotate(14)">
-          <rect width="108" height="148" rx="7" fill="#0A1016" stroke="#E6E1D6" stroke-width="1.15" opacity=".88"/>
+          <rect width="108" height="148" rx="7" fill="#0B1520" stroke="#E6E1D6" stroke-width="1.15" opacity=".88"/>
           <circle cx="18" cy="20" r="2.4" fill="#C47A4A"/>
           <circle cx="90" cy="128" r="2.4" fill="#C47A4A"/>
           <path d="M54 50 L72 76 L54 102 L36 76 Z" fill="none" stroke="#C47A4A" stroke-width="1.15"/>
