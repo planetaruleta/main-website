@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" shape-rendering="crispEdges">
   <rect width="512" height="512" fill="#0B1520"/>
   <g transform="translate(51.2000,110.3089) scale(1.665041)">
     <g transform="translate(0,175) scale(0.1,-0.1)" fill="#FFFFFF">
