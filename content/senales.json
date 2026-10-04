@@ -1,6 +1,15 @@
 {
   "senales": [
     {
+      "id": "lobby-rainbet-daily-race-2026-10-03",
+      "fecha": "2026-10-03",
+      "kicker": "Rainbet · offshore · Lobby · Declarado",
+      "titulo": "Rainbet Daily Race 03 OCT: ventana de 24 h — race por volumen, no jackpot por caer",
+      "resumen": "Página OFICIAL daily-race (verificado 2026-10-03, Peter QC PASS): carrera de lobby cronometrada, 24 h. Race por volumen — no es un jackpot por caer. Ventana UTC stated: 2026-10-04T00:00:00.000Z → 2026-10-04T23:59:59.000Z. America/Guatemala: sáb 3 OCT 2026 18:00 → dom 4 OCT 2026 17:59:59. Entrada stated: jugar cualquier juego; leaderboard nuevo cada 24 horas. Escalera página 1 (números stated, sin signo de moneda en la celda de premio): #1=4000 · #2=2500 · #3=1500 · #4=1000 · #5=800. Meta: 200 lugares. No publicamos pozo total. Ventana distinta de la señal del 26 SEP.",
+      "numero": "4000",
+      "fuentes_html": "Fuente · <a href=\"https://rainbet.com/daily-race\" target=\"_blank\" rel=\"noopener\">rainbet.com/daily-race · 03 OCT 2026</a>"
+    },
+    {
       "id": "bono-shuffle-level-up-approx-2026-10-02",
       "fecha": "2026-10-02",
       "kicker": "Shuffle · offshore · Bono · Declarado",
