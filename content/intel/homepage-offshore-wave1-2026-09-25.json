@@ -11,7 +11,7 @@
   "owner": "Casino Intel",
   "gate": "Peter QC",
   "spine": "offshore Wave1",
-  "note": "AR regulated operators stay off this spine (homepage-pack-2026-09-24.json is a separate pack). Apps still PARKED — content coverage only. +18 desk; no play CTA framing. Links = official site URLs only (no affiliate/ref/partner/tracking). Lead señal 2026-10-02: Shuffle Level Up (id bono-shuffle-level-up-approx-2026-10-02). Ranking up unlocks Rank Up + Level Up Reload + Recent Play. Stated approximate combined USD at milestone “1” tiers: Silver 1 ≈ $25 · Gold 1 ≈ $210 · Platinum 1 ≈ $720 · Jade 1 ≈ $1,500 · Sapphire 1 = personalised VIP (no public $). VIP Panel automatic Rank-Up table is separate from that package. Promo live 2024-11-01 → endsAt 2026-11-02. Peter QC PASS 2026-10-02. Distinct from rakeback. Rakeback 5% HE (Bronze), id bono-shuffle-rakeback-5pct-he-2026-09-25, stays the mesa chip and moves to timeline. Not an FTD match; FTD Nx bases still unpublished. Rainbet Daily Race stays timeline (window closed). Mesa bono Shuffle = Rakeback 5% HE (Bronze). Rainbet welcome cell unchanged (x40 · D+B alt no WR). Order: Rainbet, Shuffle, Stake, then Cloudbet, Roobet. Cloudbet and Roobet KYC/bono/métodos filled 2026-09-30 (Peter QC PASS, claim_layer stated, status ready, sheet_ready false). Official URLs only, no affiliate params. Métodos = class only, no coin tickers. Retiro stays —. Cloudbet withdrawal-speed marketing is not a retiro cell. No invented WR. 2026-09-30 Gates of Olympus 2500 Multiplier Mayhem $40K (id lobby-rainbet-gates-olympus-40k-2026-09-30, Peter QC PASS OFICIAL) is the first timeline item only. Mesa has no promo chip slot (KYC/bono/métodos); Rainbet bono cell stays the welcome.",
+  "note": "AR regulated operators stay off this spine (homepage-pack-2026-09-24.json is a separate pack). Apps still PARKED — content coverage only. +18 desk; no play CTA framing. Links = official site URLs only (no affiliate/ref/partner/tracking). Lead señal 2026-10-03: Rainbet Daily Race (id lobby-rainbet-daily-race-2026-10-03). Timed 24h volume race, NOT jackpot por caer, NOT a mesa bono. Window stated 2026-10-04T00:00:00.000Z → 2026-10-04T23:59:59.000Z (America/Guatemala sáb 3 OCT 2026 18:00 → dom 4 OCT 2026 17:59:59). Page-1 ladder stated with no currency sign on the reward cell: #1=4000 · #2=2500 · #3=1500 · #4=1000 · #5=800. Meta 200 places. No published total pool (page-1 sum is editorial math and stays off the site). Peter QC PASS 2026-10-03. Distinct from lobby-rainbet-daily-race-2026-09-26. Homepage latest 3: this lead, then Shuffle Level Up (id bono-shuffle-level-up-approx-2026-10-02), then Gates (id lobby-rainbet-gates-olympus-40k-2026-09-30). Rakeback stays in the archive. Prior lead was Shuffle Level Up (id bono-shuffle-level-up-approx-2026-10-02). Ranking up unlocks Rank Up + Level Up Reload + Recent Play. Stated approximate combined USD at milestone “1” tiers: Silver 1 ≈ $25 · Gold 1 ≈ $210 · Platinum 1 ≈ $720 · Jade 1 ≈ $1,500 · Sapphire 1 = personalised VIP (no public $). VIP Panel automatic Rank-Up table is separate from that package. Promo live 2024-11-01 → endsAt 2026-11-02. Peter QC PASS 2026-10-02. Distinct from rakeback. Rakeback 5% HE (Bronze), id bono-shuffle-rakeback-5pct-he-2026-09-25, stays the mesa chip and moves to timeline. Not an FTD match; FTD Nx bases still unpublished. Rainbet Daily Race 2026-09-26 stays in the archive (that window closed). The 2026-10-03 Daily Race is a new dated window and is the lead. Mesa bono Shuffle = Rakeback 5% HE (Bronze). Rainbet welcome cell unchanged (x40 · D+B alt no WR). Order: Rainbet, Shuffle, Stake, then Cloudbet, Roobet. Cloudbet and Roobet KYC/bono/métodos filled 2026-09-30 (Peter QC PASS, claim_layer stated, status ready, sheet_ready false). Official URLs only, no affiliate params. Métodos = class only, no coin tickers. Retiro stays —. Cloudbet withdrawal-speed marketing is not a retiro cell. No invented WR. 2026-09-30 Gates of Olympus 2500 Multiplier Mayhem $40K (id lobby-rainbet-gates-olympus-40k-2026-09-30, Peter QC PASS OFICIAL) stays on the homepage timeline with its published window (ended ~1 OCT); it is not rebranded as live. Mesa has no promo chip slot (KYC/bono/métodos); Rainbet bono cell stays the welcome.",
   "schema": "docs/briefs/homepage-content-schema-2026-09-24.md",
   "schema_comment": "Homepage mesa columns: operador, kyc, bono, pagos (Métodos). Freshness is one month line for the whole table (Actualizado · SEP 2026), not per-row dates. retiro deferred until we have real SLA/mesa data — retiro_label and retiro_tone stay on each operator; do not render them. jurisdiccion stays in JSON for licence diligence; do not render an Ámbito column or a CGA note in the table. pagos cells are the method class only — do not render a coin list.",
   "operators_mesa": [
@@ -30,7 +30,7 @@
       "pagos_note": "Stated homepage FAQ on https://rainbet.com/ (“Which cryptocurrencies does Rainbet support?”): BTC, ETH, LTC, XRP, SOL, TRX, BNB, USDT, USDC, plus bank transfers, cards, and gift cards. Cell is the class, not the coin list. Tone pos (stated), not warn and not Sin dato.",
       "actualizado": "2026-09-25",
       "official_url": "https://rainbet.com/",
-      "claim_notes": "Licencia Anjouan stated: Terms + AML + footer (Rain Group Ltd / Rain Group LTD, co. 16077, Hamchako). JSON-LD homepage also names legalName RBGAMING N.V. — entity string inconsistent; chip = Anjouan class only. Retiro timing: homepage marketing says ‘typically processed and sent within 5 to 15 minutes’ — NOT adopted as SLA (no cashier/help hours receipt) → Sin dato. KYC stated Terms §20 + AML: gov ID, selfie(+note), PoA/utility; KYC team 24hrs once Temporarily Approved; verification may take up to 7 business days; restrict if ID not completed within 72h. Bono stated homepage welcome paths: (A) 40x on combined deposit+bonus, tiers 100%/50%/100% +20 FS, min $30 max $700/tier; (B) No Wager Lock sticky unlock formula. Promotions SPA thin logged-out. Min WD $15 + 1x deposit wager stated homepage — not a timing SLA. Daily Race 2026-09-26 (https://rainbet.com/daily-race) is a lobby señal, not this welcome bono: timed 24h volume race, page-1 ladder numbers stated with no currency sign on the reward field, 200 places, no full pool. Bono cell stays x40 · D+B (alt: no WR).",
+      "claim_notes": "Licencia Anjouan stated: Terms + AML + footer (Rain Group Ltd / Rain Group LTD, co. 16077, Hamchako). JSON-LD homepage also names legalName RBGAMING N.V. — entity string inconsistent; chip = Anjouan class only. Retiro timing: homepage marketing says ‘typically processed and sent within 5 to 15 minutes’ — NOT adopted as SLA (no cashier/help hours receipt) → Sin dato. KYC stated Terms §20 + AML: gov ID, selfie(+note), PoA/utility; KYC team 24hrs once Temporarily Approved; verification may take up to 7 business days; restrict if ID not completed within 72h. Bono stated homepage welcome paths: (A) 40x on combined deposit+bonus, tiers 100%/50%/100% +20 FS, min $30 max $700/tier; (B) No Wager Lock sticky unlock formula. Promotions SPA thin logged-out. Min WD $15 + 1x deposit wager stated homepage — not a timing SLA. Daily Race 2026-10-03 (id lobby-rainbet-daily-race-2026-10-03, https://rainbet.com/daily-race) is the lead lobby señal, not this welcome bono: timed 24h volume race, window 2026-10-04T00:00:00.000Z → 2026-10-04T23:59:59.000Z, page-1 ladder numbers stated with no currency sign on the reward field (#1=4000 · #2=2500 · #3=1500 · #4=1000 · #5=800), 200 places, no full pool. Distinct from Daily Race 2026-09-26, which stays in the archive. Bono cell stays x40 · D+B (alt: no WR).",
       "claim_layer": "stated",
       "fuentes": [
         "https://rainbet.com/",
@@ -159,6 +159,44 @@
   "operators_paused": [],
   "senales_lead": [
     {
+      "id": "lobby-rainbet-daily-race-2026-10-03",
+      "tipo": "lobby",
+      "fecha": "2026-10-03",
+      "jurisdiccion": "offshore",
+      "operador_slug": "rainbet",
+      "operador_nombre": "Rainbet",
+      "titulo": "Rainbet Daily Race 03 OCT: ventana de 24 h — race por volumen, no jackpot por caer",
+      "resumen": "Página OFICIAL daily-race (verificado 2026-10-03, Peter QC PASS): carrera de lobby cronometrada, 24 h. Race por volumen — no es un jackpot por caer. Ventana UTC stated: 2026-10-04T00:00:00.000Z → 2026-10-04T23:59:59.000Z. America/Guatemala: sáb 3 OCT 2026 18:00 → dom 4 OCT 2026 17:59:59. Entrada stated: jugar cualquier juego; leaderboard nuevo cada 24 horas. Escalera página 1 (números stated, sin signo de moneda en la celda de premio): #1=4000 · #2=2500 · #3=1500 · #4=1000 · #5=800. Meta: 200 lugares. No publicamos pozo total. Ventana distinta de la señal del 26 SEP.",
+      "numero_objeto": "4000",
+      "claim_layer": "stated",
+      "ventana_utc": {
+        "start": "2026-10-04T00:00:00.000Z",
+        "end": "2026-10-04T23:59:59.000Z"
+      },
+      "ventana_america_guatemala": "sáb 3 OCT 2026 18:00 → dom 4 OCT 2026 17:59:59",
+      "entrada": "play any game; new leaderboard every 24 hours",
+      "escalera_pagina_1": {
+        "1": 4000,
+        "2": 2500,
+        "3": 1500,
+        "4": 1000,
+        "5": 800
+      },
+      "lugares": 200,
+      "pozo_total": null,
+      "currency_on_reward_cell": false,
+      "qc": "Peter QC PASS 2026-10-03 ~18:12 America/Guatemala. OFICIAL SSR rainbet.com/daily-race. Reward cells have no printed $. Do not publish a total pool. Distinct window from lobby-rainbet-daily-race-2026-09-26.",
+      "fuentes": [
+        "https://rainbet.com/daily-race"
+      ],
+      "cta_label": "Leer señal",
+      "cta_href": null,
+      "homepage_role": "lead",
+      "status": "ready"
+    }
+  ],
+  "senales_timeline": [
+    {
       "id": "bono-shuffle-level-up-approx-2026-10-02",
       "tipo": "bono",
       "fecha": "2026-10-02",
@@ -169,18 +207,16 @@
       "resumen": "Help y promo OFICIAL: subir de rango desbloquea Rank Up + Level Up Reload + Recent Play. No es el rakeback 5% HE. Paquete combinado stated, aprox, en el escalón “1”: Silver 1 ≈ $25 · Gold 1 ≈ $210 · Platinum 1 ≈ $720 · Jade 1 ≈ $1,500 · Sapphire 1 = VIP personalizado (sin USD público). El VIP Panel tiene otra tabla, de Rank-Up automático, y no es ese paquete: Bronze 1 · wager $1,000 → ≈ $0.9 · Silver 1 · $10,000 → ≈ $9 · Gold 1 · $100,000 → ≈ $80 · Platinum 1 · $450,000 → ≈ $260 · Jade 1 · $1,200,000 → ≈ $260 · Sapphire 1 · $2,300,000 → ≈ $900. Promo live desde 2024-11-01; endsAt 2026-11-02. Números aprox / stated. Fuentes: https://help.shuffle.com/en/articles/8528228-shuffle-level-up-bonus · https://shuffle.com/promotions/level-up. Peter QC PASS 2026-10-02.",
       "numero_objeto": "aprox",
       "claim_layer": "stated",
-      "qc": "Peter QC PASS 2026-10-02. Approx combined package at milestone “1” tiers, stated. VIP Panel Rank-Up samples are a separate table. Sapphire 1 has no public $. No WR, no FTD Nx, no code.",
+      "qc": "Peter QC PASS 2026-10-02. Approx combined package at milestone “1” tiers, stated. VIP Panel Rank-Up samples are a separate table. Sapphire 1 has no public $. No WR, no FTD Nx, no code. Demoted from lead 2026-10-03; mesa chip unchanged.",
       "fuentes": [
         "https://help.shuffle.com/en/articles/8528228-shuffle-level-up-bonus",
         "https://shuffle.com/promotions/level-up"
       ],
       "cta_label": "Leer señal",
       "cta_href": null,
-      "homepage_role": "lead",
+      "homepage_role": "timeline",
       "status": "ready"
-    }
-  ],
-  "senales_timeline": [
+    },
     {
       "id": "lobby-rainbet-gates-olympus-40k-2026-09-30",
       "tipo": "lobby",
@@ -232,7 +268,7 @@
       "resumen": "Help OFICIAL (21 oct 2024; re-verificado 28 SEP 2026): rakeback de casino = 5% HE en cash — no sports, y no es un depósito match con WR. Ejemplo stated: wager 1000 USDT en un juego con 2% HE → 1 USDT de rakeback, ganes o pierdas. Unlock: wager total $1.000 → Bronze VIP; se reclama en la página VIP en cualquier momento (help 13 abr 2026). FTD Nx sigue sin bases publicadas.",
       "numero_objeto": "5% HE",
       "claim_layer": "stated",
-      "qc": "Peter QC PASS — live-verified 2026-09-28 ~18:02 America/Guatemala. Id reused from 2026-09-25; visible date is the Mon re-verify. Demoted from lead 2026-10-02; mesa chip unchanged.",
+      "qc": "Peter QC PASS — live-verified 2026-09-28 ~18:02 America/Guatemala. Id reused from 2026-09-25; visible date is the Mon re-verify. Demoted from lead 2026-10-02; off the homepage 2026-10-03 (cap of 3) and remains in the archive. Mesa chip unchanged.",
       "fuentes": [
         "https://help.shuffle.com/en/articles/10020509-how-does-rakeback-work",
         "https://help.shuffle.com/en/articles/10020510-how-do-i-earn-rakeback"

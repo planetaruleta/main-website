@@ -89,7 +89,7 @@ ROWS = [
     (
         "Última revisión",
         [
-            "25 SEP 2026 (fila). Señales de lobby: 26 SEP y 30 SEP 2026.",
+            "25 SEP 2026 (fila). Señales de lobby: Daily Race 03 OCT y 26 SEP, torneo Gates 30 SEP 2026.",
             "28 SEP 2026 (rakeback). Level Up: 02 OCT 2026.",
             "25 SEP 2026",
             "30 SEP 2026 (bono, KYC, métodos). Licencia y sportsbook: 03 OCT 2026.",
@@ -480,7 +480,7 @@ FICHAS = {
             ("Licencia", "Anjouan, declarada en Terms, AML y footer (25 SEP 2026). El validador de Anjouan no se chequeó. No es una licencia del registro argentino."),
             ("Monedas", "FAQ de rainbet.com, 25 SEP 2026: BTC, ETH, LTC, XRP, SOL, TRX, BNB, USDT y USDC. Redes: no verificado · 03 OCT 2026."),
             ("Idiomas", "JSON-LD knowsLanguage: en, ar, es, fr, ja, pt, ru, tr, zh (homepage, 03 OCT 2026)."),
-            ("Última revisión", "Fila de la mesa: 25 SEP 2026. Señales de lobby: Daily Race 26 SEP 2026 y torneo Gates of Olympus 30 SEP 2026. Huecos marcados al armar la ficha: 03 OCT 2026."),
+            ("Última revisión", "Fila de la mesa: 25 SEP 2026. Señales de lobby: Daily Race 03 OCT 2026, Daily Race 26 SEP 2026 y torneo Gates of Olympus 30 SEP 2026. Huecos marcados al armar la ficha: 03 OCT 2026."),
         ],
         "fuentes": [
             ("rainbet.com", "https://rainbet.com/"),
@@ -497,11 +497,18 @@ FICHAS = {
         ],
         "bono": [
             "El chip de la fila es el welcome, no el race. Camino A: 40x sobre depósito+bono (100% / 50% / 100% + 20 tiradas, mínimo 30 USD, máximo 700 USD por tramo, apuesta máxima 2% del depósito, slots con RTP mayor a 97,4% fuera). Camino B: sin ese rollover; se desbloquea al jugar. Hay que optar en promotions antes de depositar. Fuente: homepage, 25 SEP 2026.",
-            "El Daily Race del 26 SEP y el torneo Gates of Olympus 2500 del 30 SEP son señales de lobby, con ventana publicada. No reemplazan el chip.",
+            "El Daily Race del 03 OCT (ventana distinta del 26 SEP) y el torneo Gates of Olympus 2500 del 30 SEP son señales de lobby, con ventana publicada. No reemplazan el chip.",
             ],
         "kyc": "KYC declarado: documento de identidad, selfie y prueba de domicilio. Sumsub está nombrado en el AML, no en Terms §20. Terms §20: pueden restringir la cuenta si el ID no se completa en 72 horas; la verificación puede tardar hasta 7 días hábiles; el equipo de KYC habla de 24 horas una vez Temporarily Approved. Fuente: Terms y AML, revisión de mesa 25 SEP 2026 / rechequeo 03 OCT 2026.",
         "offshore": "Rainbet publica una licencia de Anjouan. Eso no es una licencia de Argentina ni convierte a esta página en un casino. No hay puntaje, no hay puesto y no hay instrucciones para saltar un bloqueo. +18.",
         "senales": [
+            {
+                "id": "lobby-rainbet-daily-race-2026-10-03",
+                "date": "2026-10-03",
+                "when": "03 OCT 2026 · Lobby",
+                "title": "Daily Race 03 OCT: ventana de 24 h — race por volumen",
+                "line": "Página daily-race verificada el 03 OCT 2026. Ventana distinta del 26 SEP. 200 lugares. Escalera de página 1 sin signo de moneda (#1=4000). No publicamos pozo total. No es el chip de bono de la mesa.",
+            },
             {
                 "id": "lobby-rainbet-gates-olympus-40k-2026-09-30",
                 "date": "2026-09-30",
@@ -531,7 +538,7 @@ FICHAS = {
             ),
             (
                 "¿El bono de la ficha es el Daily Race o el torneo?",
-                "No. El chip de la mesa sigue siendo el welcome: x40 sobre depósito+bono, o el camino sin ese rollover. El Daily Race (26 SEP 2026) y el torneo Gates of Olympus 2500 (30 SEP 2026) son señales de lobby.",
+                "No. El chip de la mesa sigue siendo el welcome: x40 sobre depósito+bono, o el camino sin ese rollover. El Daily Race (03 OCT 2026, y la ventana anterior del 26 SEP 2026) y el torneo Gates of Olympus 2500 (30 SEP 2026) son señales de lobby.",
             ),
             (
                 "¿El depósito es por CBU, como en un casino local?",
