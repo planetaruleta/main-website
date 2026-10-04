@@ -12,3 +12,11 @@
  */
 window.PR_GA_MEASUREMENT_ID = "G-VMKXD8779P";
 window.PR_GOOGLE_SITE_VERIFICATION = "IWlAIdi5w0TLg0t4bHXPzXc86qSVEbbnwjl6clCgUyg";
+
+/**
+ * Soft canal CTA on /guias/ and /mesa/ (index + fichas).
+ * Peter: swap this for the tracked invite. The HTML keeps the public
+ * channel as the no-JS fallback; canal-cta.js rewrites a[data-site-cta-tg].
+ * Do not hunt those hrefs.
+ */
+window.SITE_CTA_TG_URL = "https://t.me/planetaruleta";

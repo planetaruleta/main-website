@@ -39,7 +39,9 @@ Events we send (nothing else):
 | Event | When | Params |
 | --- | --- | --- |
 | `page_view` | automatic from gtag | standard |
-| `cta_telegram_click` | click on Telegram / join CTAs | `cta_location` (`hero`, `band`, `nav`, `footer`, `bottom`, `contact`, `faq`, `guia`), `link_url` |
+| `cta_telegram_click` | click on Telegram / join CTAs | `cta_location` (`hero`, `band`, `nav`, `footer`, `bottom`, `contact`, `faq`, `guia`, `guia-canal`, `mesa-canal`), `link_url` |
+
+The soft canal block on `/guias/` (`guia-canal`) and `/mesa/` index plus fichas (`mesa-canal`) uses [`js/config.js`](js/config.js) `SITE_CTA_TG_URL` (default `https://t.me/planetaruleta`). [`js/canal-cta.js`](js/canal-cta.js) rewrites `a[data-site-cta-tg]`. Change that constant for a tracked invite; the HTML href is only the no-JS fallback. The block is literacy, not an affiliate door. The ficha affiliate slot stays “Enlace de afiliado no activo.” Nav and footer Telegram links stay on the public channel.
 
 To use those params in standard reports: **Admin → Custom definitions → Create custom dimension** (event-scoped) for `cta_location` and, if you want it, `link_url`.
 

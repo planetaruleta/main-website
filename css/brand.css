@@ -8,3 +8,69 @@
   display: block;
   flex: none;
 }
+
+/* Soft canal CTA. Colors are local so guias (--ink is the page) and mesa
+   (--ink is the type) stay in the same Copper Desk band. */
+.canal-cta {
+  margin: 2.4rem 0 0.4rem;
+  padding: 1.35rem 0 0.2rem;
+  border-top: 1px solid #243040;
+  max-width: 40rem;
+}
+.canal-cta .canal-kicker {
+  margin: 0 0 0.45rem;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #c47a4a;
+}
+.canal-cta h2 {
+  margin: 0;
+  max-width: 18ch;
+  font-family: "Ibarra Real Nova", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: clamp(1.45rem, 3vw, 1.85rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #e6e1d6;
+  text-wrap: balance;
+}
+.canal-cta p {
+  margin: 0.75rem 0 0;
+  max-width: 38rem;
+  color: #8a93a1;
+  font-family: "Schibsted Grotesk", system-ui, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.canal-cta .canal-cta-action {
+  margin: 1.15rem 0 0;
+}
+.canal-cta a[data-site-cta-tg] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd9ce;
+  color: #0b1520;
+  text-decoration: none;
+  font-family: "Schibsted Grotesk", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1;
+  padding: 0.8rem 1.05rem;
+  border-radius: 4px;
+  border: 1px solid #0b1520;
+}
+.canal-cta a[data-site-cta-tg]:hover,
+.canal-cta a[data-site-cta-tg]:focus-visible {
+  background: #fff;
+  color: #0b1520;
+}
+@media (max-width: 779px) {
+  .canal-cta a[data-site-cta-tg] {
+    width: 100%;
+  }
+}
