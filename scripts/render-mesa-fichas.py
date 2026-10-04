@@ -320,10 +320,11 @@ def head(title: str, description: str, path: str, graph: list, og_type: str = "a
   <title>{e(title)}</title>
   <meta name="description" content="{e(description)}" />
   <link rel="canonical" href="{e(url)}" />
-  <link rel="icon" type="image/png" href="/assets/saturn-exact.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512.png" />
-  <link rel="apple-touch-icon" href="/assets/favicon-512.png" />
+  <link rel="icon" href="/favicon.svg?v=saturn" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico?v=saturn" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=saturn" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png?v=saturn" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=saturn" />
   <meta property="og:title" content="{e(title)}" />
   <meta property="og:type" content="{e(og_type)}" />
   <meta property="og:url" content="{e(url)}" />
