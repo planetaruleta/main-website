@@ -1,6 +1,6 @@
-/* Mesa dossier v5 — KEEP mock. Copper Desk ink + copper. Shared by /mesa/ and /mesa/[slug]/. */
+/* Mesa dossier v5 — KEEP mock. Page background matches the site (--bg on the homepage). */
 :root {
-  --bg: #0A1016;
+  --bg: #0B1520;
   --ink: #E6E1D6;
   --mute: #8A93A1;
   --line: #243040;
@@ -62,7 +62,6 @@ a:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
   text-decoration: none;
   color: var(--ink);
 }
-.brand img { width: 1.65rem; height: auto; display: block; flex: none; }
 .brand span {
   font-family: var(--sans);
   font-weight: 700;
