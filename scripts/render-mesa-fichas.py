@@ -259,8 +259,9 @@ def affiliate_html() -> str:
     return """<aside class="aff" aria-label="Enlace de afiliado"><span class="k">Afiliado</span>Enlace de afiliado no activo.</aside>"""
 
 
-# Public channel until Peter swaps js/config.js SITE_CTA_TG_URL.
-# canal-cta.js rewrites a[data-site-cta-tg]; this href is the no-JS fallback.
+# No-JS fallback stays the public channel. The tracked invite (TG label
+# site-cta) lives in js/config.js SITE_CTA_TG_URL; canal-cta.js rewrites
+# a[data-site-cta-tg]. Do not put that invite in this href.
 SITE_CTA_TG_URL = "https://t.me/planetaruleta"
 
 
