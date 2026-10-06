@@ -29,7 +29,7 @@ ROWS = [
     (
         "Tipo de bono real",
         [
-            "Welcome: x40 sobre depósito+bono, o camino sin ese rollover. Race y torneo de lobby son señales, no este chip.",
+            "Welcome: x40 sobre depósito+bono, o camino sin ese rollover. Race, torneo y RakeBoosts son señales, no este chip.",
             "Rakeback 5% del house edge (Bronze), cash, casino. Level Up es señal aparte (aprox). FTD: bases no publicadas.",
             "Rakeback 3.5% del house edge (welcome), vía código. No es un match con WR fijo.",
             "≤$2.5k/30d · 10% RB. Tal cual la celda (30 SEP 2026). Sin WR en la celda.",
@@ -89,7 +89,7 @@ ROWS = [
     (
         "Última revisión",
         [
-            "25 SEP 2026 (fila). Señales de lobby: Daily Race 03 OCT y 26 SEP, torneo Gates 30 SEP 2026.",
+            "25 SEP 2026 (fila). Señales: RakeBoosts 05 OCT, Daily Race 03 OCT y 26 SEP, torneo Gates 30 SEP 2026.",
             "28 SEP 2026 (rakeback). Level Up: 02 OCT 2026.",
             "25 SEP 2026",
             "30 SEP 2026 (bono, KYC, métodos). Licencia y sportsbook: 03 OCT 2026.",
@@ -454,7 +454,7 @@ def render_index() -> str:
             "publisher": {"@id": ORG_ID},
             "breadcrumb": {"@id": f"{url}#breadcrumb"},
             "mainEntity": {"@id": f"{url}#fichas"},
-            "dateModified": "2026-10-03",
+            "dateModified": "2026-10-05",
         },
         fichas_item_list(url),
         breadcrumb_ld(url, [("Inicio", f"{HOST}/"), ("Mesa", url)]),
@@ -504,7 +504,7 @@ FICHAS = {
         "h1": "Rainbet: ficha de la mesa",
         "title": "Rainbet: licencia, KYC y welcome — ficha | Planeta Ruleta",
         "description": "Rainbet declara licencia de Anjouan y un welcome x40 o sin ese rollover. KYC con ID, selfie y domicilio. Sin puntaje. Offshore no es licencia de Argentina. +18.",
-        "modified": "2026-10-03",
+        "modified": "2026-10-05",
         "lede": [
             "Rainbet está en la mesa como operador crypto/offshore: la casa declara licencia de Anjouan y un welcome con dos caminos.",
             "Esta ficha no pone nota ni abre un depósito. Junta la fila, las señales y lo que sigue sin verificar.",
@@ -514,10 +514,11 @@ FICHAS = {
             ("Licencia", "Anjouan, declarada en Terms, AML y footer (25 SEP 2026). El validador de Anjouan no se chequeó. No es una licencia del registro argentino."),
             ("Monedas", "FAQ de rainbet.com, 25 SEP 2026: BTC, ETH, LTC, XRP, SOL, TRX, BNB, USDT y USDC. Redes: no verificado · 03 OCT 2026."),
             ("Idiomas", "JSON-LD knowsLanguage: en, ar, es, fr, ja, pt, ru, tr, zh (homepage, 03 OCT 2026)."),
-            ("Última revisión", "Fila de la mesa: 25 SEP 2026. Señales de lobby: Daily Race 03 OCT 2026, Daily Race 26 SEP 2026 y torneo Gates of Olympus 30 SEP 2026. Huecos marcados al armar la ficha: 03 OCT 2026."),
+            ("Última revisión", "Fila de la mesa: 25 SEP 2026. RakeBoosts: 05 OCT 2026. Señales de lobby: Daily Race 03 OCT 2026, Daily Race 26 SEP 2026 y torneo Gates of Olympus 30 SEP 2026. Huecos marcados al armar la ficha: 03 OCT 2026."),
         ],
         "fuentes": [
             ("rainbet.com", "https://rainbet.com/"),
+            ("Rewards overview", "https://help.rainbet.com/en/articles/9171035-rewards-overview"),
             ("Terms", "https://rainbet.com/terms"),
             ("AML", "https://rainbet.com/aml"),
             ("Daily Race", "https://rainbet.com/daily-race"),
@@ -530,12 +531,20 @@ FICHAS = {
             "En la homepage también está escrito un mínimo de retiro de 15 USD y apostar 1x el depósito antes de retirar. No es un plazo. El marketing de 5 a 15 minutos no entra como SLA: el retiro de la mesa sigue en sin dato.",
         ],
         "bono": [
-            "El chip de la fila es el welcome, no el race. Camino A: 40x sobre depósito+bono (100% / 50% / 100% + 20 tiradas, mínimo 30 USD, máximo 700 USD por tramo, apuesta máxima 2% del depósito, slots con RTP mayor a 97,4% fuera). Camino B: sin ese rollover; se desbloquea al jugar. Hay que optar en promotions antes de depositar. Fuente: homepage, 25 SEP 2026.",
+            "El chip de la fila es el welcome, no el race ni los RakeBoosts. Camino A: 40x sobre depósito+bono (100% / 50% / 100% + 20 tiradas, mínimo 30 USD, máximo 700 USD por tramo, apuesta máxima 2% del depósito, slots con RTP mayor a 97,4% fuera). Camino B: sin ese rollover; se desbloquea al jugar. Hay que optar en promotions antes de depositar. Fuente: homepage, 25 SEP 2026.",
             "El Daily Race del 03 OCT (ventana distinta del 26 SEP) y el torneo Gates of Olympus 2500 del 30 SEP son señales de lobby, con ventana publicada. No reemplazan el chip.",
+            "RakeBoosts (help Rewards overview, HTTP 200 el 05 OCT 2026; el artículo figura lastUpdated 2026-05-27): Daily Reload +15% por 60 min; Daily Bonus, Weekly Bonus y Monthly Bonus +10% por 60 min cada uno; Affiliate Code Redemption +20% por 72 h; New Signup Bonus +15% por 24 h. No se suman ni se encolan: solo aplica el porcentaje más alto. El rakeback se reclama cada 15 min sobre el total apostado. El Daily Reload se puede reclamar 3 veces por día (cada 8 h) y vence si no se reclama dentro de 24 h. Un reward sin reclamar vence cuando se desbloquea el siguiente. Es un boost al rakeback, no un porcentaje del depósito. Ese artículo no publica la tasa base de rakeback ni cómo se calcula el boost: no hay conversión a dólares. No reemplaza el chip de welcome.",
             ],
         "kyc": "KYC declarado: documento de identidad, selfie y prueba de domicilio. Sumsub está nombrado en el AML, no en Terms §20. Terms §20: pueden restringir la cuenta si el ID no se completa en 72 horas; la verificación puede tardar hasta 7 días hábiles; el equipo de KYC habla de 24 horas una vez Temporarily Approved. Fuente: Terms y AML, revisión de mesa 25 SEP 2026 / rechequeo 03 OCT 2026.",
         "offshore": "Rainbet publica una licencia de Anjouan. Eso no es una licencia de Argentina ni convierte a esta página en un casino. No hay puntaje, no hay puesto y no hay instrucciones para saltar un bloqueo. +18.",
         "senales": [
+            {
+                "id": "bono-rainbet-rakeboosts-2026-10-05",
+                "date": "2026-10-05",
+                "when": "05 OCT 2026 · Bono",
+                "title": "RakeBoosts: boost al rakeback, no un % del depósito",
+                "line": "Help Rewards overview, HTTP 200 el 05 OCT 2026. No se suman: solo el % más alto. La tasa base no está publicada. No es el chip de welcome.",
+            },
             {
                 "id": "lobby-rainbet-daily-race-2026-10-03",
                 "date": "2026-10-03",
@@ -571,8 +580,8 @@ FICHAS = {
                 "No. La casa declara licencia de Anjouan en Terms, AML y el footer (revisión de mesa 25 SEP 2026). Eso no es una licencia del registro argentino. El JSON-LD de la homepage nombra RBGAMING N.V., distinto de Rain Group Ltd: no resolvemos una sola razón social.",
             ),
             (
-                "¿El bono de la ficha es el Daily Race o el torneo?",
-                "No. El chip de la mesa sigue siendo el welcome: x40 sobre depósito+bono, o el camino sin ese rollover. El Daily Race (03 OCT 2026, y la ventana anterior del 26 SEP 2026) y el torneo Gates of Olympus 2500 (30 SEP 2026) son señales de lobby.",
+                "¿El bono de la ficha es el Daily Race, el torneo o los RakeBoosts?",
+                "No. El chip de la mesa sigue siendo el welcome: x40 sobre depósito+bono, o el camino sin ese rollover. El Daily Race (03 OCT 2026, y la ventana anterior del 26 SEP 2026) y el torneo Gates of Olympus 2500 (30 SEP 2026) son señales de lobby. Los RakeBoosts del 05 OCT 2026 son un boost al rakeback, no un porcentaje del depósito: no se suman y la tasa base no está publicada en ese help. No reemplazan el chip.",
             ),
             (
                 "¿El depósito es por CBU, como en un casino local?",
@@ -953,11 +962,11 @@ VISUAL = {
         "meta": [
             ("Operador", "crypto/offshore"),
             ("Revisión fila", "25 SEP 2026"),
-            ("Señales", "26 SEP–03 OCT"),
+            ("Señales", "26 SEP–05 OCT"),
         ],
         "seals": [
             ("Licencia", ["Anjouan · declarada", "no es registro AR"]),
-            ("Revisión", ["Fila 25 SEP 2026", "señales 26 SEP–03 OCT"]),
+            ("Revisión", ["Fila 25 SEP 2026", "señales 26 SEP–05 OCT"]),
         ],
         "facts": [
             ("Welcome", "x40", "ó camino sin WR"),
@@ -990,7 +999,13 @@ VISUAL = {
             },
         ],
         "hinge_n": "Qué desbloquea",
-        "hinge": "Hay que optar en promotions antes de depositar. El Daily Race y el torneo Gates no reemplazan el chip.",
+        "hinge": "Hay que optar en promotions antes de depositar. El Daily Race, el torneo Gates y los RakeBoosts no reemplazan el chip.",
+        "boost_row": {
+            "lab": "RakeBoosts",
+            "val": "RakeBoost +10–20% · no se suman · base no publicada",
+            "source": "Rewards overview",
+            "href": "https://help.rainbet.com/en/articles/9171035-rewards-overview",
+        },
         "rows": [
             (
                 "Tipos",
@@ -1389,6 +1404,18 @@ def facts_html(facts: list[tuple[str, str, str]]) -> str:
     return f'<div class="facts">{"".join(cells)}</div>'
 
 
+def boost_row_html(row: dict | None) -> str:
+    if not row:
+        return ""
+    fuente = (
+        f'<br><em>Fuente · <a href="{e(row["href"])}" target="_blank" rel="noopener">{e(row["source"])}</a></em>'
+    )
+    return (
+        f'<div class="rows"><div class="row"><div class="lab">{e(row["lab"])}</div>'
+        f'<div class="val">{e(row["val"])}{fuente}</div></div></div>'
+    )
+
+
 def paths_html(paths: list[dict]) -> str:
     blocks = []
     for path in paths:
@@ -1538,6 +1565,7 @@ def render_ficha(slug: str) -> str:
           <h2 id="bono">Bono real vs marketing</h2>
           <p class="sub">{e(visual["bonus_sub"])}</p>
           {paths_html(visual["paths"])}
+          {boost_row_html(visual.get("boost_row"))}
           <div class="hinge"><div class="n">{e(visual["hinge_n"])}</div><p>{e(visual["hinge"])}</p></div>
           {prose_html(data["bono"])}
           <div class="prose">{GUIDE_LINKS}</div>
