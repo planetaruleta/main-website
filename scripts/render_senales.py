@@ -3,7 +3,12 @@
 
 Source: content/senales.json (published copy only).
 Order: fecha descending. Rows that share a fecha keep their order in that file.
-Homepage: the first 3 (HOME_LIMIT). Archive (/senales/): the full list.
+Homepage: the first 3 non-expired rows (HOME_LIMIT). Archive (/senales/): the full list.
+
+A row is expired when `expired` is true, or when `ends_at` (UTC) is at or before
+the render clock. Expired rows stay in the archive with an EXPIRADA badge and
+do not count toward the homepage. `ends_at` on the feed must match the intel
+object. Set `expired: true` to publish the closed state before that timestamp.
 
 The intel pack (content/intel/homepage-offshore-wave1-2026-09-25.json) is the
 claim record. Every ready id in senales_lead, senales_timeline, and senales_hold
@@ -22,6 +27,7 @@ import html
 import json
 import re
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -98,6 +104,10 @@ def load_feed() -> list[dict]:
             raise SystemExit(f"duplicate id {item['id']}")
         seen.add(item["id"])
         fecha_corta(item["fecha"])
+        if item.get("ends_at"):
+            parse_ends_at(item["ends_at"])
+        if "expired" in item and item["expired"] is not True:
+            raise SystemExit(f"{item['id']} expired must be true or omitted")
         blob = item["resumen"] + item["fuentes_html"] + item["titulo"]
         if "docs/" in blob or "docs\\drafts" in blob:
             raise SystemExit(f"{item['id']} contains an internal draft path")
@@ -121,10 +131,51 @@ def assert_matches_intel(items: list[dict]) -> None:
             f"missing from feed: {missing or '—'} extra in feed: {extra or '—'}"
         )
     for item_id, item in feed_by_id.items():
-        if item["fecha"] != intel_by_id[item_id]["fecha"]:
+        intel_row = intel_by_id[item_id]
+        if item["fecha"] != intel_row["fecha"]:
             raise SystemExit(
-                f"{item_id} fecha {item['fecha']} != intel {intel_by_id[item_id]['fecha']}"
+                f"{item_id} fecha {item['fecha']} != intel {intel_row['fecha']}"
             )
+        if item.get("ends_at") != intel_row.get("ends_at"):
+            raise SystemExit(
+                f"{item_id} ends_at feed {item.get('ends_at')!r} != intel {intel_row.get('ends_at')!r}"
+            )
+        if bool(item.get("expired")) != bool(intel_row.get("expired")):
+            raise SystemExit(f"{item_id} expired flag does not match the intel pack")
+
+
+def parse_ends_at(value: str) -> datetime:
+    text = value.strip()
+    if len(text) == 10:
+        return datetime.fromisoformat(text).replace(tzinfo=timezone.utc)
+    if text.endswith("Z"):
+        text = text[:-1] + "+00:00"
+    parsed = datetime.fromisoformat(text)
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
+
+
+def is_expired(item: dict, now: datetime) -> bool:
+    """Closed for the homepage. `expired: true` publishes that before `ends_at`."""
+    if item.get("expired") is True:
+        return True
+    raw = item.get("ends_at")
+    if not raw:
+        return False
+    return parse_ends_at(raw) <= now
+
+
+def vencida_label(ends_at: str | None) -> str:
+    if not ends_at:
+        return ""
+    day = parse_ends_at(ends_at).date().isoformat()
+    return f"Vencida {fecha_corta(day)}"
+
+
+def mark_expiry(items: list[dict], now: datetime) -> None:
+    for item in items:
+        item["_expired"] = is_expired(item, now)
 
 
 def kicker_html(kicker: str) -> str:
@@ -136,12 +187,26 @@ def kicker_html(kicker: str) -> str:
     return f'<a href="/mesa/{esc_attr(slug)}/">{esc(name)}</a> · {esc(rest)}'
 
 
+def expiry_html(item: dict) -> str:
+    if not item.get("_expired"):
+        return ""
+    when = vencida_label(item.get("ends_at"))
+    when_html = f'<span class="exp-when">{esc(when)}</span>' if when else ""
+    return f'<p class="exp"><span class="exp-badge">EXPIRADA</span>{when_html}</p>'
+
+
 def render_li(item: dict, heading: str) -> str:
-    return "\n".join(
+    expired = ' class="is-expired"' if item.get("_expired") else ""
+    lines = [
+        f'          <li id="{esc_attr(item["id"])}"{expired}>',
+        f'            <time datetime="{esc_attr(item["fecha"])}">{esc(fecha_corta(item["fecha"]))}</time>',
+        "            <div>",
+    ]
+    badge = expiry_html(item)
+    if badge:
+        lines.append(f"              {badge}")
+    lines.extend(
         [
-            f'          <li id="{esc_attr(item["id"])}">',
-            f'            <time datetime="{esc_attr(item["fecha"])}">{esc(fecha_corta(item["fecha"]))}</time>',
-            "            <div>",
             f'              <p class="kicker">{kicker_html(item["kicker"])}</p>',
             f'              <{heading}>{esc(item["titulo"])}</{heading}>',
             f'              <p class="resumen">{esc(item["resumen"])}</p>',
@@ -150,6 +215,7 @@ def render_li(item: dict, heading: str) -> str:
             "          </li>",
         ]
     )
+    return "\n".join(lines)
 
 
 def render_home(items: list[dict]) -> str:
@@ -223,7 +289,7 @@ def render_jsonld(items: list[dict]) -> str:
                 "name": "Archivo de señales — Planeta Ruleta",
                 "description": description,
                 "inLanguage": "es",
-                "dateModified": items[0]["fecha"],
+                "dateModified": collection_fecha(items),
                 "isPartOf": {
                     "@type": "WebSite",
                     "@id": "https://www.planetaruleta.com/#website",
@@ -292,6 +358,14 @@ def replace_jsonld(text: str, payload: str) -> str:
     return new
 
 
+def collection_fecha(items: list[dict]) -> str:
+    """Newest fecha that still counts. An expired history row does not move it."""
+    for item in items:
+        if not item.get("_expired"):
+            return item["fecha"]
+    return items[0]["fecha"]
+
+
 def assert_hero_matches_newest(home_html: str, newest: dict) -> None:
     match = re.search(
         r'class="ultima-meta">Última señal · <time datetime="([^"]+)">',
@@ -302,8 +376,8 @@ def assert_hero_matches_newest(home_html: str, newest: dict) -> None:
     if match.group(1) != newest["fecha"]:
         raise SystemExit(
             "Última señal chip is "
-            f"{match.group(1)} but the newest señal is {newest['fecha']} ({newest['id']}). "
-            "Update the hero chip, then render again."
+            f"{match.group(1)} but the newest live señal is {newest['fecha']} ({newest['id']}). "
+            "Expired rows do not count. Update the hero chip, then render again."
         )
 
 
@@ -320,19 +394,50 @@ def self_test_sort() -> None:
         raise SystemExit(f"sort self-test failed: {ordered}")
 
 
+def self_test_expiry() -> None:
+    now = datetime(2026, 10, 8, tzinfo=timezone.utc)
+    later = datetime(2026, 10, 12, tzinfo=timezone.utc)
+    live = {"id": "live", "fecha": "2026-10-05", "ends_at": "2026-10-20T00:00:00Z"}
+    closed = {
+        "id": "closed",
+        "fecha": "2026-10-07",
+        "ends_at": "2026-10-12T00:00:00Z",
+        "expired": True,
+    }
+    past = {"id": "past", "fecha": "2026-10-01", "ends_at": "2026-10-02T00:00:00Z"}
+    if is_expired(live, now) or not is_expired(closed, now) or not is_expired(past, now):
+        raise SystemExit("expiry self-test failed on the October 8 clock")
+    if not is_expired({"ends_at": "2026-10-12T00:00:00Z"}, later):
+        raise SystemExit("expiry self-test failed: ends_at did not close the row")
+    if is_expired({"ends_at": "2026-10-12T00:00:00Z"}, now):
+        raise SystemExit("expiry self-test failed: a future ends_at closed early")
+    if vencida_label("2026-10-12T00:00:00Z") != "Vencida 12 OCT":
+        raise SystemExit("expiry self-test failed: badge date")
+    ordered = newest_first([past, closed, live])
+    mark_expiry(ordered, now)
+    active = [item["id"] for item in ordered if not item["_expired"]]
+    if active != ["live"]:
+        raise SystemExit(f"expiry self-test failed: homepage pool {active}")
+
+
 def build() -> tuple[str, str, list[dict], list[dict]]:
     self_test_sort()
+    self_test_expiry()
     feed = load_feed()
     assert_matches_intel(feed)
     ordered = newest_first(feed)
-    if len(ordered) < HOME_LIMIT:
-        raise SystemExit(f"need at least {HOME_LIMIT} señales, found {len(ordered)}")
-    home_items = ordered[:HOME_LIMIT]
+    mark_expiry(ordered, datetime.now(timezone.utc))
+    active = [item for item in ordered if not item.get("_expired")]
+    if len(active) < HOME_LIMIT:
+        raise SystemExit(f"need at least {HOME_LIMIT} live señales, found {len(active)}")
+    home_items = active[:HOME_LIMIT]
     if len(home_items) != HOME_LIMIT:
         raise SystemExit("homepage slice did not cap at 3")
+    if any(item.get("_expired") for item in home_items):
+        raise SystemExit("expired señal counted toward the homepage")
     home_html = HOME_PATH.read_text()
     archive_html = ARCHIVE_PATH.read_text()
-    assert_hero_matches_newest(home_html, ordered[0])
+    assert_hero_matches_newest(home_html, home_items[0])
     home_html = replace_marked(home_html, HOME_START, HOME_END, render_home(home_items), "homepage")
     archive_html = replace_marked(
         archive_html, ARCHIVE_START, ARCHIVE_END, render_archive(ordered), "archive"
@@ -359,8 +464,10 @@ def main() -> int:
     else:
         HOME_PATH.write_text(home_html)
         ARCHIVE_PATH.write_text(archive_html)
+    expired = [item["id"] for item in ordered if item.get("_expired")]
     print(f"homepage ({HOME_LIMIT}): " + ", ".join(item["id"] for item in home_items))
     print(f"archive ({len(ordered)}): " + ", ".join(item["id"] for item in ordered))
+    print("expired (archive only): " + (", ".join(expired) if expired else "—"))
     return 0
 
 
