@@ -30,7 +30,7 @@ ROWS = [
         "Tipo de bono real",
         [
             "Welcome: x40 sobre depósito+bono, o camino sin ese rollover. Race, torneo y RakeBoosts son señales, no este chip.",
-            "Rakeback 5% del house edge (Bronze), cash, casino. Level Up es señal aparte (aprox). FTD: bases no publicadas.",
+            "Rakeback 5% del house edge (Bronze), cash, casino. Level Up y el lobby Gates 2500 son señales aparte. FTD: bases no publicadas.",
             "Rakeback 3.5% del house edge (welcome), vía código. No es un match con WR fijo.",
             "≤$2.5k/30d · 10% RB. Tal cual la celda (30 SEP 2026). Sin WR en la celda.",
             "Instant RB · +10% welcome 24h. Tal cual la celda (30 SEP 2026). Sin WR en la celda.",
@@ -90,7 +90,7 @@ ROWS = [
         "Última revisión",
         [
             "25 SEP 2026 (fila). Señales: RakeBoosts 05 OCT, Daily Race 03 OCT y 26 SEP, torneo Gates 30 SEP 2026.",
-            "28 SEP 2026 (rakeback). Level Up: 02 OCT 2026.",
+            "28 SEP 2026 (rakeback). Level Up: 02 OCT 2026. Lobby Gates 2500: 07 OCT 2026.",
             "25 SEP 2026",
             "30 SEP 2026 (bono, KYC, métodos). Licencia y sportsbook: 03 OCT 2026.",
             "30 SEP 2026 (bono, KYC, métodos). Sportsbook y licencia rechequeados: 03 OCT 2026.",
@@ -454,7 +454,7 @@ def render_index() -> str:
             "publisher": {"@id": ORG_ID},
             "breadcrumb": {"@id": f"{url}#breadcrumb"},
             "mainEntity": {"@id": f"{url}#fichas"},
-            "dateModified": "2026-10-05",
+            "dateModified": "2026-10-07",
         },
         fichas_item_list(url),
         breadcrumb_ld(url, [("Inicio", f"{HOST}/"), ("Mesa", url)]),
@@ -598,17 +598,17 @@ FICHAS = {
         "h1": "Shuffle: ficha de la mesa",
         "title": "Shuffle: licencia, KYC y rakeback — ficha | Planeta Ruleta",
         "description": "Rakeback 5% del house edge (Bronze) y licencia Curaçao OGL/2024/1337/0628. KYC antes del primer retiro. Sin puntaje. Offshore no es licencia de Argentina. +18.",
-        "modified": "2026-10-03",
+        "modified": "2026-10-07",
         "lede": [
             "Shuffle está en la mesa como operador crypto/offshore, con licencia de Curaçao publicada a nombre de Natural Nine B.V.",
-            "El dato de bono que la fila defiende es rakeback de casino. El Level Up es otra señal, con números aproximados.",
+            "El dato de bono que la fila defiende es rakeback de casino. El Level Up y el lobby Gates 2500 son otras señales.",
         ],
         "sheet": [
             ("Empresa", "Natural Nine B.V. (160998), Korporaalweg 10, Willemstad. Declarado en /info/license, Terms y homepage."),
             ("Licencia", "Curaçao Gaming Authority, OGL/2024/1337/0628, Natural Nine B.V. (160998). /info/license dice “Gaming Control Board”; Terms y el certificado CGA dicen “Gaming Authority”. Certificado Active. No es licencia de Argentina."),
             ("Monedas", "La celda de métodos es la clase: crypto · fiat/cards. No hay catálogo de monedas ni de redes en la mesa. USDT aparece en el ejemplo de rakeback (1000 USDT), no como lista. Catálogo: no verificado · 03 OCT 2026."),
             ("Idiomas", "no verificado · 03 OCT 2026. Esta ficha está en español de Latinoamérica; eso no dice qué idiomas publica el operador."),
-            ("Última revisión", "Rakeback re-verificado 28 SEP 2026. Level Up: 02 OCT 2026. KYC: 25 SEP 2026. Huecos marcados al armar la ficha: 03 OCT 2026."),
+            ("Última revisión", "Rakeback re-verificado 28 SEP 2026. Level Up: 02 OCT 2026. Lobby Gates 2500: 07 OCT 2026. KYC: 25 SEP 2026. Huecos marcados al armar la ficha: 03 OCT 2026."),
         ],
         "fuentes": [
             ("shuffle.com", "https://shuffle.com/"),
@@ -620,6 +620,7 @@ FICHAS = {
             ("Cómo se gana el rakeback", "https://help.shuffle.com/en/articles/10020510-how-do-i-earn-rakeback"),
             ("Level Up", "https://help.shuffle.com/en/articles/8528228-shuffle-level-up-bonus"),
             ("Promo Level Up", "https://shuffle.com/promotions/level-up"),
+            ("Gates of Olympus 2500", "https://shuffle.com/promotions/40-000-gates-of-olympus-2500"),
             (
                 "Certificado CGA",
                 "https://cert.cga.cw/certificate?id=ZXlKcGRpSTZJazlqWkhKRk1ETnNlVWh1TUVGNlRVZGFjMUpLZDFFOVBTSXNJblpoYkhWbElqb2llbWQ1Y0ROUlRXeE5ZbFp1UzJWM1ZUTlJOelp2VVQwOUlpd2liV0ZqSWpvaVlqWm1NelJrWkRjeE9UWmtOakEwTURJMU9XRXlNVEJtWkdJMU1tTmtZalppWlRNeFpqSmxOMkZqTWpsbU5HSTJOVEprWXpVNVpXRXhPVE5oWWprMk55SXNJblJoWnlJNklpSjk%3D",
@@ -635,10 +636,18 @@ FICHAS = {
             "Chip de la fila: rakeback de casino = 5% del house edge, en cash, no en sports, y no es un match de depósito. Ejemplo declarado: apostar 1000 USDT en un juego con 2% de house edge devuelve 1 USDT, se gane o se pierda. Se desbloquea al apostar 1.000 USD en total (Bronze) y se reclama en la página VIP. Help del 21 oct 2024, re-verificado 28 SEP 2026.",
             "Las bases de un FTD con rollover no están publicadas. No inventamos un Nx.",
             "Level Up (02 OCT 2026) es otra señal: al subir de rango se abren Rank Up, Level Up Reload y Recent Play. Los montos del escalón “1” están publicados como aproximados (Silver ≈ 25 USD, Gold ≈ 210 USD, y el resto en la señal). No reemplaza el chip. La promo figura desde el 1 nov 2024 hasta el 2 nov 2026.",
+            "Gates of Olympus 2500 (página oficial, 07 OCT 2026) es una señal de lobby: $40.000 a repartir en partes iguales entre todos los que peguen 500x o más, con apuesta mínima de $0,40. Ganadores ilimitados; el monto por cabeza no se publica. Cierra dom 11 oct 18:00 CA. Ventana UTC stated: 2026-09-28T00:00:00Z → 2026-10-12T00:00:00Z. No es el torneo de Rainbet del 30 SEP ni un jackpot por caer. No reemplaza el chip de rakeback.",
             ],
         "kyc": "KYC declarado: los Terms pueden exigir pasaporte, DNI o licencia al cruzar un umbral y, en cualquier caso, antes del primer retiro. El help de Account Verification describe niveles: email, datos básicos, ID de gobierno y prueba de domicilio. Fuente: Terms y help, señal del 25 SEP 2026.",
         "offshore": "Shuffle publica OGL/2024/1337/0628 a nombre de Natural Nine B.V. /info/license dice Curaçao Gaming Control Board; Terms y el certificado CGA dicen Curaçao Gaming Authority. Eso no es una licencia de Argentina. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
         "senales": [
+            {
+                "id": "lobby-shuffle-gates-olympus-500x-40k-2026-10-07",
+                "date": "2026-10-07",
+                "when": "07 OCT 2026 · Lobby",
+                "title": "Gates of Olympus 2500: $40.000 a repartir — 500x+",
+                "line": "Pozo a repartir en partes iguales. Ganadores ilimitados; el monto por cabeza no se publica. Apuesta mín. $0,40. Cierra dom 11 oct 18:00 CA. No es el chip de rakeback.",
+            },
             {
                 "id": "bono-shuffle-level-up-approx-2026-10-02",
                 "date": "2026-10-02",
@@ -667,8 +676,8 @@ FICHAS = {
                 "No. El help, re-verificado el 28 SEP 2026, dice 5% del house edge en cash, en juegos de casino, no en sports, y no es un depósito match. Las bases de un FTD con rollover no están publicadas.",
             ),
             (
-                "¿Level Up reemplaza al chip de la mesa?",
-                "No. El Level Up del 02 OCT 2026 es una señal aparte: Rank Up, Level Up Reload y Recent Play, con montos aproximados. El chip de la fila sigue siendo rakeback 5% HE (Bronze).",
+                "¿Level Up o el lobby Gates 2500 reemplazan al chip de la mesa?",
+                "No. El Level Up del 02 OCT 2026 es una señal aparte: Rank Up, Level Up Reload y Recent Play, con montos aproximados. El lobby Gates of Olympus 2500 del 07 OCT 2026 es un reparto de $40.000 entre quienes peguen 500x o más (apuesta mínima $0,40); el monto por cabeza no se publica. El chip de la fila sigue siendo rakeback 5% HE (Bronze).",
             ),
             (
                 "¿Cuándo piden documento?",
@@ -928,7 +937,7 @@ INDEX_LINES = [
         "Shuffle",
         "5%",
         "HE · Bronze · cash",
-        "Chip de rakeback 5% HE (Bronze). Level Up es otra señal, con números aproximados.",
+        "Chip de rakeback 5% HE (Bronze). Level Up y el lobby Gates 2500 son señales aparte.",
     ),
     (
         "stake",
@@ -1044,11 +1053,11 @@ VISUAL = {
         "meta": [
             ("Operador", "crypto/offshore"),
             ("Revisión", "rakeback 28 SEP 2026"),
-            ("Level Up", "02 OCT 2026"),
+            ("Lobby", "Gates 2500 · 07 OCT"),
         ],
         "seals": [
             ("Licencia", ["CGA · OGL/2024/1337/0628", "no es registro AR"]),
-            ("Revisión", ["Rakeback 28 SEP 2026", "Level Up 02 OCT 2026"]),
+            ("Revisión", ["Rakeback 28 SEP 2026", "Gates 2500 · 07 OCT"]),
         ],
         "facts": [
             ("Chip", "5%", "HE · Bronze · cash"),
@@ -1056,7 +1065,7 @@ VISUAL = {
             ("Antes de retirar", "1×", "depósito · help coin-mixing"),
             ("KYC", "ID", "antes del 1er retiro"),
         ],
-        "bonus_sub": "El dato de bono que la fila defiende es rakeback de casino. El Level Up es otra señal.",
+        "bonus_sub": "El dato de bono que la fila defiende es rakeback de casino. Level Up y el lobby Gates 2500 son otras señales.",
         "paths": [
             {
                 "lab": "Chip de la fila",
@@ -1084,7 +1093,13 @@ VISUAL = {
             },
         ],
         "hinge_n": "Qué no es",
-        "hinge": "Las bases de un FTD con rollover no están publicadas. No inventamos un Nx.",
+        "hinge": "Las bases de un FTD con rollover no están publicadas. No inventamos un Nx. El lobby Gates 2500 no reemplaza el chip.",
+        "boost_row": {
+            "lab": "Lobby",
+            "val": "Gates 2500 · 500x → $40K a repartir · cierra 11 oct",
+            "source": "shuffle.com/promotions/40-000-gates-of-olympus-2500",
+            "href": "https://shuffle.com/promotions/40-000-gates-of-olympus-2500",
+        },
         "rows": [
             (
                 "Tipos",
@@ -1093,13 +1108,13 @@ VISUAL = {
             ),
             (
                 "Vistos",
-                "Sin juego nombrado en las señales",
-                "No hay ranking de «más jugados»",
+                "Gates of Olympus 2500 (desafío 500x)",
+                "Señal 07 OCT · no ranking de «más jugados»",
             ),
             (
                 "Jackpot",
                 "Historial de jackpots progresivos: hueco · 03 OCT 2026",
-                "Level Up no es un pozo",
+                "$40K es un reparto, no un jackpot por caer",
             ),
         ],
         "side": [
