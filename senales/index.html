@@ -52,7 +52,7 @@
         "name": "Archivo de señales — Planeta Ruleta",
         "description": "Todas las señales publicadas, de la más nueva a la más vieja. Declarado sale del texto del operador. +18. No somos un casino.",
         "inLanguage": "es",
-        "dateModified": "2026-10-07",
+        "dateModified": "2026-10-05",
         "isPartOf": {
           "@type": "WebSite",
           "@id": "https://www.planetaruleta.com/#website",
@@ -352,6 +352,42 @@
       overflow-wrap: anywhere;
     }
     .fuentes a { color: var(--copper-2); }
+    .exp {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .4rem .65rem;
+      margin: 0 0 .6rem;
+    }
+    .exp-badge {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      line-height: 1.2;
+      color: var(--cream);
+      border: 1px solid var(--dim);
+      border-radius: 999px;
+      padding: .2rem .5rem;
+    }
+    .exp-when {
+      font-family: var(--mono);
+      font-size: .72rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--dim);
+    }
+    .timeline li.is-expired h2,
+    .timeline li.is-expired .resumen,
+    .timeline li.is-expired .fuentes,
+    .timeline li.is-expired time,
+    .timeline li.is-expired .kicker,
+    .timeline li.is-expired .kicker a,
+    .timeline li.is-expired .fuentes a {
+      color: var(--dim);
+    }
 
     .site-footer {
       border-top: 1px solid var(--line);
@@ -425,9 +461,10 @@
       <p class="deck">Todas las señales publicadas, de la más nueva a la más vieja. Declarado sale del texto del operador. No es un ranking.</p>
       <ol class="timeline">
         <!-- senales:archive -->
-          <li id="lobby-shuffle-gates-olympus-500x-40k-2026-10-07">
+          <li id="lobby-shuffle-gates-olympus-500x-40k-2026-10-07" class="is-expired">
             <time datetime="2026-10-07">07 OCT</time>
             <div>
+              <p class="exp"><span class="exp-badge">EXPIRADA</span><span class="exp-when">Vencida 12 OCT</span></p>
               <p class="kicker"><a href="/mesa/shuffle/">Shuffle</a> · offshore · Lobby · Declarado</p>
               <h2>Shuffle Gates of Olympus 2500: $40.000 a repartir — 500x+, monto por cabeza no publicado</h2>
               <p class="resumen">Página OFICIAL del promo (verificado 2026-10-07, Peter QC PASS): Shuffle · Gates of Olympus 2500 — $40.000 a repartir en partes iguales entre todos los que peguen 500x+ (apuesta mín. $0,40). Ganadores ilimitados: el monto por cabeza no se publica. Cierra dom 11 oct 18:00 CA. Ventana UTC stated: 2026-09-28T00:00:00Z → 2026-10-12T00:00:00Z (America/Guatemala: dom 27 SEP 18:00 → dom 11 OCT 18:00). No es el torneo de Rainbet del 30 SEP ni un jackpot por caer.</p>
