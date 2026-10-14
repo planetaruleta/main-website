@@ -181,12 +181,26 @@ def mark_expiry(items: list[dict], now: datetime) -> None:
 
 
 def kicker_html(kicker: str) -> str:
-    """Link the operator name when a mesa ficha exists. The rest of the kicker stays text."""
+    """Link the operator name when a mesa ficha exists. The rest of the kicker stays text.
+
+    A kicker that names more than one ficha operator is left as text. There is
+    no single-operator ficha link for a multi-operator señal.
+    """
     name, sep, rest = kicker.partition(" · ")
     slug = FICHA_SLUGS.get(name)
     if not slug or not sep:
         return esc(kicker)
+    if any(other != name and other in rest for other in FICHA_SLUGS):
+        return esc(kicker)
     return f'<a href="/mesa/{esc_attr(slug)}/">{esc(name)}</a> · {esc(rest)}'
+
+
+def resumen_html(resumen: str, indent: str) -> str:
+    """One paragraph per source line. A single-line resumen stays one paragraph."""
+    parts = [part for part in resumen.split("\n") if part.strip()]
+    if not parts:
+        raise SystemExit("resumen is empty")
+    return "\n".join(f'{indent}<p class="resumen">{esc(part)}</p>' for part in parts)
 
 
 def expiry_html(item: dict) -> str:
@@ -211,7 +225,7 @@ def render_li(item: dict, heading: str) -> str:
         [
             f'              <p class="kicker">{kicker_html(item["kicker"])}</p>',
             f'              <{heading}>{esc(item["titulo"])}</{heading}>',
-            f'              <p class="resumen">{esc(item["resumen"])}</p>',
+            resumen_html(item["resumen"], "              "),
             f'              <p class="fuentes">{item["fuentes_html"]}</p>',
             "            </div>",
             "          </li>",
@@ -237,7 +251,7 @@ def render_home(items: list[dict]) -> str:
                 f'{esc(fecha_corta(lead["fecha"]))}</time> · {kicker_html(lead["kicker"])}</p>'
             ),
             f'            <h3>{esc(lead["titulo"])}</h3>',
-            f'            <p class="resumen">{esc(lead["resumen"])}</p>',
+            resumen_html(lead["resumen"], "            "),
             f'            <p class="fuentes">{lead["fuentes_html"]}</p>',
             "          </div>",
             "        </article>",
@@ -394,6 +408,22 @@ def assert_hero_matches_newest(home_html: str, newest: dict) -> None:
         )
 
 
+def self_test_kicker() -> None:
+    single = kicker_html("Rainbet · offshore · Bono · Declarado")
+    if 'href="/mesa/rainbet/"' not in single:
+        raise SystemExit("kicker self-test failed: single operator should link")
+    multi = kicker_html("Stake · Shuffle · offshore · Bono · Declarado")
+    if "<a " in multi or "/mesa/" in multi:
+        raise SystemExit("kicker self-test failed: multi-operator kicker linked one ficha")
+    if multi != "Stake · Shuffle · offshore · Bono · Declarado":
+        raise SystemExit(f"kicker self-test failed: {multi!r}")
+    paragraphs = resumen_html("Uno.\nDos.", "  ")
+    if paragraphs != "  <p class=\"resumen\">Uno.</p>\n  <p class=\"resumen\">Dos.</p>":
+        raise SystemExit(f"resumen self-test failed: {paragraphs!r}")
+    if resumen_html("Solo.", "  ") != "  <p class=\"resumen\">Solo.</p>":
+        raise SystemExit("resumen self-test failed: single line changed")
+
+
 def self_test_sort() -> None:
     sample = [
         {"id": "older-same-day", "fecha": "2026-09-25"},
@@ -454,6 +484,7 @@ def self_test_expiry() -> None:
 
 def build() -> tuple[str, str, list[dict], list[dict]]:
     self_test_sort()
+    self_test_kicker()
     self_test_expiry()
     feed = load_feed()
     assert_matches_intel(feed)
