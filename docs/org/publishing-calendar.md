@@ -14,8 +14,13 @@ Rows are newest-first. Spanish asset names and terms (señal, ficha, mesa, canal
 
 | Date/time (IL) | Channel | Asset | Link / ref | Status | Expiry / next action | Owner |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-14 about 20:00 IL | Telegram canal (@planetaruleta); website señal | 14 Oct juice — código más grande | — | SCHEDULED | TG post by Peter about 20:00 IL. Site señal PR pending. | Peter (TG) |
+| 2026-10-14 10:51 IL (marked ready) | Website — /mesa/rainbet/ | Rainbet ficha caveat | PR #35 | SCHEDULED | Ed&Comp PASS. Opened as a draft awaiting merge; marked ready for review 14 Oct 2026 10:51 IL. Still awaiting merge. Not live. | Peter (merge) |
+| 2026-10-14 10:49 IL (opened) | Website — /senales/ JSON-LD ItemList | Drop expired items from the ItemList | PR #36 | SCHEDULED | Ready, awaiting merge. Not live. Expired rows stay in the visible archive with EXPIRADA. | Peter (merge) |
+| 2026-10-14 08:06 IL | Podcast — iVoox, show Ganarle a la Casa (show ID 3237946); Spotify pending | EP-04 | https://go.ivoox.com/rf/182164475 · RSS https://feeds.ivoox.com/feed_fg_f13237946_filtro_1.xml | LIVE | LIVE on iVoox. Uploaded from the box by Peter. Spotify distribution requested via iVoox, PENDING. | Peter |
+| 2026-10-14 07:14 IL (removed, live). Published 2026-10-08 03:26 IL (PR #32 merged) | Website — homepage señales + /mesa/shuffle/ lobby chip; archive on /senales/ | Señal `lobby-shuffle-gates-olympus-500x-40k-2026-10-07` (Shuffle Gates of Olympus 2500, $40K split, 500x+) | PR #34 (removal); PR #32, merge commit 277e42a9 | REMOVED | Removed from the homepage and /mesa/shuffle/. Archived on /senales/ with EXPIRADA. PR #34 merged 14 Oct 2026 07:13 IL, live 07:14 IL. | Peter (merge) / Publishing & Analytics Ops (prep) |
+| 2026-10-10 13:25 IL | Telegram canal (@planetaruleta) | Post: duplicate of #26 | https://t.me/planetaruleta/27 | LIVE | Duplicate of #26. Origin unknown. Left as is per Peter. | — |
 | 2026-10-08 07:37 IL | Telegram canal (@planetaruleta) | Post: Shuffle Gates of Olympus 500x / $40K | https://t.me/planetaruleta/26 | LIVE | — | Publishing & Analytics Ops |
-| 2026-10-08 03:26 IL (PR #32 merged) | Website — home page señales + /mesa/shuffle/ lobby chip | Señal `lobby-shuffle-gates-olympus-500x-40k-2026-10-07` (Shuffle Gates of Olympus 2500, $40K split, 500x+) | PR #32, merge commit 277e42a9 | LIVE | Expires Mon 2026-10-12 03:00 IL (= 2026-10-12T00:00Z). No auto-expiry in the renderers; removal PR prepared, Peter merges at/after expiry | Peter (merge) / Publishing & Analytics Ops (prep) |
 | 2026-10-04 07:39 IL | Telegram canal (@planetaruleta) | Post: Lobby radar — Rainbet Daily Race (Saturday, 24h leaderboard) | https://t.me/planetaruleta/24 | LIVE | — | Publishing & Analytics Ops |
 | — (between 2026-09-25 21:28 IL and 2026-09-28 10:52 IL) | Telegram canal | Message id 16 (content unknown) | https://t.me/planetaruleta/16 | REMOVED | Returns "Post not found" publicly. Telegram ids are sequential, so something got id 16 between #15 (Stake welcome math flash, 25 Sep) and #17 (Sunday digest, 28 Sep) and was then deleted, or it was a non-public service message. It is NOT the Daily Race post, which is live as #24. | — |
 | — (date unknown) | Podcast — iVoox, Spotify | EP-01 | — | LIVE | — | Publishing & Analytics Ops |
@@ -25,7 +30,15 @@ Rows are newest-first. Spanish asset names and terms (señal, ficha, mesa, canal
 
 ### Telegram id gaps
 
-Checked 8 Oct 2026 against the public channel preview at t.me/s/planetaruleta. The public ids are 1, 5–8, 12–15, 17, 20–26. The ids 2–4, 9–11, 16 and 18–19 don't render publicly (deleted posts or service messages).
+Checked 8 Oct 2026 against the public channel preview at t.me/s/planetaruleta. The public ids are 1, 5–8, 12–15, 17, 20–26. The ids 2–4, 9–11, 16 and 18–19 don't render publicly (deleted posts or service messages). Later log: #27 (10 Oct 2026 13:25 IL) is a duplicate of #26, origin unknown, left as is per Peter.
+
+### Podcast distribution
+
+iVoox upload is done from the box browser using the iVoox login in the 'Shared with Grok Bot' 1Password vault. Spotify comes via iVoox distribution.
+
+### TG posting
+
+From 14 Oct 2026, Peter posts Aviv-approved TG items himself. Ops logs them.
 
 ## How to update
 
