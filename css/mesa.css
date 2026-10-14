@@ -370,6 +370,16 @@ a:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
   line-height: .95;
   letter-spacing: -.03em;
 }
+.path .big .big-note {
+  display: block;
+  margin-top: .55rem;
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: .9rem;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: var(--mute);
+}
 .path .title { margin: .35rem 0 0; font-family: var(--serif); font-size: 1.15rem; }
 .path ul { margin: .85rem 0 0; padding: 0; list-style: none; }
 .path li {
