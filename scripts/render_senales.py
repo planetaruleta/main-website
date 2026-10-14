@@ -7,8 +7,10 @@ Homepage: the first 3 non-expired rows (HOME_LIMIT). Archive (/senales/): the fu
 
 A row is expired when `expired` is true, or when `ends_at` (UTC) is at or before
 the render clock. Expired rows stay in the archive with an EXPIRADA badge and
-do not count toward the homepage. `ends_at` on the feed must match the intel
-object. Set `expired: true` to publish the closed state before that timestamp.
+do not count toward the homepage. They are omitted from the /senales/ JSON-LD
+ItemList; the remaining positions are numbered from 1. `ends_at` on the feed
+must match the intel object. Set `expired: true` to publish the closed state
+before that timestamp.
 
 The intel pack (content/intel/homepage-offshore-wave1-2026-09-25.json) is the
 claim record. Every ready id in senales_lead, senales_timeline, and senales_hold
@@ -257,11 +259,22 @@ def render_archive(items: list[dict]) -> str:
     return "\n".join(render_li(item, "h2") for item in items)
 
 
+def itemlist_rows(items: list[dict]) -> list[dict]:
+    """Live rows for the JSON-LD ItemList.
+
+    The visible archive keeps expired rows (EXPIRADA badge). The ItemList does
+    not: a closed señal must not occupy a position. Order is the archive order
+    with those rows removed, and positions are assigned from 1.
+    """
+    return [item for item in items if not item.get("_expired")]
+
+
 def render_jsonld(items: list[dict]) -> str:
     description = (
         "Todas las señales publicadas, de la más nueva a la más vieja. "
         "Declarado sale del texto del operador. +18. No somos un casino."
     )
+    listed = itemlist_rows(items)
     graph = {
         "@context": "https://schema.org",
         "@graph": [
@@ -301,7 +314,7 @@ def render_jsonld(items: list[dict]) -> str:
                 "breadcrumb": {"@id": "https://www.planetaruleta.com/senales/#breadcrumb"},
                 "mainEntity": {
                     "@type": "ItemList",
-                    "numberOfItems": len(items),
+                    "numberOfItems": len(listed),
                     "itemListOrder": "https://schema.org/ItemListOrderDescending",
                     "itemListElement": [
                         {
@@ -310,7 +323,7 @@ def render_jsonld(items: list[dict]) -> str:
                             "name": item["titulo"],
                             "url": f"https://www.planetaruleta.com/senales/#{item['id']}",
                         }
-                        for index, item in enumerate(items, start=1)
+                        for index, item in enumerate(listed, start=1)
                     ],
                 },
             },
@@ -418,6 +431,25 @@ def self_test_expiry() -> None:
     active = [item["id"] for item in ordered if not item["_expired"]]
     if active != ["live"]:
         raise SystemExit(f"expiry self-test failed: homepage pool {active}")
+    for item, title in ((live, "Live"), (closed, "Closed"), (past, "Past")):
+        item["titulo"] = title
+    payload = json.loads(render_jsonld(ordered))
+    page = next(node for node in payload["@graph"] if node["@type"] == "CollectionPage")
+    item_list = page["mainEntity"]
+    elements = item_list["itemListElement"]
+    ids = [element["url"].rsplit("#", 1)[-1] for element in elements]
+    positions = [element["position"] for element in elements]
+    if item_list["numberOfItems"] != 1 or ids != ["live"] or positions != [1]:
+        raise SystemExit(
+            "expiry self-test failed: ItemList kept an expired row "
+            f"({item_list['numberOfItems']} {list(zip(positions, ids))})"
+        )
+    if page["dateModified"] != "2026-10-05":
+        raise SystemExit("expiry self-test failed: dateModified moved for an expired row")
+    crumbs = next(node for node in payload["@graph"] if node["@type"] == "BreadcrumbList")
+    crumb_positions = [element["position"] for element in crumbs["itemListElement"]]
+    if crumb_positions != [1, 2]:
+        raise SystemExit(f"expiry self-test failed: breadcrumb positions {crumb_positions}")
 
 
 def build() -> tuple[str, str, list[dict], list[dict]]:
@@ -465,9 +497,11 @@ def main() -> int:
         HOME_PATH.write_text(home_html)
         ARCHIVE_PATH.write_text(archive_html)
     expired = [item["id"] for item in ordered if item.get("_expired")]
+    listed = itemlist_rows(ordered)
     print(f"homepage ({HOME_LIMIT}): " + ", ".join(item["id"] for item in home_items))
     print(f"archive ({len(ordered)}): " + ", ".join(item["id"] for item in ordered))
     print("expired (archive only): " + (", ".join(expired) if expired else "—"))
+    print(f"itemlist ({len(listed)}): " + ", ".join(item["id"] for item in listed))
     return 0
 
 
