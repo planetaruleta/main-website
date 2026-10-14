@@ -29,7 +29,7 @@ ROWS = [
     (
         "Tipo de bono real",
         [
-            "Welcome: x40 sobre depósito+bono, o camino sin ese rollover. Race, torneo y RakeBoosts son señales, no este chip.",
+            "Welcome: x40 sobre depósito+bono, o camino sin ese rollover. Race, torneo y RakeBoosts son señales, no este chip. (ver aviso: la ayuda muestra un solo camino)",
             "Rakeback 5% del house edge (Bronze), cash, casino. Level Up y el lobby Gates 2500 son señales aparte. FTD: bases no publicadas.",
             "Rakeback 3.5% del house edge (welcome), vía código. No es un match con WR fijo.",
             "≤$2.5k/30d · 10% RB. Tal cual la celda (30 SEP 2026). Sin WR en la celda.",
@@ -531,7 +531,7 @@ FICHAS = {
             "En la homepage también está escrito un mínimo de retiro de 15 USD y apostar 1x el depósito antes de retirar. No es un plazo. El marketing de 5 a 15 minutos no entra como SLA: el retiro de la mesa sigue en sin dato.",
         ],
         "bono": [
-            "El chip de la fila es el welcome, no el race ni los RakeBoosts. Camino A: 40x sobre depósito+bono (100% / 50% / 100% + 20 tiradas, mínimo 30 USD, máximo 700 USD por tramo, apuesta máxima 2% del depósito, slots con RTP mayor a 97,4% fuera). Camino B: sin ese rollover; se desbloquea al jugar. Hay que optar en promotions antes de depositar. Fuente: homepage, 25 SEP 2026.",
+            "El chip de la fila es el welcome, no el race ni los RakeBoosts. Camino A: 40x sobre depósito+bono (100% / 50% / 100% + 20 tiradas, mínimo 30 USD, máximo 700 USD por tramo, apuesta máxima 2% del depósito según T&C (la ayuda dice 1%), slots con RTP mayor a 97,4% fuera). Camino B: sin ese rollover; se desbloquea al jugar. Hay que optar en promotions antes de depositar. Fuente: homepage, 25 SEP 2026.",
             "El Daily Race del 03 OCT (ventana distinta del 26 SEP) y el torneo Gates of Olympus 2500 del 30 SEP son señales de lobby, con ventana publicada. No reemplazan el chip.",
             "RakeBoosts (help Rewards overview, HTTP 200 el 05 OCT 2026; el artículo figura lastUpdated 2026-05-27): Daily Reload +15% por 60 min; Daily Bonus, Weekly Bonus y Monthly Bonus +10% por 60 min cada uno; Affiliate Code Redemption +20% por 72 h; New Signup Bonus +15% por 24 h. No se suman ni se encolan: solo aplica el porcentaje más alto. El rakeback se reclama cada 15 min sobre el total apostado. El Daily Reload se puede reclamar 3 veces por día (cada 8 h) y vence si no se reclama dentro de 24 h. Un reward sin reclamar vence cuando se desbloquea el siguiente. Es un boost al rakeback, no un porcentaje del depósito. Ese artículo no publica la tasa base de rakeback ni cómo se calcula el boost: no hay conversión a dólares. No reemplaza el chip de welcome.",
             ],
@@ -581,7 +581,7 @@ FICHAS = {
             ),
             (
                 "¿El bono de la ficha es el Daily Race, el torneo o los RakeBoosts?",
-                "No. El chip de la mesa sigue siendo el welcome: x40 sobre depósito+bono, o el camino sin ese rollover. El Daily Race (03 OCT 2026, y la ventana anterior del 26 SEP 2026) y el torneo Gates of Olympus 2500 (30 SEP 2026) son señales de lobby. Los RakeBoosts del 05 OCT 2026 son un boost al rakeback, no un porcentaje del depósito: no se suman y la tasa base no está publicada en ese help. No reemplazan el chip.",
+                "No. El chip de la mesa sigue siendo el welcome: x40 sobre depósito+bono, o el camino sin ese rollover. El Daily Race (03 OCT 2026, y la ventana anterior del 26 SEP 2026) y el torneo Gates of Olympus 2500 (30 SEP 2026) son señales de lobby. Los RakeBoosts del 05 OCT 2026 son un boost al rakeback, no un porcentaje del depósito: no se suman y la tasa base no está publicada en ese help. No reemplazan el chip. (ver aviso: la ayuda muestra un solo camino)",
             ),
             (
                 "¿El depósito es por CBU, como en un casino local?",
@@ -992,13 +992,14 @@ VISUAL = {
                 "items": [
                     "100% / 50% / 100% + 20 tiradas",
                     "Mínimo 30 USD · máximo 700 USD por tramo",
-                    "Apuesta máxima 2% del depósito",
+                    "Apuesta máxima 2% del depósito según T&C · la ayuda dice 1%",
                     "Slots con RTP mayor a 97,4% fuera",
                 ],
             },
             {
                 "lab": "Camino B",
                 "big": "0×",
+                "big_note": " · la ayuda de Rainbet no lo menciona",
                 "title": "Sin ese rollover",
                 "items": [
                     "Se desbloquea al jugar",
@@ -1007,6 +1008,10 @@ VISUAL = {
                 ],
             },
         ],
+        "paths_caveat": {
+            "strong": "Rainbet publica dos versiones (rechequeo 14 OCT 2026).",
+            "body": "Camino B: la homepage y su página «Promotions Terms and Conditions» muestran dos caminos de welcome (x40 y «No Wager Lock»); el artículo de ayuda «First Deposit Promotion» dice que hay uno solo, el x40. Apuesta máxima con el bono activo: «Promotions Terms and Conditions» y la homepage dicen 2% del depósito; el artículo de ayuda «Deposit Bonus Terms and Conditions» dice 1%. No sabemos cuál aplica a tu cuenta. Antes de depositar, revisá los T&C vigentes y lo que te muestre tu pestaña de promociones. Fuente: oficial (páginas de Rainbet).",
+        },
         "hinge_n": "Qué desbloquea",
         "hinge": "Hay que optar en promotions antes de depositar. El Daily Race, el torneo Gates y los RakeBoosts no reemplazan el chip.",
         "boost_row": {
@@ -1435,10 +1440,23 @@ def paths_html(paths: list[dict]) -> str:
     blocks = []
     for path in paths:
         items = "".join(f"<li>{e(item)}</li>" for item in path["items"])
+        big = e(path["big"])
+        note = path.get("big_note")
+        if note:
+            big += f'<span class="big-note">{e(note)}</span>'
         blocks.append(
-            f'<div class="path"><p class="lab">{e(path["lab"])}</p><p class="big">{e(path["big"])}</p><p class="title">{e(path["title"])}</p><ul>{items}</ul></div>'
+            f'<div class="path"><p class="lab">{e(path["lab"])}</p><p class="big">{big}</p><p class="title">{e(path["title"])}</p><ul>{items}</ul></div>'
         )
     return f'<div class="paths">{"".join(blocks)}</div>'
+
+
+def paths_caveat_html(caveat: dict | None) -> str:
+    if not caveat:
+        return ""
+    return (
+        '\n          <p class="caveat"><strong>'
+        f'{e(caveat["strong"])}</strong> {e(caveat["body"])}</p>'
+    )
 
 
 def juice_html(rows: list[tuple[str, str, str]], side: list[tuple[str, str, str]]) -> str:
@@ -1579,7 +1597,7 @@ def render_ficha(slug: str) -> str:
         <section class="bonus" aria-labelledby="bono">
           <h2 id="bono">Bono real vs marketing</h2>
           <p class="sub">{e(visual["bonus_sub"])}</p>
-          {paths_html(visual["paths"])}
+          {paths_html(visual["paths"])}{paths_caveat_html(visual.get("paths_caveat"))}
           {boost_row_html(visual.get("boost_row"))}
           <div class="hinge"><div class="n">{e(visual["hinge_n"])}</div><p>{e(visual["hinge"])}</p></div>
           {prose_html(data["bono"])}
