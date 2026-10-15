@@ -1,0 +1,63 @@
+At Rainbet, we support two different methods for fiat withdrawals. When you open your wallet, you can navigate to the 'Banking' section to view these options. The available methods are:
+
+Interac
+
+Astropay
+
+ 
+
+Interac
+
+Interac is a Canadian bank transfer method and is only available to users with a Canadian bank account. To proceed with your request, you will need to enter the email address linked to your bank account along with your phone number. 
+
+ 
+
+Please make sure to enable the autodeposit on your account, this way you will receive the transaction automatically in your account. If you don't have this option available, you will receive two messages from our bank partner to claim the funds.
+
+Minimum amount
+
+	
+
+C$50.
+
+
+
+
+Fee
+
+	
+
+Flat fee of C$2.85 fee per transaction
+
+AstroPay
+
+AstroPay is a globally recognized online wallet, highly favored for its secure transactions and competitive, low fees. 
+
+ 
+
+Before submitting your withdrawal request, please verify that you have an active AstroPay account and are located in an eligible region where their services are supported.
+
+ 
+
+Available Countries
+
+Argentina, Cameroon, Chile, Colombia, Ivory Coast, Ecuador, Ghana, Kenya, Mexico, Nigeria, Tanzania, and Uruguay.
+
+Minimum amount
+
+	
+
+$50
+
+
+
+
+Fee
+
+	
+
+0.5% of the transaction
+
+If you encounter any issues with your transaction, you can check our 'Issues With Your Transaction?' guide to find common causes and solutions. Alternatively, feel free to contact our 24/7 support team via live chat or at support@rainbet.com.
+
+ 
