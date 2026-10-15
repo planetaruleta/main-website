@@ -1,0 +1,12 @@
+utc_start	utc_end	source	url	http	tool	notes
+2026-10-15T05:21:11Z	2026-10-15T05:21:11Z	stake-8222435	https://help.stake.com/en/articles/8222435-local-currency-can-i-use-my-credit-card-for-deposit	200	curl	Article text in HTML. Dated August 24, 2026.
+2026-10-15T05:22:14Z	2026-10-15T05:22:21Z	stake-8222435	https://help.stake.com/en/articles/8222435-local-currency-can-i-use-my-credit-card-for-deposit	200	playwright-chrome	Saved HTML, text, full-page PNG.
+2026-10-15T05:21:12Z	2026-10-15T05:21:12Z	stake-13903305	https://help.stake.com/en/articles/13903305-can-i-use-my-credit-card-for-withdrawal	200	curl	Article text in HTML. Dated August 22, 2026.
+2026-10-15T05:22:21Z	2026-10-15T05:22:28Z	stake-13903305	https://help.stake.com/en/articles/13903305-can-i-use-my-credit-card-for-withdrawal	200	playwright-chrome	Saved HTML, text, full-page PNG.
+2026-10-15T05:21:12Z	2026-10-15T05:21:12Z	rainbet-15254950	https://help.rainbet.com/en/articles/15254950-how-to-make-a-fiat-withdraw	403	curl	Cloudflare challenge. No article text.
+2026-10-15T05:22:28Z	2026-10-15T05:22:35Z	rainbet-15254950	https://help.rainbet.com/en/articles/15254950-how-to-make-a-fiat-withdraw	200	playwright-chrome	Article rendered. Country list inside closed details in the DOM.
+2026-10-15T05:26:22Z	2026-10-15T05:26:25Z	rainbet-15254950	https://help.rainbet.com/en/articles/15254950-how-to-make-a-fiat-withdraw	200	playwright-chrome	details opened. Article text includes the country sentence. Full-page PNG.
+2026-10-15T05:29:30Z	2026-10-15T05:29:30Z	rainbet-15254950-countries	https://help.rainbet.com/en/articles/15254950-how-to-make-a-fiat-withdraw	200	playwright-chrome	Element PNG mtime. Country sentence only.
+2026-10-15T05:22:42Z	2026-10-15T05:23:09Z	roobet-terms	https://roobet.com/terms-and-conditions	200	playwright-chrome	JS-rendered T&C. HTML, text, full-page PNG.
+2026-10-15T05:26:34Z	2026-10-15T05:26:42Z	roobet-clauses	https://roobet.com/terms-and-conditions	200	playwright-chrome	Clips of §3.5, §9.3, §9.7, §10.8.
+2026-10-15T05:34:30Z	2026-10-15T05:34:36Z	roobet-6610575	https://help.roobet.com/en/articles/6610575-regional-restrictions-by-game-provider	200	playwright-chrome	Article dated September 1, 2026. HTML, text, full-page PNG.
