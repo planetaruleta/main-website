@@ -6,7 +6,7 @@ Update on every publish/expiry/hold change.
 
 All times are Israel time (IL, Asia/Jerusalem). In October 2026 that is UTC+3.
 
-Statuses used: LIVE, SCHEDULED, HOLD, IN REVIEW, APPROVED/POSTED, EXPIRED, REMOVED.
+Statuses used: LIVE, SCHEDULED, HOLD, POSTED, APPROVED/POSTED, EXPIRED, REMOVED.
 
 ## Ledger
 
@@ -14,10 +14,10 @@ Rows are newest-first. Spanish asset names and terms (señal, ficha, mesa, canal
 
 | Date/time (IL) | Channel | Asset | Link / ref | Status | Expiry / next action | Owner |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-10-15 02:30 IL | TikTok @monologos_de_la_ruleta | Ch2 V3 'Casino clon' | Studio ID 7696557428141296903 | SCHEDULED | Scheduled for 02:30 IL. Replaced the deleted 7696503910244093202. Live not yet verified. | Peter |
-| 2026-10-14 about 21:42 IL | TikTok @monologos_de_la_ruleta | Ch2 V1 Theme 1 Rainbet | https://www.tiktok.com/@monologos_de_la_ruleta/video/7696595140189752582 | IN REVIEW (Only me) | Posted by Peter. In TikTok content review (Only me) at posting time. | Peter |
+| 2026-10-15 02:30 IL (verified public 2026-10-15 07:05 IL) | TikTok @monologos_de_la_ruleta | Ch2 V3 'Casino clon' | Studio ID 7696557428141296903 | POSTED | Went live 15 Oct 2026 02:30 IL. Verified public (Everyone) at the TikTok Studio check, 15 Oct 2026 07:05 IL. Replaced the deleted 7696503910244093202. 0 views as of 15 Oct 2026 07:05 IL. | Peter |
+| 2026-10-14 about 21:42 IL (verified public 2026-10-15 07:05 IL) | TikTok @monologos_de_la_ruleta | Ch2 V1 Theme 1 Rainbet | https://www.tiktok.com/@monologos_de_la_ruleta/video/7696595140189752582 | POSTED | Posted by Peter. Was in TikTok content review (Only me) at posting time. Verified public (Everyone) at the TikTok Studio check, 15 Oct 2026 07:05 IL; no review or restriction label. 0 views as of 15 Oct 2026 07:05 IL. | Peter |
 | 2026-10-14 about 20:00 IL | Telegram canal (@planetaruleta); website señal | 14 Oct juice — código más grande | — | SCHEDULED | TG post by Peter about 20:00 IL. Site señal PR pending. | Peter (TG) |
-| 2026-10-14 about 15:42 IL (verified public 15:48 IL) | TikTok @monologos_de_la_ruleta | Ch2 V2 'El rakeback no es un % de tu depósito' | https://www.tiktok.com/@monologos_de_la_ruleta/video/7696503082045558024 | LIVE | Posted by Peter. Verified public (Everyone) at 15:48 IL. Caption gated in docs/drafts/EDCOMP-ch2-captions-2026-10-14.md. | Peter |
+| 2026-10-14 about 15:42 IL (verified public 15:48 IL) | TikTok @monologos_de_la_ruleta | Ch2 V2 'El rakeback no es un % de tu depósito' | https://www.tiktok.com/@monologos_de_la_ruleta/video/7696503082045558024 | LIVE | Posted by Peter. Verified public (Everyone) at 15:48 IL. Caption gated in docs/drafts/EDCOMP-ch2-captions-2026-10-14.md. 0 views as of 15 Oct 2026 07:05 IL. | Peter |
 | 2026-10-14 13:44 IL | Podcast — iVoox, show Ganarle a la Casa (show ID 3237946); Spotify not confirmed | EP-05 'Verificado o retenido: el KYC que la home no te cuenta' (4:20) | https://www.ivoox.com/en/verificado-o-retenido-kyc-home-audios-mp3_rf_182187618_1.html · RSS https://feeds.ivoox.com/feed_fg_f13237946_filtro_1.xml | LIVE | LIVE on iVoox; present in the RSS feed. Spotify show https://open.spotify.com/show/2sEXlDesSrC9OpmBCGpxA1. EP-05 is not yet confirmed listed there. | Peter |
 | 2026-10-14 10:51 IL (marked ready) | Website — /mesa/rainbet/ | Rainbet ficha caveat | PR #35 | SCHEDULED | Ed&Comp PASS. Opened as a draft awaiting merge; marked ready for review 14 Oct 2026 10:51 IL. Still awaiting merge. Not live. | Peter (merge) |
 | 2026-10-14 10:49 IL (opened) | Website — /senales/ JSON-LD ItemList | Drop expired items from the ItemList | PR #36 | SCHEDULED | Ready, awaiting merge. Not live. Expired rows stay in the visible archive with EXPIRADA. | Peter (merge) |
@@ -30,7 +30,7 @@ Rows are newest-first. Spanish asset names and terms (señal, ficha, mesa, canal
 | — (date unknown) | Podcast — iVoox, Spotify | EP-01 | — | LIVE | — | Publishing & Analytics Ops |
 | — (date unknown) | Podcast — iVoox, Spotify | EP-02 | — | LIVE | — | Publishing & Analytics Ops |
 | — | Podcast | EP-03 | — | HOLD | Not approved yet; needs Aviv/Peter approval before publishing | Peter / Aviv |
-| — | Video / creative | Theme 1 master | bdc52ea9 | APPROVED/POSTED | Approved and posted as Ch2 V1 Theme 1 Rainbet on TikTok @monologos_de_la_ruleta (2026-10-14 about 21:42 IL). In TikTok content review (Only me) at posting time. | Peter / Aviv |
+| — | Video / creative | Theme 1 master | bdc52ea9 | APPROVED/POSTED | Approved and posted as Ch2 V1 Theme 1 Rainbet on TikTok @monologos_de_la_ruleta (2026-10-14 about 21:42 IL). Verified public (Everyone) at the TikTok Studio check, 15 Oct 2026 07:05 IL; no review or restriction label. | Peter / Aviv |
 
 ### Telegram id gaps
 
