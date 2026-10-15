@@ -40,7 +40,7 @@ ROWS = [
         "Criptos / redes",
         [
             "FAQ 25 SEP 2026: BTC, ETH, LTC, XRP, SOL, TRX, BNB, USDT, USDC. Redes: no verificado · 03 OCT 2026.",
-            "Clase: crypto · fiat/cards. Lista y redes: no verificado · 03 OCT 2026. USDT solo en el ejemplo de rakeback.",
+            "Clase: crypto · fiat/cards · ARS (Mercado Pago, NaranjaX, transferencia; ayuda 14 OCT 2026). Lista y redes: no verificado · 03 OCT 2026. USDT solo en el ejemplo de rakeback.",
             "Clase: crypto · fiat. Lista y redes: no verificado · 03 OCT 2026. BTC solo en el ejemplo de rakeback.",
             "Clase: crypto · buy card (Swapped). Lista y redes: no verificado · 03 OCT 2026.",
             "Clase: crypto · fiat+Swapped. Lista y redes: no verificado · 03 OCT 2026.",
@@ -69,7 +69,7 @@ ROWS = [
     (
         "Licencia",
         [
-            "Anjouan, declarada en Terms, AML y footer (25 SEP 2026). Validador no chequeado.",
+            "Anjouan, declarada en Terms, AML y footer (25 SEP 2026). Validador del sello: «VALID», Rain Group Ltd, ALSI-152406029-FI2 (15 OCT 2026), con aviso de sello vencido. Registro público: sin confirmar.",
             "Curaçao Gaming Authority, OGL/2024/1337/0628, Natural Nine B.V. (160998). /info/license dice “Gaming Control Board”; Terms y el certificado CGA dicen “Gaming Authority”. Certificado Active.",
             "Curaçao-class por certificado CGA: OGL/2024/1451/0918, Active, otorgado 09/06/2025. Footer del operador no capturado (HTTP 403).",
             "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. No es licencia de Argentina.",
@@ -511,7 +511,7 @@ FICHAS = {
         ],
         "sheet": [
             ("Empresa", "Rain Group Ltd (co. 16077, Hamchako), en Terms, AML y footer. El JSON-LD de la homepage también nombra RBGAMING N.V. Las dos cadenas están publicadas y no coinciden: no elegimos una sola razón social."),
-            ("Licencia", "Anjouan, declarada en Terms, AML y footer (25 SEP 2026). El validador de Anjouan no se chequeó. No es una licencia del registro argentino."),
+            ("Licencia", "Anjouan, declarada en Terms, AML y footer (25 SEP 2026). El validador del sello de Anjouan muestra «VALID» para Rain Group Ltd, licencia ALSI-152406029-FI2 (consulta del 15 OCT 2026), aunque la misma página avisa que el sello está vencido desde junio de 2025. No lo pudimos confirmar en el registro público de Anjouan. No es una licencia del registro argentino."),
             ("Monedas", "FAQ de rainbet.com, 25 SEP 2026: BTC, ETH, LTC, XRP, SOL, TRX, BNB, USDT y USDC. Redes: no verificado · 03 OCT 2026."),
             ("Idiomas", "JSON-LD knowsLanguage: en, ar, es, fr, ja, pt, ru, tr, zh (homepage, 03 OCT 2026)."),
             ("Última revisión", "Fila de la mesa: 25 SEP 2026. RakeBoosts: 05 OCT 2026. Señales de lobby: Daily Race 03 OCT 2026, Daily Race 26 SEP 2026 y torneo Gates of Olympus 30 SEP 2026. Huecos marcados al armar la ficha: 03 OCT 2026."),
@@ -628,8 +628,9 @@ FICHAS = {
         "plata_title": "Cómo entra y sale la plata",
         "plata": [
             "La homepage declara depósitos fiat con tarjeta, Apple Pay y Google Pay, vía socios de pago, más la clase crypto. Los Terms hablan de retiros fiat. La celda de la mesa no lista monedas.",
+            "Pesos (ARS): según el artículo de ayuda de Shuffle sobre Mercado Pago, NaranjaX y transferencia (actualizado el 14 OCT 2026, revisado el 15 OCT 2026), depositás en ARS por transferencia inmediata, Mercado Pago o NaranjaX al CBU/CVU o alias que te muestran en cada depósito, y retirás solo por transferencia a un CBU o CVU de 22 dígitos (sin alias) a tu nombre, con el mismo CUIT/CUIL de tu cuenta. Mínimo 7.500 ARS y máximo 7.500.000 ARS por operación, en los dos sentidos. Según ese artículo, Shuffle no cobra comisión por depositar ni retirar en ARS. Antes de cobrar te piden un documento con foto. «Casi instantáneo» es lo que dice la ayuda, no un plazo. Que acepte pesos no cambia la licencia: sigue siendo Curaçao, no una licencia de Argentina. Fuente: oficial (ayuda de Shuffle).",
             "USDT está en el ejemplo de rakeback del help (1000 USDT a 2% de house edge → 1 USDT). Eso no es un catálogo de redes.",
-            "Antes de retirar hay que apostar 1x el depósito (help de coin-mixing, 28 jul 2026). No hay horas de pago: el retiro de la mesa sigue en sin dato. No es un cajero por CBU de un casino regulado en Argentina.",
+            "Antes de retirar hay que apostar 1x el depósito (help de coin-mixing, 28 jul 2026). No hay horas de pago: el retiro de la mesa sigue en sin dato. Que el pago en pesos pase por CBU/CVU no lo convierte en un casino regulado en Argentina.",
         ],
         "bono": [
             "Chip de la fila: rakeback de casino = 5% del house edge, en cash, no en sports, y no es un match de depósito. Ejemplo declarado: apostar 1000 USDT en un juego con 2% de house edge devuelve 1 USDT, se gane o se pierda. Se desbloquea al apostar 1.000 USD en total (Bronze) y se reclama en la página VIP. Help del 21 oct 2024, re-verificado 28 SEP 2026.",
@@ -1000,7 +1001,7 @@ VISUAL = {
             },
         ],
         "paths_caveat": {
-            "strong": "Rainbet publica dos versiones (rechequeo 14 OCT 2026).",
+            "strong": "Rainbet publica dos versiones (rechequeo 15 OCT 2026).",
             "body": "Camino B: la homepage y su página «Promotions Terms and Conditions» muestran dos caminos de welcome (x40 y «No Wager Lock»); el artículo de ayuda «First Deposit Promotion» dice que hay uno solo, el x40. Apuesta máxima con el bono activo: «Promotions Terms and Conditions» y la homepage dicen 2% del depósito; el artículo de ayuda «Deposit Bonus Terms and Conditions» dice 1%. No sabemos cuál aplica a tu cuenta. Antes de depositar, revisá los T&C vigentes y lo que te muestre tu pestaña de promociones. Fuente: oficial (páginas de Rainbet).",
         },
         "hinge_n": "Qué desbloquea",
@@ -1112,12 +1113,12 @@ VISUAL = {
             ("1×", "Antes de retirar", "Depósito · help coin-mixing"),
         ],
         "stages": [
-            ("Depósito", "Crypto + fiat", "tarjeta · Apple Pay · Google Pay"),
+            ("Depósito", "Crypto + fiat", "ARS: Mercado Pago · NaranjaX · transferencia · tarjeta · Apple Pay · Google Pay"),
             ("KYC", "ID de gobierno", "antes del primer retiro"),
             ("Retiro", "1× depósito", "help coin-mixing"),
             ("Proceso", "Sin SLA", "retiro de la mesa: sin dato"),
         ],
-        "caveat_strong": "No es un cajero por CBU.",
+        "caveat_strong": "Pesos por CBU/CVU ≠ casino regulado en Argentina.",
         "caveat": "Offshore no es un casino regulado en Argentina.",
         "chain": ["email", "datos", "ID", "domicilio"],
         "big": "—",
