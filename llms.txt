@@ -1,0 +1,45 @@
+# Planeta Ruleta
+
+> Planeta Ruleta es un proyecto de inteligencia y alfabetización de casino, en español y para Latinoamérica, dirigido a mayores de 18 años. El canal de Telegram @planetaruleta publica la matemática de las promociones; el sitio reúne guías de RTP, volatilidad, rakeback y términos de bono, y un archivo de señales. Las páginas llevan datos estructurados (schema.org) y cada dato público va con fecha y fuente. No es un sitio genérico de afiliados.
+
+Planeta Ruleta no opera un casino, no toma apuestas y no maneja dinero de nadie. Las fichas dejan el enlace de afiliado inactivo: no hay botón de juego ni códigos para cargar. La etiqueta Declarado significa que el dato sale del texto del operador, con fecha. Si no hay fuente, no hay fila. Las señales y las fichas se actualizan cuando hay un rechequeo; una celda vacía no se completa por suposición.
+
+Canal de la comunidad: [@planetaruleta](https://t.me/planetaruleta). Esa invitación no es un enlace de afiliado y no abre un depósito.
+
+El texto de las guías, sin el menú del sitio, está en [llms-full.txt](https://www.planetaruleta.com/llms-full.txt).
+
++18. No es consejo legal, financiero ni una recomendación para apostar. Si el juego se sale de control, busque ayuda de juego responsable en su país.
+
+## Inicio
+
+- [Inicio](https://www.planetaruleta.com/): Portada con las señales recientes, la mesa de cinco operadores y el acceso al canal. Declarado sale del texto del operador. No es un ranking ni un casino.
+
+## Guías
+
+- [Guías de alfabetización](https://www.planetaruleta.com/guias/): Índice de las guías de mecánicas de casino. No inventa porcentajes de operador y no abre un depósito.
+- [RTP y volatilidad en slots](https://www.planetaruleta.com/guias/rtp-volatilidad/): Qué es el RTP y la volatilidad de un slot, y por qué ninguno dice que el juego está por pagar.
+- [Max bet y contribución al rollover](https://www.planetaruleta.com/guias/max-bet-contribucion-bono/): Tope de apuesta bajo un bono y qué porcentaje de cada juego cuenta para el rollover. El número lo fijan los términos y condiciones.
+- [Cashback, rakeback y lossback](https://www.planetaruleta.com/guias/cashback-rakeback-lossback/): Tres devoluciones con bases de cálculo distintas. El porcentaje, y si vuelve en cash o en bono, está en los términos y condiciones.
+- [Cómo leer una promo de casino](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/): Método para leer opt-in, ventana, juegos excluidos y zona horaria en los términos, no el calendario de una promo vigente.
+- [USDT vs BTC para un depósito crypto](https://www.planetaruleta.com/guias/usdt-vs-btc-bankroll/): Custodia, comisiones, velocidad y volatilidad del activo al elegir USDT o BTC. No es consejo financiero.
+- [Antes de retirar: rollover del depósito y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/): Qué dicen las páginas oficiales de Rainbet, Shuffle, Cloudbet, Stake y Roobet sobre apostar el depósito y verificar la identidad antes de retirar.
+- [RTP y ventaja de la casa en ruleta](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/): De dónde sale la ventaja de la casa en la ruleta europea y americana, qué RTP publican Shuffle y Rainbet, y cómo leer esos números en una promo.
+
+## Mesa
+
+- [Mesa de fichas](https://www.planetaruleta.com/mesa/): Comparación declarada de Rainbet, Shuffle, Stake, Cloudbet y Roobet sobre licencia, KYC y bono. Sin puntaje y con el enlace de afiliado inactivo.
+- [Ficha de Rainbet](https://www.planetaruleta.com/mesa/rainbet/): Licencia de Anjouan que Rainbet declara, welcome x40 o un camino sin ese rollover (la ayuda muestra solo el x40; la ficha no resuelve cuál aplica) y KYC con documento, selfie y domicilio. Sin puntaje. Una licencia offshore no es una licencia local de tu país.
+- [Ficha de Shuffle](https://www.planetaruleta.com/mesa/shuffle/): Rakeback de casino y licencia de Curaçao que Shuffle publica, y KYC antes del primer retiro. Sin puntaje. Una licencia offshore no es una licencia local de tu país.
+- [Ficha de Stake](https://www.planetaruleta.com/mesa/stake/): El help publica el welcome como rakeback, y la licencia se cita desde un certificado de Curaçao porque el pie del sitio no se pudo leer. Sin puntaje. Una licencia offshore no es una licencia local de tu país.
+- [Ficha de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/): Welcome y rakeback de casino que el help de Cloudbet declara, y la licencia de Curaçao que publica. Sin puntaje. Una licencia offshore no es una licencia local de tu país.
+- [Ficha de Roobet](https://www.planetaruleta.com/mesa/roobet/): Rakeback instantáneo y un boost de 24 horas al registrarse, según el help. La licencia y el sportsbook del HTML público quedan en no verificado. Sin puntaje.
+
+## Señales
+
+- [Archivo de señales](https://www.planetaruleta.com/senales/): Todas las señales publicadas, de la más nueva a la más vieja. Declarado sale del texto del operador. No es un ranking y no publica códigos.
+
+## El proyecto
+
+- [Sobre Planeta Ruleta](https://www.planetaruleta.com/sobre/): Qué es el proyecto. Intel y comunidad en español. No opera un casino, no pide depósitos y no publica un botón de juego.
+- [Preguntas frecuentes](https://www.planetaruleta.com/faq/): Respuestas sobre la mesa, la etiqueta Declarado, el wagering, el KYC y la alfabetización de RTP, bonos y promos. No es un dictamen legal.
+- [Cómo funciona](https://www.planetaruleta.com/como-funciona/): Qué se publica y cómo se evalúa, en tres capas (oficial, comunidad y editorial), con fecha y fuente. Solo para mayores de 18.
