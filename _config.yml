@@ -1,0 +1,7 @@
+# GitHub Pages (Jekyll) build settings.
+# Internal files stay out of the published site, even if re-added to the repo.
+exclude:
+  - docs/
+  - scripts/
+  - content/
+  - README.md
