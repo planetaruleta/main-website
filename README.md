@@ -39,7 +39,7 @@ Events we send (nothing else):
 | Event | When | Params |
 | --- | --- | --- |
 | `page_view` | automatic from gtag | standard |
-| `cta_telegram_click` | click on Telegram / join CTAs | `cta_location` (`hero`, `band`, `nav`, `footer`, `bottom`, `contact`, `faq`, `guia`, `guia-canal`, `mesa-canal`), `link_url` |
+| `cta_telegram_click` | click on Telegram / join CTAs | `cta_location` (`hero`, `band`, `nav`, `footer`, `bottom`, `contact`, `faq`, `guia`, `guia-canal`, `mesa-canal`; `unknown` for an untagged t.me link), `placement` (same value), `link_url`, `cta_page_path`. Sent with beacon transport, on click and middle-click, for every `t.me` / `telegram.me` link even without `data-cta` |
 | `outbound_click` | click on an http(s) link that leaves planetaruleta.com (operator sites, help articles, other sources) | `link_url` (full href), `link_domain` (hostname). `link_context` only when the anchor already has `data-link-context` |
 
 Same-origin and relative links, `mailto:`, `tel:`, and bare `#` hashes are ignored. Telegram (`data-cta="telegram"`, or a `t.me` / `telegram.me` / `telegram.org` host) stays on `cta_telegram_click` only. Nothing is appended to the href.
