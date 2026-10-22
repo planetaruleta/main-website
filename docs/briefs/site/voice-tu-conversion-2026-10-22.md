@@ -4,13 +4,14 @@ Copia pública de Planeta Ruleta, de rioplatense (voseo) a español latinoameric
 No se tocaron slugs, URLs, enlaces de Telegram, cifras, fechas ni hechos de operadores.
 Los anclas (`id="plata"`) y las claves internas del render de fichas se quedan igual.
 
-**226 cadenas** en **24 archivos**.
+**228 cadenas** en **25 archivos**.
 
 ## Conteo por archivo
 
 | Archivo | Cadenas |
 | --- | ---: |
 | `llms-full.txt` | 66 |
+| `llms.txt` | 2 |
 | `faq/index.html` | 19 |
 | `guias/como-leer-una-promo-casino/index.html` | 16 |
 | `guias/rtp-volatilidad/index.html` | 16 |
@@ -34,7 +35,7 @@ Los anclas (`id="plata"`) y las claves internas del render de fichas se quedan i
 | `mesa/cloudbet/index.html` | 2 |
 | `mesa/index.html` | 2 |
 | `mesa/stake/index.html` | 2 |
-| **Total** | **226** |
+| **Total** | **228** |
 
 ## Reemplazos únicos
 
@@ -45,6 +46,7 @@ Los anclas (`id="plata"`) y las claves internas del render de fichas se quedan i
 | `Leé` | `Lee` | 11 |
 | `querés` | `quieres` | 11 |
 | `buscá` | `busca` | 8 |
+| `busque` | `busca` | 1 |
 | `Deslizá` | `Desliza` | 8 |
 | `pasás` | `pasas` | 8 |
 | `mirá` | `mira` | 7 |
@@ -94,6 +96,7 @@ Los anclas (`id="plata"`) y las claves internas del render de fichas se quedan i
 | `saltea` | `se salta` | 2 |
 | `Separá` | `Separa` | 2 |
 | `Subís` | `Subes` | 2 |
+| `su` | `tu` | 1 |
 | `sumás` | `sumas` | 2 |
 | `Tomás` | `Tomas` | 2 |
 | `Transferís` | `Transfieres` | 2 |
@@ -272,6 +275,11 @@ Número de línea en el archivo ya convertido. La misma línea puede listar más
 - L794: `Deslizá` → `Desliza`
 - L887: `Sumate` → `Súmate`
 
+### `llms.txt` (2)
+
+- L11: `busque` → `busca`
+- L11: `su` → `tu`
+
 ### `llms-full.txt` (66)
 
 - L49: `mirá` → `mira`
@@ -445,7 +453,7 @@ Las 224 coincidencias son solo estas formas, ninguna es voseo:
 - **`acá`**. Es latinoamericano neutro, no peninsular. El pedido era tú de Latinoamérica, no español de España.
 - **`chequear` / `chequeo` / `rechequeo`**. No es el vocativo *che*. Es el verbo de revisar, habitual en la región, y es el término editorial del sitio para una segunda lectura.
 - **`chicos`** («montos más chicos»). En gran parte de Latinoamérica significa pequeños. No lo cambié a «pequeños».
-- **`llms.txt`**: «busque ayuda de juego responsable en su país» está en **usted**, no en voseo. El resto de ese archivo no trata de tú. Lo dejé para no mezclar una conversión de usted que el pedido no pedía.
+- **`su` / `sus` que no hablan al lector.** «Su página», «sus términos», «su equipo de KYC», «su equivalente», «su ficha», «su gate», «esta guía es su compañera» y «lo suyo» se refieren al operador, a la promo o a la otra guía. No son el posesivo de usted.
 - **`estás` / `estés`**: iguales en tú y en vos.
 - **`paramá`** sí se cambió: no es un verbo estándar; en la frase («Si no estás en control, paramá») es el imperativo de *parar*. Quedó `para`. El imperativo de tú de *parar* coincide con la preposición; la oración sigue cerrada con punto.
 - **`sin vueltas` → `sin rodeos`** en el hero y en Sobre. Es el modismo rioplatense «sin rodeos». El hero también se puede leer como juego de palabras con las vueltas de la ruleta. Si se quiere conservar ese doble sentido, el título se puede revertir sin tocar el resto.
