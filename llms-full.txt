@@ -46,7 +46,7 @@ El **RTP** (return to player) es el porcentaje teórico que un slot está diseñ
 
 RTP = return to player. Es un promedio de diseño sobre muchísimas tiradas, no el resultado de tu sesión.
 
-Ejemplo de cuenta, no de un operador: si la ficha publicara un RTP, ese número es lo que el modelo devuelve en promedio al conjunto de jugadores a lo largo del tiempo. En un modelo simple, lo que no vuelve es la ventaja de la casa. No publicamos el RTP de ningún título: mirá la ficha del juego.
+Ejemplo de cuenta, no de un operador: si la ficha publicara un RTP, ese número es lo que el modelo devuelve en promedio al conjunto de jugadores a lo largo del tiempo. En un modelo simple, lo que no vuelve es la ventaja de la casa. No publicamos el RTP de ningún título: mira la ficha del juego.
 
 Lo que el RTP **no** es:
 
@@ -54,15 +54,15 @@ Lo que el RTP **no** es:
 - No es una garantía de que una sesión te devuelva ese porcentaje.
 - No es un contador que se “llena” hasta el próximo premio gordo.
 
-El generador de números aleatorios (RNG) no “debe” un pago porque llevás malas rachas. Una tirada no obliga a la siguiente. Dentro de un bonus, varias tiradas pueden estar ligadas entre sí; eso tampoco convierte al RTP en una deuda. El RTP se observa como promedio.
+El generador de números aleatorios (RNG) no “debe” un pago porque llevas malas rachas. Una tirada no obliga a la siguiente. Dentro de un bonus, varias tiradas pueden estar ligadas entre sí; eso tampoco convierte al RTP en una deuda. El RTP se observa como promedio.
 
-Si necesitás el RTP publicado de un título o casino concreto, cruzalo con la ficha del juego o el texto del operador. No inventamos porcentajes de operador acá.
+Si necesitas el RTP publicado de un título o casino concreto, crúzalo con la ficha del juego o el texto del operador. No inventamos porcentajes de operador acá.
 
 ## Qué es la volatilidad (varianza) de un slot
 
 La **volatilidad** (también llamada varianza) describe **cómo** se reparte ese retorno teórico:
 
-- **Volatilidad baja:** premios más frecuentes y montos más chicos. La curva de bankroll suele ser más “chata”.
+- **Volatilidad baja:** premios más frecuentes y montos más chicos. La curva de bankroll suele ser más plana.
 - **Volatilidad media:** mezcla.
 - **Volatilidad alta:** premios menos frecuentes y montos que pueden ser mayores. Rachas en seco más largas son parte del diseño, no prueba de que el juego esté trabado.
 
@@ -80,11 +80,11 @@ En mesas físicas circula la idea de que “esta máquina está caliente / fría
 
 ## Cómo usar RTP y volatilidad sin autoengaño
 
-- Anotá el RTP solo como dato de diseño, no como pronóstico de la noche.
-- Elegí volatilidad según tolerancia a rachas en seco, no según “ahora toca”.
-- Separá bankroll de sesión: volatilidad alta exige aceptar swings mayores.
-- Si un casino publica RTP distinto al del proveedor, priorizá la fuente verificable y leé el T&C o la ficha del juego.
-- +18. Si no estás en control, paramá. Esto no es consejo de apuesta.
+- Anota el RTP solo como dato de diseño, no como pronóstico de la noche.
+- Elige volatilidad según tolerancia a rachas en seco, no según “ahora toca”.
+- Separa bankroll de sesión: volatilidad alta exige aceptar swings mayores.
+- Si un casino publica RTP distinto al del proveedor, prioriza la fuente verificable y lee el T&C o la ficha del juego.
+- +18. Si no estás en control, para. Esto no es consejo de apuesta.
 
 ## RTP “alto” no arregla un mal bono ni un mal WR
 
@@ -92,7 +92,7 @@ Un slot con buen RTP no compensa un [wagering](https://www.planetaruleta.com/faq
 
 ## Dónde seguir
 
-En Planeta Ruleta trabajamos lectura de mecánicas y T&C, no puertas de «jugá acá». Si querés revisar dudas de RTP o volatilidad, pasá por la mesa en [www.planetaruleta.com](https://www.planetaruleta.com/) o [TG @planetaruleta](https://t.me/planetaruleta). +18.
+En Planeta Ruleta trabajamos lectura de mecánicas y T&C, no puertas de «juega acá». Si quieres revisar dudas de RTP o volatilidad, pasa por la mesa en [www.planetaruleta.com](https://www.planetaruleta.com/) o [TG @planetaruleta](https://t.me/planetaruleta). +18.
 
 Versión corta en el [FAQ: qué es el RTP y la volatilidad](https://www.planetaruleta.com/faq/#rtp-volatilidad).
 
@@ -108,24 +108,24 @@ El **max bet** de un bono es el tope de apuesta mientras hay fondos bonificados 
 
 El **max bet** es el tope de apuesta permitido mientras el bono esté activo o mientras tengas wagering pendiente. No hay un monto único para todos los casinos.
 
-Suele existir para limitar el tamaño de apuesta mientras el bono o el rollover sigue abierto. Si te pasás del tope, el T&C puede prever desde no contar esa apuesta hasta anular bono y/o ganancias asociadas. Decimos **puede** — no “siempre te anulan”. Leé la cláusula; no asumas.
+Suele existir para limitar el tamaño de apuesta mientras el bono o el rollover sigue abierto. Si te pasas del tope, el T&C puede prever desde no contar esa apuesta hasta anular bono y/o ganancias asociadas. Decimos **puede** — no “siempre te anulan”. Lee la cláusula; no asumas.
 
 Checklist rápido de max bet:
 
 - ¿El tope es por spin, por ronda o por apuesta total?
 - ¿Aplica en moneda del casino o equivalente crypto?
 - ¿Sigue vigente después de convertir bono a cash?
-- ¿Qué pasa si te pasás una sola vez?
+- ¿Qué pasa si te pasas una sola vez?
 
 ## Qué es la contribución al rollover
 
-La **contribución** (a veces “weighting” o “aporte al wagering”) dice qué porcentaje de lo apostado en cada juego **cuenta** para completar el rollover. Los slots suelen aportar más que la mesa; el porcentaje de cada título lo fija el operador. Mirá el T&C.
+La **contribución** (a veces “weighting” o “aporte al wagering”) dice qué porcentaje de lo apostado en cada juego **cuenta** para completar el rollover. Los slots suelen aportar más que la mesa; el porcentaje de cada título lo fija el operador. Mira el T&C.
 
 La cuenta, si el T&C dice un porcentaje (ejemplo, no una cifra de sala):
 
 *Aritmética de ejemplo. El porcentaje de cada juego está en el T&C, no en esta tabla.*
 
-| Si el T&C dice | Apostás 100 | Cuenta para el rollover |
+| Si el T&C dice | Apuestas 100 | Cuenta para el rollover |
 | --- | --- | --- |
 | 100% | 100 | 100 |
 | 10% | 100 | 10 |
@@ -137,9 +137,9 @@ Por eso “casi termino el rollover” puede ser falso si estás en juegos de co
 
 Escenario típico de error:
 
-1. Tomás un bono con WR.
-2. Jugás un título de baja contribución pensando que “sumás igual”.
-3. Subís la apuesta para “terminar más rápido” y te pasás del max bet.
+1. Tomas un bono con WR.
+2. Juegas un título de baja contribución pensando que “sumas igual”.
+3. Subes la apuesta para “terminar más rápido” y te pasas del max bet.
 
 Según el T&C, puede pasar que el wagering no avance como esperabas **y** que además haya una consecuencia por max bet. No es automático. Orden útil: leer contribución → elegir juegos que aporten → respetar max bet → recién ahí estimar el bankroll de la sesión.
 
@@ -148,7 +148,7 @@ Según el T&C, puede pasar que el wagering no avance como esperabas **y** que ad
 1. **Elegibilidad y opt-in** del bono (si aplica).
 2. **Max bet** mientras haya bono/WR.
 3. **Tabla de contribución** y lista de juegos excluidos.
-4. **Qué se anula** si incumplís (bono, ganancias, ambas) — según el T&C, no “siempre”.
+4. **Qué se anula** si incumples (bono, ganancias, ambas) — según el T&C, no “siempre”.
 5. **Timezone** de vencimiento del WR. El método de lectura está en [cómo leer una promo](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/).
 
 No reabrimos acá el ABC de Declarado, [wagering](https://www.planetaruleta.com/faq/#wagering) y D+B del FAQ; esto es la capa max bet y contribución encima de eso.
@@ -186,7 +186,7 @@ Sin esas respuestas, el % solo es marketing. El porcentaje concreto de una sala 
 
 En el [FAQ del sitio](https://www.planetaruleta.com/faq/#rakeback-match) ya dejamos claro: **rakeback ≠ match de depósito**. Un match te multiplica el depósito bajo reglas de bono; un rakeback (bien definido) te devuelve algo sobre el rake o equivalente. No los uses como sinónimos.
 
-Si un casino dice “rakeback” en un lobby de slots, pedí la definición exacta en el T&C antes de comparar con un cashback clásico.
+Si un casino dice “rakeback” en un lobby de slots, pide la definición exacta en el T&C antes de comparar con un cashback clásico.
 
 ## Lossback: el nombre más explícito
 
@@ -194,9 +194,9 @@ Si un casino dice “rakeback” en un lobby de slots, pedí la definición exac
 
 Igual que con cashback:
 
-- Definí el período (¿reset diario a las 00:00 de qué timezone?).
-- Definí si pérdidas en juegos excluidos cuentan.
-- Definí si la devolución genera nuevo WR.
+- Define el período (¿reset diario a las 00:00 de qué timezone?).
+- Define si pérdidas en juegos excluidos cuentan.
+- Define si la devolución genera nuevo WR.
 
 ## Tabla comparativa
 
@@ -221,7 +221,7 @@ Definición, no % de operador:
 
 ## Dónde seguir
 
-Para revisar definiciones y T&C (sin «jugá acá» ni links de referido): [www.planetaruleta.com](https://www.planetaruleta.com/) · [TG @planetaruleta](https://t.me/planetaruleta). +18.
+Para revisar definiciones y T&C (sin «juega acá» ni links de referido): [www.planetaruleta.com](https://www.planetaruleta.com/) · [TG @planetaruleta](https://t.me/planetaruleta). +18.
 
 Versión corta en el [FAQ: cashback, rakeback y lossback](https://www.planetaruleta.com/faq/#cashback-rakeback-lossback).
 
@@ -237,7 +237,7 @@ Leer una promo de casino es leer sus términos y condiciones, no el banner. Cuat
 
 Algunas promos aplican al depositar o al cumplir una condición. Otras exigen **opt-in** explícito: botón “Participar”, código, o check en el cashier.
 
-Si el T&C dice opt-in y no lo hiciste, depositar “para la promo” no alcanza. No es trampa escondida: es condición de elegibilidad. Anotalo antes del depósito, no después.
+Si el T&C dice opt-in y no lo hiciste, depositar “para la promo” no alcanza. No es trampa escondida: es condición de elegibilidad. Anótalo antes del depósito, no después.
 
 ## 2) Ventana: desde / hasta / renovación
 
@@ -250,7 +250,7 @@ La **ventana** responde:
 
 “Hasta agotar stock” y “hasta el domingo 23:59” no son lo mismo. Si solo leíste el banner, no leíste la promo.
 
-Para una promo **viva** con fechas concretas, verificá el T&C. Este artículo enseña el método; no fija calendarios inventados.
+Para una promo **viva** con fechas concretas, verifica el T&C. Este artículo enseña el método; no fija calendarios inventados.
 
 ## 3) Juegos excluidos: lo que no aporta (o no paga)
 
@@ -260,9 +260,9 @@ Cuando el T&C publica una lista, suele incluir cosas como:
 - Mesa o vivo con contribución baja o nula, si el T&C lo dice.
 - Proveedores enteros fuera de la promo.
 
-También existe la otra cara: juegos donde **sí** podés apostar pero las ganancias de la promo no aplican. Leé ambas listas: contribución al WR **y** elegibilidad de pagos. El cruce con max bet está en la [guía de max bet y contribución](https://www.planetaruleta.com/guias/max-bet-contribucion-bono/).
+También existe la otra cara: juegos donde **sí** puedes apostar pero las ganancias de la promo no aplican. Lee ambas listas: contribución al WR **y** elegibilidad de pagos. El cruce con max bet está en la [guía de max bet y contribución](https://www.planetaruleta.com/guias/max-bet-contribucion-bono/).
 
-## 4) Timezone: el detalle que más gente saltea
+## 4) Timezone: el detalle que más gente se salta
 
 El casino opera en una zona horaria. Tu reloj local puede ser otra. “Domingo 23:59” sin timezone es incompleto.
 
@@ -279,7 +279,7 @@ Un desfase de horas entre tu reloj y el del casino explica tickets de “no me a
 1. Título de la promo → ¿qué promete en una frase?
 2. Opt-in: sí/no + dónde.
 3. Ventana + timezone.
-4. Elegibilidad (países, KYC, cuentas nuevas/viejas) — sin rehash del FAQ [Sin KYC](https://www.planetaruleta.com/faq/#sin-kyc); solo mirá si **esta** promo pide algo extra.
+4. Elegibilidad (países, KYC, cuentas nuevas/viejas) — sin rehash del FAQ [Sin KYC](https://www.planetaruleta.com/faq/#sin-kyc); solo mira si **esta** promo pide algo extra.
 5. Max bet + contribución + excluidos (si hay bono/WR).
 6. Forma del premio: cash, free spins, bono — y qué pasa al incumplir, según el T&C.
 
@@ -293,7 +293,7 @@ Un desfase de horas entre tu reloj y el del casino explica tickets de “no me a
 
 ## Dónde seguir
 
-Si querés que te ayudemos a **leer** una promo (alfabetización, no puerta de depósito ni links de referido): mesa en [www.planetaruleta.com](https://www.planetaruleta.com/) o [TG @planetaruleta](https://t.me/planetaruleta). +18.
+Si quieres que te ayudemos a **leer** una promo (alfabetización, no puerta de depósito ni links de referido): mesa en [www.planetaruleta.com](https://www.planetaruleta.com/) o [TG @planetaruleta](https://t.me/planetaruleta). +18.
 
 Versión corta en el [FAQ: cómo se lee una promo](https://www.planetaruleta.com/faq/#leer-promo).
 
@@ -309,7 +309,7 @@ Elegir **USDT** (u otra stablecoin) o **BTC** para un depósito crypto no dice c
 
 **USDT** busca mantener una paridad cercana a 1 USD. Ese es el objetivo del diseño, no una garantía: puede haber depeg, riesgo de emisor o problemas de red.
 
-Para un bankroll de juego, la ventaja buscada es **separar** el resultado del slot o de la mesa de la oscilación del activo. Si perdés unidades por el juego, querés que sean unidades de juego, no unidades más un movimiento del BTC en la misma tarde.
+Para un bankroll de juego, la ventaja buscada es **separar** el resultado del slot o de la mesa de la oscilación del activo. Si pierdes unidades por el juego, quieres que sean unidades de juego, no unidades más un movimiento del BTC en la misma tarde.
 
 Stablecoin ≠ riesgo cero:
 
@@ -321,9 +321,9 @@ El FAQ ya cubre el [cajero](https://www.planetaruleta.com/faq/#cajero) y el tema
 
 ## BTC en un bankroll de juego
 
-**BTC** fluctúa. Podés depositar, no jugar, y encontrar que tu poder de retiro en fiat subió o bajó solo por el mercado.
+**BTC** fluctúa. Puedes depositar, no jugar, y encontrar que tu poder de retiro en fiat subió o bajó solo por el mercado.
 
-Eso puede ser deseable si ya tenés exposición a BTC a propósito. Si lo que querés es una unidad de cuenta estable para las sesiones, ese movimiento mezcla el resultado del juego con el del mercado.
+Eso puede ser deseable si ya tienes exposición a BTC a propósito. Si lo que quieres es una unidad de cuenta estable para las sesiones, ese movimiento mezcla el resultado del juego con el del mercado.
 
 BTC también implica:
 
@@ -335,7 +335,7 @@ BTC también implica:
 
 Operativa, no una invitación a fondear:
 
-*Marco para leer el cajero. Ninguna fila dice “depositá acá”.*
+*Marco para leer el cajero. Ninguna fila dice “deposita acá”.*
 
 | Criterio | USDT / stablecoin | BTC |
 | --- | --- | --- |
@@ -348,11 +348,11 @@ Operativa, no una invitación a fondear:
 
 Cualquier activo:
 
-- ¿Qué redes acepta el cajero y cuál tiene fee/tiempo aceptable para vos?
+- ¿Qué redes acepta el cajero y cuál tiene fee/tiempo aceptable para ti?
 - ¿El saldo se muestra en crypto, en fiat equivalente, o ambos?
 - ¿Retiro mínimo, máximo y tiempos? Suelen estar en el T&C.
 - ¿Estás midiendo resultados de sesión en una unidad estable?
-- +18 y bankroll que podés perder: crypto no cambia eso.
+- +18 y bankroll que puedes perder: crypto no cambia eso.
 
 ## Errores típicos
 
@@ -363,7 +363,7 @@ Cualquier activo:
 
 ## Dónde seguir
 
-Dudas de lectura de cajero / activos (sin «jugá acá», sin links de referido): [www.planetaruleta.com](https://www.planetaruleta.com/) · [TG @planetaruleta](https://t.me/planetaruleta). +18. Alfabetización operativa, no asesoría financiera.
+Dudas de lectura de cajero / activos (sin «juega acá», sin links de referido): [www.planetaruleta.com](https://www.planetaruleta.com/) · [TG @planetaruleta](https://t.me/planetaruleta). +18. Alfabetización operativa, no asesoría financiera.
 
 Versión corta en el [FAQ: USDT o BTC para el bankroll](https://www.planetaruleta.com/faq/#usdt-btc).
 
@@ -379,14 +379,14 @@ La home de un casino cripto habla de retiros en minutos. Antes de que corra ese 
 
 Algunas salas piden que apuestes el monto depositado antes de retirar. No es lo mismo que el rollover de un bono (eso está en [/guias/max-bet-contribucion-bono/](https://www.planetaruleta.com/guias/max-bet-contribucion-bono/)): acá hablamos del depósito propio.
 
-- **Rainbet (términos §8.2, revisado 14 oct 2026):** el retiro va sin comisión si apostaste el depósito al menos una vez; si tomaste una promoción, tenés que apostar el doble. Su home repite lo de la comisión pero no menciona la condición de la promoción (home revisada 14 oct 2026). Leé la cláusula, no solo la home.
+- **Rainbet (términos §8.2, revisado 14 oct 2026):** el retiro va sin comisión si apostaste el depósito al menos una vez; si tomaste una promoción, tienes que apostar el doble. Su home repite lo de la comisión pero no menciona la condición de la promoción (home revisada 14 oct 2026). Lee la cláusula, no solo la home.
 - **Rainbet (home, revisado 14 oct 2026):** retiro mínimo de 15 USD o su equivalente.
 - **Stake (ayuda, revisado 8 oct 2026):** cada depósito debe apostarse al 100 % antes de retirar o hacer tip.
 - **Roobet (ayuda, revisado 8 y 14 oct 2026):** pide apostar al menos el 100 % del depósito en cripto antes de retirar o hacer tip.
 
 Cómo leerlo: si una promo cambia la condición de retiro, eso es parte del costo de la promo. Más en [/guias/como-leer-una-promo-casino/](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/).
 
-## 2. Verificación (KYC): qué piden y qué pasa si no la pasás
+## 2. Verificación (KYC): qué piden y qué pasa si no la pasas
 
 - **Shuffle (términos §5.2 y §5.5, revisado 8 oct 2026):** puede pedir documento oficial de identidad, y en cualquier caso antes del primer retiro; el medio de pago tiene que estar a tu nombre.
 - **Rainbet (términos §20.1, revisado 14 oct 2026):** la misma cláusula escribe dos números. Uno: su equipo de KYC tiene 24 horas («24hrs») para revisar tus documentos y avisarte por mail. Dos: la verificación puede tardar hasta 7 días hábiles en analizarse. Rainbet no explica cómo se combinan; acá los dejamos tal cual, sin decir cuál aplica. La cláusula también dice que puede restringir pagos y retiros si la verificación no se completa en 72 horas, que en estado «Temporarily Approved» no hay retiros, y que no pasar el control de identidad «will result in confiscation of funds». Palabras de Rainbet.
@@ -401,18 +401,18 @@ Cómo leerlo: si una promo cambia la condición de retiro, eso es parte del cost
 - **Stake (revisado 8 oct 2026):** sus términos no se pudieron leer (la página bloqueó nuestra revisión). En la ayuda, los retiros grandes pueden requerir proceso manual y retención temporal, sin horas indicadas.
 - **Roobet (revisado 8 y 14 oct 2026):** términos y home no se pudieron leer (página vacía); en su ayuda no hay plazo de retiro.
 
-La home es promesa, no plazo escrito. Para la velocidad de la red y la elección de moneda, mirá [/guias/usdt-vs-btc-bankroll/](https://www.planetaruleta.com/guias/usdt-vs-btc-bankroll/).
+La home es promesa, no plazo escrito. Para la velocidad de la red y la elección de moneda, mira [/guias/usdt-vs-btc-bankroll/](https://www.planetaruleta.com/guias/usdt-vs-btc-bankroll/).
 
 ## 4. Qué revisar antes de depositar
 
 1. La cláusula de retiro en los términos, no solo la home.
 2. Si el depósito tiene que apostarse y cuántas veces, y si una promo lo cambia.
-3. Qué documentos pide el KYC y qué pasa si no lo completás.
+3. Qué documentos pide el KYC y qué pasa si no lo completas.
 4. Límites por nivel de verificación.
 
-Recordá que apostar el depósito es exponerlo a la ventaja de la casa: ver [/guias/rtp-volatilidad/](https://www.planetaruleta.com/guias/rtp-volatilidad/). Fichas de cada sala: [Rainbet](https://www.planetaruleta.com/mesa/rainbet/), [Shuffle](https://www.planetaruleta.com/mesa/shuffle/), [Stake](https://www.planetaruleta.com/mesa/stake/), [Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/), [Roobet](https://www.planetaruleta.com/mesa/roobet/). Dudas generales: [/faq/](https://www.planetaruleta.com/faq/).
+Recuerda que apostar el depósito es exponerlo a la ventaja de la casa: ver [/guias/rtp-volatilidad/](https://www.planetaruleta.com/guias/rtp-volatilidad/). Fichas de cada sala: [Rainbet](https://www.planetaruleta.com/mesa/rainbet/), [Shuffle](https://www.planetaruleta.com/mesa/shuffle/), [Stake](https://www.planetaruleta.com/mesa/stake/), [Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/), [Roobet](https://www.planetaruleta.com/mesa/roobet/). Dudas generales: [/faq/](https://www.planetaruleta.com/faq/).
 
-Los términos cambian. Revisá la versión vigente en la web oficial de cada sala antes de decidir. +18. Si estás persiguiendo pérdidas, o cancelás un retiro para seguir jugando, pará y buscá ayuda.
+Los términos cambian. Revisa la versión vigente en la web oficial de cada sala antes de decidir. +18. Si estás persiguiendo pérdidas, o cancelas un retiro para seguir jugando, para y busca ayuda.
 
 URL: https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/
 
@@ -424,7 +424,7 @@ Las definiciones generales de RTP y volatilidad ya están en [RTP y volatilidad 
 
 ## 1. RTP y ventaja de la casa: dos caras del mismo número
 
-El RTP es el porcentaje teórico que el juego devuelve en el largo plazo; lo que no vuelve es la ventaja de la casa. Si querés la explicación completa de por qué ese promedio no es tu resultado de esta noche, está en [/guias/rtp-volatilidad/](https://www.planetaruleta.com/guias/rtp-volatilidad/). En ruleta, la ventaja de la casa sale de un lugar concreto: el cero.
+El RTP es el porcentaje teórico que el juego devuelve en el largo plazo; lo que no vuelve es la ventaja de la casa. Si quieres la explicación completa de por qué ese promedio no es tu resultado de esta noche, está en [/guias/rtp-volatilidad/](https://www.planetaruleta.com/guias/rtp-volatilidad/). En ruleta, la ventaja de la casa sale de un lugar concreto: el cero.
 
 ## 2. De dónde sale la ventaja en la rueda (cálculo EDITORIAL)
 
@@ -433,17 +433,17 @@ Esto es matemática de manual, no una cifra de ningún operador.
 - **Ruleta de un solo cero (europea):** 37 casillas, 1 cero. Ventaja de la casa = 1 ÷ 37 = 0,0270… ≈ **2,70 %**.
 - **Ruleta de doble cero (americana):** 38 casillas, 2 ceros. Ventaja de la casa = 2 ÷ 38 = 0,0526… ≈ **5,26 %**.
 
-Cómo leerlo: el segundo cero casi duplica la ventaja. Antes de mirar cualquier promo, fijate qué rueda es.
+Cómo leerlo: el segundo cero casi duplica la ventaja. Antes de mirar cualquier promo, fíjate qué rueda es.
 
 ## 3. Qué publican las salas (revisado 14 oct 2026)
 
 - **Shuffle (Originals, ruleta europea):** su página dice «2.70% fixed house edge» y que la estructura europea da un RTP de 97,30 %. Coincide con el cálculo de un solo cero. Ficha: [/mesa/shuffle/](https://www.planetaruleta.com/mesa/shuffle/).
-- **Rainbet (Originals «Roulette»):** su página dice «Max RTP 97.30 %». No dice si la rueda es europea, americana o francesa, así que no lo asumimos. Fijate que dice «Max» y la página no explica a qué apuesta o variante se refiere. Ficha: [/mesa/rainbet/](https://www.planetaruleta.com/mesa/rainbet/).
+- **Rainbet (Originals «Roulette»):** su página dice «Max RTP 97.30 %». No dice si la rueda es europea, americana o francesa, así que no lo asumimos. Fíjate que dice «Max» y la página no explica a qué apuesta o variante se refiere. Ficha: [/mesa/rainbet/](https://www.planetaruleta.com/mesa/rainbet/).
 - **Cloudbet:** sus páginas muestran cifras distintas para el mismo juego, así que no citamos ninguna.
 - **Stake:** la página de ruleta bloqueó nuestra revisión; no pudimos leerla.
 - **Roobet:** sin iniciar sesión, no encontramos la cifra en la página del juego ni en su ayuda.
 
-Las citas entre comillas van tal cual las publica cada sala (con punto decimal). Las cifras pueden cambiar. Revisá la ficha del juego en la web oficial antes de decidir.
+Las citas entre comillas van tal cual las publica cada sala (con punto decimal). Las cifras pueden cambiar. Revisa la ficha del juego en la web oficial antes de decidir.
 
 ## 4. Volatilidad en ruleta
 
@@ -452,13 +452,13 @@ La ventaja de la casa es el costo promedio; la volatilidad es cómo se reparte. 
 ## 5. Cómo leer esos números en una promo
 
 1. **Rollover = apuestas expuestas a la ventaja.** Cada vez que un bono pide apostar X veces, todo ese volumen pasa por la ventaja de la casa del juego que elijas. Por eso importa qué rueda es.
-2. **Contribución de la ruleta.** Una promo puede contar la ruleta distinto que los slots para el rollover, o excluirla: eso está en sus términos. Leé la tabla de contribución y el límite de apuesta: [/guias/max-bet-contribucion-bono/](https://www.planetaruleta.com/guias/max-bet-contribucion-bono/).
-3. **Cashback y rakeback se calculan sobre otra base.** Si una promo devuelve un porcentaje, fijate si es sobre pérdidas, sobre volumen apostado o sobre la ventaja de la casa: [/guias/cashback-rakeback-lossback/](https://www.planetaruleta.com/guias/cashback-rakeback-lossback/).
-4. **«Max RTP» no es «RTP».** Si la cifra dice «max», preguntate en qué apuesta o variante aplica.
+2. **Contribución de la ruleta.** Una promo puede contar la ruleta distinto que los slots para el rollover, o excluirla: eso está en sus términos. Lee la tabla de contribución y el límite de apuesta: [/guias/max-bet-contribucion-bono/](https://www.planetaruleta.com/guias/max-bet-contribucion-bono/).
+3. **Cashback y rakeback se calculan sobre otra base.** Si una promo devuelve un porcentaje, fíjate si es sobre pérdidas, sobre volumen apostado o sobre la ventaja de la casa: [/guias/cashback-rakeback-lossback/](https://www.planetaruleta.com/guias/cashback-rakeback-lossback/).
+4. **«Max RTP» no es «RTP».** Si la cifra dice «max», pregúntate en qué apuesta o variante aplica.
 5. **Retirar también tiene condiciones.** Algunas salas piden apostar el depósito antes de retirarlo: [/guias/antes-de-retirar-rollover-kyc/](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/).
 
 La guía paso a paso para cualquier promo está en [/guias/como-leer-una-promo-casino/](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/). Dudas generales: [/faq/](https://www.planetaruleta.com/faq/).
 
-Ningún número de esta guía predice tu sesión. +18. Si estás persiguiendo pérdidas, o cancelás un retiro para seguir jugando, pará y buscá ayuda.
+Ningún número de esta guía predice tu sesión. +18. Si estás persiguiendo pérdidas, o cancelas un retiro para seguir jugando, para y busca ayuda.
 
 URL: https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/
