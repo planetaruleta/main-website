@@ -322,7 +322,7 @@ def render() -> str:
     if text.startswith("---"):
         raise SystemExit("refusing to write a file Jekyll could treat as front matter")
     required = [
-        "**Volatilidad baja:** premios más frecuentes y montos más chicos.",
+        "**Volatilidad baja:** premios más frecuentes y montos más pequeños.",
         "Ventaja de la casa = 1 ÷ 37 = 0,0270… ≈ **2,70 %**.",
         "[/mesa/shuffle/](https://www.planetaruleta.com/mesa/shuffle/).",
         "[cómo leer una promo](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/).",

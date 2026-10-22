@@ -2,40 +2,41 @@
 
 Copia pública de Planeta Ruleta, de rioplatense (voseo) a español latinoamericano neutro con **tú**.
 No se tocaron slugs, URLs, enlaces de Telegram, cifras, fechas ni hechos de operadores.
-Los anclas (`id="plata"`) y las claves internas del render de fichas se quedan igual.
+Los anclas (`id="plata"`) y las claves internas del render de fichas (`plata`, `plata_title`) se quedan igual. La copia visible «plata» pasó a «dinero».
 
-**228 cadenas** en **25 archivos**.
+**304 cadenas** en **26 archivos**.
 
 ## Conteo por archivo
 
 | Archivo | Cadenas |
 | --- | ---: |
-| `llms-full.txt` | 66 |
-| `llms.txt` | 2 |
-| `faq/index.html` | 19 |
-| `guias/como-leer-una-promo-casino/index.html` | 16 |
-| `guias/rtp-volatilidad/index.html` | 16 |
-| `guias/max-bet-contribucion-bono/index.html` | 13 |
-| `guias/antes-de-retirar-rollover-kyc/index.html` | 12 |
+| `llms-full.txt` | 81 |
+| `faq/index.html` | 30 |
+| `guias/rtp-volatilidad/index.html` | 20 |
+| `scripts/render-mesa-fichas.py` | 19 |
+| `guias/como-leer-una-promo-casino/index.html` | 17 |
+| `guias/max-bet-contribucion-bono/index.html` | 15 |
+| `guias/antes-de-retirar-rollover-kyc/index.html` | 14 |
+| `guias/usdt-vs-btc-bankroll/index.html` | 14 |
+| `sobre/index.html` | 13 |
 | `guias/rtp-ventaja-casa-ruleta/index.html` | 12 |
-| `guias/usdt-vs-btc-bankroll/index.html` | 11 |
-| `scripts/render-mesa-fichas.py` | 9 |
-| `guias/cashback-rakeback-lossback/index.html` | 7 |
+| `guias/cashback-rakeback-lossback/index.html` | 10 |
+| `mesa/roobet/index.html` | 7 |
+| `mesa/rainbet/index.html` | 6 |
+| `mesa/shuffle/index.html` | 6 |
+| `senales/index.html` | 6 |
+| `content/intel/homepage-offshore-wave1-2026-09-25.json` | 5 |
+| `content/senales.json` | 5 |
 | `index.html` | 5 |
-| `mesa/roobet/index.html` | 5 |
-| `sobre/index.html` | 5 |
-| `mesa/rainbet/index.html` | 4 |
-| `mesa/shuffle/index.html` | 4 |
-| `senales/index.html` | 4 |
-| `content/intel/homepage-offshore-wave1-2026-09-25.json` | 3 |
-| `content/senales.json` | 3 |
+| `mesa/cloudbet/index.html` | 4 |
+| `mesa/stake/index.html` | 4 |
 | `README.md` | 2 |
 | `como-funciona/index.html` | 2 |
 | `guias/index.html` | 2 |
-| `mesa/cloudbet/index.html` | 2 |
+| `llms.txt` | 2 |
 | `mesa/index.html` | 2 |
-| `mesa/stake/index.html` | 2 |
-| **Total** | **228** |
+| `scripts/render_llms_full.py` | 1 |
+| **Total** | **304** |
 
 ## Reemplazos únicos
 
@@ -105,6 +106,16 @@ Los anclas (`id="plata"`) y las claves internas del render de fichas se quedan i
 | `vueltas` | `rodeos` | 2 |
 | `anotá` | `anota` | 1 |
 | `trucho` | `falso` | 1 |
+| `acá` | `aquí` | 34 |
+| `plata` | `dinero` | 15 |
+| `la` | `el` | 10 |
+| `chicos` | `pequeños` | 7 |
+| `chica` | `pequeña` | 3 |
+| `chico` | `pequeño` | 3 |
+| `goma` | `problema` | 1 |
+| `ser` | `volverse` | 1 |
+| `tuya` | `tuyo` | 1 |
+| `una` | `un` | 1 |
 
 ## Cada cadena, antes → después
 
@@ -120,19 +131,23 @@ Número de línea en el archivo ya convertido. La misma línea puede listar más
 - L418: `Sumate` → `Súmate`
 - L481: `Sumate` → `Súmate`
 
-### `content/intel/homepage-offshore-wave1-2026-09-25.json` (3)
+### `content/intel/homepage-offshore-wave1-2026-09-25.json` (5)
 
 - L170: `sos` → `eres`
 - L170: `medí` → `mide`
 - L170: `buscá` → `busca`
+- L170: `chico` → `pequeño`
+- L292: `chica` → `pequeña`
 
-### `content/senales.json` (3)
+### `content/senales.json` (5)
 
 - L47: `sos` → `eres`
 - L47: `medí` → `mide`
 - L47: `buscá` → `busca`
+- L37: `chica` → `pequeña`
+- L47: `chico` → `pequeño`
 
-### `faq/index.html` (19)
+### `faq/index.html` (30)
 
 - L79: `jugá` → `juega`
 - L146: `jugá` → `juega`
@@ -153,8 +168,19 @@ Número de línea en el archivo ya convertido. La misma línea puede listar más
 - L697: `Compará` → `Compara`
 - L724: `mirá` → `mira`
 - L724: `leé` → `lee`
+- L74: `plata` → `dinero`
+- L79: `acá` → `aquí`
+- L114: `plata` → `dinero`
+- L146: `acá` → `aquí`
+- L194: `chicos` → `pequeños`
+- L218: `acá` → `aquí`
+- L552: `plata` → `dinero`
+- L557: `acá` → `aquí`
+- L587: `plata` → `dinero`
+- L615: `acá` → `aquí`
+- L664: `chicos` → `pequeños`
 
-### `guias/antes-de-retirar-rollover-kyc/index.html` (12)
+### `guias/antes-de-retirar-rollover-kyc/index.html` (14)
 
 - L442: `Sumate` → `Súmate`
 - L455: `tenés` → `tienes`
@@ -168,8 +194,10 @@ Número de línea en el archivo ya convertido. La misma línea puede listar más
 - L485: `pará` → `para`
 - L485: `buscá` → `busca`
 - L491: `Sumate` → `Súmate`
+- L453: `acá` → `aquí`
+- L464: `acá` → `aquí`
 
-### `guias/cashback-rakeback-lossback/index.html` (7)
+### `guias/cashback-rakeback-lossback/index.html` (10)
 
 - L442: `Sumate` → `Súmate`
 - L466: `pedí` → `pide`
@@ -178,8 +206,11 @@ Número de línea en el archivo ya convertido. La misma línea puede listar más
 - L474: `Definí` → `Define`
 - L520: `jugá` → `juega`
 - L526: `Sumate` → `Súmate`
+- L461: `acá` → `aquí`
+- L481: `acá` → `aquí`
+- L520: `acá` → `aquí`
 
-### `guias/como-leer-una-promo-casino/index.html` (16)
+### `guias/como-leer-una-promo-casino/index.html` (17)
 
 - L104: `Leé` → `Lee`
 - L104: `anotá` → `anota`
@@ -197,13 +228,14 @@ Número de línea en el archivo ya convertido. La misma línea puede listar más
 - L536: `mirá` → `mira`
 - L551: `querés` → `quieres`
 - L557: `Sumate` → `Súmate`
+- L495: `acá` → `aquí`
 
 ### `guias/index.html` (2)
 
 - L461: `Sumate` → `Súmate`
 - L505: `Sumate` → `Súmate`
 
-### `guias/max-bet-contribucion-bono/index.html` (13)
+### `guias/max-bet-contribucion-bono/index.html` (15)
 
 - L442: `Sumate` → `Súmate`
 - L454: `pasás` → `pasas`
@@ -218,6 +250,8 @@ Número de línea en el archivo ya convertido. La misma línea puede listar más
 - L502: `pasás` → `pasas`
 - L511: `incumplís` → `incumples`
 - L523: `Sumate` → `Súmate`
+- L495: `acá` → `aquí`
+- L514: `acá` → `aquí`
 
 ### `guias/rtp-ventaja-casa-ruleta/index.html` (12)
 
@@ -234,7 +268,7 @@ Número de línea en el archivo ya convertido. La misma línea puede listar más
 - L481: `buscá` → `busca`
 - L487: `Sumate` → `Súmate`
 
-### `guias/rtp-volatilidad/index.html` (16)
+### `guias/rtp-volatilidad/index.html` (20)
 
 - L442: `Sumate` → `Súmate`
 - L454: `mirá` → `mira`
@@ -252,8 +286,12 @@ Número de línea en el archivo ya convertido. La misma línea puede listar más
 - L495: `querés` → `quieres`
 - L495: `pasá` → `pasa`
 - L501: `Sumate` → `Súmate`
+- L462: `acá` → `aquí`
+- L467: `chicos` → `pequeños`
+- L471: `chicos` → `pequeños`
+- L495: `acá` → `aquí`
 
-### `guias/usdt-vs-btc-bankroll/index.html` (11)
+### `guias/usdt-vs-btc-bankroll/index.html` (14)
 
 - L441: `Sumate` → `Súmate`
 - L453: `perdés` → `pierdes`
@@ -266,6 +304,9 @@ Número de línea en el archivo ya convertido. La misma línea puede listar más
 - L516: `podés` → `puedes`
 - L528: `jugá` → `juega`
 - L534: `Sumate` → `Súmate`
+- L460: `acá` → `aquí`
+- L476: `acá` → `aquí`
+- L528: `acá` → `aquí`
 
 ### `index.html` (5)
 
@@ -280,7 +321,7 @@ Número de línea en el archivo ya convertido. La misma línea puede listar más
 - L11: `busque` → `busca`
 - L11: `su` → `tu`
 
-### `llms-full.txt` (66)
+### `llms-full.txt` (81)
 
 - L49: `mirá` → `mira`
 - L57: `llevás` → `llevas`
@@ -348,45 +389,70 @@ Número de línea en el archivo ya convertido. La misma línea puede listar más
 - L462: `cancelás` → `cancelas`
 - L462: `pará` → `para`
 - L462: `buscá` → `busca`
+- L59: `acá` → `aquí`
+- L65: `chicos` → `pequeños`
+- L69: `chicos` → `pequeños`
+- L95: `acá` → `aquí`
+- L134: `acá` → `aquí`
+- L154: `acá` → `aquí`
+- L181: `acá` → `aquí`
+- L205: `acá` → `aquí`
+- L224: `acá` → `aquí`
+- L234: `acá` → `aquí`
+- L320: `acá` → `aquí`
+- L338: `acá` → `aquí`
+- L366: `acá` → `aquí`
+- L380: `acá` → `aquí`
+- L392: `acá` → `aquí`
 
-### `mesa/cloudbet/index.html` (2)
+### `mesa/cloudbet/index.html` (4)
 
 - L320: `Deslizá` → `Desliza`
 - L407: `Sumate` → `Súmate`
+- L263: `la` → `el`
+- L263: `plata` → `dinero`
 
 ### `mesa/index.html` (2)
 
 - L279: `Deslizá` → `Desliza`
 - L377: `Sumate` → `Súmate`
 
-### `mesa/rainbet/index.html` (4)
+### `mesa/rainbet/index.html` (6)
 
 - L253: `revisá` → `revisa`
 - L267: `Necesitás` → `Necesitas`
 - L321: `Deslizá` → `Desliza`
 - L408: `Sumate` → `Súmate`
+- L264: `la` → `el`
+- L264: `plata` → `dinero`
 
-### `mesa/roobet/index.html` (5)
+### `mesa/roobet/index.html` (7)
 
 - L266: `Transferís` → `Transfieres`
 - L266: `llegás` → `llegas`
 - L266: `pagás` → `pagas`
 - L320: `Deslizá` → `Desliza`
 - L407: `Sumate` → `Súmate`
+- L263: `la` → `el`
+- L263: `plata` → `dinero`
 
-### `mesa/shuffle/index.html` (4)
+### `mesa/shuffle/index.html` (6)
 
 - L266: `depositás` → `depositas`
 - L266: `retirás` → `retiras`
 - L320: `Deslizá` → `Desliza`
 - L407: `Sumate` → `Súmate`
+- L263: `la` → `el`
+- L263: `plata` → `dinero`
 
-### `mesa/stake/index.html` (2)
+### `mesa/stake/index.html` (4)
 
 - L320: `Deslizá` → `Desliza`
 - L407: `Sumate` → `Súmate`
+- L263: `la` → `el`
+- L263: `plata` → `dinero`
 
-### `scripts/render-mesa-fichas.py` (9)
+### `scripts/render-mesa-fichas.py` (19)
 
 - L125: `Deslizá` → `Desliza`
 - L273: `Sumate` → `Súmate`
@@ -397,21 +463,46 @@ Número de línea en el archivo ya convertido. La misma línea puede listar más
 - L876: `llegás` → `llegas`
 - L876: `pagás` → `pagas`
 - L1045: `revisá` → `revisa`
+- L528: `la` → `el`
+- L528: `plata` → `dinero`
+- L639: `la` → `el`
+- L639: `plata` → `dinero`
+- L734: `la` → `el`
+- L734: `plata` → `dinero`
+- L804: `la` → `el`
+- L804: `plata` → `dinero`
+- L873: `la` → `el`
+- L873: `plata` → `dinero`
 
-### `senales/index.html` (4)
+### `senales/index.html` (6)
 
 - L477: `Sumate` → `Súmate`
 - L538: `sos` → `eres`
 - L539: `medí` → `mide`
 - L540: `buscá` → `busca`
+- L525: `chica` → `pequeña`
+- L536: `chico` → `pequeño`
 
-### `sobre/index.html` (5)
+### `sobre/index.html` (13)
 
 - L364: `Sumate` → `Súmate`
 - L371: `vueltas` → `rodeos`
 - L384: `jugá` → `juega`
 - L406: `trucho` → `falso`
 - L424: `buscá` → `busca`
+- L382: `plata` → `dinero`
+- L382: `tuya` → `tuyo`
+- L384: `acá` → `aquí`
+- L393: `acá` → `aquí`
+- L403: `acá` → `aquí`
+- L424: `ser` → `volverse`
+- L424: `una` → `un`
+- L424: `goma` → `problema`
+
+### `scripts/render_llms_full.py` (1)
+
+- L325: `chicos` → `pequeños`
+
 
 ## Grep: no queda voseo
 
@@ -448,15 +539,17 @@ Las 224 coincidencias son solo estas formas, ninguna es voseo:
 
 ## Qué se dejó sin cambiar
 
-- **`goma`** en `sobre/index.html` («El juego puede ser una goma»). Es regional, pero el sentido no está cerrado: puede ser «lata / embole» o algo que se pega y se va de las manos. La frase siguiente es de juego responsable. No la reescribí para no cambiar el aviso.
-- **`plata`** (dinero) en títulos «Cómo entra y sale la plata», en el FAQ y en Sobre. Se entiende en casi toda Latinoamérica, no es solo argentino, y el ancla es `id="plata"`. Las claves `plata` / `plata_title` del render tampoco se tocan.
-- **`acá`**. Es latinoamericano neutro, no peninsular. El pedido era tú de Latinoamérica, no español de España.
-- **`chequear` / `chequeo` / `rechequeo`**. No es el vocativo *che*. Es el verbo de revisar, habitual en la región, y es el término editorial del sitio para una segunda lectura.
-- **`chicos`** («montos más chicos»). En gran parte de Latinoamérica significa pequeños. No lo cambié a «pequeños».
+Segundo pase, mismo día: LatAm neutro, México incluido. `goma`, `plata` visible, `acá` y `chico`/`chica` de tamaño ya están en la lista de arriba.
+
+- **`chequear` / `chequeo` / `rechequeo`**. No es el vocativo *che*. Es el verbo de revisar y el término editorial del sitio para una segunda lectura. Se queda.
+- **`sin rodeos`**. Se queda, en el hero y en Sobre.
+- **`id="plata"`** y las claves `plata` / `plata_title` del render. No son copia. El título visible quedó «Cómo entra y sale el dinero». `la` → `el` es la concordancia.
+- **`tuya` → `tuyo`** en Sobre («dinero tuyo»): concordancia con *dinero*, no un cambio de sentido.
+- **Sobre, juego responsable:** «El juego puede ser una goma» quedó «El juego puede volverse un problema».
+- **`el chico` → `el pequeño`** y **`más chica` → `más pequeña`**: tamaño, en las señales del código chico y de la apuesta más chica. No había otros `chico`/`chica`.
 - **`su` / `sus` que no hablan al lector.** «Su página», «sus términos», «su equipo de KYC», «su equivalente», «su ficha», «su gate», «esta guía es su compañera» y «lo suyo» se refieren al operador, a la promo o a la otra guía. No son el posesivo de usted.
 - **`estás` / `estés`**: iguales en tú y en vos.
 - **`paramá`** sí se cambió: no es un verbo estándar; en la frase («Si no estás en control, paramá») es el imperativo de *parar*. Quedó `para`. El imperativo de tú de *parar* coincide con la preposición; la oración sigue cerrada con punto.
-- **`sin vueltas` → `sin rodeos`** en el hero y en Sobre. Es el modismo rioplatense «sin rodeos». El hero también se puede leer como juego de palabras con las vueltas de la ruleta. Si se quiere conservar ese doble sentido, el título se puede revertir sin tocar el resto.
 - **`cajero trucho` → `cajero falso`**, **`saltea` → `se salta`**, **`chata` → `plana`**: regionalismos de una sola lectura. El sentido no cambia.
 - **`README.md`**: no es copia pública. Las dos apariciones son la etiqueta del CTA que el README documenta (`Sumate al canal` → `Súmate al canal`), para que el doc no cite el rótulo viejo.
 

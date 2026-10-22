@@ -56,17 +56,17 @@ Lo que el RTP **no** es:
 
 El generador de números aleatorios (RNG) no “debe” un pago porque llevas malas rachas. Una tirada no obliga a la siguiente. Dentro de un bonus, varias tiradas pueden estar ligadas entre sí; eso tampoco convierte al RTP en una deuda. El RTP se observa como promedio.
 
-Si necesitas el RTP publicado de un título o casino concreto, crúzalo con la ficha del juego o el texto del operador. No inventamos porcentajes de operador acá.
+Si necesitas el RTP publicado de un título o casino concreto, crúzalo con la ficha del juego o el texto del operador. No inventamos porcentajes de operador aquí.
 
 ## Qué es la volatilidad (varianza) de un slot
 
 La **volatilidad** (también llamada varianza) describe **cómo** se reparte ese retorno teórico:
 
-- **Volatilidad baja:** premios más frecuentes y montos más chicos. La curva de bankroll suele ser más plana.
+- **Volatilidad baja:** premios más frecuentes y montos más pequeños. La curva de bankroll suele ser más plana.
 - **Volatilidad media:** mezcla.
 - **Volatilidad alta:** premios menos frecuentes y montos que pueden ser mayores. Rachas en seco más largas son parte del diseño, no prueba de que el juego esté trabado.
 
-Mismo RTP, distinta volatilidad = distinta experiencia de sesión. Dos juegos con el mismo RTP pueden sentirse opuestos: uno paga seguido en montos chicos; el otro deja un rato en seco y de golpe suelta un hit.
+Mismo RTP, distinta volatilidad = distinta experiencia de sesión. Dos juegos con el mismo RTP pueden sentirse opuestos: uno paga seguido en montos pequeños; el otro deja un rato en seco y de golpe suelta un hit.
 
 ## Por qué el mito “está por pagar” no cierra
 
@@ -92,7 +92,7 @@ Un slot con buen RTP no compensa un [wagering](https://www.planetaruleta.com/faq
 
 ## Dónde seguir
 
-En Planeta Ruleta trabajamos lectura de mecánicas y T&C, no puertas de «juega acá». Si quieres revisar dudas de RTP o volatilidad, pasa por la mesa en [www.planetaruleta.com](https://www.planetaruleta.com/) o [TG @planetaruleta](https://t.me/planetaruleta). +18.
+En Planeta Ruleta trabajamos lectura de mecánicas y T&C, no puertas de «juega aquí». Si quieres revisar dudas de RTP o volatilidad, pasa por la mesa en [www.planetaruleta.com](https://www.planetaruleta.com/) o [TG @planetaruleta](https://t.me/planetaruleta). +18.
 
 Versión corta en el [FAQ: qué es el RTP y la volatilidad](https://www.planetaruleta.com/faq/#rtp-volatilidad).
 
@@ -131,7 +131,7 @@ La cuenta, si el T&C dice un porcentaje (ejemplo, no una cifra de sala):
 | 10% | 100 | 10 |
 | 0% (excluido) | 100 | 0 |
 
-Por eso “casi termino el rollover” puede ser falso si estás en juegos de contribución baja o nula. El porcentaje real no lo inventamos acá.
+Por eso “casi termino el rollover” puede ser falso si estás en juegos de contribución baja o nula. El porcentaje real no lo inventamos aquí.
 
 ## Cómo se cruzan max bet y contribución
 
@@ -151,7 +151,7 @@ Según el T&C, puede pasar que el wagering no avance como esperabas **y** que ad
 4. **Qué se anula** si incumples (bono, ganancias, ambas) — según el T&C, no “siempre”.
 5. **Timezone** de vencimiento del WR. El método de lectura está en [cómo leer una promo](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/).
 
-No reabrimos acá el ABC de Declarado, [wagering](https://www.planetaruleta.com/faq/#wagering) y D+B del FAQ; esto es la capa max bet y contribución encima de eso.
+No reabrimos aquí el ABC de Declarado, [wagering](https://www.planetaruleta.com/faq/#wagering) y D+B del FAQ; esto es la capa max bet y contribución encima de eso.
 
 ## Dónde seguir
 
@@ -178,7 +178,7 @@ Preguntas que el T&C tiene que responder:
 - ¿Hay tope máximo de devolución?
 - ¿Hay juegos excluidos del cálculo?
 
-Sin esas respuestas, el % solo es marketing. El porcentaje concreto de una sala sale del T&C: acá no lo inventamos.
+Sin esas respuestas, el % solo es marketing. El porcentaje concreto de una sala sale del T&C: aquí no lo inventamos.
 
 ## Rakeback: origen y uso (a veces laxo) en casino
 
@@ -202,7 +202,7 @@ Igual que con cashback:
 
 Definición, no % de operador:
 
-*Comparación de mecánicas. Los porcentajes de cada sala están en el T&C; acá no inventamos cifras.*
+*Comparación de mecánicas. Los porcentajes de cada sala están en el T&C; aquí no inventamos cifras.*
 
 | Mecánica | Base de cálculo | Confusión frecuente |
 | --- | --- | --- |
@@ -221,7 +221,7 @@ Definición, no % de operador:
 
 ## Dónde seguir
 
-Para revisar definiciones y T&C (sin «juega acá» ni links de referido): [www.planetaruleta.com](https://www.planetaruleta.com/) · [TG @planetaruleta](https://t.me/planetaruleta). +18.
+Para revisar definiciones y T&C (sin «juega aquí» ni links de referido): [www.planetaruleta.com](https://www.planetaruleta.com/) · [TG @planetaruleta](https://t.me/planetaruleta). +18.
 
 Versión corta en el [FAQ: cashback, rakeback y lossback](https://www.planetaruleta.com/faq/#cashback-rakeback-lossback).
 
@@ -231,7 +231,7 @@ Guía · +18 · alfabetización
 
 # Cómo leer una promo de casino: opt-in, ventana, juegos excluidos y timezone
 
-Leer una promo de casino es leer sus términos y condiciones, no el banner. Cuatro piezas alcanzan para empezar: **opt-in** (¿hay que activarla?), **ventana** (desde/hasta), **juegos excluidos** y **timezone**. El detalle de una promo viva se verifica en el T&C; acá está el método.
+Leer una promo de casino es leer sus términos y condiciones, no el banner. Cuatro piezas alcanzan para empezar: **opt-in** (¿hay que activarla?), **ventana** (desde/hasta), **juegos excluidos** y **timezone**. El detalle de una promo viva se verifica en el T&C; aquí está el método.
 
 ## 1) Opt-in: ¿la promo se activa sola?
 
@@ -317,7 +317,7 @@ Stablecoin ≠ riesgo cero:
 - Riesgo de red y de elegir mal la red (TRC20 vs ERC20 vs otras): fees y compatibilidad con el cajero.
 - Riesgo del propio casino (custodia, límites, T&C de retiro).
 
-El FAQ ya cubre el [cajero](https://www.planetaruleta.com/faq/#cajero) y el tema Sin KYC; acá no los reabrimos. Si una sala publica umbrales o fees, están en el T&C de ese cajero.
+El FAQ ya cubre el [cajero](https://www.planetaruleta.com/faq/#cajero) y el tema Sin KYC; aquí no los reabrimos. Si una sala publica umbrales o fees, están en el T&C de ese cajero.
 
 ## BTC en un bankroll de juego
 
@@ -335,7 +335,7 @@ BTC también implica:
 
 Operativa, no una invitación a fondear:
 
-*Marco para leer el cajero. Ninguna fila dice “deposita acá”.*
+*Marco para leer el cajero. Ninguna fila dice “deposita aquí”.*
 
 | Criterio | USDT / stablecoin | BTC |
 | --- | --- | --- |
@@ -363,7 +363,7 @@ Cualquier activo:
 
 ## Dónde seguir
 
-Dudas de lectura de cajero / activos (sin «juega acá», sin links de referido): [www.planetaruleta.com](https://www.planetaruleta.com/) · [TG @planetaruleta](https://t.me/planetaruleta). +18. Alfabetización operativa, no asesoría financiera.
+Dudas de lectura de cajero / activos (sin «juega aquí», sin links de referido): [www.planetaruleta.com](https://www.planetaruleta.com/) · [TG @planetaruleta](https://t.me/planetaruleta). +18. Alfabetización operativa, no asesoría financiera.
 
 Versión corta en el [FAQ: USDT o BTC para el bankroll](https://www.planetaruleta.com/faq/#usdt-btc).
 
@@ -377,7 +377,7 @@ La home de un casino cripto habla de retiros en minutos. Antes de que corra ese 
 
 ## 1. Rollover del depósito: apostarlo antes de retirarlo
 
-Algunas salas piden que apuestes el monto depositado antes de retirar. No es lo mismo que el rollover de un bono (eso está en [/guias/max-bet-contribucion-bono/](https://www.planetaruleta.com/guias/max-bet-contribucion-bono/)): acá hablamos del depósito propio.
+Algunas salas piden que apuestes el monto depositado antes de retirar. No es lo mismo que el rollover de un bono (eso está en [/guias/max-bet-contribucion-bono/](https://www.planetaruleta.com/guias/max-bet-contribucion-bono/)): aquí hablamos del depósito propio.
 
 - **Rainbet (términos §8.2, revisado 14 oct 2026):** el retiro va sin comisión si apostaste el depósito al menos una vez; si tomaste una promoción, tienes que apostar el doble. Su home repite lo de la comisión pero no menciona la condición de la promoción (home revisada 14 oct 2026). Lee la cláusula, no solo la home.
 - **Rainbet (home, revisado 14 oct 2026):** retiro mínimo de 15 USD o su equivalente.
@@ -389,7 +389,7 @@ Cómo leerlo: si una promo cambia la condición de retiro, eso es parte del cost
 ## 2. Verificación (KYC): qué piden y qué pasa si no la pasas
 
 - **Shuffle (términos §5.2 y §5.5, revisado 8 oct 2026):** puede pedir documento oficial de identidad, y en cualquier caso antes del primer retiro; el medio de pago tiene que estar a tu nombre.
-- **Rainbet (términos §20.1, revisado 14 oct 2026):** la misma cláusula escribe dos números. Uno: su equipo de KYC tiene 24 horas («24hrs») para revisar tus documentos y avisarte por mail. Dos: la verificación puede tardar hasta 7 días hábiles en analizarse. Rainbet no explica cómo se combinan; acá los dejamos tal cual, sin decir cuál aplica. La cláusula también dice que puede restringir pagos y retiros si la verificación no se completa en 72 horas, que en estado «Temporarily Approved» no hay retiros, y que no pasar el control de identidad «will result in confiscation of funds». Palabras de Rainbet.
+- **Rainbet (términos §20.1, revisado 14 oct 2026):** la misma cláusula escribe dos números. Uno: su equipo de KYC tiene 24 horas («24hrs») para revisar tus documentos y avisarte por mail. Dos: la verificación puede tardar hasta 7 días hábiles en analizarse. Rainbet no explica cómo se combinan; aquí los dejamos tal cual, sin decir cuál aplica. La cláusula también dice que puede restringir pagos y retiros si la verificación no se completa en 72 horas, que en estado «Temporarily Approved» no hay retiros, y que no pasar el control de identidad «will result in confiscation of funds». Palabras de Rainbet.
 - **Rainbet (términos §8.4, revisado 14 oct 2026):** los retiros van al medio original; a otro medio solo a su criterio y con controles de seguridad adicionales.
 - **Cloudbet (ayuda, revisado 8 oct 2026):** sin verificar o en nivel 1, límite de 2.200 USD por día; en nivel 2 (identidad, domicilio y rostro), sin límite.
 
