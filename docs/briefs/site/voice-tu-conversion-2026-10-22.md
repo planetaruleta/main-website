@@ -551,7 +551,8 @@ Segundo pase, mismo día: LatAm neutro, México incluido. `goma`, `plata` visibl
 - **`el chico` → `el pequeño`** y **`más chica` → `más pequeña`**: tamaño, en las señales del código chico y de la apuesta más chica. No había otros `chico`/`chica`.
 - **`su` / `sus` que no hablan al lector.** «Su página», «sus términos», «su equipo de KYC», «su equivalente», «su ficha», «su gate», «esta guía es su compañera» y «lo suyo» se refieren al operador, a la promo o a la otra guía. No son el posesivo de usted.
 - **`estás` / `estés`**: iguales en tú y en vos.
-- **`paramá`** sí se cambió: no es un verbo estándar; en la frase («Si no estás en control, paramá») es el imperativo de *parar*. Quedó `para`. El imperativo de tú de *parar* coincide con la preposición; la oración sigue cerrada con punto.
+- **`paramá`** sí se cambió: no es un verbo estándar; en la frase («Si no estás en control, paramá») es el imperativo de *parar*. El pase de voz lo dejó `para`. El imperativo de tú de *parar* coincide con la preposición.
+- **Puerta Ed&Comp, mismo día.** Ese `para` / `Para` de imperativo pasó a `detente` / `Detente`: FAQ (JSON-LD y visible), `guias/antes-de-retirar-rollover-kyc/`, `guias/rtp-ventaja-casa-ruleta/`, `guias/rtp-volatilidad/` y el `llms-full.txt` que sale de esas guías. La preposición `para` no se tocó. En la señal del código, «el pequeño paga…» quedó «el código pequeño paga…»; «Posts OFICIALES de Telegram» quedó «Texto de Stake y Shuffle (posts de Telegram)»; el «Help OFICIAL (21 oct 2024…)» de Shuffle rakeback quedó «Texto de Shuffle (ayuda, 21 oct 2024…)». Rainbet y Stake siguen con «Help OFICIAL».
 - **`cajero trucho` → `cajero falso`**, **`saltea` → `se salta`**, **`chata` → `plana`**: regionalismos de una sola lectura. El sentido no cambia.
 - **`README.md`**: no es copia pública. Las dos apariciones son la etiqueta del CTA que el README documenta (`Sumate al canal` → `Súmate al canal`), para que el doc no cite el rótulo viejo.
 

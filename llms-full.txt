@@ -84,7 +84,7 @@ En mesas físicas circula la idea de que “esta máquina está caliente / fría
 - Elige volatilidad según tolerancia a rachas en seco, no según “ahora toca”.
 - Separa bankroll de sesión: volatilidad alta exige aceptar swings mayores.
 - Si un casino publica RTP distinto al del proveedor, prioriza la fuente verificable y lee el T&C o la ficha del juego.
-- +18. Si no estás en control, para. Esto no es consejo de apuesta.
+- +18. Si no estás en control, detente. Esto no es consejo de apuesta.
 
 ## RTP “alto” no arregla un mal bono ni un mal WR
 
@@ -412,7 +412,7 @@ La home es promesa, no plazo escrito. Para la velocidad de la red y la elección
 
 Recuerda que apostar el depósito es exponerlo a la ventaja de la casa: ver [/guias/rtp-volatilidad/](https://www.planetaruleta.com/guias/rtp-volatilidad/). Fichas de cada sala: [Rainbet](https://www.planetaruleta.com/mesa/rainbet/), [Shuffle](https://www.planetaruleta.com/mesa/shuffle/), [Stake](https://www.planetaruleta.com/mesa/stake/), [Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/), [Roobet](https://www.planetaruleta.com/mesa/roobet/). Dudas generales: [/faq/](https://www.planetaruleta.com/faq/).
 
-Los términos cambian. Revisa la versión vigente en la web oficial de cada sala antes de decidir. +18. Si estás persiguiendo pérdidas, o cancelas un retiro para seguir jugando, para y busca ayuda.
+Los términos cambian. Revisa la versión vigente en la web oficial de cada sala antes de decidir. +18. Si estás persiguiendo pérdidas, o cancelas un retiro para seguir jugando, detente y busca ayuda.
 
 URL: https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/
 
@@ -459,6 +459,6 @@ La ventaja de la casa es el costo promedio; la volatilidad es cómo se reparte. 
 
 La guía paso a paso para cualquier promo está en [/guias/como-leer-una-promo-casino/](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/). Dudas generales: [/faq/](https://www.planetaruleta.com/faq/).
 
-Ningún número de esta guía predice tu sesión. +18. Si estás persiguiendo pérdidas, o cancelas un retiro para seguir jugando, para y busca ayuda.
+Ningún número de esta guía predice tu sesión. +18. Si estás persiguiendo pérdidas, o cancelas un retiro para seguir jugando, detente y busca ayuda.
 
 URL: https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/
