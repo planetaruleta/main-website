@@ -4,14 +4,14 @@ Copia pública de Planeta Ruleta, de rioplatense (voseo) a español latinoameric
 No se tocaron slugs, URLs, enlaces de Telegram, cifras, fechas ni hechos de operadores.
 Los anclas (`id="plata"`) y las claves internas del render de fichas (`plata`, `plata_title`) se quedan igual. La copia visible «plata» pasó a «dinero».
 
-**304 cadenas** en **26 archivos**.
+**305 cadenas** en **26 archivos**.
 
 ## Conteo por archivo
 
 | Archivo | Cadenas |
 | --- | ---: |
 | `llms-full.txt` | 81 |
-| `faq/index.html` | 30 |
+| `faq/index.html` | 31 |
 | `guias/rtp-volatilidad/index.html` | 20 |
 | `scripts/render-mesa-fichas.py` | 19 |
 | `guias/como-leer-una-promo-casino/index.html` | 17 |
@@ -36,7 +36,7 @@ Los anclas (`id="plata"`) y las claves internas del render de fichas (`plata`, `
 | `llms.txt` | 2 |
 | `mesa/index.html` | 2 |
 | `scripts/render_llms_full.py` | 1 |
-| **Total** | **304** |
+| **Total** | **305** |
 
 ## Reemplazos únicos
 
@@ -107,6 +107,7 @@ Los anclas (`id="plata"`) y las claves internas del render de fichas (`plata`, `
 | `anotá` | `anota` | 1 |
 | `trucho` | `falso` | 1 |
 | `acá` | `aquí` | 34 |
+| `Acá` | `Aquí` | 1 |
 | `plata` | `dinero` | 15 |
 | `la` | `el` | 10 |
 | `chicos` | `pequeños` | 7 |
@@ -147,7 +148,7 @@ Número de línea en el archivo ya convertido. La misma línea puede listar más
 - L37: `chica` → `pequeña`
 - L47: `chico` → `pequeño`
 
-### `faq/index.html` (30)
+### `faq/index.html` (31)
 
 - L79: `jugá` → `juega`
 - L146: `jugá` → `juega`
@@ -179,6 +180,7 @@ Número de línea en el archivo ya convertido. La misma línea puede listar más
 - L587: `plata` → `dinero`
 - L615: `acá` → `aquí`
 - L664: `chicos` → `pequeños`
+- L711: `Acá` → `Aquí`
 
 ### `guias/antes-de-retirar-rollover-kyc/index.html` (14)
 
