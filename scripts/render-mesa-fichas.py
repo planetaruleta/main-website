@@ -657,7 +657,7 @@ FICHAS = {
                 "date": "2026-10-22",
                 "when": "22 OCT 2026 · Métodos",
                 "title": "MXN por SPEI: 90 a 20.000 MXN, Level 2 para retirar",
-                "line": "Ayuda oficial, artículo 17684669, captura 22 OCT 2026. Sin comisión de Shuffle. «Within a few minutes» no es un SLA. No es el chip de rakeback.",
+                "line": "Ayuda oficial, artículo 17684669, captura 22 OCT 2026. Sin comisión de Shuffle. «Within a few minutes» no es un plazo garantizado. No es el chip de rakeback.",
             },
             {
                 "id": "bono-shuffle-level-up-approx-2026-10-02",
