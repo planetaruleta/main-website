@@ -2,7 +2,7 @@
 
 > Copia en texto de las guías públicas de alfabetización. El wording es el de cada página. Este archivo no agrega cifras, licencias ni rankings. +18. No es consejo de apuesta ni un enlace de afiliado.
 
-Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla ocho veces.
+Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla nueve veces.
 
 Alfabetización · +18
 
@@ -30,7 +30,10 @@ Estas guías explican mecánicas de casino: qué es el RTP, el max bet de un bon
   Qué dicen las páginas oficiales de Rainbet, Shuffle, Cloudbet, Stake y Roobet sobre apostar el depósito y verificar identidad antes de retirar.
 - **[RTP y ventaja de la casa en ruleta](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/)**
 
-  Ruleta europea vs americana: de dónde sale la ventaja de la casa, qué RTP publican Shuffle y Rainbet, y cómo leer esos números en una promo.
+  Europea, americana y francesa: la cuenta de la ventaja de la casa y del RTP, qué publican Shuffle y Rainbet, y cómo leer esos números en una promo.
+- **[Cloudbet: registro, países restringidos y KYC](https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/)**
+
+  Registro, países restringidos, KYC por niveles, licencia y apuesta mínima, según la ayuda y los términos de Cloudbet.
 
 Versión corta en el [FAQ de alfabetización](https://www.planetaruleta.com/faq/#alfabetizacion).
 
@@ -418,38 +421,99 @@ URL: https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/
 
 Guía · +18 · alfabetización
 
-# RTP, ventaja de la casa y volatilidad en ruleta: cómo leer una promo con esos números
+# RTP y ventaja de la casa en ruleta: europea, americana y francesa, con la cuenta a la vista
 
-Las definiciones generales de RTP y volatilidad ya están en [RTP y volatilidad en slots](https://www.planetaruleta.com/guias/rtp-volatilidad/). Esta guía es su compañera para la ruleta: de dónde sale la ventaja de la casa en la rueda, qué publican algunas salas y cómo leer esos números cuando aparecen dentro de una promo. Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala.
+El RTP (return to player) de una ruleta no es un número que alguien elige: sale de contar casillas. Esta guía muestra la cuenta para la ruleta europea, la americana y las reglas francesas (la partage y en prison), qué cambia según la apuesta, qué publican algunas salas y cómo leer esos números dentro de una promo. Lo básico de RTP y volatilidad está en la guía general [RTP y volatilidad](https://www.planetaruleta.com/guias/rtp-volatilidad/). Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala.
 
-## 1. RTP y ventaja de la casa: dos caras del mismo número
+## 1. RTP y ventaja de la casa: la misma cuenta, vista de dos lados
 
-El RTP es el porcentaje teórico que el juego devuelve en el largo plazo; lo que no vuelve es la ventaja de la casa. Si quieres la explicación completa de por qué ese promedio no es tu resultado de esta noche, está en [/guias/rtp-volatilidad/](https://www.planetaruleta.com/guias/rtp-volatilidad/). En ruleta, la ventaja de la casa sale de un lugar concreto: el cero.
+RTP = 100 % − ventaja de la casa. Si una apuesta tiene una ventaja de 2,70 %, su RTP es 97,30 %. Los dos son promedios teóricos sobre muchísimas apuestas. En ruleta la ventaja sale de un lugar concreto: el cero (o los ceros). Si no existieran, cada apuesta pagaría exactamente lo justo y el RTP sería 100 %.
 
-## 2. De dónde sale la ventaja en la rueda (cálculo EDITORIAL)
+## 2. La cuenta (cálculo EDITORIAL, matemática de manual)
 
-Esto es matemática de manual, no una cifra de ningún operador.
+Esto no es una cifra de ningún operador. Es la cuenta con las reglas estándar de cada rueda.
 
-- **Ruleta de un solo cero (europea):** 37 casillas, 1 cero. Ventaja de la casa = 1 ÷ 37 = 0,0270… ≈ **2,70 %**.
-- **Ruleta de doble cero (americana):** 38 casillas, 2 ceros. Ventaja de la casa = 2 ÷ 38 = 0,0526… ≈ **5,26 %**.
+**Ruleta europea (un cero, 37 casillas).** Un pleno (un solo número) paga 35 a 1. Si apuestas 1:
 
-Cómo leerlo: el segundo cero casi duplica la ventaja. Antes de mirar cualquier promo, fíjate qué rueda es.
+- Ganas 35 con probabilidad 1/37, pierdes 1 con probabilidad 36/37.
+- Resultado esperado = 35 × 1/37 − 1 × 36/37 = −1/37 = −0,0270… → ventaja **2,70 %**, RTP 36/37 = 97,297… ≈ **97,30 %**.
 
-## 3. Qué publican las salas (revisado 14 oct 2026)
+Con rojo (paga 1 a 1, 18 casillas rojas de 37): 1 × 18/37 − 1 × 19/37 = −1/37. La misma ventaja. En la ruleta de un cero, todas las apuestas estándar tienen la misma ventaja de 1/37: cambiar de apuesta cambia cuánto se mueve tu saldo, no el costo de diseño.
 
-- **Shuffle (Originals, ruleta europea):** su página dice «2.70% fixed house edge» y que la estructura europea da un RTP de 97,30 %. Coincide con el cálculo de un solo cero. Ficha: [/mesa/shuffle/](https://www.planetaruleta.com/mesa/shuffle/).
+**Ruleta americana (dos ceros, 38 casillas).** El pleno sigue pagando 35 a 1, pero ahora hay 38 casillas:
+
+- Resultado esperado = 35 × 1/38 − 1 × 37/38 = −2/38 = −0,0526… → ventaja **5,26 %**, RTP 36/38 = 94,736… ≈ **94,74 %**.
+- La excepción: la apuesta a cinco números (0, 00, 1, 2 y 3) paga 6 a 1. Resultado esperado = 6 × 5/38 − 1 × 33/38 = −3/38 → ventaja **7,89 %**, RTP ≈ **92,11 %**. Es la apuesta con más ventaja de la rueda americana estándar.
+
+| Rueda y regla | Casillas | Ventaja de la casa | RTP |
+| --- | --- | --- | --- |
+| Europea, cualquier apuesta estándar | 37 | 1/37 ≈ 2,70 % | 36/37 ≈ 97,30 % |
+| Francesa con la partage, solo apuestas simples | 37 | 1/74 ≈ 1,35 % | 73/74 ≈ 98,65 % |
+| Francesa con en prison (un nivel), solo apuestas simples | 37 | 19/1.369 ≈ 1,39 % | ≈ 98,61 % |
+| Americana, casi todas las apuestas | 38 | 2/38 ≈ 5,26 % | 36/38 ≈ 94,74 % |
+| Americana, apuesta a cinco números | 38 | 3/38 ≈ 7,89 % | 35/38 ≈ 92,11 % |
+
+Cálculo EDITORIAL con reglas estándar. Redondeo a dos decimales. Una mesa concreta puede tener otras reglas: manda lo que diga la ficha del juego.
+
+## 3. Ruleta francesa: la partage y en prison
+
+La rueda francesa tiene un solo cero, igual que la europea. Lo que la distingue son dos reglas que **solo** tocan las apuestas simples (rojo/negro, par/impar, 1–18/19–36) cuando sale el cero:
+
+- **La partage:** sale cero y pierdes solo la mitad de tu apuesta simple. Cuenta con 1 apostado: 18/37 × (+1) + 18/37 × (−1) + 1/37 × (−½) = −1/74 = −0,0135… → ventaja **1,35 %**, RTP ≈ **98,65 %**. Es la mitad de 2,70 %, porque el cero ahora cuesta la mitad.
+- **En prison:** sale cero y tu apuesta queda «presa» para el giro siguiente. En la versión más simple (un solo nivel): si el giro siguiente gana, recuperas tu apuesta sin ganancia; si pierde, o vuelve a salir cero, la pierdes. Cuenta: en las 36 casillas sin cero, 18 ganan y 18 pierden, y se compensan; queda el cero: 1/37 × (18/37 × 0 + 19/37 × (−1)) = −19/1.369 ≈ −1,39 %, RTP ≈ 98,61 %. Hay variantes de la regla (por ejemplo, con varios niveles de prisión) que dan otro número. Por eso importa leer la regla exacta de la mesa.
+
+Fuera de las apuestas simples, la francesa vuelve a 2,70 %: un pleno o una docena no tienen la partage. Y que una mesa diga «francesa» en el nombre no garantiza la regla: búscala en las reglas del juego.
+
+## 4. Qué publican las salas (revisado 22 oct 2026)
+
+Esto sí es lo que publica cada sala en la página pública del juego, sin iniciar sesión. Las citas entre comillas van tal cual; el resto es nuestro resumen.
+
+- **Shuffle (Originals, ruleta europea):** su página dice «2.70% fixed house edge» y que la estructura europea da un RTP de 97,30 %. Coincide con el cálculo de un solo cero del punto 2. Ficha: [/mesa/shuffle/](https://www.planetaruleta.com/mesa/shuffle/).
 - **Rainbet (Originals «Roulette»):** su página dice «Max RTP 97.30 %». No dice si la rueda es europea, americana o francesa, así que no lo asumimos. Fíjate que dice «Max» y la página no explica a qué apuesta o variante se refiere. Ficha: [/mesa/rainbet/](https://www.planetaruleta.com/mesa/rainbet/).
 - **Cloudbet:** sus páginas muestran cifras distintas para el mismo juego, así que no citamos ninguna.
 - **Stake:** la página de ruleta bloqueó nuestra revisión; no pudimos leerla.
 - **Roobet:** sin iniciar sesión, no encontramos la cifra en la página del juego ni en su ayuda.
 
-Las citas entre comillas van tal cual las publica cada sala (con punto decimal). Las cifras pueden cambiar. Revisa la ficha del juego en la web oficial antes de decidir.
+Las citas entre comillas van tal cual las publica cada sala (con punto decimal). Las cifras pueden cambiar. Revisa la ficha del juego en la web de cada sala antes de decidir.
 
-## 4. Volatilidad en ruleta
+## 5. Por giro y a largo plazo: qué significa de verdad 97,30 %
 
-La ventaja de la casa es el costo promedio; la volatilidad es cómo se reparte. En la misma rueda, apostar a un número solo acierta poco y paga mucho cuando acierta; apostar a rojo/negro acierta más seguido y paga poco. La volatilidad cambia según el tipo de apuesta, pero el cero sigue ahí en todas: cambia la forma de la sesión, no el costo de diseño. Más sobre esto en [/guias/rtp-volatilidad/](https://www.planetaruleta.com/guias/rtp-volatilidad/).
+En un giro no recuperas el 97,30 % de nada: ganas o pierdes. El RTP es el promedio de muchísimos giros. Lo que sí cambia con el tiempo es cuánto pesa la ventaja frente a la suerte.
 
-## 5. Cómo leer esos números en una promo
+*Ejemplo hipotético (no es dato):* 1 unidad por giro a rojo, ruleta europea.
+
+| Giros | Pérdida esperada | Variación típica (±1 desviación) | Probabilidad de terminar arriba |
+| --- | --- | --- | --- |
+| 1 | 0,027 unidades | ± 1,0 | 48,6 % (18/37) |
+| 100 | 2,7 unidades | ± 10,0 | 35,5 % |
+| 1.000 | 27,0 unidades | ± 31,6 | 18,8 % |
+| 10.000 | 270,3 unidades | ± 100,0 | 0,33 % |
+
+Cálculo EDITORIAL con la distribución binomial exacta. Es pérdida esperada, no garantizada.
+
+Cómo leerlo: la pérdida esperada crece en línea recta con los giros (×10 giros, ×10 pérdida esperada). La variación crece más lento (×10 giros, ×3,16 variación). En pocos giros la suerte tapa la ventaja; en muchos, la ventaja tapa la suerte. Eso es «largo plazo»: no es una fecha, es la cantidad de apuestas.
+
+Con un pleno, la ventaja por giro es la misma (1/37), pero la variación típica por giro es de unas 5,84 unidades en lugar de 1,0. Misma ventaja, rachas mucho más largas en seco y saltos más grandes: eso es volatilidad, no un RTP distinto. Más en [/guias/rtp-volatilidad/](https://www.planetaruleta.com/guias/rtp-volatilidad/).
+
+## 6. La ventaja en dinero: total apostado × ventaja
+
+La forma más útil de leer la ventaja es en dinero: **pérdida esperada = total apostado × ventaja de la casa**. Lo que cuenta es todo lo que pasa por la mesa, no lo que depositaste.
+
+*Ejemplo hipotético (no es dato):* 200 apuestas de 1 USD = 200 USD apostados.
+
+- Europea: 200 × 1/37 ≈ **5,41 USD** de pérdida esperada.
+- Americana: 200 × 2/38 ≈ **10,53 USD**.
+- Francesa con la partage, solo en apuestas simples: 200 × 1/74 ≈ **2,70 USD**.
+
+Por eso el rollover de un bono importa tanto: cada vez que una promo pide apostar X veces, todo ese volumen pasa por la ventaja del juego. Cómo leer eso dentro de una promo está más abajo, en el punto 8, y en [/guias/max-bet-contribucion-bono/](https://www.planetaruleta.com/guias/max-bet-contribucion-bono/).
+
+## 7. Sistemas y rachas: lo que no cambia el RTP
+
+- **Martingala y parecidos:** subir la apuesta después de perder cambia el tamaño de las apuestas y la forma de las rachas, no la ventaja de cada una. Cada apuesta sigue costando 1/37 en promedio, y el total apostado crece. Ningún sistema de apuestas convierte −1/37 en positivo.
+- **«Hace diez giros que no sale rojo»:** la rueda no tiene memoria. La probabilidad del próximo rojo sigue siendo 18/37 en la europea.
+- **Ruleta en vivo o digital:** si las reglas son las mismas (un cero o dos, la partage o no), la cuenta es la misma. Lo que cambia la cuenta es la regla, no la pantalla.
+
+## 8. Cómo leer esos números en una promo
 
 1. **Rollover = apuestas expuestas a la ventaja.** Cada vez que un bono pide apostar X veces, todo ese volumen pasa por la ventaja de la casa del juego que elijas. Por eso importa qué rueda es.
 2. **Contribución de la ruleta.** Una promo puede contar la ruleta distinto que los slots para el rollover, o excluirla: eso está en sus términos. Lee la tabla de contribución y el límite de apuesta: [/guias/max-bet-contribucion-bono/](https://www.planetaruleta.com/guias/max-bet-contribucion-bono/).
@@ -459,6 +523,159 @@ La ventaja de la casa es el costo promedio; la volatilidad es cómo se reparte. 
 
 La guía paso a paso para cualquier promo está en [/guias/como-leer-una-promo-casino/](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/). Dudas generales: [/faq/](https://www.planetaruleta.com/faq/).
 
-Ningún número de esta guía predice tu sesión. +18. Si estás persiguiendo pérdidas, o cancelas un retiro para seguir jugando, detente y busca ayuda.
+## 9. Qué mirar antes de jugar una ruleta
+
+1. **Cuántos ceros tiene la rueda.** Uno: 2,70 %. Dos: 5,26 %.
+2. **Si hay la partage o en prison, y en qué apuestas.** Solo cuenta en las simples.
+3. **Si la cifra publicada dice «max».** Un «Max RTP» no dice a qué apuesta o variante se refiere (el caso de Rainbet, en el punto 4).
+4. **Cuánto vas a apostar en total, no cuánto depositas.** La pérdida esperada sale de ahí.
+
+Ningún número de esta guía predice tu sesión. No garantizamos resultados. +18. Si estás persiguiendo pérdidas, o cancelas un retiro para seguir jugando, detente y busca ayuda.
+
+## Preguntas frecuentes
+
+### ¿Cuál es el RTP de la ruleta europea?
+
+Con reglas estándar, 36/37 ≈ 97,30 %. La ventaja de la casa es 1/37 ≈ 2,70 %, igual en todas las apuestas estándar. Es un promedio teórico de largo plazo, no lo que te devuelve una sesión.
+
+### ¿Cuál es el RTP de la ruleta americana?
+
+Con dos ceros, 36/38 ≈ 94,74 % en casi todas las apuestas (ventaja 5,26 %). La apuesta a cinco números (0, 00, 1, 2, 3) baja a ≈ 92,11 % (ventaja 7,89 %).
+
+### ¿La ruleta francesa tiene mejor RTP?
+
+Solo en las apuestas simples y solo si la mesa aplica la partage o en prison. Con la partage, el RTP de esas apuestas sube a ≈ 98,65 % (ventaja 1,35 %); con en prison de un nivel, a ≈ 98,61 % (ventaja 1,39 %). En el resto de apuestas sigue en 97,30 %.
+
+### ¿Un RTP de 97,30 % significa que recupero 97,30 de cada 100?
+
+No. Es el promedio teórico sobre muchísimas apuestas. En una sesión puedes quedar muy por encima o muy por debajo. Lo que sí se puede calcular es la pérdida esperada: total apostado × ventaja.
+
+### ¿Un sistema como la martingala mejora el RTP?
+
+No. Cambia el tamaño de las apuestas y la forma de las rachas, no la ventaja de cada apuesta.
 
 URL: https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/
+
+Guía · +18 · alfabetización
+
+# Cloudbet: registro, países restringidos, KYC, licencia y apuesta mínima, según sus propias páginas
+
+Antes de abrir una cuenta en una sala cripto conviene saber cinco cosas: cómo es el registro, desde qué países no se puede usar, cuándo te piden verificar tu identidad (KYC), qué licencia publica y cuánto es lo mínimo para depositar y apostar. Esta guía junta lo que dicen la ayuda y los términos de Cloudbet sobre esos cinco puntos, con la fecha en que lo revisamos. Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala. Lo que sigue es texto de Cloudbet (ayuda y términos), resumido y traducido por nosotros; lo nuestro va marcado EDITORIAL. Montos en dólares estadounidenses (USD). La ficha completa de la sala está en [/mesa/cloudbet/](https://www.planetaruleta.com/mesa/cloudbet/).
+
+## 1. Registro: qué pide Cloudbet (ayuda y términos, revisados 22 oct 2026)
+
+- **Cómo se abre la cuenta (ayuda):** con email y contraseña, o con una cuenta de Google o GitHub. Después llega un email de confirmación para activar la cuenta.
+- **Edad (términos §5.1):** tienes que tener más de 18 años, o la mayoría de edad que fije la ley que te aplica, la que sea mayor. La ayuda dice que la fecha de nacimiento del registro se confirma después, cuando verificas la cuenta con tu documento.
+- **La cuenta es personal (términos §7.1.1):** el registro lo haces tú. No se puede abrir una cuenta a nombre de otra persona, ni dejar que otro la abra por ti.
+- **Una sola cuenta (términos §7.1.12 y ayuda):** una por persona, IP, hogar o número de teléfono. Según la ayuda, tener más de una puede terminar en suspensión o cierre, fondos congelados o bloqueo permanente.
+- **Emails .edu (términos §7.1.13):** no se aceptan para registrarse.
+- **Antes del primer depósito (ayuda):** aparece una pantalla que pide tu nombre y domicilio. La ayuda dice que es por sus requisitos AML (prevención de lavado) y que **no** es la verificación de cuenta, que es otro paso.
+
+Cómo leerlo: registrarte no es verificarte. Son dos momentos distintos, y el segundo es el que decide tus límites (punto 3).
+
+## 2. Países restringidos (ayuda y términos §7.1.3, revisados 22 oct 2026)
+
+La ayuda «In which jurisdictions is Cloudbet not available?» y los términos (§7.1.3) publican la misma lista. Cloudbet no está disponible si te encuentras en:
+
+Alemania · Australia · Austria · Bélgica · China, Macao y Hong Kong · Corea del Norte · Cuba · Curazao · España · Estados Unidos y sus territorios · Francia · Irán · Japón · Lituania · Malta · Myanmar · Países Bajos · Reino Unido · Singapur · Siria · Turquía · y las regiones de Crimea, Donetsk y Luhansk en Ucrania.
+
+Lo que conviene leer al lado de la lista:
+
+- **No es solo la lista.** Los términos (§7.1.3) agregan cualquier otra jurisdicción donde ese servicio sea ilegal, y dicen que confirmar si el juego online es legal donde estás es responsabilidad tuya. La lista no responde esa pregunta por ti.
+- **Importa dónde estás, no solo dónde vives.** La cláusula habla de dónde te encuentras físicamente cada vez que usas el sitio, incluso para pedir un retiro.
+- **Apuestas anuladas.** La ayuda dice que Cloudbet puede anular, total o parcialmente, una apuesta que crea hecha desde una jurisdicción prohibida.
+- **América Latina (lectura EDITORIAL de la lista):** de los países de América Latina, el único que aparece por nombre es Cuba. Estados Unidos entra «con sus territorios»; Puerto Rico es territorio de EE. UU., así que, leída tal cual, la lista lo incluye. La ayuda de Cloudbet sobre Sudamérica (fechada el 11 jun 2026) dice que ningún país sudamericano está en la lista. Que no esté en la lista no dice que sea legal donde estás.
+- **Si cambias de país (ayuda):** Cloudbet pide escribir a soporte para actualizar el país de residencia, y revisar antes que el nuevo no esté en la lista.
+- **Si tu país suspende el juego (ayuda):** no puedes apostar ni cobrar recompensas pendientes; solo entrar a retirar el saldo. Los bonos y recompensas pendientes se pierden. Los depósitos hechos antes de la restricción no se reembolsan, pero el saldo sí se puede retirar.
+- **«Juego no disponible en tu ubicación» (ayuda):** ese mensaje no significa que tu país esté prohibido para Cloudbet. Significa que el proveedor de ese juego no lo ofrece en tu región.
+
+Esta guía no explica cómo entrar desde un país bloqueado ni cómo evitar un bloqueo. Si la lista te incluye, la respuesta es no usar la sala.
+
+## 3. KYC: niveles, límites y cuándo te lo piden (revisado 22 oct 2026)
+
+Cloudbet publica dos niveles de verificación (ayuda «What are Cloudbet's verification levels?»):
+
+| Nivel | Qué piden | Límites publicados |
+| --- | --- | --- |
+| Sin verificar o nivel 1 | Nivel 1: número de teléfono | 2.200 USD de depósito **acumulado de por vida** · 2.200 USD de retiro **por día** |
+| Nivel 2 | Foto de un documento de identidad, prueba de domicilio y verificación de rostro | Sin límite de depósito ni de retiro |
+
+Fuente: texto de la ayuda de Cloudbet (niveles de verificación, fechada el 7 sep 2026; captura 22 oct 2026). Los 2.200 USD de depósito son un total sumando todos tus depósitos, no un tope diario; los 2.200 USD de retiro se renuevan cada 24 horas.
+
+**¿Es obligatorio?** Las páginas dicen dos cosas que hay que leer juntas:
+
+- La ayuda dice que la verificación es opcional y que puedes depositar, retirar y apostar sin ella, con los límites de arriba. También dice que pueden pedírtela en cualquier momento, y que si te la piden directamente tienes que completarla.
+- Los términos (§21.1.5) dicen que piden verificar tu identidad («will be required») cuando tus depósitos acumulados llegan a 2.200 USD o los superan, que pueden pedir documentación actualizada en cualquier momento, y que, hasta completar la verificación, depósitos y retiros pueden quedar restringidos y los fondos, bloqueados. El §11.1 suma que pueden suspender la cuenta y retener montos si no completas un KYC pedido dentro del plazo que fijen.
+
+Cómo leerlo: «opcional» en la ayuda quiere decir que puedes empezar sin verificar. No quiere decir que nunca te lo van a pedir. Si piensas depositar en total 2.200 USD o más, cuenta con que te pidan el nivel 2.
+
+**Qué documentos aceptan (ayuda):**
+
+- Identidad: pasaporte, documento nacional de identidad, licencia de conducir o permiso de residencia. Original (no fotocopias), sin vencer, con nombre completo, foto y número.
+- Domicilio: factura de servicios (gas, agua, luz), carta de un organismo público, extracto bancario o contrato de alquiler. Con fecha de los últimos 3 meses y el mismo nombre que el documento. **No** aceptan facturas de celular, seguros, comprobantes de pago ni documentos escritos a mano. Tiene que ser tu domicilio oficial, no un hotel o un alquiler temporal.
+- Proveedor: los términos (§21.1.3) nombran a Sumsub para la verificación automática.
+- Tiempo: la ayuda dice que se procesa «typically» al instante y que, si hace falta revisión manual, puede tardar hasta 24 horas. Es lo que publica la sala, no un plazo garantizado. Mientras está en revisión, sigue el límite de retiro de 2.200 USD por día.
+
+Para ver cómo encaja el KYC con el retiro en otras salas, está [/guias/antes-de-retirar-rollover-kyc/](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/).
+
+## 4. Licencia: qué publica Cloudbet y qué no significa (revisado 22 oct 2026)
+
+- **Lo que publica (ayuda de licencias, pie de la home y términos):** Curaçao Gaming Authority, licencia **OGL/2024/328/0599**, a nombre de **Halcyon Super Holdings B.V.**, empresa registrada en Curazao (número 148526), con domicilio en Abraham Mendez Chumaceiro Boulevard 03, Willemstad.
+- **El certificado:** el sello del pie de la home abre una página de la Curaçao Gaming Authority (cert.cga.cw) con la misma empresa y el mismo número, y estado «Active» el 22 oct 2026. **Fecha de la licencia: las dos fuentes no coinciden.** El certificado de la CGA dice «granted on 23/05/2025»; los términos de Cloudbet dicen «issued on 27 May 2025». No sabemos cuál es la correcta ni por qué difieren, así que no damos ninguna como confirmada.
+- **Pagos:** los términos y el pie nombran a Solas Technologies Limited (Chipre), filial de Cloudbet, para algunos métodos de pago. Los términos aclaran que Solas no tiene licencia de juego y que las apuestas las ofrece solo Halcyon.
+
+Lo que la licencia **no** dice: no es una licencia emitida en tu país y no dice si apostar online es legal donde estás. Offshore no es un casino regulado en tu país. Esta guía no saca conclusiones legales.
+
+## 5. Depósito mínimo y apuesta mínima (revisado 22 oct 2026)
+
+- **Depósito mínimo (ayuda):** el resumen bajo el título del artículo dice que todo depósito debe valer al menos «~$1 USD»; el texto dice que el mínimo cambia según la moneda y la red, y que la mayoría está por debajo de 1 USD («typically $0.10–$0.50 USD equivalent»). Un depósito por debajo del mínimo no se acredita. El mínimo exacto aparece en la pantalla de depósito: esa es la cifra que vale.
+- **Métodos (ayuda y términos §7.3.1):** la ayuda lista solo criptomonedas; si no tienes cripto, la compra se hace dentro del sitio con un proveedor externo, Swapped. Los términos dicen que pueden aceptar moneda fiat según tu jurisdicción y los métodos disponibles. Lo que paga Swapped en cada país lo publica Swapped, no lo copiamos aquí.
+- **Apuesta mínima en deportes (dos cifras que no coinciden):** la ayuda («What is the minimum bet?», fechada el 10 jun 2025) dice que el mínimo estándar es 0,10 USD (o su equivalente en cripto) y que algunos mercados piden más. Los términos (§13.1, versión del 30 sep 2026) escriben otro número para las apuestas con cuota: «0.0000001» en cripto o su equivalente en fiat, «in some cases» más. No sabemos cuál de las dos aplica en cada caso; aquí las dejamos tal cual. Antes de confirmar, revisa lo que muestre tu boleto.
+- **Apuesta mínima en casino:** no encontramos una cifra general en la sección Casino de la ayuda ni en los términos. El mínimo lo marca cada mesa o juego.
+- **Máximo:** en deportes depende del deporte, el mercado y el momento; la ayuda dice que el máximo que muestra el boleto es un techo general y que lo que te aceptan se calcula para tu cuenta y puede ser menor.
+
+Las citas entre comillas van tal cual las publica Cloudbet (en inglés y con punto decimal).
+
+## 6. Otras cláusulas que conviene leer (términos, revisados 22 oct 2026)
+
+- **Comisión de hasta 5 % (§7.1.10):** Cloudbet se reserva cobrar hasta 5 % sobre depósitos y retiros para cubrir costos de transacción.
+- **Cuenta inactiva (§7.1.11):** sin actividad durante 12 meses seguidos, y después de intentar avisarte, la cuenta puede pasar a inactiva, con un cargo de administración de 5 USD (o su equivalente en cripto) por mes. El cargo nunca deja el saldo por debajo de cero.
+- **Vender o prestar cuentas (§10.28):** está prohibido, incluso para saltarse límites o la verificación.
+
+## 7. ¿Bono de bienvenida y «giros gratis»?
+
+La ayuda del Welcome Package (revisada 22 oct 2026) describe un paquete de hasta 2.500 USD en 30 días: en casino, rakeback y «cash drops» diarios; en deportes, un «cash drop» por semana. Los términos (§8.4) precisan que el rakeback es el 10 % de la ventaja de la casa de cada apuesta de casino elegible, no el 10 % de lo apostado, y que los 30 días empiezan con tu primera apuesta después del primer depósito. En ese artículo no aparecen giros gratis. Rakeback no es un match de depósito: la diferencia está en [/guias/cashback-rakeback-lossback/](https://www.planetaruleta.com/guias/cashback-rakeback-lossback/). Lo que dicen los términos del paquete, en la [ficha de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/).
+
+## 8. Qué revisar antes de abrir una cuenta
+
+- Que tu país no esté en la lista del punto 2, y que el juego online sea legal donde estás.
+- Si vas a depositar en total 2.200 USD o más: ten a mano documento, prueba de domicilio reciente y cámara.
+- El depósito mínimo de tu moneda en la pantalla de depósito, no en un artículo.
+- La versión vigente de los términos: los de este repaso dicen «Last updated 30 September 2026».
+- Las herramientas de juego responsable: la ayuda describe límites de depósito diarios, semanales o mensuales, pausa («cool-off») y autoexclusión. Bajar un límite rige al instante; subirlo o quitarlo tarda 24 horas.
+
+Los términos cambian. Revisa la versión vigente en la web de Cloudbet antes de decidir. No garantizamos resultados. +18. Si se te va de las manos, busca ayuda de juego responsable donde estés.
+
+## Preguntas frecuentes
+
+### ¿Desde qué países no se puede usar Cloudbet?
+
+Su ayuda y sus términos (§7.1.3, revisados el 22 oct 2026) listan, entre otros, Estados Unidos y sus territorios, Reino Unido, España, Francia, Alemania, Países Bajos, Australia, Japón y Cuba. También excluyen cualquier lugar donde ese juego sea ilegal. Revisar la ley local es responsabilidad tuya.
+
+### ¿Cloudbet pide KYC?
+
+Sí, por niveles. Sin verificar o en nivel 1 (teléfono) hay un tope de 2.200 USD de depósito acumulado y 2.200 USD de retiro por día. El nivel 2 pide documento, prueba de domicilio y rostro, y quita esos topes. Según sus términos (§21.1.5, revisados el 22 oct 2026), Cloudbet pide verificar tu identidad cuando tus depósitos acumulados llegan a 2.200 USD o los superan, y puede pedir documentos en cualquier momento.
+
+### ¿Qué licencia tiene Cloudbet?
+
+Publica una licencia de la Curaçao Gaming Authority, OGL/2024/328/0599, a nombre de Halcyon Super Holdings B.V. (148526). El certificado de la CGA mostraba estado «Active» el 22 oct 2026. No es una licencia de tu país.
+
+### ¿Cuál es la apuesta mínima en Cloudbet?
+
+En deportes, las páginas de Cloudbet no coinciden (revisadas el 22 oct 2026): la ayuda dice 0,10 USD estándar, con mínimos más altos en algunos mercados; los términos (§13.1) dicen «0.0000001» en cripto o su equivalente en fiat. En casino no encontramos un mínimo general publicado: lo marca cada juego.
+
+### ¿Cuál es el depósito mínimo?
+
+Depende de la moneda y la red. La ayuda dice que la mayoría está por debajo de 1 USD y que la cifra exacta aparece en la pantalla de depósito.
+
+URL: https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/

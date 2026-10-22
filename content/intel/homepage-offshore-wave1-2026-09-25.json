@@ -218,7 +218,7 @@
       ],
       "cta_label": "Leer señal",
       "cta_href": null,
-      "homepage_role": "lead",
+      "homepage_role": "timeline",
       "status": "ready"
     },
     {
@@ -278,7 +278,7 @@
       ],
       "cta_label": "Leer señal",
       "cta_href": null,
-      "homepage_role": "timeline",
+      "homepage_role": "archive",
       "status": "ready"
     },
     {
@@ -307,6 +307,28 @@
       "cta_label": "Leer señal",
       "cta_href": null,
       "homepage_role": "archive",
+      "status": "ready"
+    },
+    {
+      "id": "kyc-cloudbet-2200-usd-2026-10-22",
+      "tipo": "kyc",
+      "fecha": "2026-10-22",
+      "jurisdiccion": "offshore",
+      "operador_slug": "cloudbet",
+      "operador_nombre": "Cloudbet",
+      "titulo": "Cloudbet: verificación de identidad al llegar a 2.200 USD depositados",
+      "resumen": "Texto de Cloudbet (términos §21.1.5, versión del 30 SEP 2026, y ayuda; captura 22 OCT 2026): según sus términos, Cloudbet pide verificar tu identidad cuando tus depósitos acumulados llegan a 2.200 USD o los superan; hasta completar la verificación, depósitos y retiros pueden quedar restringidos y los fondos, bloqueados. También puede pedir documentos en cualquier momento.\nSu ayuda dice que verificar es opcional y que, hasta completar el nivel 2 (documento, prueba de domicilio y rostro), aplica un tope de 2.200 USD en depósitos acumulados de por vida y de 2.200 USD por día en retiros. Con los documentos en revisión, el tope de retiro sigue.",
+      "numero_objeto": "2.200 USD",
+      "claim_layer": "stated",
+      "fuentes": [
+        "https://www.cloudbet.com/en/help/terms",
+        "https://www.cloudbet.com/en/support/articles/415596-what-are-cloudbet-s-verification-levels",
+        "https://www.cloudbet.com/en/support/articles/103199-what-is-my-maximum-daily-withdrawal-limit-on-cloudbet"
+      ],
+      "qc": "Ed&Comp EDCOMP-GATE 22 OCT 2026 Item 2 PASS WITH FIXES (S-F1…F6 applied). Terms §21.1.5 «Identity verification will be required when cumulative deposits reach or exceed USD 2,200», Last updated 30 September 2026; levels help dated September 7, 2026; captura 22 OCT 2026 21:16 IDT. claim_layer stated. No ends_at (not a promo). No code, no deposit CTA, cta_href null.",
+      "cta_label": "Leer señal",
+      "cta_href": null,
+      "homepage_role": "lead",
       "status": "ready"
     },
     {

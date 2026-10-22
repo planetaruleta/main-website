@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_PATH = ROOT / "llms-full.txt"
 ORIGIN = "https://www.planetaruleta.com"
 
-# Sitemap order for the guide index and the seven guides.
+# Sitemap order for the guide index and the eight guides.
 PAGES: list[tuple[str, str]] = [
     ("guias/index.html", f"{ORIGIN}/guias/"),
     ("guias/rtp-volatilidad/index.html", f"{ORIGIN}/guias/rtp-volatilidad/"),
@@ -32,6 +32,7 @@ PAGES: list[tuple[str, str]] = [
     ("guias/usdt-vs-btc-bankroll/index.html", f"{ORIGIN}/guias/usdt-vs-btc-bankroll/"),
     ("guias/antes-de-retirar-rollover-kyc/index.html", f"{ORIGIN}/guias/antes-de-retirar-rollover-kyc/"),
     ("guias/rtp-ventaja-casa-ruleta/index.html", f"{ORIGIN}/guias/rtp-ventaja-casa-ruleta/"),
+    ("guias/cloudbet-registro-paises-kyc/index.html", f"{ORIGIN}/guias/cloudbet-registro-paises-kyc/"),
 ]
 
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
@@ -46,7 +47,7 @@ HEADER = """# Planeta Ruleta — texto de las guías
 
 > Copia en texto de las guías públicas de alfabetización. El wording es el de cada página. Este archivo no agrega cifras, licencias ni rankings. +18. No es consejo de apuesta ni un enlace de afiliado.
 
-Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla ocho veces.
+Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla nueve veces.
 
 """
 
@@ -323,7 +324,9 @@ def render() -> str:
         raise SystemExit("refusing to write a file Jekyll could treat as front matter")
     required = [
         "**Volatilidad baja:** premios más frecuentes y montos más pequeños.",
-        "Ventaja de la casa = 1 ÷ 37 = 0,0270… ≈ **2,70 %**.",
+        "−1/37 = −0,0270… → ventaja **2,70 %**, RTP 36/37 = 97,297… ≈ **97,30 %**.",
+        "−2/38 = −0,0526… → ventaja **5,26 %**, RTP 36/38 = 94,736… ≈ **94,74 %**.",
+        "licencia **OGL/2024/328/0599**",
         "[/mesa/shuffle/](https://www.planetaruleta.com/mesa/shuffle/).",
         "[cómo leer una promo](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/).",
         "**Cashback**, **rakeback** y **lossback**",
