@@ -1,6 +1,44 @@
 {
   "senales": [
     {
+      "id": "metodos-shuffle-spei-mxn-2026-10-22",
+      "fecha": "2026-10-22",
+      "kicker": "Shuffle · offshore · Métodos · Declarado",
+      "titulo": "Shuffle: depósitos y retiros en MXN por SPEI, de 90 a 20.000 MXN",
+      "resumen": "Help OFICIAL (artículo 17684669, captura 22 OCT 2026): depósitos en pesos mexicanos (MXN) por SPEI y retiros en MXN por transferencia a una CLABE que reciba SPEI. La tabla del artículo aplica el mismo rango a los dos métodos: mínimo 90 MXN y máximo 20.000 MXN por transacción, sin comisión de Shuffle, disponible 24/7.\nPara retirar hace falta Level 2: una copia clara de un documento con foto (licencia de conducir, documento nacional o pasaporte). La CLABE del retiro tiene que estar a tu nombre. El depósito también tiene que salir de una cuenta o billetera a tu nombre, el mismo de la cuenta de Shuffle.\nEl artículo dice que, una vez aprobado el retiro, el dinero llega «within a few minutes». Eso no es un plazo ni una garantía: no entra como SLA.",
+      "numero": "90–20.000 MXN",
+      "fuentes_html": "Fuente · <a href=\"https://help.shuffle.com/en/articles/17684669-how-to-deposit-and-withdraw-with-spei\" target=\"_blank\" rel=\"noopener\">help.shuffle.com · How to Deposit and Withdraw with SPEI · art. 17684669 · 22 OCT 2026</a>"
+    },
+    {
+      "id": "bono-rainbet-brewers-rays-2026-10-22",
+      "fecha": "2026-10-22",
+      "kicker": "Rainbet · offshore · Bono · Declarado",
+      "titulo": "Rainbet Brewers–Rays: el profit extra se paga como free bet, no en efectivo",
+      "resumen": "Página OFICIAL de la promo (captura 22 OCT 2026), título «Double Profit - Brewers vs. Rays». Si los Brewers ganan la serie en 5 juegos o menos, el profit de la apuesta que califica se duplica. Ese extra se acredita como free bet (apuesta gratis), no en efectivo, y sale del cupón más alto. Máximo $500. Mínimo del cupón: $5. El único mercado válido es «Series Results (Best of 7 games)». Las combinadas no entran. Las apuestas en vivo sí entran.\nVentana stated: 2026-10-21T18:41:00.000Z → 2026-10-31T23:00:00.000Z. America/Guatemala: mié 21 OCT 2026 12:41 → sáb 31 OCT 2026 17:00.",
+      "numero": "$500",
+      "ends_at": "2026-10-31T23:00:00.000Z",
+      "fuentes_html": "Fuente · <a href=\"https://rainbet.com/promotions/brewers-rays\" target=\"_blank\" rel=\"noopener\">rainbet.com/promotions/brewers-rays · 22 OCT 2026</a>"
+    },
+    {
+      "id": "lobby-cloudbet-monster-mash-2026-10-22",
+      "fecha": "2026-10-22",
+      "kicker": "Cloudbet · offshore · Lobby · Declarado",
+      "titulo": "Cloudbet Monster Mash: pozo de $2.000, top 30, mínimo $1, pago en USDT",
+      "resumen": "Página OFICIAL de la promo (captura 22 OCT 2026): Monster Mash. Pozo de $2.000. Entran al pago los 30 primeros. Apuesta mínima $1. El ranking es el multiplicador más alto de una sola jugada. Se paga en USDT.",
+      "numero": "$2.000",
+      "fuentes_html": "Fuente · <a href=\"https://www.cloudbet.com/en/promotions/monster-mash\" target=\"_blank\" rel=\"noopener\">cloudbet.com/en/promotions/monster-mash · 22 OCT 2026</a>"
+    },
+    {
+      "id": "bono-roobet-heat-check-2026-10-22",
+      "fecha": "2026-10-22",
+      "kicker": "Roobet · offshore · Bono · Declarado",
+      "titulo": "Roobet Heat Check: hasta $1.110 en free bets, mínimo $10 a cuota 1,70",
+      "resumen": "Página OFICIAL de la promo (captura 22 OCT 2026): Heat Check. El tope es $1.110 en free bets (apuestas gratis), no en efectivo. Apuesta mínima $10 a cuota 1,70 o más.\nLos términos cierran el 3 NOV 2026 a las 23:59 UTC (hora Guatemala: mar 3 NOV 17:59). El encabezado de la misma promo dice 4 NOV. Las dos fechas no coinciden: verifica la fecha en los términos. El cierre de esta señal sigue la fecha de los términos.",
+      "numero": "$1.110",
+      "ends_at": "2026-11-03T23:59:00Z",
+      "fuentes_html": "Fuente · <a href=\"https://roobet.com/promotions/heat-check\" target=\"_blank\" rel=\"noopener\">roobet.com/promotions/heat-check · 22 OCT 2026</a>"
+    },
+    {
       "id": "codigo-mas-grande-2026-10-14",
       "fecha": "2026-10-14",
       "kicker": "Stake · Shuffle · offshore · Bono · Declarado",
