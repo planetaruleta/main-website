@@ -536,7 +536,7 @@ FICHAS = {
             "El chip de la fila es el welcome, no el race ni los RakeBoosts. Camino A: 40x sobre depósito+bono (100% / 50% / 100% + 20 tiradas, mínimo 30 USD, máximo 700 USD por tramo, apuesta máxima 2% del depósito según T&C (la ayuda dice 1%), slots con RTP mayor a 97,4% fuera). Camino B: sin ese rollover; se desbloquea al jugar. Hay que optar en promotions antes de depositar. Fuente: homepage, 25 SEP 2026.",
             "El Daily Race del 03 OCT (ventana distinta del 26 SEP) y el torneo Gates of Olympus 2500 del 30 SEP son señales de lobby, con ventana publicada. No reemplazan el chip.",
             "RakeBoosts (help Rewards overview, HTTP 200 el 05 OCT 2026; el artículo figura lastUpdated 2026-05-27): Daily Reload +15% por 60 min; Daily Bonus, Weekly Bonus y Monthly Bonus +10% por 60 min cada uno; Affiliate Code Redemption +20% por 72 h; New Signup Bonus +15% por 24 h. No se suman ni se encolan: solo aplica el porcentaje más alto. El rakeback se reclama cada 15 min sobre el total apostado. El Daily Reload se puede reclamar 3 veces por día (cada 8 h) y vence si no se reclama dentro de 24 h. Un reward sin reclamar vence cuando se desbloquea el siguiente. Es un boost al rakeback, no un porcentaje del depósito. Ese artículo no publica la tasa base de rakeback ni cómo se calcula el boost: no hay conversión a dólares. No reemplaza el chip de welcome.",
-            "Brewers–Rays (página de la promo, captura 22 OCT 2026): si los Brewers ganan la serie en 5 juegos o menos, el profit extra se acredita como free bet, no en efectivo. Máximo 500 USD, cupón mínimo 5 USD, solo el mercado de la serie, sin combinadas. Cierra el sáb 31 OCT 2026 a las 17:00 hora Guatemala. No reemplaza el chip de welcome.",
+            "Brewers–Rays (página de la promo, captura 22 OCT 2026): si los Brewers ganan la serie en 5 juegos o menos, la ganancia extra se acredita como apuesta gratis (free bet), no en efectivo. Máximo 500 USD, cupón mínimo 5 USD, solo el mercado de la serie, sin combinadas. Cierra el sáb 31 OCT 2026 a las 17:00 hora Guatemala. No reemplaza el chip de welcome.",
             ],
         "kyc": "KYC declarado: documento de identidad, selfie y prueba de domicilio. Sumsub está nombrado en el AML, no en Terms §20. Terms §20: pueden restringir la cuenta si el ID no se completa en 72 horas; la verificación puede tardar hasta 7 días hábiles; el equipo de KYC habla de 24 horas una vez Temporarily Approved. Fuente: Terms y AML, revisión de mesa 25 SEP 2026 / rechequeo 03 OCT 2026.",
         "offshore": "Rainbet publica una licencia de Anjouan. Eso no es una licencia de Argentina ni convierte a esta página en un casino. No hay puntaje, no hay puesto y no hay instrucciones para saltar un bloqueo. +18.",
@@ -545,7 +545,7 @@ FICHAS = {
                 "id": "bono-rainbet-brewers-rays-2026-10-22",
                 "date": "2026-10-22",
                 "when": "22 OCT 2026 · Bono",
-                "title": "Brewers–Rays: el profit extra es una free bet, no efectivo",
+                "title": "Brewers–Rays: la ganancia extra es una apuesta gratis, no efectivo",
                 "line": "Página de la promo, captura 22 OCT 2026. Máximo 500 USD. Solo el mercado de la serie. Cierra 31 OCT 17:00 hora Guatemala. No es el chip de welcome.",
             },
             {
@@ -640,7 +640,7 @@ FICHAS = {
         "plata": [
             "La homepage declara depósitos fiat con tarjeta, Apple Pay y Google Pay, vía socios de pago, más la clase crypto. Los Terms hablan de retiros fiat. La celda de la mesa no lista monedas.",
             "Pesos (ARS): según el artículo de ayuda de Shuffle sobre Mercado Pago, NaranjaX y transferencia (actualizado el 14 OCT 2026, revisado el 15 OCT 2026), depositás en ARS por transferencia inmediata, Mercado Pago o NaranjaX al CBU/CVU o alias que te muestran en cada depósito, y retirás solo por transferencia a un CBU o CVU de 22 dígitos (sin alias) a tu nombre, con el mismo CUIT/CUIL de tu cuenta. Mínimo 7.500 ARS y máximo 7.500.000 ARS por operación, en los dos sentidos. Según ese artículo, Shuffle no cobra comisión por depositar ni retirar en ARS. Antes de cobrar te piden un documento con foto. «Casi instantáneo» es lo que dice la ayuda, no un plazo. Que acepte pesos no cambia la licencia: sigue siendo Curaçao, no una licencia de Argentina. Otros países: en la ayuda de Shuffle no encontramos artículos de moneda local para Chile, Colombia o Perú (búsqueda del 15 OCT 2026); Brasil tiene uno propio (BRL con PIX). Pagar en moneda local no es una licencia local. Fuente: oficial (ayuda de Shuffle).",
-            "Pesos mexicanos (MXN), ayuda «How to Deposit and Withdraw with SPEI», artículo 17684669, captura 22 OCT 2026. Depósitos por SPEI y retiros por transferencia a una CLABE que reciba SPEI: mínimo 90 MXN y máximo 20.000 MXN por transacción, sin comisión de Shuffle, disponible 24/7. Para retirar hace falta Level 2, con documento con foto, y la CLABE a nombre del titular de la cuenta. El depósito también tiene que salir de una cuenta a ese mismo nombre. La frase «within a few minutes» no es un plazo ni una garantía. La búsqueda del 15 OCT 2026 no encontró este artículo. Que acepte MXN no cambia la licencia: sigue siendo Curaçao, no una licencia de México. No reemplaza el chip de rakeback.",
+            "Pesos mexicanos (MXN), ayuda de Shuffle sobre pesos mexicanos (MXN), artículo 17684669, captura 22 OCT 2026. Depósitos por SPEI y retiros por transferencia bancaria (CLABE): mínimo 90 MXN y máximo 20 mil MXN por transacción, sin comisión de Shuffle, disponible 24/7. Para retirar hace falta la verificación de nivel 2, con identificación con foto válida, y la CLABE a nombre del titular de la cuenta. El depósito también tiene que salir de una cuenta a ese mismo nombre. Según Shuffle, el retiro aprobado llega «en pocos minutos»; no lo comprobamos. La búsqueda del 15 OCT 2026 no encontró este artículo. Que acepte MXN no cambia la licencia: sigue siendo Curaçao, no una licencia de México. No reemplaza el chip de rakeback.",
             "USDT está en el ejemplo de rakeback del help (1000 USDT a 2% de house edge → 1 USDT). Eso no es un catálogo de redes.",
             "Antes de retirar hay que apostar 1x el depósito (help de coin-mixing, 28 jul 2026). No hay horas de pago: el retiro de la mesa sigue en sin dato. Que el pago en pesos pase por CBU/CVU no lo convierte en un casino regulado en Argentina.",
         ],
@@ -656,8 +656,8 @@ FICHAS = {
                 "id": "metodos-shuffle-spei-mxn-2026-10-22",
                 "date": "2026-10-22",
                 "when": "22 OCT 2026 · Métodos",
-                "title": "MXN por SPEI: 90 a 20.000 MXN, Level 2 para retirar",
-                "line": "Ayuda oficial, artículo 17684669, captura 22 OCT 2026. Sin comisión de Shuffle. «Within a few minutes» no es un plazo garantizado. No es el chip de rakeback.",
+                "title": "MXN: depósito SPEI, retiro por transferencia (CLABE), 90 a 20 mil",
+                "line": "Texto de Shuffle (ayuda), artículo 17684669, captura 22 OCT 2026. Sin comisión de Shuffle. «En pocos minutos»: no lo comprobamos. No es el chip de rakeback.",
             },
             {
                 "id": "bono-shuffle-level-up-approx-2026-10-02",
@@ -799,7 +799,7 @@ FICHAS = {
             ("Documentos", "https://www.cloudbet.com/en/support/articles/103148-what-documents-are-accepted-for-account-verification"),
             ("Por qué piden verificar", "https://www.cloudbet.com/en/support/articles/455235-why-am-i-asked-to-verify-my-account"),
             ("Comprar con Swapped", "https://www.cloudbet.com/en/support/articles/324281-how-to-buy-crypto-with-swapped-on-cloudbet"),
-            ("Monster Mash", "https://www.cloudbet.com/en/promotions/monster-mash"),
+            ("Monster Mash", "https://www.cloudbet.com/en/promotions/casino/monster-mash"),
         ],
         "plata_title": "Cómo entra y sale la plata",
         "plata": [
@@ -811,7 +811,7 @@ FICHAS = {
         "bono": [
             "Chip de la fila: paquete de bienvenida de hasta 2.500 USD en un programa de 30 días, y 10% del house edge en cada apuesta de casino elegible. Las apuestas de sports no suman rakeback. Terms §8.4, chequeo 03 OCT 2026.",
             "El período de 30 días empieza al hacer la primera apuesta después de ese depósito (§8.4.2), no desde la hora del depósito. No hay un Nx de rollover publicado para este paquete. No inventamos uno.",
-            "Monster Mash (página de la promo, captura 22 OCT 2026) es una señal de lobby: pozo de 2.000 USD, top 30, apuesta mínima 1 USD, ranking por el multiplicador más alto de una sola jugada, pago en USDT. No reemplaza el chip.",
+            "Monster Mash (página de la promo, captura 22 OCT 2026) es una señal de lobby: pozo de 2.000 USD, top 30, apuesta mínima 1 USD, ranking por el multiplicador más alto de una sola jugada, pago en USDT. Ventana: 22 OCT 01:00 → 24 OCT 00:59 hora Guatemala. No reemplaza el chip.",
         ],
         "kyc": "KYC declarado por niveles. Level 2: foto del documento, prueba de domicilio y verificación de rostro. Sumsub está en Terms §21.1.3; el artículo de niveles no lo nombra. El help dice que pueden pedir la verificación en cualquier momento. Los topes de Level 1 están publicados (2.200 USD de depósito de por vida y 2.200 USD de retiro diario) y no están en la celda de la tabla. Un disparador fijo, más allá de “en cualquier momento”: no verificado · 03 OCT 2026. Fuente: help y Terms, 03 OCT 2026.",
         "offshore": "Cloudbet publica Curaçao Gaming Authority, OGL/2024/328/0599, a nombre de Halcyon Super Holdings B.V. (148526). Eso no es una licencia de Argentina. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
@@ -868,7 +868,7 @@ FICHAS = {
             ("Depósito crypto", "https://help.roobet.com/en/articles/4665363-depositing-to-roobet-using-cryptocurrency"),
             ("Depósito con Swapped", "https://help.roobet.com/en/articles/11979123-how-to-deposit-using-swapped"),
             ("Welcome", "https://help.roobet.com/en/articles/4901197-welcome"),
-            ("Heat Check", "https://roobet.com/promotions/heat-check"),
+            ("Heat Check", "https://roobet.com/promotions/nba-heat-check"),
         ],
         "plata_title": "Cómo entra y sale la plata",
         "plata": [
@@ -879,7 +879,7 @@ FICHAS = {
         ],
         "bono": [
             "Chip de la fila: Instant rakeback, un porcentaje de lo apostado, reclamable cada 30 minutos y sin vencimiento. Al registrarse hay un boost de +10% durante 24 horas sobre ese rakeback. No es un match de depósito. El artículo no publica un Nx. Help de rewards, rechequeo 03 OCT 2026.",
-            "Heat Check (página de la promo, captura 22 OCT 2026) es una señal aparte: hasta 1.110 USD en free bets, no en efectivo, apuesta mínima 10 USD a cuota 1,70 o más. El encabezado dice 4 NOV y los términos dicen 3 NOV: verifica la fecha en los términos. No reemplaza el chip.",
+            "Heat Check (página de la promo, captura 22 OCT 2026) es una señal aparte: hasta 1.110 USD en free bets, no en efectivo, apuesta mínima 10 USD a cuota 1,70 o más. El encabezado dice 4 NOV y los términos dicen 3 NOV, sin zona horaria: verifica la fecha en los términos. No reemplaza el chip.",
         ],
         "kyc": "KYC declarado en Level 2 (help del 23 jul 2026): pasaporte, licencia de conducir o documento de gobierno, con captura de frente y dorso. Ese artículo no da un umbral. Cuándo lo exigen: no verificado · 03 OCT 2026. Fuente: help.roobet.com.",
         "offshore": "En las páginas chequeadas el 03 OCT 2026 no hay número de licencia ni autoridad. “Fully licensed and regulated” en el artículo Welcome no nombra un registro. Eso no es una licencia de Argentina. El HTML público de roobet.com y de /sports no muestra un sportsbook (cero veces la palabra sport); un sportsbook con sesión iniciada no se chequeó. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
@@ -888,7 +888,7 @@ FICHAS = {
                 "id": "bono-roobet-heat-check-2026-10-22",
                 "date": "2026-10-22",
                 "when": "22 OCT 2026 · Bono",
-                "title": "Heat Check: hasta $1.110 en free bets",
+                "title": "Heat Check: hasta $1.110 en apuestas gratis, por rachas",
                 "line": "Página de la promo, captura 22 OCT 2026. Mínimo $10 a cuota 1,70. No es efectivo. El encabezado y los términos no coinciden en la fecha: verifica la fecha en los términos. No es el chip de rakeback.",
             },
         ],
