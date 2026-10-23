@@ -122,7 +122,7 @@ def compare_table() -> str:
             + "              </tr>\n"
         )
     return f"""
-        <p class="scroll-hint">Deslizá para comparar</p>
+        <p class="scroll-hint">Desliza para comparar</p>
         <div class="cmp-scroll">
           <table class="cmp">
             <caption>Misma tabla en la mesa y al pie de cada ficha. Sin insignia de ganador. Si el dato no está en la mesa ni en una señal, la celda dice no verificado.</caption>
@@ -270,7 +270,7 @@ def canal_cta_html(location: str) -> str:
         <p class="canal-kicker">Canal · +18</p>
         <h2 id="canal-cta-title">El dato queda en la página. El aviso, en el canal.</h2>
         <p>Cuando hay juice o una alerta con fuente, sale en Telegram. Esta invitación no es un enlace de afiliado y no abre un depósito.</p>
-        <p class="canal-cta-action"><a href="{SITE_CTA_TG_URL}" data-site-cta-tg target="_blank" rel="noopener" data-cta="telegram" data-cta-location="{e(location)}">Sumate al canal</a></p>
+        <p class="canal-cta-action"><a href="{SITE_CTA_TG_URL}" data-site-cta-tg target="_blank" rel="noopener" data-cta="telegram" data-cta-location="{e(location)}">Súmate al canal</a></p>
       </aside>"""
 
 
@@ -525,11 +525,11 @@ FICHAS = {
             ("Torneo Gates of Olympus", "https://rainbet.com/promotions/gates-of-olympus-2500-multiplier-mayhem-40k-tournament"),
             ("Brewers–Rays", "https://rainbet.com/promotions/brewers-rays"),
         ],
-        "plata_title": "Cómo entra y sale la plata",
+        "plata_title": "Cómo entra y sale el dinero",
         "plata": [
             "El FAQ declara criptos, entre ellas USDT, y también bank transfers, cards y gift cards. La tira de la home sigue en la clase crypto · fiat/cards. La tabla de esta ficha lista las criptos del FAQ. Redes: no verificado.",
             "Ese “bank transfer” es una frase del operador; no encontramos a qué bancos o países aplica.",
-            "Moneda local, país por país (ayuda de Rainbet «How to Make a Fiat Withdraw», 29 MAY 2026, revisada el 15 OCT 2026). Para retirar, AstroPay figura en Argentina, Chile, Colombia, Ecuador, México y Uruguay. Mínimo $50 (la ayuda no aclara la moneda) y una comisión del 0,5% de la operación. Necesitás una cuenta activa de AstroPay y estar en una región donde AstroPay opere. Perú no figura en esa lista. Para depositar en moneda local no encontramos un artículo en la ayuda (búsqueda del 15 OCT 2026). Pagar o cobrar en moneda local no es una licencia local. Fuente: oficial (ayuda de Rainbet).",
+            "Moneda local, país por país (ayuda de Rainbet «How to Make a Fiat Withdraw», 29 MAY 2026, revisada el 15 OCT 2026). Para retirar, AstroPay figura en Argentina, Chile, Colombia, Ecuador, México y Uruguay. Mínimo $50 (la ayuda no aclara la moneda) y una comisión del 0,5% de la operación. Necesitas una cuenta activa de AstroPay y estar en una región donde AstroPay opere. Perú no figura en esa lista. Para depositar en moneda local no encontramos un artículo en la ayuda (búsqueda del 15 OCT 2026). Pagar o cobrar en moneda local no es una licencia local. Fuente: oficial (ayuda de Rainbet).",
             "En la homepage también está escrito un mínimo de retiro de 15 USD y apostar 1x el depósito antes de retirar. No es un plazo. El marketing de 5 a 15 minutos no entra como SLA: el retiro de la mesa sigue en sin dato.",
         ],
         "bono": [
@@ -636,10 +636,10 @@ FICHAS = {
                 "https://cert.cga.cw/certificate?id=ZXlKcGRpSTZJazlqWkhKRk1ETnNlVWh1TUVGNlRVZGFjMUpLZDFFOVBTSXNJblpoYkhWbElqb2llbWQ1Y0ROUlRXeE5ZbFp1UzJWM1ZUTlJOelp2VVQwOUlpd2liV0ZqSWpvaVlqWm1NelJrWkRjeE9UWmtOakEwTURJMU9XRXlNVEJtWkdJMU1tTmtZalppWlRNeFpqSmxOMkZqTWpsbU5HSTJOVEprWXpVNVpXRXhPVE5oWWprMk55SXNJblJoWnlJNklpSjk%3D",
             ),
         ],
-        "plata_title": "Cómo entra y sale la plata",
+        "plata_title": "Cómo entra y sale el dinero",
         "plata": [
             "La homepage declara depósitos fiat con tarjeta, Apple Pay y Google Pay, vía socios de pago, más la clase crypto. Los Terms hablan de retiros fiat. La celda de la mesa no lista monedas.",
-            "Pesos (ARS): según el artículo de ayuda de Shuffle sobre Mercado Pago, NaranjaX y transferencia (actualizado el 14 OCT 2026, revisado el 15 OCT 2026), depositás en ARS por transferencia inmediata, Mercado Pago o NaranjaX al CBU/CVU o alias que te muestran en cada depósito, y retirás solo por transferencia a un CBU o CVU de 22 dígitos (sin alias) a tu nombre, con el mismo CUIT/CUIL de tu cuenta. Mínimo 7.500 ARS y máximo 7.500.000 ARS por operación, en los dos sentidos. Según ese artículo, Shuffle no cobra comisión por depositar ni retirar en ARS. Antes de cobrar te piden un documento con foto. «Casi instantáneo» es lo que dice la ayuda, no un plazo. Que acepte pesos no cambia la licencia: sigue siendo Curaçao, no una licencia de Argentina. Otros países: en la ayuda de Shuffle no encontramos artículos de moneda local para Chile, Colombia o Perú (búsqueda del 15 OCT 2026); Brasil tiene uno propio (BRL con PIX). Pagar en moneda local no es una licencia local. Fuente: oficial (ayuda de Shuffle).",
+            "Pesos (ARS): según el artículo de ayuda de Shuffle sobre Mercado Pago, NaranjaX y transferencia (actualizado el 14 OCT 2026, revisado el 15 OCT 2026), depositas en ARS por transferencia inmediata, Mercado Pago o NaranjaX al CBU/CVU o alias que te muestran en cada depósito, y retiras solo por transferencia a un CBU o CVU de 22 dígitos (sin alias) a tu nombre, con el mismo CUIT/CUIL de tu cuenta. Mínimo 7.500 ARS y máximo 7.500.000 ARS por operación, en los dos sentidos. Según ese artículo, Shuffle no cobra comisión por depositar ni retirar en ARS. Antes de cobrar te piden un documento con foto. «Casi instantáneo» es lo que dice la ayuda, no un plazo. Que acepte pesos no cambia la licencia: sigue siendo Curaçao, no una licencia de Argentina. Otros países: en la ayuda de Shuffle no encontramos artículos de moneda local para Chile, Colombia o Perú (búsqueda del 15 OCT 2026); Brasil tiene uno propio (BRL con PIX). Pagar en moneda local no es una licencia local. Fuente: oficial (ayuda de Shuffle).",
             "Pesos mexicanos (MXN), ayuda de Shuffle sobre pesos mexicanos (MXN), artículo 17684669, captura 22 OCT 2026. Depósitos por SPEI y retiros por transferencia bancaria (CLABE): mínimo 90 MXN y máximo 20 mil MXN por transacción, sin comisión de Shuffle, disponible 24/7. Para retirar hace falta la verificación de nivel 2, con identificación con foto válida, y la CLABE a nombre del titular de la cuenta. El depósito también tiene que salir de una cuenta a ese mismo nombre. Según Shuffle, el retiro aprobado llega «en pocos minutos»; no lo comprobamos. La búsqueda del 15 OCT 2026 no encontró este artículo. Que acepte MXN no cambia la licencia: sigue siendo Curaçao, no una licencia de México. No reemplaza el chip de rakeback.",
             "USDT está en el ejemplo de rakeback del help (1000 USDT a 2% de house edge → 1 USDT). Eso no es un catálogo de redes.",
             "Antes de retirar hay que apostar 1x el depósito (help de coin-mixing, 28 jul 2026). No hay horas de pago: el retiro de la mesa sigue en sin dato. Que el pago en pesos pase por CBU/CVU no lo convierte en un casino regulado en Argentina.",
@@ -731,7 +731,7 @@ FICHAS = {
                 "https://cert.cga.cw/certificate?id=ZXlKcGRpSTZJbkJtT0dKb04zWTRhbmc1VERsd1RXTTRRMjVHZDNjOVBTSXNJblpoYkhWbElqb2lSVEJwU2t0emJYSm9LMUkzYm04NVVqSkZRMnRxZHowOUlpd2liV0ZqSWpvaVpEWm1NV0kwT1dNeE9XVmpaVFkyTnpFd01HVmpPV1V4WmpWaU5qRm1NVEprWXpjd05tTTJaamczWkdNM1pHSXdaVEl6T1RFeVlUSXlOell6TnpJNVpTSXNJblJoWnlJNklpSjk%3D",
             ),
         ],
-        "plata_title": "Cómo entra y sale la plata",
+        "plata_title": "Cómo entra y sale el dinero",
         "plata": [
             "El help declara retiros crypto y reglas de apuesta para moneda local / FIAT. La celda de la mesa es crypto · fiat, sin lista de monedas.",
             "Moneda local, país por país (ayuda de Stake.com: artículos de depósito y de retiro con tarjeta, del 24 y el 22 AGO 2026, revisados el 15 OCT 2026). Chile: pesos chilenos (CLP) con Visa, para depositar y para retirar, de 5.000 a 1.000.000 CLP por operación; Mastercard no figura para Chile. El retiro vuelve solo a la tarjeta con la que depositaste y, según la ayuda, puede tardar hasta 3 días hábiles en llegar a tu banco. La opción aparece solo si está disponible para tu moneda y tu ubicación. México, Colombia, Perú y Argentina: no encontramos un método de pago en moneda local en la ayuda (búsqueda del 15 OCT 2026). La misma tabla lista otras monedas de la región: Costa Rica, Guatemala, Honduras, Jamaica, Nicaragua, Trinidad y Tobago, y dólares en Ecuador, Panamá, Paraguay, República Dominicana, El Salvador y Uruguay. Los Terms de Stake.com no se pudieron leer (HTTP 403), así que no citamos su lista de países restringidos. Pagar en moneda local no es una licencia local: que acepte pesos chilenos no hace a Stake.com un casino con licencia de Chile. Fuente: oficial (ayuda de Stake.com).",
@@ -801,7 +801,7 @@ FICHAS = {
             ("Comprar con Swapped", "https://www.cloudbet.com/en/support/articles/324281-how-to-buy-crypto-with-swapped-on-cloudbet"),
             ("Monster Mash", "https://www.cloudbet.com/en/promotions/casino/monster-mash"),
         ],
-        "plata_title": "Cómo entra y sale la plata",
+        "plata_title": "Cómo entra y sale el dinero",
         "plata": [
             "La celda de métodos es crypto · buy card (Swapped). El help, artículo actualizado el 24 SEP 2026, dice que el depósito con tarjeta pasa por Swapped: se elige depositar con tarjeta y después Swapped.",
             "Ese artículo nombra monedas de la compra. No es un catálogo de la mesa ni una lista de redes. Redes: no verificado · 03 OCT 2026.",
@@ -870,10 +870,10 @@ FICHAS = {
             ("Welcome", "https://help.roobet.com/en/articles/4901197-welcome"),
             ("Heat Check", "https://roobet.com/promotions/nba-heat-check"),
         ],
-        "plata_title": "Cómo entra y sale la plata",
+        "plata_title": "Cómo entra y sale el dinero",
         "plata": [
             "El help declara fiat y crypto, y compra de cripto vía Swapped (tarjeta, Apple Pay y Google Pay). La celda de la mesa se queda en la clase crypto · fiat+Swapped.",
-            "Moneda local, país por país (ayuda y T&C de Roobet, revisados el 15 OCT 2026). Argentina: depósito por «Bank Transfer» desde la opción «Cash», con tu número de DNI. Transferís el monto exacto a los datos bancarios que te muestran, y la acreditación puede tardar hasta 1 hora (ayuda «Bank Transfer Argentina Deposit», 18 JUN 2025). Ese artículo no dice moneda ni límites. Retiro con AstroPay: se pide desde «Cash» con el número de teléfono de tu cuenta AstroPay (ayuda, 24 JUL 2026). Ese artículo no lista países. México, Chile, Colombia y Perú: no encontramos un artículo de moneda local (búsqueda del 15 OCT 2026). Comisiones fiat, según los T&C: «1% de comisión en todos los depósitos FIAT exitosos», descontado del monto depositado (9.7); y si llegás a 10 o más retiros fiat en 30 días corridos, pagás un 2% por cada retiro adicional, «incluido el décimo» (10.8). Además, el proveedor de pago puede cobrar lo suyo (9.3). Nicaragua figura entre los territorios restringidos de Roobet (T&C 3.5 y ayuda del 25 AGO 2026). Aparte, varios proveedores de juegos bloquean países de la región según el proveedor o el juego: Argentina (a veces solo algunas provincias), Chile, Colombia, Ecuador, México, Perú y Uruguay aparecen en esa lista (ayuda «Regional restrictions by game provider», 1 SEP 2026). Eso limita juegos, no la cuenta. Pagar en moneda local no es una licencia local. Fuente: oficial (ayuda y T&C de Roobet).",
+            "Moneda local, país por país (ayuda y T&C de Roobet, revisados el 15 OCT 2026). Argentina: depósito por «Bank Transfer» desde la opción «Cash», con tu número de DNI. Transfieres el monto exacto a los datos bancarios que te muestran, y la acreditación puede tardar hasta 1 hora (ayuda «Bank Transfer Argentina Deposit», 18 JUN 2025). Ese artículo no dice moneda ni límites. Retiro con AstroPay: se pide desde «Cash» con el número de teléfono de tu cuenta AstroPay (ayuda, 24 JUL 2026). Ese artículo no lista países. México, Chile, Colombia y Perú: no encontramos un artículo de moneda local (búsqueda del 15 OCT 2026). Comisiones fiat, según los T&C: «1% de comisión en todos los depósitos FIAT exitosos», descontado del monto depositado (9.7); y si llegas a 10 o más retiros fiat en 30 días corridos, pagas un 2% por cada retiro adicional, «incluido el décimo» (10.8). Además, el proveedor de pago puede cobrar lo suyo (9.3). Nicaragua figura entre los territorios restringidos de Roobet (T&C 3.5 y ayuda del 25 AGO 2026). Aparte, varios proveedores de juegos bloquean países de la región según el proveedor o el juego: Argentina (a veces solo algunas provincias), Chile, Colombia, Ecuador, México, Perú y Uruguay aparecen en esa lista (ayuda «Regional restrictions by game provider», 1 SEP 2026). Eso limita juegos, no la cuenta. Pagar en moneda local no es una licencia local. Fuente: oficial (ayuda y T&C de Roobet).",
             "El artículo de depósito en cripto nombra un conjunto de monedas. No entra como catálogo de la tabla ni como lista de redes. Redes: no verificado · 03 OCT 2026.",
             "El retiro de la fila sigue sin dato. Pagar en moneda local no es una licencia local.",
         ],
@@ -1042,7 +1042,7 @@ VISUAL = {
         ],
         "paths_caveat": {
             "strong": "Rainbet publica dos versiones (rechequeo 15 OCT 2026).",
-            "body": "Camino B: la homepage y su página «Promotions Terms and Conditions» muestran dos caminos de welcome (x40 y «No Wager Lock»); el artículo de ayuda «First Deposit Promotion» dice que hay uno solo, el x40. Apuesta máxima con el bono activo: «Promotions Terms and Conditions» y la homepage dicen 2% del depósito; el artículo de ayuda «Deposit Bonus Terms and Conditions» dice 1%. No sabemos cuál aplica a tu cuenta. Antes de depositar, revisá los T&C vigentes y lo que te muestre tu pestaña de promociones. Fuente: oficial (páginas de Rainbet).",
+            "body": "Camino B: la homepage y su página «Promotions Terms and Conditions» muestran dos caminos de welcome (x40 y «No Wager Lock»); el artículo de ayuda «First Deposit Promotion» dice que hay uno solo, el x40. Apuesta máxima con el bono activo: «Promotions Terms and Conditions» y la homepage dicen 2% del depósito; el artículo de ayuda «Deposit Bonus Terms and Conditions» dice 1%. No sabemos cuál aplica a tu cuenta. Antes de depositar, revisa los T&C vigentes y lo que te muestre tu pestaña de promociones. Fuente: oficial (páginas de Rainbet).",
         },
         "hinge_n": "Qué desbloquea",
         "hinge": "Hay que optar en promotions antes de depositar. El Daily Race, el torneo Gates y los RakeBoosts no reemplazan el chip.",
