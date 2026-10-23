@@ -1,6 +1,15 @@
 {
   "senales": [
     {
+      "id": "kyc-cloudbet-2200-usd-2026-10-22",
+      "fecha": "2026-10-22",
+      "kicker": "Cloudbet · offshore · KYC · Declarado",
+      "titulo": "Cloudbet: verificación de identidad al llegar a 2.200 USD depositados",
+      "resumen": "Texto de Cloudbet (términos §21.1.5, versión del 30 SEP 2026, y ayuda; captura 22 OCT 2026): según sus términos, Cloudbet pide verificar tu identidad cuando tus depósitos acumulados llegan a 2.200 USD o los superan; hasta completar la verificación, depósitos y retiros pueden quedar restringidos y los fondos, bloqueados. También puede pedir documentos en cualquier momento.\nSu ayuda dice que verificar es opcional y que, hasta completar el nivel 2 (documento, prueba de domicilio y rostro), aplica un tope de 2.200 USD en depósitos acumulados de por vida y de 2.200 USD por día en retiros. Con los documentos en revisión, el tope de retiro sigue.",
+      "numero": "2.200 USD",
+      "fuentes_html": "Fuentes · <a href=\"https://www.cloudbet.com/en/help/terms\" target=\"_blank\" rel=\"noopener\">cloudbet.com · términos §21.1.5</a> · <a href=\"https://www.cloudbet.com/en/support/articles/415596-what-are-cloudbet-s-verification-levels\" target=\"_blank\" rel=\"noopener\">ayuda de Cloudbet · niveles de verificación</a> · <a href=\"https://www.cloudbet.com/en/support/articles/103199-what-is-my-maximum-daily-withdrawal-limit-on-cloudbet\" target=\"_blank\" rel=\"noopener\">ayuda de Cloudbet · límite diario de retiro</a> · 22 OCT 2026"
+    },
+    {
       "id": "metodos-shuffle-spei-mxn-2026-10-22",
       "fecha": "2026-10-22",
       "kicker": "Shuffle · offshore · Métodos · Declarado",

@@ -52,7 +52,7 @@ ROWS = [
             "ID + selfie + prueba de domicilio (Sumsub, nombrado en el AML). Terms §20: pueden restringir si el ID no se completa en 72 h; la verificación puede tardar hasta 7 días hábiles.",
             "ID de gobierno antes del primer retiro (Terms). Help: email → datos → ID → prueba de domicilio.",
             "Help 24 ago 2026: pasaporte, DNI ambos lados o licencia ambos lados. Cuándo lo exigen: no verificado · 25 SEP 2026.",
-            "Niveles · L2 ID + prueba de domicilio + face (Sumsub). Más detalle del disparador: no verificado · 03 OCT 2026.",
+            "Niveles · L2 ID + prueba de domicilio + face (Sumsub). Disparador, texto de Cloudbet (Terms §21.1.5, 22 OCT 2026): verificación al llegar a 2.200 USD depositados en total o superarlos.",
             "L2 ID (pasaporte, licencia o documento de gobierno). Más detalle del disparador: no verificado · 03 OCT 2026.",
         ],
     ),
@@ -813,7 +813,8 @@ FICHAS = {
             "El período de 30 días empieza al hacer la primera apuesta después de ese depósito (§8.4.2), no desde la hora del depósito. No hay un Nx de rollover publicado para este paquete. No inventamos uno.",
             "Monster Mash (página de la promo, captura 22 OCT 2026) es una señal de lobby: pozo de 2.000 USD, top 30, apuesta mínima 1 USD, ranking por el multiplicador más alto de una sola jugada, pago en USDT. Ventana: 22 OCT 01:00 → 24 OCT 00:59 hora Guatemala. No reemplaza el chip.",
         ],
-        "kyc": "KYC declarado por niveles. Level 2: foto del documento, prueba de domicilio y verificación de rostro. Sumsub está en Terms §21.1.3; el artículo de niveles no lo nombra. El help dice que pueden pedir la verificación en cualquier momento. Los topes de Level 1 están publicados (2.200 USD de depósito de por vida y 2.200 USD de retiro diario) y no están en la celda de la tabla. Un disparador fijo, más allá de “en cualquier momento”: no verificado · 03 OCT 2026. Fuente: help y Terms, 03 OCT 2026.",
+        "kyc_guide_html": '<div class="prose"><p>Registro, países restringidos, KYC y apuesta mínima, según las páginas de Cloudbet: <a href="/guias/cloudbet-registro-paises-kyc/">guía</a>.</p></div>',
+        "kyc": "KYC declarado por niveles. Level 2: foto del documento, prueba de domicilio y verificación de rostro. Sumsub está en Terms §21.1.3; el artículo de niveles no lo nombra. El help dice que verificar es opcional y que pueden pedir la verificación en cualquier momento. Hasta completar el Level 2, el help publica un tope de 2.200 USD en depósitos acumulados de por vida y de 2.200 USD por día en retiros; esos topes no están en la celda de la tabla. Disparador fijo: según sus términos (§21.1.5), Cloudbet pide verificar tu identidad cuando tus depósitos acumulados llegan a 2.200 USD o los superan; hasta completarla, depósitos y retiros pueden quedar restringidos y los fondos, bloqueados. Fuente: help y Terms (versión del 30 SEP 2026), captura 22 OCT 2026.",
         "offshore": "Cloudbet publica Curaçao Gaming Authority, OGL/2024/328/0599, a nombre de Halcyon Super Holdings B.V. (148526). Eso no es una licencia de Argentina. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
         "senales": [
             {
@@ -1317,7 +1318,7 @@ VISUAL = {
         "chain": ["ID", "domicilio", "face"],
         "big": "L2",
         "big_label": "ID + domicilio + face",
-        "kyc_note": "Pueden pedir la verificación en cualquier momento. Un disparador fijo: no verificado · 03 OCT 2026.",
+        "kyc_note": "Pueden pedir la verificación en cualquier momento. Disparador fijo (Terms §21.1.5, 22 OCT 2026): al llegar a 2.200 USD depositados en total o superarlos.",
     },
     "roobet": {
         "meta": [
@@ -1651,7 +1652,7 @@ def render_ficha(slug: str) -> str:
               <p>{e(visual["big_label"])}</p>
             </div>
           </div>
-          {prose_html([data["kyc"]])}
+          {prose_html([data["kyc"]])}{data.get("kyc_guide_html", "")}
         </section>
         <section class="sig" aria-labelledby="senales">
           <h2 id="senales">Señales observadas</h2>

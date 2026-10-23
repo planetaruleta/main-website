@@ -23,7 +23,8 @@ El texto de las guías, sin el menú del sitio, está en [llms-full.txt](https:/
 - [Cómo leer una promo de casino](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/): Método para leer opt-in, ventana, juegos excluidos y zona horaria en los términos, no el calendario de una promo vigente.
 - [USDT vs BTC para un depósito crypto](https://www.planetaruleta.com/guias/usdt-vs-btc-bankroll/): Custodia, comisiones, velocidad y volatilidad del activo al elegir USDT o BTC. No es consejo financiero.
 - [Antes de retirar: rollover del depósito y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/): Qué dicen las páginas oficiales de Rainbet, Shuffle, Cloudbet, Stake y Roobet sobre apostar el depósito y verificar la identidad antes de retirar.
-- [RTP y ventaja de la casa en ruleta](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/): De dónde sale la ventaja de la casa en la ruleta europea y americana, qué RTP publican Shuffle y Rainbet, y cómo leer esos números en una promo.
+- [RTP y ventaja de la casa en ruleta](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/): La cuenta de la ventaja de la casa y del RTP en la ruleta europea, americana y francesa (la partage y en prison), qué RTP publican Shuffle y Rainbet, y cómo leer esos números en una promo.
+- [Cloudbet: registro, países restringidos y KYC](https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/): Qué dicen la ayuda y los términos de Cloudbet sobre registro, países restringidos, KYC por niveles, licencia y apuesta mínima, con fecha de revisión.
 
 ## Mesa
 
