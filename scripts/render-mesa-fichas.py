@@ -948,7 +948,7 @@ FICHAS = {
         "plata_title": "Cómo entra y sale el dinero",
         "plata": [
             "La lista de cripto de esta revisión es BTC, ETH, LTC, SOL, XRP, DOGE, TRX, BNB, USDT, USDC, DAI, SHIB, APE y TRUMP. El depósito en moneda fiat, cuando existe, es una compra de cripto con un tercero (PIX en Brasil, tarjetas y otros). No hay un método de depósito en pesos mexicanos ni en pesos argentinos. MXN, ARS y CLP solo se muestran como moneda de referencia.",
-            "Los retiros son solo en cripto. No hay tope máximo en lo revisado. Según los términos (§5.3, citados en la ayuda), hay que apostar el 10% del depósito antes de retirar. Es una condición, no un plazo: no tenemos el tiempo de retiro.",
+            "Los retiros son solo en cripto. Según los términos (§5.3, citados en la ayuda), hay que apostar el 10% del depósito antes de retirar. Es una condición, no un plazo: no tenemos el tiempo de retiro.",
             "Países aceptados, según el centro de ayuda (artículo 16451925, que toma la lista de los términos §3.2): México, Argentina, Colombia, Chile, Perú y Brasil. La lista de restringidos incluye España y Estados Unidos, y también Aruba, Australia, Bélgica, Bonaire, Cuba, Curaçao, Francia, Irán, Italia, Myanmar, Países Bajos, Corea del Norte, Portugal, Saba, Singapur, San Eustaquio (Statia), San Martín (St Martin), Sudán, Siria, Reino Unido, Yemen, y Crimea, Donetsk y Luhansk. Que acepte jugadores de México o Argentina no es una licencia local.",
         ],
         "bono": [
