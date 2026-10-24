@@ -660,7 +660,7 @@ details.faq .answer p { margin: 0; }
   border-top: 1px solid var(--line);
   -webkit-overflow-scrolling: touch;
 }
-.cmp { width: 100%; border-collapse: collapse; min-width: 64rem; }
+.cmp { width: 100%; border-collapse: collapse; min-width: 75rem; }
 .cmp caption {
   caption-side: bottom;
   text-align: left;
