@@ -35,7 +35,7 @@ ROWS = [
             "Rakeback 3.5% del house edge (welcome), vía código. No es un match con WR fijo.",
             "≤$2.5k/30d · 10% RB. Tal cual la celda (30 SEP 2026). Sin WR en la celda.",
             "Instant RB · +10% welcome 24h. Tal cual la celda (30 SEP 2026). Sin WR en la celda.",
-            "Rakeback: las páginas propias no coinciden (5% plano / tope recurrente 25%). Welcome de tiradas: fuente de terceros, no de primera mano · 24 OCT 2026. Sin WR en la celda.",
+            "Rakeback: las cifras de la ayuda no cuadran (5% por ventana / máximo recurrente 25%). Bono de bienvenida en giros: fuente de terceros, no de primera mano · 24 OCT 2026. Sin requisito de apuesta en la celda.",
         ],
     ),
     (
@@ -46,7 +46,7 @@ ROWS = [
             "Clase: crypto · fiat · Chile: CLP con Visa (ayuda 24 AGO 2026). Lista y redes: no verificado · 03 OCT 2026. BTC solo en el ejemplo de rakeback.",
             "Clase: crypto · buy card (Swapped) · moneda local LatAm: no encontramos (15 OCT 2026). Lista y redes: no verificado · 03 OCT 2026.",
             "Clase: crypto · fiat+Swapped · AR: transferencia con DNI (ayuda 18 JUN 2025) · fiat: 1% por depósito (T&C 9.7). Lista y redes: no verificado · 03 OCT 2026.",
-            "Clase: crypto · compra fiat vía tercero (PIX BR, tarjetas). Sin método fiat MX/AR; MXN/ARS/CLP solo display. Retiros solo crypto. Redes: no verificado · 24 OCT 2026.",
+            "Clase: crypto · compra fiat vía tercero (PIX BR, tarjetas). Sin método fiat MX/AR; MXN/ARS/CLP solo como moneda de referencia. Retiros solo crypto. Redes: no verificado · 24 OCT 2026.",
         ],
     ),
     (
@@ -57,7 +57,7 @@ ROWS = [
             "Help 24 ago 2026: pasaporte, DNI ambos lados o licencia ambos lados. Cuándo lo exigen: no verificado · 25 SEP 2026.",
             "Niveles · L2 ID + prueba de domicilio + face (Sumsub). Disparador, texto de Cloudbet (Terms §21.1.5, 22 OCT 2026): verificación al llegar a 2.200 USD depositados en total o superarlos.",
             "L2 ID (pasaporte, licencia o documento de gobierno). Más detalle del disparador: no verificado · 03 OCT 2026.",
-            "Controles reforzados alrededor de 2.000 EUR acumulados; pueden pedirlos en cualquier momento. Artículo no citado · 24 OCT 2026.",
+            "Controles reforzados alrededor de 2.000 EUR acumulados; pueden pedirlos en cualquier momento. Ayuda, artículo 16335255 · 24 OCT 2026.",
         ],
     ),
     (
@@ -68,7 +68,7 @@ ROWS = [
             "Sportsbook declarado en el help (sección Sports; las apuestas sports cuentan al wager). stake.com/sports HTTP 403 el 03 OCT 2026.",
             "Sportsbook declarado: /en/sports, título “Crypto Sports Betting”. 03 OCT 2026.",
             "no verificado · 03 OCT 2026",
-            "no verificado · 24 OCT 2026",
+            "Sportsbook declarado en la ayuda (Fast Facts, 16780663). 24 OCT 2026.",
         ],
     ),
     (
@@ -79,7 +79,7 @@ ROWS = [
             "Curaçao-class por certificado CGA: OGL/2024/1451/0918, Active, otorgado 09/06/2025. Footer del operador no capturado (HTTP 403).",
             "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. No es licencia de Argentina.",
             "no verificado · 30 SEP 2026",
-            "Curaçao Gaming Authority, OGL/2024/1507/0838, Liquid Entertainment N.V. (153298). Certificado CGA Active, otorgado 01/11/2024. No es licencia de Argentina.",
+            "Curaçao Gaming Authority, OGL/2024/1507/0838, Liquid Entertainment N.V. (153298). Certificado CGA: activa, otorgada el 01/11/2024. No es licencia de Argentina.",
         ],
     ),
     (
@@ -101,7 +101,7 @@ ROWS = [
             "25 SEP 2026",
             "30 SEP 2026 (bono, KYC, métodos). Licencia y sportsbook: 03 OCT 2026.",
             "30 SEP 2026 (bono, KYC, métodos). Sportsbook y licencia rechequeados: 03 OCT 2026.",
-            "24 OCT 2026 (licencia, métodos, países, retiros). Welcome y licencia Anjouan de .io: fuente de terceros.",
+            "24 OCT 2026 (licencia, métodos, países, retiros). Bono de bienvenida y licencia de Anjouan en .io: fuente de terceros.",
         ],
     ),
 ]
@@ -231,13 +231,14 @@ def sheet_html(rows: list[tuple[str, str]]) -> str:
     return f'<dl class="sheet">{"".join(parts)}</dl>'
 
 
-def fuentes_html(links: list[tuple[str, str]]) -> str:
+def fuentes_html(links: list[tuple[str, str]], plain: str = "") -> str:
     bits = []
     for label, href in links:
         bits.append(
             f'<a href="{e(href)}" target="_blank" rel="noopener">{e(label)}</a>'
         )
-    return f'<p class="fuentes">Fuentes · {" · ".join(bits)}</p>'
+    extra = f" · {e(plain)}" if plain else ""
+    return f'<p class="fuentes">Fuentes · {" · ".join(bits)}{extra}</p>'
 
 
 def senales_block(data: dict) -> str:
@@ -926,14 +927,15 @@ FICHAS = {
         "title": "Duelbits: licencia, KYC y métodos — ficha | Planeta Ruleta",
         "description": "Duelbits: licencia CGA OGL/2024/1507/0838 y retiros solo en cripto. Sin método fiat de México ni Argentina. Sin puntaje. Offshore no es licencia de Argentina. +18.",
         "modified": "2026-10-24",
+        "published": "2026-10-24",
         "lede": [
-            "Duelbits está en la mesa como operador crypto/offshore. El certificado de la Curaçao Gaming Authority nombra OGL/2024/1507/0838, Active, y la ayuda Fast Facts nombra a Liquid Entertainment N.V.",
-            "Esta ficha no pone nota ni abre un depósito. El welcome de tiradas sale de una fuente de terceros. Las páginas propias de rakeback no coinciden entre sí.",
+            "Duelbits es un casino cripto con licencia de Curaçao. El certificado de la Curaçao Gaming Authority muestra la licencia OGL/2024/1507/0838 como activa, a nombre de Liquid Entertainment N.V. No es una licencia de México ni de Argentina.",
+            "Depósitos y retiros en cripto; no hay método en pesos mexicanos ni argentinos. Sus billeteras fueron hackeadas en febrero de 2024 y en septiembre de 2026; según Duelbits, en 2026 los saldos de los jugadores no se vieron afectados. Sin nota y sin enlace de afiliado. +18.",
         ],
         "sheet": [
-            ("Empresa", "Liquid Entertainment N.V., Curaçao, número 153298. Ayuda Fast Facts (help.duelbits.io, artículo 16780663), 24 OCT 2026."),
-            ("Licencia", "Curaçao Gaming Authority, OGL/2024/1507/0838, otorgado el 01/11/2024, estado Active, leído en cert.cga.cw (24 OCT 2026). No es licencia de Argentina. En duelbits.io, una fuente de terceros (rollshark) nombra una licencia de Anjouan, ALSI-112310013-FI5. La renovación después del 12 OCT 2026 no está verificada. No entra como chip."),
-            ("Monedas", "BTC, ETH, LTC, SOL, XRP, DOGE, TRX, BNB, USDT, USDC, DAI, SHIB, APE y TRUMP. El depósito fiat, cuando existe, es una compra de cripto con un tercero (PIX en Brasil, tarjetas y otros). No hay un método fiat de México ni de Argentina en la lista; MXN, ARS y CLP aparecen solo como display. Los retiros son solo en cripto. Redes: no verificado · 24 OCT 2026."),
+            ("Empresa", "Liquid Entertainment N.V., Curaçao, número 153298. Centro de ayuda del operador, artículo «Fast Facts» (help.duelbits.io, 16780663), 24 OCT 2026."),
+            ("Licencia", "Curaçao Gaming Authority, OGL/2024/1507/0838, otorgada el 01/11/2024, estado activo, leído en cert.cga.cw (24 OCT 2026). No es licencia de Argentina. En duelbits.io, una fuente de terceros (rollshark) nombra una licencia de Anjouan, ALSI-112310013-FI5. La renovación después del 12 OCT 2026 no está verificada. No es el dato principal."),
+            ("Monedas", "BTC, ETH, LTC, SOL, XRP, DOGE, TRX, BNB, USDT, USDC, DAI, SHIB, APE y TRUMP. El depósito fiat, cuando existe, es una compra de cripto con un tercero (PIX en Brasil, tarjetas y otros). No hay un método fiat de México ni de Argentina en la lista; MXN, ARS y CLP solo se muestran como moneda de referencia. Los retiros son solo en cripto. Redes: no verificado · 24 OCT 2026."),
             ("Idiomas", "El operador incluye español entre los idiomas. Soporte declarado: chat 24/7 y support@duelbits.com. El chat en español no está verificado · 24 OCT 2026."),
             ("Última revisión", "24 OCT 2026. duelbits.com no se pudo leer en esa auditoría. Los hechos salen de la ayuda, del certificado CGA y, donde se indica, de fuentes de terceros."),
         ],
@@ -941,40 +943,38 @@ FICHAS = {
             ("duelbits.com", "https://duelbits.com/"),
             ("help.duelbits.io", "https://help.duelbits.io/"),
             ("cert.cga.cw", "https://cert.cga.cw/"),
-            ("top100bookmakers.com", "https://top100bookmakers.com/"),
         ],
+        "fuentes_plain": "Prensa sobre los hackeos (sin enlace): top100bookmakers.com, crypto.news",
         "plata_title": "Cómo entra y sale el dinero",
         "plata": [
-            "La lista de cripto de esta revisión es BTC, ETH, LTC, SOL, XRP, DOGE, TRX, BNB, USDT, USDC, DAI, SHIB, APE y TRUMP. El depósito en moneda fiat, cuando existe, es una compra de cripto con un tercero (PIX en Brasil, tarjetas y otros). No hay un método de depósito en pesos mexicanos ni en pesos argentinos. MXN, ARS y CLP figuran solo como moneda de pantalla.",
-            "Los retiros son solo en cripto. No hay tope máximo en lo revisado. El mínimo es 10 USD en la mayoría de las monedas y 50 USD en BTC y ETH. Terms §5.3: hay que apostar el 10% del depósito antes de retirar. No es un plazo: el retiro de la mesa sigue en sin dato.",
-            "Países aceptados, según la ayuda (artículo 16451925): México, Argentina, Colombia, Chile, Perú y Brasil. La lista de restringidos incluye España y Estados Unidos, y también Aruba, Australia, Bélgica, Bonaire, Cuba, Curaçao, Francia, Irán, Italia, Myanmar, Países Bajos, Corea del Norte, Portugal, Saba, Singapur, San Eustaquio (Statia), San Martín (St Martin), Sudán, Siria, Reino Unido, Yemen, y Crimea, Donetsk y Luhansk. Que acepte jugadores de México o Argentina no es una licencia local.",
+            "La lista de cripto de esta revisión es BTC, ETH, LTC, SOL, XRP, DOGE, TRX, BNB, USDT, USDC, DAI, SHIB, APE y TRUMP. El depósito en moneda fiat, cuando existe, es una compra de cripto con un tercero (PIX en Brasil, tarjetas y otros). No hay un método de depósito en pesos mexicanos ni en pesos argentinos. MXN, ARS y CLP solo se muestran como moneda de referencia.",
+            "Los retiros son solo en cripto. No hay tope máximo en lo revisado. Según los términos (§5.3, citados en la ayuda), hay que apostar el 10% del depósito antes de retirar. Es una condición, no un plazo: no tenemos el tiempo de retiro.",
+            "Países aceptados, según el centro de ayuda (artículo 16451925, que toma la lista de los términos §3.2): México, Argentina, Colombia, Chile, Perú y Brasil. La lista de restringidos incluye España y Estados Unidos, y también Aruba, Australia, Bélgica, Bonaire, Cuba, Curaçao, Francia, Irán, Italia, Myanmar, Países Bajos, Corea del Norte, Portugal, Saba, Singapur, San Eustaquio (Statia), San Martín (St Martin), Sudán, Siria, Reino Unido, Yemen, y Crimea, Donetsk y Luhansk. Que acepte jugadores de México o Argentina no es una licencia local.",
         ],
         "bono": [
-            "Las páginas propias no coinciden en el rakeback. Una habla de un 5% plano, instantáneo y también diario, semanal y mensual. Otra habla de un máximo recurrente del 25%. No elegimos una sola cifra como chip. El programa VIP se llama Ace's Lounge.",
-            "Una fuente de terceros (rollshark, términos de julio de 2026) describe un welcome de tiradas y dice que no hay match de depósito. No es de primera mano y no entra como chip. No publicamos un Nx.",
+            "Las cifras de rakeback del centro de ayuda no cuadran. La página «Fast Facts» (16780663) dice 5% en cada ventana (instantáneo, diario, semanal y mensual) y, a la vez, un máximo recurrente del 25%. Otro artículo (5351533) reparte las ventanas de otra forma. No elegimos una cifra. El programa VIP se llama Ace's Lounge. Revisado el 24 OCT 2026.",
+            "Una fuente de terceros (rollshark, términos de julio de 2026) describe un bono de bienvenida en giros, sin bono sobre el depósito. No lo leímos en Duelbits y no es el dato principal.",
         ],
-        "kyc": "KYC: pueden pedir controles reforzados al acumular alrededor de 2.000 EUR, y también en cualquier momento. El artículo de ayuda no quedó citado en esta revisión (24 OCT 2026). El centro de ayuda dice que el saldo se pierde después de 12 meses sin actividad y que no hay límites de depósito que puedas configurar.",
-        "riesgo": [
-            "En septiembre de 2026 hubo un incidente en un hot wallet, de alrededor de 7 millones de USD: el sitio estuvo fuera de línea del 24 al 27 SEP (unos 3 días) y el operador dijo que los fondos de los clientes no se vieron afectados y que las billeteras se rellenaron (top100bookmakers.com, 27 SEP 2026). Hubo un incidente anterior en febrero de 2024; antes de depositar, revisa el estado de los retiros.",
-        ],
-        "offshore": "El certificado CGA de Duelbits está Active: OGL/2024/1507/0838. La ayuda nombra a Liquid Entertainment N.V. Eso no es una licencia de Argentina. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
+        "kyc": "KYC: según el centro de ayuda (artículo 16335255, 24 OCT 2026), la verificación reforzada se hace en general al llegar a unos 2.000 EUR acumulados en depósitos o retiros, y Duelbits puede pedirla en cualquier momento. El centro de ayuda dice que el saldo se pierde tras 12 meses seguidos sin actividad (artículo 17027063) y que no ofrece límites de depósito (artículo 16758548). Sí ofrece autoexclusión por 1 semana, 1 mes, 6 meses o de forma permanente (Fast Facts, 16780663).",
+        "riesgo_html": "<p><b>Seguridad.</b> El 24 SEP 2026, Duelbits confirmó un hackeo de sus billeteras en línea por unos 7 millones de USD. El sitio estuvo fuera de línea hasta el 27 SEP. Según Duelbits, los saldos de los jugadores no se vieron afectados y reabrió con unos 8 millones de USD en sus billeteras (cuenta de Duelbits en X, 27 SEP 2026; top100bookmakers.com, 27 SEP 2026). En febrero de 2024 hubo otro hackeo a una billetera de Duelbits, de unos 4,6 millones de USD según la firma de seguridad Cyvers (crypto.news, 13 FEB 2024).</p>",
+        "offshore": "Según el certificado de la CGA, la licencia OGL/2024/1507/0838 de Duelbits está activa. El centro de ayuda del operador nombra a Liquid Entertainment N.V. Eso no es una licencia de Argentina. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
         "senales": [],
         "faqs": [
             (
                 "¿Duelbits tiene licencia de Argentina?",
-                "No. El certificado CGA nombra OGL/2024/1507/0838, estado Active, otorgado el 01/11/2024. La ayuda Fast Facts nombra a Liquid Entertainment N.V. (153298). Eso no es una licencia del registro argentino. Una fuente de terceros nombra Anjouan para duelbits.io; la renovación después del 12 OCT 2026 no está verificada y no entra como chip. +18.",
+                "No. El certificado de la Curaçao Gaming Authority muestra la licencia OGL/2024/1507/0838 como activa, otorgada el 01/11/2024 a Liquid Entertainment N.V. (153298). Es una licencia de Curaçao, no del registro argentino. +18.",
             ),
             (
                 "¿Hay depósito en pesos de México o Argentina?",
-                "No hay un método fiat de México ni de Argentina en la lista revisada el 24 OCT 2026. MXN, ARS y CLP aparecen solo como moneda de pantalla. El depósito fiat, cuando existe, es una compra de cripto con un tercero. Los retiros son solo en cripto.",
+                "No hay un método fiat de México ni de Argentina en la lista revisada el 24 OCT 2026. MXN, ARS y CLP solo se muestran como moneda de referencia. El depósito fiat, cuando existe, es una compra de cripto con un tercero. Los retiros son solo en cripto.",
             ),
             (
-                "¿España o Estados Unidos pueden usar la sala?",
-                "La ayuda (artículo 16451925) incluye España y Estados Unidos entre los países restringidos. México, Argentina, Colombia, Chile, Perú y Brasil figuran como aceptados. Que acepte un país no es una licencia local.",
+                "¿En qué países no se puede usar?",
+                "Según el centro de ayuda (artículo 16451925), la lista de países restringidos incluye, entre otros, Estados Unidos, Reino Unido, España, Francia e Italia. México, Argentina, Colombia, Chile, Perú y Brasil figuran como aceptados. Que acepte un país no es una licencia local.",
             ),
             (
                 "¿Hay enlace de afiliado?",
-                "No. El espacio está en la ficha y dice enlace de afiliado no activo. Esta página no abre una puerta de depósito. Antes de depositar, revisa el estado de los retiros.",
+                "No. El espacio está en la ficha y dice enlace de afiliado no activo. Esta página no abre una puerta de depósito.",
             ),
         ],
     },
@@ -1063,8 +1063,8 @@ INDEX_LINES = [
         "duelbits",
         "Duelbits",
         "CGA",
-        "retiros solo crypto",
-        "Certificado OGL/2024/1507/0838, Active. Sin método fiat de México ni Argentina. El rakeback de las páginas propias no coincide.",
+        "retiros solo en cripto",
+        "Certificado OGL/2024/1507/0838, activa. Sin método fiat de México ni Argentina. Las cifras de rakeback de la ayuda no cuadran entre sí.",
     ),
 ]
 
@@ -1472,51 +1472,51 @@ VISUAL = {
     },
     "duelbits": {
         "meta": [
-            ("Operador", "crypto/offshore"),
+            ("Operador", "casino cripto"),
             ("Revisión", "24 OCT 2026"),
-            ("Licencia", "CGA · certificado"),
+            ("Licencia", "Curaçao (CGA)"),
         ],
         "seals": [
-            ("Licencia", ["CGA · OGL/2024/1507/0838", "no es registro AR"]),
-            ("Revisión", ["24 OCT 2026", "welcome: terceros"]),
+            ("Licencia", ["CGA · OGL/2024/1507/0838", "no es licencia de MX ni AR"]),
+            ("Revisión", ["24 OCT 2026", "sin nota · +18"]),
         ],
         "facts": [
             ("Licencia", "CGA", "OGL/2024/1507/0838"),
             ("Retiros", "crypto", "sin fiat MX/AR"),
-            ("Antes de retirar", "10%", "del depósito · ToS 5.3"),
-            ("KYC", "2.000", "EUR aprox · acumulados"),
+            ("Antes de retirar", "10%", "del depósito · Términos §5.3"),
+            ("KYC", "2.000", "EUR aprox · depósitos o retiros"),
         ],
-        "bonus_sub": "No hay un chip de bono adoptado. Las páginas de rakeback no coinciden.",
+        "bonus_sub": "No hay un chip de bono adoptado. Las cifras de rakeback de la ayuda no cuadran.",
         "paths": [
             {
-                "lab": "Páginas propias",
+                "lab": "Ayuda · Fast Facts",
                 "big": "5%",
                 "title": "Rakeback, una versión",
                 "items": [
-                    "5% plano, según una página",
+                    "5% por ventana, según la ayuda",
                     "Instantáneo, diario, semanal y mensual",
-                    "La otra página no dice lo mismo",
-                    "No es el chip",
+                    "No cuadra con el máximo del 25%",
+                    "No es el dato principal",
                 ],
             },
             {
-                "lab": "Otra página",
+                "lab": "Ayuda · misma página",
                 "big": "25%",
                 "title": "Tope recurrente",
                 "items": [
                     "Máximo recurrente del 25%",
-                    "Las dos páginas no coinciden",
+                    "No cuadra con el máximo del 25%",
                     "No elegimos una cifra",
-                    "Ace's Lounge es el VIP, no el chip",
+                    "Ace's Lounge es el VIP. No es el dato principal.",
                 ],
             },
         ],
         "hinge_n": "Qué no es",
-        "hinge": "No publicamos un Nx. El welcome de tiradas de una fuente de terceros no entra como chip.",
+        "hinge": "No publicamos un multiplicador de bono. El bono de bienvenida en giros viene de una fuente de terceros y no es el dato principal.",
         "rows": [
             (
                 "Tipos",
-                "Sportsbook: no verificado · 24 OCT 2026",
+                "Sportsbook: declarado en la ayuda (Fast Facts) · 24 OCT 2026",
                 "Catálogo: hueco · 24 OCT 2026",
             ),
             (
@@ -1531,21 +1531,21 @@ VISUAL = {
             ),
         ],
         "side": [
-            ("10%", "Del depósito", "Antes de retirar · ToS 5.3"),
+            ("10%", "Del depósito", "Antes de retirar · Términos §5.3"),
             ("crypto", "Retiros", "Sin método fiat"),
         ],
         "stages": [
             ("Depósito", "Crypto", "fiat solo vía tercero · sin MX/AR"),
-            ("KYC", "2.000 EUR", "aprox · pueden pedirlo ya"),
-            ("Retiro", "Solo crypto", "mín. 10 USD · 50 BTC/ETH"),
-            ("Proceso", "Sin SLA", "revisa el estado antes"),
+            ("KYC", "2.000 EUR", "aprox · o en cualquier momento"),
+            ("Retiro", "Solo crypto", "sin mínimo en esta ficha"),
+            ("Proceso", "Sin plazo publicado", "revisa el estado antes"),
         ],
         "caveat_strong": "Revisa el estado de los retiros antes de depositar.",
         "caveat": "Los retiros son solo en cripto. No hay un método fiat de México ni de Argentina en la lista.",
         "chain": ["controles reforzados", "en cualquier momento"],
         "big": "2.000",
         "big_label": "EUR acumulados, cifra aproximada",
-        "kyc_note": "Pueden pedir la verificación en cualquier momento. El artículo de ayuda no quedó citado · 24 OCT 2026.",
+        "kyc_note": "Pueden pedir la verificación en cualquier momento. Centro de ayuda, artículo 16335255 · 24 OCT 2026.",
     },
 }
 
@@ -1694,7 +1694,7 @@ def annex_html(data: dict) -> str:
           <summary>Anexo · empresa / licencia (dossier, no el gancho)</summary>
           <div class="body">
             {"".join(parts)}
-            {fuentes_html(data["fuentes"])}
+            {fuentes_html(data["fuentes"], data.get("fuentes_plain", ""))}
           </div>
         </details>"""
 
@@ -1709,6 +1709,15 @@ def lede_html(paragraphs: list[str]) -> str:
 
 def prose_html(paragraphs: list[str]) -> str:
     return f'<div class="prose">{"".join(f"<p>{e(p)}</p>" for p in paragraphs)}</div>'
+
+
+def kyc_prose(data: dict) -> str:
+    parts = [f"<p>{e(data['kyc'])}</p>"]
+    parts.extend(f"<p>{e(p)}</p>" for p in data.get("riesgo", []))
+    extra = data.get("riesgo_html")
+    if extra:
+        parts.append(extra)
+    return f'<div class="prose">{"".join(parts)}</div>'
 
 
 def render_ficha(slug: str) -> str:
@@ -1740,7 +1749,7 @@ def render_ficha(slug: str) -> str:
             "headline": data["h1"],
             "description": description,
             "inLanguage": "es",
-            "datePublished": "2026-10-03",
+            "datePublished": data.get("published", "2026-10-03"),
             "dateModified": data["modified"],
             "image": f"{HOST}/logo-saturn.png",
             "author": {"@id": ORG_ID},
@@ -1802,7 +1811,7 @@ def render_ficha(slug: str) -> str:
               <p>{e(visual["big_label"])}</p>
             </div>
           </div>
-          {prose_html([data["kyc"], *data.get("riesgo", [])])}{data.get("kyc_guide_html", "")}
+          {kyc_prose(data)}{data.get("kyc_guide_html", "")}
         </section>
         <section class="sig" aria-labelledby="senales">
           <h2 id="senales">Señales observadas</h2>

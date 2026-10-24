@@ -34,7 +34,7 @@ El texto de las guías, sin el menú del sitio, está en [llms-full.txt](https:/
 - [Ficha de Stake](https://www.planetaruleta.com/mesa/stake/): El help publica el welcome como rakeback, y la licencia se cita desde un certificado de Curaçao porque el pie del sitio no se pudo leer. Sin puntaje. Una licencia offshore no es una licencia local de tu país.
 - [Ficha de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/): Welcome y rakeback de casino que el help de Cloudbet declara, y la licencia de Curaçao que publica. Sin puntaje. Una licencia offshore no es una licencia local de tu país.
 - [Ficha de Roobet](https://www.planetaruleta.com/mesa/roobet/): Rakeback instantáneo y un boost de 24 horas al registrarse, según el help. La licencia y el sportsbook del HTML público quedan en no verificado. Sin puntaje.
-- [Ficha de Duelbits](https://www.planetaruleta.com/mesa/duelbits/): Licencia CGA OGL/2024/1507/0838, Liquid Entertainment N.V. Sin método fiat de México ni Argentina; retiros solo en cripto. España y Estados Unidos están en la lista de restringidos. Sin puntaje. El enlace de afiliado no está activo.
+- [Ficha de Duelbits](https://www.planetaruleta.com/mesa/duelbits/): Licencia CGA OGL/2024/1507/0838, Liquid Entertainment N.V. Sin método fiat de México ni Argentina; retiros solo en cripto. Sin puntaje. El enlace de afiliado no está activo.
 
 ## Señales
 
