@@ -45,6 +45,7 @@ FICHA_SLUGS = {
     "Stake": "stake",
     "Cloudbet": "cloudbet",
     "Roobet": "roobet",
+    "Duelbits": "duelbits",
 }
 MONTHS = (
     None,

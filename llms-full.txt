@@ -27,7 +27,7 @@ Estas guías explican mecánicas de casino: qué es el RTP, el max bet de un bon
   Custodia, fees, velocidad y volatilidad del activo. No es consejo financiero.
 - **[Antes de retirar: rollover del depósito y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/)**
 
-  Qué dicen las páginas oficiales de Rainbet, Shuffle, Cloudbet, Stake y Roobet sobre apostar el depósito y verificar identidad antes de retirar.
+  Qué dicen las páginas de Rainbet, Shuffle, Cloudbet, Stake, Roobet y Duelbits sobre apostar el depósito y verificar identidad antes de retirar. En Duelbits, la página no se pudo leer.
 - **[RTP y ventaja de la casa en ruleta](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/)**
 
   Europea, americana y francesa: la cuenta de la ventaja de la casa y del RTP, qué publican Shuffle y Rainbet, y cómo leer esos números en una promo.
@@ -376,7 +376,7 @@ Guía · +18 · alfabetización
 
 # Antes de retirar: rollover del depósito y verificación KYC, según las páginas oficiales
 
-La home de un casino cripto habla de retiros en minutos. Antes de que corra ese reloj suele haber dos pasos: apostar el depósito una cantidad de veces (rollover) y verificar tu identidad (KYC). Esta guía junta lo que dicen las páginas oficiales de cinco salas sobre esos dos pasos, citado tal cual y con la fecha en que lo revisamos. Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala. Montos en dólares estadounidenses (USD).
+La home de un casino cripto habla de retiros en minutos. Antes de que corra ese reloj suele haber dos pasos: apostar el depósito una cantidad de veces (rollover) y verificar tu identidad (KYC). Esta guía junta lo que dicen las páginas oficiales de seis salas sobre esos dos pasos, citado tal cual y con la fecha en que lo revisamos. En Duelbits, duelbits.com no se pudo leer el 24 oct 2026: esa sala va marcada como auditoría, no como cita de la página en vivo. Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala. Montos en dólares estadounidenses (USD).
 
 ## 1. Rollover del depósito: apostarlo antes de retirarlo
 
@@ -386,6 +386,7 @@ Algunas salas piden que apuestes el monto depositado antes de retirar. No es lo 
 - **Rainbet (home, revisado 14 oct 2026):** retiro mínimo de 15 USD o su equivalente.
 - **Stake (ayuda, revisado 8 oct 2026):** cada depósito debe apostarse al 100 % antes de retirar o hacer tip.
 - **Roobet (ayuda, revisado 8 y 14 oct 2026):** pide apostar al menos el 100 % del depósito en cripto antes de retirar o hacer tip.
+- **Duelbits (términos §5.3, auditoría 24 oct 2026):** hay que apostar el 10 % del depósito antes de retirar. Los retiros son solo en cripto, sin tope máximo en lo revisado; el mínimo es 10 USD en la mayoría de las monedas y 50 USD en BTC y ETH. duelbits.com no se pudo leer en esa pasada: no es una cita tomada de la página en vivo.
 
 Cómo leerlo: si una promo cambia la condición de retiro, eso es parte del costo de la promo. Más en [/guias/como-leer-una-promo-casino/](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/).
 
@@ -395,6 +396,7 @@ Cómo leerlo: si una promo cambia la condición de retiro, eso es parte del cost
 - **Rainbet (términos §20.1, revisado 14 oct 2026):** la misma cláusula escribe dos números. Uno: su equipo de KYC tiene 24 horas («24hrs») para revisar tus documentos y avisarte por mail. Dos: la verificación puede tardar hasta 7 días hábiles en analizarse. Rainbet no explica cómo se combinan; aquí los dejamos tal cual, sin decir cuál aplica. La cláusula también dice que puede restringir pagos y retiros si la verificación no se completa en 72 horas, que en estado «Temporarily Approved» no hay retiros, y que no pasar el control de identidad «will result in confiscation of funds». Palabras de Rainbet.
 - **Rainbet (términos §8.4, revisado 14 oct 2026):** los retiros van al medio original; a otro medio solo a su criterio y con controles de seguridad adicionales.
 - **Cloudbet (ayuda, revisado 8 oct 2026):** sin verificar o en nivel 1, límite de 2.200 USD por día; en nivel 2 (identidad, domicilio y rostro), sin límite.
+- **Duelbits (auditoría 24 oct 2026):** controles reforzados alrededor de 2.000 EUR acumulados, y pueden pedirlos en cualquier momento. El artículo de ayuda no quedó citado. El centro de ayuda dice que el saldo se pierde después de 12 meses sin actividad y que no hay límites de depósito configurables.
 
 ## 3. Cuánto tarda: la home vs los términos
 
@@ -403,6 +405,7 @@ Cómo leerlo: si una promo cambia la condición de retiro, eso es parte del cost
 - **Rainbet (revisado 14 oct 2026):** la home dice 5 a 15 minutos «in normal conditions»; sus términos no dan plazo de procesamiento de retiros (el «24hrs» de §20.1 es para revisar documentos de KYC, ver arriba).
 - **Stake (revisado 8 oct 2026):** sus términos no se pudieron leer (la página bloqueó nuestra revisión). En la ayuda, los retiros grandes pueden requerir proceso manual y retención temporal, sin horas indicadas.
 - **Roobet (revisado 8 y 14 oct 2026):** términos y home no se pudieron leer (página vacía); en su ayuda no hay plazo de retiro.
+- **Duelbits (auditoría 24 oct 2026):** no hay un plazo de retiro en lo revisado. En septiembre de 2026 el sitio estuvo fuera de línea unos 3 días tras un incidente en un hot wallet (alrededor de 7 millones de USD); el operador dijo que los fondos de los clientes no se vieron afectados y que las billeteras se rellenaron. Hubo un incidente anterior en febrero de 2024. Antes de depositar, revisa el estado de los retiros.
 
 La home es promesa, no plazo escrito. Para la velocidad de la red y la elección de moneda, mira [/guias/usdt-vs-btc-bankroll/](https://www.planetaruleta.com/guias/usdt-vs-btc-bankroll/).
 
@@ -413,7 +416,7 @@ La home es promesa, no plazo escrito. Para la velocidad de la red y la elección
 3. Qué documentos pide el KYC y qué pasa si no lo completas.
 4. Límites por nivel de verificación.
 
-Recuerda que apostar el depósito es exponerlo a la ventaja de la casa: ver [/guias/rtp-volatilidad/](https://www.planetaruleta.com/guias/rtp-volatilidad/). Fichas de cada sala: [Rainbet](https://www.planetaruleta.com/mesa/rainbet/), [Shuffle](https://www.planetaruleta.com/mesa/shuffle/), [Stake](https://www.planetaruleta.com/mesa/stake/), [Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/), [Roobet](https://www.planetaruleta.com/mesa/roobet/). Dudas generales: [/faq/](https://www.planetaruleta.com/faq/).
+Recuerda que apostar el depósito es exponerlo a la ventaja de la casa: ver [/guias/rtp-volatilidad/](https://www.planetaruleta.com/guias/rtp-volatilidad/). Fichas de cada sala: [Rainbet](https://www.planetaruleta.com/mesa/rainbet/), [Shuffle](https://www.planetaruleta.com/mesa/shuffle/), [Stake](https://www.planetaruleta.com/mesa/stake/), [Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/), [Roobet](https://www.planetaruleta.com/mesa/roobet/), [Duelbits](https://www.planetaruleta.com/mesa/duelbits/). Dudas generales: [/faq/](https://www.planetaruleta.com/faq/).
 
 Los términos cambian. Revisa la versión vigente en la web oficial de cada sala antes de decidir. +18. Si estás persiguiendo pérdidas, o cancelas un retiro para seguir jugando, detente y busca ayuda.
 
@@ -473,6 +476,7 @@ Esto sí es lo que publica cada sala en la página pública del juego, sin inici
 - **Cloudbet:** sus páginas muestran cifras distintas para el mismo juego, así que no citamos ninguna.
 - **Stake:** la página de ruleta bloqueó nuestra revisión; no pudimos leerla.
 - **Roobet:** sin iniciar sesión, no encontramos la cifra en la página del juego ni en su ayuda.
+- **Duelbits:** duelbits.com no se pudo leer en la auditoría del 24 oct 2026. No citamos un RTP de ruleta. Ficha: [/mesa/duelbits/](https://www.planetaruleta.com/mesa/duelbits/).
 
 Las citas entre comillas van tal cual las publica cada sala (con punto decimal). Las cifras pueden cambiar. Revisa la ficha del juego en la web de cada sala antes de decidir.
 
