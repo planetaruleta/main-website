@@ -405,7 +405,7 @@ Cómo leerlo: si una promo cambia la condición de retiro, eso es parte del cost
 - **Rainbet (revisado 14 oct 2026):** la home dice 5 a 15 minutos «in normal conditions»; sus términos no dan plazo de procesamiento de retiros (el «24hrs» de §20.1 es para revisar documentos de KYC, ver arriba).
 - **Stake (revisado 8 oct 2026):** sus términos no se pudieron leer (la página bloqueó nuestra revisión). En la ayuda, los retiros grandes pueden requerir proceso manual y retención temporal, sin horas indicadas.
 - **Roobet (revisado 8 y 14 oct 2026):** términos y home no se pudieron leer (página vacía); en su ayuda no hay plazo de retiro.
-- **Duelbits (auditoría 24 oct 2026):** no hay un plazo de retiro publicado. Tras un hackeo a sus billeteras, el sitio estuvo fuera de línea del 24 al 27 SEP 2026; según Duelbits, los saldos de los jugadores no se vieron afectados. Detalles y fuentes en la ficha.
+- **Duelbits (auditoría 24 oct 2026):** no hay un plazo de retiro publicado. Detalles y fuentes en la ficha.
 
 La home es promesa, no plazo escrito. Para la velocidad de la red y la elección de moneda, mira [/guias/usdt-vs-btc-bankroll/](https://www.planetaruleta.com/guias/usdt-vs-btc-bankroll/).
 

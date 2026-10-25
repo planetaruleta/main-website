@@ -930,7 +930,7 @@ FICHAS = {
         "published": "2026-10-24",
         "lede": [
             "Duelbits es un casino cripto con licencia de Curaçao. El certificado de la Curaçao Gaming Authority muestra la licencia OGL/2024/1507/0838 como activa, a nombre de Liquid Entertainment N.V. No es una licencia de México ni de Argentina.",
-            "Depósitos y retiros en cripto; no hay método en pesos mexicanos ni argentinos. Sus billeteras fueron hackeadas en febrero de 2024 y en septiembre de 2026; según Duelbits, en 2026 los saldos de los jugadores no se vieron afectados. Sin nota y sin enlace de afiliado. +18.",
+            "Depósitos y retiros en cripto; no hay método en pesos mexicanos ni argentinos. Sin nota y sin enlace de afiliado. +18.",
         ],
         "sheet": [
             ("Empresa", "Liquid Entertainment N.V., Curaçao, número 153298. Centro de ayuda del operador, artículo «Fast Facts» (help.duelbits.io, 16780663), 24 OCT 2026."),
@@ -944,7 +944,6 @@ FICHAS = {
             ("help.duelbits.io", "https://help.duelbits.io/"),
             ("cert.cga.cw", "https://cert.cga.cw/"),
         ],
-        "fuentes_plain": "Prensa sobre los hackeos (sin enlace): top100bookmakers.com, crypto.news",
         "plata_title": "Cómo entra y sale el dinero",
         "plata": [
             "La lista de cripto de esta revisión es BTC, ETH, LTC, SOL, XRP, DOGE, TRX, BNB, USDT, USDC, DAI, SHIB, APE y TRUMP. El depósito en moneda fiat, cuando existe, es una compra de cripto con un tercero (PIX en Brasil, tarjetas y otros). No hay un método de depósito en pesos mexicanos ni en pesos argentinos. MXN, ARS y CLP solo se muestran como moneda de referencia.",
@@ -956,7 +955,7 @@ FICHAS = {
             "Una fuente de terceros (rollshark, términos de julio de 2026) describe un bono de bienvenida en giros, sin bono sobre el depósito. No lo leímos en Duelbits y no es el dato principal.",
         ],
         "kyc": "KYC: según el centro de ayuda (artículo 16335255, 24 OCT 2026), la verificación reforzada se hace en general al llegar a unos 2.000 EUR acumulados en depósitos o retiros, y Duelbits puede pedirla en cualquier momento. El centro de ayuda dice que el saldo se pierde tras 12 meses seguidos sin actividad (artículo 17027063) y que no ofrece límites de depósito (artículo 16758548). Sí ofrece autoexclusión por 1 semana, 1 mes, 6 meses o de forma permanente (Fast Facts, 16780663).",
-        "riesgo_html": "<p><b>Seguridad.</b> El 24 SEP 2026, Duelbits confirmó un hackeo de sus billeteras en línea por unos 7 millones de USD. El sitio estuvo fuera de línea hasta el 27 SEP. Según Duelbits, los saldos de los jugadores no se vieron afectados y reabrió con unos 8 millones de USD en sus billeteras (cuenta de Duelbits en X, 27 SEP 2026; top100bookmakers.com, 27 SEP 2026). En febrero de 2024 hubo otro hackeo a una billetera de Duelbits, de unos 4,6 millones de USD según la firma de seguridad Cyvers (crypto.news, 13 FEB 2024).</p>",
+        "riesgo_html": "<p><b>Seguridad.</b> En febrero de 2024 y en septiembre de 2026 hubo incidentes en billeteras de Duelbits; según se informó, los fondos de los jugadores no se vieron afectados.</p>",
         "offshore": "Según el certificado de la CGA, la licencia OGL/2024/1507/0838 de Duelbits está activa. El centro de ayuda del operador nombra a Liquid Entertainment N.V. Eso no es una licencia de Argentina. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
         "senales": [],
         "faqs": [
