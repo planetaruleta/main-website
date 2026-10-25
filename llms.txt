@@ -12,7 +12,7 @@ El texto de las guías, sin el menú del sitio, está en [llms-full.txt](https:/
 
 ## Inicio
 
-- [Inicio](https://www.planetaruleta.com/): Portada con las señales recientes, la mesa de cinco operadores y el acceso al canal. Declarado sale del texto del operador. No es un ranking ni un casino.
+- [Inicio](https://www.planetaruleta.com/): Portada con las señales recientes, la mesa de seis operadores y el acceso al canal. Declarado sale del texto del operador. No es un ranking ni un casino.
 
 ## Guías
 
@@ -22,18 +22,19 @@ El texto de las guías, sin el menú del sitio, está en [llms-full.txt](https:/
 - [Cashback, rakeback y lossback](https://www.planetaruleta.com/guias/cashback-rakeback-lossback/): Tres devoluciones con bases de cálculo distintas. El porcentaje, y si vuelve en cash o en bono, está en los términos y condiciones.
 - [Cómo leer una promo de casino](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/): Método para leer opt-in, ventana, juegos excluidos y zona horaria en los términos, no el calendario de una promo vigente.
 - [USDT vs BTC para un depósito crypto](https://www.planetaruleta.com/guias/usdt-vs-btc-bankroll/): Custodia, comisiones, velocidad y volatilidad del activo al elegir USDT o BTC. No es consejo financiero.
-- [Antes de retirar: rollover del depósito y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/): Qué dicen las páginas oficiales de Rainbet, Shuffle, Cloudbet, Stake y Roobet sobre apostar el depósito y verificar la identidad antes de retirar.
+- [Antes de retirar: rollover del depósito y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/): Qué dicen las páginas de Rainbet, Shuffle, Cloudbet, Stake, Roobet y Duelbits sobre apostar el depósito y verificar la identidad antes de retirar. En Duelbits, la página no se pudo leer.
 - [RTP y ventaja de la casa en ruleta](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/): La cuenta de la ventaja de la casa y del RTP en la ruleta europea, americana y francesa (la partage y en prison), qué RTP publican Shuffle y Rainbet, y cómo leer esos números en una promo.
 - [Cloudbet: registro, países restringidos y KYC](https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/): Qué dicen la ayuda y los términos de Cloudbet sobre registro, países restringidos, KYC por niveles, licencia y apuesta mínima, con fecha de revisión.
 
 ## Mesa
 
-- [Mesa de fichas](https://www.planetaruleta.com/mesa/): Comparación declarada de Rainbet, Shuffle, Stake, Cloudbet y Roobet sobre licencia, KYC y bono. Sin puntaje y con el enlace de afiliado inactivo.
+- [Mesa de fichas](https://www.planetaruleta.com/mesa/): Comparación declarada de Rainbet, Shuffle, Stake, Cloudbet, Roobet y Duelbits sobre licencia, KYC y bono. Sin puntaje y con el enlace de afiliado inactivo.
 - [Ficha de Rainbet](https://www.planetaruleta.com/mesa/rainbet/): Licencia de Anjouan que Rainbet declara, welcome x40 o un camino sin ese rollover (la ayuda muestra solo el x40; la ficha no resuelve cuál aplica) y KYC con documento, selfie y domicilio. Sin puntaje. Una licencia offshore no es una licencia local de tu país.
 - [Ficha de Shuffle](https://www.planetaruleta.com/mesa/shuffle/): Rakeback de casino y licencia de Curaçao que Shuffle publica, y KYC antes del primer retiro. Sin puntaje. Una licencia offshore no es una licencia local de tu país.
 - [Ficha de Stake](https://www.planetaruleta.com/mesa/stake/): El help publica el welcome como rakeback, y la licencia se cita desde un certificado de Curaçao porque el pie del sitio no se pudo leer. Sin puntaje. Una licencia offshore no es una licencia local de tu país.
 - [Ficha de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/): Welcome y rakeback de casino que el help de Cloudbet declara, y la licencia de Curaçao que publica. Sin puntaje. Una licencia offshore no es una licencia local de tu país.
 - [Ficha de Roobet](https://www.planetaruleta.com/mesa/roobet/): Rakeback instantáneo y un boost de 24 horas al registrarse, según el help. La licencia y el sportsbook del HTML público quedan en no verificado. Sin puntaje.
+- [Ficha de Duelbits](https://www.planetaruleta.com/mesa/duelbits/): Licencia CGA OGL/2024/1507/0838, Liquid Entertainment N.V. Sin método fiat de México ni Argentina; retiros solo en cripto. Sin puntaje. El enlace de afiliado no está activo.
 
 ## Señales
 
