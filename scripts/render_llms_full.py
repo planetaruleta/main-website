@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_PATH = ROOT / "llms-full.txt"
 ORIGIN = "https://www.planetaruleta.com"
 
-# Sitemap order for the guide index and the nine guides.
+# Sitemap order for the guide index and the ten guides.
 PAGES: list[tuple[str, str]] = [
     ("guias/index.html", f"{ORIGIN}/guias/"),
     ("guias/rtp-volatilidad/index.html", f"{ORIGIN}/guias/rtp-volatilidad/"),
@@ -34,6 +34,7 @@ PAGES: list[tuple[str, str]] = [
     ("guias/rtp-ventaja-casa-ruleta/index.html", f"{ORIGIN}/guias/rtp-ventaja-casa-ruleta/"),
     ("guias/cloudbet-registro-paises-kyc/index.html", f"{ORIGIN}/guias/cloudbet-registro-paises-kyc/"),
     ("guias/pagar-para-retirar-bono-falso/index.html", f"{ORIGIN}/guias/pagar-para-retirar-bono-falso/"),
+    ("guias/plinko-cloudbet/index.html", f"{ORIGIN}/guias/plinko-cloudbet/"),
 ]
 
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
@@ -48,7 +49,7 @@ HEADER = """# Planeta Ruleta — texto de las guías
 
 > Copia en texto de las guías públicas de alfabetización. El wording es el de cada página. Este archivo no agrega cifras, licencias ni rankings. +18. No es consejo de apuesta ni un enlace de afiliado.
 
-Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla diez veces.
+Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla once veces.
 
 """
 
