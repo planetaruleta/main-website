@@ -25,6 +25,7 @@ El texto de las guías, sin el menú del sitio, está en [llms-full.txt](https:/
 - [Antes de retirar: rollover del depósito y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/): Qué dicen las páginas de Rainbet, Shuffle, Cloudbet, Stake, Roobet y Duelbits sobre apostar el depósito y verificar la identidad antes de retirar. En Duelbits, la página no se pudo leer.
 - [RTP y ventaja de la casa en ruleta](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/): La cuenta de la ventaja de la casa y del RTP en la ruleta europea, americana y francesa (la partage y en prison), qué RTP publican Shuffle y Rainbet, y cómo leer esos números en una promo.
 - [Cloudbet: registro, países restringidos y KYC](https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/): Qué dicen la ayuda y los términos de Cloudbet sobre registro, países restringidos, KYC por niveles, licencia y apuesta mínima, con fecha de revisión.
+- [Depositar para retirar: bono falso y clones](https://www.planetaruleta.com/guias/pagar-para-retirar-bono-falso/): Si te piden por mensaje depositar o pagar para liberar un retiro, no sigas. El patrón del bono falso, los sitios clon y cómo revisar el dominio. +18.
 
 ## Mesa
 

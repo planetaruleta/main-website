@@ -2,7 +2,7 @@
 
 > Copia en texto de las guías públicas de alfabetización. El wording es el de cada página. Este archivo no agrega cifras, licencias ni rankings. +18. No es consejo de apuesta ni un enlace de afiliado.
 
-Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla nueve veces.
+Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla diez veces.
 
 Alfabetización · +18
 
@@ -34,6 +34,9 @@ Estas guías explican mecánicas de casino: qué es el RTP, el max bet de un bon
 - **[Cloudbet: registro, países restringidos y KYC](https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/)**
 
   Registro, países restringidos, KYC por niveles, licencia y apuesta mínima, según la ayuda y los términos de Cloudbet.
+- **[Depositar para retirar: bono falso y clones](https://www.planetaruleta.com/guias/pagar-para-retirar-bono-falso/)**
+
+  Si te piden por mensaje depositar o pagar para liberar un retiro, no sigas. El patrón del bono falso, los sitios clon y cómo revisar el dominio.
 
 Versión corta en el [FAQ de alfabetización](https://www.planetaruleta.com/faq/#alfabetizacion).
 
@@ -390,6 +393,8 @@ Algunas salas piden que apuestes el monto depositado antes de retirar. No es lo 
 
 Cómo leerlo: si una promo cambia la condición de retiro, eso es parte del costo de la promo. Más en [/guias/como-leer-una-promo-casino/](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/).
 
+Si te piden por mensaje un depósito nuevo para liberar un retiro, eso no es rollover: ver [depositar para retirar](https://www.planetaruleta.com/guias/pagar-para-retirar-bono-falso/).
+
 ## 2. Verificación (KYC): qué piden y qué pasa si no la pasas
 
 - **Shuffle (términos §5.2 y §5.5, revisado 8 oct 2026):** puede pedir documento oficial de identidad, y en cualquier caso antes del primer retiro; el medio de pago tiene que estar a tu nombre.
@@ -683,3 +688,134 @@ En deportes, las páginas de Cloudbet no coinciden (revisadas el 22 oct 2026): l
 Depende de la moneda y la red. La ayuda dice que la mayoría está por debajo de 1 USD y que la cifra exacta aparece en la pantalla de depósito.
 
 URL: https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/
+
+Guía · +18 · alfabetización
+
+# «Deposita para poder retirar»: el patrón del bono falso, los sitios clon y cómo revisarlo
+
+Revisado el 30 oct 2026.
+
+Te llega un mensaje con un bono enorme o un «premio», el saldo crece rápido y, cuando quieres retirar, aparece una condición nueva: deposita primero «para verificar», «para liberar» o «para pagar el impuesto». Esta guía explica ese patrón, cómo se ve una dirección copiada y qué revisar antes de poner más dinero. Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala. Lo marcado EDITORIAL es lectura nuestra; lo demás cita a reguladores y a las propias salas, con fuente y fecha.
+
+### Lo corto
+
+- **Si para cobrar un premio que te llegó por mensaje tienes que pagar, no es un bono.**
+- Nunca pagues ni deposites para «desbloquear» un retiro que te prometieron por mensaje.
+- Entra a tu sala solo desde un favorito que guardaste tú, y revisa el dominio letra por letra.
+- Si la sala tiene direcciones alternativas oficiales, compáralas con su propia lista, abierta desde tu favorito.
+- Si ya pagaste, no pagues más. Guarda capturas y comprobantes.
+
+## 1. Cómo suele empezar (EDITORIAL)
+
+El patrón que describimos aquí se repite en distintas versiones. Ninguna de estas señales prueba nada por sí sola, pero juntas forman un embudo conocido:
+
+- **El contacto llega a ti.** Un mensaje por WhatsApp, Telegram, SMS, una red social o un email, con un bono «sin depósito» grande, un «premio» o una invitación a un sitio que tú no buscaste. La CFTC, el regulador de derivados de EE. UU., escribe que la mayoría de los fraudes con activos digitales empiezan en redes sociales (CFTC, «Digital Asset Frauds», consultado el 30 oct 2026).
+- **La dirección se parece a una marca conocida.** O el sitio usa un nombre y un diseño que recuerdan a una sala real (ver sección 4).
+- **El saldo sube rápido.** Ganas mucho y en poco tiempo, en un sitio donde todavía no pusiste dinero, o pusiste muy poca.
+- **Hay apuro.** «El bono vence hoy», «solo quedan unos cupos», «el retiro se cancela si no confirmas».
+
+Un bono real tiene términos que puedes leer: [cómo leer una promo](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/).
+
+## 2. El momento del «deposita para retirar»
+
+Cuando pides el retiro, aparece un requisito que no estaba antes: depositar un monto «para verificar la cuenta», «para activar el retiro», «para cubrir la comisión» o «para pagar impuestos». Si pagas, suele aparecer un segundo cargo, y después otro.
+
+Reguladores y autoridades describen el mismo mecanismo (OFICIAL):
+
+- La **CFTC** dice que en las plataformas falsas, cuando las víctimas intentan retirar, «de pronto hay un problema» o les dicen que deben pagar de su bolsillo comisiones no informadas o impuestos falsos. Su consejo: no pongas más dinero de tu bolsillo para recuperar tus ganancias o tu capital (CFTC, «Digital Asset Frauds»).
+- En su hoja de señales de alerta, la **CFTC** agrega que a las víctimas les piden pagar «un impuesto, comisión o cargo tras otro» hasta que se rinden, y cierra con: «Nunca pagues más dinero para recuperar tu dinero» (CFTC, «Curious About Crypto? Watch Out for Red Flags»).
+- El **FBI** (IC3), en una alerta de 2022 sobre esquemas con criptomonedas, describe que al intentar cobrar les dicen a las víctimas que deben pagar impuestos o comisiones adicionales, y así pierden más dinero (IC3, PSA I-100322-PSA, 3 oct 2022).
+- **Coljuegos**, el regulador de juegos de azar de Colombia, escribe sobre los sorteos promocionales falsos: «para acceder al premio no deben exigirle dinero» y, aunque en algunos casos se descuenta un impuesto del premio, «nunca se le exige al ganador que pague anticipadamente alguna suma para acceder al premio» (Coljuegos, «Evite engaños, reconozca los sorteos promocionales falsos»).
+
+Esas alertas hablan de inversiones cripto y de sorteos, no de un casino en particular. El mecanismo es el mismo: te muestran un saldo grande y te piden un pago adelantado para cobrarlo (lectura EDITORIAL). El saldo grande es la carnada; el depósito es lo que buscan.
+
+## 3. Lo que sí puede pedir una sala real, y por qué no es lo mismo
+
+Hay condiciones de retiro reales, y conviene no confundirlas con el patrón de arriba. La diferencia: en una sala real, la condición está **escrita en sus términos, en su ayuda o en la oferta**, y se ve y se cumple **dentro de tu cuenta**. No llega como un pago nuevo pedido por chat.
+
+### 3.1 Apostar tu propio depósito (rollover del depósito)
+
+Algunas salas ligan el retiro a apostar antes el depósito. Por ejemplo (OFICIAL, términos y ayuda revisados el 30 oct 2026):
+
+- **Rainbet** (términos §8.2): no cobra comisión de retiro si apostaste el depósito al menos una vez (el doble de lo habitual, si tomaste una promoción). Esa cláusula no da el monto de la comisión; según §7.2, los cargos están en su web.
+- **Cloudbet** (términos §8.8): pide apostar al menos el total de tus depósitos antes de retirar, y dice que puede reducir ese requisito a su criterio. Su ayuda (actualizada el 7 oct 2026) habla del 100 % de los depósitos para cuentas sin verificar y del 25 % para las verificadas, sin aclarar qué nivel cuenta como verificado.
+
+Las demás salas de la mesa están en [Antes de retirar: rollover del depósito y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/). En todos esos casos se apuesta saldo que ya está en tu cuenta. Ojo: un bono sin depósito puede pedir un depósito mínimo antes de retirar lo ganado, si la oferta lo dice (Cloudbet, términos §8.7). Esa condición está escrita en la oferta y en los términos, y se cumple dentro de tu cuenta. Ninguna de las páginas que revisamos pide un pago por mensaje, por fuera de tu cuenta, «para liberar» un premio.
+
+### 3.2 Verificar tu identidad (KYC)
+
+Una sala real puede pedirte documentos antes de un retiro. En la ayuda de Cloudbet, por ejemplo, los niveles piden un teléfono y, después, documento con foto, prueba de domicilio y verificación de rostro (OFICIAL, ayuda de niveles fechada el 7 sep 2026). **En lo que revisamos, lo que se pide son documentos y comprobaciones, no un pago por mensaje.** Si te piden por mensaje un pago «para verificar», eso no es un KYC.
+
+### 3.3 Comisiones escritas
+
+Las comisiones existen y están en los términos. Cloudbet, por ejemplo, se reserva el derecho de cobrar hasta un 5 % sobre depósitos y retiros para cubrir costos (términos §7.1.10). Una comisión así se aplica al movimiento. En lo que revisamos, no aparece como un depósito previo que debas hacer por fuera. Shuffle, por ejemplo, escribe que si cobra una comisión de retiro te la muestra antes de que confirmes (términos §10.7). Y sobre impuestos, Cloudbet dice que pagar los que correspondan a tus ganancias según la ley aplicable es responsabilidad tuya (términos §7.5.6); no lo plantea como un cobro de la sala para liberar un retiro.
+
+Además, Cloudbet escribe en sus términos (§7.5.5) que solo acepta retiros pedidos desde las páginas de tu cuenta, y que sus empleados y agentes no están autorizados a mover cripto de ninguna otra forma. Si alguien que dice ser «soporte» te pide un pago por chat para mover tu retiro, eso no figura en ninguna de las páginas que revisamos (lectura EDITORIAL).
+
+## 4. Sitios clon: los patrones de la dirección (EDITORIAL)
+
+Un sitio copiado se ve igual que el original. La diferencia está en la dirección. Estos son patrones que vimos en direcciones que usan el nombre de una sala sin estar en su lista oficial:
+
+- **Nombre + guion + palabra**, como «-login».
+- **Nombre + guion + país.**
+- **Nombre + palabra pegada, sin guion,** antes o después, con una terminación poco común, fuera de la lista oficial de la sala.
+- **El mismo nombre con otra terminación**, fuera de la lista oficial de la sala.
+
+No publicamos direcciones ni decimos quién está detrás de ninguna. Es a propósito: una lista de dominios envejece rápido, y copiarla lleva a la gente justo a esos sitios.
+
+Las autoridades describen lo mismo (OFICIAL):
+
+- El **FBI** (IC3) advierte que las URL mal escritas, con una pequeña diferencia respecto del sitio real, pueden ser falsas.
+- La **CFTC** dice que un link en un email puede llevarte a un sitio «look-alike» o falsificado, armado para quedarse con tu dinero o tus datos. Si recibes un aviso sobre tu cuenta, busca tú el sitio de tu proveedor y contacta a su soporte.
+- **Stake**, en su propia ayuda (fechada el 24 sep 2026), avisa que hay estafadores que crean copias falsas de su sitio para robar datos de acceso, y pide revisar la dirección antes de iniciar sesión.
+
+**Ojo con las direcciones oficiales alternativas.** Una sala puede tener más de una dirección oficial. Por eso, «otra terminación» o una palabra pegada al nombre no prueban por sí solas que un sitio sea falso: compara la dirección con la lista que publica la propia sala. Por ejemplo, Rainbet enlaza una lista de «Official Sites» desde el pie de su web (revisada el 30 oct 2026). Abre esa lista desde tu favorito, nunca desde un link que te mandaron.
+
+## 5. Cómo revisarlo antes de iniciar sesión o pagar
+
+1. **Nunca pagues para «desbloquear» un retiro**, ni para «verificar», ni para cubrir un «impuesto» que te piden por mensaje.
+2. **Guarda la sala en tus favoritos** la primera vez que entras desde una dirección que comprobaste, y entra siempre desde ahí.
+3. **Revisa el dominio letra por letra** antes de poner tu usuario o contraseña: guiones, letras cambiadas, palabras pegadas, terminación.
+4. **Usa la lista oficial de la propia sala**, abierta desde tu favorito, si ves una dirección alternativa.
+5. **Nunca inicies sesión desde un link que te mandaron**, aunque el mensaje use el logo de la sala.
+6. **No compartas códigos 2FA ni contraseñas** con nadie, aunque diga ser soporte.
+7. **Habla con soporte solo desde el sitio guardado.** Si «soporte» te escribe primero, por otra app, para cobrarte algo, no sigas.
+8. **Las condiciones de retiro se leen en los términos**, no en un chat privado. Si una condición no está escrita ahí, pregúntala desde tu cuenta.
+
+## 6. Si ya pagaste o depositaste
+
+- **No pagues más.** Es el consejo directo de la CFTC: no pongas más dinero para recuperar el que ya pusiste.
+- **Guarda todo:** la dirección exacta del sitio, capturas del saldo y de los mensajes, nombres de usuario y números de contacto, y los datos de cada pago (fecha, monto, medio, dirección de wallet o hash de la transacción). Esa es la información que el IC3 del FBI pide para un reporte.
+- **Si pagaste por banco o con tarjeta,** contacta a tu banco por sus canales oficiales. Si pagaste en cripto, guarda el hash. La CFTC advierte que una transferencia cripto no se puede revertir ni disputar, y que por lo general no se recupera (OFICIAL, CFTC, «Curious About Crypto? Watch Out for Red Flags»).
+- **Repórtalo** ante la autoridad de tu país que reciba denuncias de fraude en línea o de protección al consumidor.
+- **Desconfía de quien te ofrezca «recuperar» lo perdido a cambio de otro pago.** Es el mismo mecanismo con otra cara (lectura EDITORIAL).
+
+## 7. Si el juego ya no se siente bajo control
+
+Perseguir un retiro que no llega se parece mucho a perseguir pérdidas. Si te encuentras depositando para «recuperar» algo, para. Si se te va de las manos, busca ayuda de juego responsable donde estés. +18.
+
+## 8. Preguntas frecuentes
+
+### ¿Es normal que un casino me pida depositar para poder retirar?
+
+No como un pago nuevo para «liberar» un retiro o un premio. En los términos y la ayuda de las salas que revisamos, las condiciones de retiro están escritas: apostar el depósito que ya hiciste, verificar tu identidad con documentos, comisiones publicadas o, en algún bono sin depósito, un depósito mínimo escrito en la oferta (Cloudbet §8.7). Ninguna pide un pago por mensaje, por fuera de tu cuenta, para desbloquear un saldo. La CFTC, en sus alertas sobre fraudes con cripto, lo marca como señal de alerta: «nunca pagues más dinero para recuperar tu dinero».
+
+### ¿No es lo mismo que el rollover del depósito?
+
+No. El rollover del depósito es una condición escrita en los términos de algunas salas (por ejemplo, Cloudbet §8.8; Rainbet, en §8.2, lo liga a no cobrar comisión de retiro). Se cumple apostando saldo que ya está en tu cuenta, y el avance se ve dentro de ella. El patrón del bono falso pide dinero nuevo, por fuera y con apuro, para cobrar un saldo que apareció por un mensaje.
+
+### ¿Cómo sé si estoy en el sitio oficial y no en un clon?
+
+Entra solo desde un favorito que guardaste tú, y revisa el dominio letra por letra. Si ves otra dirección, compárala con la lista de sitios oficiales que publica la propia sala, abierta desde tu favorito. No inicies sesión desde un link que te mandaron.
+
+### Ya pagué y ahora me piden otro pago. ¿Qué hago?
+
+No pagues más. Guarda capturas, la dirección exacta, los mensajes y los datos de cada pago. Si pagaste por banco o con tarjeta, contacta a tu banco por sus canales oficiales, y repórtalo ante la autoridad de tu país. Desconfía de quien ofrezca «recuperar» el dinero a cambio de otro pago.
+
+### ¿Por qué no publican la lista de sitios falsos?
+
+Porque una lista de dominios envejece rápido y, copiada, lleva a la gente justo a esos sitios. Publicamos los patrones y los chequeos, que sirven para cualquier dirección. No decimos quién está detrás de ningún sitio.
+
+Los términos cambian: revisa la versión vigente en la web oficial de tu sala, desde tu favorito. No garantizamos resultados. Si se te va de las manos, busca ayuda de juego responsable donde estés. +18.
+
+URL: https://www.planetaruleta.com/guias/pagar-para-retirar-bono-falso/
