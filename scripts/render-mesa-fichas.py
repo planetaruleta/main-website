@@ -823,6 +823,7 @@ FICHAS = {
             "Monster Mash (página de la promo, captura 22 OCT 2026) es una señal de lobby: pozo de 2.000 USD, top 30, apuesta mínima 1 USD, ranking por el multiplicador más alto de una sola jugada, pago en USDT. Ventana: 22 OCT 01:00 → 24 OCT 00:59 hora Guatemala. No reemplaza el chip.",
         ],
         "kyc_guide_html": '<div class="prose"><p>Registro, países restringidos, KYC y apuesta mínima, según las páginas de Cloudbet: <a href="/guias/cloudbet-registro-paises-kyc/">guía</a>.</p></div>',
+        "juegos_guide_html": '<div class="prose"><p>Plinko en Cloudbet: filas, niveles, RTP declarado, BOOST y provably fair, según las páginas de Cloudbet: <a href="/guias/plinko-cloudbet/">guía</a>.</p></div>',
         "kyc": "KYC declarado por niveles. Level 2: foto del documento, prueba de domicilio y verificación de rostro. Sumsub está en Terms §21.1.3; el artículo de niveles no lo nombra. El help dice que verificar es opcional y que pueden pedir la verificación en cualquier momento. Hasta completar el Level 2, el help publica un tope de 2.200 USD en depósitos acumulados de por vida y de 2.200 USD por día en retiros; esos topes no están en la celda de la tabla. Disparador fijo: según sus términos (§21.1.5), Cloudbet pide verificar tu identidad cuando tus depósitos acumulados llegan a 2.200 USD o los superan; hasta completarla, depósitos y retiros pueden quedar restringidos y los fondos, bloqueados. Fuente: help y Terms (versión del 30 SEP 2026), captura 22 OCT 2026.",
         "offshore": "Cloudbet publica Curaçao Gaming Authority, OGL/2024/328/0599, a nombre de Halcyon Super Holdings B.V. (148526). Eso no es una licencia de Argentina. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
         "senales": [
@@ -1790,7 +1791,7 @@ def render_ficha(slug: str) -> str:
         </section>
         <section class="juice" aria-labelledby="juegos">
           <h2 id="juegos">Juegos y jackpots</h2>
-          {juice_html(visual["rows"], visual["side"])}
+          {juice_html(visual["rows"], visual["side"])}{data.get("juegos_guide_html", "")}
         </section>
         <section class="money" aria-labelledby="plata">
           <h2 id="plata">{e(data["plata_title"])}</h2>
