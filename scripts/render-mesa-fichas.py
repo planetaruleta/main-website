@@ -67,7 +67,7 @@ ROWS = [
             "Sportsbook declarado: título de la homepage y /sports. El help de coin-mixing nombra “the sportsbook”. El rakeback no corre en sports. 03 OCT 2026.",
             "Sportsbook declarado en el help (sección Sports; las apuestas sports cuentan al wager). stake.com/sports HTTP 403 el 03 OCT 2026.",
             "Sportsbook declarado: /en/sports, título “Crypto Sports Betting”. 03 OCT 2026.",
-            "no verificado · 03 OCT 2026",
+            "Sportsbook listado en su home (31 OCT 2026).",
             "Sportsbook declarado en la ayuda (Fast Facts, 16780663). 24 OCT 2026.",
         ],
     ),
@@ -76,9 +76,9 @@ ROWS = [
         [
             "Anjouan, declarada en Terms, AML y footer (25 SEP 2026). Validador del sello: «VALID», Rain Group Ltd, ALSI-152406029-FI2 (15 OCT 2026), con aviso de sello vencido. Registro público: sin confirmar.",
             "Curaçao Gaming Authority, OGL/2024/1337/0628, Natural Nine B.V. (160998). /info/license dice “Gaming Control Board”; Terms y el certificado CGA dicen “Gaming Authority”. Certificado Active.",
-            "Curaçao-class por certificado CGA: OGL/2024/1451/0918, Active, otorgado 09/06/2025. Footer del operador no capturado (HTTP 403).",
+            "Curaçao-class por certificado CGA: OGL/2024/1451/0918, Active, otorgado 09/06/2025. Pie del sitio: Medium Rare N.V., sin número de licencia (31 OCT 2026).",
             "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. No es licencia de Argentina.",
-            "no verificado · 30 SEP 2026",
+            "Curaçao, OGL/2024/687/0427, Raw Entertainment B.V. (157205), según sus términos y el pie de su home (31 OCT 2026). Sin captura del registro del regulador. No es licencia de Argentina.",
             "Curaçao Gaming Authority, OGL/2024/1507/0838, Liquid Entertainment N.V. (153298). Certificado CGA: activa, otorgada el 01/11/2024. No es licencia de Argentina.",
         ],
     ),
@@ -100,7 +100,7 @@ ROWS = [
             "28 SEP 2026 (rakeback). Level Up: 02 OCT 2026.",
             "25 SEP 2026",
             "30 SEP 2026 (bono, KYC, métodos). Licencia y sportsbook: 03 OCT 2026.",
-            "30 SEP 2026 (bono, KYC, métodos). Sportsbook y licencia rechequeados: 03 OCT 2026.",
+            "30 SEP 2026 (bono, KYC, métodos). Sportsbook y licencia rechequeados: 31 OCT 2026.",
             "24 OCT 2026 (licencia, métodos, países, retiros). Bono de bienvenida y licencia de Anjouan en .io: fuente de terceros. · Plazo y mínimos de retiro: ayuda 16780663 y 16798784, 30 OCT 2026.",
         ],
     ),
@@ -717,7 +717,7 @@ FICHAS = {
         "modified": "2026-10-31",
         "lede": [
             "Stake está en la mesa como operador crypto/offshore. Los Terms de Stake.com (§14.3, revisado 30 oct 2026) listan a Argentina, Colombia, México y Perú, junto con otros países, como «Prohibited Jurisdictions»: desde ahí no se puede usar Stake.com.",
-            "La licencia que citamos sale de un certificado de la Curaçao Gaming Authority (CGA): el número de licencia no aparece en los Terms de Stake.com (revisado 30 oct 2026) y el pie del sitio no se pudo leer (HTTP 403, 30 oct 2026).",
+            "La licencia que citamos sale de un certificado de la Curaçao Gaming Authority (CGA): el número de licencia no aparece en los Terms de Stake.com (revisado 30 oct 2026) ni en el texto del pie del sitio (revisado 31 oct 2026).",
         ],
         "sheet": [
             ("Empresa", "Medium Rare N.V. (145353), en el certificado CGA de stake.com. Los Terms de Stake.com (§2.1, revisado 30 oct 2026) también dicen que, al registrarte, el contrato es con Medium Rare N.V.; el número de licencia no aparece en ese texto."),
@@ -753,7 +753,7 @@ FICHAS = {
             "No hay señal de race ni de level-up de Stake en la mesa.",
         ],
         "kyc": "El help Proof of Identity (24 ago 2026) acepta pasaporte, documento nacional de ambos lados o licencia de ambos lados, fotografiado y con vigencia de al menos 3 meses. En qué momento lo exigen no quedó en ese fetch: no verificado · 25 SEP 2026. Fuente: help.stake.com.",
-        "offshore": "La celda dice Curaçao-class porque el certificado CGA de stake.com está Active y el footer del operador no se pudo leer (HTTP 403). Eso no es una licencia de Argentina. Esta ficha no pone nota y no explica cómo evadir un bloqueo. +18.",
+        "offshore": "La celda dice Curaçao-class porque el certificado CGA de stake.com está Active (certificado revisado 31 oct 2026). El pie del sitio nombra a Medium Rare N.V. como dueña y operadora, pero no muestra un número de licencia (revisado 31 oct 2026). Eso no es una licencia de Argentina. Esta ficha no pone nota y no explica cómo evadir un bloqueo. +18.",
         "senales": [
             {
                 "id": "bono-stake-rakeback-welcome-2026-09-25",
@@ -769,8 +769,8 @@ FICHAS = {
                 "No, en lo publicado en el help (24 ago 2026; mesa 25 SEP 2026). El welcome desbloquea rakeback Bronze: 3.5% del house edge, con un código. El rollover de un deposit-bonus varía; el help da un ejemplo 30x y no fija un match.",
             ),
             (
-                "¿De dónde sale la licencia si el sitio devolvió 403?",
-                "Del certificado CGA de stake.com: Medium Rare N.V. (145353), OGL/2024/1451/0918, otorgado el 09/06/2025, estado Active. No es una frase leída en el footer: ese fetch devolvió HTTP 403. Por eso la celda dice Curaçao-class.",
+                "¿De dónde sale la licencia si el pie del sitio no la muestra?",
+                "Del certificado CGA de stake.com: Medium Rare N.V. (145353), OGL/2024/1451/0918, otorgado el 09/06/2025, estado Active. El pie del sitio nombra a Medium Rare N.V. y su número de registro 145353, pero no un número de licencia (revisado 31 oct 2026). Por eso la celda dice Curaçao-class.",
             ),
             (
                 "¿Cuándo piden el documento?",
@@ -868,18 +868,18 @@ FICHAS = {
         "name": "Roobet",
         "h1": "Roobet: ficha de la mesa",
         "title": "Roobet: licencia, KYC y rakeback — ficha | Planeta Ruleta",
-        "description": "Instant rakeback y +10% por 24 h al registrarse. Licencia y sportsbook público: no verificado. Sin puntaje. Offshore no es licencia de Argentina. +18.",
+        "description": "Instant rakeback y +10% por 24 h al registrarse. Licencia de Curaçao según sus términos y su home, que también lista sportsbook. Sin puntaje. Offshore no es licencia de Argentina. +18.",
         "modified": "2026-10-31",
         "lede": [
             "Roobet está en la mesa como operador crypto/offshore. El help declara instant rakeback y, al registrarse, un boost de +10% durante 24 horas.",
-            "Esta ficha no pone nota ni abre un depósito. La licencia y el sportsbook del HTML público siguen en no verificado.",
+            "Esta ficha no pone nota ni abre un depósito. La licencia sale de sus términos (§1) y del pie de su home; el sportsbook, de su home (revisados 31 oct 2026). No tenemos captura del registro del regulador de Curaçao para ese número.",
         ],
         "sheet": [
-            ("Empresa", "no verificado · 03 OCT 2026. El artículo Welcome no nombra sociedad ni número."),
-            ("Licencia", "no verificado · 30 SEP 2026. Rechequeo 03 OCT 2026: el artículo Welcome dice “fully licensed and regulated” y no nombra autoridad ni número. No es licencia de Argentina."),
+            ("Empresa", "Raw Entertainment B.V., Reg No 157205, según sus términos y el pie de su home (31 OCT 2026)."),
+            ("Licencia", "“licensed to conduct online gaming operations by the Government of Curacao”, OGL/2024/687/0427, según el pie de su home; sus términos (§1) dan el mismo número (31 OCT 2026). Sin captura del registro del regulador. El artículo Welcome dice “fully licensed and regulated” y no nombra autoridad ni número (31 OCT 2026). No es licencia de Argentina."),
             ("Monedas", "La celda de la tabla es la clase crypto · fiat+Swapped. El help de depósito nombra criptos; no las copiamos como catálogo. Redes: no verificado · 03 OCT 2026."),
             ("Idiomas", "no verificado · 03 OCT 2026. Esta ficha está en español de Latinoamérica; eso no dice qué idiomas publica el operador."),
-            ("Última revisión", "Bono, KYC y métodos de la fila: 30 SEP 2026. Sportsbook y licencia rechequeados el 03 OCT 2026: siguen sin número y sin sportsbook en el HTML público. Heat Check: 22 OCT 2026."),
+            ("Última revisión", "Bono, KYC y métodos de la fila: 30 SEP 2026. Licencia y sportsbook rechequeados el 31 OCT 2026: ver filas de arriba. Heat Check: 22 OCT 2026."),
         ],
         "fuentes": [
             ("roobet.com", "https://roobet.com/"),
@@ -903,7 +903,7 @@ FICHAS = {
             "Heat Check (página de la promo, captura 22 OCT 2026) es una señal aparte: hasta 1.110 USD en free bets, no en efectivo, apuesta mínima 10 USD a cuota 1,70 o más. El encabezado dice 4 NOV y los términos dicen 3 NOV, sin zona horaria: verifica la fecha en los términos. No reemplaza el chip.",
         ],
         "kyc": "KYC declarado en Level 2 (help del 23 jul 2026): pasaporte, licencia de conducir o documento de gobierno, con captura de frente y dorso. Ese artículo no da un umbral. Cuándo lo exigen: no verificado · 03 OCT 2026. Fuente: help.roobet.com.",
-        "offshore": "En las páginas chequeadas el 03 OCT 2026 no hay número de licencia ni autoridad. “Fully licensed and regulated” en el artículo Welcome no nombra un registro. Eso no es una licencia de Argentina. El HTML público de roobet.com y de /sports no muestra un sportsbook (cero veces la palabra sport); un sportsbook con sesión iniciada no se chequeó. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
+        "offshore": "Según sus términos (§1) y el pie de su home (revisados 31 oct 2026), Raw Entertainment B.V. tiene licencia del Gobierno de Curaçao, OGL/2024/687/0427. Es lo que declara el operador; no tenemos captura del registro del regulador de Curaçao para ese número. “Fully licensed and regulated” en el artículo Welcome no nombra un registro (revisado 31 oct 2026). Eso no es una licencia de Argentina. La misma home lista “Sportsbook” y “Sports Betting”; no abrimos el sportsbook con sesión iniciada. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
         "senales": [
             {
                 "id": "bono-roobet-heat-check-2026-10-22",
@@ -920,11 +920,11 @@ FICHAS = {
             ),
             (
                 "¿Roobet tiene sportsbook?",
-                "En el HTML público de roobet.com y de /sports, el 03 OCT 2026, el título es de casino y no aparece la palabra sport. Un sportsbook con sesión iniciada no se chequeó. La celda queda en no verificado · 03 OCT 2026.",
+                "Su home (revisada 31 oct 2026) lista “Sportsbook” y “Sports Betting”. No abrimos el sportsbook con sesión iniciada ni revisamos sus mercados.",
             ),
             (
                 "¿Qué licencia publica?",
-                "No verificado. El artículo Welcome dice que es un casino licenciado y regulado, y no nombra autoridad ni número (rechequeo 03 OCT 2026). Eso no es una licencia de Argentina. +18.",
+                "Según sus términos (§1) y el pie de su home (revisados 31 oct 2026), Raw Entertainment B.V. tiene licencia del Gobierno de Curaçao, OGL/2024/687/0427. Es lo que declara el operador; no tenemos captura del registro del regulador de Curaçao para ese número. Eso no es una licencia de Argentina. +18.",
             ),
             (
                 "¿Hay enlace de afiliado o depósito por CBU?",
@@ -1053,7 +1053,7 @@ INDEX_LINES = [
         "Stake",
         "3.5%",
         "HE · vía código",
-        "Welcome publicado como rakeback 3.5% HE. La licencia citada es el certificado CGA: el footer del sitio no se pudo leer.",
+        "Welcome publicado como rakeback 3.5% HE. La licencia citada es el certificado CGA: el pie del sitio no muestra el número de licencia (revisado 31 oct 2026).",
     ),
     (
         "cloudbet",
@@ -1067,7 +1067,7 @@ INDEX_LINES = [
         "Roobet",
         "+10%",
         "instant RB · 24 h",
-        "Instant rakeback y un boost de +10% por 24 h al registrarse. Licencia y sportsbook público: no verificado.",
+        "Instant rakeback y un boost de +10% por 24 h al registrarse. Licencia de Curaçao y sportsbook según su home (revisada 31 oct 2026).",
     ),
     (
         "duelbits",
@@ -1256,7 +1256,7 @@ VISUAL = {
             ("Help", "24 AGO 2026"),
         ],
         "seals": [
-            ("Licencia", ["Curaçao-class · certificado", "footer no leído (403)"]),
+            ("Licencia", ["Curaçao-class · certificado", "pie sin n.º de licencia · 31 OCT 2026"]),
             ("Revisión", ["Mesa 25 SEP 2026", "help 24 AGO 2026"]),
         ],
         "facts": [
@@ -1408,11 +1408,11 @@ VISUAL = {
         "meta": [
             ("Operador", "crypto/offshore"),
             ("Revisión fila", "30 SEP 2026"),
-            ("Licencia", "no verificado"),
+            ("Licencia", "Curaçao · según su home"),
         ],
         "seals": [
-            ("Licencia", ["no verificado", "no es registro AR"]),
-            ("Revisión", ["Fila 30 SEP 2026", "rechequeo 03 OCT"]),
+            ("Licencia", ["Curaçao · según su home", "no es registro AR"]),
+            ("Revisión", ["Fila 30 SEP 2026", "rechequeo 31 OCT 2026"]),
         ],
         "facts": [
             ("Welcome", "+10%", "instant RB · 24 h"),
@@ -1450,8 +1450,8 @@ VISUAL = {
         "rows": [
             (
                 "Tipos",
-                "Sportsbook público: no verificado · 03 OCT 2026",
-                "Catálogo: hueco. HTML público sin la palabra sport",
+                "Sportsbook listado en su home · 31 OCT 2026",
+                "Catálogo: hueco",
             ),
             (
                 "Vistos",
