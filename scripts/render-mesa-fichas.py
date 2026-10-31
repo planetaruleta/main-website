@@ -513,7 +513,7 @@ FICHAS = {
         "h1": "Rainbet: ficha de la mesa",
         "title": "Rainbet: licencia, KYC y welcome — ficha | Planeta Ruleta",
         "description": "Rainbet declara licencia de Anjouan y un welcome x40 o sin ese rollover. KYC con ID, selfie y domicilio. Sin puntaje. Offshore no es licencia de Argentina. +18.",
-        "modified": "2026-10-22",
+        "modified": "2026-10-31",
         "lede": [
             "Rainbet está en la mesa como operador crypto/offshore: la casa declara licencia de Anjouan y un welcome con dos caminos.",
             "Esta ficha no pone nota ni abre un depósito. Junta la fila, las señales y lo que sigue sin verificar.",
@@ -539,7 +539,7 @@ FICHAS = {
             "El FAQ declara criptos, entre ellas USDT, y también bank transfers, cards y gift cards. La tira de la home sigue en la clase crypto · fiat/cards. La tabla de esta ficha lista las criptos del FAQ. Redes: no verificado.",
             "Ese “bank transfer” es una frase del operador; no encontramos a qué bancos o países aplica.",
             "Moneda local, país por país (ayuda de Rainbet «How to Make a Fiat Withdraw», 29 MAY 2026, revisada el 15 OCT 2026). Para retirar, AstroPay figura en Argentina, Chile, Colombia, Ecuador, México y Uruguay. Mínimo $50 (la ayuda no aclara la moneda) y una comisión del 0,5% de la operación. Necesitas una cuenta activa de AstroPay y estar en una región donde AstroPay opere. Perú no figura en esa lista. Para depositar en moneda local no encontramos un artículo en la ayuda (búsqueda del 15 OCT 2026). Pagar o cobrar en moneda local no es una licencia local. Fuente: oficial (ayuda de Rainbet).",
-            "En la homepage también está escrito un mínimo de retiro de 15 USD y apostar 1x el depósito antes de retirar. No es un plazo. El marketing de 5 a 15 minutos no entra como SLA: el retiro de la mesa sigue en sin dato.",
+            "En la homepage también está escrito un mínimo de retiro de 15 USD y apostar 1x el depósito antes de retirar. No es un plazo. Los 5 a 15 minutos de la home y de la ayuda («suele», con posibles revisiones de seguridad) no entran como SLA: el retiro de la mesa sigue en sin dato.",
         ],
         "bono": [
             "El chip de la fila es el welcome, no el race ni los RakeBoosts. Camino A: 40x sobre depósito+bono (100% / 50% / 100% + 20 tiradas, mínimo 30 USD, máximo 700 USD por tramo, apuesta máxima 2% del depósito según T&C (la ayuda dice 1%), slots con RTP mayor a 97,4% fuera). Camino B: sin ese rollover; se desbloquea al jugar. Hay que optar en promotions antes de depositar. Fuente: homepage, 25 SEP 2026.",
@@ -604,7 +604,7 @@ FICHAS = {
             ),
             (
                 "¿El depósito es por CBU, como en un casino local?",
-                "No. El FAQ declara criptos (incluye USDT) y también bank transfers, cards y gift cards. Un bank transfer en ese texto no es un cajero por CBU de un casino regulado en Argentina. El tiempo de retiro no está adoptado: la frase de 5 a 15 minutos no es un SLA.",
+                "No. El FAQ declara criptos (incluye USDT) y también bank transfers, cards y gift cards. Un bank transfer en ese texto no es un cajero por CBU de un casino regulado en Argentina. El tiempo de retiro no está adoptado: la frase de 5 a 15 minutos de la home y de la ayuda no es un SLA.",
             ),
             (
                 "¿Hay enlace de afiliado o código para cargar?",
@@ -713,14 +713,14 @@ FICHAS = {
         "name": "Stake",
         "h1": "Stake: ficha de la mesa",
         "title": "Stake: licencia, KYC y rakeback — ficha | Planeta Ruleta",
-        "description": "Welcome como rakeback 3.5% del house edge. Licencia por certificado CGA; el footer dio HTTP 403. Sin puntaje. Offshore no es licencia de Argentina. +18.",
-        "modified": "2026-10-03",
+        "description": "Según sus Terms (§14.3, revisado 30 oct 2026), Stake.com no se puede usar desde Argentina, Colombia, México ni Perú. Licencia de Curazao. +18.",
+        "modified": "2026-10-31",
         "lede": [
-            "Stake está en la mesa como operador crypto/offshore.",
-            "La licencia que citamos sale de un certificado del Curaçao Gaming Control Board, porque el texto del propio sitio no se pudo leer en el fetch del 25 SEP 2026.",
+            "Stake está en la mesa como operador crypto/offshore. Los Terms de Stake.com (§14.3, revisado 30 oct 2026) listan a Argentina, Colombia, México y Perú, junto con otros países, como «Prohibited Jurisdictions»: desde ahí no se puede usar Stake.com.",
+            "La licencia que citamos sale de un certificado de la Curaçao Gaming Authority (CGA): el número de licencia no aparece en los Terms de Stake.com (revisado 30 oct 2026) y el pie del sitio no se pudo leer (HTTP 403, 30 oct 2026).",
         ],
         "sheet": [
-            ("Empresa", "Medium Rare N.V. (145353), en el certificado CGA de stake.com. No sale de un footer del operador: el fetch de términos devolvió HTTP 403 el 25 SEP 2026."),
+            ("Empresa", "Medium Rare N.V. (145353), en el certificado CGA de stake.com. Los Terms de Stake.com (§2.1, revisado 30 oct 2026) también dicen que, al registrarte, el contrato es con Medium Rare N.V.; el número de licencia no aparece en ese texto."),
             ("Licencia", "Curaçao-class. Certificado CGA OGL/2024/1451/0918, otorgado el 09/06/2025, estado Active. Es certificado del regulador, no una frase leída en el footer de stake.com. No es licencia de Argentina."),
             ("Monedas", "La celda de métodos es la clase: crypto · fiat. No hay catálogo de monedas ni de redes. BTC aparece en el ejemplo de rakeback, no como lista. Catálogo: no verificado · 03 OCT 2026."),
             ("Idiomas", "no verificado · 03 OCT 2026. Esta ficha está en español de Latinoamérica; eso no dice qué idiomas publica el operador."),
@@ -743,9 +743,9 @@ FICHAS = {
         "plata_title": "Cómo entra y sale el dinero",
         "plata": [
             "El help declara retiros crypto y reglas de apuesta para moneda local / FIAT. La celda de la mesa es crypto · fiat, sin lista de monedas.",
-            "Moneda local, país por país (ayuda de Stake.com: artículos de depósito y de retiro con tarjeta, del 24 y el 22 AGO 2026, revisados el 15 OCT 2026). Chile: pesos chilenos (CLP) con Visa, para depositar y para retirar, de 5.000 a 1.000.000 CLP por operación; Mastercard no figura para Chile. El retiro vuelve solo a la tarjeta con la que depositaste y, según la ayuda, puede tardar hasta 3 días hábiles en llegar a tu banco. La opción aparece solo si está disponible para tu moneda y tu ubicación. México, Colombia, Perú y Argentina: no encontramos un método de pago en moneda local en la ayuda (búsqueda del 15 OCT 2026). La misma tabla lista otras monedas de la región: Costa Rica, Guatemala, Honduras, Jamaica, Nicaragua, Trinidad y Tobago, y dólares en Ecuador, Panamá, Paraguay, República Dominicana, El Salvador y Uruguay. Los Terms de Stake.com no se pudieron leer (HTTP 403), así que no citamos su lista de países restringidos. Pagar en moneda local no es una licencia local: que acepte pesos chilenos no hace a Stake.com un casino con licencia de Chile. Fuente: oficial (ayuda de Stake.com).",
+            "Moneda local, país por país (ayuda de Stake.com: artículos de depósito y de retiro con tarjeta, del 24 y el 22 AGO 2026, revisados el 15 OCT 2026). Chile: pesos chilenos (CLP) con Visa, para depositar y para retirar, de 5.000 a 1.000.000 CLP por operación; Mastercard no figura para Chile. El retiro vuelve solo a la tarjeta con la que depositaste y, según la ayuda, puede tardar hasta 3 días hábiles en llegar a tu banco. La opción aparece solo si está disponible para tu moneda y tu ubicación. México, Colombia, Perú y Argentina: no encontramos un método de pago en moneda local en la ayuda (búsqueda del 15 OCT 2026), y los cuatro están entre las «Prohibited Jurisdictions» de los Terms de Stake.com (§14.3, revisado 30 oct 2026). La misma tabla lista otras monedas de la región: Costa Rica, Guatemala, Honduras, Jamaica, Nicaragua, Trinidad y Tobago, y dólares en Ecuador, Panamá, Paraguay, República Dominicana, El Salvador y Uruguay. Pagar en moneda local no es una licencia local: que acepte pesos chilenos no hace a Stake.com un casino con licencia de Chile. Fuente: oficial (ayuda y Terms de Stake.com).",
             "BTC está en el ejemplo de rakeback (1 BTC apostado a 2% de house edge → 0,0007 BTC). Eso no es un catálogo de redes.",
-            "Antes de retirar hay que apostar el 100% del depósito, en crypto y en moneda local (help del 24 ago 2026). No hay plazo en horas: montos grandes pueden ir a proceso manual y la red tiene sus confirmaciones. El retiro de la mesa sigue en sin dato. Pagar en moneda local no es una licencia local.",
+            "Antes de retirar hay que apostar el 100% del depósito, en crypto y en moneda local (help del 24 ago 2026). En crypto no hay plazo en horas: montos grandes pueden ir a proceso manual y la red tiene sus confirmaciones. En moneda local, la ayuda habla de hasta 3 días hábiles para banco o tarjeta. El retiro de la mesa sigue en sin dato. Pagar en moneda local no es una licencia local.",
         ],
         "bono": [
             "Chip de la fila: el welcome desbloquea rakeback Bronze, 3.5% del house edge, con un código. No es un match de depósito con rollover fijo. Ejemplo declarado: 1 BTC apostado a 2% de house edge → 0,0007 BTC de rakeback. Help actualizado el 24 ago 2026.",
@@ -778,7 +778,7 @@ FICHAS = {
             ),
             (
                 "¿Hay plazo de retiro o enlace de afiliado?",
-                "No hay horas de pago en la mesa: el retiro sigue en sin dato. Antes de retirar hay que apostar el 100% del depósito (help de crypto y de moneda local, 24 ago 2026). El enlace de afiliado de esta ficha no está activo.",
+                "En crypto, la ayuda no da horas de pago: los montos grandes pueden ir a proceso manual. En moneda local, según la ayuda, el retiro a banco o a tarjeta puede tardar hasta 3 días hábiles; en tarjeta, contados desde que Stake lo procesa (artículos 8222426 y 13903305, revisado 30 oct 2026). El retiro de la mesa sigue en sin dato. Antes de retirar hay que apostar el 100% del depósito (help de crypto y de moneda local, 24 ago 2026). El enlace de afiliado de esta ficha no está activo.",
             ),
         ],
     },
@@ -1307,7 +1307,7 @@ VISUAL = {
             ("Depósito", "Crypto + fiat", "Chile: CLP con Visa"),
             ("KYC", "ID con foto", "cuándo: no verificado"),
             ("Retiro", "100% depósito", "crypto y moneda local"),
-            ("Proceso", "Sin SLA", "red y proceso manual"),
+            ("Proceso", "Crypto: sin horas", "moneda local: hasta 3 días hábiles"),
         ],
         "caveat_strong": "Moneda local ≠ licencia local.",
         "caveat": "Offshore no es un casino regulado en tu país.",
