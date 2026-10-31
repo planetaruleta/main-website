@@ -2,7 +2,7 @@
 
 > Copia en texto de las guías públicas de alfabetización. El wording es el de cada página. Este archivo no agrega cifras, licencias ni rankings. +18. No es consejo de apuesta ni un enlace de afiliado.
 
-Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla once veces.
+Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla doce veces.
 
 Alfabetización · +18
 
@@ -40,6 +40,9 @@ Estas guías explican mecánicas de casino: qué es el RTP, el max bet de un bon
 - **[Plinko en Cloudbet](https://www.planetaruleta.com/guias/plinko-cloudbet/)**
 
   Filas, niveles, BOOST con recargo del 20 %, RTP declarado de 99 % y cómo verificar una tirada, según las páginas de Cloudbet.
+- **[Retiro pendiente o en revisión](https://www.planetaruleta.com/guias/retiro-pendiente-en-revision/)**
+
+  Qué significa un retiro pendiente, en proceso o en revisión, cuánto dicen tardar las salas, qué es normal, qué es señal de alerta y qué guardar.
 
 Versión corta en el [FAQ de alfabetización](https://www.planetaruleta.com/faq/#alfabetizacion).
 
@@ -413,7 +416,7 @@ Si te piden por mensaje un depósito nuevo para liberar un retiro, eso no es rol
 - **Shuffle (términos §7.2, revisado 14 oct 2026):** no garantiza que un retiro se procese en ningún plazo. Su home dice que el 90 % de los retiros llega en menos de un minuto (revisado 14 oct 2026).
 - **Rainbet (términos y ayuda, revisado 30 oct 2026):** sus términos no dan plazo de procesamiento de retiros (el «24hrs» de §20.1 es para revisar documentos de KYC, ver arriba). Según la ayuda, el equipo suele procesar los retiros en 5 a 15 minutos, y algunos pueden pasar por una revisión de seguridad. La home dice 5 a 15 minutos «in normal conditions» (revisado 14 oct 2026).
 - **Stake (términos y ayuda, revisado 30 oct 2026):** sus términos no dan plazo de retiro. Según la ayuda, en crypto los retiros grandes pueden requerir proceso manual y una retención temporal, sin horas indicadas; en moneda local, el retiro a banco o a tarjeta puede tardar hasta 3 días hábiles.
-- **Roobet (ayuda, artículo 4733940, revisado 30 oct 2026):** según la ayuda, envía los retiros al instante, apenas los pides, pero no da un plazo para que lleguen a tu wallet, porque dependen de las confirmaciones de la blockchain. Sus términos (8, 14 y 30 oct 2026) y su home (14 oct 2026) no se pudieron leer (página vacía).
+- **Roobet (ayuda, artículo 4733940, revisado 30 oct 2026):** según la ayuda, envía los retiros al instante, apenas los pides, pero no da un plazo para que lleguen a tu wallet, porque dependen de las confirmaciones de la blockchain. Sus términos no dan un plazo de retiro (revisados 31 oct 2026); su home habla de “instant or near-instant payouts”, sin dar un plazo en la propia home (revisada 31 oct 2026).
 - **Duelbits (ayuda, artículos 16780663 y 16798784, revisado 30 oct 2026):** los retiros son solo en cripto y, según la ayuda, suelen procesarse al instante o en pocos minutos, sujetos a revisiones de seguridad o congestión de la red. Detalles y fuentes en la ficha.
 
 La home es promesa, no plazo escrito. Para la velocidad de la red y la elección de moneda, mira [/guias/usdt-vs-btc-bankroll/](https://www.planetaruleta.com/guias/usdt-vs-btc-bankroll/).
@@ -976,3 +979,154 @@ No. La propia página de Cloudbet dice que no hay patrón para predecir ni siste
 Los términos y los juegos cambian: revisa la versión vigente en la web de Cloudbet antes de decidir. +18.
 
 URL: https://www.planetaruleta.com/guias/plinko-cloudbet/
+
+Guía · +18 · alfabetización
+
+# Retiro «pendiente», «en proceso» o «en revisión»: qué significa cada estado y qué hacer
+
+Revisado el 31 oct 2026 · cada sala con su fecha de revisión en cada línea.
+
+Depositar suele tardar segundos. Retirar tiene más pasos, y en cada uno el retiro puede quedar quieto: confirmación por email, cola de pagos, revisión de seguridad, verificación de identidad (KYC) y, al final, la red de la cripto. Esta guía explica qué suele significar cada estado, qué plazos publican las propias salas y qué revisar antes de preocuparte. Lo que sigue sale de las páginas de ayuda y los términos de cada sala, con la fecha en que lo revisamos; lo nuestro va marcado EDITORIAL. Los nombres de los estados cambian de una sala a otra: guíate por lo que diga la tuya. Es alfabetización para mayores de 18, no asesoría legal ni consejo de apuesta, y no podemos decirte cómo va a terminar un caso concreto. Si todavía no pediste el retiro, empieza por [antes de retirar: rollover y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/).
+
+## 1. Primero: en qué punto está tu retiro
+
+Un retiro cripto pasa, en general, por estas etapas (EDITORIAL, armado con la ayuda de Cloudbet como ejemplo, revisada 31 oct 2026):
+
+1. **Lo pides** desde tu cuenta. Si no puedes ni enviarlo y ves un error, el dinero no salió de tu saldo (ayuda de Cloudbet).
+2. **Lo confirmas.** En Cloudbet cada retiro se confirma con un link que llega por email, dentro de la hora; si te registraste con Telegram, se confirma ahí. Si el link vence, el retiro se rechaza.
+3. **La sala lo procesa:** cola, revisiones y, si hace falta, verificación de identidad. Aquí aparecen «pendiente», «en proceso» o «en revisión».
+4. **La sala lo envía a la blockchain.** Desde ese momento hay un ID de transacción (TXID o hash). En Cloudbet llega en el email de confirmación del retiro.
+5. **La red lo confirma** y llega a tu wallet. Cada red pide un número de confirmaciones: Roobet, por ejemplo, publica 1 para BTC, LTC, DOGE, XRP y TRX, y 3 para ETH, USDT y USDC, y aclara que algunas wallets pueden pedir otra cantidad (ayuda de Roobet, artículo 7046316, revisada 31 oct 2026).
+
+Cómo leerlo: si todavía no hay TXID, el retiro está del lado de la sala. Si ya hay TXID, está del lado de la red o de tu wallet. Saber eso te ahorra la mitad de las dudas.
+
+## 2. Qué suele significar cada estado
+
+### 2.1 Pendiente / en proceso
+
+- **Cloudbet (ayuda, revisada 31 oct 2026):** su tabla de estados dice que «típicamente se completa en 30 minutos / 1 hora» significa que el retiro va según lo previsto y que no tienes que hacer nada; «hasta 24 horas» significa que sigue en proceso, solo que tarda más de lo normal, y que tampoco tienes que hacer nada. Si el estado pide contactar a soporte, ahí sí toca escribir.
+- **Por qué tarda (Cloudbet):** congestión de la red, una revisión de seguridad («some withdrawals are held briefly for verification, especially if they're larger than usual») o mantenimiento de wallets. Según Cloudbet, la mayoría de las demoras se resuelven solas y te avisan si hace falta algo de tu parte.
+- **Stake (ayuda «Crypto: Help with Withdrawals», revisada 31 oct 2026):** bajo el título «Manual Processing / Pending» dice que los retiros grandes pueden requerir procesamiento manual por sus administradores, «which can result in a temporary hold». No da horas.
+
+### 2.2 En revisión (o retenido)
+
+Es el estado que más preocupa. En las páginas que revisamos, estas son las causas que dan las salas para un retiro retenido, cancelado o que no se puede enviar:
+
+- **Monto grande:** Cloudbet (nivel 2) no tiene tope diario de retiro, pero dice que los retiros grandes pasan por «additional review». Stake habla de proceso manual para montos grandes.
+- **Verificación de identidad pendiente:** ver punto 4.
+- **Un depósito anterior todavía pendiente:** Cloudbet lo nombra como una de las razones más comunes por las que la sala cancela un retiro.
+- **Rollover del depósito sin completar:** Los términos de Cloudbet (§8.8) piden apostar al menos el total de tus depósitos antes de retirar y dicen que Cloudbet puede reducir ese requisito; su ayuda (actualizada el 7 oct 2026) habla del 100 % (y de los «tips» reclamados) si no estás verificado y del 25 % si lo estás, sin aclarar qué nivel cuenta como verificado; las apuestas pendientes no cuentan hasta que se liquidan (ayuda, revisada 31 oct 2026). En Cloudbet, si no lo completaste, el retiro ni siquiera se puede enviar: ves un aviso al intentarlo. Otras salas, en [antes de retirar](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/).
+- **Depositar y retirar sin jugar:** Stake dice que si depositas e intentas retirar sin haber apostado, el retiro es inválido (lo llama «coin mixing»).
+
+### 2.3 Rechazado o cancelado
+
+- **Rechazado (Cloudbet):** las causas que publica son que venció el link de confirmación o que te pidieron verificar la cuenta y no lo completaste. Dice que un retiro rechazado es definitivo y que los fondos retenidos vuelven a tu saldo de Cloudbet. Si lo rechazaron **después** de que lo confirmaste por email, pide que escribas a soporte.
+- **Cancelado por la sala (Cloudbet):** las razones más comunes que da son un depósito anterior todavía pendiente o la verificación sin completar.
+
+Cómo leerlo (EDITORIAL): «rechazado» o «cancelado» no es lo mismo que «perdido». Lo primero es revisar si el saldo volvió a tu cuenta.
+
+### 2.4 Enviado, pero no llega a tu wallet
+
+Con el TXID, búscalo en el explorador de la red correcta (Cloudbet publica la lista; por ejemplo, tronscan.org para TRON y etherscan.io para Ethereum). Lo que puedes ver, según la ayuda de Cloudbet:
+
+- **Confirmed:** la transacción ya está en la blockchain; los fondos salieron de la sala. Revisa la dirección a la que retiraste o espera un poco a que tu wallet lo muestre.
+- **Pending:** se envió y falta que la red la confirme. Cloudbet dice que es normal y que suele resolverse en minutos.
+- **Not found / error:** puede que todavía no se haya enviado, que hayas copiado mal el ID o que estés mirando el explorador de otra red.
+
+Si elegiste una red distinta de la que acepta tu wallet o exchange, el problema no es el estado del retiro. Para elegir moneda y red, mira [USDT vs BTC en un depósito cripto](https://www.planetaruleta.com/guias/usdt-vs-btc-bankroll/).
+
+## 3. Cuánto es «normal»: lo que publica cada sala
+
+La home de una sala es marketing; los términos son lo que aceptaste al abrir la cuenta. Esto es lo que publica cada una de las seis de la mesa (fecha de revisión en cada fila):
+
+| Sala | Qué dicen los términos o la ayuda | Qué dice la home (marketing) |
+| --- | --- | --- |
+| [Rainbet](https://www.planetaruleta.com/mesa/rainbet/) | Sus términos no dan plazo de procesamiento de retiros. Según la ayuda, el equipo suele procesar los retiros en 5 a 15 minutos; algunos pueden pasar por una revisión de seguridad, y en cripto la confirmación de la red depende de la comisión elegida (artículo 8403745; términos y ayuda revisados 31 oct 2026). | 5 a 15 minutos «in normal conditions» (revisado 31 oct 2026). |
+| [Shuffle](https://www.planetaruleta.com/mesa/shuffle/) | Términos §7.2: no garantiza que un retiro se procese «within any particular time» (revisado 31 oct 2026). | «90% of all crypto withdrawals… in under one minute» (revisado 31 oct 2026). |
+| [Stake](https://www.planetaruleta.com/mesa/stake/) | Ayuda de retiros cripto: los retiros grandes pueden requerir proceso manual y retención temporal, sin horas. Sus términos no dan plazo de retiro (términos y ayuda revisados 31 oct 2026). | No menciona plazos de retiro (revisada 31 oct 2026). |
+| [Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/) | Términos §7.5.11: los retiros cripto «typically» se procesan dentro de las 24 horas **desde la aprobación**, sujeto al KYC; son «estimated timeframes only». Ayuda: la mayoría al instante, algunos hasta 24 horas (revisado 31 oct 2026). | «90% of our withdrawals take less than 2 minutes» (revisado 31 oct 2026). |
+| [Roobet](https://www.planetaruleta.com/mesa/roobet/) | Según la ayuda, envía los retiros al instante, apenas los pides, pero no da un plazo para que lleguen a tu wallet, porque dependen de las confirmaciones de la blockchain (artículo 4733940, revisado 31 oct 2026). Sus términos no dan un plazo de retiro (revisados 31 oct 2026). | Su home habla de “instant or near-instant payouts”, sin dar un plazo en la propia home (revisada 31 oct 2026). |
+| [Duelbits](https://www.planetaruleta.com/mesa/duelbits/) | Ayuda: los retiros son solo en cripto y, según la ayuda, suelen procesarse al instante o en pocos minutos, sujetos a revisiones de seguridad o congestión de la red (artículos 16780663 y 16798784, revisado 30 y 31 oct 2026). | — |
+
+Cómo leerlo (EDITORIAL): «normal» es lo que tu sala escribe, contado desde donde ella lo cuenta. En Cloudbet, por ejemplo, las 24 horas corren **desde la aprobación**, no desde que tocaste «retirar», y la verificación puede ir antes. Si tu retiro ya pasó lo que la sala publica, es momento de escribir a soporte con los datos del punto 8; no de volver a pedirlo.
+
+## 4. KYC: la causa que más se repite en lo que revisamos
+
+En las páginas que revisamos, la verificación de identidad aparece una y otra vez como el motivo de un retiro detenido, limitado o rechazado:
+
+- **Cloudbet (revisado 31 oct 2026):** sin verificar o en nivel 1, el límite es de 2.200 USD de retiro por día; si lo alcanzas a las 10:00, se renueva a las 10:00 del día siguiente. Si mandaste tus documentos y están en revisión, el límite sigue hasta que te aprueben; mandar documentos no lo quita. Los términos (§21.1.5) dicen que la verificación se exige cuando tus depósitos acumulados llegan a 2.200 USD o los superan, y que mientras tanto depósitos y retiros pueden quedar restringidos y los fondos, bloqueados. El §11.1 suma que pueden suspender la cuenta y retener montos si no completas un KYC pedido dentro del plazo que fijen.
+- **Rainbet (términos §20.1, revisado 31 oct 2026):** puede restringir pagos y retiros si la verificación no se completa en 72 horas; la verificación puede tardar hasta 7 días hábiles en analizarse, y la misma cláusula da 24 horas a su equipo de KYC para revisar los documentos. Con el estado «Temporarily Approved» no se puede completar ningún retiro. Y dice que no pasar el control de identidad «will result in confiscation of funds». Palabras de Rainbet.
+- **Shuffle (términos §5.2 y §5.5, revisado 31 oct 2026):** puede pedir un documento oficial al llegar a un umbral que fija la sala «and in any event before your first withdrawal», y que el medio de pago esté a tu nombre.
+- **Duelbits (centro de ayuda, artículo 16335255, revisado 31 oct 2026):** verificación reforzada en general al llegar a unos 2.000 EUR acumulados en depósitos o retiros, y pueden pedirla en cualquier momento.
+
+Cómo leerlo (EDITORIAL): «en revisión» después de una ganancia grande puede ser un KYC que solo ahora te piden. Revisa tu email y tu cuenta: si hay un pedido de documentos, ese es el paso que destraba el retiro. Los detalles de qué documentos acepta cada sala están en [antes de retirar](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/) y, para Cloudbet, en [su guía](https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/). Esta guía no explica cómo evitar una verificación: si no puedes o no quieres pasarla, no deposites más.
+
+## 5. Qué revisar, en orden
+
+- **¿Confirmaste el retiro?** Busca el email de confirmación (y en spam). Si el link venció, el retiro se rechaza y hay que pedirlo de nuevo.
+- **¿Qué estado muestra el historial?** Anota el texto exacto y la hora.
+- **¿Te pidieron documentos?** Revisa el email y los avisos de tu cuenta.
+- **¿Llegaste a un límite?** Por día, por nivel de verificación o por un mínimo de retiro.
+- **¿Completaste el rollover del depósito?** Algunas salas lo exigen antes de retirar.
+- **¿Hay un depósito anterior todavía pendiente?**
+- **¿Hay TXID?** Si lo hay, búscalo en el explorador de la red correcta (punto 2.4).
+- **¿Red y dirección correctas?** La misma red de un lado y del otro.
+- **¿Ya pasó el plazo que publica tu sala?** Solo entonces, soporte, con tu ID de retiro.
+- **¿Soporte no lo resolvió?** Lo siguiente, si tu sala lo prevé, es el proceso de reclamos formal de tu sala y, después, la autoridad que le dio la licencia o el servicio de resolución de disputas que esa autoridad aprobó. El cómo, y el plazo si lo dan, están en sus términos o en su ayuda; ten a mano todo lo del punto 8. Stake (términos §23.1 y §23.3, revisados 31 oct 2026) pide reclamar primero a su soporte, dentro de los seis meses del incidente, y dice que, si no quedas conforme con su decisión final, puedes llevar la disputa a CADRE B.V., una entidad de resolución de disputas certificada por la Curaçao Gaming Authority (CGA). Según la ayuda de Duelbits (artículo 16335255, revisado 31 oct 2026), después de soporte viene un reclamo formal según su política de reclamos de jugadores y, si no quedas conforme, el caso puede escalarse a la CGA. La propia CGA, en su página de contacto y en su nota sobre reclamos (las dos revisadas 31 oct 2026), dice que no atiende disputas individuales entre jugadores y salas, y que no tiene facultades para mediar ni arbitrar en ellas.
+
+## 6. No canceles para «acelerar»
+
+Cloudbet lo dice directo: cancelar y pedir de nuevo no acelera nada, porque la nueva solicitud va al final de la cola; si el retiro sigue pendiente, déjalo (ayuda, revisada 31 oct 2026). Solo se puede cancelar antes de que salga a la blockchain, y en ese caso el dinero vuelve a tu saldo sin cargo.
+
+Y una advertencia que no es técnica: un retiro cancelado vuelve al saldo, y el saldo está a un clic de volver a jugarse. Si cancelas un retiro para seguir jugando, o estás persiguiendo pérdidas, detente y busca ayuda. +18.
+
+## 7. Señales de alerta (EDITORIAL)
+
+Lo que sigue no prueba nada por sí solo, pero en las páginas que revisamos no aparece como parte del proceso normal de retiro:
+
+- **Que te pidan pagar o depositar «para liberar» un retiro** por chat, WhatsApp, Telegram o email. Los términos de Cloudbet (§7.5.5) dicen que solo aceptan retiros pedidos desde las páginas de tu cuenta y que sus empleados y agentes no están autorizados a mover cripto de ninguna otra forma. Las condiciones de retiro (rollover, KYC, límites, comisiones) están escritas en los términos o en la oferta que aceptaste, y se cumplen desde tu cuenta. Algunos bonos sin depósito, por ejemplo, piden un depósito mínimo antes de retirar lo ganado, pero eso está escrito en la oferta (Cloudbet, términos §8.7). Un pago aparte pedido por mensaje privado no figura en ninguno de los términos que revisamos. No pagues y entra a la sala desde el sitio que tienes guardado, no desde el link que te mandaron.
+- **Que alguien que dice ser soporte te escriba primero** para «ayudarte» con el retiro, o te pida la contraseña o un código.
+- **Que el retiro se rechace y el saldo no vuelva**, cuando la sala dice que en ese caso los fondos regresan a tu cuenta.
+- **Que el plazo ya superó con creces lo que la sala publica** y soporte no te da un ID, un ticket ni un motivo.
+- **Que te pidan retirar a otro medio o a otra persona.** Rainbet (§8.4) dice que los retiros van al medio original y que otro medio queda a su criterio, con controles de seguridad adicionales; Shuffle (§5.5) puede exigir que el medio esté a tu nombre.
+
+Una cosa más: las comisiones existen y están escritas. Cloudbet, por ejemplo, se reserva cobrar hasta 5 % sobre depósitos y retiros para cubrir costos (términos §7.1.10). Si te piden un cargo que no está en los términos, no lo pagues y consulta a soporte entrando a la sala desde el sitio que tienes guardado.
+
+## 8. Qué guardar desde el primer día
+
+EDITORIAL, para que un reclamo se pueda leer:
+
+- **ID de retiro** (en Cloudbet: al pie del email de confirmación, o en Transacciones) y **TXID** si ya lo hay.
+- **Capturas** del historial con fecha y hora visibles, de cada cambio de estado.
+- **Emails** de confirmación, de pedido de documentos y de soporte.
+- **El chat de soporte** (copia o captura) y el número de ticket.
+- **Qué versión de los términos** regía ese día: Cloudbet, por ejemplo, encabeza los suyos con «Last updated 30 September 2026».
+- **Moneda, red y dirección** a la que pediste el retiro.
+
+No podemos decirte cómo va a terminar un reclamo. Lo que sí sabemos es que, sin estos datos, soporte no tiene por dónde empezar.
+
+## 9. Preguntas frecuentes
+
+### ¿Qué significa que un retiro esté «pendiente»?
+
+En general, que la sala todavía no lo envió a la blockchain: está en cola, en una revisión o esperando un paso tuyo (confirmación por email, documentos). En Cloudbet, la ayuda dice que la mayoría sale al instante y algunos tardan hasta 24 horas (revisado el 31 oct 2026).
+
+### ¿Por qué mi retiro está «en revisión»?
+
+En las páginas que revisamos, las causas más citadas son un monto más alto de lo habitual o una verificación de identidad (KYC) pendiente. Un depósito anterior todavía pendiente puede hacer que la sala cancele el retiro, y en Cloudbet un rollover del depósito sin completar ni siquiera deja enviarlo. Revisa tu email y los avisos de tu cuenta: si te piden documentos, ese es el paso que lo destraba.
+
+### ¿Cuánto tarda un retiro cripto?
+
+Depende de la sala y de la red. Cloudbet escribe en sus términos que «typically» se procesa dentro de las 24 horas desde la aprobación, como estimación; Shuffle dice que no garantiza ningún plazo; Rainbet no da plazo en sus términos, aunque, según su ayuda, suele procesar los retiros en 5 a 15 minutos, con posibles revisiones de seguridad. Lo que diga la home es marketing.
+
+### ¿Cancelo el retiro y lo pido de nuevo?
+
+En Cloudbet no sirve para acelerarlo: la nueva solicitud va al final de la cola. Solo se puede cancelar antes de que salga a la blockchain.
+
+### ¿Es normal que me pidan pagar para liberar mi retiro?
+
+Por mensaje privado, no: no figura en ninguna de las páginas de ayuda ni en los términos que revisamos. Las condiciones que sí existen están escritas y se cumplen desde tu cuenta: Cloudbet, por ejemplo, se reserva un cargo de hasta 5 % (§7.1.10), y algunas ofertas de bono sin depósito piden un depósito mínimo antes de retirar (§8.7). Cloudbet también dice que solo acepta retiros pedidos desde tu cuenta y que sus empleados y agentes no mueven cripto por otra vía. No pagues por mensaje privado: entra a la sala desde el sitio que tienes guardado.
+
+Los términos cambian: revisa la versión vigente en la web oficial de tu sala antes de decidir. No garantizamos resultados. Si se te va de las manos, busca ayuda de juego responsable donde estés. +18.
+
+URL: https://www.planetaruleta.com/guias/retiro-pendiente-en-revision/

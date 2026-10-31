@@ -27,6 +27,7 @@ El texto de las guías, sin el menú del sitio, está en [llms-full.txt](https:/
 - [Cloudbet: registro, países restringidos y KYC](https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/): Qué dicen la ayuda y los términos de Cloudbet sobre registro, países restringidos, KYC por niveles, licencia y apuesta mínima, con fecha de revisión.
 - [Depositar para retirar: bono falso y clones](https://www.planetaruleta.com/guias/pagar-para-retirar-bono-falso/): Si te piden por mensaje depositar o pagar para liberar un retiro, no sigas. El patrón del bono falso, los sitios clon y cómo revisar el dominio. +18.
 - [Plinko en Cloudbet](https://www.planetaruleta.com/guias/plinko-cloudbet/): Qué dicen las páginas de Cloudbet sobre el Plinko: filas, niveles, BOOST con recargo del 20 %, RTP declarado de 99 % y cómo verificar una tirada. Revisado el 30 oct 2026.
+- [Retiro pendiente o en revisión](https://www.planetaruleta.com/guias/retiro-pendiente-en-revision/): Qué significa un retiro pendiente, en proceso o en revisión, cuánto dicen tardar las salas, qué es normal, qué es señal de alerta y qué guardar. +18.
 
 ## Mesa
 
