@@ -27,8 +27,8 @@ Estas guías explican mecánicas de casino: qué es el RTP, el max bet de un bon
   Custodia, fees, velocidad y volatilidad del activo. No es consejo financiero.
 - **[Antes de retirar: rollover del depósito y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/)**
 
-  Qué dicen las páginas de Rainbet, Shuffle, Cloudbet, Stake, Roobet y Duelbits sobre apostar el depósito y verificar identidad antes de retirar. En Duelbits, la página no se pudo leer.
-- **[RTP y ventaja de la casa en ruleta](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/)**
+  Qué dicen las páginas de Rainbet, Shuffle, Cloudbet, Stake, Roobet y Duelbits sobre apostar el depósito y verificar identidad antes de retirar. En Duelbits, resumimos su centro de ayuda.
+- **[RTP de la ruleta y ventaja de la casa](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/)**
 
   Europea, americana y francesa: la cuenta de la ventaja de la casa y del RTP, qué publican Shuffle y Rainbet, y cómo leer esos números en una promo.
 - **[Cloudbet: registro, países restringidos y KYC](https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/)**
@@ -49,7 +49,7 @@ Guía · +18 · alfabetización
 
 # RTP y volatilidad en slots: por qué el juego no “está por pagar”
 
-El **RTP** (return to player) es el porcentaje teórico que un slot está diseñado para devolver en el largo plazo. La **volatilidad** (varianza) describe cómo se reparte ese retorno. Ninguna de las dos dice que el juego “está por pagar” ni que esta noche toca.
+El **RTP** (return to player) es el porcentaje teórico que un slot está diseñado para devolver en el largo plazo. La **volatilidad** (varianza) describe cómo se reparte ese retorno. Ninguna de las dos dice que el juego “está por pagar” ni que esta noche toca. Esta guía es de slots; el RTP de la ruleta europea, americana y francesa, con la cuenta, está en [RTP de la ruleta y ventaja de la casa](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/).
 
 ## Qué es el RTP (return to player)
 
@@ -103,7 +103,7 @@ Un slot con buen RTP no compensa un [wagering](https://www.planetaruleta.com/faq
 
 En Planeta Ruleta trabajamos lectura de mecánicas y T&C, no puertas de «juega aquí». Si quieres revisar dudas de RTP o volatilidad, pasa por la mesa en [www.planetaruleta.com](https://www.planetaruleta.com/) o [TG @planetaruleta](https://t.me/planetaruleta). +18.
 
-Versión corta en el [FAQ: qué es el RTP y la volatilidad](https://www.planetaruleta.com/faq/#rtp-volatilidad).
+Versión corta en el [FAQ: qué es el RTP y la volatilidad](https://www.planetaruleta.com/faq/#rtp-volatilidad). Ruleta: [RTP de la ruleta y ventaja de la casa](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/).
 
 URL: https://www.planetaruleta.com/guias/rtp-volatilidad/
 
@@ -382,7 +382,7 @@ Guía · +18 · alfabetización
 
 # Antes de retirar: rollover del depósito y verificación KYC, según las páginas oficiales
 
-La home de un casino cripto habla de retiros en minutos. Antes de que corra ese reloj suele haber dos pasos: apostar el depósito una cantidad de veces (rollover) y verificar tu identidad (KYC). Esta guía junta lo que dicen las páginas de seis salas sobre esos dos pasos, con la fecha en que lo revisamos. Las citas entre comillas van tal cual. En Duelbits, duelbits.com no se pudo leer el 24 oct 2026: esa sala va como resumen de su centro de ayuda, no como cita de la página en vivo. Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala. Montos en dólares estadounidenses (USD).
+La home de un casino cripto habla de retiros en minutos. Antes de que corra ese reloj suele haber dos pasos: apostar el depósito una cantidad de veces (rollover) y verificar tu identidad (KYC). Esta guía junta lo que dicen las páginas de seis salas sobre esos dos pasos, con la fecha en que lo revisamos. Las citas entre comillas van tal cual. En Duelbits, los términos y el FAQ de duelbits.com no se pudieron leer (HTTP 403, 30 oct 2026): esa sala va como resumen de su centro de ayuda, no como cita de sus términos. Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala. Montos en dólares estadounidenses (USD).
 
 ## 1. Rollover del depósito: apostarlo antes de retirarlo
 
@@ -390,9 +390,10 @@ Algunas salas piden que apuestes el monto depositado antes de retirar. No es lo 
 
 - **Rainbet (términos §8.2, revisado 14 oct 2026):** el retiro va sin comisión si apostaste el depósito al menos una vez; si tomaste una promoción, tienes que apostar el doble. Su home repite lo de la comisión pero no menciona la condición de la promoción (home revisada 14 oct 2026). Lee la cláusula, no solo la home.
 - **Rainbet (home, revisado 14 oct 2026):** retiro mínimo de 15 USD o su equivalente.
+- **Cloudbet (términos §8.8 y ayuda actualizada el 7 oct 2026, revisados 30 oct 2026):** los términos piden apostar al menos el total de tus depósitos (100 %) antes de retirar y dicen que Cloudbet puede reducir ese requisito a su criterio. Su ayuda habla del 100 % de los depósitos (y de los «tips» cobrados) para usuarios «no verificados» y del 25 % para los «verificados», sin aclarar qué nivel de verificación cuenta; el 25 % sale solo de la ayuda. Solo cuentan las apuestas ya liquidadas.
 - **Stake (ayuda, revisado 8 oct 2026):** cada depósito debe apostarse al 100 % antes de retirar o hacer tip.
 - **Roobet (ayuda, revisado 8 y 14 oct 2026):** pide apostar al menos el 100 % del depósito en cripto antes de retirar o hacer tip.
-- **Duelbits (términos §5.3, auditoría 24 oct 2026):** hay que apostar el 10 % del depósito antes de retirar. Los retiros son solo en cripto. duelbits.com no se pudo leer en esa pasada: no es una cita tomada de la página en vivo.
+- **Duelbits (ayuda, artículos 16780663 y 16798784, revisados 30 oct 2026):** según la ayuda, hay que apostar el 10 % del depósito antes de retirar; la ayuda lo atribuye a la sección 5.3 de los términos, que no pudimos leer (HTTP 403, 30 oct 2026). Los retiros son solo en cripto.
 
 Cómo leerlo: si una promo cambia la condición de retiro, eso es parte del costo de la promo. Más en [/guias/como-leer-una-promo-casino/](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/).
 
@@ -413,7 +414,7 @@ Si te piden por mensaje un depósito nuevo para liberar un retiro, eso no es rol
 - **Rainbet (términos y ayuda, revisado 30 oct 2026):** sus términos no dan plazo de procesamiento de retiros (el «24hrs» de §20.1 es para revisar documentos de KYC, ver arriba). Según la ayuda, el equipo suele procesar los retiros en 5 a 15 minutos, y algunos pueden pasar por una revisión de seguridad. La home dice 5 a 15 minutos «in normal conditions» (revisado 14 oct 2026).
 - **Stake (términos y ayuda, revisado 30 oct 2026):** sus términos no dan plazo de retiro. Según la ayuda, en crypto los retiros grandes pueden requerir proceso manual y una retención temporal, sin horas indicadas; en moneda local, el retiro a banco o a tarjeta puede tardar hasta 3 días hábiles.
 - **Roobet (ayuda, artículo 4733940, revisado 30 oct 2026):** según la ayuda, envía los retiros al instante, apenas los pides, pero no da un plazo para que lleguen a tu wallet, porque dependen de las confirmaciones de la blockchain. Sus términos (8, 14 y 30 oct 2026) y su home (14 oct 2026) no se pudieron leer (página vacía).
-- **Duelbits (auditoría 24 oct 2026):** no hay un plazo de retiro publicado. Detalles y fuentes en la ficha.
+- **Duelbits (ayuda, artículos 16780663 y 16798784, revisado 30 oct 2026):** los retiros son solo en cripto y, según la ayuda, suelen procesarse al instante o en pocos minutos, sujetos a revisiones de seguridad o congestión de la red. Detalles y fuentes en la ficha.
 
 La home es promesa, no plazo escrito. Para la velocidad de la red y la elección de moneda, mira [/guias/usdt-vs-btc-bankroll/](https://www.planetaruleta.com/guias/usdt-vs-btc-bankroll/).
 
@@ -424,7 +425,7 @@ La home es promesa, no plazo escrito. Para la velocidad de la red y la elección
 3. Qué documentos pide el KYC y qué pasa si no lo completas.
 4. Límites por nivel de verificación.
 
-Recuerda que apostar el depósito es exponerlo a la ventaja de la casa: ver [/guias/rtp-volatilidad/](https://www.planetaruleta.com/guias/rtp-volatilidad/). Fichas de cada sala: [Rainbet](https://www.planetaruleta.com/mesa/rainbet/), [Shuffle](https://www.planetaruleta.com/mesa/shuffle/), [Stake](https://www.planetaruleta.com/mesa/stake/), [Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/), [Roobet](https://www.planetaruleta.com/mesa/roobet/), [Duelbits](https://www.planetaruleta.com/mesa/duelbits/). Dudas generales: [/faq/](https://www.planetaruleta.com/faq/).
+Recuerda que apostar el depósito es exponerlo a la ventaja de la casa: ver [RTP de la ruleta y ventaja de la casa](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/) (la cuenta en dinero) y, para slots, [RTP y volatilidad en slots](https://www.planetaruleta.com/guias/rtp-volatilidad/). Fichas de cada sala: [Rainbet](https://www.planetaruleta.com/mesa/rainbet/), [Shuffle](https://www.planetaruleta.com/mesa/shuffle/), [Stake](https://www.planetaruleta.com/mesa/stake/), [Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/), [Roobet](https://www.planetaruleta.com/mesa/roobet/), [Duelbits](https://www.planetaruleta.com/mesa/duelbits/). Dudas generales: [/faq/](https://www.planetaruleta.com/faq/).
 
 Los términos cambian. Revisa la versión vigente en la web oficial de cada sala antes de decidir. +18. Si estás persiguiendo pérdidas, o cancelas un retiro para seguir jugando, detente y busca ayuda.
 
@@ -432,9 +433,9 @@ URL: https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/
 
 Guía · +18 · alfabetización
 
-# RTP y ventaja de la casa en ruleta: europea, americana y francesa, con la cuenta a la vista
+# RTP de la ruleta y ventaja de la casa: europea, americana y francesa, con la cuenta a la vista
 
-El RTP (return to player) de una ruleta no es un número que alguien elige: sale de contar casillas. Esta guía muestra la cuenta para la ruleta europea, la americana y las reglas francesas (la partage y en prison), qué cambia según la apuesta, qué publican algunas salas y cómo leer esos números dentro de una promo. Lo básico de RTP y volatilidad está en la guía general [RTP y volatilidad](https://www.planetaruleta.com/guias/rtp-volatilidad/). Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala.
+El RTP de la ruleta (return to player) no es un número que alguien elige: sale de contar casillas. Esta guía muestra la cuenta para la ruleta europea, la americana y las reglas francesas (la partage y en prison), qué cambia según la apuesta, qué publican algunas salas y cómo leer esos números dentro de una promo. Lo básico de RTP y volatilidad está en la guía general [RTP y volatilidad en slots](https://www.planetaruleta.com/guias/rtp-volatilidad/). Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala.
 
 ## 1. RTP y ventaja de la casa: la misma cuenta, vista de dos lados
 
@@ -505,7 +506,7 @@ Cálculo EDITORIAL con la distribución binomial exacta. Es pérdida esperada, n
 
 Cómo leerlo: la pérdida esperada crece en línea recta con los giros (×10 giros, ×10 pérdida esperada). La variación crece más lento (×10 giros, ×3,16 variación). En pocos giros la suerte tapa la ventaja; en muchos, la ventaja tapa la suerte. Eso es «largo plazo»: no es una fecha, es la cantidad de apuestas.
 
-Con un pleno, la ventaja por giro es la misma (1/37), pero la variación típica por giro es de unas 5,84 unidades en lugar de 1,0. Misma ventaja, rachas mucho más largas en seco y saltos más grandes: eso es volatilidad, no un RTP distinto. Más en [/guias/rtp-volatilidad/](https://www.planetaruleta.com/guias/rtp-volatilidad/).
+Con un pleno, la ventaja por giro es la misma (1/37), pero la variación típica por giro es de unas 5,84 unidades en lugar de 1,0. Misma ventaja, rachas mucho más largas en seco y saltos más grandes: eso es volatilidad, no un RTP distinto. Más en [RTP y volatilidad en slots](https://www.planetaruleta.com/guias/rtp-volatilidad/).
 
 ## 6. La ventaja en dinero: total apostado × ventaja
 
