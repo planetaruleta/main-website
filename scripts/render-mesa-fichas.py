@@ -101,7 +101,7 @@ ROWS = [
             "25 SEP 2026",
             "30 SEP 2026 (bono, KYC, métodos). Licencia y sportsbook: 03 OCT 2026.",
             "30 SEP 2026 (bono, KYC, métodos). Sportsbook y licencia rechequeados: 03 OCT 2026.",
-            "24 OCT 2026 (licencia, métodos, países, retiros). Bono de bienvenida y licencia de Anjouan en .io: fuente de terceros.",
+            "24 OCT 2026 (licencia, métodos, países, retiros). Bono de bienvenida y licencia de Anjouan en .io: fuente de terceros. · Plazo y mínimos de retiro: ayuda 16780663 y 16798784, 30 OCT 2026.",
         ],
     ),
 ]
@@ -463,7 +463,7 @@ def render_index() -> str:
             "publisher": {"@id": ORG_ID},
             "breadcrumb": {"@id": f"{url}#breadcrumb"},
             "mainEntity": {"@id": f"{url}#fichas"},
-            "dateModified": "2026-10-24",
+            "dateModified": "2026-10-31",
         },
         fichas_item_list(url),
         breadcrumb_ld(url, [("Inicio", f"{HOST}/"), ("Mesa", url)]),
@@ -617,7 +617,7 @@ FICHAS = {
         "h1": "Shuffle: ficha de la mesa",
         "title": "Shuffle: licencia, KYC y rakeback — ficha | Planeta Ruleta",
         "description": "Rakeback 5% del house edge (Bronze) y licencia Curaçao OGL/2024/1337/0628. KYC antes del primer retiro. Sin puntaje. Offshore no es licencia de Argentina. +18.",
-        "modified": "2026-10-22",
+        "modified": "2026-10-31",
         "lede": [
             "Shuffle está en la mesa como operador crypto/offshore, con licencia de Curaçao publicada a nombre de Natural Nine B.V.",
             "El dato de bono que la fila defiende es rakeback de casino. El Level Up es otra señal, con números aproximados.",
@@ -869,7 +869,7 @@ FICHAS = {
         "h1": "Roobet: ficha de la mesa",
         "title": "Roobet: licencia, KYC y rakeback — ficha | Planeta Ruleta",
         "description": "Instant rakeback y +10% por 24 h al registrarse. Licencia y sportsbook público: no verificado. Sin puntaje. Offshore no es licencia de Argentina. +18.",
-        "modified": "2026-10-22",
+        "modified": "2026-10-31",
         "lede": [
             "Roobet está en la mesa como operador crypto/offshore. El help declara instant rakeback y, al registrarse, un boost de +10% durante 24 horas.",
             "Esta ficha no pone nota ni abre un depósito. La licencia y el sportsbook del HTML público siguen en no verificado.",
@@ -937,7 +937,7 @@ FICHAS = {
         "h1": "Duelbits: ficha de la mesa",
         "title": "Duelbits: licencia, KYC y métodos — ficha | Planeta Ruleta",
         "description": "Duelbits: licencia CGA OGL/2024/1507/0838 y retiros solo en cripto. Sin método fiat de México ni Argentina. Sin puntaje. Offshore no es licencia de Argentina. +18.",
-        "modified": "2026-10-24",
+        "modified": "2026-10-31",
         "published": "2026-10-24",
         "lede": [
             "Duelbits es un casino cripto con licencia de Curaçao. El certificado de la Curaçao Gaming Authority muestra la licencia OGL/2024/1507/0838 como activa, a nombre de Liquid Entertainment N.V. No es una licencia de México ni de Argentina.",
@@ -958,7 +958,7 @@ FICHAS = {
         "plata_title": "Cómo entra y sale el dinero",
         "plata": [
             "La lista de cripto de esta revisión es BTC, ETH, LTC, SOL, XRP, DOGE, TRX, BNB, USDT, USDC, DAI, SHIB, APE y TRUMP. El depósito en moneda fiat, cuando existe, es una compra de cripto con un tercero (PIX en Brasil, tarjetas y otros). No hay un método de depósito en pesos mexicanos ni en pesos argentinos. MXN, ARS y CLP solo se muestran como moneda de referencia.",
-            "Los retiros son solo en cripto. Según los términos (§5.3, citados en la ayuda), hay que apostar el 10% del depósito antes de retirar. Es una condición, no un plazo: no tenemos el tiempo de retiro.",
+            "Los retiros son solo en cripto. Según la ayuda, hay que apostar el 10% del depósito antes de retirar; la ayuda lo atribuye a la sección 5.3 de los términos, que no pudimos leer (HTTP 403, 30 oct 2026). Es una condición, no un plazo. Sobre el tiempo, la ayuda dice que los retiros suelen procesarse al instante o en pocos minutos, sujetos a revisiones de seguridad o congestión de la red (artículos 16780663 y 16798784, revisado 30 oct 2026).",
             "Países aceptados, según el centro de ayuda (artículo 16451925, que toma la lista de los términos §3.2): México, Argentina, Colombia, Chile, Perú y Brasil. La lista de restringidos incluye España y Estados Unidos, y también Aruba, Australia, Bélgica, Bonaire, Cuba, Curaçao, Francia, Irán, Italia, Myanmar, Países Bajos, Corea del Norte, Portugal, Saba, Singapur, San Eustaquio (Statia), San Martín (St Martin), Sudán, Siria, Reino Unido, Yemen, y Crimea, Donetsk y Luhansk. Que acepte jugadores de México o Argentina no es una licencia local.",
         ],
         "bono": [
@@ -1494,7 +1494,7 @@ VISUAL = {
         "facts": [
             ("Licencia", "CGA", "OGL/2024/1507/0838"),
             ("Retiros", "crypto", "sin fiat MX/AR"),
-            ("Antes de retirar", "10%", "del depósito · Términos §5.3"),
+            ("Antes de retirar", "10%", "del depósito · según la ayuda (§5.3)"),
             ("KYC", "2.000", "EUR aprox · depósitos o retiros"),
         ],
         "bonus_sub": "No hay un chip de bono adoptado. Las cifras de rakeback de la ayuda no cuadran.",
@@ -1542,14 +1542,14 @@ VISUAL = {
             ),
         ],
         "side": [
-            ("10%", "Del depósito", "Antes de retirar · Términos §5.3"),
+            ("10%", "Del depósito", "Antes de retirar · según la ayuda (§5.3)"),
             ("crypto", "Retiros", "Sin método fiat"),
         ],
         "stages": [
             ("Depósito", "Crypto", "fiat solo vía tercero · sin MX/AR"),
             ("KYC", "2.000 EUR", "aprox · o en cualquier momento"),
-            ("Retiro", "Solo crypto", "sin mínimo en esta ficha"),
-            ("Proceso", "Sin plazo publicado", "revisa el estado antes"),
+            ("Retiro", "Solo crypto", "mínimo según la moneda (ayuda)"),
+            ("Proceso", "Minutos, según la ayuda", "sujeto a revisiones · revisa el estado antes"),
         ],
         "caveat_strong": "Revisa el estado de los retiros antes de depositar.",
         "caveat": "Los retiros son solo en cripto. No hay un método fiat de México ni de Argentina en la lista.",
