@@ -785,9 +785,9 @@ FICHAS = {
     "cloudbet": {
         "name": "Cloudbet",
         "h1": "Cloudbet: ficha de la mesa",
-        "title": "Cloudbet: licencia, KYC y welcome — ficha | Planeta Ruleta",
-        "description": "Cloudbet: welcome de hasta 2.500 USD en 30 días y rakeback 10% en casino. Licencia CGA OGL/2024/328/0599. Sin puntaje. Offshore no es licencia de Argentina. +18.",
-        "modified": "2026-10-22",
+        "title": "Cloudbet: bono, licencia y países — ficha | Planeta Ruleta",
+        "description": "Cloudbet: welcome de hasta 2.500 USD en 30 días, licencia CGA (no local), KYC y 22 jurisdicciones restringidas (ninguna de Sudamérica). Sin puntaje. +18.",
+        "modified": "2026-10-31",
         "lede": [
             "Cloudbet está en la mesa como operador crypto/offshore. El help declara licencia de la Curaçao Gaming Authority y un paquete de hasta 2.500 USD en 30 días, con rakeback del 10% en casino.",
             "Esta ficha no pone nota ni abre un depósito. El apex cloudbet.com, el 03 OCT 2026, devolvió el shell de JavaScript; los hechos salen de /en, de los Terms y del help.",
@@ -797,12 +797,14 @@ FICHAS = {
             ("Licencia", "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. No es licencia de Argentina."),
             ("Monedas", "La celda de la tabla es la clase crypto · buy card (Swapped). El artículo de compra nombra monedas de esa pasarela; no las copiamos como catálogo. Redes: no verificado · 03 OCT 2026."),
             ("Idiomas", "no verificado · 03 OCT 2026. Esta ficha está en español de Latinoamérica; eso no dice qué idiomas publica el operador."),
-            ("Última revisión", "Bono, KYC y métodos de la fila: 30 SEP 2026. Licencia y sportsbook: 03 OCT 2026. Monster Mash: 22 OCT 2026."),
+            ("Última revisión", "Bono, KYC y métodos de la fila: 30 SEP 2026. Licencia y sportsbook: 03 OCT 2026. Monster Mash: 22 OCT 2026. Países restringidos y ayuda de verificación: 30 OCT 2026."),
         ],
         "fuentes": [
             ("cloudbet.com/en", "https://www.cloudbet.com/en"),
             ("Sports", "https://www.cloudbet.com/en/sports"),
             ("Terms", "https://www.cloudbet.com/en/help/terms"),
+            ("Jurisdicciones no disponibles", "https://www.cloudbet.com/en/support/articles/101693-in-which-jurisdictions-is-cloudbet-not-available"),
+            ("Jugadores de Sudamérica", "https://www.cloudbet.com/en/support/articles/703235-does-cloudbet-accept-casino-players-from-south-america"),
             ("Licencias", "https://www.cloudbet.com/en/support/articles/107963-what-gambling-licenses-does-cloudbet-have"),
             ("Niveles de verificación", "https://www.cloudbet.com/en/support/articles/415596-what-are-cloudbet-s-verification-levels"),
             ("Documentos", "https://www.cloudbet.com/en/support/articles/103148-what-documents-are-accepted-for-account-verification"),
@@ -851,6 +853,14 @@ FICHAS = {
             (
                 "¿El depósito es por CBU?",
                 "No. La celda es crypto · buy card (Swapped). El help describe la compra con tarjeta a través de Swapped. El retiro de la mesa sigue sin dato: no hay un SLA de horas en esta ficha.",
+            ),
+            (
+                "¿Desde qué países no se puede usar Cloudbet?",
+                "Su ayuda (fechada el 30 SEP 2026) y sus Terms (§7.1.3) listan 22 jurisdicciones restringidas, entre ellas Estados Unidos y sus territorios, Reino Unido, España, Francia, Alemania, Países Bajos, Australia, Japón y Cuba. Revisión 30 OCT 2026. La lista completa y cómo leerla están en la guía de registro, países y KYC de Cloudbet. Revisar la ley local es responsabilidad tuya. +18.",
+            ),
+            (
+                "¿Cloudbet acepta jugadores de Sudamérica?",
+                "Su ayuda (fechada el 11 JUN 2026, releída el 30 OCT 2026) dice que ningún país de Sudamérica está en su lista de jurisdicciones restringidas. Eso no es una licencia local ni dice que el juego online sea legal donde estás. +18.",
             ),
         ],
     },
@@ -1321,6 +1331,7 @@ VISUAL = {
             ("Operador", "crypto/offshore"),
             ("Revisión fila", "30 SEP 2026"),
             ("Licencia", "03 OCT 2026"),
+            ("Países", "30 OCT 2026"),
         ],
         "seals": [
             ("Licencia", ["CGA · OGL/2024/328/0599", "no es registro AR"]),
