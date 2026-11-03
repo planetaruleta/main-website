@@ -558,6 +558,39 @@ a:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
 .tl .ev a { color: var(--ink); text-decoration-color: color-mix(in srgb, var(--copper) 70%, transparent); }
 .tl .ev a:hover { color: var(--copper); }
 .tl .d { margin: .3rem 0 0; font-size: .88rem; color: var(--mute); }
+/* Expired señal: same badge as /senales/ (cream→--ink, dim→--mute in this palette). */
+.tl .exp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .4rem .65rem;
+  margin: 0 0 .45rem;
+}
+.tl .exp-badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: .68rem;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: var(--ink);
+  border: 1px solid var(--mute);
+  border-radius: 999px;
+  padding: .2rem .5rem;
+}
+.tl .exp-when {
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.tl li.is-expired time,
+.tl li.is-expired .ev a,
+.tl li.is-expired .d {
+  color: var(--mute);
+}
 .quote {
   margin: .35rem 0 0;
   font-family: var(--serif);
