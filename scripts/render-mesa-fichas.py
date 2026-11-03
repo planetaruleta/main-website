@@ -11,7 +11,12 @@ from __future__ import annotations
 
 import html
 import json
+import sys
+from datetime import datetime, timezone
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import render_senales  # noqa: E402  same expired rule and badge as /senales/
 
 ROOT = Path(__file__).resolve().parents[1]
 HOST = "https://www.planetaruleta.com"
@@ -1683,14 +1688,43 @@ def chain_html(parts: list[str]) -> str:
     return f'<p class="chain">{"".join(bits)}</p>'
 
 
+_FEED: dict[str, dict] | None = None
+_NOW = datetime.now(timezone.utc)
+
+
+def feed_row(senal_id: str) -> dict:
+    """The /senales/ feed row for a timeline item. Every mesa señal must exist there."""
+    global _FEED
+    if _FEED is None:
+        _FEED = {row["id"]: row for row in render_senales.load_feed()}
+    row = _FEED.get(senal_id)
+    if row is None:
+        raise SystemExit(f"mesa señal {senal_id} is not in content/senales.json")
+    return row
+
+
+def timeline_expired(senal_id: str) -> bool:
+    """Same rule as /senales/: expired:true, or ends_at (UTC) at or before the render clock."""
+    return render_senales.is_expired(feed_row(senal_id), _NOW)
+
+
+def timeline_badge(senal_id: str) -> str:
+    """Same EXPIRADA · Vencida DD MON markup as the /senales/ archive."""
+    row = dict(feed_row(senal_id), _expired=True)
+    return render_senales.expiry_html(row)
+
+
 def timeline_html(items: list[dict]) -> str:
     if not items:
         return '<p class="sub">No hay señales de este operador en el archivo. No es un hub por operador.</p>'
     lis = []
     for item in items:
+        expired = timeline_expired(item["id"])
+        cls = ' class="is-expired"' if expired else ""
+        badge = timeline_badge(item["id"]) if expired else ""
         lis.append(
-            f'<li><time datetime="{e(item["date"])}">{e(item["when"])}</time>'
-            f'<div><div class="ev"><a href="/senales/#{e(item["id"])}">{e(item["title"])}</a></div>'
+            f'<li{cls}><time datetime="{e(item["date"])}">{e(item["when"])}</time>'
+            f'<div>{badge}<div class="ev"><a href="/senales/#{e(item["id"])}">{e(item["title"])}</a></div>'
             f'<div class="d">{e(item["line"])}</div></div></li>'
         )
     return (
