@@ -1,6 +1,33 @@
 {
   "senales": [
     {
+      "id": "copias-falsas-rainbet-2026-11-01",
+      "fecha": "2026-11-01",
+      "kicker": "Copias falsas · Rainbet · Editorial · Comunidad",
+      "titulo": "Dos copias falsas con el nombre «rainbet»: revisa el dominio antes de iniciar sesión",
+      "resumen": "Nota del canal (Telegram n.º 37, 1 NOV 2026; fuentes consultadas el 30 OCT 2026): dos dominios con el nombre «rainbet» tienen dos fuentes o más cada uno. Uno usa el mismo nombre con una terminación poco común, fuera de la lista oficial; lo señalan urlscan, VirusTotal y PhishDestroy (COMUNIDAD). Otro pega una palabra al nombre, sin guion, con una terminación poco común; confianza media (Scam Detective y urlscan). No publicamos las direcciones ni decimos quién está detrás.\nAntes de iniciar sesión: entra solo desde un favorito que guardaste tú, revisa el dominio letra por letra y nunca entres desde un link que te mandaron. Un operador puede tener varias direcciones oficiales: míralas en su lista «Official Sites», desde tu favorito.",
+      "fuentes_html": "Fuentes · PhishDestroy · Scam Detective · VirusTotal · urlscan (30 OCT 2026) · <a href=\"https://t.me/planetaruleta/37\" target=\"_blank\" rel=\"noopener\">Telegram · post n.º 37</a> · 1 NOV 2026"
+    },
+    {
+      "id": "terminos-stake-paises-excluidos-2026-10-30",
+      "fecha": "2026-10-30",
+      "kicker": "Stake · offshore · Términos · Declarado",
+      "titulo": "Stake: sus términos excluyen a Argentina, Colombia, México y Perú",
+      "resumen": "Texto de Stake (Terms §14.3, revisado 30 OCT 2026): sus términos listan a Argentina, Colombia, México y Perú, entre otros países, como «Prohibited Jurisdictions». Una licencia offshore no es una licencia local de tu país.",
+      "numero": "§14.3",
+      "fuentes_html": "Fuente · <a href=\"https://stake.com/policies/terms\" target=\"_blank\" rel=\"noopener\">stake.com · Terms §14.3</a> · 30 OCT 2026"
+    },
+    {
+      "id": "regulacion-peru-mincetur-consulta-2026-10-29",
+      "fecha": "2026-10-29",
+      "kicker": "Perú · regulación · Editorial",
+      "titulo": "Perú: el reglamento de apuestas a distancia está en consulta pública hasta el 5 NOV",
+      "resumen": "El MINCETUR publicó un proyecto que modifica el reglamento de la Ley 31557 (juegos y apuestas deportivas a distancia). Aún no está vigente. Es una consulta pública: pueden opinar entidades y personas interesadas, por el portal del MINCETUR, su mesa de partes o el correo que indica la resolución. El plazo vence el 5 de noviembre de 2026. Después, el MINCETUR sistematiza y analiza los comentarios.",
+      "numero": "5 NOV",
+      "ends_at": "2026-11-06T04:59:00Z",
+      "fuentes_html": "Fuente · <a href=\"https://www.gob.pe/institucion/mincetur/normas-legales/8744194-382-2026-mincetur\" target=\"_blank\" rel=\"noopener\">gob.pe · RM 382-2026-MINCETUR</a> · El Peruano, 21 OCT 2026"
+    },
+    {
       "id": "kyc-cloudbet-2200-usd-2026-10-22",
       "fecha": "2026-10-22",
       "kicker": "Cloudbet · offshore · KYC · Declarado",

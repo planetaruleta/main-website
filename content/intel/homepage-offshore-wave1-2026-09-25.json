@@ -213,6 +213,68 @@
   ],
   "senales_timeline": [
     {
+      "id": "copias-falsas-rainbet-2026-11-01",
+      "tipo": "editorial",
+      "fecha": "2026-11-01",
+      "jurisdiccion": "offshore",
+      "operador_slug": "rainbet",
+      "operador_nombre": "Rainbet",
+      "titulo": "Dos copias falsas con el nombre «rainbet»: revisa el dominio antes de iniciar sesión",
+      "resumen": "Nota del canal (Telegram n.º 37, 1 NOV 2026; fuentes consultadas el 30 OCT 2026): dos dominios con el nombre «rainbet» tienen dos fuentes o más cada uno. Uno usa el mismo nombre con una terminación poco común, fuera de la lista oficial; lo señalan urlscan, VirusTotal y PhishDestroy (COMUNIDAD). Otro pega una palabra al nombre, sin guion, con una terminación poco común; confianza media (Scam Detective y urlscan). No publicamos las direcciones ni decimos quién está detrás.\nAntes de iniciar sesión: entra solo desde un favorito que guardaste tú, revisa el dominio letra por letra y nunca entres desde un link que te mandaron. Un operador puede tener varias direcciones oficiales: míralas en su lista «Official Sites», desde tu favorito.",
+      "numero_objeto": null,
+      "claim_layer": "community",
+      "fuentes": [
+        "https://t.me/planetaruleta/37"
+      ],
+      "qc": "Ed&Comp v5 PASS + Creative QA v1.3 PASS; published TG n.º 37 1 NOV 2026 07:02 IL. Source: renders/tg/scam-note-2-lookalikes-2026-10-21/caption-final-v5-buildday.txt (md5 4d9a04c5). No domains, no links to lookalikes.",
+      "cta_label": "Leer señal",
+      "cta_href": null,
+      "homepage_role": "timeline",
+      "status": "ready"
+    },
+    {
+      "id": "terminos-stake-paises-excluidos-2026-10-30",
+      "tipo": "terminos",
+      "fecha": "2026-10-30",
+      "jurisdiccion": "offshore",
+      "operador_slug": "stake",
+      "operador_nombre": "Stake",
+      "titulo": "Stake: sus términos excluyen a Argentina, Colombia, México y Perú",
+      "resumen": "Texto de Stake (Terms §14.3, revisado 30 OCT 2026): sus términos listan a Argentina, Colombia, México y Perú, entre otros países, como «Prohibited Jurisdictions». Una licencia offshore no es una licencia local de tu país.",
+      "numero_objeto": "§14.3",
+      "claim_layer": "stated",
+      "fuentes": [
+        "https://stake.com/policies/terms"
+      ],
+      "qc": "Wording mirrors PR #57 mesa/llms line (Peter QC, merged 37fcb5e 31 OCT 2026). Terms §14.3 captured 30 OCT 2026; stake.com 403 from box since 25 SEP.",
+      "cta_label": "Leer señal",
+      "cta_href": null,
+      "homepage_role": "timeline",
+      "status": "ready"
+    },
+    {
+      "id": "regulacion-peru-mincetur-consulta-2026-10-29",
+      "tipo": "regulacion",
+      "fecha": "2026-10-29",
+      "jurisdiccion": "PE",
+      "operador_slug": null,
+      "operador_nombre": null,
+      "titulo": "Perú: el reglamento de apuestas a distancia está en consulta pública hasta el 5 NOV",
+      "resumen": "El MINCETUR publicó un proyecto que modifica el reglamento de la Ley 31557 (juegos y apuestas deportivas a distancia). Aún no está vigente. Es una consulta pública: pueden opinar entidades y personas interesadas, por el portal del MINCETUR, su mesa de partes o el correo que indica la resolución. El plazo vence el 5 de noviembre de 2026. Después, el MINCETUR sistematiza y analiza los comentarios.",
+      "numero_objeto": "5 NOV",
+      "claim_layer": "editorial",
+      "fuentes": [
+        "https://www.gob.pe/institucion/mincetur/normas-legales/8744194-382-2026-mincetur",
+        "https://busquedas.elperuano.pe/dispositivo/NL/2566682-1"
+      ],
+      "qc": "Published TG n.º 34 29 OCT 2026. Source renders/tg/regulacion-2026-10-29/peru-final.txt. ends_at = end of 5 NOV Lima (UTC-5). Deadline verified: «Dicho plazo vence el día 05/11/2026» (prepublicación page; Ed&Comp 29 OCT).",
+      "cta_label": "Leer señal",
+      "cta_href": null,
+      "homepage_role": "timeline",
+      "status": "ready",
+      "ends_at": "2026-11-06T04:59:00Z"
+    },
+    {
       "id": "metodos-shuffle-spei-mxn-2026-10-22",
       "tipo": "metodos",
       "fecha": "2026-10-22",
