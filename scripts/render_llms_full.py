@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_PATH = ROOT / "llms-full.txt"
 ORIGIN = "https://www.planetaruleta.com"
 
-# Sitemap order for the guide index and the eleven guides.
+# Sitemap order for the guide index and the twelve guides.
 PAGES: list[tuple[str, str]] = [
     ("guias/index.html", f"{ORIGIN}/guias/"),
     ("guias/rtp-volatilidad/index.html", f"{ORIGIN}/guias/rtp-volatilidad/"),
@@ -36,6 +36,7 @@ PAGES: list[tuple[str, str]] = [
     ("guias/pagar-para-retirar-bono-falso/index.html", f"{ORIGIN}/guias/pagar-para-retirar-bono-falso/"),
     ("guias/plinko-cloudbet/index.html", f"{ORIGIN}/guias/plinko-cloudbet/"),
     ("guias/retiro-pendiente-en-revision/index.html", f"{ORIGIN}/guias/retiro-pendiente-en-revision/"),
+    ("guias/retiros-metodos-locales/index.html", f"{ORIGIN}/guias/retiros-metodos-locales/"),
 ]
 
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}

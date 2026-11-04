@@ -43,6 +43,9 @@ Estas guías explican mecánicas de casino: qué es el RTP, el max bet de un bon
 - **[Retiro pendiente o en revisión](https://www.planetaruleta.com/guias/retiro-pendiente-en-revision/)**
 
   Qué significa un retiro pendiente, en proceso o en revisión, cuánto dicen tardar las salas, qué es normal, qué es señal de alerta y qué guardar.
+- **[Retiros con métodos locales](https://www.planetaruleta.com/guias/retiros-metodos-locales/)**
+
+  Retiro en Stake Colombia y Perú: Efecty, Nequi, Bre-B, Yape/Plin, mínimos, topes por día y plazos según su ayuda, y qué frena un retiro.
 
 Versión corta en el [FAQ de alfabetización](https://www.planetaruleta.com/faq/#alfabetizacion).
 
@@ -385,7 +388,7 @@ Guía · +18 · alfabetización
 
 # Antes de retirar: rollover del depósito y verificación KYC, según las páginas oficiales
 
-La home de un casino cripto habla de retiros en minutos. Antes de que corra ese reloj suele haber dos pasos: apostar el depósito una cantidad de veces (rollover) y verificar tu identidad (KYC). Esta guía junta lo que dicen las páginas de seis salas sobre esos dos pasos, con la fecha en que lo revisamos. Las citas entre comillas van tal cual. En Duelbits, los términos y el FAQ de duelbits.com no se pudieron leer (HTTP 403, 30 oct 2026): esa sala va como resumen de su centro de ayuda, no como cita de sus términos. Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala. Montos en dólares estadounidenses (USD).
+La home de un casino cripto habla de retiros en minutos. Antes de que corra ese reloj suele haber dos pasos: apostar el depósito una cantidad de veces (rollover) y verificar tu identidad (KYC). Esta guía junta lo que dicen las páginas de seis salas sobre esos dos pasos, con la fecha en que lo revisamos. Las citas entre comillas van tal cual. En Duelbits, los términos de duelbits.com solo cargaron hasta la sección 2.3 y no encontramos su FAQ (31 oct 2026): esa sala va como resumen de su centro de ayuda, no como cita de sus términos. Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala. Montos en dólares estadounidenses (USD).
 
 ## 1. Rollover del depósito: apostarlo antes de retirarlo
 
@@ -396,7 +399,7 @@ Algunas salas piden que apuestes el monto depositado antes de retirar. No es lo 
 - **Cloudbet (términos §8.8 y ayuda actualizada el 7 oct 2026, revisados 30 oct 2026):** los términos piden apostar al menos el total de tus depósitos (100 %) antes de retirar y dicen que Cloudbet puede reducir ese requisito a su criterio. Su ayuda habla del 100 % de los depósitos (y de los «tips» cobrados) para usuarios «no verificados» y del 25 % para los «verificados», sin aclarar qué nivel de verificación cuenta; el 25 % sale solo de la ayuda. Solo cuentan las apuestas ya liquidadas.
 - **Stake (ayuda, revisado 8 oct 2026):** cada depósito debe apostarse al 100 % antes de retirar o hacer tip.
 - **Roobet (ayuda, revisado 8 y 14 oct 2026):** pide apostar al menos el 100 % del depósito en cripto antes de retirar o hacer tip.
-- **Duelbits (ayuda, artículos 16780663 y 16798784, revisados 30 oct 2026):** según la ayuda, hay que apostar el 10 % del depósito antes de retirar; la ayuda lo atribuye a la sección 5.3 de los términos, que no pudimos leer (HTTP 403, 30 oct 2026). Los retiros son solo en cripto.
+- **Duelbits (ayuda, artículos 16780663 y 16798784, revisados 30 oct 2026):** según la ayuda, hay que apostar el 10 % del depósito antes de retirar; la ayuda lo atribuye a la sección 5.3 de los términos, que no pudimos leer: el 31 oct 2026 sus términos solo cargaron hasta la sección 2.3. Los retiros son solo en cripto.
 
 Cómo leerlo: si una promo cambia la condición de retiro, eso es parte del costo de la promo. Más en [/guias/como-leer-una-promo-casino/](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/).
 
@@ -486,7 +489,7 @@ Esto sí es lo que publica cada sala en la página pública del juego, sin inici
 - **Shuffle (Originals, ruleta europea):** su página dice «2.70% fixed house edge» y que la estructura europea da un RTP de 97,30 %. Coincide con el cálculo de un solo cero del punto 2. Ficha: [/mesa/shuffle/](https://www.planetaruleta.com/mesa/shuffle/).
 - **Rainbet (Originals «Roulette»):** su página dice «Max RTP 97.30 %». No dice si la rueda es europea, americana o francesa, así que no lo asumimos. Fíjate que dice «Max» y la página no explica a qué apuesta o variante se refiere. Ficha: [/mesa/rainbet/](https://www.planetaruleta.com/mesa/rainbet/).
 - **Cloudbet:** sus páginas muestran cifras distintas para el mismo juego, así que no citamos ninguna.
-- **Stake:** la página de ruleta bloqueó nuestra revisión; no pudimos leerla.
+- **Stake:** no pudimos leer su página de ruleta (14 oct 2026). No citamos un RTP de ruleta.
 - **Roobet:** sin iniciar sesión, no encontramos la cifra en la página del juego ni en su ayuda.
 - **Duelbits:** duelbits.com no se pudo leer en la auditoría del 24 oct 2026. No citamos un RTP de ruleta. Ficha: [/mesa/duelbits/](https://www.planetaruleta.com/mesa/duelbits/).
 
@@ -1130,3 +1133,178 @@ Por mensaje privado, no: no figura en ninguna de las páginas de ayuda ni en los
 Los términos cambian: revisa la versión vigente en la web oficial de tu sala antes de decidir. No garantizamos resultados. Si se te va de las manos, busca ayuda de juego responsable donde estés. +18.
 
 URL: https://www.planetaruleta.com/guias/retiro-pendiente-en-revision/
+
+Guía · +18 · alfabetización
+
+# Retiros con métodos locales: mínimos, topes, plazos y lo que frena un retiro
+
+Revisado el 4 nov 2026 · cada dato con su fecha de revisión.
+
+Efecty, Nequi, Bre-B, Yape, Plin: cada método tiene un mínimo, un tope por retiro, un tope por día y un plazo. Esos números los fija el sitio, no el método, y cambian según el país y el dominio. Esta guía junta lo que publican las páginas de ayuda de los sitios de Stake para Colombia y Perú, revisadas el 4 nov 2026. Antes de seguir: los términos de Stake.com (§14.3, revisado 30 oct 2026) listan a Argentina, Colombia, México y Perú, entre otros países, como «Prohibited Jurisdictions»; stake.com.co y stake.pe son sitios distintos, con sus propios términos. Es alfabetización para mayores de 18, no una recomendación de ninguna sala ni una invitación a depositar. Lo que viene de las páginas del operador va marcado OFICIAL; nuestra lectura, EDITORIAL. Planeta Ruleta no es un casino: no procesamos retiros ni podemos acelerarlos.
+
+## Lo corto
+
+- **El sitio decide las reglas, no el método.** stake.com.co, stake.pe y Stake.com son sitios distintos, con sus propios términos.
+- **Stake.com:** sus términos (§14.3, revisado 30 oct 2026) listan a Argentina, Colombia, México y Perú, entre otros países, como «Prohibited Jurisdictions».
+- **Colombia (stake.com.co, según su ayuda):** mínimo COP 20.000; hasta 3 retiros por día; tope por retiro de COP 4.000.000 por transferencia o Bre-B y de COP 1.000.000 por Efecty; hasta 72 horas hábiles.
+- **Perú (stake.pe, según su ayuda del 1 oct 2026):** transferencia por CCI a una cuenta a tu nombre; hasta 3 días hábiles. Yape y Plin van por el CCI de la cuenta vinculada según un artículo del 3 jun 2026, anterior al cambio de plataforma.
+- **Antes de retirar:** stake.com.co y stake.pe piden cuenta verificada; los tres sitios piden apostar el 100 % de lo depositado (en Stake.com, para moneda local; en stake.pe, según el artículo del 3 jun 2026).
+- **Ningún plazo es una garantía.** Son máximos que publica cada sitio.
+
+## 1. Primero: qué sitio de Stake aplica donde estás
+
+Antes de mirar métodos, mira el dominio. «Stake» no es un solo sitio:
+
+- **Stake.com (OFICIAL, términos §14.3, revisado 30 oct 2026):** sus términos listan a Argentina, Colombia, México y Perú, entre otros países, como «Prohibited Jurisdictions».
+- **stake.com.co (OFICIAL):** es el sitio de Stake para Colombia. La lista de operadores autorizados de Coljuegos (última modificación 30 oct 2026) incluye a Stake Colombia S.A.S., stake.com.co, contrato 2226.
+- **stake.pe (OFICIAL, según su ayuda del 28 sep 2026):** Stake Perú dice estar «autorizado y supervisado por MINCETUR» y funcionar desde el 1 oct 2026 en la plataforma global de Stake. No tenemos captura del registro de MINCETUR.
+- **Chile:** Chile no aparece en la lista del §14.3 de Stake.com. El 1 sep 2026, Subtel ordenó bloquear 42 sitios de apuestas, entre ellos stake.com (más en la sección 4).
+
+EDITORIAL: son sitios distintos, con sus propios términos. Lo que dice la ayuda de uno no vale para otro. Si estás en uno de los países de esa lista, esta guía no te explica cómo usar Stake.com: la respuesta es no usarlo. Esta guía no explica cómo entrar a un sitio que no está disponible donde estás ni cómo evitar un bloqueo.
+
+## 2. Colombia (stake.com.co): Efecty, Nequi, Bre-B
+
+Recordatorio: los términos de Stake.com (§14.3, revisado 30 oct 2026) listan a Colombia, entre otros países, como «Prohibited Jurisdictions». Lo que sigue es la ayuda de stake.com.co, el sitio que figura en la lista de Coljuegos.
+
+**Requisitos (OFICIAL, ayuda «¿Qué requisitos hay para poder retirar?», 7 sep 2026):**
+
+- Tu cuenta tiene que estar completamente verificada antes de cualquier retiro.
+- Todos tus depósitos tienen que estar apostados al 100 %. Ejemplo de la propia ayuda: si depositas COP 100.000, apuestas al menos COP 100.000 antes de pedir el retiro.
+- El método tiene que estar registrado a tu nombre.
+
+**Métodos y topes (OFICIAL, misma ayuda y «¿Cómo retirar en Stake?», 25 jul 2026):**
+
+| Método | Mínimo por retiro | Tope por retiro | Tope por día (3 retiros) | Plazo que publica |
+| --- | --- | --- | --- | --- |
+| Transferencia bancaria (incluye Nequi) | COP 20.000 | COP 4.000.000 | COP 12.000.000 | hasta 72 horas hábiles |
+| Bre-B | COP 20.000 | COP 4.000.000 | COP 12.000.000 | hasta 72 horas hábiles |
+| Efecty | COP 20.000 | COP 1.000.000 | COP 3.000.000 | SMS con el código en máximo 72 horas |
+
+El mínimo de COP 20.000 sale del paso a paso de la ayuda, que no lo distingue por método. Puedes hacer hasta 3 retiros por día.
+
+**Nequi (OFICIAL, «¿Cómo retirar en Stake?»):** no figura como método aparte. Va como transferencia bancaria: el número de teléfono registrado en tu cuenta se usa como número de cuenta, y eliges «Cuenta de ahorros». La ayuda pide que ese número esté actualizado y tenga Nequi.
+
+**Efecty (OFICIAL):** recibes por SMS, al número registrado, el convenio 112371 y un PIN; lo cobras en un punto Efecty con tu cédula original. Efecty no deja que otra persona lo reclame. Si no lo cobras, el retiro expira a los 5 días y el dinero vuelve a tu cuenta de Stake.
+
+**Plazos y cancelación (OFICIAL, «¿Dónde está mi retiro?», 7 sep 2026):** el plazo máximo de procesamiento es de hasta 72 horas hábiles; montos altos, fines de semana, festivos o condiciones de cada método pueden demorarlo. Un retiro en proceso no se puede cancelar ni modificar. Un retiro solo está rechazado si así aparece en Transacciones; si no, sigue en proceso.
+
+**Impuestos (OFICIAL, ayuda de requisitos):** según la ayuda, si el monto pedido es igual o mayor a 48 UVT del año en curso, se aplica una retención del 20 % sobre el valor del retiro. No es asesoría tributaria.
+
+**Bonos (OFICIAL, «¿Cómo funciona el Rollover?», 30 abr 2026):** lo que ganas con free spins o jugadas de bonificación entra como saldo de bono, con un rollover (la ayuda da como ejemplo x25 o x30, según la oferta) que normalmente hay que cumplir en 3 días calendario, solo con apuestas de dinero real. La ganancia máxima del bono que indica es COP 1.000.000. Ese saldo no se retira hasta cumplir el rollover al 100 %. Cómo se cruzan el rollover y el tope de apuesta: [max bet y contribución al rollover](https://www.planetaruleta.com/guias/max-bet-contribucion-bono/).
+
+## 3. Perú (stake.pe): transferencia por CCI, Yape y Plin
+
+Recordatorio: los términos de Stake.com (§14.3, revisado 30 oct 2026) listan a Perú, entre otros países, como «Prohibited Jurisdictions». Lo que sigue es la ayuda de stake.pe, que según esa misma ayuda está autorizado y supervisado por MINCETUR. Leímos su ayuda el 4 nov 2026.
+
+**Cambio de plataforma (OFICIAL, ayuda del 28 sep 2026):** desde el 1 oct 2026, Stake Perú funciona en la plataforma global de Stake y pide crear la cuenta de nuevo y verificar la identidad con DNI o Carné de Extranjería. El saldo de la plataforma anterior no se pasó solo: según la ayuda, se retira desde un sitio en modo solo retiro hasta el 30 dic 2026, y después se pide a Atención al Cliente. Los bonos cuyos requisitos no se cumplieron no pasan a la nueva plataforma. El sitio de retiro lo nombra el artículo «¿Qué cambiará en Stake Perú el 1 de octubre de 2026?» de su ayuda; entra solo desde ahí, no desde un link que te manden.
+
+**Requisitos y plazo (OFICIAL, ayuda «Retiros por transferencia bancaria», 1 oct 2026):**
+
+- Cuenta verificada y cuenta bancaria a tu nombre; no aceptan cuentas de terceros.
+- CCI (Código de Cuenta Interbancario) de 20 dígitos, que coincida con el banco elegido.
+- Plazo: hasta 3 días hábiles (lunes a viernes, sin sábados, domingos ni feriados en Perú).
+- Si te pidieron documentación adicional (por ejemplo, prueba de residencia u origen de fondos), el retiro queda en espera hasta completarla.
+- Con un bono activo, primero hay que cumplir su requisito de apuesta.
+
+**Mínimos, topes, Yape y Plin (OFICIAL, ayuda «¿Qué requisitos hay para poder retirar?», fechada el 3 jun 2026, antes del cambio de plataforma):**
+
+- Apostar el 100 % de tus depósitos antes de retirar.
+- Mínimo por retiro: S/ 50. Máximo por día: S/ 20.000. Hasta 3 retiros exitosos por día.
+- **Yape y Plin:** no son un retiro directo a la app. Eliges Yape o Plin como «Banco» e ingresas el CCI completo, sin guiones ni espacios, de la cuenta bancaria vinculada a tu Yape o Plin.
+
+EDITORIAL: ese artículo de mínimos y topes es anterior al 1 oct 2026. Hasta que lo actualicen, la cifra que vale es la que muestre tu pantalla de retiro.
+
+## 4. Chile: el bloqueo de Subtel
+
+**El bloqueo (OFICIAL, [comunicado de Subtel del 1 sep 2026](https://www.subtel.gob.cl/subtel-ordena-bloqueo-de-42-sitios-de-apuestas-online/)):** Subtel ordenó a Entel, Movistar, Claro, GTD, WOM y VTR bloquear, en 48 horas, una lista de 42 sitios de apuestas revisada por la Superintendencia de Casinos de Juego. stake.com está en esa lista. Esta guía no explica cómo evitar ese bloqueo.
+
+## 5. Argentina y México: lo que esta guía no cubre
+
+Los términos de Stake.com (§14.3, revisado 30 oct 2026) listan a Argentina y México, entre otros países, como «Prohibited Jurisdictions». Hay sitios locales de Stake en México y en la Provincia de Buenos Aires con sus propios términos; no revisamos sus páginas de retiro para esta guía, así que no damos sus mínimos ni sus plazos. Para otras salas que publican métodos en pesos argentinos o mexicanos, ve la sección 10.
+
+## 6. Lo que se repite en todos: cinco reglas antes de pedir un retiro (EDITORIAL)
+
+Armado con las páginas de ayuda citadas arriba:
+
+1. **Verificación antes, no después.** En stake.com.co y stake.pe, sin cuenta verificada no se procesa el retiro. Si piensas retirar, verifica antes de necesitarlo. Qué piden y cuándo, sala por sala: [antes de retirar: rollover del depósito y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/).
+2. **El depósito se apuesta antes de retirarlo.** Los tres sitios de esta guía piden el 100 % de lo depositado (en Stake.com, para moneda local, según su ayuda del 24 ago 2026; en stake.pe, según el artículo del 3 jun 2026, anterior al cambio de plataforma). Si depositas y quieres retirar sin haber apostado, el retiro no sale.
+3. **Todo a tu nombre.** Cuenta bancaria, llave Bre-B o Nequi: a nombre del titular de la cuenta. Cuentas de terceros, no.
+4. **Hay tope por retiro y tope por día.** En Colombia, Efecty tiene un tope por retiro más bajo que la transferencia. Si el monto es grande, el número de retiros por día también cuenta.
+5. **«Hábiles» no son corridos.** 72 horas hábiles o 3 días hábiles no cuentan fines de semana ni festivos. Un retiro pedido un viernes puede verse en la semana siguiente.
+
+## 7. Cuánto tarda: los plazos que publica cada sitio
+
+| Sitio y método | Plazo que publica (OFICIAL) | Fuente |
+| --- | --- | --- |
+| stake.com.co · transferencia y Bre-B | hasta 72 horas hábiles | ayuda, 25 jul y 7 sep 2026 |
+| stake.com.co · Efecty | SMS con el código en máximo 72 horas; el código expira a los 5 días | ayuda, 7 sep 2026 |
+| stake.pe · transferencia por CCI | hasta 3 días hábiles | ayuda, 1 oct 2026 |
+| Stake.com · moneda local a cuenta bancaria | hasta 3 días hábiles | ayuda, 24 ago 2026 |
+
+EDITORIAL: son plazos máximos que publica cada sitio, no una garantía de pago. La revisión de identidad, un pedido de documentos o un monto alto pueden alargarlos. Qué significa cada estado y qué guardar: [retiro pendiente o en revisión](https://www.planetaruleta.com/guias/retiro-pendiente-en-revision/).
+
+## 8. «Retiro no disponible»: las causas que nombra la ayuda
+
+No encontramos un artículo de ayuda que explique ese mensaje exacto. Estas son las causas que sí nombran las páginas que revisamos:
+
+- **Cuenta sin verificar** (stake.com.co y stake.pe): sin verificación completa no se procesa el retiro.
+- **Depósito sin apostar** (los tres sitios; en stake.pe, según el artículo del 3 jun 2026, anterior al cambio de plataforma): falta llegar al 100 % de lo depositado.
+- **Moneda local no soportada** (Stake.com, «Pagos temporalmente no disponibles», 24 ago 2026): según la ayuda, puede ser que la moneda de tu país no esté soportada, y que importa el país que declaraste en el nivel 1 de la cuenta.
+- **Plataforma anterior de Stake Perú** (stake.pe): desde el 1 oct 2026 solo permite retirar; no deja depositar ni apostar.
+- **Datos que no coinciden** (stake.com.co y stake.pe): cuenta, CCI o teléfono que no están a tu nombre o tienen errores pueden demorar o hacer rechazar el retiro.
+
+## 9. Señales de alerta (EDITORIAL)
+
+- Ninguna de las páginas de ayuda que revisamos pide un depósito extra, una «comisión de liberación» o un pago por adelantado para soltar un retiro. Si te lo piden por chat, SMS o redes, lee [depositar para retirar: el bono falso](https://www.planetaruleta.com/guias/pagar-para-retirar-bono-falso/).
+- El SMS de Efecty que describe Stake Colombia llega al número registrado en tu cuenta, con el convenio 112371. Compáralo con la ayuda del sitio y no compartas el PIN.
+- Entra solo desde un favorito que guardaste tú, nunca desde un link que te mandaron: hay sitios que copian marcas conocidas.
+
+## 10. Otras salas de la mesa
+
+Rainbet, Shuffle, Roobet, Cloudbet y Duelbits publican sus propios métodos y reglas en moneda local o en cripto; lo que dice cada una, con fecha, está en su ficha: [Rainbet](https://www.planetaruleta.com/mesa/rainbet/), [Shuffle](https://www.planetaruleta.com/mesa/shuffle/), [Stake](https://www.planetaruleta.com/mesa/stake/), [Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/), [Roobet](https://www.planetaruleta.com/mesa/roobet/) y [Duelbits](https://www.planetaruleta.com/mesa/duelbits/). Pagar en moneda local no es una licencia local: offshore no es un casino regulado en tu país.
+
+## 11. Si el juego dejó de ser juego
+
+Si estás esperando un retiro para «recuperar» lo perdido, o depositas otra vez mientras esperas, detente. Stake Perú dice que respeta la autoexclusión hecha en su sitio o en el registro nacional de MINCETUR. Si se te va de las manos, busca ayuda de juego responsable donde estás. +18.
+
+## 12. Preguntas frecuentes
+
+### ¿Cuál es el retiro mínimo en Stake Colombia?
+
+Según la ayuda de stake.com.co (revisada el 4 nov 2026), COP 20.000. Además, puedes hacer hasta 3 retiros por día, con un tope por retiro de COP 4.000.000 por transferencia o Bre-B y de COP 1.000.000 por Efecty. Los términos de Stake.com (§14.3, revisado 30 oct 2026) listan a Colombia, entre otros países, como «Prohibited Jurisdictions»; stake.com.co es otro sitio, con sus propios términos.
+
+### ¿Se puede retirar de Stake a Nequi?
+
+En stake.com.co, según su ayuda, Nequi va como transferencia bancaria: se usa el número de teléfono registrado en tu cuenta y eliges «Cuenta de ahorros». Aplican el tope de COP 4.000.000 por retiro y el plazo de hasta 72 horas hábiles. La cuenta tiene que estar a tu nombre y verificada.
+
+### ¿Cuánto se puede retirar por Efecty en Stake?
+
+Según la ayuda de stake.com.co, hasta COP 1.000.000 por retiro y hasta 3 retiros por día (COP 3.000.000). Recibes por SMS el convenio 112371 y un PIN, y cobras con tu cédula original. Si no lo cobras, el retiro expira a los 5 días y el dinero vuelve a tu cuenta.
+
+### ¿Se puede retirar de Stake a Yape?
+
+En stake.pe, según su ayuda, no directo a la app: eliges Yape (o Plin) como «Banco» e ingresas el CCI completo de la cuenta bancaria vinculada. El artículo que da el mínimo de S/ 50 y el máximo de S/ 20.000 por día está fechado el 3 jun 2026, antes del cambio de plataforma del 1 oct; revisa tu pantalla de retiro. Los términos de Stake.com (§14.3, revisado 30 oct 2026) listan a Perú, entre otros países, como «Prohibited Jurisdictions».
+
+### ¿Cuánto tarda un retiro en Stake Perú?
+
+Según la ayuda de stake.pe (1 oct 2026), hasta 3 días hábiles, de lunes a viernes, sin feriados en Perú. Necesitas cuenta verificada y una cuenta bancaria a tu nombre con CCI de 20 dígitos. Es un plazo máximo que publica el sitio, no una garantía.
+
+### ¿Stake se puede usar desde Argentina, Colombia, México o Perú?
+
+Los términos de Stake.com (§14.3, revisado 30 oct 2026) listan a Argentina, Colombia, México y Perú, entre otros países, como «Prohibited Jurisdictions». En Colombia y Perú hay sitios locales de Stake, con sus propios términos: stake.com.co figura en la lista de operadores autorizados de Coljuegos (revisada 30 oct 2026), y stake.pe dice en su ayuda estar «autorizado y supervisado por MINCETUR». Si un sitio no está disponible donde estás, la respuesta es no usarlo. +18.
+
+### ¿Por qué mi retiro dice «no disponible»?
+
+No encontramos un artículo de ayuda sobre ese mensaje exacto. Las causas que nombran las páginas que revisamos son: cuenta sin verificar, depósito sin apostar al 100 %, moneda local no soportada en tu país o país mal declarado en la cuenta (Stake.com), datos que no están a tu nombre y, en Perú, la plataforma anterior, que desde el 1 oct 2026 solo permite retirar.
+
+### ¿Hay que apostar el depósito antes de retirar?
+
+Según su ayuda, sí: stake.com.co y Stake.com (en moneda local) piden apostar el 100 % de lo depositado antes de retirar, y en stake.pe lo pide el artículo del 3 jun 2026, anterior al cambio de plataforma del 1 oct. Las otras salas de la mesa, en la guía [antes de retirar](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/).
+
+### ¿Stake cobra impuestos al retirar?
+
+En Colombia, la ayuda de stake.com.co dice que, si el retiro es igual o mayor a 48 UVT del año en curso, se aplica una retención del 20 % sobre el valor del retiro. Para Perú y Stake.com no tenemos dato: las páginas de ayuda que revisamos no hablan de impuestos. No es asesoría tributaria.
+
+Los términos y las páginas de ayuda cambian: revisa la versión vigente en el sitio que aplica a ti antes de decidir. No garantizamos resultados. Si se te va de las manos, busca ayuda de juego responsable donde estás. +18.
+
+URL: https://www.planetaruleta.com/guias/retiros-metodos-locales/
