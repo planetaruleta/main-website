@@ -501,6 +501,7 @@
       "titulo": "Rainbet Daily Race 03 OCT: ventana de 24 h — race por volumen, no jackpot por caer",
       "resumen": "Página OFICIAL daily-race (verificado 2026-10-03, Peter QC PASS): carrera de lobby cronometrada, 24 h. Race por volumen — no es un jackpot por caer. Ventana UTC stated: 2026-10-04T00:00:00.000Z → 2026-10-04T23:59:59.000Z. America/Guatemala: sáb 3 OCT 2026 18:00 → dom 4 OCT 2026 17:59:59. Entrada stated: jugar cualquier juego; leaderboard nuevo cada 24 horas. Escalera página 1 (números stated, sin signo de moneda en la celda de premio): #1=4000 · #2=2500 · #3=1500 · #4=1000 · #5=800. Meta: 200 lugares. No publicamos pozo total. Ventana distinta de la señal del 26 SEP.",
       "numero_objeto": "4000",
+      "ends_at": "2026-10-04T23:59:00.000Z",
       "claim_layer": "stated",
       "ventana_utc": {
         "start": "2026-10-04T00:00:00.000Z",
@@ -620,6 +621,7 @@
       "titulo": "Rainbet Daily Race: ventana de 24 h en vivo — race por volumen, no jackpot por caer",
       "resumen": "Página OFICIAL daily-race (verificado 2026-09-26): carrera de lobby cronometrada, 24 h. Race por volumen — no es un jackpot por caer. Ventana UTC stated: 2026-09-27T00:00:00.000Z → 2026-09-27T23:59:59.000Z. America/Guatemala: sáb 26 SEP 2026 18:00 → dom 27 SEP 2026 17:59. Entrada stated: jugar cualquier juego; leaderboard nuevo cada 24 horas. Escalera página 1 (números stated, sin signo de moneda en la página): #1=4000 · #2=2500 · #3=1500 · #4=1000 · #5=800. Meta: 200 lugares. No publicamos pozo total.",
       "numero_objeto": "24h race",
+      "ends_at": "2026-09-27T23:59:00.000Z",
       "claim_layer": "stated",
       "ventana_utc": {
         "start": "2026-09-27T00:00:00.000Z",
