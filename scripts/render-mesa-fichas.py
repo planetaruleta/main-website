@@ -79,7 +79,7 @@ ROWS = [
     (
         "Licencia",
         [
-            "Anjouan, declarada en Terms, AML y footer (25 SEP 2026). Validador del sello: «VALID», Rain Group Ltd, ALSI-152406029-FI2 (15 OCT 2026), con aviso de sello vencido. Registro público: sin confirmar.",
+            "Registro de anjouangaming.com: Rain Group Ltd, ALSI-152406029-FI2, estado «valid», vencimiento 13 jun 2027; revisado 8 nov 2026. Observación del registro, no confirmación de validez jurídica.",
             "Curaçao Gaming Authority, OGL/2024/1337/0628, Natural Nine B.V. (160998). /info/license dice “Gaming Control Board”; Terms y el certificado CGA dicen “Gaming Authority”. Certificado Active.",
             "Curaçao-class por certificado CGA: OGL/2024/1451/0918, Active, otorgado 09/06/2025. Pie del sitio: Medium Rare N.V., sin número de licencia (31 OCT 2026).",
             "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. No es licencia de Argentina.",
@@ -524,8 +524,8 @@ FICHAS = {
             "Esta ficha no pone nota ni abre un depósito. Junta la fila, las señales y lo que sigue sin verificar.",
         ],
         "sheet": [
-            ("Empresa", "Rain Group Ltd (co. 16077, Hamchako), en Terms, AML y footer. El JSON-LD de la homepage también nombra RBGAMING N.V. Las dos cadenas están publicadas y no coinciden: no elegimos una sola razón social."),
-            ("Licencia", "Anjouan, declarada en Terms, AML y footer (25 SEP 2026). El validador del sello de Anjouan muestra «VALID» para Rain Group Ltd, licencia ALSI-152406029-FI2 (consulta del 15 OCT 2026), aunque la misma página avisa que el sello está vencido desde junio de 2025. No lo pudimos confirmar en el registro público de Anjouan. No es una licencia del registro argentino."),
+            ("Empresa", "Los términos de rainbet.com (revisado 8 nov 2026) nombran a Rain Group Ltd, con registro de empresa 16077; el JSON-LD de su homepage (revisado 8 nov 2026) dice que RBGAMING N.V. opera Rainbet. No tenemos evidencia que aclare la relación entre ambas entidades."),
+            ("Licencia", "En el registro de anjouangaming.com (revisado 8 nov 2026) figura Rain Group Ltd, número ALSI-152406029-FI2, asociado a rainbet.com, con estado «valid» y vencimiento 13 jun 2027. Esta observación del registro no confirma su validez jurídica ni supone una licencia de Argentina."),
             ("Monedas", "FAQ de rainbet.com, 25 SEP 2026: BTC, ETH, LTC, XRP, SOL, TRX, BNB, USDT y USDC. Redes: no verificado · 03 OCT 2026."),
             ("Idiomas", "JSON-LD knowsLanguage: en, ar, es, fr, ja, pt, ru, tr, zh (homepage, 03 OCT 2026)."),
             ("Última revisión", "Fila de la mesa: 25 SEP 2026. RakeBoosts: 05 OCT 2026. Señales de lobby: Daily Race 03 OCT 2026, Daily Race 26 SEP 2026 y torneo Gates of Olympus 30 SEP 2026. Brewers–Rays: 22 OCT 2026. Huecos marcados al armar la ficha: 03 OCT 2026."),
@@ -534,6 +534,9 @@ FICHAS = {
             ("rainbet.com", "https://rainbet.com/"),
             ("Rewards overview", "https://help.rainbet.com/en/articles/9171035-rewards-overview"),
             ("Terms", "https://rainbet.com/terms"),
+            ("Homepage JSON-LD (8 nov 2026 06:48:17 IL)", "https://rainbet.com/"),
+            ("Terms (8 nov 2026 06:48:25 IL)", "https://rainbet.com/terms"),
+            ("Registro anjouangaming.com (8 nov 2026 21:52:29 IL)", "https://anjouangaming.com/license-register/"),
             ("AML", "https://rainbet.com/aml"),
             ("Daily Race", "https://rainbet.com/daily-race"),
             ("Torneo Gates of Olympus", "https://rainbet.com/promotions/gates-of-olympus-2500-multiplier-mayhem-40k-tournament"),
@@ -601,7 +604,7 @@ FICHAS = {
         "faqs": [
             (
                 "¿Rainbet tiene licencia de Argentina?",
-                "No. La casa declara licencia de Anjouan en Terms, AML y el footer (revisión de mesa 25 SEP 2026). Eso no es una licencia del registro argentino. El JSON-LD de la homepage nombra RBGAMING N.V., distinto de Rain Group Ltd: no resolvemos una sola razón social.",
+                "No. En el registro de anjouangaming.com (revisado 8 nov 2026) figura Rain Group Ltd, número ALSI-152406029-FI2, asociado a rainbet.com, con estado «valid» y vencimiento 13 jun 2027. Esta observación del registro no confirma su validez jurídica ni supone una licencia de Argentina. Los términos de rainbet.com (revisado 8 nov 2026) nombran a Rain Group Ltd, con registro de empresa 16077; el JSON-LD de su homepage (revisado 8 nov 2026) dice que RBGAMING N.V. opera Rainbet. No tenemos evidencia que aclare la relación entre ambas entidades.",
             ),
             (
                 "¿El bono de la ficha es el Daily Race, el torneo o los RakeBoosts?",
