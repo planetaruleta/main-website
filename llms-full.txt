@@ -2,7 +2,7 @@
 
 > Copia en texto de las guías públicas de alfabetización. El wording es el de cada página. Este archivo no agrega cifras, licencias ni rankings. +18. No es consejo de apuesta ni un enlace de afiliado.
 
-Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla doce veces.
+Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla trece veces.
 
 Alfabetización · +18
 
@@ -31,6 +31,9 @@ Estas guías explican mecánicas de casino: qué es el RTP, el max bet de un bon
 - **[RTP de la ruleta y ventaja de la casa](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/)**
 
   Europea, americana y francesa: la cuenta de la ventaja de la casa y del RTP, qué publican Shuffle y Rainbet, y cómo leer esos números en una promo.
+- **[Sistema Paroli en la ruleta](https://www.planetaruleta.com/guias/sistema-paroli-ruleta/)**
+
+  La progresión 1-2-4 con la cuenta a la vista: cuánto llega a 4 unidades, cuánto cierra el ciclo y por qué la ventaja sigue en 2,70 %.
 - **[Cloudbet: registro, países restringidos y KYC](https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/)**
 
   Registro, países restringidos, KYC por niveles, licencia y apuesta mínima, según la ayuda y los términos de Cloudbet.
@@ -528,7 +531,7 @@ Por eso el rollover de un bono importa tanto: cada vez que una promo pide aposta
 
 ## 7. Sistemas y rachas: lo que no cambia el RTP
 
-- **Martingala y parecidos:** subir la apuesta después de perder cambia el tamaño de las apuestas y la forma de las rachas, no la ventaja de cada una. Cada apuesta sigue costando 1/37 en promedio, y el total apostado crece. Ningún sistema de apuestas convierte −1/37 en positivo.
+- **Martingala y parecidos:** subir la apuesta después de perder cambia el tamaño de las apuestas y la forma de las rachas, no la ventaja de cada una. Cada apuesta sigue costando 1/37 en promedio, y el total apostado crece. Ningún sistema de apuestas convierte −1/37 en positivo. El Paroli, que sube después de ganar, con la cuenta paso a paso: [sistema Paroli en la ruleta](https://www.planetaruleta.com/guias/sistema-paroli-ruleta/).
 - **«Hace diez giros que no sale rojo»:** la rueda no tiene memoria. La probabilidad del próximo rojo sigue siendo 18/37 en la europea.
 - **Ruleta en vivo o digital:** si las reglas son las mismas (un cero o dos, la partage o no), la cuenta es la misma. Lo que cambia la cuenta es la regla, no la pantalla.
 
@@ -574,6 +577,133 @@ No. Es el promedio teórico sobre muchísimas apuestas. En una sesión puedes qu
 No. Cambia el tamaño de las apuestas y la forma de las rachas, no la ventaja de cada apuesta.
 
 URL: https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/
+
+Guía · +18 · alfabetización
+
+# Sistema Paroli en la ruleta: cómo funciona la progresión 1-2-4 y por qué no cambia la ventaja de la casa
+
+revisado 8 nov 2026 — cálculo editorial y supuestos de esta guía.
+
+El Paroli cambia el tamaño de las apuestas después de un acierto, pero no cambia el cero de la ruleta. Si buscas saber si esta progresión «funciona», la pregunta es qué cambia y qué sigue igual. Aquí desarmamos la versión 1-2-4 con la cuenta a la vista. Es alfabetización para mayores de 18, no consejo de apuesta ni una guía para aplicar un sistema.
+
+## Lo corto
+
+- **En la versión más común, 1 → 2 → 4:** la progresión aumenta después de un acierto y vuelve al inicio tras una pérdida o tres aciertos. Describimos el modelo, no una recomendación.
+- **En ruleta europea**, con las reglas del modelo de abajo, llegar al paso de 4 unidades tiene una probabilidad de **23,67 %**; completar los tres aciertos, **11,51 %**. Son eventos distintos.
+- **Cada ciclo que pierde termina en −1 unidad; el que se completa, en +7.** Esto no limita a una unidad lo que puedes perder al repetir ciclos.
+- **La ventaja por unidad apostada sigue siendo 1/37 ≈ 2,70 %.** Reiniciar una secuencia no reinicia la probabilidad ni vuelve positiva la cuenta.
+
+## 1. Qué es el sistema Paroli
+
+**EDITORIAL — definición del modelo.** Es una progresión positiva: la versión más común se representa como 1 → 2 → 4 unidades, con reinicio tras cualquier pérdida o después del tercer acierto. Hay variantes que terminan después de otra cantidad de aciertos; aquí no las mezclamos.
+
+Una «unidad» es una medida abstracta de la cuenta, no una cantidad de dinero que te proponemos apostar. El nombre «positiva» describe que el tamaño sube después de ganar; no significa que la esperanza matemática sea positiva.
+
+## 2. La cuenta, paso a paso
+
+**EDITORIAL — matemática de manual. Ejemplo hipotético (no es dato de una sala).** Supuestos: rueda europea de un solo cero, 37 casillas (18 rojas, 18 negras y un cero); una apuesta simple paga 1 a 1; el cero hace perder toda esa apuesta, sin la partage ni en prison. Los giros son independientes. El modelo no encuentra un límite de mesa dentro de 1-2-4 y termina tras una pérdida o tres aciertos. No incluye bonos ni recompensas. Para las reglas de las ruedas, consulta [RTP de la ruleta y ventaja de la casa](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/).
+
+### 2.1 Llegar al tercer paso no es completarlo
+
+Con esos supuestos, la probabilidad de acertar un giro es p = 18/37; la de perderlo, q = 19/37. Para llegar al paso de 4 unidades hacen falta **dos** aciertos consecutivos: p² = 324/1.369 ≈ **23,67 %**. Para completar el ciclo hace falta un tercero: p³ = 5.832/50.653 ≈ **11,51 %**.
+
+### 2.2 Cuánto deja cada final posible
+
+Los resultados son netos respecto del comienzo del ciclo; no incluyen la devolución de lo apostado como si fuera ganancia.
+
+| Final del ciclo del modelo | Probabilidad | Resultado neto |
+| --- | --- | --- |
+| Pérdida en el primer paso | q = 19/37 ≈ 51,35 % | −1 unidad |
+| Un acierto y una pérdida | pq = 342/1.369 ≈ 24,98 % | +1 − 2 = −1 unidad |
+| Dos aciertos y una pérdida | p²q = 6.156/50.653 ≈ 12,15 % | +1 + 2 − 4 = −1 unidad |
+| Tres aciertos | p³ = 5.832/50.653 ≈ 11,51 % | +1 + 2 + 4 = +7 unidades |
+
+Las probabilidades exactas suman 1; las cifras redondeadas pueden no sumar 100 %. No hay un final de «casi ganar»: llegar al tercer paso y perder también deja −1.
+
+### 2.3 Por qué la ventaja no se mueve
+
+En este modelo, **resultado esperado por ciclo ÷ total esperado apostado por ciclo = (−3.997/50.653) ÷ (3.997/1.369) = −1/37 ≈ −2,70 %**.
+
+El resultado esperado por ciclo es unas −0,079 unidades y el total esperado apostado, unas 2,92 unidades. Es pérdida esperada, no garantizada. La comparación correcta usa todo lo apostado, no solo la unidad inicial. La relación entre esas dos esperanzas mide el costo por volumen; no es el promedio de los porcentajes de cada ciclo.
+
+Ver el desarrollo exacto (EDITORIAL)
+
+Con p = 18/37 y q = 19/37:
+
+- Pérdida en el primer paso: q = 26.011/50.653.
+- Pérdida en el segundo: pq = 12.654/50.653.
+- Pérdida en el tercero: p²q = 6.156/50.653.
+- Tres aciertos: p³ = 5.832/50.653.
+- Resultado esperado: −(q + pq + p²q) + 7p³ = 8p³ − 1 = −3.997/50.653 ≈ −0,07891 unidades.
+- Volumen esperado: 1 + 2p + 4p² = 3.997/1.369 ≈ 2,91965 unidades.
+- Como 50.653 = 37 × 1.369, el cociente de ambas esperanzas es exactamente −1/37.
+
+Cada giro del modelo conserva la misma desventaja por unidad apostada; una apuesta mayor no recibe una probabilidad mejor por venir después de un acierto.
+
+## 3. Lo que el Paroli sí cambia: la forma de las rachas
+
+**EDITORIAL.** Dentro de este ciclo idealizado, el saldo no termina más de una unidad por debajo del comienzo: las otras cantidades expuestas provienen de ganancias del propio ciclo que se vuelven a apostar. Esa es la parte limitada de la idea de «pérdidas mínimas». **Las ganancias también son dinero tuyo: volver a apostarlas es volver a exponerlas a pérdida.**
+
+La otra parte de la cuenta es que **88,49 %** de los ciclos termina en −1. El modelo tiene un promedio de **unos 8,7 ciclos por cada ciclo completado**: 1/p³ ≈ 8,69. No es una espera máxima ni significa que después de ocho pérdidas «toque» ganar. Puede haber más ciclos perdedores consecutivos. Tampoco significa que un +7 compense necesariamente todo lo perdido antes.
+
+El límite de una unidad es **por ciclo**, no por sesión. Repetir ciclos acumula exposición y puede acumular pérdidas. La casa conserva su ventaja sobre todo lo que pasa por la apuesta, incluidas las ganancias que se vuelven a apostar. Ninguna de estas cifras es una razón para aumentar el volumen.
+
+## 4. Paroli vs martingala
+
+**EDITORIAL.** Comparten la misma limitación: cambiar una progresión no cambia la ventaja de una apuesta con las mismas reglas. Lo que cambia es cómo se distribuyen las rachas y el tamaño de la exposición.
+
+| Aspecto | Paroli del modelo | Martingala clásica |
+| --- | --- | --- |
+| Tras qué resultado aumenta | Tras un acierto | Tras una pérdida |
+| Forma de los resultados | Pérdidas pequeñas frecuentes y un cierre positivo menos frecuente | Ganancias pequeñas frecuentes y riesgo de una pérdida grande |
+| Qué riesgo no desaparece | Repetir ciclos puede acumular pérdidas | La progresión exige importes crecientes y encuentra límites de mesa o de fondos |
+| ¿Cambia la ventaja por unidad apostada? | No | No |
+
+No hay un ganador en esta comparación ni una recomendación de usar uno de los dos. El detalle de por qué una racha no cambia la cuenta está en [RTP de la ruleta y ventaja de la casa](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/).
+
+## 5. Mitos que vas a leer
+
+**COMUNIDAD — idea para contrastar, no dato:** se suele decir que el Paroli deja las pérdidas al mínimo mientras las ganancias crecen muy rápido. **EDITORIAL:** eso selecciona una parte de la tabla. El ciclo positivo es menos frecuente; el promedio por volumen apostado sigue siendo negativo. Un saldo que aumenta dentro de una racha no es crecimiento asegurado.
+
+Otra idea es que «ya toca rojo». En el modelo europeo, el siguiente giro mantiene p = 18/37, con independencia de los anteriores. Un reinicio en una hoja no es un reinicio de la rueda. Para distinguir racha de predicción, también puedes leer [por qué el juego no «está por pagar»](https://www.planetaruleta.com/guias/rtp-volatilidad/).
+
+Tampoco se arregla el sistema por cambiar de paño. **EDITORIAL, rueda americana de dos ceros:** con una apuesta que paga 1 a 1 y pierde con ambos ceros, p = 18/38; la ventaja es 2/38 ≈ **5,26 %**, y llegar al paso de 4 unidades tiene probabilidad (18/38)² ≈ **22,44 %**. Las reglas francesas la partage y en prison cambian la cuenta de las apuestas simples cuando sale el cero; no son una propiedad del Paroli. Su alcance está en [RTP de la ruleta y ventaja de la casa](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/).
+
+## 6. Qué publican las salas
+
+Las declaraciones de operadores están reunidas, con sus propias fuentes y fechas, en [qué publican las salas](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/). Esta guía no atribuye un RTP o una ventaja a una sala concreta ni certifica esas declaraciones.
+
+## 7. Antes de jugar con cualquier sistema
+
+**EDITORIAL — juego responsable.** No trates una secuencia como un plan para ganar dinero o recuperar pérdidas. Define un límite de tiempo y de dinero antes de empezar y detente al alcanzarlo; no lo amplíes por una racha ni por un ciclo incompleto. No perseguir un resultado también implica poder parar sin completar la secuencia.
+
+Ningún número de esta guía predice tu sesión. No garantizamos resultados. +18. Si estás persiguiendo pérdidas, detente y busca ayuda de juego responsable donde estés.
+
+## 8. Preguntas frecuentes
+
+### ¿El sistema Paroli funciona?
+
+No como forma de ganarle a la casa. En el modelo de ruleta europea de un cero, con apuestas que pagan 1 a 1 y pierden completas con el cero, la ventaja por unidad apostada sigue siendo 1/37 ≈ 2,70 %. La progresión cambia la distribución de los resultados, no esa ventaja.
+
+### ¿Qué probabilidad hay de llegar a la apuesta de 4 unidades?
+
+En el modelo europeo de esta guía hacen falta dos aciertos consecutivos: (18/37)² = 324/1.369 ≈ 23,67 %. Llegar a ese paso no significa ganarlo ni completar el ciclo.
+
+### ¿Cuántas veces se completa el ciclo de tres?
+
+Con la ruleta europea y las reglas del modelo, la probabilidad es (18/37)³ = 5.832/50.653 ≈ 11,51 %. El resto, 88,49 %, termina en un resultado de −1 unidad por ciclo. Son probabilidades teóricas, no cuotas que deba cumplir una sesión.
+
+### ¿Paroli o martingala?
+
+Ninguno cambia la ventaja de cada apuesta. Paroli aumenta después de un acierto; la martingala, después de una pérdida. Cambian la exposición y la forma de las rachas, no convierten la esperanza negativa en positiva. No recomendamos ninguno.
+
+### ¿Sirve en ruleta americana?
+
+La progresión tampoco elimina la ventaja en una rueda de dos ceros. Para una apuesta que paga 1 a 1 y pierde con cualquiera de los ceros, la ventaja es 2/38 ≈ 5,26 %, y la probabilidad de llegar al paso de 4 unidades es (18/38)² ≈ 22,44 %.
+
+Ningún número de esta guía predice tu sesión. No garantizamos resultados. Si se te va de las manos, busca ayuda de juego responsable donde estés. +18.
+
+URL: https://www.planetaruleta.com/guias/sistema-paroli-ruleta/
 
 Guía · +18 · alfabetización
 
