@@ -2,7 +2,7 @@
 
 > Copia en texto de las guías públicas de alfabetización. El wording es el de cada página. Este archivo no agrega cifras, licencias ni rankings. +18. No es consejo de apuesta ni un enlace de afiliado.
 
-Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla trece veces.
+Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla catorce veces.
 
 Alfabetización · +18
 
@@ -49,6 +49,9 @@ Estas guías explican mecánicas de casino: qué es el RTP, el max bet de un bon
 - **[Retiros con métodos locales](https://www.planetaruleta.com/guias/retiros-metodos-locales/)**
 
   Retiro en Stake Colombia y Perú: Efecty, Nequi, Bre-B, Yape/Plin, mínimos, topes por día y plazos según su ayuda, y qué frena un retiro.
+- **[Stake por país](https://www.planetaruleta.com/guias/stake-por-pais/)**
+
+  Qué dicen los términos de Stake.com y de sus sitios locales, y qué publican los reguladores de cada país.
 
 Versión corta en el [FAQ de alfabetización](https://www.planetaruleta.com/faq/#alfabetizacion).
 
@@ -400,7 +403,7 @@ Algunas salas piden que apuestes el monto depositado antes de retirar. No es lo 
 - **Rainbet (términos §8.2, revisado 14 oct 2026):** el retiro va sin comisión si apostaste el depósito al menos una vez; si tomaste una promoción, tienes que apostar el doble. Su home repite lo de la comisión pero no menciona la condición de la promoción (home revisada 14 oct 2026). Lee la cláusula, no solo la home.
 - **Rainbet (home, revisado 14 oct 2026):** retiro mínimo de 15 USD o su equivalente.
 - **Cloudbet (términos §8.8 y ayuda actualizada el 7 oct 2026, revisados 30 oct 2026):** los términos piden apostar al menos el total de tus depósitos (100 %) antes de retirar y dicen que Cloudbet puede reducir ese requisito a su criterio. Su ayuda habla del 100 % de los depósitos (y de los «tips» cobrados) para usuarios «no verificados» y del 25 % para los «verificados», sin aclarar qué nivel de verificación cuenta; el 25 % sale solo de la ayuda. Solo cuentan las apuestas ya liquidadas.
-- **Stake (ayuda, revisado 8 oct 2026):** cada depósito debe apostarse al 100 % antes de retirar o hacer tip.
+- **Stake (ayuda, revisado 8 oct 2026):** cada depósito debe apostarse al 100 % antes de retirar o hacer tip. Qué sitio de Stake aplica en tu país: [Stake por país](https://www.planetaruleta.com/guias/stake-por-pais/).
 - **Roobet (ayuda, revisado 8 y 14 oct 2026):** pide apostar al menos el 100 % del depósito en cripto antes de retirar o hacer tip.
 - **Duelbits (ayuda, artículos 16780663 y 16798784, revisados 30 oct 2026):** según la ayuda, hay que apostar el 10 % del depósito antes de retirar; la ayuda lo atribuye a la sección 5.3 de los términos, que no pudimos leer: el 31 oct 2026 sus términos solo cargaron hasta la sección 2.3. Los retiros son solo en cripto.
 
@@ -1292,6 +1295,8 @@ Antes de mirar métodos, mira el dominio. «Stake» no es un solo sitio:
 
 EDITORIAL: son sitios distintos, con sus propios términos. Lo que dice la ayuda de uno no vale para otro. Si estás en uno de los países de esa lista, esta guía no te explica cómo usar Stake.com: la respuesta es no usarlo. Esta guía no explica cómo entrar a un sitio que no está disponible donde estás ni cómo evitar un bloqueo.
 
+Cada sitio, con su operador y su regulador: [Stake por país](https://www.planetaruleta.com/guias/stake-por-pais/).
+
 ## 2. Colombia (stake.com.co): Efecty, Nequi, Bre-B
 
 Recordatorio: los términos de Stake.com (§14.3, revisado 30 oct 2026) listan a Colombia, entre otros países, como «Prohibited Jurisdictions». Lo que sigue es la ayuda de stake.com.co, el sitio que figura en la lista de Coljuegos.
@@ -1438,3 +1443,211 @@ En Colombia, la ayuda de stake.com.co dice que, si el retiro es igual o mayor a 
 Los términos y las páginas de ayuda cambian: revisa la versión vigente en el sitio que aplica a ti antes de decidir. No garantizamos resultados. Si se te va de las manos, busca ayuda de juego responsable donde estás. +18.
 
 URL: https://www.planetaruleta.com/guias/retiros-metodos-locales/
+
+Guía · +18 · alfabetización
+
+# Stake por país: qué dicen los términos de Stake.com, los sitios locales y los reguladores en Argentina, Colombia, México, Perú y Chile
+
+Cada sitio con su fecha de revisión en cada línea. Las afirmaciones de operadores y reguladores se distinguen por su fuente; no son una certificación de disponibilidad.
+
+«Stake» no identifica por sí solo un contrato. Hay sitios con esa marca que nombran empresas, jurisdicciones y reglas diferentes. Esta guía separa lo que dicen los términos de cada sitio de lo que publican los reguladores. Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de una sala. **No dice si apostar online es legal donde vives.** OFICIAL identifica la publicación de una fuente nombrada, no una garantía nuestra; EDITORIAL es nuestra lectura. Cuando falta evidencia, lo decimos.
+
+## Lo corto
+
+- **Marca compartida no significa contrato compartido.** Stake.com, el sitio de PBA, stake.com.co, stake.mx y stake.pe no se deben tratar como un único sitio. Las fuentes de cada uno están separadas abajo.
+- **Según los términos de Stake.com (§14.3, revisado 8 nov 2026), su servicio no se puede usar por personas ubicadas en Argentina, Brasil, Colombia, México o Perú, o que residan allí, entre otras jurisdicciones.** No es una lista completa.
+- **Colombia y Provincia de Buenos Aires tienen documentación propia:** Coljuegos lista a Stake Colombia S.A.S. y el IPLyC publica documentación sobre la marca en PBA; revisado 8 nov 2026. La provincia no equivale a toda Argentina.
+- **México y Perú no se acreditan con el certificado de Stake.com.** Los términos de stake.mx nombran el permiso DGAJS/SCEVF/P-06/2005-Ter; revisado 8 nov 2026. El listado SEGOB de páginas web autorizadas (documento ago 2026; leído 9 nov 2026) muestra www.stake.mx con Status Operacional «Páginas web Baja Temporal». La ayuda de Stake Perú del 28 sep 2026 afirma supervisión de MINCETUR; el Registro de plataformas tecnológicas de MINCETUR (leído 9 nov 2026) lista certificaciones de plataforma PT0000009 y PT0000188 asociadas a Stake Perú, no una fila de autorización de operador. Más abajo distinguimos fuente y alcance.
+- **Esta guía no explica cómo evitar un bloqueo. Si la lista te incluye, la respuesta es no usar la sala.**
+
+## 1. Por qué hay varios «Stake»
+
+**EDITORIAL.** Un permiso local tiene un titular y un alcance territorial propios. Compartir una marca, o incluso una plataforma técnica, no acredita que la empresa contratante, la cuenta, la licencia o las reglas sean equivalentes. Por eso importa leer el dominio y el contrato, no solo el logo.
+
+Esta guía no dice si apostar online es legal donde vives. Una licencia de Curazao no es una licencia de Argentina, Colombia, México o Perú. Tampoco convertimos la presencia de un método de pago o de una moneda en prueba de permiso local.
+
+## 2. País por país
+
+### 2.1 Stake.com: offshore, Curazao
+
+**Operador (OFICIAL — términos §2.1; revisado 8 nov 2026):** el contrato de Stake.com nombra a **Medium Rare N.V.**
+
+**Regulador (OFICIAL — certificado de la Curaçao Gaming Authority; revisado 8 nov 2026):** el certificado de operación identifica stake.com, Medium Rare N.V., número de compañía **145353** y licencia **OGL/2024/1451/0918**, con estado **«Active»** en la lectura citada. Es una publicación del regulador de Curazao, no un permiso local para los países de esta guía.
+
+**Alcance (OFICIAL — términos de Stake.com, §14.3; revisado 8 nov 2026):** la restricción de uso alcanza a quienes se encuentran en las jurisdicciones enumeradas o residen en ellas. Argentina, Brasil, Colombia, Cuba, México y Perú figuran en esa lista, entre otras jurisdicciones. El texto también aclara que las restricciones de juego con dinero real se aplican a residentes y ciudadanos de otras naciones mientras estén en una jurisdicción prohibida.
+
+**Extracto en inglés del §14.3; omisiones marcadas con […]. No es la lista completa de jurisdicciones excluidas.**
+
+> Persons located in or reside in […] Argentina, […] Brazil, […] Colombia, […] Cuba, […] Mexico, […] Peru, […] (the "Prohibited Jurisdictions") are not permitted make use of the Service.
+
+**Traducción editorial del extracto anterior — no oficial:**
+
+Las personas que se encuentren en […] Argentina, […] Brasil, […] Colombia, […] Cuba, […] México, […] Perú, […] o residan en esas jurisdicciones (las «Jurisdicciones Prohibidas») no tienen permitido utilizar el Servicio.
+
+Fuente de cita y traducción: términos de Stake.com, https://stake.com/policies/terms, §14.3; revisado 8 nov 2026. La dirección es una referencia documental, no un enlace de acceso ni una invitación a usar el servicio.
+
+**Verificación y pagos (OFICIAL — términos de Stake.com; revisado 8 nov 2026):**
+
+- §4.8: puede pedir documentación KYC para determinar identidad y ubicación en cualquier momento. Se reserva restringir servicio, pagos o retiros hasta determinar suficientemente la identidad, o por otro motivo a su exclusiva discreción.
+- §7.4 y §7.9: el depósito se hace con fondos propios, desde billeteras cripto bajo tu control u otros métodos del sitio. Los métodos y límites se muestran en su sección de billetera, pueden tener cargos, y algunos métodos pueden no estar disponibles en todos los países. Esto no acredita disponibilidad en un país concreto.
+- §8.5 y §8.10: exige apostar el 100 % del valor del depósito para solicitar un retiro FIAT o cripto, respectivamente. Es una condición contractual descrita, no una recomendación de apostar para desbloquear fondos.
+- §8.3: el retiro debe ir por el mismo método del depósito, salvo que decidan otra cosa o no puedan hacerlo. Si hubo varios métodos de depósito, se reservan dividir el retiro entre ellos a su criterio, conforme a sus políticas y regulación contra el lavado de dinero.
+- §8.9: puede cobrar una comisión de retiro a su criterio; el método de pago también puede imponer cargos de terceros.
+
+**Reclamos (OFICIAL — §23.1–23.5 y §25.1; revisado 8 nov 2026):** primero se presenta el reclamo a atención al cliente, sin cargo y dentro de los seis meses del incidente. Tras recibir la decisión final, si el reclamo sigue sin resolverse a satisfacción del cliente, los términos contemplan acudir a CADRE B.V., entidad independiente de resolución alternativa certificada por la Curaçao Gaming Authority. El contrato se rige por las leyes de Curazao y no elimina la posibilidad de acudir a sus tribunales según esas cláusulas. No es una promesa de resultado del reclamo.
+
+**Qué no sabemos:** no confirmamos tu elegibilidad personal ni el funcionamiento de un método de pago. La cita y las condiciones anteriores documentan apartados concretos de los términos; no certifican la totalidad de su contenido.
+
+### 2.2 Argentina: Provincia de Buenos Aires, no todo el país
+
+**Operador (OFICIAL — términos del sitio de PBA, §1.1; revisado 8 nov 2026):** el texto nombra a **Dynamo Tyche S.A. – Casino de Tandil S.A. Unión Transitoria** y cita la licencia del IPLyC mediante **RESO-2024-1024-GDEBA-IPLYCMGGP**.
+
+**Regulador (OFICIAL — IPLyC y resolución del 12 may 2026; revisado 8 nov 2026):** la **RESO-2026-668-GDEBA-IPLYCMGGP** autoriza a **DYNAMO TYCHE – HOTEL CASINO TANDIL SA – UT** a usar la marca «Stake» y a cambiar el dominio en la zona .bet.ar. La resolución identifica el dominio anterior easybet.bet.ar. La página de juego online del IPLyC incluye a Stake y una referencia a pba.stake.bet.ar. Cada fuente se conserva con la denominación empresarial que publica.
+
+**Alcance (OFICIAL — términos PBA §3.3; revisado 8 nov 2026):** el texto limita el acceso con dinero real a cuando el usuario se encuentra físicamente dentro de la Provincia de Buenos Aires. **EDITORIAL:** es un ámbito provincial, no una licencia nacional. Stake.com es otro contrato y su §14.3 incluye a Argentina entre las jurisdicciones desde donde no se permite usar su servicio.
+
+**Condiciones leídas (OFICIAL — términos PBA §6.3, §7.1 y §17; revisado 8 nov 2026):** todos los fondos depositados deben apostarse en su totalidad antes de ser elegibles para retiro; los retiros están sujetos a verificar identidad y titularidad del medio de pago. El acuerdo remite a la normativa de PBA y a sus tribunales competentes, sin perjuicio de las facultades del IPLyC.
+
+**Qué no sabemos:** no damos una lista completa de métodos, monedas, límites ni plazos de retiro de PBA: nuestra tabla no tiene esos datos. No extendemos su documentación a otras provincias ni lo presentamos como alternativa para usar Stake.com.
+
+### 2.3 Colombia: stake.com.co y Coljuegos
+
+**Operador (OFICIAL — términos de stake.com.co, fechados el 29 oct 2026; revisado 8 nov 2026):** nombra a **Stake Colombia S.A.S.**, NIT **901.392.284-4**, con domicilio social en Bogotá.
+
+**Regulador — dos fuentes distintas:**
+
+- **OFICIAL, operador:** el preámbulo de sus términos y el pie de stake.com.co citan el **Contrato de Concesión C2226 de 2025**, con vencimiento el **29 dic 2030**. Los términos están fechados el 29 oct 2026; ambos textos, revisado 8 nov 2026.
+- **OFICIAL, Coljuegos:** su lista «Operadores de Juegos Online Autorizados por Coljuegos», publicación **301841**, muestra **«Contrato 2226 - Stake Colombia S.A.S»** y stake.com.co. La página indica última modificación **30 oct 2026**; revisado 8 nov 2026. Esta fila confirma el número publicado por Coljuegos; no usamos la fila como fuente del vencimiento que afirma el operador.
+
+**Alcance (OFICIAL — Coljuegos, publicación 301841; revisado 8 nov 2026):** el domicilio del jugador registrado en la cuenta debe encontrarse en territorio colombiano. Eso no elimina la exclusión de Colombia en los términos de Stake.com: hablamos de contratos distintos.
+
+**Condiciones (OFICIAL — términos de stake.com.co del 29 oct 2026; revisado 8 nov 2026):**
+
+- §3 y definición de documento: cédula de ciudadanía o de extranjería vigente emitida por la autoridad colombiana. El texto pide enviar el documento «en original y en físico» dentro de los 30 días siguientes a crear la cuenta. No permite retirar hasta verificar los datos del registro.
+- §22: la unidad monetaria es el peso colombiano; no permite transacciones de juego en divisas, monedas virtuales ni monedas encriptadas.
+- §4.1: limita el primer depósito a **5.000.000 COP** y se reserva imponer otras limitaciones. No es un importe recomendado.
+- §4.2: permite como máximo **tres retiros diarios** y exige que, al retirar, la suma de apuestas sea igual al **100 %** de los depósitos. Verificar la identidad y la información de la cuenta forma parte de sus comprobaciones.
+- §4.3: los métodos vigentes se muestran en la «Billetera». El mismo apartado afirma una retención del **20 %** para retiros iguales o superiores a **48 UVT**, por ganancia ocasional. Es lo que dicen los términos, no asesoría tributaria ni una conversión de UVT a pesos.
+- §13: contempla reclamos al operador; Coljuegos también indica cómo reclamar por premios cuando el operador no responde (publicación 301841; revisado 8 nov 2026).
+
+**Qué no sabemos:** no comprobamos una billetera personal ni un plazo efectivo de pago. No extrapolamos los métodos, la moneda ni los impuestos de stake.com.co a Stake.com o a otro sitio.
+
+### 2.4 México: permiso nombrado en stake.mx; Status Operacional «Páginas web Baja Temporal» (SEGOB ago 2026)
+
+**Operador (OFICIAL — términos stake.mx §1.1; revisado 8 nov 2026):** nombra a **Unocapali La Paz Operadora, S.A. de C.V.**, una operadora de **Producciones Móviles, S.A. de C.V.**, que identifica como titular del **Permiso Federal DGAJS/SCEVF/P-06/2005-Ter**, expedido por SEGOB. La grafía «Unocapali» es la del texto citado.
+
+**Regulador (OFICIAL — listado SEGOB «Páginas web autorizadas», documento ago 2026; leído 9 nov 2026):** en la fila 92 de ese listado (https://juegosysorteos.segob.gob.mx/work/Sala-Soteos/PDF/VF_PAGS_WEB_AUTORIZADAS_2026_AGO.pdf), www.stake.mx aparece con permisionaria Producciones Móviles, S.A. de C.V., operadora Unocapalli La Paz Operadora, S.A. de C.V. (grafía SEGOB) y Status Operacional «Páginas web Baja Temporal». Citamos esa etiqueta tal como está impresa; no la interpretamos. En la «Relación de Permisos Autorizados» de SEGOB, leída el mismo día, Producciones Móviles, S.A. de C.V. sigue listada bajo DGAJS/SCEVF/P-06/2005-Ter. Ni esa fila ni el permiso se presentan aquí como autorización operativa vigente de stake.mx ni como conclusión de legalidad. Los términos de stake.mx (§1.1) escriben «Unocapali»; el listado de SEGOB, «Unocapalli».
+
+**Alcance (OFICIAL — términos stake.mx §3.3; revisado 8 nov 2026):** el texto limita los juegos con dinero real a la presencia física dentro de México. No es una afirmación nuestra sobre disponibilidad o legalidad individual.
+
+**Condiciones leídas (OFICIAL — §7.1, §7.3 y §7.6; revisado 8 nov 2026):** los retiros están sujetos a verificar identidad y titularidad del método de pago, y pueden rechazarse o demorarse hasta completar las verificaciones. Todos los fondos depositados deben haberse apostado por completo al menos una vez antes de solicitar retiro. El retiro usa el método del depósito inicial salvo que no sea posible; en ese caso, el operador contacta al usuario para acordar otro método.
+
+**Qué no sabemos:** el PDF no define el significado procesal de «Páginas web Baja Temporal» más allá de esa etiqueta. No tenemos en esta revisión una tabla completa de monedas, métodos, comisiones o plazos de stake.mx. No sustituimos esa etiqueta por «Operando», «autorizado», «suspendido», «ilegal» ni «cerrado».
+
+### 2.5 Perú: afirmación del operador y certificaciones de plataforma MINCETUR
+
+**Operador / fuente (OFICIAL — ayuda de Stake Perú, artículo del 28 sep 2026; revisado 8 nov 2026):** el artículo dice que desde el **1 oct 2026** Stake Perú funciona en la plataforma global de Stake. Lo atribuimos a Stake Perú; compartir plataforma no acredita compartir el contrato de Stake.com.
+
+**Regulador, afirmación del operador:** la misma ayuda afirma que Stake Perú sigue autorizado y supervisado por **MINCETUR**. Es afirmación del operador, no una comprobación independiente nuestra de una autorización de operador.
+
+**Registro de plataformas tecnológicas (OFICIAL — MINCETUR; leído 9 nov 2026):** la búsqueda «Stake» en https://apuestasdeportivas.mincetur.gob.pe/Registro_plataformas_tecnologicas.html muestra dos filas: **PT0000009** (fabricante TG Lab, UAB; plataforma «TGL Lab Plataforma de Juego Remoto usada por Stake Peru S.A.C»; RD 5775-2026; fecha RD 10/08/2026) y **PT0000188** (fabricante Easygo Information Services Pty Ltd; plataforma «Plataforma Base de Stake Perú, Apuestas Deportivas y de Eventos»; RD 7392-2026; fecha RD 25/09/2026). Son certificaciones de plataforma tecnológica. No las presentamos como autorización de operador de stake.pe.
+
+**Alcance:** los términos de Stake.com (§14.3; revisado 8 nov 2026) incluyen a Perú en su prohibición de uso para personas ubicadas allí o que residan allí. La ayuda peruana no se usa para anular esa cláusula ni para invitar a usar Stake.com.
+
+**Cambio de plataforma (OFICIAL — misma ayuda del 28 sep 2026; revisado 8 nov 2026):** describe una nueva verificación de identidad con DNI o Carné de Extranjería; dice que el saldo anterior no se mueve automáticamente y que los bonos con requisitos de apuesta pendientes no se transfieren. Es una descripción atribuida de ese cambio, no una regla general sobre todas las cuentas de Stake.
+
+**Qué no sabemos:** no tenemos en esta revisión una fila del registro de autorización de operador de MINCETUR para stake.pe; esa ausencia no es una conclusión de legalidad. Tampoco tenemos los términos completos de stake.pe para afirmar sus condiciones actuales de pagos o retiro. No trasladamos límites publicados antes del cambio de plataforma a la nueva operación.
+
+### 2.6 Chile: una ausencia no es permiso
+
+Chile no aparece en la lista del §14.3 de Stake.com. Eso no significa que Stake.com esté permitido ni disponible en Chile, y esta guía no dice que lo esté.
+
+El 1 sep 2026, Subtel ordenó a Entel, Movistar, Claro, GTD, WOM y VTR bloquear, en un plazo máximo de 48 horas desde la respectiva notificación, una lista de 42 URLs de sitios de apuestas revisada por la Superintendencia de Casinos de Juego. stake.com está en esa lista.
+
+Esta guía no explica cómo evitar ese bloqueo.
+
+Fuente: Subtel, 1 sep 2026; revisado 8 nov 2026. [Publicación de Subtel](https://www.subtel.gob.cl/subtel-ordena-bloqueo-de-42-sitios-de-apuestas-online/). Fuente para la lista contractual: términos Stake.com, §14.3; revisado 8 nov 2026.
+
+**Qué no sabemos:** la publicación de una orden no demuestra su ejecución por cada proveedor ni la situación efectiva de acceso. No concluimos permiso, legalidad o disponibilidad a partir de ella.
+
+## 3. Tabla: qué cambia para el jugador
+
+Las celdas resumen publicaciones de fuentes concretas, no recomendaciones de sitio. «Sin dato» significa que **nuestra tabla** no contiene esa información, no que el operador no la publique. Cada celda lleva su fuente y fecha; no se extiende a las demás columnas.
+
+| Aspecto | Stake.com | PBA (.bet.ar) | stake.com.co | stake.mx | stake.pe |
+| --- | --- | --- | --- | --- | --- |
+| Operador nombrado | Medium Rare N.V. — términos §2.1, 08 NOV 2026 | Dynamo Tyche S.A. – Casino de Tandil S.A. Unión Transitoria — términos §1.1, 08 NOV 2026 | Stake Colombia S.A.S. — términos, 08 NOV 2026 | Unocapali La Paz Operadora, S.A. de C.V. — términos §1.1, 08 NOV 2026 | Sin dato de entidad contratante en nuestra tabla — ayuda del 28 SEP 2026, leída 08 NOV 2026 |
+| Publicación regulatoria | CGA: OGL/2024/1451/0918, Medium Rare N.V., «Active» — certificado, 08 NOV 2026 | Marca y cambio de dominio autorizados a DYNAMO TYCHE – HOTEL CASINO TANDIL SA – UT — RESO-2026-668, 12 MAY 2026; leída 08 NOV 2026 | «Contrato 2226 - Stake Colombia S.A.S» — Coljuegos 301841, 08 NOV 2026 | Fila 92 www.stake.mx Status Operacional «Páginas web Baja Temporal»; Producciones Móviles / Unocapalli (SEGOB) — listado SEGOB de páginas web autorizadas (ago 2026), leído 09 NOV 2026; permiso DGAJS/SCEVF/P-06/2005-Ter sigue en Relación de Permisos Autorizados, leído 09 NOV 2026 | Registro de plataformas tecnológicas: PT0000009 (TG Lab) y PT0000188 (Easygo) — certificaciones de plataforma, no autorización de operador; leído 09 NOV 2026. Sin fila de autorización de operador en esta revisión |
+| Alcance que publica la fuente | Prohíbe el servicio a personas ubicadas en Argentina, Brasil, Colombia, Cuba, México o Perú, o que residan allí, entre otras jurisdicciones — §14.3, 08 NOV 2026 | Dinero real limitado a presencia física en PBA — §3.3, 08 NOV 2026 | Domicilio registrado en Colombia — Coljuegos 301841, 08 NOV 2026 | Dinero real limitado a presencia física en México — §3.3, 08 NOV 2026 | Ayuda afirma supervisión de MINCETUR; no es confirmación del registro — ayuda 28 SEP 2026, leída 08 NOV 2026 |
+| Verificación | KYC, incluida identidad y ubicación, a su criterio — §4.8, 08 NOV 2026 | Identidad y titularidad del medio de pago para retirar — §7.1, 08 NOV 2026 | Cédula; original físico en 30 días, sin retiro hasta verificar — §3, 08 NOV 2026 | Identidad y titularidad del método para retirar — §7.1, 08 NOV 2026 | Nueva verificación con DNI o Carné de Extranjería — ayuda 28 SEP 2026, leída 08 NOV 2026 |
+| Moneda / pagos | Fondos propios, cripto u otros métodos del sitio; algunos no están en todos los países — §7.4/§7.9, 08 NOV 2026 | Sin dato de moneda o lista de métodos en nuestra tabla — alcance de extractos PBA, 08 NOV 2026 | COP, sin cripto — §22, 08 NOV 2026 | Sin dato de moneda o lista de métodos en nuestra tabla — alcance de extractos MX, 08 NOV 2026 | Sin dato de moneda o métodos actuales en nuestra tabla — alcance de ayuda 28 SEP 2026, leída 08 NOV 2026 |
+| Antes de retirar | Apostar 100 % del depósito para solicitar FIAT o cripto — §8.5/§8.10, 08 NOV 2026 | Apostar los fondos depositados en su totalidad — §6.3, 08 NOV 2026 | Apuestas iguales al 100 % de los depósitos; máximo 3 retiros diarios — §4.2, 08 NOV 2026 | Apostar lo depositado por completo al menos una vez — §7.3, 08 NOV 2026 | Sin dato de requisito vigente en nuestra tabla — alcance de ayuda 28 SEP 2026, leída 08 NOV 2026 |
+| Reclamos / jurisdicción contractual | Atención al cliente → CADRE tras decisión final; ley de Curazao — §23/§25, 08 NOV 2026 | Tribunales de PBA, sin perjuicio del IPLyC — §17, 08 NOV 2026 | Reclamo al operador — §13, 08 NOV 2026 | Sin dato de vía de reclamo en nuestra tabla — alcance de extractos MX, 08 NOV 2026 | Sin dato de vía contractual de reclamo en nuestra tabla — alcance de ayuda 28 SEP 2026, leída 08 NOV 2026 |
+
+**Nota Chile (no es una columna de sitio):** El 1 sep 2026, Subtel ordenó a Entel, Movistar, Claro, GTD, WOM y VTR bloquear, en un plazo máximo de 48 horas desde la respectiva notificación, una lista de 42 URLs de sitios de apuestas revisada por la Superintendencia de Casinos de Juego. stake.com está en esa lista. Fuente: Subtel, 1 sep 2026; revisado 8 nov 2026. [Publicación de Subtel](https://www.subtel.gob.cl/subtel-ordena-bloqueo-de-42-sitios-de-apuestas-online/).
+
+Para los métodos locales, consulta [retiros con métodos locales](https://www.planetaruleta.com/guias/retiros-metodos-locales/): cada dato de esa guía conserva su propia fuente, fecha y alcance de plataforma.
+
+## 4. «Stake no me deja registrarme por ubicación» o «mi cuenta está restringida»
+
+**EDITORIAL.** Las causas que nombran las fuentes incluyen una jurisdicción prohibida en Stake.com (§14.3), verificaciones de identidad y ubicación (§4.8) y los límites territoriales propios de stake.mx (§3.3) o del sitio de PBA (§3.3); revisado 8 nov 2026. No diagnostican por sí solas el caso de una cuenta. Los términos de stake.com.co también condicionan los retiros a verificar los datos de registro (§3, documento del 29 oct 2026; revisado 8 nov 2026).
+
+Pide a soporte del sitio donde tienes la cuenta el motivo por escrito, y pregunta cómo retirar tu saldo. Guarda la respuesta y las capturas. Si tu cuenta pasó a otro sitio, pregunta qué empresa, contrato y reglas aplican ahora: no supongas que las condiciones se mantienen por compartir marca.
+
+En la revisión del **30 oct 2026**, no encontramos una explicación general sobre el traspaso de cuentas en los términos leídos de Stake.com, stake.mx y stake.com.co ni en la ayuda de Stake.com. Esa lectura no cubría la ayuda de stake.mx ni las preguntas frecuentes de stake.com.co. No la presentamos como una ausencia actual en todas las fuentes. La ayuda peruana del 28 sep 2026 sí describe su cambio de plataforma desde el 1 oct 2026; revisado 8 nov 2026. Su alcance es Stake Perú, no las otras cuentas.
+
+**Esta guía no explica cómo evitar un bloqueo. Si la lista te incluye, la respuesta es no usar la sala.** No hace falta aumentar las apuestas para pedir una explicación sobre tus fondos.
+
+## 5. Cómo comprobarlo tú
+
+**EDITORIAL — comprobación documental, no instrucciones para abrir una cuenta.**
+
+1. Busca la empresa y el número de permiso o contrato en los términos y el pie del sitio. Compáralos con el regulador correspondiente. Un logo y un número aislado no bastan para afirmar alcance local.
+2. **Colombia:** contrasta empresa, dominio y contrato en la lista de operadores de coljuegos.gov.co. La referencia usada aquí es la publicación 301841, revisado 8 nov 2026.
+3. **PBA:** consulta la página de juego online del IPLyC y la resolución provincial. La página sitúa sus reglas en la Provincia de Buenos Aires y dice que los sitios legales de apuestas terminan en .bet.ar; revisado 8 nov 2026. Esa frase no transforma cualquier dominio en una autorización ni amplía el alcance provincial.
+4. **México:** compara la permisionaria y el permiso que declaran los términos con el listado de páginas web autorizadas de SEGOB y su columna de Status Operacional. En la lectura del 9 nov 2026, la fila 92 de www.stake.mx muestra «Páginas web Baja Temporal»; esa etiqueta se cita literalmente y no se interpreta aquí.
+5. **Perú:** distingue el Registro de plataformas tecnológicas de cualquier registro de autorización de operador. En la lectura del 9 nov 2026, PT0000009 (TG Lab) y PT0000188 (Easygo) aparecen como certificaciones de plataforma asociadas a Stake Perú; no son por sí solas una autorización de operador de stake.pe. La ausencia de una fila de operador en esta revisión no es una conclusión de legalidad.
+6. Entra solo desde un favorito que guardaste tú, no desde un enlace que te mandaron. Ante una exigencia de pagar para liberar un saldo, consulta [depositar para retirar](https://www.planetaruleta.com/guias/pagar-para-retirar-bono-falso/).
+7. Revisa el contrato y las condiciones de verificación y retiro: [antes de retirar: rollover y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/). Una condición contractual no es una recomendación de seguir apostando para recuperar dinero.
+
+## 6. Si el juego ya no se siente bajo control
+
+**EDITORIAL.** Si estás persiguiendo pérdidas, detente y busca ayuda de juego responsable donde estés. No aumentes las apuestas para recuperar un saldo ni para compensar una restricción. Puedes consultar las herramientas de límites y autoexclusión del sitio donde tienes la cuenta, sin dar por hecho que se trasladan a otro contrato. +18. Info, no consejo de apuesta.
+
+## 7. Preguntas frecuentes
+
+### ¿Stake.com y stake.bet.ar son lo mismo?
+
+No son el mismo sitio ni el mismo contrato. Los términos de Stake.com nombran a Medium Rare N.V.; los términos del sitio de PBA nombran a Dynamo Tyche S.A. – Casino de Tandil S.A. Unión Transitoria. El certificado de Stake.com es de Curazao y la documentación del IPLyC corresponde a la Provincia de Buenos Aires. Fuentes: términos de ambos sitios, certificado CGA y resolución provincial del 12 may 2026; revisado 8 nov 2026.
+
+### ¿Se puede usar Stake.com desde Argentina, México o Colombia?
+
+Según los términos de Stake.com (§14.3, revisado 8 nov 2026), no: la prohibición de usar el servicio incluye a las personas ubicadas en Argentina, Colombia, México o Perú, o que residan allí, entre otras jurisdicciones. Esta guía no explica cómo evitar esa restricción. Si la lista te incluye, la respuesta es no usar la sala.
+
+### ¿Stake PBA vale para toda Argentina?
+
+La documentación del IPLyC corresponde a la Provincia de Buenos Aires, no a una licencia nacional. Los términos del sitio de PBA (§3.3, revisado 8 nov 2026) limitan el acceso con dinero real a la presencia física dentro de esa provincia. No sacamos conclusiones legales para otras provincias.
+
+### ¿Quién opera stake.mx?
+
+Sus términos (§1.1, revisado 8 nov 2026) nombran a Unocapali La Paz Operadora, S.A. de C.V., como operadora de Producciones Móviles, S.A. de C.V., titular del Permiso Federal DGAJS/SCEVF/P-06/2005-Ter de SEGOB. El listado SEGOB «Páginas web autorizadas» (documento ago 2026; leído 9 nov 2026) muestra www.stake.mx en la fila 92 con Status Operacional «Páginas web Baja Temporal» y operadora Unocapalli La Paz Operadora, S.A. de C.V. (grafía SEGOB). No interpretamos esa etiqueta ni la presentamos como autorización operativa vigente.
+
+### ¿Stake Colombia acepta cripto?
+
+Según sus términos (§22, fechados el 29 oct 2026; revisado 8 nov 2026), la unidad monetaria es el peso colombiano y no se permiten transacciones de juego en divisas, monedas virtuales ni monedas encriptadas. La lista de Coljuegos, publicación 301841, muestra a Stake Colombia S.A.S., stake.com.co y el contrato 2226; revisado 8 nov 2026.
+
+### ¿Por qué cambió mi cuenta de sitio?
+
+En la revisión del 30 oct 2026, no encontramos una explicación general sobre el traspaso de cuentas en los términos leídos de Stake.com, stake.mx y stake.com.co ni en la ayuda de Stake.com. Esa lectura no cubría la ayuda de stake.mx ni las preguntas frecuentes de stake.com.co. La ayuda de Stake Perú del 28 sep 2026 sí describe su cambio de plataforma desde el 1 oct 2026; revisado 8 nov 2026. No lo extendemos a otros sitios. Pide a soporte, por escrito, qué empresa y qué términos aplican ahora y cómo retirar tu saldo.
+
+### ¿Stake.com se puede usar desde Chile?
+
+Chile no aparece en la lista del §14.3 de Stake.com. Eso no significa que Stake.com esté permitido ni disponible en Chile, y esta guía no dice que lo esté. El 1 sep 2026, Subtel ordenó a Entel, Movistar, Claro, GTD, WOM y VTR bloquear, en un plazo máximo de 48 horas desde la respectiva notificación, una lista de 42 URLs de sitios de apuestas revisada por la Superintendencia de Casinos de Juego. stake.com está en esa lista. Esta guía no explica cómo evitar ese bloqueo. Fuente: Subtel, 1 sep 2026; revisado 8 nov 2026. Términos de Stake.com, §14.3; revisado 8 nov 2026.
+
+### ¿Stake Perú es lo mismo que Stake.com?
+
+La ayuda de Stake Perú del 28 sep 2026 dice que desde el 1 oct 2026 funciona en la plataforma global de Stake y que sigue autorizado y supervisado por MINCETUR; revisado 8 nov 2026. Es una afirmación del operador. El Registro de plataformas tecnológicas de MINCETUR (leído 9 nov 2026) muestra PT0000009 (TG Lab, UAB) y PT0000188 (Easygo Information Services Pty Ltd) como certificaciones de plataforma asociadas a Stake Perú; no son una fila de autorización de operador. La ausencia de esa fila de operador en esta revisión no es una conclusión de legalidad. Compartir plataforma no acredita que el contrato o la autorización sean los mismos. Los términos de Stake.com (§14.3, revisado 8 nov 2026) siguen incluyendo a Perú entre las jurisdicciones desde donde no se permite usar su servicio.
+
+Los términos cambian: revisa la versión vigente en el sitio que aplica donde vives. No garantizamos resultados. Si se te va de las manos, busca ayuda de juego responsable donde estés. +18.
+
+URL: https://www.planetaruleta.com/guias/stake-por-pais/

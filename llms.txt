@@ -30,6 +30,7 @@ El texto de las guías, sin el menú del sitio, está en [llms-full.txt](https:/
 - [Plinko en Cloudbet](https://www.planetaruleta.com/guias/plinko-cloudbet/): Qué dicen las páginas de Cloudbet sobre el Plinko: filas, niveles, BOOST con recargo del 20 %, RTP declarado de 99 % y cómo verificar una tirada. Revisado el 30 oct 2026.
 - [Retiro pendiente o en revisión](https://www.planetaruleta.com/guias/retiro-pendiente-en-revision/): Qué significa un retiro pendiente, en proceso o en revisión, cuánto dicen tardar las salas, qué es normal, qué es señal de alerta y qué guardar. +18.
 - [Retiros con métodos locales](https://www.planetaruleta.com/guias/retiros-metodos-locales/): Retiro en Stake Colombia y Perú: Efecty, Nequi, Bre-B, Yape/Plin, mínimos, topes por día y plazos según su ayuda, y qué frena un retiro. +18.
+- [Stake por país](https://www.planetaruleta.com/guias/stake-por-pais/): Qué dicen los términos de Stake.com y de sus sitios locales, y qué publican los reguladores de cada país.
 
 ## Mesa
 

@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_PATH = ROOT / "llms-full.txt"
 ORIGIN = "https://www.planetaruleta.com"
 
-# Sitemap order for the guide index and the thirteen guides.
+# Sitemap order for the guide index and the fourteen guides.
 PAGES: list[tuple[str, str]] = [
     ("guias/index.html", f"{ORIGIN}/guias/"),
     ("guias/rtp-volatilidad/index.html", f"{ORIGIN}/guias/rtp-volatilidad/"),
@@ -38,6 +38,7 @@ PAGES: list[tuple[str, str]] = [
     ("guias/plinko-cloudbet/index.html", f"{ORIGIN}/guias/plinko-cloudbet/"),
     ("guias/retiro-pendiente-en-revision/index.html", f"{ORIGIN}/guias/retiro-pendiente-en-revision/"),
     ("guias/retiros-metodos-locales/index.html", f"{ORIGIN}/guias/retiros-metodos-locales/"),
+    ("guias/stake-por-pais/index.html", f"{ORIGIN}/guias/stake-por-pais/"),
 ]
 
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
@@ -52,7 +53,7 @@ HEADER = """# Planeta Ruleta — texto de las guías
 
 > Copia en texto de las guías públicas de alfabetización. El wording es el de cada página. Este archivo no agrega cifras, licencias ni rankings. +18. No es consejo de apuesta ni un enlace de afiliado.
 
-Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla trece veces.
+Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla catorce veces.
 
 """
 
@@ -291,7 +292,8 @@ def render_blocks(node: Node, page_url: str, in_list: bool = False) -> str:
             if rendered:
                 chunks.append(rendered)
         elif child.tag == "blockquote":
-            text = inline(child, page_url)
+            # inline() stops at the blockquote tag and would drop a nested <p>.
+            text = render_blocks(child, page_url).strip()
             if text:
                 chunks.append("\n".join(f"> {line}" for line in text.split("\n")))
         elif child.tag == "li":
