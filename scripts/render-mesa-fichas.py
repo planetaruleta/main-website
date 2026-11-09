@@ -734,6 +734,7 @@ FICHAS = {
             ("Idiomas", "no verificado · 03 OCT 2026. Esta ficha está en español de Latinoamérica; eso no dice qué idiomas publica el operador."),
             ("Última revisión", "Mesa y señal de welcome: 25 SEP 2026 (help fechado 24 ago 2026). Huecos marcados al armar la ficha: 03 OCT 2026."),
         ],
+        "licencia_note_html": '<p>Stake.com no es el sitio de PBA, ni stake.mx, ni stake.com.co, ni stake.pe: ver <a href="/guias/stake-por-pais/">Stake por país</a>.</p>',
         "fuentes": [
             ("stake.com", "https://stake.com/"),
             ("Welcome offer", "https://help.stake.com/en/articles/5091363-how-to-get-my-welcome-offer"),
@@ -1793,7 +1794,12 @@ def timeline_html(items: list[dict]) -> str:
 
 
 def annex_html(data: dict) -> str:
-    parts = [f"<p><b>{e(dt)}.</b> {e(dd)}</p>" for dt, dd in data["sheet"]]
+    parts = []
+    note = data.get("licencia_note_html", "")
+    for dt, dd in data["sheet"]:
+        parts.append(f"<p><b>{e(dt)}.</b> {e(dd)}</p>")
+        if note and dt == "Licencia":
+            parts.append(note)
     return f"""<details>
           <summary>Anexo · empresa / licencia (dossier, no el gancho)</summary>
           <div class="body">
