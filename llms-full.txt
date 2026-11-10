@@ -2,7 +2,7 @@
 
 > Copia en texto de las guías públicas de alfabetización. El wording es el de cada página. Este archivo no agrega cifras, licencias ni rankings. +18. No es consejo de apuesta ni un enlace de afiliado.
 
-Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla catorce veces.
+Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla quince veces.
 
 Alfabetización · +18
 
@@ -18,7 +18,7 @@ Estas guías explican mecánicas de casino: qué es el RTP, el max bet de un bon
   Tope de apuesta bajo bono y qué juegos cuentan para el wagering. El número está en el T&C.
 - **[Cashback, rakeback y lossback](https://www.planetaruleta.com/guias/cashback-rakeback-lossback/)**
 
-  Tres devoluciones, tres bases de cálculo. Rakeback no es un match de depósito.
+  Qué es el rakeback, en qué se diferencia del cashback y el lossback, y qué publica cada sala.
 - **[Cómo leer una promo de casino](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/)**
 
   Opt-in, ventana, juegos excluidos y timezone. El método de lectura, no el calendario de una promo viva.
@@ -52,6 +52,9 @@ Estas guías explican mecánicas de casino: qué es el RTP, el max bet de un bon
 - **[Stake por país](https://www.planetaruleta.com/guias/stake-por-pais/)**
 
   Qué dicen los términos de Stake.com y de sus sitios locales, y qué publican los reguladores de cada país.
+- **[Rainbet: qué se puede verificar y qué no](https://www.planetaruleta.com/guias/rainbet-que-se-puede-verificar/)**
+
+  Qué publica Rainbet sobre su empresa, su licencia y sus retiros, qué aparece en páginas de terceros, y qué no pudimos confirmar.
 
 Versión corta en el [FAQ de alfabetización](https://www.planetaruleta.com/faq/#alfabetizacion).
 
@@ -184,9 +187,15 @@ URL: https://www.planetaruleta.com/guias/max-bet-contribucion-bono/
 
 Guía · +18 · alfabetización
 
-# Cashback vs rakeback vs lossback: tres devoluciones, tres bases de cálculo
+# Qué es el rakeback y en qué se diferencia del cashback y el lossback
 
-**Cashback**, **rakeback** y **lossback** son tres devoluciones distintas. No son sinónimos: cambia sobre qué se calcula el porcentaje y si te lo acreditan en cash o en bono con condiciones. El porcentaje de cada sala está en el T&C.
+El rakeback suele ser una devolución de una parte de la ventaja de la casa sobre lo que apuestas, ganes o pierdas. El cashback y el lossback, en cambio, suelen calcularse sobre lo que pierdes. Cada sala fija su base y su porcentaje en sus términos. El porcentaje, cuando la sala lo publica, está en sus términos o en su ayuda; aquí no lo transcribimos ni lo inventamos.
+
+## Qué es el rakeback
+
+**EDITORIAL — definición.** El término nace en el póker: devolución de una parte del **rake**, la comisión que la casa saca del pozo. En casino, se usa a menudo para una devolución ligada a la ventaja de la casa sobre lo apostado, no a lo perdido. La definición exacta la fija cada sala: no todas calculan sobre la misma base ni pagan del mismo modo.
+
+**Ejemplo hipotético (no es dato de una sala).** Supón que ya cumples la condición de la sala para recibir rakeback y apuestas 1.000 en un juego con ventaja de la casa de 2,70 %. La pérdida esperada sobre ese volumen es 27, esperada y no garantizada. Con una tasa hipotética del 4 % de esa ventaja, el rakeback esperado sería 1,08. En este ejemplo sigues con un costo esperado de 25,92: el rakeback no elimina la ventaja de la casa. Los 1.000, el 2,70 % y el 4 % son cifras redondas del ejemplo, no un porcentaje publicado por un operador.
 
 ## Qué es el cashback en un casino
 
@@ -201,11 +210,9 @@ Preguntas que el T&C tiene que responder:
 
 Sin esas respuestas, el % solo es marketing. El porcentaje concreto de una sala sale del T&C: aquí no lo inventamos.
 
-## Rakeback: origen y uso (a veces laxo) en casino
+## Rakeback en casino: por qué la definición cambia de sala en sala
 
-**Rakeback** nace en poker: devolución de un % del **rake** (la comisión que la casa saca del pozo). En casino, algunos operadores usan “rakeback” de forma laxa para hablar de devolución ligada a ventaja de la casa / actividad, no siempre con la misma definición de poker.
-
-En el [FAQ del sitio](https://www.planetaruleta.com/faq/#rakeback-match) ya dejamos claro: **rakeback ≠ match de depósito**. Un match te multiplica el depósito bajo reglas de bono; un rakeback (bien definido) te devuelve algo sobre el rake o equivalente. No los uses como sinónimos.
+En casino, algunos operadores usan “rakeback” de forma laxa para hablar de devolución ligada a ventaja de la casa / actividad, no siempre con la misma definición de póker. En el [FAQ del sitio](https://www.planetaruleta.com/faq/#rakeback-match) ya dejamos claro: **rakeback ≠ match de depósito**. Un match te multiplica el depósito bajo reglas de bono; un rakeback (bien definido) te devuelve algo sobre el rake o equivalente. No los uses como sinónimos.
 
 Si un casino dice “rakeback” en un lobby de slots, pide la definición exacta en el T&C antes de comparar con un cashback clásico.
 
@@ -219,17 +226,29 @@ Igual que con cashback:
 - Define si pérdidas en juegos excluidos cuentan.
 - Define si la devolución genera nuevo WR.
 
+## Qué publican las salas sobre su rakeback
+
+Cada fila cita su propia fuente; una tasa no se extiende a otros juegos, niveles ni salas. El orden es el de la mesa, no un ranking. **Esta guía no transcribe el porcentaje de ninguna sala**, aunque alguna lo publique: la cifra está en la fuente, se revisa ahí y caduca. Donde la página revisada no publica una tasa, lo decimos. No hay un «mejor rakeback».
+
+| Sala | Qué dice que devuelve (texto de la sala) | Base | Condición para recibirlo | Fuente y fecha |
+| --- | --- | --- | --- | --- |
+| [Rainbet](https://www.planetaruleta.com/mesa/rainbet/) | Rakeback reclamable cada 15 minutos; una parte aporta de forma automática al Daily Reload. Tasa: no publicada en las páginas oficiales revisadas. | El total apostado, según la ayuda. | La ayuda de recompensas no fija un nivel mínimo en ese artículo. Si el reward no se reclama antes de que se desbloquee el siguiente, caduca. | Ayuda «Rewards Overview», 27 may 2026; leída el 10 nov 2026. Búsqueda en ayuda, términos e inicio: 9 nov 2026 (sin tasa base). |
+| [Shuffle](https://www.planetaruleta.com/mesa/shuffle/) | La ayuda dice que el rakeback aplica a todos los juegos de casino y que se devuelve, en efectivo, una parte de la ventaja de la casa, según lo apostado. No está disponible en apuestas deportivas. El porcentaje que publica esa ayuda no se transcribe aquí. | Ventaja de la casa sobre lo apostado, según la ayuda «How does Rakeback Work?». | Tras apostar un total de 1.000 USD se alcanza el nivel Bronze del programa VIP y se recibe rakeback en cada apuesta. Se reclama en la página VIP. | Ayuda «How does Rakeback Work?», 21 oct 2024, y «How do I earn Rakeback?», 13 abr 2026; ambas leídas el 10 nov 2026. |
+| [Stake](https://www.planetaruleta.com/mesa/stake/) | La ayuda describe el rakeback como una devolución, en efectivo, de una parte de la ventaja de la casa en juegos de casino, y un cálculo análogo sobre el rake de póker y sobre el valor teórico de las apuestas deportivas, con el método que esa ayuda declara. Las apuestas deportivas anuladas o cobradas anticipadamente no califican. El porcentaje que publica esa ayuda no se transcribe aquí. | Ventaja de la casa (o rake) sobre lo apostado, según la ayuda «What is Rakeback?». | Tras apostar un total de 10.000 USD se entra al nivel Bronze del VIP Club y se recibe rakeback en cada apuesta. Se reclama en la pestaña de rakeback de la página VIP. En el sitio global, los términos incluyen jurisdicciones excluidas; el detalle está en [Stake por país](https://www.planetaruleta.com/guias/stake-por-pais/). | Ayuda «What is Rakeback?», 24 ago 2026; leída el 10 nov 2026. |
+| [Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/#bono) | En el Welcome Package, los términos describen el rakeback como la devolución de una parte de la ventaja de la casa en cada apuesta de casino elegible, a su sola discreción; una parte se acredita en la cuenta y el resto pasa al Rewards Calendar. Las apuestas deportivas no generan rakeback. El porcentaje que esos términos publican para el paquete no se transcribe aquí. | Ventaja de la casa en apuestas de casino elegibles, según §8.4.3.1. | Solo dentro del Welcome Package: programa de 30 días para usuarios nuevos, activado con el primer depósito. Fuera de ese alcance, los términos también mencionan rakeback en recompensas de lealtad, con tasas remitidas al centro de ayuda. | Términos de Cloudbet, §8.4 (Welcome Package) y §9.5 (lealtad); leídos el 10 nov 2026. |
+| [Roobet](https://www.planetaruleta.com/mesa/roobet/) | Instant Rakeback: un porcentaje de lo apostado, reclamable cada 30 minutos y que no caduca. Al reclamarlo, una parte pasa al saldo de inmediato y otra al vault, como parte de las tres reclamaciones diarias del vault. Tasa: no publicada en las páginas oficiales revisadas. | Un porcentaje de lo apostado, según la ayuda; esa ayuda no menciona la ventaja de la casa. | La ayuda «Rewards explained» no publica un nivel mínimo ni la tasa base. El vault se reclama tres veces al día, no se puede cobrar de una sola vez y lo que se desbloquea en él caduca a las 24 horas si no se reclama. | Ayuda «Rewards explained», 20 jul 2026; leída el 10 nov 2026. Búsqueda en ayuda y página VIP (sin tasa numérica visible sin sesión): 9 nov 2026. |
+
 ## Tabla comparativa
 
 Definición, no % de operador:
 
-*Comparación de mecánicas. Los porcentajes de cada sala están en el T&C; aquí no inventamos cifras.*
-
 | Mecánica | Base de cálculo | Confusión frecuente |
 | --- | --- | --- |
 | Cashback | Pérdida neta o volumen (según T&C) | Creer que es “gratis sin condiciones” |
-| Rakeback | Rake / house edge generado | Confundirlo con match de depósito |
+| Rakeback | Ventaja de la casa (o rake) sobre lo apostado; en algunas salas, un % de lo apostado | Confundirlo con match de depósito |
 | Lossback | Pérdida neta en la ventana | Asumir mismo % y misma forma de pago que cashback |
+
+Comparación de mecánicas. Los porcentajes de cada sala, cuando los publica, están en sus términos o en su ayuda; aquí no inventamos cifras.
 
 ## Checklist antes de activar cualquiera de los tres
 
@@ -239,12 +258,35 @@ Definición, no % de operador:
 - ¿Tope de devolución?
 - ¿Juegos que no cuentan?
 - ¿Se puede retirar de inmediato o hay una espera?
+- ¿El % es de la ventaja de la casa o de lo apostado? ¿Cambia por nivel VIP o hace falta un nivel mínimo?
+
+Para leer opt-in, ventana y exclusiones con método, también está [cómo leer una promo](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/).
+
+## Preguntas frecuentes
+
+### ¿Qué es el rakeback?
+
+Suele ser una devolución de una parte de la ventaja de la casa —o del rake, en póker— sobre lo que apuestas, ganes o pierdas. Algunas salas lo describen solo como un porcentaje de lo apostado. La definición exacta y el porcentaje, cuando la sala lo publica, están en sus términos o en su ayuda; esta guía no transcribe esas tasas.
+
+### ¿Rakeback y cashback son lo mismo?
+
+No. El rakeback suele calcularse sobre la ventaja de la casa o sobre lo apostado, ganes o pierdas. El cashback suele calcularse sobre lo perdido, a veces sobre un volumen, en una ventana. No son sinónimos, y tampoco lo son de un match de depósito.
+
+### ¿El rakeback se paga en efectivo o en bono?
+
+Depende de la sala. En las páginas revisadas el 10 nov 2026, Stake y Shuffle lo describen como cash; Roobet dice que una parte pasa al saldo y otra al vault; Rainbet dice que una parte aporta al Daily Reload; Cloudbet, en el Welcome Package, acredita una parte a la cuenta y el resto al Rewards Calendar. Cash retirable y bono con requisitos de apuesta no son lo mismo: hay que leer el término de cada sala.
+
+### ¿Qué es el rakeback en Stake?
+
+Según la ayuda «What is Rakeback?» del 24 ago 2026, leída el 10 nov 2026, Stake lo describe como una devolución en efectivo de una parte de la ventaja de la casa en juegos de casino, con un cálculo análogo en póker y en apuestas deportivas según el método que esa ayuda declara. Las apuestas deportivas anuladas o cobradas anticipadamente no califican. Se empieza a recibir al alcanzar el nivel Bronze del VIP Club, después de apostar un total de 10.000 USD, y se reclama en la página VIP. Esta guía no transcribe el porcentaje de esa ayuda. Las exclusiones de jurisdicción del sitio global se tratan en la guía Stake por país.
 
 ## Dónde seguir
 
-Para revisar definiciones y T&C (sin «juega aquí» ni links de referido): [www.planetaruleta.com](https://www.planetaruleta.com/) · [TG @planetaruleta](https://t.me/planetaruleta). +18.
+Para revisar definiciones y T&C, sin «juega aquí» ni links de referido. +18.
 
 Versión corta en el [FAQ: cashback, rakeback y lossback](https://www.planetaruleta.com/faq/#cashback-rakeback-lossback).
+
+Ningún rakeback convierte la ventaja de la casa en positiva. No garantizamos resultados. Si se te va de las manos, busca ayuda de juego responsable donde estés. +18.
 
 URL: https://www.planetaruleta.com/guias/cashback-rakeback-lossback/
 
@@ -542,7 +584,7 @@ Por eso el rollover de un bono importa tanto: cada vez que una promo pide aposta
 
 1. **Rollover = apuestas expuestas a la ventaja.** Cada vez que un bono pide apostar X veces, todo ese volumen pasa por la ventaja de la casa del juego que elijas. Por eso importa qué rueda es.
 2. **Contribución de la ruleta.** Una promo puede contar la ruleta distinto que los slots para el rollover, o excluirla: eso está en sus términos. Lee la tabla de contribución y el límite de apuesta: [/guias/max-bet-contribucion-bono/](https://www.planetaruleta.com/guias/max-bet-contribucion-bono/).
-3. **Cashback y rakeback se calculan sobre otra base.** Si una promo devuelve un porcentaje, fíjate si es sobre pérdidas, sobre volumen apostado o sobre la ventaja de la casa: [/guias/cashback-rakeback-lossback/](https://www.planetaruleta.com/guias/cashback-rakeback-lossback/).
+3. **Cashback y rakeback se calculan sobre otra base.** Si una promo devuelve un porcentaje, fíjate si es sobre pérdidas, sobre volumen apostado o sobre la ventaja de la casa: [qué es el rakeback y en qué se diferencia del cashback](https://www.planetaruleta.com/guias/cashback-rakeback-lossback/).
 4. **«Max RTP» no es «RTP».** Si la cifra dice «max», pregúntate en qué apuesta o variante aplica.
 5. **Retirar también tiene condiciones.** Algunas salas piden apostar el depósito antes de retirarlo: [/guias/antes-de-retirar-rollover-kyc/](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/).
 
@@ -798,7 +840,7 @@ Las citas entre comillas van tal cual las publica Cloudbet (en inglés y con pun
 
 ## 7. ¿Bono de bienvenida y «giros gratis»?
 
-La ayuda del Welcome Package (revisada 22 oct 2026) describe un paquete de hasta 2.500 USD en 30 días: en casino, rakeback y «cash drops» diarios; en deportes, un «cash drop» por semana. Los términos (§8.4) precisan que el rakeback es el 10 % de la ventaja de la casa de cada apuesta de casino elegible, no el 10 % de lo apostado, y que los 30 días empiezan con tu primera apuesta después del primer depósito. En ese artículo no aparecen giros gratis. Rakeback no es un match de depósito: la diferencia está en [/guias/cashback-rakeback-lossback/](https://www.planetaruleta.com/guias/cashback-rakeback-lossback/). Lo que dicen los términos del paquete, en la [ficha de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/).
+La ayuda del Welcome Package (revisada 22 oct 2026) describe un paquete de hasta 2.500 USD en 30 días: en casino, rakeback y «cash drops» diarios; en deportes, un «cash drop» por semana. Los términos (§8.4) precisan que el rakeback es el 10 % de la ventaja de la casa de cada apuesta de casino elegible, no el 10 % de lo apostado, y que los 30 días empiezan con tu primera apuesta después del primer depósito. En ese artículo no aparecen giros gratis. Rakeback no es un match de depósito: la diferencia está en [qué es el rakeback](https://www.planetaruleta.com/guias/cashback-rakeback-lossback/). Lo que dicen los términos del paquete, en la [ficha de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/).
 
 ## 8. Qué revisar antes de abrir una cuenta
 
@@ -922,7 +964,7 @@ Las autoridades describen lo mismo (OFICIAL):
 - La **CFTC** dice que un link en un email puede llevarte a un sitio «look-alike» o falsificado, armado para quedarse con tu dinero o tus datos. Si recibes un aviso sobre tu cuenta, busca tú el sitio de tu proveedor y contacta a su soporte.
 - **Stake**, en su propia ayuda (fechada el 24 sep 2026), avisa que hay estafadores que crean copias falsas de su sitio para robar datos de acceso, y pide revisar la dirección antes de iniciar sesión.
 
-**Ojo con las direcciones oficiales alternativas.** Una sala puede tener más de una dirección oficial. Por eso, «otra terminación» o una palabra pegada al nombre no prueban por sí solas que un sitio sea falso: compara la dirección con la lista que publica la propia sala. Por ejemplo, Rainbet enlaza una lista de «Official Sites» desde el pie de su web (revisada el 30 oct 2026). Abre esa lista desde tu favorito, nunca desde un link que te mandaron.
+**Ojo con las direcciones oficiales alternativas.** Una sala puede tener más de una dirección oficial. Por eso, «otra terminación» o una palabra pegada al nombre no prueban por sí solas que un sitio sea falso: compara la dirección con la lista que publica la propia sala. Por ejemplo, Rainbet enlaza una lista de «Official Sites» desde el pie de su web (revisada el 30 oct 2026). Abre esa lista desde tu favorito, nunca desde un link que te mandaron. Un ejemplo con una sala de la mesa: [Rainbet: sitios oficiales y copias](https://www.planetaruleta.com/guias/rainbet-que-se-puede-verificar/).
 
 ## 5. Cómo revisarlo antes de iniciar sesión o pagar
 
@@ -1651,3 +1693,108 @@ La ayuda de Stake Perú del 28 sep 2026 dice que desde el 1 oct 2026 funciona en
 Los términos cambian: revisa la versión vigente en el sitio que aplica donde vives. No garantizamos resultados. Si se te va de las manos, busca ayuda de juego responsable donde estés. +18.
 
 URL: https://www.planetaruleta.com/guias/stake-por-pais/
+
+Guía · +18 · alfabetización
+
+# Rainbet: qué se puede verificar sobre su empresa, licencia, retiros y sitios oficiales, y qué no
+
+revisado 10 nov 2026 — lecturas de términos, validador del sello, página de registro, ayuda y pie del sitio.
+
+Si buscas si «Rainbet es confiable», esta guía no responde con un sí ni con un no. Junta lo que Rainbet publica sobre su empresa, su licencia y sus retiros, lo que aparece en páginas de terceros que pudimos leer, y lo que no pudimos confirmar. Es alfabetización para mayores de 18, no una recomendación de sala, no un puntaje y no una conclusión sobre si es legal apostar donde vives. OFICIAL identifica la publicación de una fuente nombrada, no una garantía nuestra; EDITORIAL es nuestra lectura. Cuando falta evidencia, lo decimos.
+
+## Lo corto
+
+- **Según sus términos (leídos el 10 nov 2026),** el servicio es propiedad de Rain Group Ltd, una sociedad registrada en Anjouan con número de registro de empresa 16077, y el texto afirma que está licenciada en Anjouan para juegos de azar en línea. Es lo que declara el operador, no una confirmación nuestra. El JSON-LD de su página de inicio nombra además a RBGAMING N.V.; no tenemos evidencia que aclare la relación entre ambas entidades.
+- **Licencia, como observación del registro:** en el registro de anjouangaming.com (revisado 10 nov 2026) figura Rain Group Ltd, número ALSI-152406029-FI2, asociado a rainbet.com, con estado «valid» y vencimiento 13 jun 2027. Esta observación del registro no confirma su validez jurídica ni supone una licencia de Argentina ni de otro país de LatAm.
+- **16077 es el número de registro de la empresa, no el número de licencia.** El número de licencia que publican el validador del sello y esa página de registro es ALSI-152406029-FI2.
+- **Sobre retiros y KYC, los términos fijan** un mínimo de 15 USD (o equivalente), la ausencia de comisión de retiro si el depósito se apuesta al menos una vez (el doble si hay una promo), un «1x wager lock» en depósitos cripto, y verificaciones de identidad que pueden pedirse antes de un retiro o en cualquier momento. El plazo de «5–15 minutos» de su ayuda no es un plazo garantizado: el mismo pasaje admite revisiones de seguridad.
+- **Usa solo los sitios que figuren en la lista de direcciones oficiales del pie del propio sitio de Rainbet, partiendo de un favorito que hayas guardado.** Un final distinto o una palabra de más no basta, por sí solo, para probar que una dirección es una copia.
+
+## 1. Qué publica Rainbet sobre sí misma (OFICIAL, términos)
+
+**OFICIAL — términos de Rainbet, leídos el 10 nov 2026.** El preámbulo identifica al titular y declara una licencia en Anjouan. Conservamos la grafía y los errores tipográficos del original en la cita en inglés.
+
+> The Service is owned by Rain Group Ltd, a limited liability company registered in Anjouan with company registration number 16077, with registered address atHamchako, Mustamudu, Antonomous Island of Anjouan Union of Comoros, licensed in Anjouan for the provision of online games of chance.
+
+**Traducción editorial — no oficial:** el Servicio es propiedad de Rain Group Ltd, una sociedad de responsabilidad limitada registrada en Anjouan con número de registro de empresa 16077, con domicilio en Hamchako, Mustamudu, isla autónoma de Anjouan, Unión de las Comoras, licenciada en Anjouan para la prestación de juegos de azar en línea.
+
+Ese 16077 es, según el mismo párrafo, el número de registro de la empresa. No es el número de licencia.
+
+**OFICIAL — JSON-LD de la página de inicio, leído el 10 nov 2026:** el campo `legalName` nombra a **RBGAMING N.V.**, y el texto estructurado dice que Rainbet opera como marca de esa entidad bajo una licencia de Anjouan. Los términos nombran a Rain Group Ltd. Las dos menciones están publicadas en páginas de Rainbet. **No tenemos evidencia que aclare la relación entre ambas entidades y no resolvemos una sola razón social.**
+
+La [ficha de Rainbet](https://www.planetaruleta.com/mesa/rainbet/) reúne la fila de la mesa. Esta guía entra en lo que cada afirmación prueba y lo que no.
+
+## 2. La licencia: qué se puede verificar y qué no
+
+### 2.1 El validador del sello
+
+**OFICIAL — página de validación del sello de Anjouan, leída el 10 nov 2026.** Muestra «Rain Group Ltd», el sitio registrado rainbet.com, «Operating status: VALID» y «License No. ALSI-152406029-FI2, issued by the Offshore Finance Authority of the State of Anjouan». Arriba, la misma página muestra el aviso «This seal validation page has expired since it was generated on: Jun 11, 2025» y, en la línea siguiente, dice que ese mensaje puede deberse a un intento de validación desde una página cargada hace más de 20 minutos.
+
+Citamos «VALID» solo junto con ese aviso de caducidad de la página de validación. **No leemos «VALID» como una confirmación nuestra de que la licencia está vigente**, ni el aviso de junio de 2025 como una prueba de que la licencia haya vencido. Son textos de esa página, no un veredicto nuestro. El vencimiento que aparece en la página de registro (apartado 2.2) es un dato distinto; no los mezclamos.
+
+### 2.2 La página de registro
+
+**OFICIAL — observación de una página de registro en anjouangaming.com, leída el 10 nov 2026.** En el registro embebido figura Rain Group Ltd, estado «valid», número ALSI-152406029-FI2, tipo b2c, emisión 14 jun 2024, vencimiento 13 jun 2027, dominio asociado rainbet.com. El estado se cita en minúsculas, tal como aparece ahí.
+
+**EDITORIAL:** pudimos comprobar que esa fila está publicada en esa página. Esta observación del registro no confirma la validez jurídica de la licencia: muestra lo que esa página publica, no un dictamen nuestro ni de una autoridad de tu país.
+
+### 2.3 Qué significaría, y qué no, una licencia de Anjouan
+
+**EDITORIAL.** Aunque se confirmara su validez jurídica, una licencia de Anjouan no es una licencia del registro de tu país. No es un permiso local, no dice si apostar en línea es legal donde vives y no acredita retiros, saldos ni seguridad de una cuenta. Esta guía no concluye sobre la legalidad en un país concreto.
+
+## 3. Retiros y KYC según sus términos (OFICIAL)
+
+**OFICIAL — términos de Rainbet, §8 y §20.1, leídos el 10 nov 2026.** Condiciones contractuales descritas, no una recomendación de apostar para desbloquear fondos ni un plazo que te podamos garantizar.
+
+- **§8.1.** El retiro mínimo por operación es de 15 USD (o el equivalente en otra moneda), salvo cierre de cuenta, en cuyo caso el texto permite retirar el saldo completo.
+- **§8.2.** No hay comisiones de retiro si se apuesta (rollover) el depósito al menos una vez. Si se opta por una de las promociones, el texto exige apostar el doble de esa cantidad habitual.
+- **§8.3.** Se reservan pedir documento de identidad, confirmación de domicilio u otros procedimientos (selfie, llamada de verificación, etc.) antes de conceder un retiro, y también en cualquier momento de la relación.
+- **§8.4.** Los retiros deben ir al mismo método con el que se depositó, salvo que, a su criterio y con comprobaciones adicionales, acepten otro.
+- **§8.7.** Todos los depósitos cripto quedan sujetos a un «1x wager lock».
+- **§20.1 (KYC).** Pueden pedir documentación para determinar identidad y ubicación en cualquier momento. Si la verificación de identidad no se completa en 72 horas, se reservan restringir el servicio, los pagos, los retiros y el acceso a fondos. El análisis puede tardar hasta 7 días hábiles. El texto lista, entre los documentos a cargar, una identificación oficial con foto, una selfie con ese documento y un extracto bancario o factura de servicios. Con estado «Temporarily Approved», el tope de depósito agregado es de 500 EUR y no se pueden completar retiros. El mismo apartado dice que no superar la verificación de identidad conlleva la confiscación de los fondos, y que no superar el proceso KYC o presentar documentos falsificados conlleva el cierre permanente de la cuenta y la pérdida de todos los fondos.
+
+**OFICIAL — ayuda «How much time does it take for a withdrawal?», 25 may 2026, leída el 10 nov 2026.** El artículo dice: «Our team typically processes all transactions within 5–15 minutes. While certain withdrawals may occasionally undergo a standard security review, rest assured that these are handled promptly and will still be completed within moments.» En cripto, añade que la confirmación en red puede tardar de 5 a 45 minutos, según la red y la comisión. **Ese «typically» no es un plazo garantizado:** el mismo pasaje admite revisiones de seguridad. La homepage repite la franja de 5 a 15 minutos; no la usamos como un compromiso más firme que el de la ayuda.
+
+Si un retiro queda parado, el detalle de estados y de rollover está en [retiro pendiente o en revisión](https://www.planetaruleta.com/guias/retiro-pendiente-en-revision/) y en [antes de retirar: rollover y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/).
+
+## 4. Sitios oficiales y copias
+
+**OFICIAL — pie de la página de inicio de Rainbet, leído el 10 nov 2026.** El pie incluye un enlace «Official Sites» que lleva a una lista de direcciones oficiales. **No reproducimos esa lista ni enlazamos esa página.** El modo de usarla es partir de un favorito que hayas guardado tú y comprobar que la dirección en la que estás figura en esa lista.
+
+**EDITORIAL.** Un final distinto o una palabra de más no basta, por sí solo, para probar que una dirección es una copia. El patrón y cómo revisarlo están en [depositar para retirar: bono falso y clones](https://www.planetaruleta.com/guias/pagar-para-retirar-bono-falso/). El 1 nov 2026 publicamos una señal sobre [las dos copias falsas del 1 nov](https://www.planetaruleta.com/senales/#copias-falsas-rainbet-2026-11-01). Esta guía no vuelve a afirmar ni nombra aquí ningún dominio de esas copias.
+
+## 5. Qué no usamos y por qué
+
+**EDITORIAL.** No citamos índices, notas ni recuentos de reseñas de sitios de opiniones ni de comunidades. Un número de un tercero se leería como si fuera nuestra nota. Esta página no puntúa a Rainbet y no hereda el puntaje de nadie. Tampoco usamos autodescripciones de marketing —«legítimo», «el más seguro», «el más rápido»— como si fueran hechos verificados.
+
+## 6. Antes de depositar
+
+**EDITORIAL — juego responsable.** Esta guía no te dice que abras una cuenta ni que evites una sala. Si decides jugar, define un límite de tiempo y de dinero antes de empezar y detente al alcanzarlo. No persigas un retiro ni una pérdida con otro depósito.
+
+Esta guía no califica a ninguna sala: junta lo que se puede revisar y lo que no, con fecha. No garantizamos resultados. Si se te va de las manos, busca ayuda de juego responsable donde estés. +18.
+
+## 7. Preguntas frecuentes
+
+### ¿Quién es el dueño de Rainbet?
+
+Según los términos de Rainbet, leídos el 10 nov 2026, el servicio es propiedad de Rain Group Ltd, registrada en Anjouan con número de empresa 16077. El JSON-LD de la página de inicio, leído el mismo día, nombra a RBGAMING N.V. como razón social. Las dos menciones están publicadas en páginas de Rainbet; no tenemos evidencia que aclare la relación entre ambas entidades.
+
+### ¿Rainbet tiene licencia?
+
+Rainbet declara, en sus términos, estar licenciada en Anjouan para juegos de azar en línea. En el registro de anjouangaming.com (revisado 10 nov 2026) figura Rain Group Ltd, número ALSI-152406029-FI2, asociado a rainbet.com, con estado «valid» y vencimiento 13 jun 2027. Esta observación del registro no confirma su validez jurídica ni supone una licencia de Argentina ni de otro país de LatAm. Esta respuesta no es un sí ni un no.
+
+### ¿16077 es el número de licencia?
+
+No. Según los términos de Rainbet, 16077 es el número de registro de la empresa. El número de licencia que publican el validador del sello y la página de registro es ALSI-152406029-FI2.
+
+### ¿Cuánto tarda un retiro en Rainbet?
+
+La ayuda de Rainbet del 25 may 2026, leída el 10 nov 2026, dice que el equipo suele procesar las transacciones en 5–15 minutos, y en el mismo pasaje advierte que algunos retiros pueden pasar por una revisión de seguridad. En cripto, la confirmación en red puede tardar de 5 a 45 minutos. No es un plazo garantizado. Los términos, además, permiten pedir verificación de identidad antes de un retiro y describen un estado «Temporarily Approved» en el que no se pueden completar retiros.
+
+### ¿Cómo sé si estoy en el sitio oficial?
+
+Parte de un favorito que hayas guardado y comprueba que la dirección figure en la lista de sitios oficiales que el propio pie de Rainbet enlaza como «Official Sites». Esta guía no publica esa lista. Un final distinto o una palabra de más no basta, por sí solo, para probar que una dirección es una copia.
+
+Esta guía no califica a ninguna sala: junta lo que se puede revisar y lo que no, con fecha. No garantizamos resultados. Si se te va de las manos, busca ayuda de juego responsable donde estés. +18.
+
+URL: https://www.planetaruleta.com/guias/rainbet-que-se-puede-verificar/
