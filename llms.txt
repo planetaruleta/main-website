@@ -19,7 +19,7 @@ El texto de las guías, sin el menú del sitio, está en [llms-full.txt](https:/
 - [Guías de alfabetización](https://www.planetaruleta.com/guias/): Índice de las guías de mecánicas de casino. No inventa porcentajes de operador y no abre un depósito.
 - [RTP y volatilidad en slots](https://www.planetaruleta.com/guias/rtp-volatilidad/): Qué es el RTP y la volatilidad de un slot, y por qué ninguno dice que el juego está por pagar.
 - [Max bet y contribución al rollover](https://www.planetaruleta.com/guias/max-bet-contribucion-bono/): Tope de apuesta bajo un bono y qué porcentaje de cada juego cuenta para el rollover. El número lo fijan los términos y condiciones.
-- [Cashback, rakeback y lossback](https://www.planetaruleta.com/guias/cashback-rakeback-lossback/): Tres devoluciones con bases de cálculo distintas. El porcentaje, y si vuelve en cash o en bono, está en los términos y condiciones.
+- [Cashback, rakeback y lossback](https://www.planetaruleta.com/guias/cashback-rakeback-lossback/): Qué es el rakeback, en qué se diferencia del cashback y el lossback, y qué publica cada sala. El porcentaje, cuando la sala lo publica, está en sus términos o en su ayuda.
 - [Cómo leer una promo de casino](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/): Método para leer opt-in, ventana, juegos excluidos y zona horaria en los términos, no el calendario de una promo vigente.
 - [USDT vs BTC para un depósito crypto](https://www.planetaruleta.com/guias/usdt-vs-btc-bankroll/): Custodia, comisiones, velocidad y volatilidad del activo al elegir USDT o BTC. No es consejo financiero.
 - [Antes de retirar: rollover del depósito y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/): Qué dicen las páginas de Rainbet, Shuffle, Cloudbet, Stake, Roobet y Duelbits sobre apostar el depósito y verificar la identidad antes de retirar. En Duelbits, resumimos su centro de ayuda.
@@ -31,6 +31,7 @@ El texto de las guías, sin el menú del sitio, está en [llms-full.txt](https:/
 - [Retiro pendiente o en revisión](https://www.planetaruleta.com/guias/retiro-pendiente-en-revision/): Qué significa un retiro pendiente, en proceso o en revisión, cuánto dicen tardar las salas, qué es normal, qué es señal de alerta y qué guardar. +18.
 - [Retiros con métodos locales](https://www.planetaruleta.com/guias/retiros-metodos-locales/): Retiro en Stake Colombia y Perú: Efecty, Nequi, Bre-B, Yape/Plin, mínimos, topes por día y plazos según su ayuda, y qué frena un retiro. +18.
 - [Stake por país](https://www.planetaruleta.com/guias/stake-por-pais/): Qué dicen los términos de Stake.com y de sus sitios locales, y qué publican los reguladores de cada país.
+- [Rainbet: qué se puede verificar y qué no](https://www.planetaruleta.com/guias/rainbet-que-se-puede-verificar/): Qué publica Rainbet sobre su empresa, su licencia, sus retiros y sus sitios oficiales, y qué no. Sin veredicto. +18.
 
 ## Mesa
 

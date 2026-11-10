@@ -36,19 +36,19 @@ ROWS = [
         "Tipo de bono real",
         [
             "Welcome: x40 sobre depósito+bono, o camino sin ese rollover. Race, torneo y RakeBoosts son señales, no este chip. (ver aviso: la ayuda muestra un solo camino)",
-            "Rakeback 5% del house edge (Bronze), cash, casino. Level Up es señal aparte (aprox). FTD: bases no publicadas.",
-            "Rakeback 3.5% del house edge (welcome), vía código. No es un match con WR fijo.",
-            "≤$2.5k/30d · 10% RB. Tal cual la celda (04 NOV 2026). Sin WR en la celda.",
-            "Instant RB · +10% welcome 24h. Tal cual la celda (30 SEP 2026). Sin WR en la celda.",
-            "Rakeback: las cifras de la ayuda no cuadran (5% por ventana / máximo recurrente 25%). Bono de bienvenida en giros: fuente de terceros, no de primera mano · 24 OCT 2026. Sin requisito de apuesta en la celda.",
+            "Rakeback: una parte de la ventaja de la casa, en cash, en casino y no en sports. Se desbloquea al apostar 1.000 USD (Bronze). El porcentaje no se transcribe aquí. Level Up es señal aparte (aprox). FTD: bases no publicadas.",
+            "Rakeback: una parte de la ventaja de la casa, en cash, al llegar a Bronze tras apostar 10.000 USD. El porcentaje no se transcribe aquí. No es un match con WR fijo.",
+            "≤$2.5k/30d · rakeback: una parte de la ventaja de la casa en casino elegible, dentro del Welcome Package. El porcentaje no se transcribe aquí. Tal cual la celda (04 NOV 2026). Sin WR en la celda.",
+            "Instant RB: un porcentaje de lo apostado, cada 30 min, sin vencimiento. Tasa base no publicada en la página revisada. Boost de 24 h al registrarse; el porcentaje no se transcribe aquí. Tal cual la celda (30 SEP 2026). Sin WR en la celda.",
+            "Rakeback: las cifras de la ayuda no cuadran entre artículos. No elegimos una cifra. Bono de bienvenida en giros: fuente de terceros, no de primera mano · 24 OCT 2026. Sin requisito de apuesta en la celda.",
         ],
     ),
     (
         "Criptos / redes",
         [
             "FAQ 25 SEP 2026: BTC, ETH, LTC, XRP, SOL, TRX, BNB, USDT, USDC. Retiro AstroPay: AR, CL, CO, EC, MX, UY (ayuda 29 MAY 2026). Redes: no verificado · 03 OCT 2026.",
-            "Clase: crypto · fiat/cards · ARS (Mercado Pago, NaranjaX, transferencia; ayuda 14 OCT 2026). Lista y redes: no verificado · 03 OCT 2026. USDT solo en el ejemplo de rakeback.",
-            "Clase: crypto · fiat · Chile: Subtel ordenó bloquear stake.com (01 SEP 2026). Lista y redes: no verificado · 03 OCT 2026. BTC solo en el ejemplo de rakeback.",
+            "Clase: crypto · fiat/cards · ARS (Mercado Pago, NaranjaX, transferencia; ayuda 14 OCT 2026). Lista y redes: no verificado · 03 OCT 2026. USDT solo en un ejemplo de la ayuda de rakeback.",
+            "Clase: crypto · fiat · Chile: Subtel ordenó bloquear stake.com (01 SEP 2026). Lista y redes: no verificado · 03 OCT 2026. BTC solo en un ejemplo de la ayuda de rakeback.",
             "Clase: crypto · buy card (Swapped) · la ayuda lista métodos locales solo para comprar cripto vía Swapped (tercero): SPEI MX, PSE CO, Khipu/Webpay CL; AR y PE no figuran en esa tabla. Lista y redes: en la ayuda de Cloudbet · 04 NOV 2026.",
             "Clase: crypto · fiat+Swapped · AR: transferencia con DNI (ayuda 18 JUN 2025) · fiat: 1% por depósito (T&C 9.7). Lista y redes: no verificado · 03 OCT 2026.",
             "Clase: crypto · compra fiat vía tercero (PIX BR, tarjetas). Sin método fiat MX/AR; MXN/ARS/CLP solo como moneda de referencia. Retiros solo crypto. Redes: no verificado · 24 OCT 2026.",
@@ -79,7 +79,7 @@ ROWS = [
     (
         "Licencia",
         [
-            "Registro de anjouangaming.com: Rain Group Ltd, ALSI-152406029-FI2, estado «valid», vencimiento 13 jun 2027; revisado 8 nov 2026. Observación del registro, no confirmación de validez jurídica.",
+            "Registro de anjouangaming.com: Rain Group Ltd, ALSI-152406029-FI2, estado «valid», vencimiento 13 jun 2027; revisado 10 nov 2026. Observación del registro, no confirmación de validez jurídica.",
             "Curaçao Gaming Authority, OGL/2024/1337/0628, Natural Nine B.V. (160998). /info/license dice “Gaming Control Board”; Terms y el certificado CGA dicen “Gaming Authority”. Certificado Active.",
             "Curaçao-class por certificado CGA: OGL/2024/1451/0918, Active, otorgado 09/06/2025. Pie del sitio: Medium Rare N.V., sin número de licencia (31 OCT 2026).",
             "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. No es licencia de Argentina.",
@@ -524,12 +524,13 @@ FICHAS = {
             "Esta ficha no pone nota ni abre un depósito. Junta la fila, las señales y lo que sigue sin verificar.",
         ],
         "sheet": [
-            ("Empresa", "Los términos de rainbet.com (revisado 8 nov 2026) nombran a Rain Group Ltd, con registro de empresa 16077; el JSON-LD de su homepage (revisado 8 nov 2026) dice que RBGAMING N.V. opera Rainbet. No tenemos evidencia que aclare la relación entre ambas entidades."),
-            ("Licencia", "En el registro de anjouangaming.com (revisado 8 nov 2026) figura Rain Group Ltd, número ALSI-152406029-FI2, asociado a rainbet.com, con estado «valid» y vencimiento 13 jun 2027. Esta observación del registro no confirma su validez jurídica ni supone una licencia de Argentina."),
+            ("Empresa", "Los términos de rainbet.com (revisado 10 nov 2026) nombran a Rain Group Ltd, con registro de empresa 16077; el JSON-LD de su homepage (revisado 10 nov 2026) dice que RBGAMING N.V. opera Rainbet. No tenemos evidencia que aclare la relación entre ambas entidades."),
+            ("Licencia", "En el registro de anjouangaming.com (revisado 10 nov 2026) figura Rain Group Ltd, número ALSI-152406029-FI2, asociado a rainbet.com, con estado «valid» y vencimiento 13 jun 2027. Esta observación del registro no confirma su validez jurídica ni supone una licencia de Argentina."),
             ("Monedas", "FAQ de rainbet.com, 25 SEP 2026: BTC, ETH, LTC, XRP, SOL, TRX, BNB, USDT y USDC. Redes: no verificado · 03 OCT 2026."),
             ("Idiomas", "JSON-LD knowsLanguage: en, ar, es, fr, ja, pt, ru, tr, zh (homepage, 03 OCT 2026)."),
             ("Última revisión", "Fila de la mesa: 25 SEP 2026. RakeBoosts: 05 OCT 2026. Señales de lobby: Daily Race 03 OCT 2026, Daily Race 26 SEP 2026 y torneo Gates of Olympus 30 SEP 2026. Brewers–Rays: 22 OCT 2026. Huecos marcados al armar la ficha: 03 OCT 2026."),
         ],
+        "licencia_note_html": '<p>Qué se puede verificar y qué no: <a href="/guias/rainbet-que-se-puede-verificar/">Rainbet, licencia y sitios oficiales</a>.</p>',
         "fuentes": [
             ("rainbet.com", "https://rainbet.com/"),
             ("Rewards overview", "https://help.rainbet.com/en/articles/9171035-rewards-overview"),
@@ -552,7 +553,7 @@ FICHAS = {
         "bono": [
             "El chip de la fila es el welcome, no el race ni los RakeBoosts. Camino A: 40x sobre depósito+bono (100% / 50% / 100% + 20 tiradas, mínimo 30 USD, máximo 700 USD por tramo, apuesta máxima 2% del depósito según T&C (la ayuda dice 1%), slots con RTP mayor a 97,4% fuera). Camino B: sin ese rollover; se desbloquea al jugar. Hay que optar en promotions antes de depositar. Fuente: homepage, 25 SEP 2026.",
             "El Daily Race del 03 OCT (ventana distinta del 26 SEP) y el torneo Gates of Olympus 2500 del 30 SEP son señales de lobby, con ventana publicada. No reemplazan el chip.",
-            "RakeBoosts (help Rewards overview, revisado 5 oct 2026; el artículo figura actualizado el 27 may 2026): Daily Reload +15% por 60 min; Daily Bonus, Weekly Bonus y Monthly Bonus +10% por 60 min cada uno; Affiliate Code Redemption +20% por 72 h; New Signup Bonus +15% por 24 h. No se suman ni se encolan: solo aplica el porcentaje más alto. El rakeback se reclama cada 15 min sobre el total apostado. El Daily Reload se puede reclamar 3 veces por día (cada 8 h) y vence si no se reclama dentro de 24 h. Un reward sin reclamar vence cuando se desbloquea el siguiente. Es un boost al rakeback, no un porcentaje del depósito. Ese artículo no publica la tasa base de rakeback ni cómo se calcula el boost: no hay conversión a dólares. No reemplaza el chip de welcome.",
+            "RakeBoosts (help Rewards overview, revisado 5 oct 2026; el artículo figura actualizado el 27 may 2026): boosts de duración limitada sobre el rakeback. No se suman ni se encolan: solo aplica el más alto. El porcentaje de cada boost no se transcribe aquí. El rakeback se reclama cada 15 min sobre el total apostado. El Daily Reload se puede reclamar 3 veces por día (cada 8 h) y vence si no se reclama dentro de 24 h. Un reward sin reclamar vence cuando se desbloquea el siguiente. Es un boost al rakeback, no un porcentaje del depósito. Ese artículo no publica la tasa base de rakeback ni cómo se calcula el boost: no hay conversión a dólares. No reemplaza el chip de welcome.",
             "Brewers–Rays (página de la promo, captura 22 OCT 2026): si los Brewers ganan la serie en 5 juegos o menos, la ganancia extra se acredita como apuesta gratis (free bet), no en efectivo. Máximo 500 USD, cupón mínimo 5 USD, solo el mercado de la serie, sin combinadas. Cierra el sáb 31 OCT 2026 a las 17:00 hora Guatemala. No reemplaza el chip de welcome.",
             ],
         "kyc": "KYC declarado: documento de identidad, selfie y prueba de domicilio. Sumsub está nombrado en el AML, no en Terms §20. Terms §20: pueden restringir la cuenta si el ID no se completa en 72 horas; la verificación puede tardar hasta 7 días hábiles; el equipo de KYC habla de 24 horas una vez Temporarily Approved. Fuente: Terms y AML, revisión de mesa 25 SEP 2026 / rechequeo 03 OCT 2026.",
@@ -604,7 +605,7 @@ FICHAS = {
         "faqs": [
             (
                 "¿Rainbet tiene licencia de Argentina?",
-                "No. En el registro de anjouangaming.com (revisado 8 nov 2026) figura Rain Group Ltd, número ALSI-152406029-FI2, asociado a rainbet.com, con estado «valid» y vencimiento 13 jun 2027. Esta observación del registro no confirma su validez jurídica ni supone una licencia de Argentina. Los términos de rainbet.com (revisado 8 nov 2026) nombran a Rain Group Ltd, con registro de empresa 16077; el JSON-LD de su homepage (revisado 8 nov 2026) dice que RBGAMING N.V. opera Rainbet. No tenemos evidencia que aclare la relación entre ambas entidades.",
+                "No. En el registro de anjouangaming.com (revisado 10 nov 2026) figura Rain Group Ltd, número ALSI-152406029-FI2, asociado a rainbet.com, con estado «valid» y vencimiento 13 jun 2027. Esta observación del registro no confirma su validez jurídica ni supone una licencia de Argentina. Los términos de rainbet.com (revisado 10 nov 2026) nombran a Rain Group Ltd, con registro de empresa 16077; el JSON-LD de su homepage (revisado 10 nov 2026) dice que RBGAMING N.V. opera Rainbet. No tenemos evidencia que aclare la relación entre ambas entidades.",
             ),
             (
                 "¿El bono de la ficha es el Daily Race, el torneo o los RakeBoosts?",
@@ -624,7 +625,7 @@ FICHAS = {
         "name": "Shuffle",
         "h1": "Shuffle: ficha de la mesa",
         "title": "Shuffle: licencia, KYC y rakeback — ficha | Planeta Ruleta",
-        "description": "Rakeback 5% del house edge (Bronze) y licencia Curaçao OGL/2024/1337/0628. KYC antes del primer retiro. Sin puntaje. Offshore no es licencia de Argentina. +18.",
+        "description": "Rakeback de casino (parte de la ventaja de la casa, Bronze, en cash) y licencia Curaçao OGL/2024/1337/0628. KYC antes del primer retiro. Sin puntaje. Offshore no es licencia de Argentina. +18.",
         "modified": "2026-11-04",
         "lede": [
             "Shuffle está en la mesa como operador crypto/offshore, con licencia de Curaçao publicada a nombre de Natural Nine B.V.",
@@ -633,7 +634,7 @@ FICHAS = {
         "sheet": [
             ("Empresa", "Natural Nine B.V. (160998), Korporaalweg 10, Willemstad. Declarado en /info/license, Terms y homepage."),
             ("Licencia", "Curaçao Gaming Authority, OGL/2024/1337/0628, Natural Nine B.V. (160998). /info/license dice “Gaming Control Board”; Terms y el certificado CGA dicen “Gaming Authority”. Certificado Active. No es licencia de Argentina."),
-            ("Monedas", "La celda de métodos es la clase: crypto · fiat/cards. No hay catálogo de monedas ni de redes en la mesa. USDT aparece en el ejemplo de rakeback (1000 USDT), no como lista. Catálogo: no verificado · 03 OCT 2026."),
+            ("Monedas", "La celda de métodos es la clase: crypto · fiat/cards. No hay catálogo de monedas ni de redes en la mesa. USDT aparece en un ejemplo de la ayuda de rakeback, no como lista. Catálogo: no verificado · 03 OCT 2026."),
             ("Idiomas", "no verificado · 03 OCT 2026. Esta ficha está en español de Latinoamérica; eso no dice qué idiomas publica el operador."),
             ("Última revisión", "Rakeback re-verificado 28 SEP 2026. Level Up: 02 OCT 2026. KYC: 25 SEP 2026. MXN por SPEI: 22 OCT 2026. Huecos marcados al armar la ficha: 03 OCT 2026."),
         ],
@@ -658,11 +659,11 @@ FICHAS = {
             "La homepage declara depósitos fiat con tarjeta, Apple Pay y Google Pay, vía socios de pago, más la clase crypto. Los Terms hablan de retiros fiat. La celda de la mesa no lista monedas.",
             "Pesos (ARS): según el artículo de ayuda de Shuffle sobre Mercado Pago, NaranjaX y transferencia (actualizado el 14 OCT 2026, revisado el 15 OCT 2026), depositas en ARS por transferencia inmediata, Mercado Pago o NaranjaX al CBU/CVU o alias que te muestran en cada depósito, y retiras solo por transferencia a un CBU o CVU de 22 dígitos (sin alias) a tu nombre, con el mismo CUIT/CUIL de tu cuenta. Mínimo 7.500 ARS y máximo 7.500.000 ARS por operación, en los dos sentidos. Según ese artículo, Shuffle no cobra comisión por depositar ni retirar en ARS. Antes de cobrar te piden un documento con foto. «Casi instantáneo» es lo que dice la ayuda, no un plazo. Que acepte pesos no cambia la licencia: sigue siendo Curaçao, no una licencia de Argentina. Otros países: en la ayuda de Shuffle no encontramos artículos de moneda local para Chile, Colombia o Perú (búsqueda del 15 OCT 2026); Brasil tiene uno propio (BRL con PIX). Pagar en moneda local no es una licencia local. Fuente: oficial (ayuda de Shuffle).",
             "Pesos mexicanos (MXN), ayuda de Shuffle sobre pesos mexicanos (MXN), artículo 17684669, captura 22 OCT 2026. Depósitos por SPEI y retiros por transferencia bancaria (CLABE): mínimo 90 MXN y máximo 20 mil MXN por transacción, sin comisión de Shuffle, disponible 24/7. Para retirar hace falta la verificación de nivel 2, con identificación con foto válida, y la CLABE a nombre del titular de la cuenta. El depósito también tiene que salir de una cuenta a ese mismo nombre. Según Shuffle, el retiro aprobado llega «en pocos minutos»; no lo comprobamos. La búsqueda del 15 OCT 2026 no encontró este artículo. Que acepte MXN no cambia la licencia: sigue siendo Curaçao, no una licencia de México. No reemplaza el chip de rakeback.",
-            "USDT está en el ejemplo de rakeback del help (1000 USDT a 2% de house edge → 1 USDT). Eso no es un catálogo de redes.",
+            "USDT aparece en un ejemplo de la ayuda de rakeback. Eso no es un catálogo de redes.",
             "Antes de retirar hay que apostar 1x el depósito (help de coin-mixing, 28 jul 2026). No hay horas de pago: el retiro de la mesa sigue en sin dato. Que el pago en pesos pase por CBU/CVU no lo convierte en un casino regulado en Argentina.",
         ],
         "bono": [
-            "Chip de la fila: rakeback de casino = 5% del house edge, en cash, no en sports, y no es un match de depósito. Ejemplo declarado: apostar 1000 USDT en un juego con 2% de house edge devuelve 1 USDT, se gane o se pierda. Se desbloquea al apostar 1.000 USD en total (Bronze) y se reclama en la página VIP. Help del 21 oct 2024, re-verificado 28 SEP 2026.",
+            "Chip de la fila: rakeback de casino, una parte de la ventaja de la casa, en cash, no en sports, y no es un match de depósito. Se desbloquea al apostar 1.000 USD en total (Bronze) y se reclama en la página VIP. El porcentaje que publica la ayuda no se transcribe aquí. Help del 21 oct 2024, re-verificado 28 SEP 2026.",
             "Las bases de un FTD con rollover no están publicadas. No inventamos un Nx.",
             "Level Up (02 OCT 2026) es otra señal: al subir de rango se abren Rank Up, Level Up Reload y Recent Play. Los montos del escalón “1” están publicados como aproximados (Silver ≈ 25 USD, Gold ≈ 210 USD, y el resto en la señal). No reemplaza el chip. La promo figura desde el 1 nov 2024 hasta el 2 nov 2026.",
             ],
@@ -681,13 +682,13 @@ FICHAS = {
                 "date": "2026-10-02",
                 "when": "02 OCT 2026 · Bono",
                 "title": "Level Up ≠ solo rakeback — paquete aprox",
-                "line": "Help y promo oficiales. Números aproximados en el escalón 1. No es el rakeback 5% HE. Peter QC PASS 02 OCT 2026.",
+                "line": "Help y promo oficiales. Números aproximados en el escalón 1. No es el rakeback de casino (Bronze). Peter QC PASS 02 OCT 2026.",
             },
             {
                 "id": "bono-shuffle-rakeback-5pct-he-2026-09-25",
                 "date": "2026-09-28",
                 "when": "28 SEP 2026 · Bono",
-                "title": "Rakeback ≠ match: 5% del house edge (Bronze)",
+                "title": "Rakeback ≠ match: parte de la ventaja de la casa (Bronze)",
                 "line": "Este es el chip de la fila. Cash, casino, no sports. FTD sin bases publicadas.",
             },
             {
@@ -701,11 +702,11 @@ FICHAS = {
         "faqs": [
             (
                 "¿El rakeback de Shuffle es un bono de bienvenida con rollover?",
-                "No. El help, re-verificado el 28 SEP 2026, dice 5% del house edge en cash, en juegos de casino, no en sports, y no es un depósito match. Las bases de un FTD con rollover no están publicadas.",
+                "No. El help, re-verificado el 28 SEP 2026, dice que devuelve, en efectivo, una parte de la ventaja de la casa en juegos de casino, no en sports, y no es un depósito match. El porcentaje no se transcribe aquí. Las bases de un FTD con rollover no están publicadas.",
             ),
             (
                 "¿Level Up reemplaza al chip de la mesa?",
-                "No. El Level Up del 02 OCT 2026 es una señal aparte: Rank Up, Level Up Reload y Recent Play, con montos aproximados. El chip de la fila sigue siendo rakeback 5% HE (Bronze).",
+                "No. El Level Up del 02 OCT 2026 es una señal aparte: Rank Up, Level Up Reload y Recent Play, con montos aproximados. El chip de la fila sigue siendo el rakeback de casino (Bronze), en cash. El porcentaje no se transcribe aquí.",
             ),
             (
                 "¿Cuándo piden documento?",
@@ -754,11 +755,11 @@ FICHAS = {
         "plata": [
             "El help declara retiros crypto y reglas de apuesta para moneda local / FIAT. La celda de la mesa es crypto · fiat, sin lista de monedas.",
             "Moneda local, país por país (ayuda de Stake.com: artículos de depósito y de retiro con tarjeta, del 24 y el 22 AGO 2026, revisados el 15 OCT 2026). Chile: el 1 sep 2026, Subtel ordenó bloquear stake.com en Chile junto con otros 41 sitios (comunicado de Subtel, revisado 4 nov 2026). México, Colombia, Perú y Argentina: no encontramos un método de pago en moneda local en la ayuda (búsqueda del 15 OCT 2026), y los cuatro están entre las «Prohibited Jurisdictions» de los Terms de Stake.com (§14.3, revisado 30 oct 2026). La tabla de la ayuda de tarjetas lista monedas de la región: Costa Rica, Guatemala, Honduras, Jamaica, Nicaragua, Trinidad y Tobago, y dólares en Ecuador, Panamá, Paraguay, República Dominicana, El Salvador y Uruguay. Pagar en moneda local no es una licencia local. Fuente: oficial (ayuda y Terms de Stake.com).",
-            "BTC está en el ejemplo de rakeback (1 BTC apostado a 2% de house edge → 0,0007 BTC). Eso no es un catálogo de redes.",
+            "BTC aparece en un ejemplo de la ayuda de rakeback. Eso no es un catálogo de redes.",
             "Antes de retirar hay que apostar el 100% del depósito, en crypto y en moneda local (help del 24 ago 2026). En crypto no hay plazo en horas: montos grandes pueden ir a proceso manual y la red tiene sus confirmaciones. En moneda local, la ayuda habla de hasta 3 días hábiles para banco o tarjeta. El retiro de la mesa sigue en sin dato. Pagar en moneda local no es una licencia local.",
         ],
         "bono": [
-            "Chip de la fila: el welcome desbloquea rakeback Bronze, 3.5% del house edge, con un código. No es un match de depósito con rollover fijo. Ejemplo declarado: 1 BTC apostado a 2% de house edge → 0,0007 BTC de rakeback. Help actualizado el 24 ago 2026.",
+            "Chip de la fila: el welcome desbloquea rakeback al llegar al nivel Bronze del VIP Club, después de apostar un total de 10.000 USD. Es una devolución en efectivo de una parte de la ventaja de la casa. No es un match de depósito con rollover fijo. El porcentaje que publica la ayuda no se transcribe aquí. Se reclama en la página VIP. Help actualizado el 24 ago 2026.",
             "El rollover de un deposit-bonus “varía”. El help da un ejemplo de 30x y no fija un producto de match. No lo copiamos como chip.",
             "No hay señal de race ni de level-up de Stake en la mesa.",
         ],
@@ -769,14 +770,14 @@ FICHAS = {
                 "id": "bono-stake-rakeback-welcome-2026-09-25",
                 "date": "2026-09-25",
                 "when": "25 SEP 2026 · Bono",
-                "title": "Welcome ≠ match: rakeback 3.5% del house edge vía código",
+                "title": "Welcome ≠ match: rakeback al nivel Bronze, sin transcribir el porcentaje",
                 "line": "Help oficial, actualizado 24 ago 2026. Este es el chip de la fila. El ejemplo 30x de un deposit-bonus no es un SKU de welcome.",
             },
         ],
         "faqs": [
             (
                 "¿El welcome de Stake es un match de depósito?",
-                "No, en lo publicado en el help (24 ago 2026; mesa 25 SEP 2026). El welcome desbloquea rakeback Bronze: 3.5% del house edge, con un código. El rollover de un deposit-bonus varía; el help da un ejemplo 30x y no fija un match.",
+                "No, en lo publicado en el help (24 ago 2026; mesa 25 SEP 2026). El welcome desbloquea rakeback al nivel Bronze, después de apostar un total de 10.000 USD: una parte de la ventaja de la casa, en efectivo. El porcentaje no se transcribe aquí. El rollover de un deposit-bonus varía; el help da un ejemplo 30x y no fija un match.",
             ),
             (
                 "¿De dónde sale la licencia si el pie del sitio no la muestra?",
@@ -799,7 +800,7 @@ FICHAS = {
         "description": "Bono Cloudbet: hasta 2.500 USD en 30 días en rakeback y cash drops, no un match. Giros, retiro, tope de 2.200 USD sin nivel 2 y países. Sin puntaje. +18.",
         "modified": "2026-11-04",
         "lede": [
-            "Cloudbet está en la mesa como operador crypto/offshore. El help declara licencia de la Curaçao Gaming Authority y un paquete de hasta 2.500 USD en 30 días, con rakeback del 10% en casino.",
+            "Cloudbet está en la mesa como operador crypto/offshore. El help declara licencia de la Curaçao Gaming Authority y un paquete de hasta 2.500 USD en 30 días, con rakeback de una parte de la ventaja de la casa en casino. El porcentaje no se transcribe aquí.",
             "Esta ficha no pone nota ni abre un depósito. Los hechos salen de la versión /en del sitio, de sus términos y de su ayuda.",
         ],
         "sheet": [
@@ -845,7 +846,7 @@ FICHAS = {
             "El retiro de la fila sigue sin dato. El marketing de velocidad de retiro no entra como SLA. Pagar en moneda local no es una licencia local.",
         ],
         "bono": [
-            "Chip de la fila: paquete de bienvenida de hasta 2.500 USD en un programa de 30 días, y 10% del house edge en cada apuesta de casino elegible. Las apuestas de sports no suman rakeback. Terms §8.4, revisados 4 nov 2026.",
+            "Chip de la fila: paquete de bienvenida de hasta 2.500 USD en un programa de 30 días, y una parte de la ventaja de la casa en cada apuesta de casino elegible. El porcentaje no se transcribe aquí. Las apuestas de sports no suman rakeback. Terms §8.4, revisados 4 nov 2026.",
             "El período de 30 días empieza al hacer la primera apuesta después de ese depósito (§8.4.2), no desde la hora del depósito. No hay un Nx de rollover publicado para este paquete. No inventamos uno.",
             "Cómo se cobra (ayuda y términos §8.4.3, revisados 4 nov 2026). El paquete no se entrega de una vez: se va ganando mientras apuestas. En casino suma rakeback y un «cash drop» diario; en deportes, un «cash drop» por semana, que se desbloquea los viernes a las 00:00 UTC. Del rakeback y del cash drop diario, la mitad va directo a tu saldo y el resto pasa al «Rewards Calendar»: lo que se desbloquea ahí hay que reclamarlo dentro de las 24 horas o se pierde. El monto de cada cash drop lo fija Cloudbet a su criterio según tu actividad; sus términos no dan una fórmula. Al terminar llega el «Cash Vault», que según la ayuda es la recompensa más grande del paquete. El paquete termina a los 30 días o al llegar a 2.500 USD, lo que pase primero, y se calcula en USDT. Para cobrar el rakeback hace falta haber juntado al menos 1 USD.",
             "No es un bono de depósito. La ayuda de Cloudbet («Do you offer a first deposit bonus?», revisada 4 nov 2026) dice que no tiene un bono de depósito tradicional: el paquete se activa con el primer depósito, de cualquier monto, sin código. Rakeback no es un match: la diferencia está en la guía de cashback, rakeback y lossback.",
@@ -869,7 +870,7 @@ FICHAS = {
         "faqs": [
             (
                 "¿El bono de Cloudbet es un match con rollover?",
-                "No, en lo publicado en Terms §8.4 (revisados 4 nov 2026). Es un paquete de hasta 2.500 USD en 30 días y un rakeback del 10% del house edge en apuestas de casino elegibles. Ese artículo no publica un Nx. Los 30 días empiezan con la primera apuesta después del depósito.",
+                "No, en lo publicado en Terms §8.4 (revisados 4 nov 2026). Es un paquete de hasta 2.500 USD en 30 días y un rakeback de una parte de la ventaja de la casa en apuestas de casino elegibles. El porcentaje no se transcribe aquí. Ese artículo no publica un Nx. Los 30 días empiezan con la primera apuesta después del depósito.",
             ),
             (
                 "¿Las apuestas de sports suman rakeback?",
@@ -893,7 +894,7 @@ FICHAS = {
             ),
             (
                 "¿Cómo funciona el bono de bienvenida de Cloudbet?",
-                "Según su ayuda y sus términos (§8.4, revisados el 4 nov 2026), es un paquete de hasta 2.500 USD que se va ganando en 30 días: rakeback del 10 % del house edge y cash drops diarios en casino, y un cash drop semanal en deportes, más un «Cash Vault» al final. Se activa con el primer depósito, de cualquier monto. Parte de lo que ganas pasa a un calendario y hay que reclamarlo dentro de las 24 horas o se pierde. Su ayuda de seguimiento cuenta los 30 días desde el primer depósito; los términos, desde la primera apuesta después de ese depósito. +18.",
+                "Según su ayuda y sus términos (§8.4, revisados el 4 nov 2026), es un paquete de hasta 2.500 USD que se va ganando en 30 días: rakeback de una parte de la ventaja de la casa y cash drops diarios en casino, y un cash drop semanal en deportes, más un «Cash Vault» al final. El porcentaje de rakeback no se transcribe aquí. Se activa con el primer depósito, de cualquier monto. Parte de lo que ganas pasa a un calendario y hay que reclamarlo dentro de las 24 horas o se pierde. Su ayuda de seguimiento cuenta los 30 días desde el primer depósito; los términos, desde la primera apuesta después de ese depósito. +18.",
             ),
             (
                 "¿Cloudbet da giros gratis?",
@@ -937,10 +938,10 @@ FICHAS = {
         "name": "Roobet",
         "h1": "Roobet: ficha de la mesa",
         "title": "Roobet: licencia, KYC y rakeback — ficha | Planeta Ruleta",
-        "description": "Instant rakeback y +10% por 24 h al registrarse. Licencia de Curaçao según sus términos y su home, que también lista sportsbook. Sin puntaje. Offshore no es licencia de Argentina. +18.",
+        "description": "Instant rakeback, sin tasa base publicada en la página revisada, y un boost de 24 h al registrarse. Licencia de Curaçao según sus términos y su home, que también lista sportsbook. Sin puntaje. Offshore no es licencia de Argentina. +18.",
         "modified": "2026-11-04",
         "lede": [
-            "Roobet está en la mesa como operador crypto/offshore. El help declara instant rakeback y, al registrarse, un boost de +10% durante 24 horas.",
+            "Roobet está en la mesa como operador crypto/offshore. El help declara instant rakeback (un porcentaje de lo apostado; la tasa base no está publicada en esa página) y, al registrarse, un boost de 24 horas. El porcentaje del boost no se transcribe aquí.",
             "Esta ficha no pone nota ni abre un depósito. La licencia sale de sus términos (§1) y del pie de su home; el sportsbook, de su home (revisados 31 oct 2026). No tenemos captura del registro del regulador de Curaçao para ese número.",
         ],
         "sheet": [
@@ -968,7 +969,7 @@ FICHAS = {
             "El retiro de la fila sigue sin dato. Pagar en moneda local no es una licencia local.",
         ],
         "bono": [
-            "Chip de la fila: Instant rakeback, un porcentaje de lo apostado, reclamable cada 30 minutos y sin vencimiento. Al registrarse hay un boost de +10% durante 24 horas sobre ese rakeback. No es un match de depósito. El artículo no publica un Nx. Help de rewards, rechequeo 03 OCT 2026.",
+            "Chip de la fila: Instant rakeback, un porcentaje de lo apostado, reclamable cada 30 minutos y sin vencimiento. Al registrarse hay un boost de 24 horas sobre ese rakeback. El porcentaje no se transcribe aquí. No es un match de depósito. El artículo no publica un Nx. Help de rewards, rechequeo 03 OCT 2026.",
             "Heat Check (página de la promo, captura 22 OCT 2026) es una señal aparte: hasta 1.110 USD en free bets, no en efectivo, apuesta mínima 10 USD a cuota 1,70 o más. El encabezado dice 4 NOV y los términos dicen 3 NOV, sin zona horaria: verifica la fecha en los términos. No reemplaza el chip.",
         ],
         "kyc": "KYC declarado en Level 2 (help del 23 jul 2026): pasaporte, licencia de conducir o documento de gobierno, con captura de frente y dorso. Ese artículo no da un umbral. Cuándo lo exigen: no verificado · 03 OCT 2026. Fuente: help.roobet.com.",
@@ -984,8 +985,8 @@ FICHAS = {
         ],
         "faqs": [
             (
-                "¿El +10% de Roobet es un match de depósito?",
-                "No. El help de rewards lo publica como un boost de bienvenida de +10% durante 24 horas sobre el instant rakeback. El instant rakeback es un porcentaje de lo apostado, se reclama cada 30 minutos y no vence. Ese artículo no publica un Nx.",
+                "¿El boost de bienvenida de Roobet es un match de depósito?",
+                "No. El help de rewards lo publica como un boost de bienvenida de 24 horas sobre el instant rakeback. El porcentaje no se transcribe aquí. El instant rakeback es un porcentaje de lo apostado, se reclama cada 30 minutos y no vence. Ese artículo no publica un Nx.",
             ),
             (
                 "¿Roobet tiene sportsbook?",
@@ -1031,7 +1032,7 @@ FICHAS = {
             "Países aceptados, según el centro de ayuda (artículo 16451925, que toma la lista de los términos §3.2): México, Argentina, Colombia, Chile, Perú y Brasil. La lista de restringidos incluye España y Estados Unidos, y también Aruba, Australia, Bélgica, Bonaire, Cuba, Curaçao, Francia, Irán, Italia, Myanmar, Países Bajos, Corea del Norte, Portugal, Saba, Singapur, San Eustaquio (Statia), San Martín (St Martin), Sudán, Siria, Reino Unido, Yemen, y Crimea, Donetsk y Luhansk. Que acepte jugadores de México o Argentina no es una licencia local.",
         ],
         "bono": [
-            "Las cifras de rakeback del centro de ayuda no cuadran. La página «Fast Facts» (16780663) dice 5% en cada ventana (instantáneo, diario, semanal y mensual) y, a la vez, un máximo recurrente del 25%. Otro artículo (5351533) reparte las ventanas de otra forma. No elegimos una cifra. El programa VIP se llama Ace's Lounge. Revisado el 24 OCT 2026.",
+            "Las cifras de rakeback del centro de ayuda no cuadran entre artículos. No elegimos una cifra. El programa VIP se llama Ace's Lounge. Revisado el 24 OCT 2026.",
             "Una fuente de terceros (rollshark, términos de julio de 2026) describe un bono de bienvenida en giros, sin bono sobre el depósito. No lo leímos en Duelbits y no es el dato principal.",
         ],
         "kyc": "KYC: según el centro de ayuda (artículo 16335255, 24 OCT 2026), la verificación reforzada se hace en general al llegar a unos 2.000 EUR acumulados en depósitos o retiros, y Duelbits puede pedirla en cualquier momento. El centro de ayuda dice que el saldo se pierde tras 12 meses seguidos sin actividad (artículo 17027063) y que no ofrece límites de depósito (artículo 16758548). Sí ofrece autoexclusión por 1 semana, 1 mes, 6 meses o de forma permanente (Fast Facts, 16780663).",
@@ -1113,30 +1114,30 @@ INDEX_LINES = [
     (
         "shuffle",
         "Shuffle",
-        "5%",
+        "RB",
         "HE · Bronze · cash",
-        "Chip de rakeback 5% HE (Bronze). Level Up es otra señal, con números aproximados.",
+        "Chip de rakeback: parte de la ventaja de la casa (Bronze, cash). El porcentaje no se transcribe aquí. Level Up es otra señal, con números aproximados.",
     ),
     (
         "stake",
         "Stake",
-        "3.5%",
-        "HE · vía código",
-        "Welcome publicado como rakeback 3.5% HE. La licencia citada es el certificado CGA: el pie del sitio no muestra el número de licencia (revisado 31 oct 2026).",
+        "RB",
+        "Bronze · cash",
+        "Welcome publicado como rakeback al nivel Bronze (10.000 USD apostados). El porcentaje no se transcribe aquí. La licencia citada es el certificado CGA: el pie del sitio no muestra el número de licencia (revisado 31 oct 2026).",
     ),
     (
         "cloudbet",
         "Cloudbet",
         "$2.5k",
-        "30 días · 10% RB",
-        "Welcome de hasta 2.500 USD en 30 días y rakeback 10% del house edge en casino. Licencia CGA declarada en el help.",
+        "30 días · RB",
+        "Welcome de hasta 2.500 USD en 30 días y rakeback de una parte de la ventaja de la casa en casino. El porcentaje no se transcribe aquí. Licencia CGA declarada en el help.",
     ),
     (
         "roobet",
         "Roobet",
-        "+10%",
-        "instant RB · 24 h",
-        "Instant rakeback y un boost de +10% por 24 h al registrarse. Licencia de Curaçao y sportsbook según su home (revisada 31 oct 2026).",
+        "RB",
+        "instant · 24 h",
+        "Instant rakeback y un boost de 24 h al registrarse. El porcentaje no se transcribe aquí. Licencia de Curaçao y sportsbook según su home (revisada 31 oct 2026).",
     ),
     (
         "duelbits",
@@ -1201,7 +1202,7 @@ VISUAL = {
         "hinge": "Hay que optar en promotions antes de depositar. El Daily Race, el torneo Gates y los RakeBoosts no reemplazan el chip.",
         "boost_row": {
             "lab": "RakeBoosts",
-            "val": "RakeBoost +10–20% · no se suman · base no publicada",
+            "val": "RakeBoost: no se suman · tasa base no publicada · % no transcrito",
             "source": "Rewards overview",
             "href": "https://help.rainbet.com/en/articles/9171035-rewards-overview",
         },
@@ -1250,7 +1251,7 @@ VISUAL = {
             ("Revisión", ["Rakeback 28 SEP 2026", "Level Up 02 OCT 2026"]),
         ],
         "facts": [
-            ("Chip", "5%", "HE · Bronze · cash"),
+            ("Chip", "RB", "HE · Bronze · cash"),
             ("Level Up", "aprox", "señal 02 OCT · no es el chip"),
             ("Antes de retirar", "1×", "depósito · help coin-mixing"),
             ("KYC", "ID", "antes del 1er retiro"),
@@ -1259,10 +1260,10 @@ VISUAL = {
         "paths": [
             {
                 "lab": "Chip de la fila",
-                "big": "5%",
+                "big": "RB",
                 "title": "Rakeback casino",
                 "items": [
-                    "5% del house edge, en cash",
+                    "Una parte de la ventaja de la casa, en cash",
                     "Casino, no sports",
                     "No es un match de depósito",
                     "Se desbloquea al apostar 1.000 USD (Bronze)",
@@ -1302,7 +1303,7 @@ VISUAL = {
             ),
         ],
         "side": [
-            ("5%", "House edge", "Bronze · cash · casino"),
+            ("RB", "House edge", "Bronze · cash · casino · % no transcrito"),
             ("1×", "Antes de retirar", "Depósito · help coin-mixing"),
         ],
         "stages": [
@@ -1329,8 +1330,8 @@ VISUAL = {
             ("Revisión", ["Mesa 25 SEP 2026", "help 24 AGO 2026"]),
         ],
         "facts": [
-            ("Welcome", "3.5%", "HE · vía código"),
-            ("Ejemplo", "1 BTC", "a 2% HE → 0,0007 BTC"),
+            ("Welcome", "RB", "Bronze · 10.000 USD"),
+            ("Ejemplo", "—", "el porcentaje no se transcribe"),
             ("Antes de retirar", "100%", "del depósito"),
             ("KYC", "ID", "foto · cuándo: no verificado"),
         ],
@@ -1338,13 +1339,13 @@ VISUAL = {
         "paths": [
             {
                 "lab": "Chip de la fila",
-                "big": "3.5%",
+                "big": "RB",
                 "title": "Rakeback Bronze",
                 "items": [
-                    "3.5% del house edge",
-                    "Con un código",
+                    "Una parte de la ventaja de la casa, en cash",
+                    "Tras apostar 10.000 USD (Bronze)",
                     "No es un match con rollover fijo",
-                    "Ejemplo: 1 BTC a 2% HE → 0,0007 BTC",
+                    "Se reclama en la página VIP",
                 ],
             },
             {
@@ -1375,11 +1376,11 @@ VISUAL = {
             (
                 "Jackpot",
                 "Historial de jackpots progresivos: hueco · 03 OCT 2026",
-                "El ejemplo 1 BTC no es un pozo",
+                "Sin pozo observado en la fila",
             ),
         ],
         "side": [
-            ("3.5%", "House edge", "Welcome · vía código"),
+            ("RB", "House edge", "Bronze · % no transcrito"),
             ("100%", "Del depósito", "Antes de retirar · crypto y fiat"),
         ],
         "stages": [
@@ -1408,7 +1409,7 @@ VISUAL = {
         ],
         "facts": [
             ("Welcome", "$2.5k", "tope · 30 días"),
-            ("Rakeback", "10%", "HE · casino"),
+            ("Rakeback", "RB", "ventaja de la casa · casino"),
             ("Retiro", "—", "sin SLA en la fila"),
             ("KYC", "L2", "ID + domicilio + face"),
         ],
@@ -1427,10 +1428,10 @@ VISUAL = {
             },
             {
                 "lab": "Rakeback",
-                "big": "10%",
+                "big": "RB",
                 "title": "House edge · casino",
                 "items": [
-                    "10% del house edge en casino elegible",
+                    "Una parte de la ventaja de la casa en casino elegible",
                     "Terms §8.4",
                     "Monster Mash no es el chip",
                     "El chip es el de la fila",
@@ -1454,7 +1455,7 @@ VISUAL = {
         ],
         "side": [
             ("$2.5k", "Tope 30 días", "Paquete declarado · no es un Nx"),
-            ("10%", "House edge", "Casino · sports no suman"),
+            ("RB", "House edge", "Casino · sports no suman · % no transcrito"),
         ],
         "stages": [
             ("Depósito", "Crypto + tarjeta", "vía Swapped"),
@@ -1480,7 +1481,7 @@ VISUAL = {
             ("Revisión", ["Fila 30 SEP 2026", "rechequeo 31 OCT 2026"]),
         ],
         "facts": [
-            ("Welcome", "+10%", "instant RB · 24 h"),
+            ("Welcome", "24 h", "boost · % no transcrito"),
             ("Ritmo", "30 min", "reclamo · sin vencimiento"),
             ("Retiro", "—", "sin dato en la fila"),
             ("KYC", "L2", "pasaporte, licencia o gobierno"),
@@ -1500,8 +1501,8 @@ VISUAL = {
             },
             {
                 "lab": "Boost",
-                "big": "+10%",
-                "title": "24 h al registrarse",
+                "big": "24 h",
+                "title": "Al registrarse",
                 "items": [
                     "Sobre el instant rakeback",
                     "No es un match",
@@ -1530,7 +1531,7 @@ VISUAL = {
             ),
         ],
         "side": [
-            ("+10%", "Boost 24 h", "Sobre el instant rakeback"),
+            ("24 h", "Boost", "Sobre el instant rakeback · % no transcrito"),
             ("30 min", "Reclamo", "Sin vencimiento"),
         ],
         "stages": [
@@ -1566,22 +1567,22 @@ VISUAL = {
         "paths": [
             {
                 "lab": "Ayuda · Fast Facts",
-                "big": "5%",
+                "big": "≠",
                 "title": "Rakeback, una versión",
                 "items": [
-                    "5% por ventana, según la ayuda",
+                    "La ayuda da un porcentaje por ventana",
                     "Instantáneo, diario, semanal y mensual",
-                    "No cuadra con el máximo del 25%",
-                    "No es el dato principal",
+                    "No cuadra con el tope recurrente de la misma página",
+                    "No elegimos una cifra",
                 ],
             },
             {
                 "lab": "Ayuda · misma página",
-                "big": "25%",
+                "big": "≠",
                 "title": "Tope recurrente",
                 "items": [
-                    "Máximo recurrente del 25%",
-                    "No cuadra con el máximo del 25%",
+                    "La misma página publica otro tope",
+                    "No cuadra con el porcentaje por ventana",
                     "No elegimos una cifra",
                     "Ace's Lounge es el VIP. No es el dato principal.",
                 ],

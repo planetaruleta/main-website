@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_PATH = ROOT / "llms-full.txt"
 ORIGIN = "https://www.planetaruleta.com"
 
-# Sitemap order for the guide index and the fourteen guides.
+# Sitemap order for the guide index and the fifteen guides.
 PAGES: list[tuple[str, str]] = [
     ("guias/index.html", f"{ORIGIN}/guias/"),
     ("guias/rtp-volatilidad/index.html", f"{ORIGIN}/guias/rtp-volatilidad/"),
@@ -39,6 +39,7 @@ PAGES: list[tuple[str, str]] = [
     ("guias/retiro-pendiente-en-revision/index.html", f"{ORIGIN}/guias/retiro-pendiente-en-revision/"),
     ("guias/retiros-metodos-locales/index.html", f"{ORIGIN}/guias/retiros-metodos-locales/"),
     ("guias/stake-por-pais/index.html", f"{ORIGIN}/guias/stake-por-pais/"),
+    ("guias/rainbet-que-se-puede-verificar/index.html", f"{ORIGIN}/guias/rainbet-que-se-puede-verificar/"),
 ]
 
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
@@ -53,7 +54,7 @@ HEADER = """# Planeta Ruleta — texto de las guías
 
 > Copia en texto de las guías públicas de alfabetización. El wording es el de cada página. Este archivo no agrega cifras, licencias ni rankings. +18. No es consejo de apuesta ni un enlace de afiliado.
 
-Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla catorce veces.
+Cada guía en el sitio cierra con la misma invitación al canal de Telegram @planetaruleta. Esa invitación no es un enlace de afiliado y no abre un depósito. Aquí se omite para no repetirla quince veces.
 
 """
 
@@ -336,7 +337,7 @@ def render() -> str:
         "licencia **OGL/2024/328/0599**",
         "[/mesa/shuffle/](https://www.planetaruleta.com/mesa/shuffle/).",
         "[cómo leer una promo](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/).",
-        "**Cashback**, **rakeback** y **lossback**",
+        "El porcentaje, cuando la sala lo publica, está en sus términos o en su ayuda; aquí no lo transcribimos ni lo inventamos.",
         "El **RTP** (return to player) es el porcentaje teórico",
         "- **[RTP y volatilidad en slots](https://www.planetaruleta.com/guias/rtp-volatilidad/)**",
     ]
