@@ -40,7 +40,7 @@ Estas guías explican mecánicas de casino: qué es el RTP, el max bet de un bon
 - **[Depositar para retirar: bono falso y clones](https://www.planetaruleta.com/guias/pagar-para-retirar-bono-falso/)**
 
   Si te piden por mensaje depositar o pagar para liberar un retiro, no sigas. El patrón del bono falso, los sitios clon y cómo revisar el dominio.
-- **[Plinko en Cloudbet](https://www.planetaruleta.com/guias/plinko-cloudbet/)**
+- **[Cloudbet Plinko: RTP y provably fair](https://www.planetaruleta.com/guias/plinko-cloudbet/)**
 
   Filas, niveles, BOOST con recargo del 20 %, RTP declarado de 99 % y cómo verificar una tirada, según las páginas de Cloudbet.
 - **[Retiro pendiente o en revisión](https://www.planetaruleta.com/guias/retiro-pendiente-en-revision/)**
@@ -196,6 +196,8 @@ El rakeback suele ser una devolución de una parte de la ventaja de la casa sobr
 **EDITORIAL — definición.** El término nace en el póker: devolución de una parte del **rake**, la comisión que la casa saca del pozo. En casino, se usa a menudo para una devolución ligada a la ventaja de la casa sobre lo apostado, no a lo perdido. La definición exacta la fija cada sala: no todas calculan sobre la misma base ni pagan del mismo modo.
 
 **Ejemplo hipotético (no es dato de una sala).** Supón que ya cumples la condición de la sala para recibir rakeback y apuestas 1.000 en un juego con ventaja de la casa de 2,70 %. La pérdida esperada sobre ese volumen es 27, esperada y no garantizada. Con una tasa hipotética del 4 % de esa ventaja, el rakeback esperado sería 1,08. En este ejemplo sigues con un costo esperado de 25,92: el rakeback no elimina la ventaja de la casa. Los 1.000, el 2,70 % y el 4 % son cifras redondas del ejemplo, no un porcentaje publicado por un operador.
+
+Un ejemplo con fuente: el rakeback del [bono de bienvenida de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/#bono).
 
 ## Qué es el cashback en un casino
 
@@ -1017,9 +1019,11 @@ URL: https://www.planetaruleta.com/guias/pagar-para-retirar-bono-falso/
 
 Guía · +18 · alfabetización
 
-# Plinko en Cloudbet: cómo funciona, qué RTP declara y cómo verificar una tirada
+# Cloudbet Plinko: cómo funciona, qué RTP declara y cómo verificar una tirada
 
-El Plinko de Cloudbet es un juego propio de la sala: sueltas una o varias bolas por una pirámide de clavijas y cada una cae en una casilla con un multiplicador. Esta guía junta lo que dicen las páginas de Cloudbet sobre ese juego: los ajustes, el RTP que declara, el modo BOOST y cómo comprobar una tirada con su sistema «provably fair». Lo que sigue es texto de Cloudbet (página del juego, páginas de fairness y términos), resumido y traducido por nosotros; lo nuestro va marcado EDITORIAL. Revisado el 30 oct 2026. Es alfabetización para mayores de 18, no consejo de apuesta ni una invitación a jugar. Montos en dólares estadounidenses (USD). Para lo general de la sala (registro, países, KYC, licencia) está la [guía de Cloudbet](https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/) y la [ficha](https://www.planetaruleta.com/mesa/cloudbet/).
+**Respuesta corta:** según la [página de Plinko de Cloudbet](https://www.cloudbet.com/es/casino/provably-fair/plinko) (revisado 13 nov 2026), el juego permite elegir 8, 10, 12 o 16 filas, cuatro niveles de riesgo y 1, 5, 10, 20, 50 o 100 bolas por tirada. Cloudbet declara un RTP del 99 % y un recargo BOOST del 20 %. La lectura citada no aclara si ese RTP incluye BOOST. El RTP es un promedio teórico, no el resultado de tu sesión. +18.
+
+El Plinko de Cloudbet es un juego propio de la sala: sueltas una o varias bolas por una pirámide de clavijas y cada una cae en una casilla con un multiplicador. Esta guía junta lo que dicen las páginas de Cloudbet sobre ese juego: los ajustes, el RTP que declara, el modo BOOST y cómo comprobar una tirada con su sistema «provably fair». Lo que sigue es texto de Cloudbet (página del juego, páginas de fairness y términos), resumido y traducido por nosotros; lo nuestro va marcado EDITORIAL. Revisado el 30 oct 2026. Es alfabetización para mayores de 18, no consejo de apuesta ni una invitación a jugar. Montos en dólares estadounidenses (USD). Para lo general de la sala (registro, países, KYC, licencia) está la [guía de Cloudbet](https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/) y la [bono y ficha de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/).
 
 ## 1. Qué es el Plinko de Cloudbet (Cloudbet Originals, revisado 30 oct 2026)
 
@@ -1090,7 +1094,7 @@ La [página de fairness de Plinko](https://www.cloudbet.com/es/casino/provably-f
 | 12 | 13 | 22,6 % | 1 en 4.096 |
 | 16 | 17 | 19,6 % | 1 en 65.536 |
 
-Cómo leerlo: con 16 filas, una bola tiene 1 probabilidad en 65.536 de caer en un extremo concreto. Por eso los multiplicadores grandes existen y casi nunca salen. Cloudbet publica un solo RTP, 99 %, sin distinguirlo por filas ni por nivel. Leído así (EDITORIAL), subir el nivel o las filas cambia cómo se reparte el resultado (más volatilidad), no lo que el diseño devuelve en promedio.
+Cómo leerlo: con 16 filas, una bola tiene 1 probabilidad en 65.536 de caer en un extremo concreto. Por eso los multiplicadores grandes existen y casi nunca salen. Cloudbet publica un solo RTP, 99 %, sin distinguirlo por filas ni por nivel. La cifra publicada no distingue filas ni niveles; no confirma un RTP para cada ajuste.
 
 ## 5. Provably fair: cómo verificar una tirada, paso a paso
 
@@ -1120,7 +1124,7 @@ Cloudbet dice que su sistema también es compatible con herramientas de verifica
 ## 6. Lo que ninguna configuración cambia
 
 - La propia página del juego: es «totalmente aleatorio, por lo que no hay ningún patrón para predecir ni sistemas capaces de garantizar una ganancia», y «cambiar los montos de apuesta no mejora las cuotas».
-- Más filas o nivel Extremo cambian la forma de los resultados (más dispersión: golpes grandes y raros), no el promedio declarado. BOOST suma un recargo del 20 % y Cloudbet no publica cuánto devuelve ese modo (punto 3.2).
+- La cifra publicada no distingue filas ni niveles; no confirma un RTP para cada ajuste. BOOST suma un recargo del 20 % y Cloudbet no publica cuánto devuelve ese modo (punto 3.2).
 - Las tiradas son instantáneas y puedes soltar 100 bolas de una vez: el ritmo es rápido. Fija un límite antes de empezar. Cloudbet publica límites de depósito, pausa y autoexclusión (ver la [guía de Cloudbet](https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/), punto 8).
 
 Si estás persiguiendo pérdidas o subes la apuesta para «recuperar», detente. +18. Si se te va de las manos, busca ayuda de juego responsable donde estés.

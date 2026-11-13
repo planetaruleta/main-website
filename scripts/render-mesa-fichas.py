@@ -199,7 +199,8 @@ def breadcrumb_ld(url: str, items: list[tuple[str, str]]) -> dict:
     }
 
 
-def faq_ld(url: str, faqs: list[tuple[str, str]]) -> dict:
+def faq_ld(url: str, faqs: list[tuple]) -> dict:
+    # JSON-LD keeps the plain answer. An optional third item is HTML-only.
     return {
         "@type": "FAQPage",
         "@id": f"{url}#faq",
@@ -209,21 +210,26 @@ def faq_ld(url: str, faqs: list[tuple[str, str]]) -> dict:
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": q,
-                "acceptedAnswer": {"@type": "Answer", "text": a},
+                "name": item[0],
+                "acceptedAnswer": {"@type": "Answer", "text": item[1]},
             }
-            for q, a in faqs
+            for item in faqs
         ],
     }
 
 
-def faq_html(faqs: list[tuple[str, str]]) -> str:
+def faq_html(faqs: list[tuple]) -> str:
     blocks = []
-    for q, a in faqs:
+    for item in faqs:
+        q, a = item[0], item[1]
+        extra = ""
+        if len(item) > 2 and item[2]:
+            href, anchor = item[2]
+            extra = f' <a href="{e(href)}">{e(anchor)}</a>.'
         blocks.append(
             f"""<details class="faq">
           <summary><h3>{e(q)}</h3></summary>
-          <div class="answer"><p>{e(a)}</p></div>
+          <div class="answer"><p>{e(a)}{extra}</p></div>
         </details>"""
         )
     return f'<div class="faq-list">{"".join(blocks)}</div>'
@@ -795,12 +801,13 @@ FICHAS = {
     },
     "cloudbet": {
         "name": "Cloudbet",
-        "h1": "Cloudbet: ficha de la mesa",
-        "title": "Bono Cloudbet: giros, retiro y KYC — ficha | Planeta Ruleta",
-        "description": "Bono Cloudbet: hasta 2.500 USD en 30 días en rakeback y cash drops, no un match. Giros, retiro, tope de 2.200 USD sin nivel 2 y países. Sin puntaje. +18.",
-        "modified": "2026-11-04",
+        "h1": "Bono Cloudbet y ficha de la mesa: paquete, KYC y retiro",
+        "h1_visible": "Bono Cloudbet y ficha de la mesa: paquete, KYC y retiro",
+        "title": "Bono Cloudbet: paquete de bienvenida, KYC y retiro",
+        "description": "Bono de bienvenida de Cloudbet según sus términos: paquete, rakeback y cash drops. KYC y retiro. +18.",
+        "modified": "2026-11-04",  # retain until the full page factual gate; no partial-reread certification
         "lede": [
-            "Cloudbet está en la mesa como operador crypto/offshore. El help declara licencia de la Curaçao Gaming Authority y un paquete de hasta 2.500 USD en 30 días, con rakeback del 10% en casino.",
+            "Según sus términos (§8.4), el bono de bienvenida de Cloudbet es un paquete de recompensas con rakeback y cash drops. Cloudbet está en la mesa como operador crypto/offshore.",
             "Esta ficha no pone nota ni abre un depósito. Los hechos salen de la versión /en del sitio, de sus términos y de su ayuda.",
         ],
         "sheet": [
@@ -927,6 +934,7 @@ FICHAS = {
             (
                 "¿Cloudbet tiene Plinko?",
                 "Sí. Su ayuda (revisada el 4 nov 2026) lo lista entre sus juegos arcade y entre los Originals con verificación provably fair. RTP declarado, filas, niveles, BOOST y cómo verificar una tirada: guía de Plinko en Cloudbet.",
+                ("/guias/plinko-cloudbet/", "Cloudbet Plinko: RTP, BOOST y verificación"),
             ),
             (
                 "¿Cloudbet es un casino de bitcoin?",
@@ -1880,7 +1888,7 @@ def render_ficha(slug: str) -> str:
         <header class="hero">
           <div>
             <p class="eyebrow">En la mesa</p>
-            <h1>{e(data["name"])}</h1>
+            <h1>{e(data.get("h1_visible") or data["name"])}</h1>
             {lede_html(data["lede"])}
             {meta_html(visual["meta"])}
             {seals_html(visual["seals"])}
