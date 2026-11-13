@@ -222,14 +222,20 @@ def faq_html(faqs: list[tuple]) -> str:
     blocks = []
     for item in faqs:
         q, a = item[0], item[1]
+        shown = a
         extra = ""
         if len(item) > 2 and item[2]:
             href, anchor = item[2]
+            # HTML only: the linked anchor replaces the trailing plain guide name.
+            # JSON-LD keeps item[1], including «guía de Plinko en Cloudbet.»
+            plain_guide = "guía de Plinko en Cloudbet."
+            if shown.endswith(plain_guide):
+                shown = shown[: -len(plain_guide)].rstrip()
             extra = f' <a href="{e(href)}">{e(anchor)}</a>.'
         blocks.append(
             f"""<details class="faq">
           <summary><h3>{e(q)}</h3></summary>
-          <div class="answer"><p>{e(a)}{extra}</p></div>
+          <div class="answer"><p>{e(shown)}{extra}</p></div>
         </details>"""
         )
     return f'<div class="faq-list">{"".join(blocks)}</div>'

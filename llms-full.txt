@@ -1094,7 +1094,7 @@ La [página de fairness de Plinko](https://www.cloudbet.com/es/casino/provably-f
 | 12 | 13 | 22,6 % | 1 en 4.096 |
 | 16 | 17 | 19,6 % | 1 en 65.536 |
 
-Cómo leerlo: con 16 filas, una bola tiene 1 probabilidad en 65.536 de caer en un extremo concreto. Por eso los multiplicadores grandes existen y casi nunca salen. Cloudbet publica un solo RTP, 99 %, sin distinguirlo por filas ni por nivel. La cifra publicada no distingue filas ni niveles; no confirma un RTP para cada ajuste.
+Cómo leerlo: con 16 filas, una bola tiene 1 probabilidad en 65.536 de caer en un extremo concreto. Por eso los multiplicadores grandes existen y casi nunca salen. Cloudbet publica un solo RTP, 99 %, sin distinguirlo por filas ni por nivel. No confirma un RTP para cada ajuste.
 
 ## 5. Provably fair: cómo verificar una tirada, paso a paso
 
