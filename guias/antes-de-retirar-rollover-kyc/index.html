@@ -163,10 +163,37 @@
       z-index: 0;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
     }
-    a { color: var(--copper); text-decoration: none; }
-    a:hover, a:focus-visible { color: var(--copper-2); }
+    a {
+      color: var(--copper);
+      text-decoration-line: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+    }
+    a:hover,
+    a:focus-visible {
+      color: var(--copper-2);
+      text-decoration-thickness: 2px;
+    }
     a:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
     :target { scroll-margin-top: 5.5rem; }
+    .skip {
+      position: absolute;
+      left: var(--pad);
+      top: -4rem;
+      z-index: 40;
+      background: var(--cream);
+      color: var(--ink);
+      padding: .4rem .7rem;
+      text-decoration: none;
+    }
+    .skip:hover,
+    .skip:focus,
+    .skip:focus-visible {
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .skip:focus,
+    .skip:focus-visible { top: .6rem; }
 
     .mast {
       position: sticky;
@@ -427,6 +454,7 @@
   </style>
 </head>
 <body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
   <header class="mast">
     <div class="mast-inner">
       <a class="brand" href="/"><img src="/assets/saturn-exact.png" alt="" width="34" height="26" /><span class="brand-name">Planeta Ruleta</span></a>
@@ -444,7 +472,7 @@
     </div>
   </header>
 
-  <main class="article">
+  <main id="contenido" class="article">
     <p class="kicker">Guía · +18 · alfabetización</p>
     <h1>Antes de retirar: rollover del depósito y verificación KYC, según las páginas oficiales</h1>
     <p class="lead">La home de un casino cripto habla de retiros en minutos. Antes de que corra ese reloj suele haber dos pasos: apostar el depósito una cantidad de veces (rollover) y verificar tu identidad (KYC). Esta guía junta lo que dicen las páginas de seis salas sobre esos dos pasos, con la fecha en que lo revisamos. Las citas entre comillas van tal cual. En Duelbits, los términos de duelbits.com solo cargaron hasta la sección 2.3 y no encontramos su FAQ (31 oct 2026): esa sala va como resumen de su centro de ayuda, no como cita de sus términos. Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala. Montos en dólares estadounidenses (USD).</p>
