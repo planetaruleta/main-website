@@ -214,10 +214,37 @@
       z-index: 0;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
     }
-    a { color: var(--copper); text-decoration: none; }
-    a:hover, a:focus-visible { color: var(--copper-2); }
+    a {
+      color: var(--copper);
+      text-decoration-line: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+    }
+    a:hover,
+    a:focus-visible {
+      color: var(--copper-2);
+      text-decoration-thickness: 2px;
+    }
     a:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
     :target { scroll-margin-top: 5.5rem; }
+    .skip {
+      position: absolute;
+      left: var(--pad);
+      top: -4rem;
+      z-index: 40;
+      background: var(--cream);
+      color: var(--ink);
+      padding: .4rem .7rem;
+      text-decoration: none;
+    }
+    .skip:hover,
+    .skip:focus,
+    .skip:focus-visible {
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .skip:focus,
+    .skip:focus-visible { top: .6rem; }
 
     .mast {
       position: sticky;
@@ -495,6 +522,7 @@
   </style>
 </head>
 <body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
   <header class="mast">
     <div class="mast-inner">
       <a class="brand" href="/"><img src="/assets/saturn-exact.png" alt="" width="34" height="26" /><span class="brand-name">Planeta Ruleta</span></a>
@@ -512,7 +540,7 @@
     </div>
   </header>
 
-  <main class="article">
+  <main id="contenido" class="article">
     <p class="kicker">Guía · +18 · alfabetización</p>
     <h1>Rainbet: qué se puede verificar sobre su empresa, licencia, retiros y sitios oficiales, y qué no</h1>
     <p>revisado 10 nov 2026 — lecturas de términos, validador del sello, página de registro, ayuda y pie del sitio.</p>
