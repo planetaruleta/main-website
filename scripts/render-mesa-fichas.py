@@ -370,13 +370,13 @@ def head(title: str, description: str, path: str, graph: list, og_type: str = "a
   <meta property="og:type" content="{e(og_type)}" />
   <meta property="og:url" content="{e(url)}" />
   <meta property="og:description" content="{e(description)}" />
-  <meta property="og:image" content="{HOST}/logo-saturn.png" />
+  <meta property="og:image" content="{HOST}/assets/og-saturn.jpg" />
   <meta property="og:locale" content="es_LA" />
   <meta property="og:site_name" content="Planeta Ruleta" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{e(title)}" />
   <meta name="twitter:description" content="{e(description)}" />
-  <meta name="twitter:image" content="{HOST}/logo-saturn.png" />
+  <meta name="twitter:image" content="{HOST}/assets/og-saturn.jpg" />
   <script type="application/ld+json">
 {ld}
   </script>

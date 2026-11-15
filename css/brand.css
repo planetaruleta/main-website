@@ -74,3 +74,9 @@
     width: 100%;
   }
 }
+
+/* Small labels on #121E2C. Brand copper #B66F4A is 4.29:1 at this size.
+   Same hue, lightened until the pair clears 4.5:1 (4.51:1). */
+:root {
+  --copper-label: #B9734E;
+}
