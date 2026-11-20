@@ -49,7 +49,7 @@ ROWS = [
             "FAQ 25 SEP 2026: BTC, ETH, LTC, XRP, SOL, TRX, BNB, USDT, USDC. Retiro AstroPay: AR, CL, CO, EC, MX, UY (ayuda 29 MAY 2026). Redes: no verificado · 03 OCT 2026.",
             "Clase: crypto · fiat/cards · ARS (Mercado Pago, NaranjaX, transferencia; ayuda 14 OCT 2026). Lista y redes: no verificado · 03 OCT 2026. USDT solo en el ejemplo de rakeback.",
             "Clase: crypto · fiat · Chile: Subtel ordenó bloquear stake.com (01 SEP 2026). Lista y redes: no verificado · 03 OCT 2026. BTC solo en el ejemplo de rakeback.",
-            "Clase: crypto · buy card (Swapped) · la ayuda lista métodos locales solo para comprar cripto vía Swapped (tercero): SPEI MX, PSE CO, Khipu/Webpay CL; AR y PE no figuran en esa tabla. Lista y redes: en la ayuda de Cloudbet · 04 NOV 2026.",
+            "Clase: crypto · buy card (Swapped) · la ayuda lista métodos locales solo para comprar cripto vía Swapped (tercero): SPEI MX, PSE CO, Khipu/Webpay CL; AR y PE no figuran en esa tabla. Lista y redes: en la ayuda de Cloudbet · 16 NOV 2026.",
             "Clase: crypto · fiat+Swapped · AR: transferencia con DNI (ayuda 18 JUN 2025) · fiat: 1% por depósito (T&C 9.7). Lista y redes: no verificado · 03 OCT 2026.",
             "Clase: crypto · compra fiat vía tercero (PIX BR, tarjetas). Sin método fiat MX/AR; MXN/ARS/CLP solo como moneda de referencia. Retiros solo crypto. Redes: no verificado · 24 OCT 2026.",
         ],
@@ -952,7 +952,7 @@ FICHAS = {
             ),
             (
                 "¿Cloudbet es un casino de bitcoin?",
-                "Es un casino y sportsbook cripto: su ayuda y sus términos (§7.3.1, revisados el 4 nov 2026) listan 29 criptomonedas, BTC incluido (por Bitcoin Mainnet y BNB Smart Chain). Si no tienes cripto, la compra con tarjeta o método local pasa por un tercero, Swapped. Sus términos (revisados 4 nov 2026) dicen que tiene licencia de la Curaçao Gaming Authority (OGL/2024/328/0599); no es una licencia de tu país. +18.",
+                "Es un casino y sportsbook cripto: su ayuda «What currencies are accepted on Cloudbet?» y sus términos (§7.3.1, revisados el 16 nov 2026) listan 29 criptomonedas, cada una con sus redes. Bitcoin (BTC) se acepta por Bitcoin Mainnet y por BNB Smart Chain. Bitcoin Cash (BCH) también está en esa lista, por Bitcoin Cash Mainnet y por BNB Smart Chain. Las versiones «bridged» o «wrapped» (por ejemplo USDC.e) no se aceptan. No copiamos el catálogo completo: cada moneda se acepta solo por las redes que lista esa ayuda. Si no tienes cripto, la compra con tarjeta o método local pasa por un tercero, Swapped. Sus términos (revisados 4 nov 2026) dicen que tiene licencia de la Curaçao Gaming Authority (OGL/2024/328/0599); no es una licencia de tu país. +18.",
             ),
         ],
     },
