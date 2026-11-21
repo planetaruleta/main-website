@@ -77,8 +77,8 @@
       "headline": "Calculadora de rakeback vs cashback: cuánto devuelve cada uno en valor esperado",
       "description": "Compara rakeback y cashback en valor esperado con tu volumen, la ventaja de la casa y los porcentajes. Con la fórmula y los supuestos a la vista. +18.",
       "inLanguage": "es",
-      "datePublished": "[GAP C-G1: fecha de la relectura del día de publicación, DD mes AAAA]",
-      "dateModified": "[GAP C-G1: fecha de la relectura del día de publicación, DD mes AAAA]",
+      "datePublished": "[GAP C-G1: fecha de la relectura del día de publicación, AAAA-MM-DD]",
+      "dateModified": "[GAP C-G1: fecha de la relectura del día de publicación, AAAA-MM-DD]",
       "image": "https://www.planetaruleta.com/logo-saturn.png",
       "author": {
         "@id": "https://www.planetaruleta.com/#organization"
@@ -529,7 +529,7 @@
   <main id="contenido" class="article">
     <p class="kicker">Calculadora · +18 · alfabetización</p>
     <h1>Calculadora de rakeback vs cashback</h1>
-    <p class="lead">Respuesta corta: el rakeback se calcula sobre lo que apuestas y el cashback, sobre lo que pierdes en la ventana. Tomando la pérdida esperada como base, un rakeback del X % <em>de la ventaja de la casa</em> y un cashback del X % devuelven lo mismo; si el rakeback es un % <em>de lo apostado</em>, el equilibrio es el % de cashback multiplicado por la ventaja de la casa. El cashback real, sin tope, suele dar más que esa cuenta, porque solo se paga en las ventanas que cierras perdiendo: esta calculadora muestra el piso. Con los datos de ejemplo, el costo esperado sigue siendo positivo con los dos. Pon tus números abajo; la cuenta corre en tu navegador y no guarda nada.</p>
+    <p class="lead">Respuesta corta: el rakeback suele calcularse sobre lo que apuestas y el cashback, sobre lo que pierdes en la ventana. Tomando la pérdida esperada como base, un rakeback del X % <em>de la ventaja de la casa</em> y un cashback del X % devuelven lo mismo; si el rakeback es un % <em>de lo apostado</em>, el equilibrio es el % de cashback multiplicado por la ventaja de la casa. El cashback real, sin tope, suele dar más que esa cuenta, porque solo se paga en las ventanas que cierras perdiendo: sin tope y pagado en cash, esta calculadora muestra el piso. Con los datos de ejemplo, el costo esperado sigue siendo positivo con los dos. Pon tus números abajo; la cuenta corre en tu navegador y no guarda nada.</p>
     <p class="reviewed"><small>Revisado el [GAP C-G1: fecha de la relectura del día de publicación, DD mes AAAA].</small></p>
     <p>Qué es cada uno, con lo que publica cada sala: <a href="/guias/cashback-rakeback-lossback/">rakeback, cashback y lossback</a>. Esta página solo hace la cuenta; no usa ni recomienda el porcentaje de ninguna sala.</p>
 
@@ -545,7 +545,7 @@
           <div>
             <label for="rc-ventaja">Ventaja de la casa del juego (%)</label>
             <input id="rc-ventaja" name="ventaja" type="text" inputmode="decimal" autocomplete="off" value="2,70" />
-            <span class="calc-hint">Ruleta europea: 2,70. Ruleta americana: 5,26. Slot con RTP 96 %: 4,00.</span>
+            <span class="calc-hint">Ruleta europea: 2,70. Ruleta americana: 5,26 (casi todas las apuestas). Slot con RTP 96 %: 4,00.</span>
           </div>
           <div>
             <label for="rc-rakeback">Rakeback (%)</label>
@@ -577,10 +577,10 @@
         <dl>
           <dt>Pérdida esperada sin devolución</dt><dd data-out="perdida">—</dd>
           <dt>Rakeback esperado</dt><dd data-out="rakeback">—</dd>
-          <dt>Cashback esperado (piso)</dt><dd data-out="cashback">—</dd>
+          <dt>Cashback esperado (piso sin tope y en cash)</dt><dd data-out="cashback">—</dd>
           <dt>Costo esperado con rakeback</dt><dd data-out="costo-rakeback">—</dd>
-          <dt>Costo esperado con cashback (techo)</dt><dd data-out="costo-cashback">—</dd>
-          <dt>Rakeback que iguala a este cashback (sobre la pérdida esperada)</dt><dd data-out="equilibrio">—</dd>
+          <dt>Costo esperado con cashback (techo sin tope y en cash)</dt><dd data-out="costo-cashback">—</dd>
+          <dt>Rakeback que iguala a este cashback (sobre la pérdida esperada, sin tope)</dt><dd data-out="equilibrio">—</dd>
         </dl>
         <p class="calc-lectura" data-out="lectura"></p>
       </div>
@@ -592,16 +592,16 @@
     <p class="formula">Pérdida esperada = V × h
 Rakeback (sobre la ventaja) = V × h × r
 Rakeback (sobre lo apostado) = V × r
-Cashback (piso) = c × V × h, o el tope si es menor
+Cashback (piso, sin tope y en cash) = c × V × h; con tope, la calculadora muestra el menor entre c × V × h y el tope, y esa cifra ya no es un piso
 Costo esperado = pérdida esperada − devolución</p>
     <p>De ahí sale el punto de equilibrio. Si el rakeback es un % de la ventaja, iguala al cashback cuando <strong>r = c</strong>. Si es un % de lo apostado, iguala cuando <strong>r = c × h</strong>. Por ejemplo, un cashback del 5 % en ruleta europea equivale a un rakeback de 0,135 % de lo apostado (0,05 × 0,027).</p>
 
     <h2>Ejemplo resuelto</h2>
-    <p><strong>Ejemplo hipotético (no es dato de una sala).</strong> Apuestas 1.000 en ruleta europea (ventaja de 2,70 %). La pérdida esperada es 27. Un rakeback del 4 % de la ventaja devuelve 1,08, así que el costo esperado queda en 25,92. Un cashback del 5 % sobre la pérdida neta da, en la cuenta de piso, 1,35 (costo esperado de 25,65 como techo). Si esos 1.000 son 100 apuestas de 10 a rojo o negro, el cálculo exacto con la distribución binomial da un cashback promedio sin tope de unos 2,74: el doble del piso. Aun así, el costo esperado sigue siendo positivo, unos 24,3.</p>
+    <p><strong>Ejemplo hipotético (no es dato de una sala).</strong> Apuestas 1.000 en ruleta europea (ventaja de 2,70 %). La pérdida esperada es 27. Un rakeback del 4 % de la ventaja devuelve 1,08, así que el costo esperado queda en 25,92. Un cashback del 5 % sobre la pérdida neta da, en la cuenta de piso, 1,35 (costo esperado de 25,65 como techo). Si esos 1.000 son 100 apuestas de 10 a rojo o negro en una sola ventana, sin tope y sin la partage, el cálculo exacto con la distribución binomial da un cashback promedio sin tope de unos 2,74: el doble del piso. Aun así, el costo esperado sigue siendo positivo, unos 24,3.</p>
 
     <h2>Supuestos de la cuenta</h2>
     <ul>
-      <li><strong>Cashback: piso, no promedio exacto.</strong> La calculadora aplica el % de cashback a la pérdida <em>esperada</em>. El cashback real se paga solo si cierras la ventana perdiendo y no te descuenta nada si cierras ganando, así que, sin tope, su promedio es mayor que esta cifra. Cuánto mayor depende de la varianza del juego y del tamaño de cada apuesta respecto del volumen: con pocas apuestas grandes, la brecha crece. Un tope o un requisito de apuesta sobre la devolución la bajan. La calculadora no modela esa varianza.</li>
+      <li><strong>Cashback: piso, no promedio exacto.</strong> La calculadora aplica el % de cashback a la pérdida <em>esperada</em>. El cashback real se paga solo si cierras la ventana perdiendo y no te descuenta nada si cierras ganando, así que, sin tope, su promedio es mayor que esta cifra. Cuánto mayor depende de la varianza del juego y del tamaño de cada apuesta respecto del volumen: con pocas apuestas grandes, la brecha crece. Con un tope, la cifra deja de ser un piso: el promedio real puede quedar por debajo de lo que muestra la cuenta (en el ejemplo resuelto de abajo, con un tope de 2 por ventana, la cuenta muestra 1,35 y el promedio exacto es de unos 1,06). Un requisito de apuesta sobre la devolución también le baja el valor. La calculadora no modela esa varianza.</li>
       <li><strong>Misma ventaja en todo el volumen.</strong> Si mezclas juegos, usa la ventaja promedio ponderada por lo apostado en cada uno.</li>
       <li><strong>Cash, no bono.</strong> Si la devolución llega como bono con requisito de apuesta, vale menos que lo que muestra la cuenta. Mira <a href="/guias/calculadora-rollover-bono/">la calculadora de rollover</a>.</li>
       <li><strong>Sin condiciones extra.</strong> Niveles VIP, mínimos para recibirlo, juegos excluidos, ventanas y zona horaria están en los términos de cada sala y la cuenta no los modela.</li>
@@ -613,7 +613,7 @@ Costo esperado = pérdida esperada − devolución</p>
     <p>Si la sala lo calcula sobre la ventaja de la casa: total apostado × ventaja de la casa × % de rakeback. Con 1.000 apostados, 2,70 % de ventaja y un 4 % hipotético, da 1,08. Si lo calcula sobre lo apostado: total apostado × % de rakeback.</p>
     <h3>¿El cashback se calcula sobre lo apostado o sobre lo perdido?</h3>
     <p>El cashback suele calcularse sobre la pérdida neta en una ventana, y a veces sobre un volumen de apuestas. La base exacta, el tope y si se paga en cash o en bono están en los términos de cada sala. Esta calculadora supone un % de la pérdida neta.</p>
-    <p>Esta cuenta no garantiza resultados ni es consejo financiero. Si el juego se te va de las manos, busca ayuda de juego responsable donde estés. +18.</p>
+    <p>Esta cuenta no garantiza resultados y no es consejo financiero ni de apuesta. Lee siempre el T&amp;C del operador. Si el juego se te va de las manos, busca ayuda de juego responsable donde estés. +18.</p>
     <aside class="canal-cta" aria-labelledby="canal-cta-title">
       <p class="canal-kicker">Canal · +18</p>
       <h2 id="canal-cta-title">La cuenta queda en la página. El aviso, en el canal.</h2>

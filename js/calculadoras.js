@@ -156,10 +156,10 @@
       pintar(scope, "costo-cashback", formatNumero(r.costoConCashback));
       var dif = r.diferencia;
       var lectura;
-      if (Math.abs(dif) < 0.005) lectura = "Con estos datos, los dos devuelven lo mismo en valor esperado.";
-      else if (dif > 0) lectura = "Con estos datos, el rakeback devuelve " + formatNumero(dif) + " más que el cashback en valor esperado.";
-      else lectura = "Con estos datos, el cashback devuelve " + formatNumero(-dif) + " más que el rakeback en valor esperado.";
-      lectura += " La cifra del cashback es un piso: sin tope, el promedio real suele ser mayor, según la varianza de tus apuestas.";
+      if (Math.abs(dif) < 0.005) lectura = "Con estos datos, el rakeback iguala a la cifra de cashback de esta cuenta.";
+      else if (dif > 0) lectura = "Con estos datos, el rakeback devuelve " + formatNumero(dif) + " más que la cifra de cashback de esta cuenta.";
+      else lectura = "Con estos datos, la cifra de cashback de esta cuenta supera al rakeback en " + formatNumero(-dif) + ".";
+      lectura += p.topeCashback > 0 ? " Con tope, la cifra del cashback ya no es un piso: el promedio real puede quedar por debajo, porque en las ventanas con pérdidas grandes el tope corta la devolución y en las ganadoras no hay devolución." : " La cifra del cashback es un piso: sin tope y pagado en cash, el promedio real suele ser mayor, según la varianza de tus apuestas.";
       if (r.costoConRakeback > 0) lectura += " Con el rakeback, el costo esperado sigue siendo positivo: no vuelve la ventaja a tu favor.";
       else lectura += " Si el costo esperado con rakeback sale cero o negativo, revisa que el porcentaje y la base sean los que dicen los términos y si se paga en cash o en bono: la cuenta no modela niveles, exclusiones ni requisitos de apuesta.";
       pintar(scope, "lectura", lectura);
@@ -198,7 +198,7 @@
       var lectura;
       if (Math.abs(r.valorNeto) < 0.005) lectura = "Con estos datos, el valor esperado del bono es cero: lo que se espera perder al cumplir el rollover iguala al bono.";
       else if (r.valorNeto < 0) lectura = "Con estos datos, cumplir el rollover cuesta en promedio más que el bono: el valor esperado es negativo.";
-      else lectura = "Con estos datos, el valor esperado es positivo solo si completas todo el rollover y se cumplen los supuestos de abajo. Es un promedio, no un resultado: puedes perder el depósito antes de terminar.";
+      else lectura = "Con estos datos, el valor esperado sale positivo, pero es un promedio teórico bajo los supuestos de abajo, no un resultado: puedes perder el depósito antes de terminar el rollover. Antes de fiarte de la cifra, revisa en los términos la contribución real de ese juego (los juegos de mesa suelen aportar menos que los slots), el max bet, el plazo y el máximo retirable: los términos pueden cambiar.";
       pintar(scope, "lectura", lectura);
     }
     form.addEventListener("input", run);
