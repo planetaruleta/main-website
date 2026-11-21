@@ -1,0 +1,95 @@
+/* Calculadoras de /guias/. Same Copper Desk tokens as the guide pages. */
+.calc {
+  margin: 1.4rem 0 1.8rem;
+  padding: 1.1rem 1.1rem 1.2rem;
+  background: var(--bg2, #121E2C);
+  border: 1px solid var(--line, #2A3A4E);
+  border-radius: 6px;
+}
+.calc form { display: grid; gap: .85rem; }
+.calc .calc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: .85rem 1rem;
+}
+.calc label,
+.calc legend {
+  display: block;
+  font-size: .82rem;
+  font-weight: 700;
+  color: var(--cream, #DDD9CE);
+  margin-bottom: .3rem;
+}
+.calc .calc-hint {
+  display: block;
+  font-size: .74rem;
+  font-weight: 500;
+  color: var(--dim, #8E9AAB);
+  margin-top: .25rem;
+}
+.calc input[type="text"],
+.calc select {
+  width: 100%;
+  font: inherit;
+  font-size: 1rem;
+  color: var(--cream, #DDD9CE);
+  background: var(--bg, #0B1520);
+  border: 1px solid var(--line, #2A3A4E);
+  border-radius: 4px;
+  padding: .5rem .6rem;
+}
+.calc input:focus-visible,
+.calc select:focus-visible {
+  outline: 2px solid var(--copper, #B66F4A);
+  outline-offset: 2px;
+}
+.calc fieldset { border: 0; padding: 0; margin: 0; }
+.calc .calc-radio { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; font-size: .9rem; }
+.calc .calc-radio label { display: inline-flex; gap: .35rem; align-items: center; font-weight: 500; margin: 0; }
+.calc button {
+  justify-self: start;
+  font: inherit;
+  font-weight: 700;
+  font-size: .85rem;
+  color: var(--ink, #0B1520);
+  background: var(--cream, #DDD9CE);
+  border: 1px solid var(--ink, #0B1520);
+  border-radius: 4px;
+  padding: .5rem .8rem;
+  cursor: pointer;
+}
+.calc .calc-error {
+  color: #E8A27C;
+  font-size: .88rem;
+  margin: 0;
+}
+.calc-out {
+  margin-top: 1rem;
+  border-top: 1px solid var(--line, #2A3A4E);
+  padding-top: .9rem;
+}
+.calc-out dl {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: .35rem 1rem;
+  margin: 0 0 .8rem;
+}
+.calc-out dt { color: var(--cream-dim, #8E9AAB); font-size: .9rem; }
+.calc-out dd {
+  margin: 0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--cream, #DDD9CE);
+}
+.calc-out .calc-lectura { font-size: .95rem; }
+.formula {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: .86rem;
+  background: var(--bg2, #121E2C);
+  border-left: 2px solid var(--copper, #B66F4A);
+  padding: .55rem .8rem;
+  margin: 0 0 .9rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
