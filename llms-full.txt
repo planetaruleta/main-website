@@ -157,6 +157,8 @@ La cuenta, si el T&C dice un porcentaje (ejemplo, no una cifra de sala):
 
 Por eso “casi termino el rollover” puede ser falso si estás en juegos de contribución baja o nula. El porcentaje real no lo inventamos aquí.
 
+Para ver cuánto hay que apostar con una contribución dada y cuánto cuesta en promedio: [calculadora de rollover](https://www.planetaruleta.com/guias/calculadora-rollover-bono/).
+
 ## Cómo se cruzan max bet y contribución
 
 Escenario típico de error:
@@ -196,6 +198,8 @@ El rakeback suele ser una devolución de una parte de la ventaja de la casa sobr
 **EDITORIAL — definición.** El término nace en el póker: devolución de una parte del **rake**, la comisión que la casa saca del pozo. En casino, se usa a menudo para una devolución ligada a la ventaja de la casa sobre lo apostado, no a lo perdido. La definición exacta la fija cada sala: no todas calculan sobre la misma base ni pagan del mismo modo.
 
 **Ejemplo hipotético (no es dato de una sala).** Supón que ya cumples la condición de la sala para recibir rakeback y apuestas 1.000 en un juego con ventaja de la casa de 2,70 %. La pérdida esperada sobre ese volumen es 27, esperada y no garantizada. Con una tasa hipotética del 4 % de esa ventaja, el rakeback esperado sería 1,08. En este ejemplo sigues con un costo esperado de 25,92: el rakeback no elimina la ventaja de la casa. Los 1.000, el 2,70 % y el 4 % son cifras redondas del ejemplo, no un porcentaje publicado por un operador.
+
+Para hacer esta cuenta con tus números: [calculadora de rakeback vs cashback](https://www.planetaruleta.com/guias/calculadora-rakeback-cashback/).
 
 Un ejemplo con fuente: el rakeback del [bono de bienvenida de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/#bono).
 
