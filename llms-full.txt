@@ -55,6 +55,12 @@ Estas guías explican mecánicas de casino: qué es el RTP, el max bet de un bon
 - **[Rainbet: qué se puede verificar y qué no](https://www.planetaruleta.com/guias/rainbet-que-se-puede-verificar/)**
 
   Qué publica Rainbet sobre su empresa, su licencia y sus retiros, qué aparece en páginas de terceros, y qué no pudimos confirmar.
+- **[Calculadora: rakeback vs cashback](https://www.planetaruleta.com/guias/calculadora-rakeback-cashback/)**
+
+  Compara rakeback y cashback con el volumen, la ventaja de la casa y los porcentajes de los términos.
+- **[Calculadora: rollover de un bono](https://www.planetaruleta.com/guias/calculadora-rollover-bono/)**
+
+  Calcula cuánto hay que apostar según el rollover, la contribución y la ventaja de la casa.
 
 Versión corta en el [FAQ de alfabetización](https://www.planetaruleta.com/faq/#alfabetizacion).
 
@@ -157,6 +163,8 @@ La cuenta, si el T&C dice un porcentaje (ejemplo, no una cifra de sala):
 
 Por eso “casi termino el rollover” puede ser falso si estás en juegos de contribución baja o nula. El porcentaje real no lo inventamos aquí.
 
+Para ver cuánto hay que apostar con una contribución dada y cuánto cuesta en promedio: [calculadora de rollover](https://www.planetaruleta.com/guias/calculadora-rollover-bono/).
+
 ## Cómo se cruzan max bet y contribución
 
 Escenario típico de error:
@@ -196,6 +204,8 @@ El rakeback suele ser una devolución de una parte de la ventaja de la casa sobr
 **EDITORIAL — definición.** El término nace en el póker: devolución de una parte del **rake**, la comisión que la casa saca del pozo. En casino, se usa a menudo para una devolución ligada a la ventaja de la casa sobre lo apostado, no a lo perdido. La definición exacta la fija cada sala: no todas calculan sobre la misma base ni pagan del mismo modo.
 
 **Ejemplo hipotético (no es dato de una sala).** Supón que ya cumples la condición de la sala para recibir rakeback y apuestas 1.000 en un juego con ventaja de la casa de 2,70 %. La pérdida esperada sobre ese volumen es 27, esperada y no garantizada. Con una tasa hipotética del 4 % de esa ventaja, el rakeback esperado sería 1,08. En este ejemplo sigues con un costo esperado de 25,92: el rakeback no elimina la ventaja de la casa. Los 1.000, el 2,70 % y el 4 % son cifras redondas del ejemplo, no un porcentaje publicado por un operador.
+
+Para hacer esta cuenta con tus números: [calculadora de rakeback vs cashback](https://www.planetaruleta.com/guias/calculadora-rakeback-cashback/).
 
 Un ejemplo con fuente: el rakeback del [bono de bienvenida de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/#bono).
 
@@ -1228,7 +1238,7 @@ La home de una sala es marketing; los términos son lo que aceptaste al abrir la
 | [Rainbet](https://www.planetaruleta.com/mesa/rainbet/) | Sus términos no dan plazo de procesamiento de retiros. Según la ayuda, el equipo suele procesar los retiros en 5 a 15 minutos; algunos pueden pasar por una revisión de seguridad, y en cripto la confirmación de la red depende de la comisión elegida (artículo 8403745; términos y ayuda revisados 31 oct 2026). | 5 a 15 minutos «in normal conditions» (revisado 31 oct 2026). |
 | [Shuffle](https://www.planetaruleta.com/mesa/shuffle/) | Términos §7.2: no garantiza que un retiro se procese «within any particular time» (revisado 31 oct 2026). | «90% of all crypto withdrawals… in under one minute» (revisado 31 oct 2026). |
 | [Stake](https://www.planetaruleta.com/mesa/stake/) | Ayuda de retiros cripto: los retiros grandes pueden requerir proceso manual y retención temporal, sin horas. Sus términos no dan plazo de retiro (términos y ayuda revisados 31 oct 2026). | No menciona plazos de retiro (revisada 31 oct 2026). |
-| [Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/) | Términos §7.5.11: los retiros cripto «typically» se procesan dentro de las 24 horas **desde la aprobación**, sujeto al KYC; son «estimated timeframes only». Ayuda: la mayoría de los retiros cripto, al instante; si uno tarda más de 24 horas desde que lo pediste, pide escribir a soporte (revisado [GAP C-G1: fecha de la relectura del día de publicación, DD mes AAAA]). Los pasos para pedir un retiro en Cloudbet: [cómo retirar de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/#como-retirar). | «90% of our withdrawals take less than 2 minutes» (revisado 31 oct 2026). |
+| [Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/) | Términos §7.5.11: los retiros cripto «typically» se procesan dentro de las 24 horas **desde la aprobación**, sujeto al KYC; son «estimated timeframes only». Ayuda: la mayoría de los retiros cripto, al instante; si uno tarda más de 24 horas desde que lo pediste, pide escribir a soporte (revisado 23 nov 2026). Los pasos para pedir un retiro en Cloudbet: [cómo retirar de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/#como-retirar). | «90% of our withdrawals take less than 2 minutes» (revisado 31 oct 2026). |
 | [Roobet](https://www.planetaruleta.com/mesa/roobet/) | Según la ayuda, envía los retiros al instante, apenas los pides, pero no da un plazo para que lleguen a tu wallet, porque dependen de las confirmaciones de la blockchain (artículo 4733940, revisado 31 oct 2026). Sus términos no dan un plazo de retiro (revisados 31 oct 2026). | Su home habla de “instant or near-instant payouts”, sin dar un plazo en la propia home (revisada 31 oct 2026). |
 | [Duelbits](https://www.planetaruleta.com/mesa/duelbits/) | Ayuda: los retiros son solo en cripto y, según la ayuda, suelen procesarse al instante o en pocos minutos, sujetos a revisiones de seguridad o congestión de la red (artículos 16780663 y 16798784, revisado 30 y 31 oct 2026). | — |
 
@@ -1293,7 +1303,7 @@ No podemos decirte cómo va a terminar un reclamo. Lo que sí sabemos es que, si
 
 ### ¿Qué significa que un retiro esté «pendiente»?
 
-En general, que la sala todavía no lo envió a la blockchain: está en cola, en una revisión o esperando un paso tuyo (confirmación por email, documentos). En Cloudbet, la ayuda dice que la mayoría de los retiros cripto se procesa al instante y que, si uno tarda más de 24 horas desde que lo pediste, hay que escribir a soporte (revisado el [GAP C-G1: fecha de la relectura del día de publicación, DD mes AAAA]).
+En general, que la sala todavía no lo envió a la blockchain: está en cola, en una revisión o esperando un paso tuyo (confirmación por email, documentos). En Cloudbet, la ayuda dice que la mayoría de los retiros cripto se procesa al instante y que, si uno tarda más de 24 horas desde que lo pediste, hay que escribir a soporte (revisado el 23 nov 2026).
 
 ### ¿Por qué mi retiro está «en revisión»?
 
