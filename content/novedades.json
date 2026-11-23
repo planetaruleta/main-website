@@ -1,0 +1,33 @@
+{
+  "note": "The 3–4 most recent things actually shipped, newest first. Aviv's rule (22 Nov 2026): the homepage must not go more than 4 days without a visible update. After editing this file, run: python3 scripts/render_novedades.py && python3 scripts/render_novedades.py --check",
+  "items": [
+    {
+      "date": "2026-11-22",
+      "title": "Calculadora: rakeback vs cashback",
+      "href": "/guias/calculadora-rakeback-cashback/",
+      "line": "Compara rakeback y cashback con el volumen, la ventaja de la casa y los porcentajes de los términos.",
+      "source": "Live page (HTTP 200 on 22 Nov 2026 13:27 IST, Asia/Jerusalem): JSON-LD datePublished 2026-11-22 and «Revisado el 22 nov 2026.» Merge 95dc4afc (PR #75) 2026-11-22T00:55:34-08:00 = 22 Nov 2026 10:55 IST."
+    },
+    {
+      "date": "2026-11-22",
+      "title": "Calculadora: rollover de un bono",
+      "href": "/guias/calculadora-rollover-bono/",
+      "line": "Calcula cuánto hay que apostar según el rollover, la contribución y la ventaja de la casa.",
+      "source": "Live page (HTTP 200 on 22 Nov 2026 13:27 IST, Asia/Jerusalem): JSON-LD datePublished 2026-11-22 and «Revisado el 22 nov 2026.» Same merge 95dc4afc (PR #75) as the rakeback calculator."
+    },
+    {
+      "date": "2026-11-21",
+      "title": "Un nombre conocido no prueba que el canal sea oficial",
+      "href": "https://t.me/planetaruleta/45",
+      "line": "Cómo comprobar que un canal o un mensaje es oficial, y por qué el nombre no basta.",
+      "source": "Public Telegram preview https://t.me/s/planetaruleta fetched 22 Nov 2026 13:27 IST (Asia/Jerusalem): data-post planetaruleta/45, time datetime=2026-11-21T17:11:53+00:00 = 21 Nov 2026 19:11 IST. Public link https://t.me/planetaruleta/45."
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Podcast: Pagar para retirar: el bono falso y cómo detectarlo",
+      "href": "https://www.ivoox.com/pagar-para-retirar-bono-falso-como-audios-mp3_rf_184092174_1.html",
+      "line": "Episodio en iVoox sobre bonos falsos que piden un pago para retirar.",
+      "source": "Live iVoox RSS https://feeds.ivoox.com/feed_fg_f13237946_filtro_1.xml fetched 22 Nov 2026 13:27 IST (Asia/Jerusalem): item «Pagar para retirar: el bono falso y cómo detectarlo», pubDate Thu, 19 Nov 2026 17:59:38 +0100 = 19 Nov 2026 18:59 IST. Episode URL (HTTP 200 on 22 Nov 2026 13:27 IST): https://www.ivoox.com/pagar-para-retirar-bono-falso-como-audios-mp3_rf_184092174_1.html."
+    }
+  ]
+}
