@@ -197,7 +197,7 @@ def kicker_html(kicker: str) -> str:
 
 
 HELP_PHRASE = re.compile(
-    r"Busca ayuda seria de juego responsable|Busca ayuda de juego responsable|busca ayuda de juego responsable"
+    r"\b(?:Busca ayuda seria de juego responsable|Busca ayuda de juego responsable|busca ayuda de juego responsable)\b"
 )
 
 
@@ -206,6 +206,7 @@ def link_help_phrase(escaped: str) -> str:
     return HELP_PHRASE.sub(
         lambda match: f'<a href="/juego-responsable/">{match.group(0)}</a>',
         escaped,
+        count=1,
     )
 
 
