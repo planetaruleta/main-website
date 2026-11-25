@@ -196,12 +196,28 @@ def kicker_html(kicker: str) -> str:
     return f'<a href="/mesa/{esc_attr(slug)}/">{esc(name)}</a> · {esc(rest)}'
 
 
+HELP_PHRASE = re.compile(
+    r"\b(?:Busca ayuda seria de juego responsable|Busca ayuda de juego responsable|busca ayuda de juego responsable)\b"
+)
+
+
+def link_help_phrase(escaped: str) -> str:
+    """Wrap the existing help phrase. The feed stays plain text."""
+    return HELP_PHRASE.sub(
+        lambda match: f'<a href="/juego-responsable/">{match.group(0)}</a>',
+        escaped,
+        count=1,
+    )
+
+
 def resumen_html(resumen: str, indent: str) -> str:
     """One paragraph per source line. A single-line resumen stays one paragraph."""
     parts = [part for part in resumen.split("\n") if part.strip()]
     if not parts:
         raise SystemExit("resumen is empty")
-    return "\n".join(f'{indent}<p class="resumen">{esc(part)}</p>' for part in parts)
+    return "\n".join(
+        f'{indent}<p class="resumen">{link_help_phrase(esc(part))}</p>' for part in parts
+    )
 
 
 def expiry_html(item: dict) -> str:
