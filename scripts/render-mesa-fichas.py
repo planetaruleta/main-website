@@ -118,7 +118,7 @@ def e(text: str) -> str:
 
 # Dated warning. The sentence is a paraphrase, so it is not quoted.
 # Same Ministério da Saúde URL as /juego-responsable/ (no params).
-WARN_URL = "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-z/s/saude-mental/nao-aposte-sua-saude"
+WARN_URL = "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-mental/nao-aposte-sua-saude"
 WARN_TEXT = "Atención (25 nov 2026): el Ministerio de Salud de Brasil indica que la MP 1.394/2026 prohíbe casinos y apuestas online en todo el país."
 
 
