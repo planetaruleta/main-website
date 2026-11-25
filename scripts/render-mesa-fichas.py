@@ -853,12 +853,8 @@ FICHAS = {
           <div class="prose">
             <p>México es un mercado de Latinoamérica entre otros. Esto es lo que dicen las páginas de Cloudbet sobre ese mercado.</p>
             <ul>
-              <li>México no está entre las 22 jurisdicciones que listan sus términos (§7.1.3, revisados el 25 nov 2026). La misma cláusula excluye también cualquier jurisdicción donde su oferta sea ilegal y deja en ti confirmar si el juego online es legal donde estás.
-              <!-- BLOCKED: re-read terms §7.1.3 + help 101693/703235 -->
-              </li>
-              <li>Sus términos (§21.1.5, revisados el 25 nov 2026) exigen verificar tu identidad cuando tus depósitos acumulados llegan a 2.200 USD, y pueden pedirte la verificación en cualquier momento. Su ayuda de niveles de verificación (artículo 415596, «What are Cloudbet's verification levels?», revisada el 25 nov 2026) describe el nivel 2 como foto del documento, prueba de domicilio y verificación de rostro. Para empezar no necesitas ningún nivel.
-              <!-- BLOCKED: re-read terms §21.1.5 + help 415596 -->
-              </li>
+              <li>México no está entre las 22 jurisdicciones que listan sus términos (§7.1.3, revisados el 25 nov 2026). La misma cláusula excluye también cualquier jurisdicción donde su oferta sea ilegal y deja en ti confirmar si el juego online es legal donde estás.</li>
+              <li>Sus términos (§21.1.5, revisados el 25 nov 2026) exigen verificar tu identidad cuando tus depósitos acumulados llegan a 2.200 USD, y pueden pedirte la verificación en cualquier momento. Su ayuda de niveles de verificación (artículo 415596, «What are Cloudbet's verification levels?», revisada el 25 nov 2026) describe el nivel 2 como foto del documento, prueba de domicilio y verificación de rostro. Para empezar no necesitas ningún nivel.</li>
               <li>SPEI figura entre los métodos de Swapped, un tercero que vende cripto, en la tabla de su ayuda de métodos de pago (artículo 103366, revisada el 25 nov 2026). Esa tabla lista Latinoamérica, México y SPEI. Los depósitos de Cloudbet son en cripto.</li>
               <li>Su ayuda de retiros (revisada el 25 nov 2026) describe retiros en cripto<!-- help 103213 --></li>
             </ul>
