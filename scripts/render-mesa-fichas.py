@@ -51,7 +51,7 @@ ROWS = [
             "Clase: crypto · fiat · Chile: Subtel ordenó bloquear stake.com (01 SEP 2026). Lista y redes: no verificado · 03 OCT 2026. BTC solo en el ejemplo de rakeback.",
             "Clase: crypto · buy card (Swapped) · la ayuda lista métodos locales solo para comprar cripto vía Swapped (tercero): SPEI MX, PSE CO, Khipu/Webpay CL; AR y PE no figuran en esa tabla. Lista y redes: en la ayuda de Cloudbet · 23 NOV 2026.",
             "Clase: crypto · fiat+Swapped · AR: transferencia con DNI (ayuda 18 JUN 2025) · fiat: 1% por depósito (T&C 9.7). Lista y redes: no verificado · 03 OCT 2026.",
-            "Clase: crypto · compra fiat vía tercero (PIX BR, tarjetas). Sin método fiat MX/AR; MXN/ARS/CLP solo como moneda de referencia. Retiros solo crypto. Redes: no verificado · 24 OCT 2026.",
+            "Clase: crypto · compra fiat vía tercero (PIX BR, tarjetas). Sin método fiat MX/AR; MXN/ARS/CLP solo como moneda de referencia. Retiros solo crypto. Redes: no verificado · 24 OCT 2026. Atención (25 nov 2026): el Ministerio de Salud de Brasil indica que la MP 1.394/2026 prohíbe casinos y apuestas online en todo el país.",
         ],
     ),
     (
@@ -116,6 +116,25 @@ def e(text: str) -> str:
     return html.escape(text, quote=True)
 
 
+# Dated warning. The sentence is a paraphrase, so it is not quoted.
+# Same Ministério da Saúde URL as /juego-responsable/ (no params).
+WARN_URL = "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-z/s/saude-mental/nao-aposte-sua-saude"
+WARN_TEXT = "Atención (25 nov 2026): el Ministerio de Salud de Brasil indica que la MP 1.394/2026 prohíbe casinos y apuestas online en todo el país."
+
+
+def peel_warn(text: str) -> tuple[str, bool]:
+    token = " " + WARN_TEXT
+    if token not in text:
+        return text, False
+    return text.replace(token, ""), True
+
+
+def warn_html() -> str:
+    return (
+        f'<p><a href="{WARN_URL}" target="_blank" rel="noopener">{e(WARN_TEXT)}</a></p>'
+    )
+
+
 def compare_table() -> str:
     heads = []
     for slug, name, _has_ficha, sub in OPS:
@@ -125,8 +144,10 @@ def compare_table() -> str:
     for label, cells in ROWS:
         tds = []
         for (_slug, name, _has_ficha, _sub), cell in zip(OPS, cells):
+            cell_body, has_warn = peel_warn(cell)
+            note = warn_html() if has_warn else ""
             tds.append(
-                f'                <td data-op="{e(name)}"><span class="op-name">{e(name)}</span>{e(cell)}</td>\n'
+                f'                <td data-op="{e(name)}"><span class="op-name">{e(name)}</span>{e(cell_body)}{note}</td>\n'
             )
         body.append(
             "              <tr>\n"
@@ -211,7 +232,10 @@ def faq_ld(url: str, faqs: list[tuple]) -> dict:
             {
                 "@type": "Question",
                 "name": item[0],
-                "acceptedAnswer": {"@type": "Answer", "text": item[1]},
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": item[1],
+                },
             }
             for item in faqs
         ],
@@ -222,7 +246,7 @@ def faq_html(faqs: list[tuple]) -> str:
     blocks = []
     for item in faqs:
         q, a = item[0], item[1]
-        shown = a
+        shown, has_warn = peel_warn(a)
         extra = ""
         if len(item) > 2 and item[2]:
             href, anchor = item[2]
@@ -232,10 +256,11 @@ def faq_html(faqs: list[tuple]) -> str:
             if shown.endswith(plain_guide):
                 shown = shown[: -len(plain_guide)].rstrip()
             extra = f' <a href="{e(href)}">{e(anchor)}</a>.'
+        note = warn_html() if has_warn else ""
         blocks.append(
             f"""<details class="faq">
           <summary><h3>{e(q)}</h3></summary>
-          <div class="answer"><p>{e(shown)}{extra}</p></div>
+          <div class="answer"><p>{e(shown)}{extra}</p>{note}</div>
         </details>"""
         )
     return f'<div class="faq-list">{"".join(blocks)}</div>'
@@ -669,7 +694,7 @@ FICHAS = {
         "plata_title": "Cómo entra y sale el dinero",
         "plata": [
             "La homepage declara depósitos fiat con tarjeta, Apple Pay y Google Pay, vía socios de pago, más la clase crypto. Los Terms hablan de retiros fiat. La celda de la mesa no lista monedas.",
-            "Pesos (ARS): según el artículo de ayuda de Shuffle sobre Mercado Pago, NaranjaX y transferencia (actualizado el 14 OCT 2026, revisado el 15 OCT 2026), depositas en ARS por transferencia inmediata, Mercado Pago o NaranjaX al CBU/CVU o alias que te muestran en cada depósito, y retiras solo por transferencia a un CBU o CVU de 22 dígitos (sin alias) a tu nombre, con el mismo CUIT/CUIL de tu cuenta. Mínimo 7.500 ARS y máximo 7.500.000 ARS por operación, en los dos sentidos. Según ese artículo, Shuffle no cobra comisión por depositar ni retirar en ARS. Antes de cobrar te piden un documento con foto. «Casi instantáneo» es lo que dice la ayuda, no un plazo. Que acepte pesos no cambia la licencia: sigue siendo Curaçao. Una licencia offshore no es una licencia local de tu país. Otros países: en la ayuda de Shuffle no encontramos artículos de moneda local para Chile, Colombia o Perú (búsqueda del 15 OCT 2026); Brasil tiene uno propio (BRL con PIX). Pagar en moneda local no es una licencia local. Fuente: oficial (ayuda de Shuffle).",
+            "Pesos (ARS): según el artículo de ayuda de Shuffle sobre Mercado Pago, NaranjaX y transferencia (actualizado el 14 OCT 2026, revisado el 15 OCT 2026), depositas en ARS por transferencia inmediata, Mercado Pago o NaranjaX al CBU/CVU o alias que te muestran en cada depósito, y retiras solo por transferencia a un CBU o CVU de 22 dígitos (sin alias) a tu nombre, con el mismo CUIT/CUIL de tu cuenta. Mínimo 7.500 ARS y máximo 7.500.000 ARS por operación, en los dos sentidos. Según ese artículo, Shuffle no cobra comisión por depositar ni retirar en ARS. Antes de cobrar te piden un documento con foto. «Casi instantáneo» es lo que dice la ayuda, no un plazo. Que acepte pesos no cambia la licencia: sigue siendo Curaçao. Una licencia offshore no es una licencia local de tu país. Otros países: en la ayuda de Shuffle no encontramos artículos de moneda local para Chile, Colombia o Perú (búsqueda del 15 OCT 2026); Brasil tiene uno propio (BRL con PIX). Atención (25 nov 2026): el Ministerio de Salud de Brasil indica que la MP 1.394/2026 prohíbe casinos y apuestas online en todo el país. Pagar en moneda local no es una licencia local. Fuente: oficial (ayuda de Shuffle).",
             "Pesos mexicanos (MXN), ayuda de Shuffle sobre pesos mexicanos (MXN), artículo 17684669, captura 22 OCT 2026. Depósitos por SPEI y retiros por transferencia bancaria (CLABE): mínimo 90 MXN y máximo 20 mil MXN por transacción, sin comisión de Shuffle, disponible 24/7. Para retirar hace falta la verificación de nivel 2, con identificación con foto válida, y la CLABE a nombre del titular de la cuenta. El depósito también tiene que salir de una cuenta a ese mismo nombre. Según Shuffle, el retiro aprobado llega «en pocos minutos»; no lo comprobamos. La búsqueda del 15 OCT 2026 no encontró este artículo. Que acepte MXN no cambia la licencia: sigue siendo Curaçao, no una licencia de México. No reemplaza el chip de rakeback.",
             "USDT está en el ejemplo de rakeback del help (1000 USDT a 2% de house edge → 1 USDT). Eso no es un catálogo de redes.",
             "Antes de retirar hay que apostar 1x el depósito (help de coin-mixing, 28 jul 2026). No hay horas de pago: el retiro de la mesa sigue en sin dato. Que el pago en pesos pase por CBU/CVU no lo convierte en un casino regulado en Argentina.",
@@ -1038,7 +1063,7 @@ FICHAS = {
         "sheet": [
             ("Empresa", "Liquid Entertainment N.V., Curaçao, número 153298. Centro de ayuda del operador, artículo «Fast Facts» (help.duelbits.io, 16780663), 24 OCT 2026."),
             ("Licencia", "Curaçao Gaming Authority, OGL/2024/1507/0838, otorgada el 01/11/2024, estado activo, leído en cert.cga.cw (24 OCT 2026). Una licencia offshore no es una licencia local de tu país. En duelbits.io, una fuente de terceros (rollshark) nombra una licencia de Anjouan, ALSI-112310013-FI5. La renovación después del 12 OCT 2026 no está verificada. No es el dato principal."),
-            ("Monedas", "BTC, ETH, LTC, SOL, XRP, DOGE, TRX, BNB, USDT, USDC, DAI, SHIB, APE y TRUMP. El depósito fiat, cuando existe, es una compra de cripto con un tercero (PIX en Brasil, tarjetas y otros). No hay un método fiat de México ni de Argentina en la lista; MXN, ARS y CLP solo se muestran como moneda de referencia. Los retiros son solo en cripto. Redes: no verificado · 24 OCT 2026."),
+            ("Monedas", "BTC, ETH, LTC, SOL, XRP, DOGE, TRX, BNB, USDT, USDC, DAI, SHIB, APE y TRUMP. El depósito fiat, cuando existe, es una compra de cripto con un tercero (PIX en Brasil, tarjetas y otros). No hay un método fiat de México ni de Argentina en la lista; MXN, ARS y CLP solo se muestran como moneda de referencia. Los retiros son solo en cripto. Redes: no verificado · 24 OCT 2026. Atención (25 nov 2026): el Ministerio de Salud de Brasil indica que la MP 1.394/2026 prohíbe casinos y apuestas online en todo el país."),
             ("Idiomas", "El operador incluye español entre los idiomas. Soporte declarado: chat 24/7 y support@duelbits.com. El chat en español no está verificado · 24 OCT 2026."),
             ("Última revisión", "24 OCT 2026. Términos §5.3 y §7.3: 25 NOV 2026. Los hechos salen de la ayuda, de los términos (§5.3 y §7.3), del certificado CGA y, donde se indica, de fuentes de terceros."),
         ],
@@ -1050,9 +1075,9 @@ FICHAS = {
         ],
         "plata_title": "Cómo entra y sale el dinero",
         "plata": [
-            "La lista de cripto de esta revisión es BTC, ETH, LTC, SOL, XRP, DOGE, TRX, BNB, USDT, USDC, DAI, SHIB, APE y TRUMP. El depósito en moneda fiat, cuando existe, es una compra de cripto con un tercero (PIX en Brasil, tarjetas y otros). No hay un método de depósito en pesos mexicanos ni en pesos argentinos. MXN, ARS y CLP solo se muestran como moneda de referencia.",
+            "La lista de cripto de esta revisión es BTC, ETH, LTC, SOL, XRP, DOGE, TRX, BNB, USDT, USDC, DAI, SHIB, APE y TRUMP. El depósito en moneda fiat, cuando existe, es una compra de cripto con un tercero (PIX en Brasil, tarjetas y otros). No hay un método de depósito en pesos mexicanos ni en pesos argentinos. MXN, ARS y CLP solo se muestran como moneda de referencia. Atención (25 nov 2026): el Ministerio de Salud de Brasil indica que la MP 1.394/2026 prohíbe casinos y apuestas online en todo el país.",
             "Los retiros son solo en cripto. Términos §5.3, revisado 25 nov 2026: hay que apostar al menos el 10 % del depósito antes de retirar. Es una condición, no un plazo. Términos §7.3, revisado 25 nov 2026: los plazos de retiro son solo indicativos y no están garantizados. Sobre el tiempo, la ayuda dice que los retiros suelen procesarse al instante o en pocos minutos, sujetos a revisiones de seguridad o congestión de la red (artículos 16780663 y 16798784, revisado 30 oct 2026).",
-            "Países aceptados, según el centro de ayuda (artículo 16451925, que toma la lista de los términos §3.2): México, Argentina, Colombia, Chile, Perú y Brasil. La lista de restringidos incluye España y Estados Unidos, y también Aruba, Australia, Bélgica, Bonaire, Cuba, Curaçao, Francia, Irán, Italia, Myanmar, Países Bajos, Corea del Norte, Portugal, Saba, Singapur, San Eustaquio (Statia), San Martín (St Martin), Sudán, Siria, Reino Unido, Yemen, y Crimea, Donetsk y Luhansk. Que acepte jugadores de México o Argentina no es una licencia local.",
+            "Países aceptados, según el centro de ayuda (artículo 16451925, que toma la lista de los términos §3.2): México, Argentina, Colombia, Chile, Perú y Brasil. Atención (25 nov 2026): el Ministerio de Salud de Brasil indica que la MP 1.394/2026 prohíbe casinos y apuestas online en todo el país. La lista de restringidos incluye España y Estados Unidos, y también Aruba, Australia, Bélgica, Bonaire, Cuba, Curaçao, Francia, Irán, Italia, Myanmar, Países Bajos, Corea del Norte, Portugal, Saba, Singapur, San Eustaquio (Statia), San Martín (St Martin), Sudán, Siria, Reino Unido, Yemen, y Crimea, Donetsk y Luhansk. Que acepte jugadores de México o Argentina no es una licencia local.",
         ],
         "bono": [
             "Las cifras de rakeback del centro de ayuda no cuadran. La página «Fast Facts» (16780663) dice 5% en cada ventana (instantáneo, diario, semanal y mensual) y, a la vez, un máximo recurrente del 25%. Otro artículo (5351533) reparte las ventanas de otra forma. No elegimos una cifra. El programa VIP se llama Ace's Lounge. Revisado el 24 OCT 2026.",
@@ -1073,7 +1098,7 @@ FICHAS = {
             ),
             (
                 "¿En qué países no se puede usar?",
-                "Según el centro de ayuda (artículo 16451925), la lista de países restringidos incluye, entre otros, Estados Unidos, Reino Unido, España, Francia e Italia. México, Argentina, Colombia, Chile, Perú y Brasil figuran como aceptados. Que acepte un país no es una licencia local.",
+                "Según el centro de ayuda (artículo 16451925), la lista de países restringidos incluye, entre otros, Estados Unidos, Reino Unido, España, Francia e Italia. México, Argentina, Colombia, Chile, Perú y Brasil figuran como aceptados. Atención (25 nov 2026): el Ministerio de Salud de Brasil indica que la MP 1.394/2026 prohíbe casinos y apuestas online en todo el país. Que acepte un país no es una licencia local.",
             ),
             (
                 "¿Hay enlace de afiliado?",
@@ -1822,7 +1847,10 @@ def annex_html(data: dict) -> str:
     parts = []
     note = data.get("licencia_note_html", "")
     for dt, dd in data["sheet"]:
-        parts.append(f"<p><b>{e(dt)}.</b> {e(dd)}</p>")
+        body, has_warn = peel_warn(dd)
+        parts.append(f"<p><b>{e(dt)}.</b> {e(body)}</p>")
+        if has_warn:
+            parts.append(warn_html())
         if note and dt == "Licencia":
             parts.append(note)
     return f"""<details>
@@ -1843,7 +1871,13 @@ def lede_html(paragraphs: list[str]) -> str:
 
 
 def prose_html(paragraphs: list[str]) -> str:
-    return f'<div class="prose">{"".join(f"<p>{e(p)}</p>" for p in paragraphs)}</div>'
+    bits = []
+    for paragraph in paragraphs:
+        body, has_warn = peel_warn(paragraph)
+        bits.append(f"<p>{e(body)}</p>")
+        if has_warn:
+            bits.append(warn_html())
+    return f'<div class="prose">{"".join(bits)}</div>'
 
 
 def kyc_prose(data: dict) -> str:
