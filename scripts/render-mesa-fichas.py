@@ -248,17 +248,23 @@ def faq_html(faqs: list[tuple]) -> str:
         q, a = item[0], item[1]
         shown, has_warn = peel_warn(a)
         extra = ""
+        gate = ""
         if len(item) > 2 and item[2]:
-            href, anchor = item[2]
-            # HTML only: the linked anchor replaces the trailing plain guide name.
-            # JSON-LD keeps item[1], including «guía de Plinko en Cloudbet.»
-            plain_guide = "guía de Plinko en Cloudbet."
-            if shown.endswith(plain_guide):
-                shown = shown[: -len(plain_guide)].rstrip()
-            extra = f' <a href="{e(href)}">{e(anchor)}</a>.'
+            if isinstance(item[2], str):
+                # HTML comment only. It is not part of the visible answer or the JSON-LD.
+                gate = item[2]
+            else:
+                href, anchor = item[2]
+                # HTML only: the linked anchor replaces the trailing plain guide name.
+                # JSON-LD keeps item[1], including «guía de Plinko en Cloudbet.»
+                plain_guide = "guía de Plinko en Cloudbet."
+                if shown.endswith(plain_guide):
+                    shown = shown[: -len(plain_guide)].rstrip()
+                extra = f' <a href="{e(href)}">{e(anchor)}</a>.'
         note = warn_html() if has_warn else ""
+        prefix = f"{gate}\n        " if gate else ""
         blocks.append(
-            f"""<details class="faq">
+            f"""{prefix}<details class="faq">
           <summary><h3>{e(q)}</h3></summary>
           <div class="answer"><p>{e(shown)}{extra}</p>{note}</div>
         </details>"""
@@ -839,7 +845,7 @@ FICHAS = {
         "description": "Bono de bienvenida de Cloudbet según sus términos: paquete, rakeback y cash drops. Qué dicen sus páginas sobre México, KYC y retiro. +18.",
         "modified": "2026-11-23",
         "lede": [
-            "Según sus términos (§8.4, revisados el [DD mes AAAA]), el bono de bienvenida de Cloudbet es un paquete de hasta 2.500 USD en 30 días: rakeback del 10 % de la ventaja de la casa en apuestas de casino elegibles y cash drops. Lo que pasa a su calendario se reclama en 24 horas o se pierde. Ese artículo no publica un Nx. +18.",
+            "Según sus términos (§8.4, revisados el 25 nov 2026), el bono de bienvenida de Cloudbet es un paquete de hasta 2.500 USD en 30 días: rakeback del 10 % de la ventaja de la casa en apuestas de casino elegibles y cash drops. Lo que pasa a su calendario se reclama en 24 horas o se pierde. Ese artículo no publica un Nx. +18.",
             "Esta ficha no pone nota ni abre un depósito. Los hechos salen de la versión /en del sitio, de sus términos y de su ayuda.",
         ],
         "mexico_html": """<section class="block" aria-labelledby="mexico">
@@ -847,14 +853,14 @@ FICHAS = {
           <div class="prose">
             <p>México es un mercado de Latinoamérica entre otros. Esto es lo que dicen las páginas de Cloudbet sobre ese mercado.</p>
             <ul>
-              <li>México no está entre las 22 jurisdicciones que listan sus términos (§7.1.3, revisados el [DD mes AAAA]). La misma cláusula excluye también cualquier jurisdicción donde su oferta sea ilegal y deja en ti confirmar si el juego online es legal donde estás.
+              <li>México no está entre las 22 jurisdicciones que listan sus términos (§7.1.3, revisados el 25 nov 2026). La misma cláusula excluye también cualquier jurisdicción donde su oferta sea ilegal y deja en ti confirmar si el juego online es legal donde estás.
               <!-- BLOCKED: re-read terms §7.1.3 + help 101693/703235 -->
               </li>
-              <li>Sus términos (§21.1.5, revisados el [DD mes AAAA]) exigen verificar tu identidad cuando tus depósitos acumulados llegan a 2.200 USD, y pueden pedirte la verificación en cualquier momento. Su ayuda de niveles de verificación (artículo 415596, «What are Cloudbet's verification levels?», revisada el [DD mes AAAA]) describe el nivel 2 como foto del documento, prueba de domicilio y verificación de rostro. Para empezar no necesitas ningún nivel.
+              <li>Sus términos (§21.1.5, revisados el 25 nov 2026) exigen verificar tu identidad cuando tus depósitos acumulados llegan a 2.200 USD, y pueden pedirte la verificación en cualquier momento. Su ayuda de niveles de verificación (artículo 415596, «What are Cloudbet's verification levels?», revisada el 25 nov 2026) describe el nivel 2 como foto del documento, prueba de domicilio y verificación de rostro. Para empezar no necesitas ningún nivel.
               <!-- BLOCKED: re-read terms §21.1.5 + help 415596 -->
               </li>
-              <!-- BLOCKED until PR-day re-read of the Swapped methods table; if SPEI is still listed: SPEI appears among the methods of Swapped, a third party that sells crypto; Cloudbet's own deposits are in crypto. No steps, no amounts. -->
-              <!-- NEEDS EVIDENCE: help 103213/103366 PR-day capture; only allowed wording: «Su ayuda de retiros (revisada el [DD mes AAAA]) describe retiros en cripto» -->
+              <li>SPEI figura entre los métodos de Swapped, un tercero que vende cripto, en la tabla de su ayuda de métodos de pago (artículo 103366, revisada el 25 nov 2026). Esa tabla lista Latinoamérica, México y SPEI. Los depósitos de Cloudbet son en cripto.</li>
+              <li>Su ayuda de retiros (revisada el 25 nov 2026) describe retiros en cripto<!-- help 103213 --></li>
             </ul>
             <p>Una licencia offshore no es una licencia local de tu país.</p>
             <p>Revisar la ley local es responsabilidad tuya. +18.</p>
@@ -947,7 +953,8 @@ FICHAS = {
             ),
             (
                 "¿Puedo depositar en Cloudbet en moneda local o desde mi banco?",
-                "[RESPUESTA PENDIENTE: re-lectura de la tabla de Swapped]",
+                "Su ayuda de métodos de pago (artículo 103366, revisada el 25 nov 2026) lista una tabla de un proveedor tercero, Swapped, que incluye SPEI para México.",
+                "<!-- DRAFT FOR ED&COMP GATE -->",
             ),
             (
                 "¿Desde qué países no se puede usar Cloudbet?",
@@ -955,7 +962,7 @@ FICHAS = {
             ),
             (
                 "¿México está en la lista de países restringidos de Cloudbet?",
-                "No. Sus términos (§7.1.3, revisados el [DD mes AAAA]) listan 22 jurisdicciones restringidas y México no está entre ellas. La misma cláusula excluye también cualquier país donde su oferta sea ilegal y dice que confirmar si el juego online es legal donde estás es responsabilidad tuya. Eso no es una licencia local. +18.",
+                "No. Sus términos (§7.1.3, revisados el 25 nov 2026) listan 22 jurisdicciones restringidas y México no está entre ellas. La misma cláusula excluye también cualquier país donde su oferta sea ilegal y dice que confirmar si el juego online es legal donde estás es responsabilidad tuya. Eso no es una licencia local. +18.",
             ),
             (
                 "¿Cloudbet acepta jugadores de Sudamérica?",
