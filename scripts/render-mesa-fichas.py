@@ -106,7 +106,7 @@ ROWS = [
             "25 SEP 2026",
             "23 NOV 2026 (bono, criptos, depósito y apuesta mínimos, retiros). KYC, métodos de pago y países: 04 NOV 2026. Licencia y sportsbook: 03 OCT 2026.",
             "30 SEP 2026 (bono, KYC, métodos). Sportsbook y licencia rechequeados: 31 OCT 2026.",
-            "24 OCT 2026 (licencia, métodos, países, retiros). Bono de bienvenida y licencia de Anjouan en .io: fuente de terceros. · Plazo y mínimos de retiro: ayuda 16780663 y 16798784, 30 OCT 2026.",
+            "24 OCT 2026 (licencia, métodos, países, retiros). Bono de bienvenida y licencia de Anjouan en .io: fuente de terceros. · Plazo y mínimos de retiro: ayuda 16780663 y 16798784, 30 OCT 2026. · Rollover del depósito (§5.3) y plazos indicativos (§7.3): términos, 25 NOV 2026.",
         ],
     ),
 ]
@@ -1040,7 +1040,7 @@ FICHAS = {
             ("Licencia", "Curaçao Gaming Authority, OGL/2024/1507/0838, otorgada el 01/11/2024, estado activo, leído en cert.cga.cw (24 OCT 2026). Una licencia offshore no es una licencia local de tu país. En duelbits.io, una fuente de terceros (rollshark) nombra una licencia de Anjouan, ALSI-112310013-FI5. La renovación después del 12 OCT 2026 no está verificada. No es el dato principal."),
             ("Monedas", "BTC, ETH, LTC, SOL, XRP, DOGE, TRX, BNB, USDT, USDC, DAI, SHIB, APE y TRUMP. El depósito fiat, cuando existe, es una compra de cripto con un tercero (PIX en Brasil, tarjetas y otros). No hay un método fiat de México ni de Argentina en la lista; MXN, ARS y CLP solo se muestran como moneda de referencia. Los retiros son solo en cripto. Redes: no verificado · 24 OCT 2026."),
             ("Idiomas", "El operador incluye español entre los idiomas. Soporte declarado: chat 24/7 y support@duelbits.com. El chat en español no está verificado · 24 OCT 2026."),
-            ("Última revisión", "24 OCT 2026. duelbits.com no se pudo leer en esa auditoría. Los hechos salen de la ayuda, del certificado CGA y, donde se indica, de fuentes de terceros."),
+            ("Última revisión", "24 OCT 2026. Términos §5.3 y §7.3: 25 NOV 2026. Los hechos salen de la ayuda, de los términos (§5.3 y §7.3), del certificado CGA y, donde se indica, de fuentes de terceros."),
         ],
         "fuentes": [
             ("duelbits.com", "https://duelbits.com/"),
@@ -1051,7 +1051,7 @@ FICHAS = {
         "plata_title": "Cómo entra y sale el dinero",
         "plata": [
             "La lista de cripto de esta revisión es BTC, ETH, LTC, SOL, XRP, DOGE, TRX, BNB, USDT, USDC, DAI, SHIB, APE y TRUMP. El depósito en moneda fiat, cuando existe, es una compra de cripto con un tercero (PIX en Brasil, tarjetas y otros). No hay un método de depósito en pesos mexicanos ni en pesos argentinos. MXN, ARS y CLP solo se muestran como moneda de referencia.",
-            "Los retiros son solo en cripto. Términos §5.3, 25 nov 2026: hay que apostar el 10 % del depósito antes de retirar. Es una condición, no un plazo. Términos §7.3, 25 nov 2026: los plazos son solo indicativos. Sobre el tiempo, la ayuda dice que los retiros suelen procesarse al instante o en pocos minutos, sujetos a revisiones de seguridad o congestión de la red (artículos 16780663 y 16798784, revisado 30 oct 2026).",
+            "Los retiros son solo en cripto. Términos §5.3, revisado 25 nov 2026: hay que apostar al menos el 10 % del depósito antes de retirar. Es una condición, no un plazo. Términos §7.3, revisado 25 nov 2026: los plazos de retiro son solo indicativos y no están garantizados. Sobre el tiempo, la ayuda dice que los retiros suelen procesarse al instante o en pocos minutos, sujetos a revisiones de seguridad o congestión de la red (artículos 16780663 y 16798784, revisado 30 oct 2026).",
             "Países aceptados, según el centro de ayuda (artículo 16451925, que toma la lista de los términos §3.2): México, Argentina, Colombia, Chile, Perú y Brasil. La lista de restringidos incluye España y Estados Unidos, y también Aruba, Australia, Bélgica, Bonaire, Cuba, Curaçao, Francia, Irán, Italia, Myanmar, Países Bajos, Corea del Norte, Portugal, Saba, Singapur, San Eustaquio (Statia), San Martín (St Martin), Sudán, Siria, Reino Unido, Yemen, y Crimea, Donetsk y Luhansk. Que acepte jugadores de México o Argentina no es una licencia local.",
         ],
         "bono": [
