@@ -51,6 +51,5 @@ El texto de las guías, sin el menú del sitio, está en [llms-full.txt](https:/
 
 - [Sobre Planeta Ruleta](https://www.planetaruleta.com/sobre/): Qué es el proyecto. Intel y comunidad en español y para Latinoamérica. No opera un casino, no pide depósitos y no publica un botón de juego.
 - [Juego responsable](https://www.planetaruleta.com/juego-responsable/): Recursos oficiales de ayuda en varios países de Latinoamérica. No es un centro de tratamiento. +18.
-- [Privacidad](https://www.planetaruleta.com/privacidad/): El sitio usa Google Analytics 4. Qué eventos manda, que usa cookies y cómo optar por no participar.
 - [Preguntas frecuentes](https://www.planetaruleta.com/faq/): Respuestas sobre la mesa, la etiqueta Declarado, el wagering, el KYC y la alfabetización de RTP, bonos y promos. No es un dictamen legal.
 - [Cómo funciona](https://www.planetaruleta.com/como-funciona/): Qué se publica y cómo se evalúa, en tres capas (oficial, comunidad y editorial), con fecha y fuente. Solo para mayores de 18.
