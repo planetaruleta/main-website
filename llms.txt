@@ -22,7 +22,7 @@ El texto de las guías, sin el menú del sitio, está en [llms-full.txt](https:/
 - [Cashback, rakeback y lossback](https://www.planetaruleta.com/guias/cashback-rakeback-lossback/): Qué es el rakeback, en qué se diferencia del cashback y el lossback, y qué publica cada sala. El porcentaje, cuando la sala lo publica, está en sus términos o en su ayuda.
 - [Cómo leer una promo de casino](https://www.planetaruleta.com/guias/como-leer-una-promo-casino/): Método para leer opt-in, ventana, juegos excluidos y zona horaria en los términos, no el calendario de una promo vigente.
 - [USDT vs BTC para un depósito crypto](https://www.planetaruleta.com/guias/usdt-vs-btc-bankroll/): Custodia, comisiones, velocidad y volatilidad del activo al elegir USDT o BTC. No es consejo financiero.
-- [Antes de retirar: rollover del depósito y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/): Qué dicen las páginas de Rainbet, Shuffle, Cloudbet, Stake, Roobet y Duelbits sobre apostar el depósito y verificar la identidad antes de retirar. En Duelbits, resumimos su centro de ayuda.
+- [Antes de retirar: rollover del depósito y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/): Qué dicen las páginas de Rainbet, Shuffle, Cloudbet, Stake, Roobet y Duelbits sobre apostar el depósito y verificar la identidad antes de retirar. En Duelbits, citamos sus términos (§5.3 y §7.3) y su centro de ayuda.
 - [RTP de la ruleta y ventaja de la casa](https://www.planetaruleta.com/guias/rtp-ventaja-casa-ruleta/): La cuenta de la ventaja de la casa y del RTP en la ruleta europea, americana y francesa (la partage y en prison), qué RTP publican Shuffle y Rainbet, y cómo leer esos números en una promo.
 - [Sistema Paroli en la ruleta](https://www.planetaruleta.com/guias/sistema-paroli-ruleta/): La progresión 1-2-4 con la cuenta a la vista: cuánto llega a 4 unidades, cuánto cierra el ciclo y por qué la ventaja sigue en 2,70 %.
 - [Cloudbet: registro, países restringidos y KYC](https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/): Qué dicen la ayuda y los términos de Cloudbet sobre registro, países restringidos, KYC por niveles, licencia y apuesta mínima, con fecha de revisión.
@@ -49,6 +49,7 @@ El texto de las guías, sin el menú del sitio, está en [llms-full.txt](https:/
 
 ## El proyecto
 
-- [Sobre Planeta Ruleta](https://www.planetaruleta.com/sobre/): Qué es el proyecto. Intel y comunidad en español. No opera un casino, no pide depósitos y no publica un botón de juego.
+- [Sobre Planeta Ruleta](https://www.planetaruleta.com/sobre/): Qué es el proyecto. Intel y comunidad en español y para Latinoamérica. No opera un casino, no pide depósitos y no publica un botón de juego.
+- [Juego responsable](https://www.planetaruleta.com/juego-responsable/): Recursos oficiales de ayuda en varios países de Latinoamérica. No es un centro de tratamiento. +18.
 - [Preguntas frecuentes](https://www.planetaruleta.com/faq/): Respuestas sobre la mesa, la etiqueta Declarado, el wagering, el KYC y la alfabetización de RTP, bonos y promos. No es un dictamen legal.
 - [Cómo funciona](https://www.planetaruleta.com/como-funciona/): Qué se publica y cómo se evalúa, en tres capas (oficial, comunidad y editorial), con fecha y fuente. Solo para mayores de 18.
