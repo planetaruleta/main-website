@@ -82,9 +82,9 @@ ROWS = [
             "Registro de anjouangaming.com: Rain Group Ltd, ALSI-152406029-FI2, estado «valid», vencimiento 13 jun 2027; revisado 10 nov 2026. Observación del registro, no confirmación de validez jurídica.",
             "Curaçao Gaming Authority, OGL/2024/1337/0628, Natural Nine B.V. (160998). /info/license dice “Gaming Control Board”; Terms y el certificado CGA dicen “Gaming Authority”. Certificado Active.",
             "Curaçao-class por certificado CGA: OGL/2024/1451/0918, Active, otorgado 09/06/2025. Pie del sitio: Medium Rare N.V., sin número de licencia (31 OCT 2026).",
-            "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. No es licencia de Argentina.",
-            "Curaçao, OGL/2024/687/0427, Raw Entertainment B.V. (157205), según sus términos y el pie de su home (31 OCT 2026). Sin captura del registro del regulador. No es licencia de Argentina.",
-            "Curaçao Gaming Authority, OGL/2024/1507/0838, Liquid Entertainment N.V. (153298). Certificado CGA: activa, otorgada el 01/11/2024. No es licencia de Argentina.",
+            "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. Una licencia offshore no es una licencia local de tu país.",
+            "Curaçao, OGL/2024/687/0427, Raw Entertainment B.V. (157205), según sus términos y el pie de su home (31 OCT 2026). Sin captura del registro del regulador. Una licencia offshore no es una licencia local de tu país.",
+            "Curaçao Gaming Authority, OGL/2024/1507/0838, Liquid Entertainment N.V. (153298). Certificado CGA: activa, otorgada el 01/11/2024. Una licencia offshore no es una licencia local de tu país.",
         ],
     ),
     (
@@ -104,7 +104,7 @@ ROWS = [
             "25 SEP 2026 (fila). Señales: RakeBoosts 05 OCT, Daily Race 03 OCT y 26 SEP, torneo Gates 30 SEP 2026.",
             "28 SEP 2026 (rakeback). Level Up: 02 OCT 2026.",
             "25 SEP 2026",
-            "04 NOV 2026 (bono, KYC, métodos). Licencia y sportsbook: 03 OCT 2026.",
+            "23 NOV 2026 (bono, criptos, depósito y apuesta mínimos, retiros). KYC, métodos de pago y países: 04 NOV 2026. Licencia y sportsbook: 03 OCT 2026.",
             "30 SEP 2026 (bono, KYC, métodos). Sportsbook y licencia rechequeados: 31 OCT 2026.",
             "24 OCT 2026 (licencia, métodos, países, retiros). Bono de bienvenida y licencia de Anjouan en .io: fuente de terceros. · Plazo y mínimos de retiro: ayuda 16780663 y 16798784, 30 OCT 2026.",
         ],
@@ -329,15 +329,17 @@ def mast() -> str:
 def footer() -> str:
     return f"""<footer class="site-foot">
     {brand()}
-    <span>+18 · sin puntaje · offshore ≠ licencia AR</span>
+    <span>+18 · sin puntaje · Una licencia offshore no es una licencia local de tu país.</span>
     <p class="foot-links">
       <a href="/mesa/">Mesa</a> ·
       <a href="/#senales">Señales</a> ·
       <a href="/como-funciona/">Cómo funciona</a> ·
       <a href="/sobre/">Sobre</a> ·
       <a href="/guias/">Guías</a> ·
-      <a href="/faq/">FAQ</a><br />
-      +18 · no somos un casino · offshore no es licencia de Argentina · <a href="mailto:planetaruleta@protonmail.com">planetaruleta@protonmail.com</a> · <a href="https://www.planetaruleta.com/">planetaruleta.com</a><br />
+      <a href="/faq/">FAQ</a> ·
+      <a href="/juego-responsable/">Juego responsable</a> ·
+      <a href="/privacidad/">Privacidad</a><br />
+      +18 · no somos un casino · Una licencia offshore no es una licencia local de tu país. · <a href="mailto:planetaruleta@protonmail.com">planetaruleta@protonmail.com</a> · <a href="https://www.planetaruleta.com/">planetaruleta.com</a><br />
       Planeta Ruleta © <span data-year></span>
     </p>
   </footer>
@@ -381,9 +383,7 @@ def head(title: str, description: str, path: str, graph: list, og_type: str = "a
 {ld}
   </script>
   <meta name="theme-color" content="#0B1520" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Ibarra+Real+Nova:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Schibsted+Grotesk:ital,wght@0,500;0,600;0,700;1,500&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/fonts.css" />
   <link rel="stylesheet" href="/css/brand.css" />
   <link rel="stylesheet" href="/css/mesa.css" />
   <script src="/js/config.js"></script>
@@ -432,8 +432,8 @@ INDEX_FAQS = [
         "No. En cada ficha el espacio está y dice enlace de afiliado no activo. No hay botón de juego ni código para cargar.",
     ),
     (
-        "¿Offshore es una licencia de Argentina?",
-        "No. Una licencia que el operador publica en Anjouan o en Curaçao no es una licencia del registro argentino. La mesa no ordena filas por licencia local. +18.",
+        "¿Una licencia offshore es una licencia local?",
+        "No. Una licencia offshore no es una licencia local de tu país. La mesa no ordena filas por licencia local. +18.",
     ),
 ]
 
@@ -493,7 +493,7 @@ def render_index() -> str:
           <p class="eyebrow">En la mesa</p>
           <h1>Fichas</h1>
           <p class="lede">Seis fichas: Rainbet, Shuffle, Stake, Cloudbet, Roobet y Duelbits. La comparación repite lo declarado. Sin puntaje.</p>
-          <p class="lede lede-next">El enlace de afiliado no está activo. Offshore no es una licencia de Argentina. +18.</p>
+          <p class="lede lede-next">El enlace de afiliado no está activo. Una licencia offshore no es una licencia local de tu país. +18.</p>
           <p class="meta"><b>Operadores</b> seis · <b>Sin puntaje</b> · <b>Afiliado</b> no activo</p>
           <div class="seals">
             <div class="seal"><span class="ring" aria-hidden="true"></span><span><b>Sin puntaje</b>no hay puesto<br>no hay ganador</span></div>
@@ -529,7 +529,7 @@ FICHAS = {
         "name": "Rainbet",
         "h1": "Rainbet: ficha de la mesa",
         "title": "Rainbet: licencia, KYC y welcome — ficha | Planeta Ruleta",
-        "description": "Rainbet declara licencia de Anjouan y un welcome x40 o sin ese rollover. KYC con ID, selfie y domicilio. Sin puntaje. Offshore no es licencia de Argentina. +18.",
+        "description": "Rainbet declara licencia de Anjouan y un welcome x40 o sin ese rollover. KYC con ID, selfie y domicilio. Sin puntaje. Una licencia offshore no es una licencia local de tu país. +18.",
         "modified": "2026-11-04",
         "lede": [
             "Rainbet está en la mesa como operador crypto/offshore: la casa declara licencia de Anjouan y un welcome con dos caminos.",
@@ -569,7 +569,7 @@ FICHAS = {
             "Brewers–Rays (página de la promo, captura 22 OCT 2026): si los Brewers ganan la serie en 5 juegos o menos, la ganancia extra se acredita como apuesta gratis (free bet), no en efectivo. Máximo 500 USD, cupón mínimo 5 USD, solo el mercado de la serie, sin combinadas. Cierra el sáb 31 OCT 2026 a las 17:00 hora Guatemala. No reemplaza el chip de welcome.",
             ],
         "kyc": "KYC declarado: documento de identidad, selfie y prueba de domicilio. Sumsub está nombrado en el AML, no en Terms §20. Terms §20: pueden restringir la cuenta si el ID no se completa en 72 horas; la verificación puede tardar hasta 7 días hábiles; el equipo de KYC habla de 24 horas una vez Temporarily Approved. Fuente: Terms y AML, revisión de mesa 25 SEP 2026 / rechequeo 03 OCT 2026.",
-        "offshore": "Rainbet publica una licencia de Anjouan. Eso no es una licencia de Argentina ni convierte a esta página en un casino. No hay puntaje, no hay puesto y no hay instrucciones para saltar un bloqueo. +18.",
+        "offshore": "Rainbet publica una licencia de Anjouan. Una licencia offshore no es una licencia local de tu país. No convierte a esta página en un casino. No hay puntaje, no hay puesto y no hay instrucciones para saltar un bloqueo. +18.",
         "senales": [
             {
                 "id": "bono-rainbet-brewers-rays-2026-10-22",
@@ -637,7 +637,7 @@ FICHAS = {
         "name": "Shuffle",
         "h1": "Shuffle: ficha de la mesa",
         "title": "Shuffle: licencia, KYC y rakeback — ficha | Planeta Ruleta",
-        "description": "Rakeback 5% del house edge (Bronze) y licencia Curaçao OGL/2024/1337/0628. KYC antes del primer retiro. Sin puntaje. Offshore no es licencia de Argentina. +18.",
+        "description": "Rakeback 5% del house edge (Bronze) y licencia Curaçao OGL/2024/1337/0628. KYC antes del primer retiro. Sin puntaje. Una licencia offshore no es una licencia local de tu país. +18.",
         "modified": "2026-11-04",
         "lede": [
             "Shuffle está en la mesa como operador crypto/offshore, con licencia de Curaçao publicada a nombre de Natural Nine B.V.",
@@ -645,7 +645,7 @@ FICHAS = {
         ],
         "sheet": [
             ("Empresa", "Natural Nine B.V. (160998), Korporaalweg 10, Willemstad. Declarado en /info/license, Terms y homepage."),
-            ("Licencia", "Curaçao Gaming Authority, OGL/2024/1337/0628, Natural Nine B.V. (160998). /info/license dice “Gaming Control Board”; Terms y el certificado CGA dicen “Gaming Authority”. Certificado Active. No es licencia de Argentina."),
+            ("Licencia", "Curaçao Gaming Authority, OGL/2024/1337/0628, Natural Nine B.V. (160998). /info/license dice “Gaming Control Board”; Terms y el certificado CGA dicen “Gaming Authority”. Certificado Active. Una licencia offshore no es una licencia local de tu país."),
             ("Monedas", "La celda de métodos es la clase: crypto · fiat/cards. No hay catálogo de monedas ni de redes en la mesa. USDT aparece en el ejemplo de rakeback (1000 USDT), no como lista. Catálogo: no verificado · 03 OCT 2026."),
             ("Idiomas", "no verificado · 03 OCT 2026. Esta ficha está en español de Latinoamérica; eso no dice qué idiomas publica el operador."),
             ("Última revisión", "Rakeback re-verificado 28 SEP 2026. Level Up: 02 OCT 2026. KYC: 25 SEP 2026. MXN por SPEI: 22 OCT 2026. Huecos marcados al armar la ficha: 03 OCT 2026."),
@@ -669,7 +669,7 @@ FICHAS = {
         "plata_title": "Cómo entra y sale el dinero",
         "plata": [
             "La homepage declara depósitos fiat con tarjeta, Apple Pay y Google Pay, vía socios de pago, más la clase crypto. Los Terms hablan de retiros fiat. La celda de la mesa no lista monedas.",
-            "Pesos (ARS): según el artículo de ayuda de Shuffle sobre Mercado Pago, NaranjaX y transferencia (actualizado el 14 OCT 2026, revisado el 15 OCT 2026), depositas en ARS por transferencia inmediata, Mercado Pago o NaranjaX al CBU/CVU o alias que te muestran en cada depósito, y retiras solo por transferencia a un CBU o CVU de 22 dígitos (sin alias) a tu nombre, con el mismo CUIT/CUIL de tu cuenta. Mínimo 7.500 ARS y máximo 7.500.000 ARS por operación, en los dos sentidos. Según ese artículo, Shuffle no cobra comisión por depositar ni retirar en ARS. Antes de cobrar te piden un documento con foto. «Casi instantáneo» es lo que dice la ayuda, no un plazo. Que acepte pesos no cambia la licencia: sigue siendo Curaçao, no una licencia de Argentina. Otros países: en la ayuda de Shuffle no encontramos artículos de moneda local para Chile, Colombia o Perú (búsqueda del 15 OCT 2026); Brasil tiene uno propio (BRL con PIX). Pagar en moneda local no es una licencia local. Fuente: oficial (ayuda de Shuffle).",
+            "Pesos (ARS): según el artículo de ayuda de Shuffle sobre Mercado Pago, NaranjaX y transferencia (actualizado el 14 OCT 2026, revisado el 15 OCT 2026), depositas en ARS por transferencia inmediata, Mercado Pago o NaranjaX al CBU/CVU o alias que te muestran en cada depósito, y retiras solo por transferencia a un CBU o CVU de 22 dígitos (sin alias) a tu nombre, con el mismo CUIT/CUIL de tu cuenta. Mínimo 7.500 ARS y máximo 7.500.000 ARS por operación, en los dos sentidos. Según ese artículo, Shuffle no cobra comisión por depositar ni retirar en ARS. Antes de cobrar te piden un documento con foto. «Casi instantáneo» es lo que dice la ayuda, no un plazo. Que acepte pesos no cambia la licencia: sigue siendo Curaçao. Una licencia offshore no es una licencia local de tu país. Otros países: en la ayuda de Shuffle no encontramos artículos de moneda local para Chile, Colombia o Perú (búsqueda del 15 OCT 2026); Brasil tiene uno propio (BRL con PIX). Pagar en moneda local no es una licencia local. Fuente: oficial (ayuda de Shuffle).",
             "Pesos mexicanos (MXN), ayuda de Shuffle sobre pesos mexicanos (MXN), artículo 17684669, captura 22 OCT 2026. Depósitos por SPEI y retiros por transferencia bancaria (CLABE): mínimo 90 MXN y máximo 20 mil MXN por transacción, sin comisión de Shuffle, disponible 24/7. Para retirar hace falta la verificación de nivel 2, con identificación con foto válida, y la CLABE a nombre del titular de la cuenta. El depósito también tiene que salir de una cuenta a ese mismo nombre. Según Shuffle, el retiro aprobado llega «en pocos minutos»; no lo comprobamos. La búsqueda del 15 OCT 2026 no encontró este artículo. Que acepte MXN no cambia la licencia: sigue siendo Curaçao, no una licencia de México. No reemplaza el chip de rakeback.",
             "USDT está en el ejemplo de rakeback del help (1000 USDT a 2% de house edge → 1 USDT). Eso no es un catálogo de redes.",
             "Antes de retirar hay que apostar 1x el depósito (help de coin-mixing, 28 jul 2026). No hay horas de pago: el retiro de la mesa sigue en sin dato. Que el pago en pesos pase por CBU/CVU no lo convierte en un casino regulado en Argentina.",
@@ -680,7 +680,7 @@ FICHAS = {
             "Level Up (02 OCT 2026) es otra señal: al subir de rango se abren Rank Up, Level Up Reload y Recent Play. Los montos del escalón “1” están publicados como aproximados (Silver ≈ 25 USD, Gold ≈ 210 USD, y el resto en la señal). No reemplaza el chip. La promo figura desde el 1 nov 2024 hasta el 2 nov 2026.",
             ],
         "kyc": "KYC declarado: los Terms pueden exigir pasaporte, DNI o licencia al cruzar un umbral y, en cualquier caso, antes del primer retiro. El help de Account Verification describe niveles: email, datos básicos, ID de gobierno y prueba de domicilio. Fuente: Terms y help, señal del 25 SEP 2026.",
-        "offshore": "Shuffle publica OGL/2024/1337/0628 a nombre de Natural Nine B.V. /info/license dice Curaçao Gaming Control Board; Terms y el certificado CGA dicen Curaçao Gaming Authority. Eso no es una licencia de Argentina. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
+        "offshore": "Shuffle publica OGL/2024/1337/0628 a nombre de Natural Nine B.V. /info/license dice Curaçao Gaming Control Board; Terms y el certificado CGA dicen Curaçao Gaming Authority. Una licencia offshore no es una licencia local de tu país. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
         "senales": [
             {
                 "id": "metodos-shuffle-spei-mxn-2026-10-22",
@@ -726,7 +726,7 @@ FICHAS = {
             ),
             (
                 "¿La licencia de Curaçao es una licencia argentina?",
-                "No. El número es OGL/2024/1337/0628, Natural Nine B.V. /info/license dice Curaçao Gaming Control Board; Terms y el certificado CGA dicen Curaçao Gaming Authority. Offshore no es el registro de Argentina. El enlace de afiliado de esta ficha no está activo. +18.",
+                "No. El número es OGL/2024/1337/0628, Natural Nine B.V. /info/license dice Curaçao Gaming Control Board; Terms y el certificado CGA dicen Curaçao Gaming Authority. Una licencia offshore no es una licencia local de tu país. El enlace de afiliado de esta ficha no está activo. +18.",
             ),
         ],
     },
@@ -742,7 +742,7 @@ FICHAS = {
         ],
         "sheet": [
             ("Empresa", "Medium Rare N.V. (145353), en el certificado CGA de stake.com. Los Terms de Stake.com (§2.1, revisado 30 oct 2026) también dicen que, al registrarte, el contrato es con Medium Rare N.V.; el número de licencia no aparece en ese texto."),
-            ("Licencia", "Curaçao-class. Certificado CGA OGL/2024/1451/0918, otorgado el 09/06/2025, estado Active. Es certificado del regulador, no una frase leída en el footer de stake.com. No es licencia de Argentina."),
+            ("Licencia", "Curaçao-class. Certificado CGA OGL/2024/1451/0918, otorgado el 09/06/2025, estado Active. Es certificado del regulador, no una frase leída en el footer de stake.com. Una licencia offshore no es una licencia local de tu país."),
             ("Monedas", "La celda de métodos es la clase: crypto · fiat. No hay catálogo de monedas ni de redes. BTC aparece en el ejemplo de rakeback, no como lista. Catálogo: no verificado · 03 OCT 2026."),
             ("Idiomas", "no verificado · 03 OCT 2026. Esta ficha está en español de Latinoamérica; eso no dice qué idiomas publica el operador."),
             ("Última revisión", "Mesa y señal de welcome: 25 SEP 2026 (help fechado 24 ago 2026). Huecos marcados al armar la ficha: 03 OCT 2026."),
@@ -776,7 +776,7 @@ FICHAS = {
             "No hay señal de race ni de level-up de Stake en la mesa.",
         ],
         "kyc": "El help Proof of Identity (24 ago 2026) acepta pasaporte, documento nacional de ambos lados o licencia de ambos lados, fotografiado y con vigencia de al menos 3 meses. En qué momento lo exigen no quedó en ese fetch: no verificado · 25 SEP 2026. Fuente: help.stake.com.",
-        "offshore": "La celda dice Curaçao-class porque el certificado CGA de stake.com está Active (certificado revisado 31 oct 2026). El pie del sitio nombra a Medium Rare N.V. como dueña y operadora, pero no muestra un número de licencia (revisado 31 oct 2026). Eso no es una licencia de Argentina. Esta ficha no pone nota y no explica cómo evadir un bloqueo. +18.",
+        "offshore": "La celda dice Curaçao-class porque el certificado CGA de stake.com está Active (certificado revisado 31 oct 2026). El pie del sitio nombra a Medium Rare N.V. como dueña y operadora, pero no muestra un número de licencia (revisado 31 oct 2026). Una licencia offshore no es una licencia local de tu país. Esta ficha no pone nota y no explica cómo evadir un bloqueo. +18.",
         "senales": [
             {
                 "id": "bono-stake-rakeback-welcome-2026-09-25",
@@ -818,7 +818,7 @@ FICHAS = {
         ],
         "sheet": [
             ("Empresa", "Halcyon Super Holdings B.V. (148526), nombrada en el help de licencias. Domicilio: no verificado · 03 OCT 2026."),
-            ("Licencia", "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. No es licencia de Argentina."),
+            ("Licencia", "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. Una licencia offshore no es una licencia local de tu país."),
             ("Monedas", "Clase crypto · buy card (Swapped). La ayuda lista 29 criptomonedas con sus redes; BTC y BCH por su mainnet y por BNB Smart Chain (23 NOV 2026). No copiamos el catálogo completo."),
             ("Idiomas", "no verificado · 03 OCT 2026. Esta ficha está en español de Latinoamérica; eso no dice qué idiomas publica el operador."),
             ("Última revisión", "Licencia y sportsbook: 03 OCT 2026. Monster Mash: 22 OCT 2026. Bono (paquete y giros), criptos, depósito y apuesta mínimos, y retiros (paso a paso): 23 NOV 2026. KYC, métodos de pago (Swapped) y países restringidos: 04 NOV 2026."),
@@ -878,7 +878,7 @@ FICHAS = {
         "kyc_guide_html": '<div class="prose"><p>Registro en corto (ayuda, revisada 4 nov 2026): te registras con email y contraseña, o con Google o GitHub, y activas la cuenta desde el email de confirmación. Registrarte no es verificarte: sin nivel 2 rigen los topes de 2.200 USD. Depósito mínimo: su ayuda en español dice «Todos los depósitos deben ser de mínimo $1 USD» y, más abajo, que la mayoría está por debajo de 1 USD, «por lo general de $0,10 a $0,50 USD o su equivalente». El monto mínimo exacto de cada moneda aparece en la pantalla de depósito. Apuesta mínima: en deportes, su ayuda y sus términos dan cifras distintas. En casino no encontramos un mínimo general publicado en su ayuda ni en sus términos, y para esports su ayuda no publica un mínimo aparte (revisado 23 nov 2026).</p><p>El paso a paso del registro, la lista completa de países restringidos, los documentos del KYC, el depósito y la apuesta mínima están en la <a href="/guias/cloudbet-registro-paises-kyc/">guía de registro, países y KYC de Cloudbet</a>.</p></div>',
         "juegos_guide_html": '<div class="prose"><p>Casino con bitcoin y otras criptos: la ayuda de Cloudbet (revisada 4 nov 2026) agrupa el casino en Originals, slots, casino en vivo, juegos de mesa RNG, crash y arcade, con más de 100 estudios. Según esa ayuda, la verificación provably fair aplica a sus Originals: Mines, Dice, Advance Dice y Plinko.</p><p>Plinko en Cloudbet: filas, niveles, RTP declarado, BOOST con recargo y cómo verificar una tirada, según las páginas de Cloudbet, están en la <a href="/guias/plinko-cloudbet/">guía de Plinko en Cloudbet</a>. Aquí no repetimos esas cifras.</p></div>',
         "kyc": "KYC declarado por niveles. Level 2: foto del documento, prueba de domicilio y verificación de rostro. Sumsub está en Terms §21.1.3; el artículo de niveles no lo nombra. El help dice que verificar es opcional y que pueden pedir la verificación en cualquier momento. Hasta completar el Level 2, el help publica un tope de 2.200 USD en depósitos acumulados de por vida y de 2.200 USD por día en retiros; esos topes no están en la celda de la tabla. Disparador fijo: según sus términos (§21.1.5), Cloudbet pide verificar tu identidad cuando tus depósitos acumulados llegan a 2.200 USD o los superan; hasta completarla, depósitos y retiros pueden quedar restringidos y los fondos, bloqueados. Fuente: help y Terms (versión del 30 SEP 2026), revisados 4 nov 2026.",
-        "offshore": "Cloudbet publica Curaçao Gaming Authority, OGL/2024/328/0599, a nombre de Halcyon Super Holdings B.V. (148526). Eso no es una licencia de Argentina. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
+        "offshore": "Cloudbet publica Curaçao Gaming Authority, OGL/2024/328/0599, a nombre de Halcyon Super Holdings B.V. (148526). Una licencia offshore no es una licencia local de tu país. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
         "senales": [
             {
                 "id": "lobby-cloudbet-monster-mash-2026-10-22",
@@ -899,7 +899,7 @@ FICHAS = {
             ),
             (
                 "¿La licencia de Curaçao es una licencia argentina?",
-                "No. El help de licencias nombra Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Offshore no es el registro de Argentina. El enlace de afiliado de esta ficha no está activo. +18.",
+                "No. El help de licencias nombra Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Una licencia offshore no es una licencia local de tu país. El enlace de afiliado de esta ficha no está activo. +18.",
             ),
             (
                 "¿El depósito es por CBU?",
@@ -960,7 +960,7 @@ FICHAS = {
         "name": "Roobet",
         "h1": "Roobet: ficha de la mesa",
         "title": "Roobet: licencia, KYC y rakeback — ficha | Planeta Ruleta",
-        "description": "Instant rakeback y +10% por 24 h al registrarse. Licencia de Curaçao según sus términos y su home, que también lista sportsbook. Sin puntaje. Offshore no es licencia de Argentina. +18.",
+        "description": "Instant rakeback y +10% por 24 h al registrarse. Licencia de Curaçao según sus términos y su home, que también lista sportsbook. Sin puntaje. Una licencia offshore no es una licencia local de tu país. +18.",
         "modified": "2026-11-04",
         "lede": [
             "Roobet está en la mesa como operador crypto/offshore. El help declara instant rakeback y, al registrarse, un boost de +10% durante 24 horas.",
@@ -968,7 +968,7 @@ FICHAS = {
         ],
         "sheet": [
             ("Empresa", "Raw Entertainment B.V., Reg No 157205, según sus términos y el pie de su home (31 OCT 2026)."),
-            ("Licencia", "“licensed to conduct online gaming operations by the Government of Curacao”, OGL/2024/687/0427, según el pie de su home; sus términos (§1) dan el mismo número (31 OCT 2026). Sin captura del registro del regulador. El artículo Welcome dice “fully licensed and regulated” y no nombra autoridad ni número (31 OCT 2026). No es licencia de Argentina."),
+            ("Licencia", "“licensed to conduct online gaming operations by the Government of Curacao”, OGL/2024/687/0427, según el pie de su home; sus términos (§1) dan el mismo número (31 OCT 2026). Sin captura del registro del regulador. El artículo Welcome dice “fully licensed and regulated” y no nombra autoridad ni número (31 OCT 2026). Una licencia offshore no es una licencia local de tu país."),
             ("Monedas", "La celda de la tabla es la clase crypto · fiat+Swapped. El help de depósito nombra criptos; no las copiamos como catálogo. Redes: no verificado · 03 OCT 2026."),
             ("Idiomas", "no verificado · 03 OCT 2026. Esta ficha está en español de Latinoamérica; eso no dice qué idiomas publica el operador."),
             ("Última revisión", "Bono, KYC y métodos de la fila: 30 SEP 2026. Licencia y sportsbook rechequeados el 31 OCT 2026: ver filas de arriba. Heat Check: 22 OCT 2026."),
@@ -995,7 +995,7 @@ FICHAS = {
             "Heat Check (página de la promo, captura 22 OCT 2026) es una señal aparte: hasta 1.110 USD en free bets, no en efectivo, apuesta mínima 10 USD a cuota 1,70 o más. El encabezado dice 4 NOV y los términos dicen 3 NOV, sin zona horaria: verifica la fecha en los términos. No reemplaza el chip.",
         ],
         "kyc": "KYC declarado en Level 2 (help del 23 jul 2026): pasaporte, licencia de conducir o documento de gobierno, con captura de frente y dorso. Ese artículo no da un umbral. Cuándo lo exigen: no verificado · 03 OCT 2026. Fuente: help.roobet.com.",
-        "offshore": "Según sus términos (§1) y el pie de su home (revisados 31 oct 2026), Raw Entertainment B.V. tiene licencia del Gobierno de Curaçao, OGL/2024/687/0427. Es lo que declara el operador; no tenemos captura del registro del regulador de Curaçao para ese número. “Fully licensed and regulated” en el artículo Welcome no nombra un registro (revisado 31 oct 2026). Eso no es una licencia de Argentina. La misma home lista “Sportsbook” y “Sports Betting”; no abrimos el sportsbook con sesión iniciada. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
+        "offshore": "Según sus términos (§1) y el pie de su home (revisados 31 oct 2026), Raw Entertainment B.V. tiene licencia del Gobierno de Curaçao, OGL/2024/687/0427. Es lo que declara el operador; no tenemos captura del registro del regulador de Curaçao para ese número. “Fully licensed and regulated” en el artículo Welcome no nombra un registro (revisado 31 oct 2026). Una licencia offshore no es una licencia local de tu país. La misma home lista “Sportsbook” y “Sports Betting”; no abrimos el sportsbook con sesión iniciada. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
         "senales": [
             {
                 "id": "bono-roobet-heat-check-2026-10-22",
@@ -1016,7 +1016,7 @@ FICHAS = {
             ),
             (
                 "¿Qué licencia publica?",
-                "Según sus términos (§1) y el pie de su home (revisados 31 oct 2026), Raw Entertainment B.V. tiene licencia del Gobierno de Curaçao, OGL/2024/687/0427. Es lo que declara el operador; no tenemos captura del registro del regulador de Curaçao para ese número. Eso no es una licencia de Argentina. +18.",
+                "Según sus términos (§1) y el pie de su home (revisados 31 oct 2026), Raw Entertainment B.V. tiene licencia del Gobierno de Curaçao, OGL/2024/687/0427. Es lo que declara el operador; no tenemos captura del registro del regulador de Curaçao para ese número. Una licencia offshore no es una licencia local de tu país. +18.",
             ),
             (
                 "¿Hay enlace de afiliado o depósito por CBU?",
@@ -1028,7 +1028,7 @@ FICHAS = {
         "name": "Duelbits",
         "h1": "Duelbits: ficha de la mesa",
         "title": "Duelbits: licencia, KYC y métodos — ficha | Planeta Ruleta",
-        "description": "Duelbits: licencia CGA OGL/2024/1507/0838 y retiros solo en cripto. Sin método fiat de México ni Argentina. Sin puntaje. Offshore no es licencia de Argentina. +18.",
+        "description": "Duelbits: licencia CGA OGL/2024/1507/0838 y retiros solo en cripto. Sin método fiat de México ni Argentina. Sin puntaje. Una licencia offshore no es una licencia local de tu país. +18.",
         "modified": "2026-11-04",
         "published": "2026-10-24",
         "lede": [
@@ -1037,7 +1037,7 @@ FICHAS = {
         ],
         "sheet": [
             ("Empresa", "Liquid Entertainment N.V., Curaçao, número 153298. Centro de ayuda del operador, artículo «Fast Facts» (help.duelbits.io, 16780663), 24 OCT 2026."),
-            ("Licencia", "Curaçao Gaming Authority, OGL/2024/1507/0838, otorgada el 01/11/2024, estado activo, leído en cert.cga.cw (24 OCT 2026). No es licencia de Argentina. En duelbits.io, una fuente de terceros (rollshark) nombra una licencia de Anjouan, ALSI-112310013-FI5. La renovación después del 12 OCT 2026 no está verificada. No es el dato principal."),
+            ("Licencia", "Curaçao Gaming Authority, OGL/2024/1507/0838, otorgada el 01/11/2024, estado activo, leído en cert.cga.cw (24 OCT 2026). Una licencia offshore no es una licencia local de tu país. En duelbits.io, una fuente de terceros (rollshark) nombra una licencia de Anjouan, ALSI-112310013-FI5. La renovación después del 12 OCT 2026 no está verificada. No es el dato principal."),
             ("Monedas", "BTC, ETH, LTC, SOL, XRP, DOGE, TRX, BNB, USDT, USDC, DAI, SHIB, APE y TRUMP. El depósito fiat, cuando existe, es una compra de cripto con un tercero (PIX en Brasil, tarjetas y otros). No hay un método fiat de México ni de Argentina en la lista; MXN, ARS y CLP solo se muestran como moneda de referencia. Los retiros son solo en cripto. Redes: no verificado · 24 OCT 2026."),
             ("Idiomas", "El operador incluye español entre los idiomas. Soporte declarado: chat 24/7 y support@duelbits.com. El chat en español no está verificado · 24 OCT 2026."),
             ("Última revisión", "24 OCT 2026. duelbits.com no se pudo leer en esa auditoría. Los hechos salen de la ayuda, del certificado CGA y, donde se indica, de fuentes de terceros."),
@@ -1059,12 +1059,12 @@ FICHAS = {
         ],
         "kyc": "KYC: según el centro de ayuda (artículo 16335255, 24 OCT 2026), la verificación reforzada se hace en general al llegar a unos 2.000 EUR acumulados en depósitos o retiros, y Duelbits puede pedirla en cualquier momento. El centro de ayuda dice que el saldo se pierde tras 12 meses seguidos sin actividad (artículo 17027063) y que no ofrece límites de depósito (artículo 16758548). Sí ofrece autoexclusión por 1 semana, 1 mes, 6 meses o de forma permanente (Fast Facts, 16780663).",
         "riesgo_html": "<p><b>Seguridad.</b> En febrero de 2024 y en septiembre de 2026 hubo incidentes en billeteras de Duelbits; según se informó, los fondos de los jugadores no se vieron afectados.</p>",
-        "offshore": "Según el certificado de la CGA, la licencia OGL/2024/1507/0838 de Duelbits está activa. El centro de ayuda del operador nombra a Liquid Entertainment N.V. Eso no es una licencia de Argentina. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
+        "offshore": "Según el certificado de la CGA, la licencia OGL/2024/1507/0838 de Duelbits está activa. El centro de ayuda del operador nombra a Liquid Entertainment N.V. Una licencia offshore no es una licencia local de tu país. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
         "senales": [],
         "faqs": [
             (
                 "¿Duelbits tiene licencia de Argentina?",
-                "No. El certificado de la Curaçao Gaming Authority muestra la licencia OGL/2024/1507/0838 como activa, otorgada el 01/11/2024 a Liquid Entertainment N.V. (153298). Es una licencia de Curaçao, no del registro argentino. +18.",
+                "No. El certificado de la Curaçao Gaming Authority muestra la licencia OGL/2024/1507/0838 como activa, otorgada el 01/11/2024 a Liquid Entertainment N.V. (153298). Es una licencia de Curaçao. Una licencia offshore no es una licencia local de tu país. +18.",
             ),
             (
                 "¿Hay depósito en pesos de México o Argentina?",
@@ -1182,7 +1182,7 @@ VISUAL = {
             ("Señales", "26 SEP–22 OCT"),
         ],
         "seals": [
-            ("Licencia", ["Anjouan · declarada", "no es registro AR"]),
+            ("Licencia", ["Anjouan · declarada", "Una licencia offshore no es una licencia local de tu país."]),
             ("Revisión", ["Fila 25 SEP 2026", "señales 26 SEP–22 OCT"]),
         ],
         "facts": [
@@ -1269,7 +1269,7 @@ VISUAL = {
             ("Level Up", "02 OCT 2026"),
         ],
         "seals": [
-            ("Licencia", ["CGA · OGL/2024/1337/0628", "no es registro AR"]),
+            ("Licencia", ["CGA · OGL/2024/1337/0628", "Una licencia offshore no es una licencia local de tu país."]),
             ("Revisión", ["Rakeback 28 SEP 2026", "Level Up 02 OCT 2026"]),
         ],
         "facts": [
@@ -1421,13 +1421,14 @@ VISUAL = {
     "cloudbet": {
         "meta": [
             ("Operador", "crypto/offshore"),
-            ("Bono, KYC y métodos", "04 NOV 2026"),
+            ("Bono y retiro", "23 NOV 2026"),
+            ("KYC y métodos", "04 NOV 2026"),
             ("Licencia", "03 OCT 2026"),
             ("Países", "04 NOV 2026"),
         ],
         "seals": [
-            ("Licencia", ["CGA · OGL/2024/328/0599", "no es registro AR"]),
-            ("Revisión", ["Bono, KYC y métodos 04 NOV 2026", "licencia 03 OCT 2026"]),
+            ("Licencia", ["CGA · OGL/2024/328/0599", "Una licencia offshore no es una licencia local de tu país."]),
+            ("Revisión", ["Bono y retiro 23 NOV 2026", "KYC 04 NOV · licencia 03 OCT"]),
         ],
         "facts": [
             ("Welcome", "$2.5k", "tope · 30 días"),
@@ -1499,7 +1500,7 @@ VISUAL = {
             ("Licencia", "Curaçao · según su home"),
         ],
         "seals": [
-            ("Licencia", ["Curaçao · según su home", "no es registro AR"]),
+            ("Licencia", ["Curaçao · según su home", "Una licencia offshore no es una licencia local de tu país."]),
             ("Revisión", ["Fila 30 SEP 2026", "rechequeo 31 OCT 2026"]),
         ],
         "facts": [
@@ -1576,7 +1577,7 @@ VISUAL = {
             ("Licencia", "Curaçao (CGA)"),
         ],
         "seals": [
-            ("Licencia", ["CGA · OGL/2024/1507/0838", "no es licencia de MX ni AR"]),
+            ("Licencia", ["CGA · OGL/2024/1507/0838", "Una licencia offshore no es una licencia local de tu país."]),
             ("Revisión", ["24 OCT 2026", "sin nota · +18"]),
         ],
         "facts": [
