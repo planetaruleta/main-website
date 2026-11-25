@@ -255,11 +255,10 @@ def faq_html(faqs: list[tuple]) -> str:
                 gate = item[2]
             else:
                 href, anchor = item[2]
-                # HTML only: the linked anchor replaces the trailing plain guide name.
-                # JSON-LD keeps item[1], including «guía de Plinko en Cloudbet.»
-                plain_guide = "guía de Plinko en Cloudbet."
-                if shown.endswith(plain_guide):
-                    shown = shown[: -len(plain_guide)].rstrip()
+                # The visible anchor and the JSON-LD answer use the same trailing words.
+                plain = anchor + "."
+                if shown.endswith(plain):
+                    shown = shown[: -len(plain)].rstrip()
                 extra = f' <a href="{e(href)}">{e(anchor)}</a>.'
         note = warn_html() if has_warn else ""
         prefix = f"{gate}\n        " if gate else ""
@@ -368,7 +367,8 @@ def footer() -> str:
       <a href="/sobre/">Sobre</a> ·
       <a href="/guias/">Guías</a> ·
       <a href="/faq/">FAQ</a> ·
-      <a href="/juego-responsable/">Juego responsable</a><br />
+      <a href="/juego-responsable/">Juego responsable</a> ·
+      <a href="/privacidad/">Privacidad</a><br />
       +18 · no somos un casino · Una licencia offshore no es una licencia local de tu país. · <a href="mailto:planetaruleta@protonmail.com">planetaruleta@protonmail.com</a> · <a href="https://www.planetaruleta.com/">planetaruleta.com</a><br />
       Planeta Ruleta © <span data-year></span>
     </p>
@@ -997,7 +997,7 @@ FICHAS = {
             ),
             (
                 "¿Cloudbet tiene Plinko?",
-                "Sí. Su ayuda (revisada el 4 nov 2026) lo lista entre sus juegos arcade y entre los Originals con verificación provably fair. RTP declarado, filas, niveles, BOOST y cómo verificar una tirada: guía de Plinko en Cloudbet.",
+                "Sí. Su ayuda (revisada el 4 nov 2026) lo lista entre sus juegos arcade y entre los Originals con verificación provably fair. RTP declarado, filas, niveles, BOOST y cómo verificar una tirada: Cloudbet Plinko: RTP, BOOST y verificación.",
                 ("/guias/plinko-cloudbet/", "Cloudbet Plinko: RTP, BOOST y verificación"),
             ),
             (
@@ -1123,7 +1123,7 @@ FICHAS = {
             ),
             (
                 "¿En qué países no se puede usar?",
-                "Según el centro de ayuda (artículo 16451925), la lista de países restringidos incluye, entre otros, Estados Unidos, Reino Unido, España, Francia e Italia. México, Argentina, Colombia, Chile, Perú y Brasil figuran como aceptados. Atención (25 nov 2026): el Ministerio de Salud de Brasil indica que la MP 1.394/2026 prohíbe casinos y apuestas online en todo el país. Que acepte un país no es una licencia local.",
+                "Según el centro de ayuda (artículo 16451925), la lista de países restringidos incluye, entre otros, Estados Unidos, Reino Unido, España, Francia e Italia. México, Argentina, Colombia, Chile, Perú y Brasil figuran como aceptados. Que acepte un país no es una licencia local. Atención (25 nov 2026): el Ministerio de Salud de Brasil indica que la MP 1.394/2026 prohíbe casinos y apuestas online en todo el país.",
             ),
             (
                 "¿Hay enlace de afiliado?",

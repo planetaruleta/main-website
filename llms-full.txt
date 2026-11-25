@@ -450,7 +450,7 @@ Guía · +18 · alfabetización
 
 La home de un casino cripto habla de retiros en minutos. Antes de que corra ese reloj suele haber dos pasos: apostar el depósito una cantidad de veces (rollover) y verificar tu identidad (KYC). Esta guía junta lo que dicen las páginas de seis salas sobre esos dos pasos, con la fecha en que lo revisamos. Las citas entre comillas van tal cual. Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala. Montos en dólares estadounidenses (USD).
 
-Revisado el 25 nov 2026 · cada dato con su fecha de revisión.
+Revisado el 25 nov 2026 · cada dato con su fecha de revisión. Editor senior · Planeta Ruleta
 
 ## 1. Rollover del depósito: apostarlo antes de retirarlo
 
@@ -643,7 +643,7 @@ Guía · +18 · alfabetización
 
 # Sistema Paroli en la ruleta: cómo funciona la progresión 1-2-4 y por qué no cambia la ventaja de la casa
 
-revisado 8 nov 2026 — cálculo editorial y supuestos de esta guía.
+revisado 8 nov 2026 — cálculo editorial y supuestos de esta guía. Editor senior · Planeta Ruleta
 
 El Paroli cambia el tamaño de las apuestas después de un acierto, pero no cambia el cero de la ruleta. Si buscas saber si esta progresión «funciona», la pregunta es qué cambia y qué sigue igual. Aquí desarmamos la versión 1-2-4 con la cuenta a la vista. Es alfabetización para mayores de 18, no consejo de apuesta ni una guía para aplicar un sistema.
 
@@ -770,7 +770,7 @@ Guía · +18 · alfabetización
 
 # Cloudbet: registro, países restringidos, KYC, licencia y apuesta mínima, según sus propias páginas
 
-Actualizado: 30 oct 2026 (lista de países restringidos, ayuda sobre Sudamérica y KYC, releídas en las páginas de Cloudbet). El resto de la guía se revisó el 22 oct 2026.
+Actualizado: 30 oct 2026 (lista de países restringidos, ayuda sobre Sudamérica y KYC, releídas en las páginas de Cloudbet). El resto de la guía se revisó el 22 oct 2026. Editor senior · Planeta Ruleta
 
 Antes de abrir una cuenta en una sala cripto conviene saber cinco cosas: cómo es el registro, desde qué países no se puede usar, cuándo te piden verificar tu identidad (KYC), qué licencia publica y cuánto es lo mínimo para depositar y apostar. Esta guía junta lo que dicen la ayuda y los términos de Cloudbet sobre esos cinco puntos, con la fecha en que lo revisamos. Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala. Lo que sigue es texto de Cloudbet (ayuda y términos), resumido y traducido por nosotros; lo nuestro va marcado EDITORIAL. Montos en dólares estadounidenses (USD). La ficha completa de la sala está en [/mesa/cloudbet/](https://www.planetaruleta.com/mesa/cloudbet/).
 
@@ -906,7 +906,7 @@ Guía · +18 · alfabetización
 
 # «Deposita para poder retirar»: el patrón del bono falso, los sitios clon y cómo revisarlo
 
-Revisado el 30 oct 2026.
+Revisado el 30 oct 2026. Editor senior · Planeta Ruleta
 
 Te llega un mensaje con un bono enorme o un «premio», el saldo crece rápido y, cuando quieres retirar, aparece una condición nueva: deposita primero «para verificar», «para liberar» o «para pagar el impuesto». Esta guía explica ese patrón, cómo se ve una dirección copiada y qué revisar antes de poner más dinero. Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala. Lo marcado EDITORIAL es lectura nuestra; lo demás cita a reguladores y a las propias salas, con fuente y fecha.
 
@@ -1039,7 +1039,7 @@ Guía · +18 · alfabetización
 
 **Respuesta corta:** según la [página de Plinko de Cloudbet](https://www.cloudbet.com/es/casino/provably-fair/plinko) (revisado 14 nov 2026), el juego permite elegir 8, 10, 12 o 16 filas, cuatro niveles de riesgo y 1, 5, 10, 20, 50 o 100 bolas por tirada. Cloudbet declara un RTP del 99 % y un recargo BOOST del 20 %. La lectura citada no aclara si ese RTP incluye BOOST. El RTP es un promedio teórico, no el resultado de tu sesión. +18.
 
-El Plinko de Cloudbet es un juego propio de la sala: sueltas una o varias bolas por una pirámide de clavijas y cada una cae en una casilla con un multiplicador. Esta guía junta lo que dicen las páginas de Cloudbet sobre ese juego: los ajustes, el RTP que declara, el modo BOOST y cómo comprobar una tirada con su sistema «provably fair». Lo que sigue es texto de Cloudbet (página del juego, páginas de fairness y términos), resumido y traducido por nosotros; lo nuestro va marcado EDITORIAL. Revisado el 30 oct 2026. Es alfabetización para mayores de 18, no consejo de apuesta ni una invitación a jugar. Montos en dólares estadounidenses (USD). Para lo general de la sala (registro, países, KYC, licencia) está la [guía de Cloudbet](https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/) y la [bono y ficha de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/). El paquete de bienvenida: [Bono real vs marketing de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/#bono).
+El Plinko de Cloudbet es un juego propio de la sala: sueltas una o varias bolas por una pirámide de clavijas y cada una cae en una casilla con un multiplicador. Esta guía junta lo que dicen las páginas de Cloudbet sobre ese juego: los ajustes, el RTP que declara, el modo BOOST y cómo comprobar una tirada con su sistema «provably fair». Lo que sigue es texto de Cloudbet (página del juego, páginas de fairness y términos), resumido y traducido por nosotros; lo nuestro va marcado EDITORIAL. Revisado el 30 oct 2026. Editor senior · Planeta Ruleta. Es alfabetización para mayores de 18, no consejo de apuesta ni una invitación a jugar. Montos en dólares estadounidenses (USD). Para lo general de la sala (registro, países, KYC, licencia) está la [guía de Cloudbet](https://www.planetaruleta.com/guias/cloudbet-registro-paises-kyc/) y la [bono y ficha de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/). El paquete de bienvenida: [Bono real vs marketing de Cloudbet](https://www.planetaruleta.com/mesa/cloudbet/#bono).
 
 ## 1. Qué es el Plinko de Cloudbet (Cloudbet Originals, revisado 30 oct 2026)
 
@@ -1182,7 +1182,7 @@ Guía · +18 · alfabetización
 
 # Retiro «pendiente», «en proceso» o «en revisión»: qué significa cada estado y qué hacer
 
-Revisado el 31 oct 2026 · cada sala con su fecha de revisión en cada línea.
+Revisado el 31 oct 2026 · cada sala con su fecha de revisión en cada línea. Editor senior · Planeta Ruleta
 
 Depositar suele tardar segundos. Retirar tiene más pasos, y en cada uno el retiro puede quedar quieto: confirmación por email, cola de pagos, revisión de seguridad, verificación de identidad (KYC) y, al final, la red de la cripto. Esta guía explica qué suele significar cada estado, qué plazos publican las propias salas y qué revisar antes de preocuparte. Lo que sigue sale de las páginas de ayuda y los términos de cada sala, con la fecha en que lo revisamos; lo nuestro va marcado EDITORIAL. Los nombres de los estados cambian de una sala a otra: guíate por lo que diga la tuya. Es alfabetización para mayores de 18, no asesoría legal ni consejo de apuesta, y no podemos decirte cómo va a terminar un caso concreto. Si todavía no pediste el retiro, empieza por [antes de retirar: rollover y KYC](https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/).
 
@@ -1346,7 +1346,7 @@ Guía · +18 · alfabetización
 
 # Retiros con métodos locales: mínimos, topes, plazos y lo que frena un retiro
 
-Revisado el 4 nov 2026 · cada dato con su fecha de revisión.
+Revisado el 4 nov 2026 · cada dato con su fecha de revisión. Editor senior · Planeta Ruleta
 
 Efecty, Nequi, Bre-B, Yape, Plin: cada método tiene un mínimo, un tope por retiro, un tope por día y un plazo. Esos números los fija el sitio, no el método, y cambian según el país y el dominio. Esta guía junta lo que publican las páginas de ayuda de los sitios de Stake para Colombia y Perú, revisadas el 4 nov 2026. Antes de seguir: los términos de Stake.com (§14.3, revisado 30 oct 2026) listan a Argentina, Colombia, México y Perú, entre otros países, como «Prohibited Jurisdictions»; stake.com.co y stake.pe son sitios distintos, con sus propios términos. Es alfabetización para mayores de 18, no una recomendación de ninguna sala ni una invitación a depositar. Lo que viene de las páginas del operador va marcado OFICIAL; nuestra lectura, EDITORIAL. Planeta Ruleta no es un casino: no procesamos retiros ni podemos acelerarlos.
 
@@ -1737,7 +1737,7 @@ Guía · +18 · alfabetización
 
 # Rainbet: qué se puede verificar sobre su empresa, licencia, retiros y sitios oficiales, y qué no
 
-revisado 10 nov 2026 — lecturas de términos, validador del sello, página de registro, ayuda y pie del sitio.
+revisado 10 nov 2026 — lecturas de términos, validador del sello, página de registro, ayuda y pie del sitio. Editor senior · Planeta Ruleta
 
 Si buscas si «Rainbet es confiable», esta guía no responde con un sí ni con un no. Junta lo que Rainbet publica sobre su empresa, su licencia y sus retiros, lo que aparece en páginas de terceros que pudimos leer, y lo que no pudimos confirmar. Es alfabetización para mayores de 18, no una recomendación de sala, no un puntaje y no una conclusión sobre si es legal apostar donde vives. OFICIAL identifica la publicación de una fuente nombrada, no una garantía nuestra; EDITORIAL es nuestra lectura. Cuando falta evidencia, lo decimos.
 
