@@ -38,7 +38,7 @@ ROWS = [
             "Welcome: x40 sobre depósito+bono, o camino sin ese rollover. Race, torneo y RakeBoosts son señales, no este chip. (ver aviso: la ayuda muestra un solo camino)",
             "Rakeback 5% del house edge (Bronze), cash, casino. Level Up es señal aparte (aprox). FTD: bases no publicadas.",
             "Rakeback 3.5% del house edge (welcome), vía código. No es un match con WR fijo.",
-            "≤$2.5k/30d · 10% RB. Tal cual la celda (04 NOV 2026). Sin WR en la celda.",
+            "≤$2.5k/30d · 10% RB. Tal cual la celda (25 NOV 2026). Sin WR en la celda.",
             "Instant RB · +10% welcome 24h. Tal cual la celda (30 SEP 2026). Sin WR en la celda.",
             "Rakeback: las cifras de la ayuda no cuadran (5% por ventana / máximo recurrente 25%). Bono de bienvenida en giros: fuente de terceros, no de primera mano · 24 OCT 2026. Sin requisito de apuesta en la celda.",
         ],
@@ -49,7 +49,7 @@ ROWS = [
             "FAQ 25 SEP 2026: BTC, ETH, LTC, XRP, SOL, TRX, BNB, USDT, USDC. Retiro AstroPay: AR, CL, CO, EC, MX, UY (ayuda 29 MAY 2026). Redes: no verificado · 03 OCT 2026.",
             "Clase: crypto · fiat/cards · ARS (Mercado Pago, NaranjaX, transferencia; ayuda 14 OCT 2026). Lista y redes: no verificado · 03 OCT 2026. USDT solo en el ejemplo de rakeback.",
             "Clase: crypto · fiat · Chile: Subtel ordenó bloquear stake.com (01 SEP 2026). Lista y redes: no verificado · 03 OCT 2026. BTC solo en el ejemplo de rakeback.",
-            "Clase: crypto · buy card (Swapped) · la ayuda lista métodos locales solo para comprar cripto vía Swapped (tercero): SPEI MX, PSE CO, Khipu/Webpay CL; AR y PE no figuran en esa tabla. Lista y redes: en la ayuda de Cloudbet · 23 NOV 2026.",
+            "Clase: crypto · buy card (Swapped) · la ayuda lista métodos locales solo para comprar cripto vía Swapped (tercero): SPEI MX, PSE CO, Khipu/Webpay CL; AR y PE no figuran en la tabla del artículo 103366. Lista y redes: en la ayuda de Cloudbet · 23 NOV 2026.",
             "Clase: crypto · fiat+Swapped · AR: transferencia con DNI (ayuda 18 JUN 2025) · fiat: 1% por depósito (T&C 9.7). Lista y redes: no verificado · 03 OCT 2026.",
             "Clase: crypto · compra fiat vía tercero (PIX BR, tarjetas). Sin método fiat MX/AR; MXN/ARS/CLP solo como moneda de referencia. Retiros solo crypto. Redes: no verificado · 24 OCT 2026. Atención (25 nov 2026): el Ministerio de Salud de Brasil indica que la MP 1.394/2026 prohíbe casinos y apuestas online en todo el país.",
         ],
@@ -60,7 +60,7 @@ ROWS = [
             "ID + selfie + prueba de domicilio (Sumsub, nombrado en el AML). Terms §20: pueden restringir si el ID no se completa en 72 h; la verificación puede tardar hasta 7 días hábiles.",
             "ID de gobierno antes del primer retiro (Terms). Help: email → datos → ID → prueba de domicilio.",
             "Help 24 ago 2026: pasaporte, DNI ambos lados o licencia ambos lados. Cuándo lo exigen: no verificado · 25 SEP 2026.",
-            "Niveles · L2 ID + prueba de domicilio + face (Sumsub). Disparador, texto de Cloudbet (Terms §21.1.5, 04 NOV 2026): verificación al llegar a 2.200 USD depositados en total o superarlos.",
+            "Niveles · L2 ID + prueba de domicilio + face (Sumsub). Disparador, texto de Cloudbet (Terms §21.1.5, 25 NOV 2026): verificación al llegar a 2.200 USD depositados en total o superarlos.",
             "L2 ID (pasaporte, licencia o documento de gobierno). Más detalle del disparador: no verificado · 03 OCT 2026.",
             "Controles reforzados alrededor de 2.000 EUR acumulados; pueden pedirlos en cualquier momento. Ayuda, artículo 16335255 · 24 OCT 2026.",
         ],
@@ -248,16 +248,22 @@ def faq_html(faqs: list[tuple]) -> str:
         q, a = item[0], item[1]
         shown, has_warn = peel_warn(a)
         extra = ""
+        gate = ""
         if len(item) > 2 and item[2]:
-            href, anchor = item[2]
-            # The visible anchor and the JSON-LD answer use the same trailing words.
-            plain = anchor + "."
-            if shown.endswith(plain):
-                shown = shown[: -len(plain)].rstrip()
-            extra = f' <a href="{e(href)}">{e(anchor)}</a>.'
+            if isinstance(item[2], str):
+                # HTML comment only. It is not part of the visible answer or the JSON-LD.
+                gate = item[2]
+            else:
+                href, anchor = item[2]
+                # The visible anchor and the JSON-LD answer use the same trailing words.
+                plain = anchor + "."
+                if shown.endswith(plain):
+                    shown = shown[: -len(plain)].rstrip()
+                extra = f' <a href="{e(href)}">{e(anchor)}</a>.'
         note = warn_html() if has_warn else ""
+        prefix = f"{gate}\n        " if gate else ""
         blocks.append(
-            f"""<details class="faq">
+            f"""{prefix}<details class="faq">
           <summary><h3>{e(q)}</h3></summary>
           <div class="answer"><p>{e(shown)}{extra}</p>{note}</div>
         </details>"""
@@ -407,6 +413,8 @@ def head(title: str, description: str, path: str, graph: list, og_type: str = "a
 {ld}
   </script>
   <meta name="theme-color" content="#0B1520" />
+  <link rel="preload" href="/assets/fonts/ibarra-real-nova-600-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/ibarra-real-nova-500-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/css/fonts.css" />
   <link rel="stylesheet" href="/css/brand.css" />
   <link rel="stylesheet" href="/css/mesa.css" />
@@ -834,12 +842,26 @@ FICHAS = {
         "h1": "Bono Cloudbet y ficha de la mesa: paquete, KYC y retiro",
         "h1_visible": "Bono Cloudbet y ficha de la mesa: paquete, KYC y retiro",
         "title": "Bono Cloudbet: paquete de bienvenida, KYC y retiro",
-        "description": "Bono de bienvenida de Cloudbet según sus términos: paquete, rakeback y cash drops. KYC y retiro. +18.",
+        "description": "Bono de bienvenida de Cloudbet según sus términos: paquete, rakeback y cash drops. Qué dicen sus páginas sobre México, KYC y retiro. +18.",
         "modified": "2026-11-23",
         "lede": [
-            "Según sus términos (§8.4), el bono de bienvenida de Cloudbet es un paquete de recompensas con rakeback y cash drops. Cloudbet está en la mesa como operador crypto/offshore.",
-            "Esta ficha no pone nota ni abre un depósito. Los hechos salen de la versión /en del sitio, de sus términos y de su ayuda.",
+            "Según sus términos (§8.4, revisados el 25 nov 2026), el bono de bienvenida de Cloudbet es un paquete de hasta 2.500 USD en 30 días, contados desde tu primera apuesta después del primer depósito: rakeback del 10 % de la ventaja de la casa en apuestas de casino elegibles y cash drops. Lo que pasa a su calendario se reclama en 24 horas o se pierde. Ese artículo no publica un Nx. +18.",
+            "Cloudbet está en la mesa como operador crypto/offshore. Esta ficha no pone nota ni abre un depósito. Los hechos salen de la versión /en del sitio, de sus términos y de su ayuda.",
         ],
+        "mexico_html": """<section class="block" aria-labelledby="mexico">
+          <h2 id="mexico">México: qué dicen las páginas de Cloudbet</h2>
+          <div class="prose">
+            <p>México es un mercado de Latinoamérica entre otros. Esto es lo que dicen las páginas de Cloudbet sobre ese mercado.</p>
+            <ul>
+              <li>México no está entre las 22 jurisdicciones que listan sus términos (§7.1.3, revisados el 25 nov 2026). La misma cláusula excluye también cualquier jurisdicción donde su oferta sea ilegal y deja en ti confirmar si el juego online es legal donde estás.</li>
+              <li>Sus términos (§21.1.5, revisados el 25 nov 2026) exigen verificar tu identidad cuando tus depósitos acumulados llegan a 2.200 USD, y pueden pedirte la verificación en cualquier momento. Su ayuda de niveles de verificación (artículo 415596, «What are Cloudbet's verification levels?», revisada el 25 nov 2026) describe el nivel 2 como foto del documento, prueba de domicilio y verificación de rostro. Para empezar no necesitas ningún nivel.</li>
+              <li>Su ayuda de métodos de pago (artículo 103366, fechada el 7 oct 2026, revisada el 25 nov 2026) dice que Cloudbet acepta depósitos en criptomonedas y que, si no tienes cripto, la compra pasa por Swapped, un proveedor tercero. La tabla de Swapped en esa ayuda incluye SPEI en la fila de México.</li>
+              <li>Su ayuda de retiros (artículo 103213, revisada el 25 nov 2026) describe retiros en cripto.</li>
+            </ul>
+            <p>Una licencia offshore no es una licencia local de tu país.</p>
+            <p>Revisar la ley local es responsabilidad tuya. +18.</p>
+          </div>
+        </section>""",
         "sheet": [
             ("Empresa", "Halcyon Super Holdings B.V. (148526), nombrada en el help de licencias. Domicilio: no verificado · 03 OCT 2026."),
             ("Licencia", "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. Una licencia offshore no es una licencia local de tu país."),
@@ -884,13 +906,13 @@ FICHAS = {
         ],
         "plata_title": "Cómo entra y sale el dinero",
         "plata": [
-            "La celda de métodos es crypto · buy card (Swapped). El help, artículo actualizado el 24 SEP 2026, dice que el depósito con tarjeta pasa por Swapped: se elige depositar con tarjeta y después Swapped.",
+            "La celda de métodos es crypto · buy card (Swapped). El help, artículo actualizado el 7 OCT 2026, revisado el 25 nov 2026, dice que el depósito con tarjeta pasa por Swapped: se elige depositar con tarjeta y después Swapped.",
             "Criptomonedas (ayuda «What currencies are accepted on Cloudbet?» y términos §7.3.1, revisados 23 nov 2026): Cloudbet lista 29 criptomonedas, cada una con sus redes. Bitcoin (BTC) se acepta por Bitcoin Mainnet y por BNB Smart Chain. Bitcoin Cash (BCH) también está en esa lista, por Bitcoin Cash Mainnet y por BNB Smart Chain. Las versiones «bridged» o «wrapped» (por ejemplo USDC.e) no se aceptan. No copiamos el catálogo completo: cada moneda se acepta solo por las redes que lista esa ayuda.",
-            "Moneda local, país por país (ayuda y T&C de Cloudbet, revisados el 4 nov 2026). Cloudbet recibe cripto. Si no tienes, su ayuda dice que puedes comprarla dentro del sitio con un tercero, Swapped. La tabla de esa ayuda («Which payment methods does Cloudbet accept?») lista, entre otros, SPEI en México, PSE en Colombia y Khipu o Webpay en Chile, además de Visa y Mastercard. Argentina y Perú no figuran en esa tabla; la ayuda remite a la lista completa de Swapped, que no revisamos. Eso es comprar cripto con un tercero, no un depósito en moneda local en Cloudbet. Los T&C (7.3.1) dicen que pueden aceptar, a su criterio, «fiat currency» según tu jurisdicción y los métodos disponibles. Pagar en moneda local no es una licencia local. Fuente: oficial (ayuda y T&C de Cloudbet).",
+            "Moneda local, país por país (ayuda y T&C de Cloudbet, revisados el 25 nov 2026). Cloudbet recibe cripto. Si no tienes, su ayuda dice que puedes comprarla dentro del sitio con un tercero, Swapped. La tabla de esa ayuda («Which payment methods does Cloudbet accept?») lista, entre otros, SPEI en México, PSE en Colombia y Khipu o Webpay en Chile, además de Visa y Mastercard. Argentina y Perú no figuran en la tabla del artículo 103366; la ayuda remite a la lista completa de Swapped; de esa lista solo revisamos la fila de México. Eso es comprar cripto con un tercero, no un depósito en moneda local en Cloudbet. Los T&C (7.3.1) dicen que pueden aceptar, a su criterio, «fiat currency» según tu jurisdicción y los métodos disponibles. Pagar en moneda local no es una licencia local. Fuente: oficial (ayuda y T&C de Cloudbet).",
             "El retiro de la fila sigue sin dato. El marketing de velocidad de retiro no entra como SLA. Pagar en moneda local no es una licencia local.",
         ],
         "bono": [
-            "Chip de la fila: paquete de bienvenida de hasta 2.500 USD en un programa de 30 días, y 10% del house edge en cada apuesta de casino elegible. Las apuestas de sports no suman rakeback. Terms §8.4, revisados 23 nov 2026.",
+            "Chip de la fila: paquete de bienvenida de hasta 2.500 USD en un programa de 30 días, y 10% del house edge en cada apuesta de casino elegible. Las apuestas de sports no suman rakeback. Terms §8.4, revisados 25 nov 2026.",
             "El período de 30 días empieza al hacer la primera apuesta después de ese depósito (§8.4.2), no desde la hora del depósito. No hay un Nx de rollover publicado para este paquete. No inventamos uno.",
             "Cómo se cobra (ayuda y términos §8.4.3, revisados 23 nov 2026). El paquete no se entrega de una vez: se va ganando mientras apuestas. En casino suma rakeback y un «cash drop» diario; en deportes, un «cash drop» por semana, que se desbloquea los viernes a las 00:00 UTC. Del rakeback y del cash drop diario, la mitad va directo a tu saldo y el resto pasa al «Rewards Calendar»: lo que se desbloquea ahí hay que reclamarlo dentro de las 24 horas o se pierde. El monto de cada cash drop lo fija Cloudbet a su criterio según tu actividad; sus términos no dan una fórmula. Al terminar llega el «Cash Vault», que según la ayuda es la recompensa más grande del paquete. El paquete termina a los 30 días o al llegar a 2.500 USD, lo que pase primero, y se calcula en USDT. Para cobrar el rakeback hace falta haber juntado al menos 1 USD.",
             "No es un bono de depósito. La ayuda de Cloudbet («Do you offer a first deposit bonus?», revisada 23 nov 2026) dice que no tiene un bono de depósito tradicional: el paquete se activa con el primer depósito, de cualquier monto, sin código. Rakeback no es un match: la diferencia está en la guía de cashback, rakeback y lossback.",
@@ -899,9 +921,9 @@ FICHAS = {
             "Monster Mash (página de la promo, captura 22 OCT 2026) es una señal de lobby: pozo de 2.000 USD, top 30, apuesta mínima 1 USD, ranking por el multiplicador más alto de una sola jugada, pago en USDT. Ventana: 22 OCT 01:00 → 24 OCT 00:59 hora Guatemala. No reemplaza el chip.",
         ],
         "retiro_html": '<h3 id="como-retirar">Cómo retirar de Cloudbet, paso a paso</h3><div class="prose retiro" id="como-retirar-bloque"><p><small>Ayuda de Cloudbet y sus términos (versión del 30 sep 2026), revisados 23 nov 2026. Lo que dice Cloudbet va con su página y su fecha; lo nuestro va marcado EDITORIAL.</small></p><p><strong>Paso a paso</strong> (ayuda «How do I withdraw funds from my Cloudbet account?»; la página no muestra fecha):</p><ol><li>Selecciona el ícono de tu perfil y después «Withdraw».</li><li>Elige la moneda.</li><li>Completa lo que te pida: la red, la dirección de la billetera que recibe, el monto y, si activaste la verificación en dos pasos (2FA), el código.</li><li>Selecciona «Withdraw» y después «Confirm».</li><li>Confirma el retiro: con el link del email que te manda Cloudbet, si te registraste con email, o en Telegram, si te registraste ahí.</li></ol><p>La misma ayuda dice que, antes de confirmar, te muestra la comisión que cobra la red; que el mínimo de retiro cambia según la cripto (su página de comisiones tiene una tabla por moneda y red; no copiamos esas cifras), y que Cloudbet no responde por pérdidas si cargas un dato incorrecto. EDITORIAL: copia la dirección desde tu billetera y revisa que la red sea la misma en los dos lados.</p><p><strong>Cuánto puedes retirar por día</strong> (ayuda «What is my maximum daily withdrawal limit on Cloudbet?», fechada el 7 oct 2026):</p><ul><li>Sin verificar o con nivel 1: 2.200 USD por día.</li><li>Con nivel 2: sin tope diario, aunque los retiros grandes pasan por una revisión adicional. La ayuda no publica a partir de qué monto.</li></ul><p>Si mandaste tus documentos y están en revisión, el tope de 2.200 USD por día sigue hasta que te aprueben: según la ayuda, mandar los documentos no lo quita. Si llegas al tope a las 10:00, se renueva a las 10:00 del día siguiente (ayuda sobre el error «Withdrawal limit reached», fechada el 2 sep 2026). Este tope de retiro (2.200 USD por día) es distinto del tope de depósito sin nivel 2 (2.200 USD acumulados de por vida): los dos están en <a href="#riesgo">Condiciones y riesgo</a>, en esta ficha.</p><p><strong>Playthrough: cuánto hay que apostar antes de retirar.</strong> Los términos y la ayuda de Cloudbet no dan la misma cifra:</p><ul><li><strong>Términos (§8.8, versión del 30 sep 2026):</strong> al menos el total de tus depósitos, y Cloudbet puede reducir ese requisito a su criterio.</li><li><strong>Ayuda («Playthrough requirement when withdrawing», fechada el 7 oct 2026):</strong> sin verificar, el 100 % de tus depósitos y de los tips que cobraste; verificado, el 25 %. Solo cuentan las apuestas de casino o deportes ya liquidadas, ganes o pierdas. El avance se ve al elegir la moneda en la pantalla de retiro.</li></ul><p>La ayuda del playthrough no dice qué nivel cuenta como verificado. En otro artículo de la ayuda («How to check my current verification level», fechado el 2 feb 2026), la etiqueta «Account Verified» de tu perfil es la verificación completa: teléfono, documento y comprobante de domicilio. Cómo es en otras salas: <a href="/guias/antes-de-retirar-rollover-kyc/">antes de retirar: rollover y KYC</a>. EDITORIAL: apostar el depósito es exponerlo a <a href="/guias/rtp-ventaja-casa-ruleta/">la ventaja de la casa</a>.</p><p><strong>Comisiones: tres páginas de Cloudbet, dos versiones.</strong></p><ul><li><strong>Términos (§7.1.10):</strong> Cloudbet se reserva el derecho de aplicar un cargo de hasta 5 % sobre depósitos y retiros para cubrir costos de transacción («a handling charge of up to 5% on deposits and withdrawals»).</li><li><strong>Página de comisiones cripto (sin fecha en la página):</strong> «Cloudbet does not charge deposit fees». En cada retiro se paga una comisión fija para cubrir el costo de mover la cripto; la fija la red y, según esa página, «can fluctuate without notice».</li><li><strong>Ayuda («How do I check the withdrawal network fee?», fechada el 11 abr 2025):</strong> la comisión de retiro la cobra la red y cambia según la cripto y la red; «Cloudbet doesn’t charge any additional withdrawal fees».</li></ul><p>No conciliamos esas versiones: te mostramos las tres páginas. EDITORIAL: según la ayuda, la comisión de red se muestra antes de confirmar; revisa esa cifra antes de seleccionar «Confirm».</p><p><strong>Cuánto tarda, según Cloudbet.</strong> Sus términos (§7.5.11) dicen que los retiros cripto «typically» se procesan dentro de las 24 horas desde la aprobación, sujeto a que se completen los controles de KYC que correspondan, y que son «estimated timeframes only». La ayuda «How do I withdraw funds from my Cloudbet account?» dice que los retiros «typically» se procesan al instante una vez confirmados, y la ayuda «How long will my withdrawal take?», que la mayoría de los retiros cripto se procesa al instante; si el tuyo tarda más de 24 horas desde que lo pediste, la ayuda pide escribir a soporte. Las demoras que nombra la ayuda (fechada el 14 oct 2025) son la congestión de la red, una revisión de seguridad (sobre todo en retiros más grandes de lo habitual) y el mantenimiento de billeteras. Es lo que publica la sala, no un plazo garantizado.</p><p>Según la ayuda (fechada el 19 ago 2026), un retiro se puede cancelar mientras no salió a la blockchain, y cancelarlo para pedir otro no lo acelera: la nueva solicitud va al final de la cola. Qué significa cada estado y qué hacer si tarda: <a href="/guias/retiro-pendiente-en-revision/">retiro pendiente o en revisión</a>.</p><p><strong>Qué puede frenar o rechazar un retiro</strong> (ayuda y términos de Cloudbet):</p><ul><li>Playthrough sin completar: según la ayuda, no puedes retirar esa moneda hasta completarlo.</li><li>Tope diario: sin nivel 2, 2.200 USD por día (ver arriba).</li><li>Link de confirmación vencido: el link del email vale una hora, según la ayuda sobre los emails de confirmación (fechada el 13 oct 2026); si vence, el retiro se rechaza y hay que pedirlo de nuevo y confirmarlo desde tu email (ayuda fechada el 29 ene 2026).</li><li>Verificación pedida y no completada: según la ayuda, el retiro puede rechazarse, y Cloudbet también puede cancelarlo.</li><li>Un depósito anterior todavía pendiente: la ayuda lo nombra entre las razones más comunes por las que Cloudbet cancela un retiro.</li><li>Dirección señalada: los términos (§7.3.11) dicen que no procesan retiros a una dirección que identifiquen como sancionada, bloqueada, asociada a actividad ilícita o señalada por su política AML/KYC, y que eso puede llevar a suspender la cuenta.</li><li>Jurisdicción prohibida: según la ayuda (fechada el 3 oct 2026), si te conectas desde una jurisdicción prohibida tienes que retirar tu saldo elegible y después la cuenta se cierra.</li></ul><p><strong>Retiros solo desde tu cuenta.</strong> Los términos (§7.5.5) dicen que solo aceptan pedidos de retiro hechos desde las páginas de tu cuenta («My Account») y que sus empleados y agentes no están autorizados a mover cripto de ninguna otra forma. EDITORIAL: si alguien te escribe por chat, WhatsApp o Telegram para «liberar» un retiro, no es el canal que nombran sus términos. Más en <a href="/guias/pagar-para-retirar-bono-falso/">depositar para retirar</a>.</p><p><strong>¿En pesos o a una cuenta bancaria?</strong> Los términos (§7.3.1) dicen que Cloudbet puede aceptar, a su criterio, depósitos y retiros en las criptos que lista «and in fiat currency», según tu jurisdicción y los métodos que tengas disponibles. La ayuda de métodos de pago (fechada el 7 oct 2026) describe depósitos en cripto y la compra de cripto dentro del sitio con un tercero, Swapped. En las páginas de ayuda que revisamos no hay un retiro en moneda fiat ni por un método local para Latinoamérica. Esta ficha no te promete un retiro en pesos ni a una cuenta bancaria.</p><p>Los términos cambian: revisa la versión vigente en la web de Cloudbet antes de pedir un retiro. No garantizamos resultados. +18. Si se te va de las manos, <a href="/juego-responsable/">busca ayuda de juego responsable</a> donde estés.</p></div>',
-        "kyc_guide_html": '<div class="prose"><p>Registro en corto (ayuda, revisada 4 nov 2026): te registras con email y contraseña, o con Google o GitHub, y activas la cuenta desde el email de confirmación. Registrarte no es verificarte: sin nivel 2 rigen los topes de 2.200 USD. Depósito mínimo: su ayuda en español dice «Todos los depósitos deben ser de mínimo $1 USD» y, más abajo, que la mayoría está por debajo de 1 USD, «por lo general de $0,10 a $0,50 USD o su equivalente». El monto mínimo exacto de cada moneda aparece en la pantalla de depósito. Apuesta mínima: en deportes, su ayuda y sus términos dan cifras distintas. En casino no encontramos un mínimo general publicado en su ayuda ni en sus términos, y para esports su ayuda no publica un mínimo aparte (revisado 23 nov 2026).</p><p>El paso a paso del registro, la lista completa de países restringidos, los documentos del KYC, el depósito y la apuesta mínima están en la <a href="/guias/cloudbet-registro-paises-kyc/">guía de registro, países y KYC de Cloudbet</a>.</p></div>',
+        "kyc_guide_html": '<div class="prose"><p>Registro en corto (ayuda, revisada 25 nov 2026): te registras con email y contraseña, o con Google o GitHub, y activas la cuenta desde el email de confirmación. Registrarte no es verificarte: sin nivel 2 rigen los topes de 2.200 USD. Depósito mínimo: su ayuda en español dice «Todos los depósitos deben ser de mínimo $1 USD» y, más abajo, que la mayoría está por debajo de 1 USD, «por lo general de $0,10 a $0,50 USD o su equivalente». El monto mínimo exacto de cada moneda aparece en la pantalla de depósito. Apuesta mínima: en deportes, su ayuda y sus términos dan cifras distintas. En casino no encontramos un mínimo general publicado en su ayuda ni en sus términos, y para esports su ayuda no publica un mínimo aparte (revisado 23 nov 2026).</p><p>El paso a paso del registro, la lista completa de países restringidos, los documentos del KYC, el depósito y la apuesta mínima están en la <a href="/guias/cloudbet-registro-paises-kyc/">guía de registro, países y KYC de Cloudbet</a>.</p></div>',
         "juegos_guide_html": '<div class="prose"><p>Casino con bitcoin y otras criptos: la ayuda de Cloudbet (revisada 4 nov 2026) agrupa el casino en Originals, slots, casino en vivo, juegos de mesa RNG, crash y arcade, con más de 100 estudios. Según esa ayuda, la verificación provably fair aplica a sus Originals: Mines, Dice, Advance Dice y Plinko.</p><p>Plinko en Cloudbet: filas, niveles, RTP declarado, BOOST con recargo y cómo verificar una tirada, según las páginas de Cloudbet, están en la <a href="/guias/plinko-cloudbet/">guía de Plinko en Cloudbet</a>. Aquí no repetimos esas cifras.</p></div>',
-        "kyc": "KYC declarado por niveles. Level 2: foto del documento, prueba de domicilio y verificación de rostro. Sumsub está en Terms §21.1.3; el artículo de niveles no lo nombra. El help dice que verificar es opcional y que pueden pedir la verificación en cualquier momento. Hasta completar el Level 2, el help publica un tope de 2.200 USD en depósitos acumulados de por vida y de 2.200 USD por día en retiros; esos topes no están en la celda de la tabla. Disparador fijo: según sus términos (§21.1.5), Cloudbet pide verificar tu identidad cuando tus depósitos acumulados llegan a 2.200 USD o los superan; hasta completarla, depósitos y retiros pueden quedar restringidos y los fondos, bloqueados. Fuente: help y Terms (versión del 30 SEP 2026), revisados 4 nov 2026.",
+        "kyc": "KYC declarado por niveles. Level 2: foto del documento, prueba de domicilio y verificación de rostro. Sumsub está en Terms §21.1.3; el artículo de niveles no lo nombra. El help dice que verificar es opcional y que pueden pedir la verificación en cualquier momento. Hasta completar el Level 2, el help publica un tope de 2.200 USD en depósitos acumulados de por vida y de 2.200 USD por día en retiros; esos topes no están en la celda de la tabla. Disparador fijo: según sus términos (§21.1.5), Cloudbet pide verificar tu identidad cuando tus depósitos acumulados llegan a 2.200 USD o los superan; hasta completarla, depósitos y retiros pueden quedar restringidos y los fondos, bloqueados. Fuente: help y Terms (versión del 30 SEP 2026), revisados 25 nov 2026.",
         "offshore": "Cloudbet publica Curaçao Gaming Authority, OGL/2024/328/0599, a nombre de Halcyon Super Holdings B.V. (148526). Una licencia offshore no es una licencia local de tu país. Esta ficha no rankea operadores y no explica cómo evadir un bloqueo. +18.",
         "senales": [
             {
@@ -915,7 +937,7 @@ FICHAS = {
         "faqs": [
             (
                 "¿El bono de Cloudbet es un match con rollover?",
-                "No, en lo publicado en Terms §8.4 (revisados 23 nov 2026). Es un paquete de hasta 2.500 USD en 30 días y un rakeback del 10% del house edge en apuestas de casino elegibles. Ese artículo no publica un Nx. Los 30 días empiezan con la primera apuesta después del depósito.",
+                "No, en lo publicado en Terms §8.4 (revisados 25 nov 2026). Es un paquete de hasta 2.500 USD en 30 días y un rakeback del 10% del house edge en apuestas de casino elegibles. Ese artículo no publica un Nx. Los 30 días empiezan con la primera apuesta después del depósito.",
             ),
             (
                 "¿Las apuestas de sports suman rakeback?",
@@ -926,16 +948,20 @@ FICHAS = {
                 "El help de licencias nombra Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Una licencia offshore no es una licencia local de tu país. El enlace de afiliado de esta ficha no está activo. +18.",
             ),
             (
-                "¿El depósito es por CBU?",
-                "No. La celda es crypto · buy card (Swapped). El help describe la compra con tarjeta a través de Swapped. El retiro de la mesa sigue sin dato: no hay un SLA de horas en esta ficha.",
+                "¿Puedo depositar en Cloudbet en moneda local o desde mi banco?",
+                "Según su ayuda de métodos de pago (artículo 103366, fechada el 7 oct 2026, revisada el 25 nov 2026), Cloudbet acepta depósitos en criptomonedas. Si no tienes cripto, la compra pasa por Swapped, un proveedor tercero; su tabla lista métodos por país, entre ellos SPEI en México. Sus términos (§7.3.1, revisados el 25 nov 2026) dicen que también pueden aceptar moneda fiat, a su criterio, según tu jurisdicción y los métodos disponibles. Pagar en moneda local no es una licencia local. +18.",
             ),
             (
                 "¿Desde qué países no se puede usar Cloudbet?",
-                "Su ayuda (fechada el 30 SEP 2026) y sus Terms (§7.1.3) listan 22 jurisdicciones restringidas, entre ellas Estados Unidos y sus territorios, Reino Unido, España, Francia, Alemania, Países Bajos, Australia, Japón y Cuba. Revisado 4 nov 2026. La lista completa y cómo leerla están en la guía de registro, países y KYC de Cloudbet. Revisar la ley local es responsabilidad tuya. +18.",
+                "Su ayuda (fechada el 30 SEP 2026) y sus Terms (§7.1.3) listan 22 jurisdicciones restringidas, entre ellas Estados Unidos y sus territorios, Reino Unido, España, Francia, Alemania, Países Bajos, Australia, Japón y Cuba. Revisado 25 nov 2026. La lista completa y cómo leerla están en la guía de registro, países y KYC de Cloudbet. Revisar la ley local es responsabilidad tuya. +18.",
+            ),
+            (
+                "¿México está en la lista de países restringidos de Cloudbet?",
+                "No. Sus términos (§7.1.3, revisados el 25 nov 2026) listan 22 jurisdicciones restringidas y México no está entre ellas. La misma cláusula excluye también cualquier país donde su oferta sea ilegal y dice que confirmar si el juego online es legal donde estás es responsabilidad tuya. Eso no es una licencia local. +18.",
             ),
             (
                 "¿Cloudbet acepta jugadores de Sudamérica?",
-                "Su ayuda (fechada el 11 JUN 2026, revisada 4 nov 2026) dice que ningún país de Sudamérica está en su lista de jurisdicciones restringidas. Eso no es una licencia local ni dice que el juego online sea legal donde estás. +18.",
+                "Su ayuda (fechada el 11 JUN 2026, revisada 25 nov 2026) dice que ningún país de Sudamérica está en su lista de jurisdicciones restringidas. Eso no es una licencia local ni dice que el juego online sea legal donde estás. +18.",
             ),
             (
                 "¿Cómo funciona el bono de bienvenida de Cloudbet?",
@@ -951,7 +977,7 @@ FICHAS = {
             ),
             (
                 "¿Cómo me registro en Cloudbet?",
-                "Según su ayuda (revisada el 4 nov 2026), con email y contraseña, o con una cuenta de Google o GitHub; después activas la cuenta desde el email de confirmación. Verificar la identidad es otro paso y, hasta el nivel 2, rigen los topes de 2.200 USD. Antes de registrarte, revisa que tu país no esté en su lista de jurisdicciones restringidas. El paso a paso está en la guía de registro, países y KYC de Cloudbet. +18.",
+                "Según su ayuda (revisada el 25 nov 2026), con email y contraseña, o con una cuenta de Google o GitHub; después activas la cuenta desde el email de confirmación. Verificar la identidad es otro paso y, hasta el nivel 2, rigen los topes de 2.200 USD. Antes de registrarte, revisa que tu país no esté en su lista de jurisdicciones restringidas. El paso a paso está en la guía de registro, países y KYC de Cloudbet. +18.",
             ),
             (
                 "¿Cuál es el depósito mínimo en Cloudbet?",
@@ -1449,7 +1475,7 @@ VISUAL = {
             ("Bono y retiro", "23 NOV 2026"),
             ("KYC y métodos", "04 NOV 2026"),
             ("Licencia", "03 OCT 2026"),
-            ("Países", "04 NOV 2026"),
+            ("Países", "25 NOV 2026"),
         ],
         "seals": [
             ("Licencia", ["CGA · OGL/2024/328/0599", "Una licencia offshore no es una licencia local de tu país."]),
@@ -1516,7 +1542,7 @@ VISUAL = {
         "chain": ["ID", "domicilio", "face"],
         "big": "L2",
         "big_label": "ID + domicilio + face",
-        "kyc_note": "Pueden pedir la verificación en cualquier momento. Disparador fijo (Terms §21.1.5, 04 NOV 2026): al llegar a 2.200 USD depositados en total o superarlos.",
+        "kyc_note": "Pueden pedir la verificación en cualquier momento. Disparador fijo (Terms §21.1.5, 25 NOV 2026): al llegar a 2.200 USD depositados en total o superarlos.",
     },
     "roobet": {
         "meta": [
@@ -1888,6 +1914,14 @@ def kyc_prose(data: dict) -> str:
     return f'<div class="prose">{"".join(parts)}</div>'
 
 
+def raw_section(data: dict, key: str) -> str:
+    """Optional raw HTML for one ficha. Other fichas omit the key and stay unchanged."""
+    raw = data.get(key) or ""
+    if not raw.strip():
+        return ""
+    return raw.rstrip() + "\n        "
+
+
 def render_ficha(slug: str) -> str:
     data = FICHAS[slug]
     path = f"/mesa/{slug}/"
@@ -1967,7 +2001,7 @@ def render_ficha(slug: str) -> str:
           <p class="caveat"><strong>{e(visual["caveat_strong"])}</strong> {e(visual["caveat"])}</p>
           {prose_html(data["plata"])}{data.get("retiro_html", "")}
         </section>
-        <section class="kyc" aria-labelledby="riesgo">
+        {raw_section(data, "mexico_html")}<section class="kyc" aria-labelledby="riesgo">
           <div class="kyc-grid">
             <div>
               <h2 id="riesgo">Condiciones y riesgo</h2>
