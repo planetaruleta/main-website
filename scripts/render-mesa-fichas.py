@@ -640,8 +640,8 @@ FICHAS = {
         ],
         "faqs": [
             (
-                "¿Una licencia offshore es una licencia local?",
-                "No. Una licencia offshore no es una licencia local de tu país. En el registro de anjouangaming.com (revisado 10 nov 2026) figura Rain Group Ltd, número ALSI-152406029-FI2, asociado a rainbet.com, con estado «valid» y vencimiento 13 jun 2027. Esta observación del registro no confirma su validez jurídica ni supone una licencia local de tu país. Los términos de rainbet.com (revisado 10 nov 2026) nombran a Rain Group Ltd, con registro de empresa 16077; el JSON-LD de su homepage (revisado 10 nov 2026) dice que RBGAMING N.V. opera Rainbet. No tenemos evidencia que aclare la relación entre ambas entidades.",
+                "¿Qué licencia publica Rainbet?",
+                "En el registro de anjouangaming.com (revisado 10 nov 2026) figura Rain Group Ltd, número ALSI-152406029-FI2, asociado a rainbet.com, con estado «valid» y vencimiento 13 jun 2027. Esta observación del registro no confirma su validez jurídica ni supone una licencia local de tu país. Los términos de rainbet.com (revisado 10 nov 2026) nombran a Rain Group Ltd, con registro de empresa 16077; el JSON-LD de su homepage (revisado 10 nov 2026) dice que RBGAMING N.V. opera Rainbet. No tenemos evidencia que aclare la relación entre ambas entidades. +18.",
             ),
             (
                 "¿El bono de la ficha es el Daily Race, el torneo o los RakeBoosts?",
@@ -749,8 +749,8 @@ FICHAS = {
                 "Los Terms dicen que pueden exigir pasaporte, DNI o licencia al cruzar un umbral y, en cualquier caso, antes del primer retiro. El help describe niveles: email, datos básicos, ID de gobierno y prueba de domicilio. Señal del 25 SEP 2026.",
             ),
             (
-                "¿Una licencia offshore es una licencia local?",
-                "No. Una licencia offshore no es una licencia local de tu país. El número es OGL/2024/1337/0628, Natural Nine B.V. /info/license dice Curaçao Gaming Control Board; Terms y el certificado CGA dicen Curaçao Gaming Authority. El enlace de afiliado de esta ficha no está activo. +18.",
+                "¿Qué licencia publica Shuffle?",
+                "El número es OGL/2024/1337/0628, Natural Nine B.V. /info/license dice Curaçao Gaming Control Board; Terms y el certificado CGA dicen Curaçao Gaming Authority. Una licencia offshore no es una licencia local de tu país. El enlace de afiliado de esta ficha no está activo. +18.",
             ),
         ],
     },
@@ -922,8 +922,8 @@ FICHAS = {
                 "No. Terms §8.4 dicen que las apuestas de sports no suman rakeback. El sportsbook sí está declarado: /en/sports, título “Crypto Sports Betting”, 03 OCT 2026.",
             ),
             (
-                "¿Una licencia offshore es una licencia local?",
-                "No. Una licencia offshore no es una licencia local de tu país. El help de licencias nombra Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). El enlace de afiliado de esta ficha no está activo. +18.",
+                "¿Qué licencia publica Cloudbet?",
+                "El help de licencias nombra Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Una licencia offshore no es una licencia local de tu país. El enlace de afiliado de esta ficha no está activo. +18.",
             ),
             (
                 "¿El depósito es por CBU?",
@@ -1088,8 +1088,8 @@ FICHAS = {
         "senales": [],
         "faqs": [
             (
-                "¿Una licencia offshore es una licencia local?",
-                "No. Una licencia offshore no es una licencia local de tu país. El certificado de la Curaçao Gaming Authority muestra la licencia OGL/2024/1507/0838 como activa, otorgada el 01/11/2024 a Liquid Entertainment N.V. (153298). Es una licencia de Curaçao. +18.",
+                "¿Qué licencia publica Duelbits?",
+                "El certificado de la Curaçao Gaming Authority muestra la licencia OGL/2024/1507/0838 como activa, otorgada el 01/11/2024 a Liquid Entertainment N.V. (153298). Es una licencia de Curaçao. Una licencia offshore no es una licencia local de tu país. +18.",
             ),
             (
                 "¿Hay depósito en pesos de México o Argentina?",
