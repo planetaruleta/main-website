@@ -836,12 +836,30 @@ FICHAS = {
         "h1": "Bono Cloudbet y ficha de la mesa: paquete, KYC y retiro",
         "h1_visible": "Bono Cloudbet y ficha de la mesa: paquete, KYC y retiro",
         "title": "Bono Cloudbet: paquete de bienvenida, KYC y retiro",
-        "description": "Bono de bienvenida de Cloudbet según sus términos: paquete, rakeback y cash drops. KYC y retiro. +18.",
+        "description": "Bono de bienvenida de Cloudbet según sus términos: paquete, rakeback y cash drops. Qué dicen sus páginas sobre México, KYC y retiro. +18.",
         "modified": "2026-11-23",
         "lede": [
-            "Según sus términos (§8.4), el bono de bienvenida de Cloudbet es un paquete de recompensas con rakeback y cash drops. Cloudbet está en la mesa como operador crypto/offshore.",
+            "Según sus términos (§8.4, revisados el [DD mes AAAA]), el bono de bienvenida de Cloudbet es un paquete de hasta 2.500 USD en 30 días: rakeback del 10 % de la ventaja de la casa en apuestas de casino elegibles y cash drops. Lo que pasa a su calendario se reclama en 24 horas o se pierde. Ese artículo no publica un Nx. +18.",
             "Esta ficha no pone nota ni abre un depósito. Los hechos salen de la versión /en del sitio, de sus términos y de su ayuda.",
         ],
+        "mexico_html": """<section class="block" aria-labelledby="mexico">
+          <h2 id="mexico">México: qué dicen las páginas de Cloudbet</h2>
+          <div class="prose">
+            <p>México es un mercado de Latinoamérica entre otros. Esto es lo que dicen las páginas de Cloudbet sobre ese mercado.</p>
+            <ul>
+              <li>México no está entre las 22 jurisdicciones que listan sus términos (§7.1.3, revisados el [DD mes AAAA]). La misma cláusula excluye también cualquier jurisdicción donde su oferta sea ilegal y deja en ti confirmar si el juego online es legal donde estás.
+              <!-- BLOCKED: re-read terms §7.1.3 + help 101693/703235 -->
+              </li>
+              <li>Sus términos (§21.1.5, revisados el [DD mes AAAA]) exigen verificar tu identidad cuando tus depósitos acumulados llegan a 2.200 USD, y pueden pedirte la verificación en cualquier momento. Su ayuda de niveles de verificación (artículo 415596, «What are Cloudbet's verification levels?», revisada el [DD mes AAAA]) describe el nivel 2 como foto del documento, prueba de domicilio y verificación de rostro. Para empezar no necesitas ningún nivel.
+              <!-- BLOCKED: re-read terms §21.1.5 + help 415596 -->
+              </li>
+              <!-- BLOCKED until PR-day re-read of the Swapped methods table; if SPEI is still listed: SPEI appears among the methods of Swapped, a third party that sells crypto; Cloudbet's own deposits are in crypto. No steps, no amounts. -->
+              <!-- NEEDS EVIDENCE: help 103213/103366 PR-day capture; only allowed wording: «Su ayuda de retiros (revisada el [DD mes AAAA]) describe retiros en cripto» -->
+            </ul>
+            <p>Una licencia offshore no es una licencia local de tu país.</p>
+            <p>Revisar la ley local es responsabilidad tuya. +18.</p>
+          </div>
+        </section>""",
         "sheet": [
             ("Empresa", "Halcyon Super Holdings B.V. (148526), nombrada en el help de licencias. Domicilio: no verificado · 03 OCT 2026."),
             ("Licencia", "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. Una licencia offshore no es una licencia local de tu país."),
@@ -928,12 +946,16 @@ FICHAS = {
                 "El help de licencias nombra Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Una licencia offshore no es una licencia local de tu país. El enlace de afiliado de esta ficha no está activo. +18.",
             ),
             (
-                "¿El depósito es por CBU?",
-                "No. La celda es crypto · buy card (Swapped). El help describe la compra con tarjeta a través de Swapped. El retiro de la mesa sigue sin dato: no hay un SLA de horas en esta ficha.",
+                "¿Puedo depositar en Cloudbet en moneda local o desde mi banco?",
+                "[RESPUESTA PENDIENTE: re-lectura de la tabla de Swapped]",
             ),
             (
                 "¿Desde qué países no se puede usar Cloudbet?",
                 "Su ayuda (fechada el 30 SEP 2026) y sus Terms (§7.1.3) listan 22 jurisdicciones restringidas, entre ellas Estados Unidos y sus territorios, Reino Unido, España, Francia, Alemania, Países Bajos, Australia, Japón y Cuba. Revisado 4 nov 2026. La lista completa y cómo leerla están en la guía de registro, países y KYC de Cloudbet. Revisar la ley local es responsabilidad tuya. +18.",
+            ),
+            (
+                "¿México está en la lista de países restringidos de Cloudbet?",
+                "No. Sus términos (§7.1.3, revisados el [DD mes AAAA]) listan 22 jurisdicciones restringidas y México no está entre ellas. La misma cláusula excluye también cualquier país donde su oferta sea ilegal y dice que confirmar si el juego online es legal donde estás es responsabilidad tuya. Eso no es una licencia local. +18.",
             ),
             (
                 "¿Cloudbet acepta jugadores de Sudamérica?",
@@ -1890,6 +1912,14 @@ def kyc_prose(data: dict) -> str:
     return f'<div class="prose">{"".join(parts)}</div>'
 
 
+def raw_section(data: dict, key: str) -> str:
+    """Optional raw HTML for one ficha. Other fichas omit the key and stay unchanged."""
+    raw = data.get(key) or ""
+    if not raw.strip():
+        return ""
+    return raw.rstrip() + "\n        "
+
+
 def render_ficha(slug: str) -> str:
     data = FICHAS[slug]
     path = f"/mesa/{slug}/"
@@ -1969,7 +1999,7 @@ def render_ficha(slug: str) -> str:
           <p class="caveat"><strong>{e(visual["caveat_strong"])}</strong> {e(visual["caveat"])}</p>
           {prose_html(data["plata"])}{data.get("retiro_html", "")}
         </section>
-        <section class="kyc" aria-labelledby="riesgo">
+        {raw_section(data, "mexico_html")}<section class="kyc" aria-labelledby="riesgo">
           <div class="kyc-grid">
             <div>
               <h2 id="riesgo">Condiciones y riesgo</h2>
