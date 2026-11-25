@@ -162,6 +162,14 @@
             "@type": "Answer",
             "text": "Por mensaje privado, no: no figura en ninguna de las páginas de ayuda ni en los términos que revisamos. Las condiciones que sí existen están escritas y se cumplen desde tu cuenta: Cloudbet, por ejemplo, se reserva un cargo de hasta 5 % (§7.1.10), y algunas ofertas de bono sin depósito piden un depósito mínimo antes de retirar (§8.7). Cloudbet también dice que solo acepta retiros pedidos desde tu cuenta y que sus empleados y agentes no mueven cripto por otra vía. No pagues por mensaje privado: entra a la sala desde el sitio que tienes guardado."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué hago si mi retiro sigue pendiente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Confirma el paso que te pidieron, como el email o los documentos, y revisa si ya hay un TXID. Si todavía no hay TXID, el retiro está del lado de la sala; si ya hay TXID, está del lado de la red o de tu wallet. No lo canceles para acelerarlo: cancelar no acelera. Si ya pasó el plazo que publica tu sala, escribe a soporte con tu ID de retiro."
+          }
         }
       ]
     }
@@ -542,7 +550,19 @@
     <p class="kicker">Guía · +18 · alfabetización</p>
     <h1>Retiro «pendiente», «en proceso» o «en revisión»: qué significa cada estado y qué hacer</h1>
     <p class="reviewed"><small>Revisado el 31 oct 2026 · cada sala con su fecha de revisión en cada línea.</small></p>
+    <!-- BLOCKED: on PR day after a logged claim-by-claim re-read, header/dateModified/lastmod move together to that day; datePublished stays 31 Oct; per-line «revisado» stamps move only if that line's source was re-read -->
     <p class="lead">Depositar suele tardar segundos. Retirar tiene más pasos, y en cada uno el retiro puede quedar quieto: confirmación por email, cola de pagos, revisión de seguridad, verificación de identidad (KYC) y, al final, la red de la cripto. Esta guía explica qué suele significar cada estado, qué plazos publican las propias salas y qué revisar antes de preocuparte. Lo que sigue sale de las páginas de ayuda y los términos de cada sala, con la fecha en que lo revisamos; lo nuestro va marcado EDITORIAL. Los nombres de los estados cambian de una sala a otra: guíate por lo que diga la tuya. Es alfabetización para mayores de 18, no asesoría legal ni consejo de apuesta, y no podemos decirte cómo va a terminar un caso concreto. Si todavía no pediste el retiro, empieza por <a href="/guias/antes-de-retirar-rollover-kyc/">antes de retirar: rollover y KYC</a>.</p>
+    <p class="guide-card">Un retiro «pendiente» o «en revisión» suele significar que la sala todavía no lo envió a la blockchain: está en cola, en una revisión de seguridad o esperando un paso tuyo, como confirmar por email o mandar documentos (KYC). Si ya tienes TXID, depende de la red. Si tu sala publica un plazo y ya pasó, escribe a soporte con tu ID de retiro. +18.</p>
+    <div class="guide-card">
+      <ol>
+        <li>¿Confirmaste el retiro (email o 2FA)?</li>
+        <li>¿Hay TXID?</li>
+        <li>¿Pasó el plazo que publica tu sala, si publica uno?</li>
+        <li>Escribe a soporte con tu ID de retiro.</li>
+      </ol>
+    </div>
+    <p class="more">Si estás en Latinoamérica, sigue en <a href="/guias/retiros-metodos-locales/">métodos de retiro locales en Latinoamérica</a>.</p>
+    <!-- BLOCKED: NEEDS EVIDENCE help 103213/103366 PR-day capture; only allowed public wording: «Su ayuda de retiros (revisada el [DD mes AAAA]) describe retiros en cripto» -->
     <h2>1. Primero: en qué punto está tu retiro</h2>
     <p>Un retiro cripto pasa, en general, por estas etapas (EDITORIAL, armado con la ayuda de Cloudbet como ejemplo, revisada 31 oct 2026):</p>
     <ol>
@@ -686,6 +706,9 @@
     <p>En Cloudbet no sirve para acelerarlo: la nueva solicitud va al final de la cola. Solo se puede cancelar antes de que salga a la blockchain.</p>
     <h3>¿Es normal que me pidan pagar para liberar mi retiro?</h3>
     <p>Por mensaje privado, no: no figura en ninguna de las páginas de ayuda ni en los términos que revisamos. Las condiciones que sí existen están escritas y se cumplen desde tu cuenta: Cloudbet, por ejemplo, se reserva un cargo de hasta 5 % (§7.1.10), y algunas ofertas de bono sin depósito piden un depósito mínimo antes de retirar (§8.7). Cloudbet también dice que solo acepta retiros pedidos desde tu cuenta y que sus empleados y agentes no mueven cripto por otra vía. No pagues por mensaje privado: entra a la sala desde el sitio que tienes guardado.</p>
+    <!-- DRAFT FOR ED&COMP GATE -->
+    <h3>¿Qué hago si mi retiro sigue pendiente?</h3>
+    <p>Confirma el paso que te pidieron, como el email o los documentos, y revisa si ya hay un TXID. Si todavía no hay TXID, el retiro está del lado de la sala; si ya hay TXID, está del lado de la red o de tu wallet. No lo canceles para acelerarlo: cancelar no acelera. Si ya pasó el plazo que publica tu sala, escribe a soporte con tu ID de retiro.</p>
     <p>Los términos cambian: revisa la versión vigente en la web oficial de tu sala antes de decidir. No garantizamos resultados. Si se te va de las manos, <a href="/juego-responsable/">busca ayuda de juego responsable</a> donde estés. +18.</p>
     <aside class="canal-cta" aria-labelledby="canal-cta-title">
       <p class="canal-kicker">Canal · +18</p>
