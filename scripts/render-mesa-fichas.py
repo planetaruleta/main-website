@@ -248,17 +248,23 @@ def faq_html(faqs: list[tuple]) -> str:
         q, a = item[0], item[1]
         shown, has_warn = peel_warn(a)
         extra = ""
+        gate = ""
         if len(item) > 2 and item[2]:
-            href, anchor = item[2]
-            # HTML only: the linked anchor replaces the trailing plain guide name.
-            # JSON-LD keeps item[1], including «guía de Plinko en Cloudbet.»
-            plain_guide = "guía de Plinko en Cloudbet."
-            if shown.endswith(plain_guide):
-                shown = shown[: -len(plain_guide)].rstrip()
-            extra = f' <a href="{e(href)}">{e(anchor)}</a>.'
+            if isinstance(item[2], str):
+                # HTML comment only. It is not part of the visible answer or the JSON-LD.
+                gate = item[2]
+            else:
+                href, anchor = item[2]
+                # HTML only: the linked anchor replaces the trailing plain guide name.
+                # JSON-LD keeps item[1], including «guía de Plinko en Cloudbet.»
+                plain_guide = "guía de Plinko en Cloudbet."
+                if shown.endswith(plain_guide):
+                    shown = shown[: -len(plain_guide)].rstrip()
+                extra = f' <a href="{e(href)}">{e(anchor)}</a>.'
         note = warn_html() if has_warn else ""
+        prefix = f"{gate}\n        " if gate else ""
         blocks.append(
-            f"""<details class="faq">
+            f"""{prefix}<details class="faq">
           <summary><h3>{e(q)}</h3></summary>
           <div class="answer"><p>{e(shown)}{extra}</p>{note}</div>
         </details>"""
@@ -836,12 +842,26 @@ FICHAS = {
         "h1": "Bono Cloudbet y ficha de la mesa: paquete, KYC y retiro",
         "h1_visible": "Bono Cloudbet y ficha de la mesa: paquete, KYC y retiro",
         "title": "Bono Cloudbet: paquete de bienvenida, KYC y retiro",
-        "description": "Bono de bienvenida de Cloudbet según sus términos: paquete, rakeback y cash drops. KYC y retiro. +18.",
+        "description": "Bono de bienvenida de Cloudbet según sus términos: paquete, rakeback y cash drops. Qué dicen sus páginas sobre México, KYC y retiro. +18.",
         "modified": "2026-11-23",
         "lede": [
-            "Según sus términos (§8.4), el bono de bienvenida de Cloudbet es un paquete de recompensas con rakeback y cash drops. Cloudbet está en la mesa como operador crypto/offshore.",
-            "Esta ficha no pone nota ni abre un depósito. Los hechos salen de la versión /en del sitio, de sus términos y de su ayuda.",
+            "Según sus términos (§8.4, revisados el 25 nov 2026), el bono de bienvenida de Cloudbet es un paquete de hasta 2.500 USD en 30 días, contados desde tu primera apuesta después del primer depósito: rakeback del 10 % de la ventaja de la casa en apuestas de casino elegibles y cash drops. Lo que pasa a su calendario se reclama en 24 horas o se pierde. Ese artículo no publica un Nx. +18.",
+            "Cloudbet está en la mesa como operador crypto/offshore. Esta ficha no pone nota ni abre un depósito. Los hechos salen de la versión /en del sitio, de sus términos y de su ayuda.",
         ],
+        "mexico_html": """<section class="block" aria-labelledby="mexico">
+          <h2 id="mexico">México: qué dicen las páginas de Cloudbet</h2>
+          <div class="prose">
+            <p>México es un mercado de Latinoamérica entre otros. Esto es lo que dicen las páginas de Cloudbet sobre ese mercado.</p>
+            <ul>
+              <li>México no está entre las 22 jurisdicciones que listan sus términos (§7.1.3, revisados el 25 nov 2026). La misma cláusula excluye también cualquier jurisdicción donde su oferta sea ilegal y deja en ti confirmar si el juego online es legal donde estás.</li>
+              <li>Sus términos (§21.1.5, revisados el 25 nov 2026) exigen verificar tu identidad cuando tus depósitos acumulados llegan a 2.200 USD, y pueden pedirte la verificación en cualquier momento. Su ayuda de niveles de verificación (artículo 415596, «What are Cloudbet's verification levels?», revisada el 25 nov 2026) describe el nivel 2 como foto del documento, prueba de domicilio y verificación de rostro. Para empezar no necesitas ningún nivel.</li>
+              <li>Su ayuda de métodos de pago (artículo 103366, fechada el 7 oct 2026, revisada el 25 nov 2026) dice que Cloudbet acepta depósitos en criptomonedas y que, si no tienes cripto, la compra pasa por Swapped, un proveedor tercero. La tabla de Swapped en esa ayuda incluye SPEI en la fila de México.</li>
+              <li>Su ayuda de retiros (artículo 103213, revisada el 25 nov 2026) describe retiros en cripto.</li>
+            </ul>
+            <p>Una licencia offshore no es una licencia local de tu país.</p>
+            <p>Revisar la ley local es responsabilidad tuya. +18.</p>
+          </div>
+        </section>""",
         "sheet": [
             ("Empresa", "Halcyon Super Holdings B.V. (148526), nombrada en el help de licencias. Domicilio: no verificado · 03 OCT 2026."),
             ("Licencia", "Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Help, 03 OCT 2026. Una licencia offshore no es una licencia local de tu país."),
@@ -888,11 +908,11 @@ FICHAS = {
         "plata": [
             "La celda de métodos es crypto · buy card (Swapped). El help, artículo actualizado el 24 SEP 2026, dice que el depósito con tarjeta pasa por Swapped: se elige depositar con tarjeta y después Swapped.",
             "Criptomonedas (ayuda «What currencies are accepted on Cloudbet?» y términos §7.3.1, revisados 23 nov 2026): Cloudbet lista 29 criptomonedas, cada una con sus redes. Bitcoin (BTC) se acepta por Bitcoin Mainnet y por BNB Smart Chain. Bitcoin Cash (BCH) también está en esa lista, por Bitcoin Cash Mainnet y por BNB Smart Chain. Las versiones «bridged» o «wrapped» (por ejemplo USDC.e) no se aceptan. No copiamos el catálogo completo: cada moneda se acepta solo por las redes que lista esa ayuda.",
-            "Moneda local, país por país (ayuda y T&C de Cloudbet, revisados el 4 nov 2026). Cloudbet recibe cripto. Si no tienes, su ayuda dice que puedes comprarla dentro del sitio con un tercero, Swapped. La tabla de esa ayuda («Which payment methods does Cloudbet accept?») lista, entre otros, SPEI en México, PSE en Colombia y Khipu o Webpay en Chile, además de Visa y Mastercard. Argentina y Perú no figuran en esa tabla; la ayuda remite a la lista completa de Swapped, que no revisamos. Eso es comprar cripto con un tercero, no un depósito en moneda local en Cloudbet. Los T&C (7.3.1) dicen que pueden aceptar, a su criterio, «fiat currency» según tu jurisdicción y los métodos disponibles. Pagar en moneda local no es una licencia local. Fuente: oficial (ayuda y T&C de Cloudbet).",
+            "Moneda local, país por país (ayuda y T&C de Cloudbet, revisados el 25 nov 2026). Cloudbet recibe cripto. Si no tienes, su ayuda dice que puedes comprarla dentro del sitio con un tercero, Swapped. La tabla de esa ayuda («Which payment methods does Cloudbet accept?») lista, entre otros, SPEI en México, PSE en Colombia y Khipu o Webpay en Chile, además de Visa y Mastercard. Argentina y Perú no figuran en la tabla del artículo 103366; la ayuda remite a la lista completa de Swapped; de esa lista solo revisamos la fila de México. Eso es comprar cripto con un tercero, no un depósito en moneda local en Cloudbet. Los T&C (7.3.1) dicen que pueden aceptar, a su criterio, «fiat currency» según tu jurisdicción y los métodos disponibles. Pagar en moneda local no es una licencia local. Fuente: oficial (ayuda y T&C de Cloudbet).",
             "El retiro de la fila sigue sin dato. El marketing de velocidad de retiro no entra como SLA. Pagar en moneda local no es una licencia local.",
         ],
         "bono": [
-            "Chip de la fila: paquete de bienvenida de hasta 2.500 USD en un programa de 30 días, y 10% del house edge en cada apuesta de casino elegible. Las apuestas de sports no suman rakeback. Terms §8.4, revisados 23 nov 2026.",
+            "Chip de la fila: paquete de bienvenida de hasta 2.500 USD en un programa de 30 días, y 10% del house edge en cada apuesta de casino elegible. Las apuestas de sports no suman rakeback. Terms §8.4, revisados 25 nov 2026.",
             "El período de 30 días empieza al hacer la primera apuesta después de ese depósito (§8.4.2), no desde la hora del depósito. No hay un Nx de rollover publicado para este paquete. No inventamos uno.",
             "Cómo se cobra (ayuda y términos §8.4.3, revisados 23 nov 2026). El paquete no se entrega de una vez: se va ganando mientras apuestas. En casino suma rakeback y un «cash drop» diario; en deportes, un «cash drop» por semana, que se desbloquea los viernes a las 00:00 UTC. Del rakeback y del cash drop diario, la mitad va directo a tu saldo y el resto pasa al «Rewards Calendar»: lo que se desbloquea ahí hay que reclamarlo dentro de las 24 horas o se pierde. El monto de cada cash drop lo fija Cloudbet a su criterio según tu actividad; sus términos no dan una fórmula. Al terminar llega el «Cash Vault», que según la ayuda es la recompensa más grande del paquete. El paquete termina a los 30 días o al llegar a 2.500 USD, lo que pase primero, y se calcula en USDT. Para cobrar el rakeback hace falta haber juntado al menos 1 USD.",
             "No es un bono de depósito. La ayuda de Cloudbet («Do you offer a first deposit bonus?», revisada 23 nov 2026) dice que no tiene un bono de depósito tradicional: el paquete se activa con el primer depósito, de cualquier monto, sin código. Rakeback no es un match: la diferencia está en la guía de cashback, rakeback y lossback.",
@@ -917,7 +937,7 @@ FICHAS = {
         "faqs": [
             (
                 "¿El bono de Cloudbet es un match con rollover?",
-                "No, en lo publicado en Terms §8.4 (revisados 23 nov 2026). Es un paquete de hasta 2.500 USD en 30 días y un rakeback del 10% del house edge en apuestas de casino elegibles. Ese artículo no publica un Nx. Los 30 días empiezan con la primera apuesta después del depósito.",
+                "No, en lo publicado en Terms §8.4 (revisados 25 nov 2026). Es un paquete de hasta 2.500 USD en 30 días y un rakeback del 10% del house edge en apuestas de casino elegibles. Ese artículo no publica un Nx. Los 30 días empiezan con la primera apuesta después del depósito.",
             ),
             (
                 "¿Las apuestas de sports suman rakeback?",
@@ -928,16 +948,20 @@ FICHAS = {
                 "El help de licencias nombra Curaçao Gaming Authority, OGL/2024/328/0599, Halcyon Super Holdings B.V. (148526). Una licencia offshore no es una licencia local de tu país. El enlace de afiliado de esta ficha no está activo. +18.",
             ),
             (
-                "¿El depósito es por CBU?",
-                "No. La celda es crypto · buy card (Swapped). El help describe la compra con tarjeta a través de Swapped. El retiro de la mesa sigue sin dato: no hay un SLA de horas en esta ficha.",
+                "¿Puedo depositar en Cloudbet en moneda local o desde mi banco?",
+                "Según su ayuda de métodos de pago (artículo 103366, fechada el 7 oct 2026, revisada el 25 nov 2026), Cloudbet acepta depósitos en criptomonedas. Si no tienes cripto, la compra pasa por Swapped, un proveedor tercero; su tabla lista métodos por país, entre ellos SPEI en México. Sus términos (§7.3.1, revisados el 25 nov 2026) dicen que también pueden aceptar moneda fiat, a su criterio, según tu jurisdicción y los métodos disponibles. Pagar en moneda local no es una licencia local. +18.",
             ),
             (
                 "¿Desde qué países no se puede usar Cloudbet?",
-                "Su ayuda (fechada el 30 SEP 2026) y sus Terms (§7.1.3) listan 22 jurisdicciones restringidas, entre ellas Estados Unidos y sus territorios, Reino Unido, España, Francia, Alemania, Países Bajos, Australia, Japón y Cuba. Revisado 4 nov 2026. La lista completa y cómo leerla están en la guía de registro, países y KYC de Cloudbet. Revisar la ley local es responsabilidad tuya. +18.",
+                "Su ayuda (fechada el 30 SEP 2026) y sus Terms (§7.1.3) listan 22 jurisdicciones restringidas, entre ellas Estados Unidos y sus territorios, Reino Unido, España, Francia, Alemania, Países Bajos, Australia, Japón y Cuba. Revisado 25 nov 2026. La lista completa y cómo leerla están en la guía de registro, países y KYC de Cloudbet. Revisar la ley local es responsabilidad tuya. +18.",
+            ),
+            (
+                "¿México está en la lista de países restringidos de Cloudbet?",
+                "No. Sus términos (§7.1.3, revisados el 25 nov 2026) listan 22 jurisdicciones restringidas y México no está entre ellas. La misma cláusula excluye también cualquier país donde su oferta sea ilegal y dice que confirmar si el juego online es legal donde estás es responsabilidad tuya. Eso no es una licencia local. +18.",
             ),
             (
                 "¿Cloudbet acepta jugadores de Sudamérica?",
-                "Su ayuda (fechada el 11 JUN 2026, revisada 4 nov 2026) dice que ningún país de Sudamérica está en su lista de jurisdicciones restringidas. Eso no es una licencia local ni dice que el juego online sea legal donde estás. +18.",
+                "Su ayuda (fechada el 11 JUN 2026, revisada 25 nov 2026) dice que ningún país de Sudamérica está en su lista de jurisdicciones restringidas. Eso no es una licencia local ni dice que el juego online sea legal donde estás. +18.",
             ),
             (
                 "¿Cómo funciona el bono de bienvenida de Cloudbet?",
@@ -1518,7 +1542,7 @@ VISUAL = {
         "chain": ["ID", "domicilio", "face"],
         "big": "L2",
         "big_label": "ID + domicilio + face",
-        "kyc_note": "Pueden pedir la verificación en cualquier momento. Disparador fijo (Terms §21.1.5, 04 NOV 2026): al llegar a 2.200 USD depositados en total o superarlos.",
+        "kyc_note": "Pueden pedir la verificación en cualquier momento. Disparador fijo (Terms §21.1.5, 25 NOV 2026): al llegar a 2.200 USD depositados en total o superarlos.",
     },
     "roobet": {
         "meta": [
@@ -1890,6 +1914,14 @@ def kyc_prose(data: dict) -> str:
     return f'<div class="prose">{"".join(parts)}</div>'
 
 
+def raw_section(data: dict, key: str) -> str:
+    """Optional raw HTML for one ficha. Other fichas omit the key and stay unchanged."""
+    raw = data.get(key) or ""
+    if not raw.strip():
+        return ""
+    return raw.rstrip() + "\n        "
+
+
 def render_ficha(slug: str) -> str:
     data = FICHAS[slug]
     path = f"/mesa/{slug}/"
@@ -1969,7 +2001,7 @@ def render_ficha(slug: str) -> str:
           <p class="caveat"><strong>{e(visual["caveat_strong"])}</strong> {e(visual["caveat"])}</p>
           {prose_html(data["plata"])}{data.get("retiro_html", "")}
         </section>
-        <section class="kyc" aria-labelledby="riesgo">
+        {raw_section(data, "mexico_html")}<section class="kyc" aria-labelledby="riesgo">
           <div class="kyc-grid">
             <div>
               <h2 id="riesgo">Condiciones y riesgo</h2>
