@@ -407,6 +407,8 @@ def head(title: str, description: str, path: str, graph: list, og_type: str = "a
 {ld}
   </script>
   <meta name="theme-color" content="#0B1520" />
+  <link rel="preload" href="/assets/fonts/ibarra-real-nova-600-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/ibarra-real-nova-500-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/css/fonts.css" />
   <link rel="stylesheet" href="/css/brand.css" />
   <link rel="stylesheet" href="/css/mesa.css" />
