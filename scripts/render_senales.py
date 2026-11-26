@@ -287,7 +287,34 @@ def render_home(items: list[dict]) -> str:
 
 
 def render_archive(items: list[dict]) -> str:
-    return "\n".join(render_li(item, "h2") for item in items)
+    """Live rows stay open. Expired rows sit in one closed <details>, text still in the HTML."""
+    live = [item for item in items if not item.get("_expired")]
+    expired = [item for item in items if item.get("_expired")]
+    parts = [render_li(item, "h2") for item in live]
+    if not expired:
+        return "\n".join(parts)
+    inner = "\n".join(render_li(item, "h2") for item in expired)
+    count = len(expired)
+    parts.append(
+        "\n".join(
+            [
+                '          <li class="expired-fold">',
+                '            <details class="fold" id="senales-expiradas">',
+                "              <summary>",
+                "                <h2>Señales expiradas</h2>",
+                f'                <span class="hint">{count} con la marca EXPIRADA, de la más nueva a la más vieja. El texto sigue en esta página.</span>',
+                "              </summary>",
+                '              <div class="fold-body">',
+                '                <ol class="timeline">',
+                inner,
+                "                </ol>",
+                "              </div>",
+                "            </details>",
+                "          </li>",
+            ]
+        )
+    )
+    return "\n".join(parts)
 
 
 def itemlist_rows(items: list[dict]) -> list[dict]:

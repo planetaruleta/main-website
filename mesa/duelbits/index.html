@@ -189,8 +189,24 @@
     </nav>
   </header>
   <main id="contenido">
-    <div class="wrap">
+    <div class="wrap with-toc">
       
+      <div class="layout layout-wide">
+      <aside class="toc" aria-label="En esta página">
+        <p>En esta página</p>
+        <ol>
+          <li><a href="#importa">Lo que importa en la mesa</a></li>
+          <li><a href="#bono">Bono real vs marketing</a></li>
+          <li><a href="#juegos">Juegos y jackpots</a></li>
+          <li><a href="#plata">Cómo entra y sale el dinero</a></li>
+          <li><a href="#riesgo">Condiciones y riesgo</a></li>
+          <li><a href="#senales">Señales observadas</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+          <li><a href="#comparacion-title">Comparación declarada</a></li>
+          <li><a href="#otros">Otros en la mesa</a></li>
+        </ol>
+      </aside>
+      <div class="af-main">
       <nav class="crumbs" aria-label="Migas"><ol><li><a href="/">Inicio</a></li><li><a href="/mesa/">Mesa</a></li><li><span aria-current="page">Duelbits</span></li></ol></nav>
       <article class="ficha">
         <header class="hero">
@@ -242,6 +258,7 @@
       </svg>
     </div>
         </header>
+        <nav class="chips" aria-label="En esta página"><a href="#importa">Importa</a><a href="#bono">Bono</a><a href="#juegos">Juegos</a><a href="#plata">Dinero</a><a href="#riesgo">Riesgo</a><a href="#senales">Señales</a><a href="#faq">Preguntas</a><a href="#comparacion-title">Comparación</a><a href="#otros">Otros</a></nav>
         <section class="know" aria-labelledby="importa">
           <h2 id="importa">Lo que importa en la mesa</h2>
           <div class="facts"><div class="fact"><div class="k">Licencia</div><div class="n">CGA</div><div class="s">OGL/2024/1507/0838</div></div><div class="fact"><div class="k">Retiros</div><div class="n">crypto</div><div class="s">sin fiat MX/AR</div></div><div class="fact"><div class="k">Antes de retirar</div><div class="n">10%</div><div class="s">del depósito · según la ayuda (§5.3)</div></div><div class="fact"><div class="k">KYC</div><div class="n">2.000</div><div class="s">EUR aprox · depósitos o retiros</div></div></div>
@@ -313,10 +330,12 @@
         </details></div>
         </section>
       </article>
-      <section class="cmp-sec" id="comparacion" aria-labelledby="comparacion-title">
-        <h2 id="comparacion-title">Comparación declarada</h2>
+      <section class="cmp-sec" aria-labelledby="comparacion-title">
+        <details class="fold" id="comparacion">
+          <summary><h2 id="comparacion-title">Comparación declarada</h2></summary>
+          <div class="fold-body">
         <p class="cmp-note">La misma tabla que en <a href="/mesa/#comparacion">la comparación de las fichas</a>. Sin insignia de ganador.</p>
-        
+
         <p class="scroll-hint">Desliza para comparar</p>
         <div class="cmp-scroll">
           <table class="cmp">
@@ -402,11 +421,17 @@
           </table>
         </div>
 
+          </div>
+        </details>
       </section>
       <section class="block" aria-labelledby="otros">
-        <h2 id="otros">Otros en la mesa</h2>
-        <ul class="otros"><li><a href="/mesa/rainbet/">Rainbet</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/shuffle/">Shuffle</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/stake/">Stake</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/cloudbet/">Cloudbet</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/roobet/">Roobet</a><span class="tag">En la mesa · ficha</span></li></ul>
+        <details class="fold">
+          <summary><h2 id="otros">Otros en la mesa</h2></summary>
+          <div class="fold-body">
+<ul class="otros"><li><a href="/mesa/rainbet/">Rainbet</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/shuffle/">Shuffle</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/stake/">Stake</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/cloudbet/">Cloudbet</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/roobet/">Roobet</a><span class="tag">En la mesa · ficha</span></li></ul>
         <p class="after"><a href="/mesa/">Todas las fichas</a> · <a href="/#mesa">Tira corta en la home</a></p>
+          </div>
+        </details>
       </section>
       <aside class="canal-cta" aria-labelledby="canal-cta-title">
         <p class="canal-kicker">Canal · +18</p>
@@ -414,6 +439,8 @@
         <p>Cuando hay juice o una alerta con fuente, sale en Telegram. Esta invitación no es un enlace de afiliado y no abre un depósito.</p>
         <p class="canal-cta-action"><a href="https://t.me/planetaruleta" data-site-cta-tg target="_blank" rel="noopener" data-cta="telegram" data-cta-location="mesa-canal">Súmate al canal</a></p>
       </aside>
+      </div>
+      </div>
 
       <footer class="site-foot">
     <a class="brand" href="/"><img src="/assets/saturn-exact.png" alt="" width="34" height="26" /><span>Planeta Ruleta</span></a>
@@ -431,6 +458,7 @@
       Planeta Ruleta © <span data-year></span>
     </p>
   </footer>
+  <script src="/js/folds.js"></script>
   <script>
     (() => {
       const year = new Date().getFullYear();

@@ -108,7 +108,11 @@ def find_article(node: Node) -> Node | None:
 def skipped(node: Node) -> bool:
     if node.tag in SKIP_TAGS:
         return True
-    if node.tag == "aside" and "canal-cta" in node.classes():
+    classes = node.classes()
+    if node.tag == "aside" and "canal-cta" in classes:
+        return True
+    # Jump chips and fold hints are navigation chrome, not guide wording.
+    if "chips" in classes or "hint" in classes or "toc" in classes:
         return True
     return False
 
