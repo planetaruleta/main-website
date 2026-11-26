@@ -1747,7 +1747,7 @@ La ayuda de Stake Perú del 28 sep 2026 dice que desde el 1 oct 2026 funciona en
 
 ## Fuentes y fechas
 
-Índice de las etiquetas de fuente tal como aparecen en cada sección. Las etiquetas originales siguen junto a cada dato; aquí solo se repiten para consultarlas juntas.
+Índice de las etiquetas de fuente tal como aparecen en cada sección.
 
 ### Stake.com
 
