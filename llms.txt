@@ -32,6 +32,8 @@ El texto de las guías, sin el menú del sitio, está en [llms-full.txt](https:/
 - [Retiros con métodos locales](https://www.planetaruleta.com/guias/retiros-metodos-locales/): Retiro en Stake Colombia y Perú: Efecty, Nequi, Bre-B, Yape/Plin, mínimos, topes por día y plazos según su ayuda, y qué frena un retiro. +18.
 - [Stake por país](https://www.planetaruleta.com/guias/stake-por-pais/): Qué dicen los términos de Stake.com y de sus sitios locales, y qué publican los reguladores de cada país.
 - [Rainbet: qué se puede verificar y qué no](https://www.planetaruleta.com/guias/rainbet-que-se-puede-verificar/): Qué publica Rainbet sobre su empresa, su licencia, sus retiros y sus sitios oficiales, y qué no. Sin veredicto. +18.
+- [Calculadora: rakeback vs cashback](https://www.planetaruleta.com/guias/calculadora-rakeback-cashback/): Compara rakeback y cashback en valor esperado con tu volumen, la ventaja de la casa y los porcentajes. Con la fórmula y los supuestos a la vista. +18.
+- [Calculadora: rollover de un bono](https://www.planetaruleta.com/guias/calculadora-rollover-bono/): Calcula cuánto hay que apostar para liberar un bono, la pérdida esperada y su valor esperado neto según rollover, contribución y ventaja de la casa. +18.
 
 ## Mesa
 

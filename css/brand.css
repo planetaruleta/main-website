@@ -80,3 +80,24 @@
 :root {
   --copper-label: #B9734E;
 }
+
+/* Long URLs and words wrap inside article text. Guides use main.article;
+   fichas and signals use the article element. Wide tables scroll inside
+   their wrapper instead of widening the page. */
+article p,
+article li,
+article td,
+.article p,
+.article li,
+.article td {
+  overflow-wrap: anywhere;
+}
+
+.table-wrap,
+.cmp-scroll,
+.mesa-scroll {
+  display: block;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+}

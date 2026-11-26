@@ -910,7 +910,7 @@ Revisado el 30 oct 2026. Editor senior · Planeta Ruleta
 
 Te llega un mensaje con un bono enorme o un «premio», el saldo crece rápido y, cuando quieres retirar, aparece una condición nueva: deposita primero «para verificar», «para liberar» o «para pagar el impuesto». Esta guía explica ese patrón, cómo se ve una dirección copiada y qué revisar antes de poner más dinero. Es alfabetización para mayores de 18, no consejo de apuesta ni recomendación de ninguna sala. Lo marcado EDITORIAL es lectura nuestra; lo demás cita a reguladores y a las propias salas, con fuente y fecha.
 
-### Lo corto
+## Lo corto
 
 - **Si para cobrar un premio que te llegó por mensaje tienes que pagar, no es un bono.**
 - Nunca pagues ni deposites para «desbloquear» un retiro que te prometieron por mensaje.
