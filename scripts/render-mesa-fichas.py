@@ -1078,7 +1078,7 @@ FICHAS = {
         "name": "Duelbits",
         "h1": "Duelbits: ficha de la mesa",
         "title": "Duelbits: licencia, KYC y métodos — ficha | Planeta Ruleta",
-        "description": "Duelbits: licencia CGA OGL/2024/1507/0838. Sin método fiat de México ni Argentina. Sin puntaje. Una licencia offshore no es una licencia local de tu país. +18.",
+        "description": "Duelbits: licencia CGA OGL/2024/1507/0838. Sin puntaje. Una licencia offshore no es una licencia local de tu país. +18.",
         "modified": "2026-11-04",
         "published": "2026-10-24",
         "lede": [
