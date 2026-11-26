@@ -493,7 +493,7 @@ def fichas_item_list(url: str) -> dict:
 def render_index() -> str:
     path = "/mesa/"
     url = f"{HOST}{path}"
-    title = "Mesa: fichas Rainbet, Shuffle, Stake | Planeta Ruleta"
+    title = "Mesa: Rainbet, Shuffle, Stake, Cloudbet, Roobet y Duelbits"
     description = (
         "Fichas de Rainbet, Shuffle, Stake, Cloudbet, Roobet y Duelbits: licencia, KYC y bono "
         "en una comparación declarada. Sin puntaje. Afiliado no activo. +18."
