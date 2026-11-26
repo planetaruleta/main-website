@@ -2,6 +2,13 @@
   "note": "The 3–4 most recent things actually shipped, newest first. Aviv's rule (22 Nov 2026): the homepage must not go more than 4 days without a visible update. After editing this file, run: python3 scripts/render_novedades.py && python3 scripts/render_novedades.py --check",
   "items": [
     {
+      "date": "2026-11-25",
+      "title": "Antes de retirar: rollover y KYC",
+      "href": "/guias/antes-de-retirar-rollover-kyc/",
+      "line": "Según las páginas oficiales de seis salas: el rollover del depósito y la verificación KYC antes de retirar.",
+      "source": "Live guide (HTTP 200 on 26 Nov 2026 ~10:08 IST, Asia/Jerusalem): https://www.planetaruleta.com/guias/antes-de-retirar-rollover-kyc/ JSON-LD WebPage/Article dateModified 2026-11-25, datePublished 2026-10-14; visible header «Revisado el 25 nov 2026 · cada dato con su fecha de revisión.» Sitemap lastmod 2026-11-25 (one of three URLs dated 2026-11-25; the other two are /privacidad/ and /juego-responsable/, not used as the lead row). Title and og:title are «Antes de retirar: rollover y KYC | Planeta Ruleta»; the strip title drops the site suffix so it matches the other internal rows. h1 is «Antes de retirar: rollover del depósito y verificación KYC, según las páginas oficiales». The file is in PR #84 (squash 876744c2, merged 2026-11-25T15:05:41Z = 25 Nov 2026 17:05 IST); PR #83 also touched it earlier the same day. Line restates the live lead (the guide collects what six operators' official pages say about deposit rollover and KYC before withdrawal). No amounts, no CTA, no new claims."
+    },
+    {
       "date": "2026-11-23",
       "title": "Bono Cloudbet: paquete de bienvenida, KYC y retiro",
       "href": "/mesa/cloudbet/",
@@ -21,13 +28,6 @@
       "href": "/guias/calculadora-rollover-bono/",
       "line": "Calcula cuánto hay que apostar según el rollover, la contribución y la ventaja de la casa.",
       "source": "Live page (HTTP 200 on 22 Nov 2026 13:27 IST, Asia/Jerusalem): JSON-LD datePublished 2026-11-22 and «Revisado el 22 nov 2026.» Same merge 95dc4afc (PR #75) as the rakeback calculator."
-    },
-    {
-      "date": "2026-11-21",
-      "title": "Un nombre conocido no prueba que el canal sea oficial",
-      "href": "https://t.me/planetaruleta/45",
-      "line": "Cómo comprobar que un canal o un mensaje es oficial, y por qué el nombre no basta.",
-      "source": "Public Telegram preview https://t.me/s/planetaruleta fetched 22 Nov 2026 13:27 IST (Asia/Jerusalem): data-post planetaruleta/45, time datetime=2026-11-21T17:11:53+00:00 = 21 Nov 2026 19:11 IST. Public link https://t.me/planetaruleta/45."
     }
   ]
 }
