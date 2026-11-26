@@ -11,7 +11,9 @@ from __future__ import annotations
 
 import html
 import json
+import re
 import sys
+from html.parser import HTMLParser
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -373,6 +375,7 @@ def footer() -> str:
       Planeta Ruleta © <span data-year></span>
     </p>
   </footer>
+  <script src="/js/folds.js"></script>
   <script>
     (() => {{
       const year = new Date().getFullYear();
@@ -424,12 +427,13 @@ def head(title: str, description: str, path: str, graph: list, og_type: str = "a
 </head>"""
 
 
-def page(title: str, description: str, path: str, graph: list, body: str, og_type: str = "article") -> str:
+def page(title: str, description: str, path: str, graph: list, body: str, og_type: str = "article", with_toc: bool = False) -> str:
+    wrap = "wrap with-toc" if with_toc else "wrap"
     return f"""{head(title, description, path, graph, og_type)}
 <body>
   {mast()}
   <main id="contenido">
-    <div class="wrap">
+    <div class="{wrap}">
       {body}
       {footer()}
     </div>
@@ -1922,6 +1926,113 @@ def raw_section(data: dict, key: str) -> str:
     return raw.rstrip() + "\n        "
 
 
+def fold_html(fold_id: str, summary_html: str, body: str) -> str:
+    ident = f' id="{fold_id}"' if fold_id else ""
+    return (
+        f'<details class="fold"{ident}>\n'
+        f"          <summary>{summary_html}</summary>\n"
+        f'          <div class="fold-body">\n'
+        f"{body}\n"
+        f"          </div>\n"
+        f"        </details>"
+    )
+
+
+def mexico_section(raw: str) -> str:
+    """Fold the long México list. The licence line and the local-law line stay open."""
+    if not raw.strip():
+        return ""
+    h2 = re.search(r'<h2 id="mexico">.*?</h2>', raw)
+    intro = re.search(r"<p>México es un mercado.*?</p>", raw)
+    bullets = re.search(r"<ul>.*?</ul>", raw, re.S)
+    licence = re.search(r"<p>Una licencia offshore no es una licencia local de tu país\.</p>", raw)
+    local = re.search(r"<p>Revisar la ley local es responsabilidad tuya\. \+18\.</p>", raw)
+    if not all((h2, intro, bullets, licence, local)):
+        raise SystemExit("cloudbet México section no longer matches the fold split")
+    folded = fold_html(
+        "mexico-detalle",
+        "<h3>Qué dicen las páginas de Cloudbet</h3>",
+        f"            {intro.group(0)}\n            {bullets.group(0)}",
+    )
+    return (
+        '<section class="block" aria-labelledby="mexico">\n'
+        f"          {h2.group(0)}\n"
+        f"          {folded}\n"
+        '          <div class="prose">\n'
+        f"            {licence.group(0)}\n"
+        f"            {local.group(0)}\n"
+        "          </div>\n"
+        "        </section>\n        "
+    )
+
+
+def signals_section(data: dict) -> str:
+    """Fold the signal list. The licence quote stays outside the fold."""
+    quote = f'<blockquote class="quote">{e(data["offshore"])}</blockquote>'
+    items = data["senales"]
+    if not items:
+        return (
+            '<section class="sig" aria-labelledby="senales">\n'
+            '          <h2 id="senales">Señales observadas</h2>\n'
+            '          <div class="sig-grid">\n'
+            f"            <div>{timeline_html(items)}</div>\n"
+            f"            {quote}\n"
+            "          </div>\n"
+            "        </section>"
+        )
+    html_bits = timeline_html(items)
+    sub, ul = html_bits.split("</p>", 1)
+    sub = sub + "</p>"
+    folded = fold_html("senales-lista", "<h3>Señales del archivo</h3>", ul)
+    return (
+        '<section class="sig" aria-labelledby="senales">\n'
+        '          <h2 id="senales">Señales observadas</h2>\n'
+        '          <div class="sig-grid">\n'
+        "            <div>\n"
+        f"              {sub}\n"
+        f"              {folded}\n"
+        "            </div>\n"
+        f"            {quote}\n"
+        "          </div>\n"
+        "        </section>"
+    )
+
+
+def ficha_nav(data: dict) -> tuple[str, str]:
+    items = [
+        ("importa", "Lo que importa en la mesa", "Importa"),
+        ("bono", "Bono real vs marketing", "Bono"),
+        ("juegos", "Juegos y jackpots", "Juegos"),
+        ("plata", data["plata_title"], "Dinero"),
+    ]
+    if (data.get("mexico_html") or "").strip():
+        items.append(("mexico", "México: qué dicen las páginas de Cloudbet", "México"))
+    items.extend(
+        [
+            ("riesgo", "Condiciones y riesgo", "Riesgo"),
+            ("senales", "Señales observadas", "Señales"),
+            ("faq", "Preguntas", "Preguntas"),
+            ("comparacion-title", "Comparación declarada", "Comparación"),
+            ("otros", "Otros en la mesa", "Otros"),
+        ]
+    )
+    toc_lis = "\n".join(
+        f'          <li><a href="#{anchor}">{e(label)}</a></li>' for anchor, label, _chip in items
+    )
+    toc = (
+        '<aside class="toc" aria-label="En esta página">\n'
+        "        <p>En esta página</p>\n"
+        "        <ol>\n"
+        f"{toc_lis}\n"
+        "        </ol>\n"
+        "      </aside>"
+    )
+    chips = '<nav class="chips" aria-label="En esta página">' + "".join(
+        f'<a href="#{anchor}">{e(chip)}</a>' for anchor, _label, chip in items
+    ) + "</nav>"
+    return toc, chips
+
+
 def render_ficha(slug: str) -> str:
     data = FICHAS[slug]
     path = f"/mesa/{slug}/"
@@ -1965,7 +2076,11 @@ def render_ficha(slug: str) -> str:
         faq_ld(url, faqs),
     ]
     visual = VISUAL[slug]
+    toc, chips = ficha_nav(data)
     body = f"""
+      <div class="layout layout-wide">
+      {toc}
+      <div class="af-main">
       {crumbs_html([("Inicio", "/"), ("Mesa", "/mesa/"), (data["name"], None)])}
       <article class="ficha">
         <header class="hero">
@@ -1978,6 +2093,7 @@ def render_ficha(slug: str) -> str:
           </div>
           {hero_art()}
         </header>
+        {chips}
         <section class="know" aria-labelledby="importa">
           <h2 id="importa">Lo que importa en la mesa</h2>
           {facts_html(visual["facts"])}
@@ -2001,7 +2117,7 @@ def render_ficha(slug: str) -> str:
           <p class="caveat"><strong>{e(visual["caveat_strong"])}</strong> {e(visual["caveat"])}</p>
           {prose_html(data["plata"])}{data.get("retiro_html", "")}
         </section>
-        {raw_section(data, "mexico_html")}<section class="kyc" aria-labelledby="riesgo">
+        {mexico_section(data.get("mexico_html") or "")}<section class="kyc" aria-labelledby="riesgo">
           <div class="kyc-grid">
             <div>
               <h2 id="riesgo">Condiciones y riesgo</h2>
@@ -2015,13 +2131,7 @@ def render_ficha(slug: str) -> str:
           </div>
           {kyc_prose(data)}{data.get("kyc_guide_html", "")}
         </section>
-        <section class="sig" aria-labelledby="senales">
-          <h2 id="senales">Señales observadas</h2>
-          <div class="sig-grid">
-            <div>{timeline_html(data["senales"])}</div>
-            <blockquote class="quote">{e(data["offshore"])}</blockquote>
-          </div>
-        </section>
+        {signals_section(data)}
         <section class="foot-doc">
           {annex_html(data)}
           {affiliate_html()}
@@ -2031,19 +2141,62 @@ def render_ficha(slug: str) -> str:
           {faq_html(faqs)}
         </section>
       </article>
-      <section class="cmp-sec" id="comparacion" aria-labelledby="comparacion-title">
-        <h2 id="comparacion-title">Comparación declarada</h2>
-        <p class="cmp-note">La misma tabla que en <a href="/mesa/#comparacion">la comparación de las fichas</a>. Sin insignia de ganador.</p>
-        {compare_table()}
+      <section class="cmp-sec" aria-labelledby="comparacion-title">
+        {fold_html("comparacion", '<h2 id="comparacion-title">Comparación declarada</h2>', '''        <p class="cmp-note">La misma tabla que en <a href="/mesa/#comparacion">la comparación de las fichas</a>. Sin insignia de ganador.</p>
+''' + compare_table())}
       </section>
       <section class="block" aria-labelledby="otros">
-        <h2 id="otros">Otros en la mesa</h2>
-        {otros_html(slug)}
-        <p class="after"><a href="/mesa/">Todas las fichas</a> · <a href="/#mesa">Tira corta en la home</a></p>
+        {fold_html("", '<h2 id="otros">Otros en la mesa</h2>', otros_html(slug) + '''
+        <p class="after"><a href="/mesa/">Todas las fichas</a> · <a href="/#mesa">Tira corta en la home</a></p>''')}
       </section>
       {canal_cta_html("mesa-canal")}
+      </div>
+      </div>
 """
-    return page(title, description, path, graph, body)
+    return page(title, description, path, graph, body, with_toc=True)
+
+
+class _OpenCopy(HTMLParser):
+    """Count needles that occur outside every <details>."""
+
+    def __init__(self, needles: tuple[str, ...]) -> None:
+        super().__init__(convert_charrefs=True)
+        self.needles = needles
+        self.depth = 0
+        self.open_hits = {needle: 0 for needle in needles}
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "details":
+            self.depth += 1
+
+    def handle_endtag(self, tag):
+        if tag == "details" and self.depth:
+            self.depth -= 1
+
+    def handle_data(self, data):
+        if self.depth:
+            return
+        for needle in self.needles:
+            self.open_hits[needle] += data.count(needle)
+
+
+def assert_open_compliance(text: str, slug: str, data: dict) -> None:
+    needles = [
+        "Una licencia offshore no es una licencia local de tu país.",
+        "+18",
+        "Enlace de afiliado no activo.",
+        "no somos un casino",
+        "sin puntaje",
+        "no es un enlace de afiliado y no abre un depósito.",
+        data["offshore"],
+    ]
+    if slug == "cloudbet":
+        needles.append("Revisar la ley local es responsabilidad tuya. +18.")
+    parser = _OpenCopy(tuple(needles))
+    parser.feed(text)
+    missing = [needle for needle, count in parser.open_hits.items() if count < 1]
+    if missing:
+        raise SystemExit(f"{slug} has no open copy of: {missing}")
 
 
 def main() -> None:
@@ -2054,6 +2207,7 @@ def main() -> None:
         path = ROOT / "mesa" / slug / "index.html"
         path.parent.mkdir(parents=True, exist_ok=True)
         files[path] = render_ficha(slug)
+        assert_open_compliance(files[path], slug, FICHAS[slug])
     banned = (
         "mejor casino",
         "vpn",

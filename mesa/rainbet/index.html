@@ -189,8 +189,24 @@
     </nav>
   </header>
   <main id="contenido">
-    <div class="wrap">
+    <div class="wrap with-toc">
       
+      <div class="layout layout-wide">
+      <aside class="toc" aria-label="En esta página">
+        <p>En esta página</p>
+        <ol>
+          <li><a href="#importa">Lo que importa en la mesa</a></li>
+          <li><a href="#bono">Bono real vs marketing</a></li>
+          <li><a href="#juegos">Juegos y jackpots</a></li>
+          <li><a href="#plata">Cómo entra y sale el dinero</a></li>
+          <li><a href="#riesgo">Condiciones y riesgo</a></li>
+          <li><a href="#senales">Señales observadas</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+          <li><a href="#comparacion-title">Comparación declarada</a></li>
+          <li><a href="#otros">Otros en la mesa</a></li>
+        </ol>
+      </aside>
+      <div class="af-main">
       <nav class="crumbs" aria-label="Migas"><ol><li><a href="/">Inicio</a></li><li><a href="/mesa/">Mesa</a></li><li><span aria-current="page">Rainbet</span></li></ol></nav>
       <article class="ficha">
         <header class="hero">
@@ -242,6 +258,7 @@
       </svg>
     </div>
         </header>
+        <nav class="chips" aria-label="En esta página"><a href="#importa">Importa</a><a href="#bono">Bono</a><a href="#juegos">Juegos</a><a href="#plata">Dinero</a><a href="#riesgo">Riesgo</a><a href="#senales">Señales</a><a href="#faq">Preguntas</a><a href="#comparacion-title">Comparación</a><a href="#otros">Otros</a></nav>
         <section class="know" aria-labelledby="importa">
           <h2 id="importa">Lo que importa en la mesa</h2>
           <div class="facts"><div class="fact"><div class="k">Welcome</div><div class="n">x40</div><div class="s">ó camino sin WR</div></div><div class="fact"><div class="k">Lobby visto</div><div class="n">$40K</div><div class="s">Gates promo · 30 SEP</div></div><div class="fact"><div class="k">Retiro mín.</div><div class="n">15</div><div class="s">USD citados en homepage</div></div><div class="fact"><div class="k">KYC ventana</div><div class="n">72h</div><div class="s">Terms §20 · ID</div></div></div>
@@ -283,7 +300,15 @@
         <section class="sig" aria-labelledby="senales">
           <h2 id="senales">Señales observadas</h2>
           <div class="sig-grid">
-            <div><p class="sub">Salen del archivo de señales. No es un hub por operador.</p><ul class="tl"><li class="is-expired"><time datetime="2026-10-22">22 OCT 2026 · Bono</time><div><p class="exp"><span class="exp-badge">EXPIRADA</span><span class="exp-when">Vencida 31 OCT</span></p><div class="ev"><a href="/senales/#bono-rainbet-brewers-rays-2026-10-22">Brewers–Rays: la ganancia extra es una apuesta gratis, no efectivo</a></div><div class="d">Página de la promo, captura 22 OCT 2026. Máximo 500 USD. Solo el mercado de la serie. Cierra 31 OCT 17:00 hora Guatemala. No es el chip de welcome.</div></div></li><li><time datetime="2026-10-05">05 OCT 2026 · Bono</time><div><div class="ev"><a href="/senales/#bono-rainbet-rakeboosts-2026-10-05">RakeBoosts: boost al rakeback, no un % del depósito</a></div><div class="d">Help Rewards overview, revisado 05 OCT 2026. No se suman: solo el % más alto. La tasa base no está publicada. No es el chip de welcome.</div></div></li><li class="is-expired"><time datetime="2026-10-03">03 OCT 2026 · Lobby</time><div><p class="exp"><span class="exp-badge">EXPIRADA</span><span class="exp-when">Vencida 04 OCT</span></p><div class="ev"><a href="/senales/#lobby-rainbet-daily-race-2026-10-03">Daily Race 03 OCT: ventana de 24 h — race por volumen</a></div><div class="d">Página daily-race verificada el 03 OCT 2026. Ventana distinta del 26 SEP. 200 lugares. Escalera de página 1 sin signo de moneda (#1=4000). No publicamos pozo total. No es el chip de bono de la mesa.</div></div></li><li class="is-expired"><time datetime="2026-09-30">30 SEP 2026 · Lobby</time><div><p class="exp"><span class="exp-badge">EXPIRADA</span><span class="exp-when">Vencida 01 OCT</span></p><div class="ev"><a href="/senales/#lobby-rainbet-gates-olympus-40k-2026-09-30">Gates of Olympus 2500: torneo $40K — multiplicadores, no jackpot por caer</a></div><div class="d">Promo oficial verificado el 30 SEP 2026. Pozo publicado 40.000 USD, 100 lugares. No es el Daily Race ni el chip de welcome.</div></div></li><li class="is-expired"><time datetime="2026-09-26">26 SEP 2026 · Lobby</time><div><p class="exp"><span class="exp-badge">EXPIRADA</span><span class="exp-when">Vencida 27 SEP</span></p><div class="ev"><a href="/senales/#lobby-rainbet-daily-race-2026-09-26">Daily Race: ventana de 24 h — race por volumen</a></div><div class="d">Página daily-race verificada el 26 SEP 2026. 200 lugares. No publicamos pozo total. No es el chip de bono de la mesa.</div></div></li><li><time datetime="2026-09-25">25 SEP 2026 · Bono</time><div><div class="ev"><a href="/senales/#bono-rainbet-x40-dual-2026-09-25">Dos caminos de welcome — x40 sobre D+B o unlock sin rollover</a></div><div class="d">Homepage, fetch 25 SEP 2026. Este es el chip de la fila.</div></div></li></ul></div>
+            <div>
+              <p class="sub">Salen del archivo de señales. No es un hub por operador.</p>
+              <details class="fold" id="senales-lista">
+          <summary><h3>Señales del archivo</h3></summary>
+          <div class="fold-body">
+<ul class="tl"><li class="is-expired"><time datetime="2026-10-22">22 OCT 2026 · Bono</time><div><p class="exp"><span class="exp-badge">EXPIRADA</span><span class="exp-when">Vencida 31 OCT</span></p><div class="ev"><a href="/senales/#bono-rainbet-brewers-rays-2026-10-22">Brewers–Rays: la ganancia extra es una apuesta gratis, no efectivo</a></div><div class="d">Página de la promo, captura 22 OCT 2026. Máximo 500 USD. Solo el mercado de la serie. Cierra 31 OCT 17:00 hora Guatemala. No es el chip de welcome.</div></div></li><li><time datetime="2026-10-05">05 OCT 2026 · Bono</time><div><div class="ev"><a href="/senales/#bono-rainbet-rakeboosts-2026-10-05">RakeBoosts: boost al rakeback, no un % del depósito</a></div><div class="d">Help Rewards overview, revisado 05 OCT 2026. No se suman: solo el % más alto. La tasa base no está publicada. No es el chip de welcome.</div></div></li><li class="is-expired"><time datetime="2026-10-03">03 OCT 2026 · Lobby</time><div><p class="exp"><span class="exp-badge">EXPIRADA</span><span class="exp-when">Vencida 04 OCT</span></p><div class="ev"><a href="/senales/#lobby-rainbet-daily-race-2026-10-03">Daily Race 03 OCT: ventana de 24 h — race por volumen</a></div><div class="d">Página daily-race verificada el 03 OCT 2026. Ventana distinta del 26 SEP. 200 lugares. Escalera de página 1 sin signo de moneda (#1=4000). No publicamos pozo total. No es el chip de bono de la mesa.</div></div></li><li class="is-expired"><time datetime="2026-09-30">30 SEP 2026 · Lobby</time><div><p class="exp"><span class="exp-badge">EXPIRADA</span><span class="exp-when">Vencida 01 OCT</span></p><div class="ev"><a href="/senales/#lobby-rainbet-gates-olympus-40k-2026-09-30">Gates of Olympus 2500: torneo $40K — multiplicadores, no jackpot por caer</a></div><div class="d">Promo oficial verificado el 30 SEP 2026. Pozo publicado 40.000 USD, 100 lugares. No es el Daily Race ni el chip de welcome.</div></div></li><li class="is-expired"><time datetime="2026-09-26">26 SEP 2026 · Lobby</time><div><p class="exp"><span class="exp-badge">EXPIRADA</span><span class="exp-when">Vencida 27 SEP</span></p><div class="ev"><a href="/senales/#lobby-rainbet-daily-race-2026-09-26">Daily Race: ventana de 24 h — race por volumen</a></div><div class="d">Página daily-race verificada el 26 SEP 2026. 200 lugares. No publicamos pozo total. No es el chip de bono de la mesa.</div></div></li><li><time datetime="2026-09-25">25 SEP 2026 · Bono</time><div><div class="ev"><a href="/senales/#bono-rainbet-x40-dual-2026-09-25">Dos caminos de welcome — x40 sobre D+B o unlock sin rollover</a></div><div class="d">Homepage, fetch 25 SEP 2026. Este es el chip de la fila.</div></div></li></ul>
+          </div>
+        </details>
+            </div>
             <blockquote class="quote">Rainbet publica una licencia de Anjouan. Una licencia offshore no es una licencia local de tu país. No convierte a esta página en un casino. No hay puntaje, no hay puesto y no hay instrucciones para saltar un bloqueo. +18.</blockquote>
           </div>
         </section>
@@ -314,10 +339,12 @@
         </details></div>
         </section>
       </article>
-      <section class="cmp-sec" id="comparacion" aria-labelledby="comparacion-title">
-        <h2 id="comparacion-title">Comparación declarada</h2>
+      <section class="cmp-sec" aria-labelledby="comparacion-title">
+        <details class="fold" id="comparacion">
+          <summary><h2 id="comparacion-title">Comparación declarada</h2></summary>
+          <div class="fold-body">
         <p class="cmp-note">La misma tabla que en <a href="/mesa/#comparacion">la comparación de las fichas</a>. Sin insignia de ganador.</p>
-        
+
         <p class="scroll-hint">Desliza para comparar</p>
         <div class="cmp-scroll">
           <table class="cmp">
@@ -403,11 +430,17 @@
           </table>
         </div>
 
+          </div>
+        </details>
       </section>
       <section class="block" aria-labelledby="otros">
-        <h2 id="otros">Otros en la mesa</h2>
-        <ul class="otros"><li><a href="/mesa/shuffle/">Shuffle</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/stake/">Stake</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/cloudbet/">Cloudbet</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/roobet/">Roobet</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/duelbits/">Duelbits</a><span class="tag">En la mesa · ficha</span></li></ul>
+        <details class="fold">
+          <summary><h2 id="otros">Otros en la mesa</h2></summary>
+          <div class="fold-body">
+<ul class="otros"><li><a href="/mesa/shuffle/">Shuffle</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/stake/">Stake</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/cloudbet/">Cloudbet</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/roobet/">Roobet</a><span class="tag">En la mesa · ficha</span></li><li><a href="/mesa/duelbits/">Duelbits</a><span class="tag">En la mesa · ficha</span></li></ul>
         <p class="after"><a href="/mesa/">Todas las fichas</a> · <a href="/#mesa">Tira corta en la home</a></p>
+          </div>
+        </details>
       </section>
       <aside class="canal-cta" aria-labelledby="canal-cta-title">
         <p class="canal-kicker">Canal · +18</p>
@@ -415,6 +448,8 @@
         <p>Cuando hay juice o una alerta con fuente, sale en Telegram. Esta invitación no es un enlace de afiliado y no abre un depósito.</p>
         <p class="canal-cta-action"><a href="https://t.me/planetaruleta" data-site-cta-tg target="_blank" rel="noopener" data-cta="telegram" data-cta-location="mesa-canal">Súmate al canal</a></p>
       </aside>
+      </div>
+      </div>
 
       <footer class="site-foot">
     <a class="brand" href="/"><img src="/assets/saturn-exact.png" alt="" width="34" height="26" /><span>Planeta Ruleta</span></a>
@@ -432,6 +467,7 @@
       Planeta Ruleta © <span data-year></span>
     </p>
   </footer>
+  <script src="/js/folds.js"></script>
   <script>
     (() => {
       const year = new Date().getFullYear();
