@@ -493,7 +493,7 @@ def fichas_item_list(url: str) -> dict:
 def render_index() -> str:
     path = "/mesa/"
     url = f"{HOST}{path}"
-    title = "Mesa: fichas Rainbet, Shuffle, Stake, Cloudbet, Roobet y Duelbits | Planeta Ruleta"
+    title = "Mesa: fichas Rainbet, Shuffle, Stake | Planeta Ruleta"
     description = (
         "Fichas de Rainbet, Shuffle, Stake, Cloudbet, Roobet y Duelbits: licencia, KYC y bono "
         "en una comparación declarada. Sin puntaje. Afiliado no activo. +18."
@@ -561,7 +561,7 @@ FICHAS = {
         "name": "Rainbet",
         "h1": "Rainbet: ficha de la mesa",
         "title": "Rainbet: licencia, KYC y welcome — ficha | Planeta Ruleta",
-        "description": "Rainbet declara licencia de Anjouan y un welcome x40 o sin ese rollover. KYC con ID, selfie y domicilio. Sin puntaje. Una licencia offshore no es una licencia local de tu país. +18.",
+        "description": "Rainbet declara licencia de Anjouan y un welcome x40 o sin ese rollover. Sin puntaje. Una licencia offshore no es una licencia local de tu país. +18.",
         "modified": "2026-11-04",
         "lede": [
             "Rainbet está en la mesa como operador crypto/offshore: la casa declara licencia de Anjouan y un welcome con dos caminos.",
@@ -669,7 +669,7 @@ FICHAS = {
         "name": "Shuffle",
         "h1": "Shuffle: ficha de la mesa",
         "title": "Shuffle: licencia, KYC y rakeback — ficha | Planeta Ruleta",
-        "description": "Rakeback 5% del house edge (Bronze) y licencia Curaçao OGL/2024/1337/0628. KYC antes del primer retiro. Sin puntaje. Una licencia offshore no es una licencia local de tu país. +18.",
+        "description": "Rakeback 5% del house edge (Bronze) y licencia Curaçao OGL/2024/1337/0628. Sin puntaje. Una licencia offshore no es una licencia local de tu país. +18.",
         "modified": "2026-11-04",
         "lede": [
             "Shuffle está en la mesa como operador crypto/offshore, con licencia de Curaçao publicada a nombre de Natural Nine B.V.",
@@ -1010,7 +1010,7 @@ FICHAS = {
         "name": "Roobet",
         "h1": "Roobet: ficha de la mesa",
         "title": "Roobet: licencia, KYC y rakeback — ficha | Planeta Ruleta",
-        "description": "Instant rakeback y +10% por 24 h al registrarse. Licencia de Curaçao según sus términos y su home, que también lista sportsbook. Sin puntaje. Una licencia offshore no es una licencia local de tu país. +18.",
+        "description": "Instant rakeback y +10% por 24 h al registrarse. Licencia de Curaçao según sus términos. Una licencia offshore no es una licencia local de tu país. +18.",
         "modified": "2026-11-04",
         "lede": [
             "Roobet está en la mesa como operador crypto/offshore. El help declara instant rakeback y, al registrarse, un boost de +10% durante 24 horas.",
@@ -1078,7 +1078,7 @@ FICHAS = {
         "name": "Duelbits",
         "h1": "Duelbits: ficha de la mesa",
         "title": "Duelbits: licencia, KYC y métodos — ficha | Planeta Ruleta",
-        "description": "Duelbits: licencia CGA OGL/2024/1507/0838 y retiros solo en cripto. Sin método fiat de México ni Argentina. Sin puntaje. Una licencia offshore no es una licencia local de tu país. +18.",
+        "description": "Duelbits: licencia CGA OGL/2024/1507/0838. Sin método fiat de México ni Argentina. Sin puntaje. Una licencia offshore no es una licencia local de tu país. +18.",
         "modified": "2026-11-04",
         "published": "2026-10-24",
         "lede": [
